@@ -1,1 +1,1 @@
-# COS214SpiceGirls
+# COS214 Spice Girls
