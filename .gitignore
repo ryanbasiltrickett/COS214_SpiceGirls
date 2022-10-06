@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+.GroupProjectUML.vpp.lck
+GroupProjectUML.vpp.bak_000f
+GroupProjectUML.vpp.bak_001d
