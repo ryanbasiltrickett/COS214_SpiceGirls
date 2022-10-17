@@ -87,9 +87,14 @@ Inheritance diagram for Vehicle:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:abaad8187d9f2ede4fb8ea18de0a6764c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicle.html#abaad8187d9f2ede4fb8ea18de0a6764c">Vehicle</a> ()</td></tr>
+<tr class="memdesc:abaad8187d9f2ede4fb8ea18de0a6764c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the vehicle.  <a href="classVehicle.html#abaad8187d9f2ede4fb8ea18de0a6764c">More...</a><br /></td></tr>
+<tr class="separator:abaad8187d9f2ede4fb8ea18de0a6764c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae30a3d13e4d254993acf808a94fdff8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicle.html#ae30a3d13e4d254993acf808a94fdff8d">takeDamage</a> (int damage)</td></tr>
+<tr class="memdesc:ae30a3d13e4d254993acf808a94fdff8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes health from the vehicle object.  <a href="classVehicle.html#ae30a3d13e4d254993acf808a94fdff8d">More...</a><br /></td></tr>
 <tr class="separator:ae30a3d13e4d254993acf808a94fdff8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a89569fb092d60bbb172ecd0d4ef4d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicle.html#a8a89569fb092d60bbb172ecd0d4ef4d1">dealDamage</a> (<a class="el" href="classEntity.html">Entity</a> *entity)</td></tr>
+<tr class="memdesc:a8a89569fb092d60bbb172ecd0d4ef4d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inflicts damage onto another entity.  <a href="classVehicle.html#a8a89569fb092d60bbb172ecd0d4ef4d1">More...</a><br /></td></tr>
 <tr class="separator:a8a89569fb092d60bbb172ecd0d4ef4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -110,6 +115,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Instantiates the vehicle. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>must be a Type* </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="Vehicle_8cpp_source.html#l00003">3</a> of file <a class="el" href="Vehicle_8cpp_source.html">Vehicle.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                 {</div>
@@ -144,6 +157,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Inflicts damage onto another entity. </p>
+<p >Preconditions:</p><ul>
+<li>entity must be an Entity*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Reduces the health of the entity</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>must be an Entity* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
 <p>Implements <a class="el" href="classEntity.html">Entity</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="Vehicle_8cpp_source.html#l00013">13</a> of file <a class="el" href="Vehicle_8cpp_source.html">Vehicle.cpp</a>.</p>
@@ -177,6 +205,21 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Removes health from the vehicle object. </p>
+<p >Preconditions:</p><ul>
+<li>damage must be an int</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Reduces the health of the vehicle object</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">damage</td><td>must be an int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
 <p>Implements <a class="el" href="classEntity.html">Entity</a>.</p>
 

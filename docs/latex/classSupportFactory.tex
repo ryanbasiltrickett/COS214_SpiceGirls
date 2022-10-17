@@ -9,10 +9,12 @@ Inheritance diagram for Support\+Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}{Support\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the support factory. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSupport}{Support}} $\ast$ \mbox{\hyperlink{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a support for the given alliance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current support factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -28,6 +30,10 @@ Definition at line \mbox{\hyperlink{SupportFactory_8h_source_l00004}{4}} of file
 \index{SupportFactory@{SupportFactory}!SupportFactory@{SupportFactory}}
 \doxysubsubsection{\texorpdfstring{SupportFactory()}{SupportFactory()}}
 {\footnotesize\ttfamily Support\+Factory\+::\+Support\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the support factory. 
 
 
 
@@ -52,6 +58,18 @@ Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00003}{3}} of fi
 
 
 
+Instantiates and returns a clone of the current support factory. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current support factory
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ The support factory clone 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classFactory}{Factory}}.
 
 
@@ -72,6 +90,28 @@ Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00013}{13}} of f
 \doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classSupport}{Support}} $\ast$ Support\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Instantiates and returns a support for the given alliance. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the instantiated support object with specific state
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be a Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Support$\ast$ The instatiated support 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classFactory}{Factory}}.

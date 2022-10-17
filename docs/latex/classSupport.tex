@@ -9,8 +9,12 @@ Inheritance diagram for Support\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classSupport_a19bf40018bf3004487c65f7e68c9f65e}{Support}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the support. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{take\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Removes health from the support object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -27,6 +31,15 @@ Definition at line \mbox{\hyperlink{Support_8h_source_l00004}{4}} of file \mbox{
 \doxysubsubsection{\texorpdfstring{Support()}{Support()}}
 {\footnotesize\ttfamily Support\+::\+Support (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Instantiates the support. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{Support_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
@@ -50,6 +63,28 @@ Definition at line \mbox{\hyperlink{Support_8cpp_source_l00003}{3}} of file \mbo
 
 
 
+Inflicts damage onto another entity. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the entity
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
@@ -64,6 +99,38 @@ Definition at line \mbox{\hyperlink{Support_8cpp_source_l00008}{8}} of file \mbo
 \DoxyCodeLine{00011 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classSupport_afb159bd8c474ec67ad5d03fa24c38564}\label{classSupport_afb159bd8c474ec67ad5d03fa24c38564}} 
+\index{Support@{Support}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Support@{Support}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Support\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes health from the support object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the support object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

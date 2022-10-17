@@ -81,15 +81,20 @@ Inheritance diagram for VehicleFactory:</div>
  <div class="center">
   <img src="classVehicleFactory.png" usemap="#VehicleFactory_map" alt=""/>
   <map id="VehicleFactory_map" name="VehicleFactory_map">
-<area href="classFactory.html" alt="Factory" shape="rect" coords="0,0,99,24"/>
+<area href="classFactory.html" title="Factory class." alt="Factory" shape="rect" coords="0,0,99,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ad20e739afc40f61315fb842773df8498"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicleFactory.html#ad20e739afc40f61315fb842773df8498">VehicleFactory</a> ()</td></tr>
+<tr class="memdesc:ad20e739afc40f61315fb842773df8498"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the vehicle factory.  <a href="classVehicleFactory.html#ad20e739afc40f61315fb842773df8498">More...</a><br /></td></tr>
+<tr class="separator:ad20e739afc40f61315fb842773df8498"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36324223b0cd4ee93bb92249cfc639f0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classVehicle.html">Vehicle</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicleFactory.html#a36324223b0cd4ee93bb92249cfc639f0">createEntity</a> (<a class="el" href="classAlliance.html">Alliance</a> *alliance)</td></tr>
+<tr class="memdesc:a36324223b0cd4ee93bb92249cfc639f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a vehicle for the given alliance.  <a href="classVehicleFactory.html#a36324223b0cd4ee93bb92249cfc639f0">More...</a><br /></td></tr>
 <tr class="separator:a36324223b0cd4ee93bb92249cfc639f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d874e37b573b491a49e303209ac42cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFactory.html">Factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classVehicleFactory.html#a6d874e37b573b491a49e303209ac42cd">clone</a> ()</td></tr>
+<tr class="memdesc:a6d874e37b573b491a49e303209ac42cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current vehicle factory.  <a href="classVehicleFactory.html#a6d874e37b573b491a49e303209ac42cd">More...</a><br /></td></tr>
 <tr class="separator:a6d874e37b573b491a49e303209ac42cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -110,6 +115,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Instantiates the vehicle factory. </p>
 
 <p class="definition">Definition at line <a class="el" href="VehicleFactory_8cpp_source.html#l00003">3</a> of file <a class="el" href="VehicleFactory_8cpp_source.html">VehicleFactory.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                               {</div>
@@ -142,6 +149,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiates and returns a clone of the current vehicle factory. </p>
+<p >Postconditions:</p><ul>
+<li>Returns the clone of the current vehicle factory</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>Factory* The vehicle factory clone </dd></dl>
 
 <p>Implements <a class="el" href="classFactory.html">Factory</a>.</p>
 
@@ -176,6 +189,21 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiates and returns a vehicle for the given alliance. </p>
+<p >Preconditions:</p><ul>
+<li>alliance must be an Alliance*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Returns the instantiated vehicle object with specific state</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alliance</td><td>must be a Alliance* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Vehicle* The instatiated vehicle </dd></dl>
 
 <p>Implements <a class="el" href="classFactory.html">Factory</a>.</p>
 

@@ -5,9 +5,15 @@ class Area {
 
 
 public:
+	/**
+	 * @brief Instantiates the area
+	 */
 	Area();
 
-	void ~Area();
+	/**
+	 * @brief Destroys the area object
+	 */
+	virtual void ~Area();
 
 	virtual bool isKeyPoint() = 0;
 

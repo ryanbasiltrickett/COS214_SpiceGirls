@@ -9,10 +9,12 @@ Inheritance diagram for Personal\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classPersonal_a7e1db37eae124dea3841e511efcdee02}{Personal}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the personal. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonal_a328545fe84883222567751fce32a7b18}{take\+Damage}} (int damage)
-\item 
+\begin{DoxyCompactList}\small\item\em Removes health from the personal object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonal_a9f9733d17414ca1ff51482f610884e12}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -29,6 +31,15 @@ Definition at line \mbox{\hyperlink{Personal_8h_source_l00004}{4}} of file \mbox
 \doxysubsubsection{\texorpdfstring{Personal()}{Personal()}}
 {\footnotesize\ttfamily Personal\+::\+Personal (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Instantiates the personal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Personal_8cpp_source}{Personal.\+cpp}}.
@@ -52,6 +63,28 @@ Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00003}{3}} of file \mb
 
 
 
+Inflicts damage onto another entity. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the entity
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
@@ -72,6 +105,28 @@ Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00013}{13}} of file \m
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void Personal\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Removes health from the personal object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the personal object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classEntity}{Entity}}.

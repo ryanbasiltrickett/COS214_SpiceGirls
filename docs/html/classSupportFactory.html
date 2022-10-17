@@ -81,15 +81,20 @@ Inheritance diagram for SupportFactory:</div>
  <div class="center">
   <img src="classSupportFactory.png" usemap="#SupportFactory_map" alt=""/>
   <map id="SupportFactory_map" name="SupportFactory_map">
-<area href="classFactory.html" alt="Factory" shape="rect" coords="0,0,100,24"/>
+<area href="classFactory.html" title="Factory class." alt="Factory" shape="rect" coords="0,0,100,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a9f243fc85549d8da34aa0b7476905466"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupportFactory.html#a9f243fc85549d8da34aa0b7476905466">SupportFactory</a> ()</td></tr>
+<tr class="memdesc:a9f243fc85549d8da34aa0b7476905466"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the support factory.  <a href="classSupportFactory.html#a9f243fc85549d8da34aa0b7476905466">More...</a><br /></td></tr>
+<tr class="separator:a9f243fc85549d8da34aa0b7476905466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae78e2f65e24d2ae2f73032bc465b879b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classSupport.html">Support</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupportFactory.html#ae78e2f65e24d2ae2f73032bc465b879b">createEntity</a> (<a class="el" href="classAlliance.html">Alliance</a> *alliance)</td></tr>
+<tr class="memdesc:ae78e2f65e24d2ae2f73032bc465b879b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a support for the given alliance.  <a href="classSupportFactory.html#ae78e2f65e24d2ae2f73032bc465b879b">More...</a><br /></td></tr>
 <tr class="separator:ae78e2f65e24d2ae2f73032bc465b879b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802c25e901b479656ea95a5678a1ad26"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFactory.html">Factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupportFactory.html#a802c25e901b479656ea95a5678a1ad26">clone</a> ()</td></tr>
+<tr class="memdesc:a802c25e901b479656ea95a5678a1ad26"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current support factory.  <a href="classSupportFactory.html#a802c25e901b479656ea95a5678a1ad26">More...</a><br /></td></tr>
 <tr class="separator:a802c25e901b479656ea95a5678a1ad26"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -110,6 +115,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Instantiates the support factory. </p>
 
 <p class="definition">Definition at line <a class="el" href="SupportFactory_8cpp_source.html#l00003">3</a> of file <a class="el" href="SupportFactory_8cpp_source.html">SupportFactory.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                               {</div>
@@ -142,6 +149,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiates and returns a clone of the current support factory. </p>
+<p >Postconditions:</p><ul>
+<li>Returns the clone of the current support factory</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>Factory* The support factory clone </dd></dl>
 
 <p>Implements <a class="el" href="classFactory.html">Factory</a>.</p>
 
@@ -176,6 +189,21 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiates and returns a support for the given alliance. </p>
+<p >Preconditions:</p><ul>
+<li>alliance must be an Alliance*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Returns the instantiated support object with specific state</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alliance</td><td>must be a Alliance* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Support* The instatiated support </dd></dl>
 
 <p>Implements <a class="el" href="classFactory.html">Factory</a>.</p>
 

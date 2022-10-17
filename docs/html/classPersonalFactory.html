@@ -81,15 +81,20 @@ Inheritance diagram for PersonalFactory:</div>
  <div class="center">
   <img src="classPersonalFactory.png" usemap="#PersonalFactory_map" alt=""/>
   <map id="PersonalFactory_map" name="PersonalFactory_map">
-<area href="classFactory.html" alt="Factory" shape="rect" coords="0,0,106,24"/>
+<area href="classFactory.html" title="Factory class." alt="Factory" shape="rect" coords="0,0,106,24"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a8486995e9dd92e65623c1a91265af8cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonalFactory.html#a8486995e9dd92e65623c1a91265af8cf">PersonalFactory</a> ()</td></tr>
+<tr class="memdesc:a8486995e9dd92e65623c1a91265af8cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the personal factory.  <a href="classPersonalFactory.html#a8486995e9dd92e65623c1a91265af8cf">More...</a><br /></td></tr>
+<tr class="separator:a8486995e9dd92e65623c1a91265af8cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf5f6cc731784eff155c44666beadac9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classPersonal.html">Personal</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonalFactory.html#adf5f6cc731784eff155c44666beadac9">createEntity</a> (<a class="el" href="classAlliance.html">Alliance</a> *alliance)</td></tr>
+<tr class="memdesc:adf5f6cc731784eff155c44666beadac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a personal for the given alliance.  <a href="classPersonalFactory.html#adf5f6cc731784eff155c44666beadac9">More...</a><br /></td></tr>
 <tr class="separator:adf5f6cc731784eff155c44666beadac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a555252a9f84f32f9ef4d5f90d74e53ca"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classFactory.html">Factory</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classPersonalFactory.html#a555252a9f84f32f9ef4d5f90d74e53ca">clone</a> ()</td></tr>
+<tr class="memdesc:a555252a9f84f32f9ef4d5f90d74e53ca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current personal factory.  <a href="classPersonalFactory.html#a555252a9f84f32f9ef4d5f90d74e53ca">More...</a><br /></td></tr>
 <tr class="separator:a555252a9f84f32f9ef4d5f90d74e53ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -110,6 +115,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Instantiates the personal factory. </p>
 
 <p class="definition">Definition at line <a class="el" href="PersonalFactory_8cpp_source.html#l00003">3</a> of file <a class="el" href="PersonalFactory_8cpp_source.html">PersonalFactory.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                                 {</div>
@@ -142,6 +149,12 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiates and returns a clone of the current personal factory. </p>
+<p >Postconditions:</p><ul>
+<li>Returns the clone of the current personal factory</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>Factory* The personal factory clone </dd></dl>
 
 <p>Implements <a class="el" href="classFactory.html">Factory</a>.</p>
 
@@ -176,6 +189,21 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Instantiates and returns a personal for the given alliance. </p>
+<p >Preconditions:</p><ul>
+<li>alliance must be an Alliance*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Returns the instantiated personal object with specific state</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alliance</td><td>must be a Alliance* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Personal* The instatiated personal </dd></dl>
 
 <p>Implements <a class="el" href="classFactory.html">Factory</a>.</p>
 

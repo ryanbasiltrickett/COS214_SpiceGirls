@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['negotiator_0',['Negotiator',['../classNegotiator.html',1,'']]]
+  ['keypoint_0',['KeyPoint',['../classKeyPoint.html',1,'KeyPoint'],['../classKeyPoint.html#a8b4ce35fc2c7101f1135b9c7530f053d',1,'KeyPoint::KeyPoint()']]]
 ];

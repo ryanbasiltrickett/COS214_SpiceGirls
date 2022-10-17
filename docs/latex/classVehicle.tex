@@ -9,10 +9,12 @@ Inheritance diagram for Vehicle\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classVehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the vehicle. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{take\+Damage}} (int damage)
-\item 
+\begin{DoxyCompactList}\small\item\em Removes health from the vehicle object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -29,6 +31,15 @@ Definition at line \mbox{\hyperlink{Vehicle_8h_source_l00004}{4}} of file \mbox{
 \doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}}
 {\footnotesize\ttfamily Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Instantiates the vehicle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
@@ -52,6 +63,28 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00003}{3}} of file \mbo
 
 
 
+Inflicts damage onto another entity. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the entity
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
@@ -72,6 +105,28 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00013}{13}} of file \mb
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void Vehicle\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Removes health from the vehicle object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the vehicle object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classEntity}{Entity}}.

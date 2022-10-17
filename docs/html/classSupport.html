@@ -87,7 +87,14 @@ Inheritance diagram for Support:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a19bf40018bf3004487c65f7e68c9f65e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupport.html#a19bf40018bf3004487c65f7e68c9f65e">Support</a> ()</td></tr>
+<tr class="memdesc:a19bf40018bf3004487c65f7e68c9f65e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the support.  <a href="classSupport.html#a19bf40018bf3004487c65f7e68c9f65e">More...</a><br /></td></tr>
+<tr class="separator:a19bf40018bf3004487c65f7e68c9f65e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb159bd8c474ec67ad5d03fa24c38564"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupport.html#afb159bd8c474ec67ad5d03fa24c38564">takeDamage</a> (int damage)</td></tr>
+<tr class="memdesc:afb159bd8c474ec67ad5d03fa24c38564"><td class="mdescLeft">&#160;</td><td class="mdescRight">Removes health from the support object.  <a href="classSupport.html#afb159bd8c474ec67ad5d03fa24c38564">More...</a><br /></td></tr>
+<tr class="separator:afb159bd8c474ec67ad5d03fa24c38564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f2cb243e746adea36b3c78548029ce3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSupport.html#a5f2cb243e746adea36b3c78548029ce3">dealDamage</a> (<a class="el" href="classEntity.html">Entity</a> *entity)</td></tr>
+<tr class="memdesc:a5f2cb243e746adea36b3c78548029ce3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inflicts damage onto another entity.  <a href="classSupport.html#a5f2cb243e746adea36b3c78548029ce3">More...</a><br /></td></tr>
 <tr class="separator:a5f2cb243e746adea36b3c78548029ce3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -108,6 +115,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Instantiates the support. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>must be a Type* </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="Support_8cpp_source.html#l00003">3</a> of file <a class="el" href="Support_8cpp_source.html">Support.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    3</span>                 {</div>
@@ -142,6 +157,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Inflicts damage onto another entity. </p>
+<p >Preconditions:</p><ul>
+<li>entity must be an Entity*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Reduces the health of the entity</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>must be an Entity* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
 <p>Implements <a class="el" href="classEntity.html">Entity</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="Support_8cpp_source.html#l00008">8</a> of file <a class="el" href="Support_8cpp_source.html">Support.cpp</a>.</p>
@@ -150,6 +180,49 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   10</span>    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Not yet implemented&quot;</span>;</div>
 <div class="line"><span class="lineno">   11</span>}</div>
 </div><!-- fragment -->
+</div>
+</div>
+<a id="afb159bd8c474ec67ad5d03fa24c38564" name="afb159bd8c474ec67ad5d03fa24c38564"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb159bd8c474ec67ad5d03fa24c38564">&#9670;&#160;</a></span>takeDamage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Support::takeDamage </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>damage</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Removes health from the support object. </p>
+<p >Preconditions:</p><ul>
+<li>damage must be an int</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Reduces the health of the support object</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">damage</td><td>must be an int </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Implements <a class="el" href="classEntity.html">Entity</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

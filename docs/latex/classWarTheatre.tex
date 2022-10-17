@@ -9,20 +9,19 @@ Inheritance diagram for War\+Theatre\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classWarTheatre_aeac00db856afa4a7223d265093c7eca2}{War\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the war theatre. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarTheatre_a4be07a7321747894bd035ec130a06c56}{$\sim$\+War\+Theatre}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the war theatre object. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classWarTheatre_a01845ca2cc01367101b2884f2902bf88}{is\+Key\+Point}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns area type. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWarTheatre_a9c1a612347b0da87a0421e37f6b7b12b}{attack}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Attack with troops from the alliance passed in. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWarTheatre_ab26cd475022390aefc1e4c6475e194ac}{move\+Entities}} (\mbox{\hyperlink{classArea}{Area}} $\ast$area, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Moves a specific alliances troops from one area to another. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{add\+Area}} (\mbox{\hyperlink{classArea}{Area}} $\ast$area)
-\item 
+\begin{DoxyCompactList}\small\item\em Adds an area to the war theatre object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classArea}{Area}} $\ast$ \mbox{\hyperlink{classWarTheatre_a501f851edf6f5ad00770414e50505175}{clone}} ()
-\end{DoxyCompactItemize}
-\doxysubsection*{Public Attributes}
-\begin{DoxyCompactItemize}
-\item 
-vector$<$ \mbox{\hyperlink{classArea}{Area}} $\ast$ $>$ \mbox{\hyperlink{classWarTheatre_ab61351df13c353e648b938064a6001d8}{areas}}
 \end{DoxyCompactItemize}
 
 
@@ -42,6 +41,10 @@ Definition at line \mbox{\hyperlink{WarTheatre_8h_source_l00004}{4}} of file \mb
 
 
 
+Instantiates the war theatre. 
+
+
+
 Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{WarTheatre_8cpp_source}{War\+Theatre.\+cpp}}.
 
 
@@ -52,7 +55,20 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00003}{3}} of file \
 \DoxyCodeLine{00006 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classWarTheatre_a4be07a7321747894bd035ec130a06c56}\label{classWarTheatre_a4be07a7321747894bd035ec130a06c56}} 
+\index{WarTheatre@{WarTheatre}!````~WarTheatre@{$\sim$WarTheatre}}
+\index{````~WarTheatre@{$\sim$WarTheatre}!WarTheatre@{WarTheatre}}
+\doxysubsubsection{\texorpdfstring{$\sim$WarTheatre()}{~WarTheatre()}}
+{\footnotesize\ttfamily void War\+Theatre\+::$\sim$\+War\+Theatre (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
+
+
+Destroys the war theatre object. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item All dynamic memory should be deallocated from the war theatre object 
+\end{DoxyItemize}
 
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}\label{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}} 
@@ -61,6 +77,28 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00003}{3}} of file \
 \doxysubsubsection{\texorpdfstring{addArea()}{addArea()}}
 {\footnotesize\ttfamily void War\+Theatre\+::add\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArea}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
 
+
+
+Adds an area to the war theatre object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item area must be an Area$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add area to war theatre object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & must be an Area$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{WarTheatre_8cpp_source}{War\+Theatre.\+cpp}}.
@@ -79,6 +117,28 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00023}{23}} of file 
 \doxysubsubsection{\texorpdfstring{attack()}{attack()}}
 {\footnotesize\ttfamily void War\+Theatre\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Attack with troops from the alliance passed in. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Call attacks function of areas
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be an Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classArea}{Area}}.
@@ -125,6 +185,18 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00028}{28}} of file 
 
 
 
+Returns area type. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns false
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+bool The area type 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
@@ -147,6 +219,32 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00008}{8}} of file \
 
 
 
+Moves a specific alliances troops from one area to another. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item area must be an Area$\ast$
+\end{DoxyItemize}
+
+alliance must be an Alliance$\ast$
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Call move troops function on correct area
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & musy be an Area$\ast$ \\
+\hline
+{\em alliance} & must be an Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
@@ -161,19 +259,6 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00018}{18}} of file 
 \DoxyCodeLine{00021 \}}
 
 \end{DoxyCode}
-
-
-\doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classWarTheatre_ab61351df13c353e648b938064a6001d8}\label{classWarTheatre_ab61351df13c353e648b938064a6001d8}} 
-\index{WarTheatre@{WarTheatre}!areas@{areas}}
-\index{areas@{areas}!WarTheatre@{WarTheatre}}
-\doxysubsubsection{\texorpdfstring{areas}{areas}}
-{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classArea}{Area}}$\ast$$>$ War\+Theatre\+::areas}
-
-
-
-Definition at line \mbox{\hyperlink{WarTheatre_8h_source_l00007}{7}} of file \mbox{\hyperlink{WarTheatre_8h_source}{War\+Theatre.\+h}}.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

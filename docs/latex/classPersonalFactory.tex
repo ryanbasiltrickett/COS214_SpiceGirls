@@ -9,10 +9,12 @@ Inheritance diagram for Personal\+Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classPersonalFactory_a8486995e9dd92e65623c1a91265af8cf}{Personal\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the personal factory. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classPersonal}{Personal}} $\ast$ \mbox{\hyperlink{classPersonalFactory_adf5f6cc731784eff155c44666beadac9}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a personal for the given alliance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classPersonalFactory_a555252a9f84f32f9ef4d5f90d74e53ca}{clone}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current personal factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -28,6 +30,10 @@ Definition at line \mbox{\hyperlink{PersonalFactory_8h_source_l00004}{4}} of fil
 \index{PersonalFactory@{PersonalFactory}!PersonalFactory@{PersonalFactory}}
 \doxysubsubsection{\texorpdfstring{PersonalFactory()}{PersonalFactory()}}
 {\footnotesize\ttfamily Personal\+Factory\+::\+Personal\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the personal factory. 
 
 
 
@@ -52,6 +58,18 @@ Definition at line \mbox{\hyperlink{PersonalFactory_8cpp_source_l00003}{3}} of f
 
 
 
+Instantiates and returns a clone of the current personal factory. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current personal factory
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ The personal factory clone 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classFactory}{Factory}}.
 
 
@@ -72,6 +90,28 @@ Definition at line \mbox{\hyperlink{PersonalFactory_8cpp_source_l00013}{13}} of 
 \doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classPersonal}{Personal}} $\ast$ Personal\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Instantiates and returns a personal for the given alliance. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the instantiated personal object with specific state
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be a Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Personal$\ast$ The instatiated personal 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classFactory}{Factory}}.

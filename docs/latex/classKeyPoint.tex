@@ -9,16 +9,16 @@ Inheritance diagram for Key\+Point\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classKeyPoint_a8b4ce35fc2c7101f1135b9c7530f053d}{Key\+Point}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the key point. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{is\+Key\+Point}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns area type. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_a137026380d2907f880bb4c48b30c2d5e}{attack}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Attack with troops from the alliance passed in. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_a3fc425554378989ba83ebd22f7305f14}{move\+Entities}} (\mbox{\hyperlink{classArea}{Area}} $\ast$area, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Moves a specific alliances troops from one area to another. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{add\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\item 
-void \mbox{\hyperlink{classKeyPoint_a7d17cd6174295baf87b213170bca3da8}{assign\+Com\+Center}} (\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$com\+Center)
-\item 
+\begin{DoxyCompactList}\small\item\em Adds an enitity to the key point object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_a42df3ce6652f1817fc04324ad15a868d}{attach}} (\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$com\+Center)
 \item 
 void \mbox{\hyperlink{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}{detach}} (\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$com\+Center)
@@ -45,6 +45,10 @@ Definition at line \mbox{\hyperlink{KeyPoint_8h_source_l00004}{4}} of file \mbox
 
 
 
+Instantiates the key point. 
+
+
+
 Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
@@ -66,6 +70,28 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00003}{3}} of file \mb
 
 
 
+Adds an enitity to the key point object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add entity to key point
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
@@ -76,24 +102,6 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00023}{23}} of file \m
 \DoxyCodeLine{00026 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classKeyPoint_a7d17cd6174295baf87b213170bca3da8}\label{classKeyPoint_a7d17cd6174295baf87b213170bca3da8}} 
-\index{KeyPoint@{KeyPoint}!assignComCenter@{assignComCenter}}
-\index{assignComCenter@{assignComCenter}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{assignComCenter()}{assignComCenter()}}
-{\footnotesize\ttfamily void Key\+Point\+::assign\+Com\+Center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$}]{com\+Center }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00028                                                        \{}
-\DoxyCodeLine{00029     \textcolor{comment}{// TODO -\/ implement KeyPoint::assignComCenter}}
-\DoxyCodeLine{00030     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00031 \}}
-
-\end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a42df3ce6652f1817fc04324ad15a868d}\label{classKeyPoint_a42df3ce6652f1817fc04324ad15a868d}} 
 \index{KeyPoint@{KeyPoint}!attach@{attach}}
 \index{attach@{attach}!KeyPoint@{KeyPoint}}
@@ -102,14 +110,14 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00028}{28}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00033                                               \{}
-\DoxyCodeLine{00034     \textcolor{comment}{// TODO -\/ implement KeyPoint::attach}}
-\DoxyCodeLine{00035     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00036 \}}
+\DoxyCodeLine{00028                                               \{}
+\DoxyCodeLine{00029     \textcolor{comment}{// TODO -\/ implement KeyPoint::attach}}
+\DoxyCodeLine{00030     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{00031 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a137026380d2907f880bb4c48b30c2d5e}\label{classKeyPoint_a137026380d2907f880bb4c48b30c2d5e}} 
@@ -118,6 +126,28 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00033}{33}} of file \m
 \doxysubsubsection{\texorpdfstring{attack()}{attack()}}
 {\footnotesize\ttfamily void Key\+Point\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Attack with troops from the alliance passed in. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Perform attacks on other alliance troops
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be an Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classArea}{Area}}.
@@ -146,14 +176,14 @@ Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00048                       \{}
-\DoxyCodeLine{00049     \textcolor{comment}{// TODO -\/ implement KeyPoint::clone}}
-\DoxyCodeLine{00050     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00051 \}}
+\DoxyCodeLine{00043                       \{}
+\DoxyCodeLine{00044     \textcolor{comment}{// TODO -\/ implement KeyPoint::clone}}
+\DoxyCodeLine{00045     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{00046 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}\label{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}} 
@@ -164,14 +194,14 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00048}{48}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00038                                               \{}
-\DoxyCodeLine{00039     \textcolor{comment}{// TODO -\/ implement KeyPoint::detach}}
-\DoxyCodeLine{00040     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00041 \}}
+\DoxyCodeLine{00033                                               \{}
+\DoxyCodeLine{00034     \textcolor{comment}{// TODO -\/ implement KeyPoint::detach}}
+\DoxyCodeLine{00035     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{00036 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a1beb436d8efa973f3dc290a722727961}\label{classKeyPoint_a1beb436d8efa973f3dc290a722727961}} 
@@ -180,6 +210,18 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00038}{38}} of file \m
 \doxysubsubsection{\texorpdfstring{isKeyPoint()}{isKeyPoint()}}
 {\footnotesize\ttfamily bool Key\+Point\+::is\+Key\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Returns area type. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns true
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+bool The area type 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classArea}{Area}}.
@@ -204,6 +246,32 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00008}{8}} of file \mb
 
 
 
+Moves a specific alliances troops from one area to another. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item area must be an Area$\ast$
+\end{DoxyItemize}
+
+alliance must be an Alliance$\ast$
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Move troops to other area
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em area} & musy be an Area$\ast$ \\
+\hline
+{\em alliance} & must be an Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
@@ -226,14 +294,14 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00018}{18}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00043                       \{}
-\DoxyCodeLine{00044     \textcolor{comment}{// TODO -\/ implement KeyPoint::notify}}
-\DoxyCodeLine{00045     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00046 \}}
+\DoxyCodeLine{00038                       \{}
+\DoxyCodeLine{00039     \textcolor{comment}{// TODO -\/ implement KeyPoint::notify}}
+\DoxyCodeLine{00040     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{00041 \}}
 
 \end{DoxyCode}
 

@@ -9,10 +9,12 @@ Inheritance diagram for Vehicle\+Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classVehicleFactory_ad20e739afc40f61315fb842773df8498}{Vehicle\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the vehicle factory. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classVehicle}{Vehicle}} $\ast$ \mbox{\hyperlink{classVehicleFactory_a36324223b0cd4ee93bb92249cfc639f0}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a vehicle for the given alliance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current vehicle factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -28,6 +30,10 @@ Definition at line \mbox{\hyperlink{VehicleFactory_8h_source_l00004}{4}} of file
 \index{VehicleFactory@{VehicleFactory}!VehicleFactory@{VehicleFactory}}
 \doxysubsubsection{\texorpdfstring{VehicleFactory()}{VehicleFactory()}}
 {\footnotesize\ttfamily Vehicle\+Factory\+::\+Vehicle\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the vehicle factory. 
 
 
 
@@ -52,6 +58,18 @@ Definition at line \mbox{\hyperlink{VehicleFactory_8cpp_source_l00003}{3}} of fi
 
 
 
+Instantiates and returns a clone of the current vehicle factory. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current vehicle factory
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ The vehicle factory clone 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classFactory}{Factory}}.
 
 
@@ -72,6 +90,28 @@ Definition at line \mbox{\hyperlink{VehicleFactory_8cpp_source_l00013}{13}} of f
 \doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classVehicle}{Vehicle}} $\ast$ Vehicle\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Instantiates and returns a vehicle for the given alliance. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the instantiated vehicle object with specific state
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be a Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vehicle$\ast$ The instatiated vehicle 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classFactory}{Factory}}.
