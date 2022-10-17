@@ -1,15 +1,24 @@
 #ifndef AQUATICTYPE_H
 #define AQUATICTYPE_H
-#include "Type.h"
-#include <string>
 
-class AquaticType : public Type {
+class AquaticType : Type {
 
 
 public:
+	/**
+	 * @brief Instantiates the aquatic type
+	 */
 	AquaticType();
 
-	std::string getTypeDesc();
+	/**
+	 * @brief Returns aquatic type description
+	 *
+	 * Postconditions:
+	 *  - Returns the aquatic type
+	 *
+	 * @return string The aquatic type string
+	 */
+	string getTypeDesc();
 };
 
 #endif

@@ -5,6 +5,9 @@ class SupportFactory : Factory {
 
 
 public:
+	/**
+	 * @brief Instantiates the support factory
+	 */
 	SupportFactory();
 
 	/**
@@ -22,12 +25,12 @@ public:
 	Support* createEntity(Alliance* alliance);
 
 	/**
-	 * @brief Instantiates and returns a clone of the current Support factory
+	 * @brief Instantiates and returns a clone of the current support factory
 	 *
 	 * Postconditions:
-	 *  - Returns the clone of the current Support factory
+	 *  - Returns the clone of the current support factory
 	 *
-	 * @return Factory* The Support factory clone
+	 * @return Factory* The support factory clone
 	 */
 	Factory* clone();
 };

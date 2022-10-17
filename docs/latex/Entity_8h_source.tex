@@ -1,0 +1,36 @@
+\hypertarget{Entity_8h_source}{}\doxysection{Entity.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef ENTITY\_H}}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00002}00002 \textcolor{preprocessor}{\#define ENTITY\_H}}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00004}\mbox{\hyperlink{classEntity}{00004}} \textcolor{keyword}{class }\mbox{\hyperlink{classEntity}{Entity}} \{}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00006}00006 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00007}00007     \mbox{\hyperlink{classType}{Type}}* type;}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00008}00008     \mbox{\hyperlink{classAlliance}{Alliance}}* alliance;}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00009}00009     \textcolor{keywordtype}{int} health;}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00011}00011 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00017}00017     \mbox{\hyperlink{classEntity}{Entity}}(\mbox{\hyperlink{classType}{Type}}* type);}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00027}00027     \mbox{\hyperlink{classType}{Type}}* \mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}();}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00041}00041     \textcolor{keywordtype}{void} \mbox{\hyperlink{classEntity_a5d04ce64c9ca214900422865e298e36c}{setType}}(\mbox{\hyperlink{classType}{Type}}* type);}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00051}00051     \mbox{\hyperlink{classAlliance}{Alliance}}* \mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}();}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00065}00065     \textcolor{keywordtype}{void} \mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance);}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00075}00075     \textcolor{keywordtype}{int} \mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}();}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00089}00089     \textcolor{keywordtype}{void} \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\textcolor{keywordtype}{int} health);}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00091}00091     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} takeDamage(\textcolor{keywordtype}{int} damage) = 0;}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00093}00093     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} dealDamage(\mbox{\hyperlink{classEntity}{Entity}}* entity) = 0;}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00094}00094 \};}
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00095}00095 }
+\DoxyCodeLine{\Hypertarget{Entity_8h_source_l00096}00096 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

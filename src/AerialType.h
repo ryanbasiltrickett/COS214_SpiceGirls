@@ -1,15 +1,24 @@
 #ifndef AERIALTYPE_H
 #define AERIALTYPE_H
-#include "Type.h"
-#include <string>
 
-class AerialType : public Type {
+class AerialType : Type {
 
 
 public:
+	/**
+	 * @brief Instantiates the ariel type
+	 */
 	AerialType();
 
-	std::string getTypeDesc();
+	/**
+	 * @brief Returns ariel type description
+	 *
+	 * Postconditions:
+	 *  - Returns the ariel type
+	 *
+	 * @return string The ariel type string
+	 */
+	string getTypeDesc();
 };
 
 #endif
