@@ -1,36 +1,36 @@
-#ifndef PERSONALFACTORY_H
-#define PERSONALFACTORY_H
+#ifndef PERSONNELFACTORY_H
+#define PERSONNELFACTORY_H
 
-class PersonalFactory : Factory {
+class PersonnelFactory : Factory {
 
 
 public:
 	/**
-	 * @brief Instantiates the personal factory
+	 * @brief Instantiates the Personnel factory
 	 */
-	PersonalFactory();
+	PersonnelFactory();
 
 	/**
-	 * @brief Instantiates and returns a personal for the given alliance
+	 * @brief Instantiates and returns a Personnel for the given alliance
 	 *
 	 * Preconditions:
 	 *  - alliance must be an Alliance*
 	 *
 	 * Postconditions:
-	 *  - Returns the instantiated personal object with specific state
+	 *  - Returns the instantiated Personnel object with specific state
 	 *
 	 * @param alliance must be a Alliance*
-	 * @return Personal* The instatiated personal
+	 * @return Personnel* The instatiated personal
 	 */
-	Personal* createEntity(Alliance* alliance);
+	Personnel* createEntity(Alliance* alliance);
 
 	/**
-	 * @brief Instantiates and returns a clone of the current personal factory
+	 * @brief Instantiates and returns a clone of the current Personnel factory
 	 *
 	 * Postconditions:
-	 *  - Returns the clone of the current personal factory
+	 *  - Returns the clone of the current Personnel factory
 	 *
-	 * @return Factory* The personal factory clone
+	 * @return Factory* The Personnel factory clone
 	 */
 	Factory* clone();
 };
