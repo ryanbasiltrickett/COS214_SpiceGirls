@@ -5,9 +5,15 @@ class Weather {
 
 
 public:
+	/**
+	 * @brief Instantiates the Weather object
+	 */
 	Weather();
 
-	void ~Weather();
+	/**
+	 * @brief Destructor for the Weather object
+	 */
+	~Weather();
 
 	virtual void handleChange(KeyPoint* k) = 0;
 

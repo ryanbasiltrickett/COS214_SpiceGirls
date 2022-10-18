@@ -8,8 +8,19 @@ private:
 	int id;
 
 public:
+	/**
+	 * @brief Instantiates the Country
+	 */
 	Country();
 
+	/**
+	 * @brief Instantiates and returns a clone of the current Country
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current Country
+	 *
+	 * @return Country* The country clone
+	 */
 	Country* clone();
 };
 
