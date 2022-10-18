@@ -111,6 +111,14 @@ public:
 	 */
 	void notify();
 
+	/**
+	 * @brief Instantiates and returns a clone of the current Keypoint
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current Keypoint
+	 *
+	 * @return Area* The Keypoint clone
+	 */
 	Area* clone();
 };
 
