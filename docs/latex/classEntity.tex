@@ -1,5 +1,14 @@
 \hypertarget{classEntity}{}\doxysection{Entity Class Reference}
 \label{classEntity}\index{Entity@{Entity}}
+
+
+\mbox{\hyperlink{classEntity}{Entity}} class.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
 Inheritance diagram for Entity\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -23,16 +32,20 @@ int \mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{get\+Health}
 \begin{DoxyCompactList}\small\item\em Returns entities health. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{set\+Health}} (int health)
 \begin{DoxyCompactList}\small\item\em Sets the entities health. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{take\+Damage}} (int damage)=0
+\mbox{\Hypertarget{classEntity_a9cc5a2246a5580ceed0f081c18211e53}\label{classEntity_a9cc5a2246a5580ceed0f081c18211e53}} 
+virtual void {\bfseries take\+Damage} (int damage)=0
 \item 
-virtual void \mbox{\hyperlink{classEntity_aff881f545fc88b2c328ff559a99c7fba}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)=0
+\mbox{\Hypertarget{classEntity_aff881f545fc88b2c328ff559a99c7fba}\label{classEntity_aff881f545fc88b2c328ff559a99c7fba}} 
+virtual void {\bfseries deal\+Damage} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)=0
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEntity}{Entity}} class. 
 
+Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
 
-Definition at line \mbox{\hyperlink{Entity_8h_source_l00004}{4}} of file \mbox{\hyperlink{Entity_8h_source}{Entity.\+h}}.
+Definition at line 9 of file Entity.\+h.
 
 
 
@@ -54,29 +67,19 @@ Instantiates the entity.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 3 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003                          \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement Entity::Entity}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
+\DoxyCodeLine{3                          \{}
+\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement Entity::Entity}}
+\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{6 \}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classEntity_aff881f545fc88b2c328ff559a99c7fba}\label{classEntity_aff881f545fc88b2c328ff559a99c7fba}} 
-\index{Entity@{Entity}!dealDamage@{dealDamage}}
-\index{dealDamage@{dealDamage}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
-{\footnotesize\ttfamily virtual void Entity\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implemented in \mbox{\hyperlink{classPersonal_a9f9733d17414ca1ff51482f610884e12}{Personal}}, \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{Support}}, and \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{Vehicle}}.
-
 \mbox{\Hypertarget{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}\label{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}} 
 \index{Entity@{Entity}!getAlliance@{getAlliance}}
 \index{getAlliance@{getAlliance}!Entity@{Entity}}
@@ -97,13 +100,13 @@ Type$\ast$ The alliance of the entity object
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 16 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00016                               \{}
-\DoxyCodeLine{00017     \textcolor{keywordflow}{return} this-\/>alliance;}
-\DoxyCodeLine{00018 \}}
+\DoxyCodeLine{16                               \{}
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} this-\/>alliance;}
+\DoxyCodeLine{18 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}\label{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}} 
@@ -126,13 +129,13 @@ int The health of the entity object
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 24 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00024                       \{}
-\DoxyCodeLine{00025     \textcolor{keywordflow}{return} this-\/>health;}
-\DoxyCodeLine{00026 \}}
+\DoxyCodeLine{24                       \{}
+\DoxyCodeLine{25     \textcolor{keywordflow}{return} this-\/>health;}
+\DoxyCodeLine{26 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}\label{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}} 
@@ -155,13 +158,13 @@ Type$\ast$ The type state of the entity object
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 8 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                       \{}
-\DoxyCodeLine{00009     \textcolor{keywordflow}{return} this-\/>type;}
-\DoxyCodeLine{00010 \}}
+\DoxyCodeLine{8                       \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{return} this-\/>type;}
+\DoxyCodeLine{10 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_af804dcaa600e770cf0e2b4537f6fba23}\label{classEntity_af804dcaa600e770cf0e2b4537f6fba23}} 
@@ -194,13 +197,13 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 20 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00020                                            \{}
-\DoxyCodeLine{00021     this-\/>alliance = alliance;}
-\DoxyCodeLine{00022 \}}
+\DoxyCodeLine{20                                            \{}
+\DoxyCodeLine{21     this-\/>alliance = alliance;}
+\DoxyCodeLine{22 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a7dae281ff92be9bc98672cafe05c77ab}\label{classEntity_a7dae281ff92be9bc98672cafe05c77ab}} 
@@ -233,13 +236,13 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 28 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00028                                  \{}
-\DoxyCodeLine{00029     this-\/>health = health;}
-\DoxyCodeLine{00030 \}}
+\DoxyCodeLine{28                                  \{}
+\DoxyCodeLine{29     this-\/>health = health;}
+\DoxyCodeLine{30 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a5d04ce64c9ca214900422865e298e36c}\label{classEntity_a5d04ce64c9ca214900422865e298e36c}} 
@@ -272,25 +275,15 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Definition at line 12 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00012                                \{}
-\DoxyCodeLine{00013     this-\/>type = type;}
-\DoxyCodeLine{00014 \}}
+\DoxyCodeLine{12                                \{}
+\DoxyCodeLine{13     this-\/>type = type;}
+\DoxyCodeLine{14 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classEntity_a9cc5a2246a5580ceed0f081c18211e53}\label{classEntity_a9cc5a2246a5580ceed0f081c18211e53}} 
-\index{Entity@{Entity}!takeDamage@{takeDamage}}
-\index{takeDamage@{takeDamage}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
-{\footnotesize\ttfamily virtual void Entity\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Implemented in \mbox{\hyperlink{classPersonal_a328545fe84883222567751fce32a7b18}{Personal}}, \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{Support}}, and \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{Vehicle}}.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
