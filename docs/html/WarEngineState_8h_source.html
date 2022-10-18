@@ -68,29 +68,36 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WARENGINESTATE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WARENGINESTATE_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classWarEngineState.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWarEngineState.html">WarEngineState</a> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Alliance.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;Area.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    vector&lt;Area*&gt; areas;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    vector&lt;Alliance*&gt; playerOneAlliance;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classWarEngineState.html">WarEngineState</a>();</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">void</span> setAreas();</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classWarEngineState.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWarEngineState.html">WarEngineState</a> {</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classArea.html">Area</a>* getAreas();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> setAlliances(vector&lt;Alliance*&gt; alliances);</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    vector&lt;Area*&gt; areas;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    vector&lt;Alliance*&gt; alliances;</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    vector&lt;Alliance*&gt; getAlliances();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;};</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classWarEngineState.html#a78b3ab46445c7abc7797531004cd6d67">WarEngineState</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWarEngineState.html#a7ff8b11627111343811b454f695c1dce">setAreas</a>(vector&lt;Area*&gt; areaVect);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    vector&lt;Area*&gt; <a class="code" href="classWarEngineState.html#a9f6f2aef902096c80a0014ff5466915c">getAreas</a>();</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWarEngineState.html#a262f8e5974144a644a24ca4edc949562">setAlliances</a>(vector&lt;Alliance*&gt; alliances);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    vector&lt;Alliance*&gt; <a class="code" href="classWarEngineState.html#aa88851d165886c80521e93c2d74338d5">getAlliances</a>();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassWarEngineState_html"><div class="ttname"><a href="classWarEngineState.html">WarEngineState</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8h_source.html#l00004">WarEngineState.h:4</a></div></div>
-<div class="ttc" id="aclassArea_html"><div class="ttname"><a href="classArea.html">Area</a></div><div class="ttdef"><b>Definition:</b> <a href="Area_8h_source.html#l00004">Area.h:4</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html_a78b3ab46445c7abc7797531004cd6d67"><div class="ttname"><a href="classWarEngineState.html#a78b3ab46445c7abc7797531004cd6d67">WarEngineState::WarEngineState</a></div><div class="ttdeci">WarEngineState()</div><div class="ttdoc">Initializes an instance of the WarEngineState class.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8cpp_source.html#l00003">WarEngineState.cpp:3</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html_a7ff8b11627111343811b454f695c1dce"><div class="ttname"><a href="classWarEngineState.html#a7ff8b11627111343811b454f695c1dce">WarEngineState::setAreas</a></div><div class="ttdeci">void setAreas(vector&lt; Area * &gt; areaVect)</div><div class="ttdoc">Takes in a vector of Area and sets it to the areas member of the WarEngineState instance.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8cpp_source.html#l00008">WarEngineState.cpp:8</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html_a9f6f2aef902096c80a0014ff5466915c"><div class="ttname"><a href="classWarEngineState.html#a9f6f2aef902096c80a0014ff5466915c">WarEngineState::getAreas</a></div><div class="ttdeci">vector&lt; Area * &gt; getAreas()</div><div class="ttdoc">Returns the member variable areas.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8cpp_source.html#l00012">WarEngineState.cpp:12</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html"><div class="ttname"><a href="classWarEngineState.html">WarEngineState</a></div><div class="ttdoc">Class for storing current state of entire simulation.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8h_source.html#l00012">WarEngineState.h:12</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html_aa88851d165886c80521e93c2d74338d5"><div class="ttname"><a href="classWarEngineState.html#aa88851d165886c80521e93c2d74338d5">WarEngineState::getAlliances</a></div><div class="ttdeci">vector&lt; Alliance * &gt; getAlliances()</div><div class="ttdoc">Returns the alliances member variable.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8cpp_source.html#l00024">WarEngineState.cpp:24</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html_a262f8e5974144a644a24ca4edc949562"><div class="ttname"><a href="classWarEngineState.html#a262f8e5974144a644a24ca4edc949562">WarEngineState::setAlliances</a></div><div class="ttdeci">void setAlliances(vector&lt; Alliance * &gt; alliances)</div><div class="ttdoc">Sets the given vector of Alliance object pointers to the alliances member variable.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8cpp_source.html#l00020">WarEngineState.cpp:20</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

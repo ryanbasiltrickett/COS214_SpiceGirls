@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['vehicle_133',['Vehicle',['../classVehicle.html#abaad8187d9f2ede4fb8ea18de0a6764c',1,'Vehicle']]],
-  ['vehiclefactory_134',['VehicleFactory',['../classVehicleFactory.html#ad20e739afc40f61315fb842773df8498',1,'VehicleFactory']]]
+  ['rainy_162',['Rainy',['../classRainy.html#aae3bc68f19aacf2a863e9524b0b3e302',1,'Rainy']]],
+  ['removealliance_163',['removeAlliance',['../classNegotiator.html#a6f738ecfc7adc21b0f553d21c61d2918',1,'Negotiator']]]
 ];

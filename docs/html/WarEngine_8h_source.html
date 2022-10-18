@@ -69,31 +69,32 @@ $(function() {
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef WARENGINE_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define WARENGINE_H</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classWarEngine.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWarEngine.html">WarEngine</a> {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keyword">static</span> <a class="code" href="classWarEngine.html">WarEngine</a>* uniqueInstance;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="classWarEngineState.html">WarEngineState</a>* state;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keywordtype">boolean</span> gameOver;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classArea.html">Area</a>* currentWarTheatre;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    vector&lt;Alliance*&gt; alliances;</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classWarEngine.html">WarEngine</a>();</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classWarEngine.html">WarEngine</a>(<span class="keywordtype">int</span>&amp; warEngine);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classWarEngineMemento.html">WarEngineMemento</a> saveState();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">void</span> loadState(<a class="code" href="classWarEngineState.html">WarEngineState</a> save);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;};</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="classWarEngine.html">    8</a></span>&#160;<span class="keyword">class </span><a class="code" href="classWarEngine.html">WarEngine</a> {</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <span class="keyword">static</span> <a class="code" href="classWarEngine.html">WarEngine</a>* uniqueInstance;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classWarEngineState.html">WarEngineState</a>* state;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">boolean</span> gameOver;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classArea.html">Area</a>* currentWarTheatre;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    vector&lt;Alliance*&gt; alliances;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classWarEngine.html#a3c95a6990a6eabd99f1ea0ade30f85f2">WarEngine</a>();</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classWarEngine.html#a3c95a6990a6eabd99f1ea0ade30f85f2">WarEngine</a>(<span class="keywordtype">int</span>&amp; warEngine);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classWarEngineMemento.html">WarEngineMemento</a> <a class="code" href="classWarEngine.html#a3ce98b4a76487348a712a4ffb54a71f2">saveState</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classWarEngine.html#a76994dd9d009fff3dd272a87710bfae5">loadState</a>(<a class="code" href="classWarEngineState.html">WarEngineState</a> save);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassWarEngine_html"><div class="ttname"><a href="classWarEngine.html">WarEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngine_8h_source.html#l00004">WarEngine.h:4</a></div></div>
-<div class="ttc" id="aclassWarEngineState_html"><div class="ttname"><a href="classWarEngineState.html">WarEngineState</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8h_source.html#l00004">WarEngineState.h:4</a></div></div>
+<div class="ttc" id="aclassWarEngine_html"><div class="ttname"><a href="classWarEngine.html">WarEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngine_8h_source.html#l00008">WarEngine.h:8</a></div></div>
+<div class="ttc" id="aclassWarEngine_html_a3ce98b4a76487348a712a4ffb54a71f2"><div class="ttname"><a href="classWarEngine.html#a3ce98b4a76487348a712a4ffb54a71f2">WarEngine::saveState</a></div><div class="ttdeci">WarEngineMemento saveState()</div><div class="ttdoc">Captures current state of simulation via member variables and creates WarEngineMemento instance stori...</div><div class="ttdef"><b>Definition:</b> <a href="WarEngine_8cpp_source.html#l00013">WarEngine.cpp:13</a></div></div>
+<div class="ttc" id="aclassWarEngine_html_a76994dd9d009fff3dd272a87710bfae5"><div class="ttname"><a href="classWarEngine.html#a76994dd9d009fff3dd272a87710bfae5">WarEngine::loadState</a></div><div class="ttdeci">void loadState(WarEngineState save)</div><div class="ttdoc">Takes in an instance of saved WarEngine states and sets current instance's member variables to mement...</div><div class="ttdef"><b>Definition:</b> <a href="WarEngine_8cpp_source.html#l00018">WarEngine.cpp:18</a></div></div>
+<div class="ttc" id="aclassWarEngineState_html"><div class="ttname"><a href="classWarEngineState.html">WarEngineState</a></div><div class="ttdoc">Class for storing current state of entire simulation.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngineState_8h_source.html#l00012">WarEngineState.h:12</a></div></div>
 <div class="ttc" id="aclassWarEngineMemento_html"><div class="ttname"><a href="classWarEngineMemento.html">WarEngineMemento</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngineMemento_8h_source.html#l00004">WarEngineMemento.h:4</a></div></div>
+<div class="ttc" id="aclassWarEngine_html_a3c95a6990a6eabd99f1ea0ade30f85f2"><div class="ttname"><a href="classWarEngine.html#a3c95a6990a6eabd99f1ea0ade30f85f2">WarEngine::WarEngine</a></div><div class="ttdeci">WarEngine()</div><div class="ttdoc">Constructor for class. Is responsible for ensuring only a single instance of class exists.</div><div class="ttdef"><b>Definition:</b> <a href="WarEngine_8cpp_source.html#l00003">WarEngine.cpp:3</a></div></div>
 <div class="ttc" id="aclassArea_html"><div class="ttname"><a href="classArea.html">Area</a></div><div class="ttdef"><b>Definition:</b> <a href="Area_8h_source.html#l00004">Area.h:4</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

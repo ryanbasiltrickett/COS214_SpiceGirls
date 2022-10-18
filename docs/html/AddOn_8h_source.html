@@ -68,24 +68,25 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef ADDON_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define ADDON_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classAddOn.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAddOn.html">AddOn</a> : <a class="code" href="classEntity.html">Entity</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">int</span> value;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classEntity.html">Entity</a>* entity;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classAddOn.html#abb1bfa4bf3040a25a5933ad956c165c9">AddOn</a>(<a class="code" href="classEntity.html">Entity</a>* entity, <span class="keywordtype">int</span> value);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> takeDamage(<span class="keywordtype">int</span> damage) = 0;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> dealDamage(<a class="code" href="classEntity.html">Entity</a>* entity) = 0;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Entity.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="classAddOn.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="classAddOn.html">AddOn</a> : <a class="code" href="classEntity.html">Entity</a> {</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">int</span> value;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classEntity.html">Entity</a>* entity;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classAddOn.html#abb1bfa4bf3040a25a5933ad956c165c9">AddOn</a>(<a class="code" href="classEntity.html">Entity</a>* entity, <span class="keywordtype">int</span> value);</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> takeDamage(<span class="keywordtype">int</span> damage) = 0;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> dealDamage(<a class="code" href="classEntity.html">Entity</a>* entity) = 0;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;};</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassAddOn_html"><div class="ttname"><a href="classAddOn.html">AddOn</a></div><div class="ttdoc">AddOn class.</div><div class="ttdef"><b>Definition:</b> <a href="AddOn_8h_source.html#l00009">AddOn.h:9</a></div></div>
+<div class="ttc" id="aclassAddOn_html"><div class="ttname"><a href="classAddOn.html">AddOn</a></div><div class="ttdoc">AddOn class.</div><div class="ttdef"><b>Definition:</b> <a href="AddOn_8h_source.html#l00010">AddOn.h:10</a></div></div>
 <div class="ttc" id="aclassAddOn_html_abb1bfa4bf3040a25a5933ad956c165c9"><div class="ttname"><a href="classAddOn.html#abb1bfa4bf3040a25a5933ad956c165c9">AddOn::AddOn</a></div><div class="ttdeci">AddOn(Entity *entity, int value)</div><div class="ttdoc">Instantiates an AddOn.</div><div class="ttdef"><b>Definition:</b> <a href="AddOn_8cpp_source.html#l00003">AddOn.cpp:3</a></div></div>
 <div class="ttc" id="aclassEntity_html"><div class="ttname"><a href="classEntity.html">Entity</a></div><div class="ttdoc">Entity class.</div><div class="ttdef"><b>Definition:</b> <a href="Entity_8h_source.html#l00009">Entity.h:9</a></div></div>
 <!-- start footer part -->

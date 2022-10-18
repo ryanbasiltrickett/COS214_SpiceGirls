@@ -35,9 +35,8 @@ void \mbox{\hyperlink{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}{detach}} 
 \begin{DoxyCompactList}\small\item\em Removes command centers from the com\+Centers vector. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_a5b21817babe753b2b684d70479f3eaf2}{notify}} ()
 \begin{DoxyCompactList}\small\item\em Notifies the attached command centers when a change in the Keypoint\textquotesingle{}s state (entities or weather) occurs. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}\label{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}} 
-\mbox{\hyperlink{classArea}{Area}} $\ast$ {\bfseries clone} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classArea}{Area}} $\ast$ \mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -172,6 +171,40 @@ Definition at line 13 of file Key\+Point.\+cpp.
 \DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement KeyPoint::attack}}
 \DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
 \DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}\label{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}} 
+\index{KeyPoint@{KeyPoint}!clone@{clone}}
+\index{clone@{clone}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classArea}{Area}} $\ast$ Key\+Point\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Instantiates and returns a clone of the current Keypoint. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current Keypoint
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Area$\ast$ The Keypoint clone 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classArea}{Area}}.
+
+
+
+Definition at line 43 of file Key\+Point.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43                       \{}
+\DoxyCodeLine{44     \textcolor{comment}{// TODO -\/ implement KeyPoint::clone}}
+\DoxyCodeLine{45     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{46 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}\label{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}} 

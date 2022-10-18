@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keypoint_117',['KeyPoint',['../classKeyPoint.html#a8b4ce35fc2c7101f1135b9c7530f053d',1,'KeyPoint']]]
+  ['iskeypoint_151',['isKeyPoint',['../classKeyPoint.html#a1beb436d8efa973f3dc290a722727961',1,'KeyPoint::isKeyPoint()'],['../classWarTheatre.html#a01845ca2cc01367101b2884f2902bf88',1,'WarTheatre::isKeyPoint()']]]
 ];

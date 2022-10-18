@@ -1,0 +1,114 @@
+\hypertarget{classPersonnel}{}\doxysection{Personnel Class Reference}
+\label{classPersonnel}\index{Personnel@{Personnel}}
+Inheritance diagram for Personnel\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPersonnel}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPersonnel_a96840b35bd30d6010480a32cd296068b}{Personnel}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classPersonnel}{Personnel}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{take\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Removes health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line 4 of file Personnel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersonnel_a96840b35bd30d6010480a32cd296068b}\label{classPersonnel_a96840b35bd30d6010480a32cd296068b}} 
+\index{Personnel@{Personnel}!Personnel@{Personnel}}
+\index{Personnel@{Personnel}!Personnel@{Personnel}}
+\doxysubsubsection{\texorpdfstring{Personnel()}{Personnel()}}
+{\footnotesize\ttfamily Personnel\+::\+Personnel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the \mbox{\hyperlink{classPersonnel}{Personnel}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}\label{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}} 
+\index{Personnel@{Personnel}!dealDamage@{dealDamage}}
+\index{dealDamage@{dealDamage}!Personnel@{Personnel}}
+\doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
+{\footnotesize\ttfamily void Personnel\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Inflicts damage onto another entity. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the entity
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
+
+\mbox{\Hypertarget{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}\label{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}} 
+\index{Personnel@{Personnel}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Personnel@{Personnel}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily void Personnel\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the \mbox{\hyperlink{classPersonnel}{Personnel}} object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Personnel.\+h\end{DoxyCompactItemize}

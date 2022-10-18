@@ -68,20 +68,35 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef STRATEGY_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define STRATEGY_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classStrategy.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStrategy.html">Strategy</a> : <a class="code" href="classGeneral.html">General</a> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;KeyPoint.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="classStrategy.html">Strategy</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> performStrat(Keypoint* keyPoint) = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classStrategy.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classStrategy.html">Strategy</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    std::string strategy;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235">Strategy</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775">~Strategy</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classStrategy.html#ada170bd47bc6f11ac02d7df2b366387b">performStrat</a>(<a class="code" href="classKeyPoint.html">KeyPoint</a>* keyPoint) = 0;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classStrategy.html#a35c4bbd2d37efaf24e21b7a0e82b4c96">setStrategy</a>(std::string strategy);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="classStrategy.html">Strategy</a>* <a class="code" href="classStrategy.html#a4e5f4c986d744911085fcf67acbada22">getStrategy</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassGeneral_html"><div class="ttname"><a href="classGeneral.html">General</a></div><div class="ttdef"><b>Definition:</b> <a href="General_8h_source.html#l00004">General.h:4</a></div></div>
-<div class="ttc" id="aclassStrategy_html"><div class="ttname"><a href="classStrategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8h_source.html#l00004">Strategy.h:4</a></div></div>
+<div class="ttc" id="aclassKeyPoint_html"><div class="ttname"><a href="classKeyPoint.html">KeyPoint</a></div><div class="ttdoc">Keypoint class.</div><div class="ttdef"><b>Definition:</b> <a href="KeyPoint_8h_source.html#l00009">KeyPoint.h:9</a></div></div>
+<div class="ttc" id="aclassStrategy_html_ada170bd47bc6f11ac02d7df2b366387b"><div class="ttname"><a href="classStrategy.html#ada170bd47bc6f11ac02d7df2b366387b">Strategy::performStrat</a></div><div class="ttdeci">virtual void performStrat(KeyPoint *keyPoint)=0</div><div class="ttdoc">This function will perform an spifice strategy based on the specific derived class.</div></div>
+<div class="ttc" id="aclassStrategy_html_a2021a15bbc4f0d13f7b92f8933db2235"><div class="ttname"><a href="classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235">Strategy::Strategy</a></div><div class="ttdeci">Strategy()</div><div class="ttdoc">Construct a new Strategy object.</div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8cpp_source.html#l00005">Strategy.cpp:5</a></div></div>
+<div class="ttc" id="aclassStrategy_html_a35c4bbd2d37efaf24e21b7a0e82b4c96"><div class="ttname"><a href="classStrategy.html#a35c4bbd2d37efaf24e21b7a0e82b4c96">Strategy::setStrategy</a></div><div class="ttdeci">bool setStrategy(std::string strategy)</div><div class="ttdoc">Set the Strategy object.</div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8cpp_source.html#l00014">Strategy.cpp:14</a></div></div>
+<div class="ttc" id="aclassStrategy_html_a4e5f4c986d744911085fcf67acbada22"><div class="ttname"><a href="classStrategy.html#a4e5f4c986d744911085fcf67acbada22">Strategy::getStrategy</a></div><div class="ttdeci">Strategy * getStrategy() const</div><div class="ttdoc">Get the Strategy object.</div></div>
+<div class="ttc" id="aclassStrategy_html"><div class="ttname"><a href="classStrategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8h_source.html#l00006">Strategy.h:6</a></div></div>
+<div class="ttc" id="aclassStrategy_html_a37c0bbdd64fd7dfcdd91578784a64775"><div class="ttname"><a href="classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775">Strategy::~Strategy</a></div><div class="ttdeci">~Strategy()</div><div class="ttdoc">Destroy the Strategy object.</div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8cpp_source.html#l00010">Strategy.cpp:10</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -68,29 +68,33 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef GENERAL_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define GENERAL_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classGeneral.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGeneral.html">General</a> {</div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <a class="code" href="classAlliance.html">Alliance</a>* alliance;</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    Keypoint* keyPoint;</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="classStrategy.html">Strategy</a>* strat;</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classGeneral.html">General</a>();</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">void</span> evaluateStrategy();</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Alliance.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;KeyPoint.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;Strategy.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classGeneral.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classGeneral.html">General</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="classAlliance.html">Alliance</a>* alliance;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <a class="code" href="classKeyPoint.html">KeyPoint</a>* keyPoint;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    <a class="code" href="classStrategy.html">Strategy</a>* strat;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classGeneral.html">General</a>();</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> initiateStrategy();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">void</span> evaluateStrategy();</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classGeneral.html">General</a>* clone();</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordtype">void</span> initiateStrategy();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classGeneral.html">General</a>* <a class="code" href="classGeneral.html#a6c73103d464cf8f3ed95deea76d788d5">clone</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;};</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassGeneral_html"><div class="ttname"><a href="classGeneral.html">General</a></div><div class="ttdef"><b>Definition:</b> <a href="General_8h_source.html#l00004">General.h:4</a></div></div>
+<div class="ttc" id="aclassGeneral_html"><div class="ttname"><a href="classGeneral.html">General</a></div><div class="ttdef"><b>Definition:</b> <a href="General_8h_source.html#l00006">General.h:6</a></div></div>
+<div class="ttc" id="aclassKeyPoint_html"><div class="ttname"><a href="classKeyPoint.html">KeyPoint</a></div><div class="ttdoc">Keypoint class.</div><div class="ttdef"><b>Definition:</b> <a href="KeyPoint_8h_source.html#l00009">KeyPoint.h:9</a></div></div>
+<div class="ttc" id="aclassGeneral_html_a6c73103d464cf8f3ed95deea76d788d5"><div class="ttname"><a href="classGeneral.html#a6c73103d464cf8f3ed95deea76d788d5">General::clone</a></div><div class="ttdeci">General * clone()</div><div class="ttdoc">Instantiates and returns a clone of the current General.</div><div class="ttdef"><b>Definition:</b> <a href="General_8cpp_source.html#l00018">General.cpp:18</a></div></div>
 <div class="ttc" id="aclassAlliance_html"><div class="ttname"><a href="classAlliance.html">Alliance</a></div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8h_source.html#l00004">Alliance.h:4</a></div></div>
-<div class="ttc" id="aclassStrategy_html"><div class="ttname"><a href="classStrategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8h_source.html#l00004">Strategy.h:4</a></div></div>
+<div class="ttc" id="aclassStrategy_html"><div class="ttname"><a href="classStrategy.html">Strategy</a></div><div class="ttdef"><b>Definition:</b> <a href="Strategy_8h_source.html#l00006">Strategy.h:6</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

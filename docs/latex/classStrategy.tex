@@ -3,22 +3,154 @@
 Inheritance diagram for Strategy\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=3.000000cm]{classStrategy}
+\includegraphics[height=2.000000cm]{classStrategy}
 \end{center}
 \end{figure}
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStrategy_aef04f43c2647ae64b903247ef6ffb383}\label{classStrategy_aef04f43c2647ae64b903247ef6ffb383}} 
-virtual void {\bfseries perform\+Strat} (Keypoint $\ast$key\+Point)=0
+\mbox{\hyperlink{classStrategy_a2021a15bbc4f0d13f7b92f8933db2235}{Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy_a37c0bbdd64fd7dfcdd91578784a64775}{$\sim$\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classStrategy_ada170bd47bc6f11ac02d7df2b366387b}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point)=0
+\begin{DoxyCompactList}\small\item\em This function will perform an spifice strategy based on the specific derived class. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classStrategy_a35c4bbd2d37efaf24e21b7a0e82b4c96}{set\+Strategy}} (std\+::string strategy)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classStrategy_a4e5f4c986d744911085fcf67acbada22}{get\+Strategy}} () const
+\begin{DoxyCompactList}\small\item\em Get the \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classStrategy_ab27bc814cf1804ca3b5fdbfb99d4a2cb}\label{classStrategy_ab27bc814cf1804ca3b5fdbfb99d4a2cb}} 
+std\+::string {\bfseries strategy}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line 4 of file Strategy.\+h.
+Definition at line 6 of file Strategy.\+h.
 
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStrategy_a2021a15bbc4f0d13f7b92f8933db2235}\label{classStrategy_a2021a15bbc4f0d13f7b92f8933db2235}} 
+\index{Strategy@{Strategy}!Strategy@{Strategy}}
+\index{Strategy@{Strategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{Strategy()}{Strategy()}}
+{\footnotesize\ttfamily Strategy\+::\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Construct a new \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+
+
+Definition at line 5 of file Strategy.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{5                    \{}
+\DoxyCodeLine{6     \textcolor{comment}{// TODO -\/ implement Strategy::Strategy}}
+\DoxyCodeLine{7     }
+\DoxyCodeLine{8 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classStrategy_a37c0bbdd64fd7dfcdd91578784a64775}\label{classStrategy_a37c0bbdd64fd7dfcdd91578784a64775}} 
+\index{Strategy@{Strategy}!````~Strategy@{$\sim$Strategy}}
+\index{````~Strategy@{$\sim$Strategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{$\sim$Strategy()}{~Strategy()}}
+{\footnotesize\ttfamily Strategy\+::$\sim$\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destroy the \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+
+
+Definition at line 10 of file Strategy.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10                    \{}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStrategy_a4e5f4c986d744911085fcf67acbada22}\label{classStrategy_a4e5f4c986d744911085fcf67acbada22}} 
+\index{Strategy@{Strategy}!getStrategy@{getStrategy}}
+\index{getStrategy@{getStrategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{getStrategy()}{getStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStrategy}{Strategy}}$\ast$ Strategy\+::get\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ The current \mbox{\hyperlink{classStrategy}{Strategy}} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classStrategy_ada170bd47bc6f11ac02d7df2b366387b}\label{classStrategy_ada170bd47bc6f11ac02d7df2b366387b}} 
+\index{Strategy@{Strategy}!performStrat@{performStrat}}
+\index{performStrat@{performStrat}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{performStrat()}{performStrat()}}
+{\footnotesize\ttfamily virtual void Strategy\+::perform\+Strat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{key\+Point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+This function will perform an spifice strategy based on the specific derived class. 
+
+\begin{DoxyAuthor}{Author}
+Antwi-\/\+Antwi 
+\end{DoxyAuthor}
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Point} & A strategy will then be performed at this specific keypoint \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void The function will return a void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classDefensive_ad824897b2075d2184612ab6efcdd8367}{Defensive}}, and \mbox{\hyperlink{classPassive_a3aaac6b29f827a1a5260094db1eb4c68}{Passive}}.
+
+\mbox{\Hypertarget{classStrategy_a35c4bbd2d37efaf24e21b7a0e82b4c96}\label{classStrategy_a35c4bbd2d37efaf24e21b7a0e82b4c96}} 
+\index{Strategy@{Strategy}!setStrategy@{setStrategy}}
+\index{setStrategy@{setStrategy}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{setStrategy()}{setStrategy()}}
+{\footnotesize\ttfamily bool Strategy\+::set\+Strategy (\begin{DoxyParamCaption}\item[{std\+::string}]{strategy }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & This will b the new \mbox{\hyperlink{classStrategy}{Strategy}} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true If settibng the strategy was successful 
+
+false If if setting the strategy was unsuccessful 
+\end{DoxyReturn}
+
+
+Definition at line 14 of file Strategy.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{14                                          \{}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16     this-\/>strategy = strategy;}
+\DoxyCodeLine{17 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

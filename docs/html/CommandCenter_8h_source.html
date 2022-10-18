@@ -68,28 +68,31 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef COMMANDCENTER_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define COMMANDCENTER_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classCommandCenter.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCommandCenter.html">CommandCenter</a> {</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <a class="code" href="classGeneral.html">General</a>* general;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classKeyPoint.html">KeyPoint</a>* keyPoint;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <a class="code" href="classCommandCenter.html#a3fc4f465f7c24d9c9158baf0e03ac571">CommandCenter</a>();</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCommandCenter.html#a1aee52be7351e2e2c78c8d239d31cff0">update</a>(<a class="code" href="classKeyPoint.html">KeyPoint</a>* keyPoint);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classCommandCenter.html">CommandCenter</a>* clone();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;};</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;General.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;KeyPoint.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classCommandCenter.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classCommandCenter.html">CommandCenter</a> {</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classGeneral.html">General</a>* general;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classKeyPoint.html">KeyPoint</a>* keyPoint;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classCommandCenter.html#a3fc4f465f7c24d9c9158baf0e03ac571">CommandCenter</a>();</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classCommandCenter.html#a1aee52be7351e2e2c78c8d239d31cff0">update</a>(<a class="code" href="classKeyPoint.html">KeyPoint</a>* keyPoint);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classCommandCenter.html">CommandCenter</a>* <a class="code" href="classCommandCenter.html#aef666a19f24fd089edd089e4b2cb9542">clone</a>();</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassGeneral_html"><div class="ttname"><a href="classGeneral.html">General</a></div><div class="ttdef"><b>Definition:</b> <a href="General_8h_source.html#l00004">General.h:4</a></div></div>
+<div class="ttc" id="aclassCommandCenter_html_aef666a19f24fd089edd089e4b2cb9542"><div class="ttname"><a href="classCommandCenter.html#aef666a19f24fd089edd089e4b2cb9542">CommandCenter::clone</a></div><div class="ttdeci">CommandCenter * clone()</div><div class="ttdoc">Instantiates and returns a clone of the current Command Center.</div><div class="ttdef"><b>Definition:</b> <a href="CommandCenter_8cpp_source.html#l00013">CommandCenter.cpp:13</a></div></div>
+<div class="ttc" id="aclassGeneral_html"><div class="ttname"><a href="classGeneral.html">General</a></div><div class="ttdef"><b>Definition:</b> <a href="General_8h_source.html#l00006">General.h:6</a></div></div>
 <div class="ttc" id="aclassCommandCenter_html_a1aee52be7351e2e2c78c8d239d31cff0"><div class="ttname"><a href="classCommandCenter.html#a1aee52be7351e2e2c78c8d239d31cff0">CommandCenter::update</a></div><div class="ttdeci">void update(KeyPoint *keyPoint)</div><div class="ttdoc">Updates the command center's keypoint state.</div><div class="ttdef"><b>Definition:</b> <a href="CommandCenter_8cpp_source.html#l00008">CommandCenter.cpp:8</a></div></div>
 <div class="ttc" id="aclassKeyPoint_html"><div class="ttname"><a href="classKeyPoint.html">KeyPoint</a></div><div class="ttdoc">Keypoint class.</div><div class="ttdef"><b>Definition:</b> <a href="KeyPoint_8h_source.html#l00009">KeyPoint.h:9</a></div></div>
 <div class="ttc" id="aclassCommandCenter_html_a3fc4f465f7c24d9c9158baf0e03ac571"><div class="ttname"><a href="classCommandCenter.html#a3fc4f465f7c24d9c9158baf0e03ac571">CommandCenter::CommandCenter</a></div><div class="ttdeci">CommandCenter()</div><div class="ttdoc">Instantiates the CommandCenter.</div><div class="ttdef"><b>Definition:</b> <a href="CommandCenter_8cpp_source.html#l00003">CommandCenter.cpp:3</a></div></div>
-<div class="ttc" id="aclassCommandCenter_html"><div class="ttname"><a href="classCommandCenter.html">CommandCenter</a></div><div class="ttdoc">CommandCenter class.</div><div class="ttdef"><b>Definition:</b> <a href="CommandCenter_8h_source.html#l00009">CommandCenter.h:9</a></div></div>
+<div class="ttc" id="aclassCommandCenter_html"><div class="ttname"><a href="classCommandCenter.html">CommandCenter</a></div><div class="ttdoc">CommandCenter class.</div><div class="ttdef"><b>Definition:</b> <a href="CommandCenter_8h_source.html#l00011">CommandCenter.h:11</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

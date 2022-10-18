@@ -17,9 +17,8 @@
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCommandCenter}{Command\+Center}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}{update}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point)
 \begin{DoxyCompactList}\small\item\em Updates the command center\textquotesingle{}s keypoint state. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}\label{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}} 
-\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ {\bfseries clone} ()
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ \mbox{\hyperlink{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Command Center. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -27,11 +26,41 @@ void \mbox{\hyperlink{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}{upda
 
 Used to observe the entities and weather at the Keypoint objects. 
 
-Definition at line 9 of file Command\+Center.\+h.
+Definition at line 11 of file Command\+Center.\+h.
 
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}\label{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}} 
+\index{CommandCenter@{CommandCenter}!clone@{clone}}
+\index{clone@{clone}!CommandCenter@{CommandCenter}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ Command\+Center\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates and returns a clone of the current Command Center. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current \mbox{\hyperlink{classCommandCenter}{Command\+Center}}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Command\+Center$\ast$ The \mbox{\hyperlink{classCommandCenter}{Command\+Center}} clone 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Command\+Center.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{13                                     \{}
+\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement CommandCenter::clone}}
+\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{16 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}\label{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}} 
 \index{CommandCenter@{CommandCenter}!update@{update}}
 \index{update@{update}!CommandCenter@{CommandCenter}}

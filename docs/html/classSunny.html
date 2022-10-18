@@ -66,7 +66,7 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classSunny-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">Sunny Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
+<div class="title">Sunny Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="dynheader">
@@ -81,17 +81,98 @@ Inheritance diagram for Sunny:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a2bd2e638310ceaa01fe9cce7ac233524"><td class="memItemLeft" align="right" valign="top"><a id="a2bd2e638310ceaa01fe9cce7ac233524"></a>
-virtual string&#160;</td><td class="memItemRight" valign="bottom"><b>getWeather</b> ()=0</td></tr>
-<tr class="separator:a2bd2e638310ceaa01fe9cce7ac233524"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa641a4835c80cdc99c3ba3bbedede91c"><td class="memItemLeft" align="right" valign="top"><a id="aa641a4835c80cdc99c3ba3bbedede91c"></a>
-virtual void&#160;</td><td class="memItemRight" valign="bottom"><b>handleChange</b> (<a class="el" href="classKeyPoint.html">KeyPoint</a> *k)=0</td></tr>
-<tr class="separator:aa641a4835c80cdc99c3ba3bbedede91c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f849e14ad8e3da056638135729f293d"><td class="memItemLeft" align="right" valign="top"><a id="a7f849e14ad8e3da056638135729f293d"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSunny.html#a7f849e14ad8e3da056638135729f293d">Sunny</a> ()</td></tr>
+<tr class="memdesc:a7f849e14ad8e3da056638135729f293d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the <a class="el" href="classSunny.html">Sunny</a> object of the state pattern. <br /></td></tr>
+<tr class="separator:a7f849e14ad8e3da056638135729f293d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcc09b207a37d95646b4267d9169693c"><td class="memItemLeft" align="right" valign="top">virtual std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSunny.html#abcc09b207a37d95646b4267d9169693c">getWeather</a> ()</td></tr>
+<tr class="memdesc:abcc09b207a37d95646b4267d9169693c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns string which tels us the weather.  <a href="classSunny.html#abcc09b207a37d95646b4267d9169693c">More...</a><br /></td></tr>
+<tr class="separator:abcc09b207a37d95646b4267d9169693c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7e104164acc614157e6cec496a9db1a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSunny.html#ad7e104164acc614157e6cec496a9db1a">handleChange</a> (<a class="el" href="classKeyPoint.html">KeyPoint</a> *k)</td></tr>
+<tr class="memdesc:ad7e104164acc614157e6cec496a9db1a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will change the current state of the weather inside the specific keypoint.  <a href="classSunny.html#ad7e104164acc614157e6cec496a9db1a">More...</a><br /></td></tr>
+<tr class="separator:ad7e104164acc614157e6cec496a9db1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="Sunny_8h_source.html#l00004">4</a> of file <a class="el" href="Sunny_8h_source.html">Sunny.h</a>.</p>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abcc09b207a37d95646b4267d9169693c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcc09b207a37d95646b4267d9169693c">&#9670;&nbsp;</a></span>getWeather()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual std::string Sunny::getWeather </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns string which tels us the weather. </p>
+<p>Postconditions:</p><ul>
+<li>Returns the wether of ths current state</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>std::string which is the current state </dd></dl>
+
+<p>Implements <a class="el" href="classWeather.html">Weather</a>.</p>
+
+</div>
+</div>
+<a id="ad7e104164acc614157e6cec496a9db1a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7e104164acc614157e6cec496a9db1a">&#9670;&nbsp;</a></span>handleChange()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void Sunny::handleChange </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKeyPoint.html">KeyPoint</a> *&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Will change the current state of the weather inside the specific keypoint. </p>
+<p>Preconditions:</p><ul>
+<li>k must be a KeyPoint*</li>
+</ul>
+<p>Postconditions:</p><ul>
+<li>Changes the current weather to the next one in the state pattern (<a class="el" href="classCloudy.html">Cloudy</a>)</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>must be a KeyPoint* </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p>Implements <a class="el" href="classWeather.html">Weather</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="Sunny_8h_source.html">Sunny.h</a></li>
 <li><a class="el" href="Sunny_8cpp_source.html">Sunny.cpp</a></li>
 </ul>

@@ -9,18 +9,76 @@ Inheritance diagram for Rainy\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classRainy_aefa3e148bf336a144f8fb518ea65ec2b}\label{classRainy_aefa3e148bf336a144f8fb518ea65ec2b}} 
-virtual string {\bfseries get\+Weather} ()=0
-\item 
-\mbox{\Hypertarget{classRainy_a68ec81d96d7d340ee9888ec458c09c29}\label{classRainy_a68ec81d96d7d340ee9888ec458c09c29}} 
-virtual void {\bfseries handle\+Change} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classRainy_aae3bc68f19aacf2a863e9524b0b3e302}\label{classRainy_aae3bc68f19aacf2a863e9524b0b3e302}} 
+\mbox{\hyperlink{classRainy_aae3bc68f19aacf2a863e9524b0b3e302}{Rainy}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the Runny object of the state pattern. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classRainy_af113a2dbc0380d45e0df2b0abc86b84a}{get\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classRainy_ad6d6645418cecd7a2329e323e0c7c37a}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line 4 of file Rainy.\+h.
+Definition at line 6 of file Rainy.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRainy_af113a2dbc0380d45e0df2b0abc86b84a}\label{classRainy_af113a2dbc0380d45e0df2b0abc86b84a}} 
+\index{Rainy@{Rainy}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!Rainy@{Rainy}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
+{\footnotesize\ttfamily virtual std\+::string Rainy\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns string which tels us the weather. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the wether of ths current state
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+std\+::string which is the current state 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
+
+\mbox{\Hypertarget{classRainy_ad6d6645418cecd7a2329e323e0c7c37a}\label{classRainy_ad6d6645418cecd7a2329e323e0c7c37a}} 
+\index{Rainy@{Rainy}!handleChange@{handleChange}}
+\index{handleChange@{handleChange}!Rainy@{Rainy}}
+\doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
+{\footnotesize\ttfamily virtual void Rainy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Will change the current state of the weather inside the specific keypoint. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item k must be a Key\+Point$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classSunny}{Sunny}})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & must be a Key\+Point$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
 
 
 

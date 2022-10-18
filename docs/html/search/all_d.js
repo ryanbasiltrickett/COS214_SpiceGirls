@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['takedamage_46',['takeDamage',['../classArmour.html#a7a52bd8473173c81a4ba8a6373513581',1,'Armour::takeDamage()'],['../classPersonal.html#a328545fe84883222567751fce32a7b18',1,'Personal::takeDamage()'],['../classPiercing.html#a103634469a43e1662bd5e07e66901667',1,'Piercing::takeDamage()'],['../classSupport.html#afb159bd8c474ec67ad5d03fa24c38564',1,'Support::takeDamage()'],['../classVehicle.html#ae30a3d13e4d254993acf808a94fdff8d',1,'Vehicle::takeDamage()']]],
-  ['terraintype_47',['TerrainType',['../classTerrainType.html',1,'TerrainType'],['../classTerrainType.html#aea114fb5e125b58bf9d9c9ab964749c7',1,'TerrainType::TerrainType()']]],
-  ['type_48',['Type',['../classType.html',1,'Type'],['../classType.html#a78339313d36891f18427c431ea84e306',1,'Type::Type()']]]
+  ['passive_44',['Passive',['../classPassive.html',1,'']]],
+  ['performstrat_45',['performStrat',['../classDefensive.html#ad824897b2075d2184612ab6efcdd8367',1,'Defensive::performStrat()'],['../classPassive.html#a3aaac6b29f827a1a5260094db1eb4c68',1,'Passive::performStrat()'],['../classStrategy.html#ada170bd47bc6f11ac02d7df2b366387b',1,'Strategy::performStrat()']]],
+  ['personnel_46',['Personnel',['../classPersonnel.html',1,'Personnel'],['../classPersonnel.html#a96840b35bd30d6010480a32cd296068b',1,'Personnel::Personnel()']]],
+  ['personnelfactory_47',['PersonnelFactory',['../classPersonnelFactory.html',1,'PersonnelFactory'],['../classPersonnelFactory.html#af7ea99463e95d91fad372640df01f04d',1,'PersonnelFactory::PersonnelFactory()']]],
+  ['piercing_48',['Piercing',['../classPiercing.html',1,'Piercing'],['../classPiercing.html#a45a6d5d3b6e7ac24ebba63e56246d887',1,'Piercing::Piercing()']]]
 ];

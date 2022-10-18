@@ -68,22 +68,27 @@ $(function() {
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef RAINY_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define RAINY_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
-<div class="line"><a name="l00004"></a><span class="lineno"><a class="line" href="classRainy.html">    4</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRainy.html">Rainy</a> : <a class="code" href="classWeather.html">Weather</a> {</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;Weather.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;KeyPoint.h&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <a class="code" href="classRainy.html">Rainy</a>();</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">string</span> getWeather() = 0;</div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> handleChange(<a class="code" href="classKeyPoint.html">KeyPoint</a>* k) = 0;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;};</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="classRainy.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRainy.html">Rainy</a> : <span class="keyword">public</span> <a class="code" href="classWeather.html">Weather</a> {</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <a class="code" href="classRainy.html#aae3bc68f19aacf2a863e9524b0b3e302">Rainy</a>();</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">virtual</span> std::string <a class="code" href="classRainy.html#af113a2dbc0380d45e0df2b0abc86b84a">getWeather</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classRainy.html#ad6d6645418cecd7a2329e323e0c7c37a">handleChange</a>(<a class="code" href="classKeyPoint.html">KeyPoint</a>* k);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassKeyPoint_html"><div class="ttname"><a href="classKeyPoint.html">KeyPoint</a></div><div class="ttdoc">Keypoint class.</div><div class="ttdef"><b>Definition:</b> <a href="KeyPoint_8h_source.html#l00009">KeyPoint.h:9</a></div></div>
-<div class="ttc" id="aclassRainy_html"><div class="ttname"><a href="classRainy.html">Rainy</a></div><div class="ttdef"><b>Definition:</b> <a href="Rainy_8h_source.html#l00004">Rainy.h:4</a></div></div>
+<div class="ttc" id="aclassRainy_html"><div class="ttname"><a href="classRainy.html">Rainy</a></div><div class="ttdef"><b>Definition:</b> <a href="Rainy_8h_source.html#l00006">Rainy.h:6</a></div></div>
+<div class="ttc" id="aclassRainy_html_af113a2dbc0380d45e0df2b0abc86b84a"><div class="ttname"><a href="classRainy.html#af113a2dbc0380d45e0df2b0abc86b84a">Rainy::getWeather</a></div><div class="ttdeci">virtual std::string getWeather()</div><div class="ttdoc">Returns string which tels us the weather.</div></div>
+<div class="ttc" id="aclassRainy_html_aae3bc68f19aacf2a863e9524b0b3e302"><div class="ttname"><a href="classRainy.html#aae3bc68f19aacf2a863e9524b0b3e302">Rainy::Rainy</a></div><div class="ttdeci">Rainy()</div><div class="ttdoc">Instantiates the Runny object of the state pattern.</div><div class="ttdef"><b>Definition:</b> <a href="Rainy_8cpp_source.html#l00003">Rainy.cpp:3</a></div></div>
+<div class="ttc" id="aclassRainy_html_ad6d6645418cecd7a2329e323e0c7c37a"><div class="ttname"><a href="classRainy.html#ad6d6645418cecd7a2329e323e0c7c37a">Rainy::handleChange</a></div><div class="ttdeci">virtual void handleChange(KeyPoint *k)</div><div class="ttdoc">Will change the current state of the weather inside the specific keypoint.</div></div>
 <div class="ttc" id="aclassWeather_html"><div class="ttname"><a href="classWeather.html">Weather</a></div><div class="ttdef"><b>Definition:</b> <a href="Weather_8h_source.html#l00004">Weather.h:4</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
