@@ -10,6 +10,14 @@ private:
 public:
 	Country();
 
+	/**
+	 * @brief Instantiates and returns a clone of the current Country
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current Country
+	 *
+	 * @return Country* The Country clone
+	 */
 	Country* clone();
 };
 

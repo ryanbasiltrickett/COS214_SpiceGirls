@@ -1,5 +1,6 @@
 #ifndef ADDON_H
 #define ADDON_H
+#include "Entity.h"
 
 /**
  * @brief AddOn class

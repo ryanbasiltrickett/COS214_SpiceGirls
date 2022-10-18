@@ -27,6 +27,13 @@ public:
 
 	bool offPeace();
 
+	/**
+	 * @brief  This function will clone the Alliance and return a pointer to be used in the Memento
+	 * 
+	 * @author Antwi-Antwi
+	 * 
+	 * @return Alliance* This is a pointer to the cloned Alliance object
+	 */
 	Alliance* clone();
 };
 

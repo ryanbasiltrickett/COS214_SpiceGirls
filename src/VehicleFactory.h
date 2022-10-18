@@ -1,14 +1,9 @@
 #ifndef VEHICLEFACTORY_H
 #define VEHICLEFACTORY_H
+#include "Factory.h"
 
-class VehicleFactory : Factory {
+class VehicleFactory : public Factory {
 
-
-public:
-	/**
-	 * @brief Instantiates the vehicle factory
-	 */
-	VehicleFactory();
 
 	/**
 	 * @brief Instantiates and returns a vehicle for the given alliance
@@ -22,6 +17,9 @@ public:
 	 * @param alliance must be a Alliance*
 	 * @return Vehicle* The instatiated vehicle
 	 */
+public:
+	VehicleFactory();
+
 	Vehicle* createEntity(Alliance* alliance);
 
 	/**

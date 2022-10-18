@@ -5,7 +5,7 @@ Defensive::Defensive() {
 	throw "Not yet implemented";
 }
 
-void Defensive::performStrat(Keypoint* keyPoint) {
+void Defensive::performStrat(KeyPoint* keyPoint) {
 	// TODO - implement Defensive::performStrat
 	throw "Not yet implemented";
 }

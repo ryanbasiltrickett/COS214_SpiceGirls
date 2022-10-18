@@ -1,16 +1,16 @@
-#include "PersonalFactory.h"
+#include "PersonnelFactory.h"
 
-PersonalFactory::PersonalFactory() {
+PersonnelFactory::PersonnelFactory() {
 	// TODO - implement PersonalFactory::PersonalFactory
 	throw "Not yet implemented";
 }
 
-Personal* PersonalFactory::createEntity(Alliance* alliance) {
+Entity* PersonnelFactory::createEntity(Alliance* alliance) {
 	// TODO - implement PersonalFactory::createEntity
 	throw "Not yet implemented";
 }
 
-Factory* PersonalFactory::clone() {
+Factory* PersonnelFactory::clone() {
 	// TODO - implement PersonalFactory::clone
 	throw "Not yet implemented";
 }

@@ -1,5 +1,7 @@
 #ifndef ARMOUR_H
 #define ARMOUR_H
+#include "AddOn.h"
+#include "Entity.h"
 
 /**
  * @brief Armour class

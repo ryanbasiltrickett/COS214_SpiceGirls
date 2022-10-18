@@ -1,25 +1,25 @@
-#ifndef PERSONAL_H
-#define PERSONAL_H
+#ifndef PERSONNEL_H
+#define PERSONNEL_H
 
-class Personal : Entity {
+class Personnel : Entity {
 
 
 public:
 	/**
-	 * @brief Instantiates the personal
+	 * @brief Instantiates the Personnel
 	 * 
 	 * @param type must be a Type*
 	 */
-	Personal();
+	Personnel();
 
 	/**
-	 * @brief Removes health from the personal object
+	 * @brief Removes health from the Personnel object
 	 * 
 	 * Preconditions:
 	 *  - damage must be an int
 	 *
 	 * Postconditions:
-	 *  - Reduces the health of the personal object
+	 *  - Reduces the health of the Personnel object
 	 * 
 	 * @param damage must be an int
 	 * @return void
