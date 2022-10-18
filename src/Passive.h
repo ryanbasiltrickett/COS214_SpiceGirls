@@ -1,13 +1,23 @@
 #ifndef PASSIVE_H
 #define PASSIVE_H
+#include "Strategy.h"
+#include "KeyPoint.h"
 
-class Passive : Strategy {
-
+class Passive : public Strategy {
 
 public:
 	Passive();
 
-	void performStrat(Keypoint* keyPoint);
+	/**
+	 * @author Antwi-Antwi
+	 * 
+	 * @brief This function will perform an Passive strategy
+	 * 
+	 * @param keyPoint a Passive strategy will then be performed at this specific keypoint
+	 * 
+	 * @return void The function will return void
+	 */
+	void performStrat(KeyPoint* keyPoint);
 };
 
 #endif

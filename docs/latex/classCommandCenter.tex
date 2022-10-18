@@ -1,61 +1,37 @@
 \hypertarget{classCommandCenter}{}\doxysection{Command\+Center Class Reference}
 \label{classCommandCenter}\index{CommandCenter@{CommandCenter}}
+
+
+\mbox{\hyperlink{classCommandCenter}{Command\+Center}} class.  
+
+
+
+
+{\ttfamily \#include $<$Command\+Center.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}\label{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}} 
+\mbox{\hyperlink{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}{Command\+Center}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCommandCenter}{Command\+Center}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}{update}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point)
-\item 
-\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ \mbox{\hyperlink{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Updates the command center\textquotesingle{}s keypoint state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}\label{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}} 
+\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ {\bfseries clone} ()
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCommandCenter}{Command\+Center}} class. 
 
+Used to observe the entities and weather at the Keypoint objects. 
 
-Definition at line \mbox{\hyperlink{CommandCenter_8h_source_l00004}{4}} of file \mbox{\hyperlink{CommandCenter_8h_source}{Command\+Center.\+h}}.
+Definition at line 9 of file Command\+Center.\+h.
 
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}\label{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}} 
-\index{CommandCenter@{CommandCenter}!CommandCenter@{CommandCenter}}
-\index{CommandCenter@{CommandCenter}!CommandCenter@{CommandCenter}}
-\doxysubsubsection{\texorpdfstring{CommandCenter()}{CommandCenter()}}
-{\footnotesize\ttfamily Command\+Center\+::\+Command\+Center (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{CommandCenter_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{CommandCenter_8cpp_source}{Command\+Center.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00003                              \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement CommandCenter::CommandCenter}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
-
-\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}\label{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}} 
-\index{CommandCenter@{CommandCenter}!clone@{clone}}
-\index{clone@{clone}!CommandCenter@{CommandCenter}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ Command\+Center\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{CommandCenter_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{CommandCenter_8cpp_source}{Command\+Center.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00013                                     \{}
-\DoxyCodeLine{00014     \textcolor{comment}{// TODO -\/ implement CommandCenter::clone}}
-\DoxyCodeLine{00015     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00016 \}}
-
-\end{DoxyCode}
 \mbox{\Hypertarget{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}\label{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}} 
 \index{CommandCenter@{CommandCenter}!update@{update}}
 \index{update@{update}!CommandCenter@{CommandCenter}}
@@ -64,14 +40,36 @@ Definition at line \mbox{\hyperlink{CommandCenter_8cpp_source_l00013}{13}} of fi
 
 
 
-Definition at line \mbox{\hyperlink{CommandCenter_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{CommandCenter_8cpp_source}{Command\+Center.\+cpp}}.
+Updates the command center\textquotesingle{}s keypoint state. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item key\+Point must be a Key\+Point$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Updates the command centers\textquotesingle{} keypoint state with the passed in key\+Point
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Point} & must be a Key\+Point$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file Command\+Center.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                                              \{}
-\DoxyCodeLine{00009     \textcolor{comment}{// TODO -\/ implement CommandCenter::update}}
-\DoxyCodeLine{00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{8                                              \{}
+\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement CommandCenter::update}}
+\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{11 \}}
 
 \end{DoxyCode}
 

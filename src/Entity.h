@@ -1,6 +1,11 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
+/**
+ * @brief Entity class
+ * 
+ * Used to add addtional functionality to Entity objects.
+ */
 class Entity {
 
 private:

@@ -1,5 +1,7 @@
 #ifndef NEGOTIATOR_H
 #define NEGOTIATOR_H
+#include <vector>
+#include "Alliance.h"
 
 class Negotiator {
 

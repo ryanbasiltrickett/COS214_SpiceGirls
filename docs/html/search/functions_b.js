@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['takedamage_0',['takeDamage',['../classPersonal.html#a328545fe84883222567751fce32a7b18',1,'Personal::takeDamage()'],['../classSupport.html#afb159bd8c474ec67ad5d03fa24c38564',1,'Support::takeDamage()'],['../classVehicle.html#ae30a3d13e4d254993acf808a94fdff8d',1,'Vehicle::takeDamage()']]],
-  ['terraintype_1',['TerrainType',['../classTerrainType.html#aea114fb5e125b58bf9d9c9ab964749c7',1,'TerrainType']]],
-  ['type_2',['Type',['../classType.html#a78339313d36891f18427c431ea84e306',1,'Type']]]
+  ['setaddons_123',['setAddOns',['../classFactory.html#a958217b0bc29ce69ace69ade5e701984',1,'Factory']]],
+  ['setalliance_124',['setAlliance',['../classEntity.html#af804dcaa600e770cf0e2b4537f6fba23',1,'Entity']]],
+  ['sethealth_125',['setHealth',['../classEntity.html#a7dae281ff92be9bc98672cafe05c77ab',1,'Entity']]],
+  ['settype_126',['setType',['../classEntity.html#a5d04ce64c9ca214900422865e298e36c',1,'Entity::setType()'],['../classFactory.html#a7484d514b094114231dbeb3df70e9d0b',1,'Factory::setType()']]],
+  ['support_127',['Support',['../classSupport.html#a19bf40018bf3004487c65f7e68c9f65e',1,'Support']]],
+  ['supportfactory_128',['SupportFactory',['../classSupportFactory.html#a9f243fc85549d8da34aa0b7476905466',1,'SupportFactory']]]
 ];

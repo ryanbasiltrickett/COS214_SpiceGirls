@@ -1,7 +1,10 @@
 #ifndef CLOUDY_H
 #define CLOUDY_H
+#include "Weather.h"
+#include "KeyPoint.h"
+#include <string>
 
-class Cloudy : Weather {
+class Cloudy : public Weather {
 
 
 public:

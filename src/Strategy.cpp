@@ -1,6 +1,17 @@
 #include "Strategy.h"
 
+using namespace std;
+
 Strategy::Strategy() {
 	// TODO - implement Strategy::Strategy
-	throw "Not yet implemented";
+	
+}
+
+Strategy::~Strategy(){
+
+}
+
+bool Strategy::setStrategy(string strategy){
+
+	this->strategy = strategy;
 }

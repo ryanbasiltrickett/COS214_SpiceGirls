@@ -9,3 +9,4 @@ void Aggressive::performStrat(Keypoint* keyPoint) {
 	// TODO - implement Aggressive::performStrat
 	throw "Not yet implemented";
 }
+

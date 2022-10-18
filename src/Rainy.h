@@ -1,7 +1,9 @@
 #ifndef RAINY_H
 #define RAINY_H
+#include "Weather.h"
+#include "KeyPoint.h"
 
-class Rainy : Weather {
+class Rainy : public Weather {
 
 
 public:
