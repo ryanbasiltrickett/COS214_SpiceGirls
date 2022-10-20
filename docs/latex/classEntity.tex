@@ -1,5 +1,14 @@
 \hypertarget{classEntity}{}\doxysection{Entity Class Reference}
 \label{classEntity}\index{Entity@{Entity}}
+
+
+\mbox{\hyperlink{classEntity}{Entity}} class.  
+
+
+
+
+{\ttfamily \#include $<$Entity.\+h$>$}
+
 Inheritance diagram for Entity\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,19 +19,19 @@ Inheritance diagram for Entity\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classEntity_aec265b299e5f6ba10ed4e38f2d206ad7}{Entity}} (\mbox{\hyperlink{classType}{Type}} $\ast$type)
-\item 
+\begin{DoxyCompactList}\small\item\em Instantiates the entity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{get\+Type}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns entities type state. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classEntity_a5d04ce64c9ca214900422865e298e36c}{set\+Type}} (\mbox{\hyperlink{classType}{Type}} $\ast$type)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the entities type state. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ \mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{get\+Alliance}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns entities alliance. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{set\+Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the entities alliance. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{get\+Health}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Returns entities health. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{set\+Health}} (int health)
-\item 
+\begin{DoxyCompactList}\small\item\em Sets the entities health. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classEntity_a9cc5a2246a5580ceed0f081c18211e53}\label{classEntity_a9cc5a2246a5580ceed0f081c18211e53}} 
 virtual void {\bfseries take\+Damage} (int damage)=0
 \item 
@@ -32,9 +41,11 @@ virtual void {\bfseries deal\+Damage} (\mbox{\hyperlink{classEntity}{Entity}} $\
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classEntity}{Entity}} class. 
 
+Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
 
-Definition at line \mbox{\hyperlink{Entity_8h_source_l00004}{4}} of file \mbox{\hyperlink{Entity_8h_source}{Entity.\+h}}.
+Definition at line 9 of file Entity.\+h.
 
 
 
@@ -47,14 +58,23 @@ Definition at line \mbox{\hyperlink{Entity_8h_source_l00004}{4}} of file \mbox{\
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Instantiates the entity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003                          \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement Entity::Entity}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
+\DoxyCodeLine{3                          \{}
+\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement Entity::Entity}}
+\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{6 \}}
 
 \end{DoxyCode}
 
@@ -68,13 +88,25 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00003}{3}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Returns entities alliance. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the alliance
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Type$\ast$ The alliance of the entity object 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00016                               \{}
-\DoxyCodeLine{00017     \textcolor{keywordflow}{return} this-\/>alliance;}
-\DoxyCodeLine{00018 \}}
+\DoxyCodeLine{16                               \{}
+\DoxyCodeLine{17     \textcolor{keywordflow}{return} this-\/>alliance;}
+\DoxyCodeLine{18 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}\label{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}} 
@@ -85,13 +117,25 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00016}{16}} of file \mbo
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Returns entities health. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the health
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+int The health of the entity object 
+\end{DoxyReturn}
+
+
+Definition at line 24 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00024                       \{}
-\DoxyCodeLine{00025     \textcolor{keywordflow}{return} this-\/>health;}
-\DoxyCodeLine{00026 \}}
+\DoxyCodeLine{24                       \{}
+\DoxyCodeLine{25     \textcolor{keywordflow}{return} this-\/>health;}
+\DoxyCodeLine{26 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}\label{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}} 
@@ -102,13 +146,25 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00024}{24}} of file \mbo
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Returns entities type state. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Type$\ast$ The type state of the entity object 
+\end{DoxyReturn}
+
+
+Definition at line 8 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                       \{}
-\DoxyCodeLine{00009     \textcolor{keywordflow}{return} this-\/>type;}
-\DoxyCodeLine{00010 \}}
+\DoxyCodeLine{8                       \{}
+\DoxyCodeLine{9     \textcolor{keywordflow}{return} this-\/>type;}
+\DoxyCodeLine{10 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_af804dcaa600e770cf0e2b4537f6fba23}\label{classEntity_af804dcaa600e770cf0e2b4537f6fba23}} 
@@ -119,13 +175,35 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00008}{8}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Sets the entities alliance. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Sets the alliance of the entity object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be a Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 20 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00020                                            \{}
-\DoxyCodeLine{00021     this-\/>alliance = alliance;}
-\DoxyCodeLine{00022 \}}
+\DoxyCodeLine{20                                            \{}
+\DoxyCodeLine{21     this-\/>alliance = alliance;}
+\DoxyCodeLine{22 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a7dae281ff92be9bc98672cafe05c77ab}\label{classEntity_a7dae281ff92be9bc98672cafe05c77ab}} 
@@ -136,13 +214,35 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00020}{20}} of file \mbo
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Sets the entities health. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Sets the health of the entity object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em health} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 28 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00028                                  \{}
-\DoxyCodeLine{00029     this-\/>health = health;}
-\DoxyCodeLine{00030 \}}
+\DoxyCodeLine{28                                  \{}
+\DoxyCodeLine{29     this-\/>health = health;}
+\DoxyCodeLine{30 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a5d04ce64c9ca214900422865e298e36c}\label{classEntity_a5d04ce64c9ca214900422865e298e36c}} 
@@ -153,13 +253,35 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00028}{28}} of file \mbo
 
 
 
-Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+Sets the entities type state. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item type must be an Type$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Sets the type state of the entity object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 12 of file Entity.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00012                                \{}
-\DoxyCodeLine{00013     this-\/>type = type;}
-\DoxyCodeLine{00014 \}}
+\DoxyCodeLine{12                                \{}
+\DoxyCodeLine{13     this-\/>type = type;}
+\DoxyCodeLine{14 \}}
 
 \end{DoxyCode}
 

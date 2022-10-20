@@ -9,57 +9,73 @@ Inheritance diagram for Sunny\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual string \mbox{\hyperlink{classSunny_a2bd2e638310ceaa01fe9cce7ac233524}{get\+Weather}} ()=0
-\item 
-virtual void \mbox{\hyperlink{classSunny_aa641a4835c80cdc99c3ba3bbedede91c}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classSunny_a7f849e14ad8e3da056638135729f293d}\label{classSunny_a7f849e14ad8e3da056638135729f293d}} 
+\mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classSunny}{Sunny}} object of the state pattern. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classSunny_abcc09b207a37d95646b4267d9169693c}{get\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSunny_ad7e104164acc614157e6cec496a9db1a}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{Sunny_8h_source_l00004}{4}} of file \mbox{\hyperlink{Sunny_8h_source}{Sunny.\+h}}.
+Definition at line 4 of file Sunny.\+h.
 
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classSunny_a7f849e14ad8e3da056638135729f293d}\label{classSunny_a7f849e14ad8e3da056638135729f293d}} 
-\index{Sunny@{Sunny}!Sunny@{Sunny}}
-\index{Sunny@{Sunny}!Sunny@{Sunny}}
-\doxysubsubsection{\texorpdfstring{Sunny()}{Sunny()}}
-{\footnotesize\ttfamily Sunny\+::\+Sunny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Sunny_8cpp_source}{Sunny.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00003              \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement Sunny::Sunny}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
-
-\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classSunny_a2bd2e638310ceaa01fe9cce7ac233524}\label{classSunny_a2bd2e638310ceaa01fe9cce7ac233524}} 
+\mbox{\Hypertarget{classSunny_abcc09b207a37d95646b4267d9169693c}\label{classSunny_abcc09b207a37d95646b4267d9169693c}} 
 \index{Sunny@{Sunny}!getWeather@{getWeather}}
 \index{getWeather@{getWeather}!Sunny@{Sunny}}
 \doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
-{\footnotesize\ttfamily virtual string Sunny\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual std\+::string Sunny\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Returns string which tels us the weather. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the wether of ths current state
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+std\+::string which is the current state 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classWeather}{Weather}}.
 
-\mbox{\Hypertarget{classSunny_aa641a4835c80cdc99c3ba3bbedede91c}\label{classSunny_aa641a4835c80cdc99c3ba3bbedede91c}} 
+\mbox{\Hypertarget{classSunny_ad7e104164acc614157e6cec496a9db1a}\label{classSunny_ad7e104164acc614157e6cec496a9db1a}} 
 \index{Sunny@{Sunny}!handleChange@{handleChange}}
 \index{handleChange@{handleChange}!Sunny@{Sunny}}
 \doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
-{\footnotesize\ttfamily virtual void Sunny\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Sunny\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Will change the current state of the weather inside the specific keypoint. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item k must be a Key\+Point$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classCloudy}{Cloudy}})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & must be a Key\+Point$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classWeather}{Weather}}.

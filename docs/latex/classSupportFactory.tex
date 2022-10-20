@@ -9,38 +9,20 @@ Inheritance diagram for Support\+Factory\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}\label{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}} 
+\mbox{\hyperlink{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}{Support\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the support factory. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classSupport}{Support}} $\ast$ \mbox{\hyperlink{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a support for the given alliance. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current support factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{SupportFactory_8h_source_l00004}{4}} of file \mbox{\hyperlink{SupportFactory_8h_source}{Support\+Factory.\+h}}.
+Definition at line 4 of file Support\+Factory.\+h.
 
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}\label{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}} 
-\index{SupportFactory@{SupportFactory}!SupportFactory@{SupportFactory}}
-\index{SupportFactory@{SupportFactory}!SupportFactory@{SupportFactory}}
-\doxysubsubsection{\texorpdfstring{SupportFactory()}{SupportFactory()}}
-{\footnotesize\ttfamily Support\+Factory\+::\+Support\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{SupportFactory_8cpp_source}{Support\+Factory.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00003                                \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement SupportFactory::SupportFactory}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
-
-\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
@@ -52,18 +34,30 @@ Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00003}{3}} of fi
 
 
 
+Instantiates and returns a clone of the current support factory. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current support factory
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ The support factory clone 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classFactory}{Factory}}.
 
 
 
-Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{SupportFactory_8cpp_source}{Support\+Factory.\+cpp}}.
+Definition at line 13 of file Support\+Factory.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                                \{}
-\DoxyCodeLine{00014     \textcolor{comment}{// TODO -\/ implement SupportFactory::clone}}
-\DoxyCodeLine{00015     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00016 \}}
+\DoxyCodeLine{13                                \{}
+\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement SupportFactory::clone}}
+\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{16 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}\label{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}} 
@@ -74,18 +68,40 @@ Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00013}{13}} of f
 
 
 
+Instantiates and returns a support for the given alliance. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the instantiated support object with specific state
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be a Alliance$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Support$\ast$ The instatiated support 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classFactory}{Factory}}.
 
 
 
-Definition at line \mbox{\hyperlink{SupportFactory_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{SupportFactory_8cpp_source}{Support\+Factory.\+cpp}}.
+Definition at line 8 of file Support\+Factory.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                                                         \{}
-\DoxyCodeLine{00009     \textcolor{comment}{// TODO -\/ implement SupportFactory::createEntity}}
-\DoxyCodeLine{00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{8                                                         \{}
+\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement SupportFactory::createEntity}}
+\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{11 \}}
 
 \end{DoxyCode}
 

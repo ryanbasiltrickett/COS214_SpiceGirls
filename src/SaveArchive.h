@@ -1,5 +1,7 @@
 #ifndef SAVEARCHIVE_H
 #define SAVEARCHIVE_H
+#include <vector>
+#include "WarEngineMemento.h"
 
 class SaveArchive {
 

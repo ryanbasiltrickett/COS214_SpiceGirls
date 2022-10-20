@@ -9,12 +9,12 @@ void Alliance::setNegotiator(Negotiator* n) {
 	this->negotiator = n;
 }
 
-boolean Alliance::addCountry(Country* nation) {
+bool Alliance::addCountry(Country* nation) {
 	// TODO - implement Alliance::addCountry
 	throw "Not yet implemented";
 }
 
-void Alliance::considerPeace(int id) {
+bool Alliance::considerPeace(int id) {
 	// TODO - implement Alliance::considerPeace
 	throw "Not yet implemented";
 }

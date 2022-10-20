@@ -9,57 +9,73 @@ Inheritance diagram for Cloudy\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-virtual void \mbox{\hyperlink{classCloudy_a938139a3d4e4cf81e70db6b4f89735a4}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)=0
-\item 
-virtual string \mbox{\hyperlink{classCloudy_a7907dac27ae803984f101474c5724ee5}{get\+Weather}} ()=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}\label{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}} 
+\mbox{\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{Cloudy}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCloudy}{Cloudy}} object of the state pattern. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classCloudy_a4570dd10132fac93ec1123aad0f5c883}{get\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{Cloudy_8h_source_l00004}{4}} of file \mbox{\hyperlink{Cloudy_8h_source}{Cloudy.\+h}}.
+Definition at line 7 of file Cloudy.\+h.
 
-
-
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}\label{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}} 
-\index{Cloudy@{Cloudy}!Cloudy@{Cloudy}}
-\index{Cloudy@{Cloudy}!Cloudy@{Cloudy}}
-\doxysubsubsection{\texorpdfstring{Cloudy()}{Cloudy()}}
-{\footnotesize\ttfamily Cloudy\+::\+Cloudy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Definition at line \mbox{\hyperlink{Cloudy_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Cloudy_8cpp_source}{Cloudy.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00003                \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement Cloudy::Cloudy}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
-
-\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classCloudy_a7907dac27ae803984f101474c5724ee5}\label{classCloudy_a7907dac27ae803984f101474c5724ee5}} 
+\mbox{\Hypertarget{classCloudy_a4570dd10132fac93ec1123aad0f5c883}\label{classCloudy_a4570dd10132fac93ec1123aad0f5c883}} 
 \index{Cloudy@{Cloudy}!getWeather@{getWeather}}
 \index{getWeather@{getWeather}!Cloudy@{Cloudy}}
 \doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
-{\footnotesize\ttfamily virtual string Cloudy\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual std\+::string Cloudy\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Returns string which tels us the weather. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the wether of ths current state
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+std\+::string which is the current state 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classWeather}{Weather}}.
 
-\mbox{\Hypertarget{classCloudy_a938139a3d4e4cf81e70db6b4f89735a4}\label{classCloudy_a938139a3d4e4cf81e70db6b4f89735a4}} 
+\mbox{\Hypertarget{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}\label{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}} 
 \index{Cloudy@{Cloudy}!handleChange@{handleChange}}
 \index{handleChange@{handleChange}!Cloudy@{Cloudy}}
 \doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
-{\footnotesize\ttfamily virtual void Cloudy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Cloudy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
+
+
+Will change the current state of the weather inside the specific keypoint. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item k must be a Key\+Point$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classRainy}{Rainy}})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em k} & must be a Key\+Point$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 
 
 Implements \mbox{\hyperlink{classWeather}{Weather}}.

@@ -1,5 +1,7 @@
 #include "AquaticType.h"
 
+using namespace std;
+
 AquaticType::AquaticType() {
 	// TODO - implement AquaticType::AquaticType
 	throw "Not yet implemented";

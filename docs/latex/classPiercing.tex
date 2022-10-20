@@ -1,5 +1,14 @@
 \hypertarget{classPiercing}{}\doxysection{Piercing Class Reference}
 \label{classPiercing}\index{Piercing@{Piercing}}
+
+
+\mbox{\hyperlink{classPiercing}{Piercing}} class.  
+
+
+
+
+{\ttfamily \#include $<$Piercing.\+h$>$}
+
 Inheritance diagram for Piercing\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -10,17 +19,19 @@ Inheritance diagram for Piercing\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classPiercing_a45a6d5d3b6e7ac24ebba63e56246d887}{Piercing}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity, int value)
-\item 
+\begin{DoxyCompactList}\small\item\em Instantiates an \mbox{\hyperlink{classPiercing}{Piercing}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPiercing_a103634469a43e1662bd5e07e66901667}{take\+Damage}} (int damage)
-\item 
+\begin{DoxyCompactList}\small\item\em Decreases the entities\textquotesingle{} armour value (or health when their armour has depleted) \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Adds to the damage \mbox{\hyperlink{classEntity}{Entity}} objects inflict. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPiercing}{Piercing}} class. 
 
+Used to add to the damage \mbox{\hyperlink{classEntity}{Entity}} objects inflict. 
 
-Definition at line \mbox{\hyperlink{Piercing_8h_source_l00004}{4}} of file \mbox{\hyperlink{Piercing_8h_source}{Piercing.\+h}}.
+Definition at line 9 of file Piercing.\+h.
 
 
 
@@ -33,14 +44,25 @@ Definition at line \mbox{\hyperlink{Piercing_8h_source_l00004}{4}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{Piercing_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Piercing_8cpp_source}{Piercing.\+cpp}}.
+Instantiates an \mbox{\hyperlink{classPiercing}{Piercing}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be a Entity$\ast$ \\
+\hline
+{\em value} & must be a int \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file Piercing.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003                                             \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement Piercing::Piercing}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
+\DoxyCodeLine{4                                             \{}
+\DoxyCodeLine{5     \textcolor{comment}{// TODO -\/ implement Piercing::Piercing}}
+\DoxyCodeLine{6     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{7 \}}
 
 \end{DoxyCode}
 
@@ -54,18 +76,40 @@ Definition at line \mbox{\hyperlink{Piercing_8cpp_source_l00003}{3}} of file \mb
 
 
 
+Adds to the damage \mbox{\hyperlink{classEntity}{Entity}} objects inflict. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Inflicts damage to passed in \mbox{\hyperlink{classEntity}{Entity}} objects using the sum of it\textquotesingle{}s value and the entity onto which it has been added\textquotesingle{}s value
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classAddOn}{Add\+On}}.
 
 
 
-Definition at line \mbox{\hyperlink{Piercing_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Piercing_8cpp_source}{Piercing.\+cpp}}.
+Definition at line 14 of file Piercing.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                                         \{}
-\DoxyCodeLine{00014     \textcolor{comment}{// TODO -\/ implement Piercing::dealDamage}}
-\DoxyCodeLine{00015     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00016 \}}
+\DoxyCodeLine{14                                         \{}
+\DoxyCodeLine{15     \textcolor{comment}{// TODO -\/ implement Piercing::dealDamage}}
+\DoxyCodeLine{16     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{17 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPiercing_a103634469a43e1662bd5e07e66901667}\label{classPiercing_a103634469a43e1662bd5e07e66901667}} 
@@ -76,18 +120,40 @@ Definition at line \mbox{\hyperlink{Piercing_8cpp_source_l00013}{13}} of file \m
 
 
 
+Decreases the entities\textquotesingle{} armour value (or health when their armour has depleted) 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Does nothing
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classAddOn}{Add\+On}}.
 
 
 
-Definition at line \mbox{\hyperlink{Piercing_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Piercing_8cpp_source}{Piercing.\+cpp}}.
+Definition at line 9 of file Piercing.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                                     \{}
-\DoxyCodeLine{00009     \textcolor{comment}{// TODO -\/ implement Piercing::takeDamage}}
-\DoxyCodeLine{00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{9                                     \{}
+\DoxyCodeLine{10     \textcolor{comment}{// TODO -\/ implement Piercing::takeDamage}}
+\DoxyCodeLine{11     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{12 \}}
 
 \end{DoxyCode}
 

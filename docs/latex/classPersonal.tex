@@ -9,16 +9,18 @@ Inheritance diagram for Personal\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classPersonal_a7e1db37eae124dea3841e511efcdee02}{Personal}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the personal. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonal_a328545fe84883222567751fce32a7b18}{take\+Damage}} (int damage)
-\item 
+\begin{DoxyCompactList}\small\item\em Removes health from the personal object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonal_a9f9733d17414ca1ff51482f610884e12}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line \mbox{\hyperlink{Personal_8h_source_l00004}{4}} of file \mbox{\hyperlink{Personal_8h_source}{Personal.\+h}}.
+Definition at line 4 of file Personal.\+h.
 
 
 
@@ -31,14 +33,23 @@ Definition at line \mbox{\hyperlink{Personal_8h_source_l00004}{4}} of file \mbox
 
 
 
-Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Personal_8cpp_source}{Personal.\+cpp}}.
+Instantiates the personal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Personal.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003                    \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement Personal::Personal}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
+\DoxyCodeLine{3                    \{}
+\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement Personal::Personal}}
+\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{6 \}}
 
 \end{DoxyCode}
 
@@ -52,18 +63,40 @@ Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00003}{3}} of file \mb
 
 
 
+Inflicts damage onto another entity. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the entity
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Personal_8cpp_source}{Personal.\+cpp}}.
+Definition at line 13 of file Personal.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                                         \{}
-\DoxyCodeLine{00014     \textcolor{comment}{// TODO -\/ implement Personal::dealDamage}}
-\DoxyCodeLine{00015     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00016 \}}
+\DoxyCodeLine{13                                         \{}
+\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement Personal::dealDamage}}
+\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{16 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonal_a328545fe84883222567751fce32a7b18}\label{classPersonal_a328545fe84883222567751fce32a7b18}} 
@@ -74,18 +107,40 @@ Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00013}{13}} of file \m
 
 
 
+Removes health from the personal object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the personal object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Personal_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Personal_8cpp_source}{Personal.\+cpp}}.
+Definition at line 8 of file Personal.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                                     \{}
-\DoxyCodeLine{00009     \textcolor{comment}{// TODO -\/ implement Personal::takeDamage}}
-\DoxyCodeLine{00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{8                                     \{}
+\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement Personal::takeDamage}}
+\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{11 \}}
 
 \end{DoxyCode}
 

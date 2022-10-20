@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['terraintype_0',['TerrainType',['../classTerrainType.html',1,'']]],
-  ['type_1',['Type',['../classType.html',1,'']]]
+  ['negotiator_41',['Negotiator',['../classNegotiator.html',1,'Negotiator'],['../classNegotiator.html#aa667cc5e0bca1109e2eae6d84e8ba3d9',1,'Negotiator::Negotiator()']]],
+  ['notify_42',['notify',['../classKeyPoint.html#a5b21817babe753b2b684d70479f3eaf2',1,'KeyPoint']]]
 ];

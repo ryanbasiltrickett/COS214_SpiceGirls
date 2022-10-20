@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['vehicle_0',['Vehicle',['../classVehicle.html',1,'']]],
-  ['vehiclefactory_1',['VehicleFactory',['../classVehicleFactory.html',1,'']]]
+  ['offpeace_43',['offPeace',['../classAlliance.html#aa774a70192e6d4fd034cc7689b3ff5a8',1,'Alliance']]]
 ];

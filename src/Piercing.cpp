@@ -1,4 +1,5 @@
 #include "Piercing.h"
+#include "Entity.h"
 
 Piercing::Piercing(Entity* entity, int value) {
 	// TODO - implement Piercing::Piercing

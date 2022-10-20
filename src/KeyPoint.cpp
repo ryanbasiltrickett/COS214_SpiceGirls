@@ -25,11 +25,6 @@ void KeyPoint::addEntity(Entity* entity) {
 	throw "Not yet implemented";
 }
 
-void KeyPoint::assignComCenter(CommandCenter* comCenter) {
-	// TODO - implement KeyPoint::assignComCenter
-	throw "Not yet implemented";
-}
-
 void KeyPoint::attach(CommandCenter* comCenter) {
 	// TODO - implement KeyPoint::attach
 	throw "Not yet implemented";

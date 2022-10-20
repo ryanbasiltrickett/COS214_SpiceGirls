@@ -1,23 +1,30 @@
 \hypertarget{classWarEngine}{}\doxysection{War\+Engine Class Reference}
 \label{classWarEngine}\index{WarEngine@{WarEngine}}
+
+
+{\ttfamily \#include $<$War\+Engine.\+h$>$}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} \mbox{\hyperlink{classWarEngine_a3ce98b4a76487348a712a4ffb54a71f2}{save\+State}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em Captures current state of simulation via member variables and creates \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} instance storing all relevant members in \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWarEngine_a76994dd9d009fff3dd272a87710bfae5}{load\+State}} (\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} save)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Takes in an instance of saved \mbox{\hyperlink{classWarEngine}{War\+Engine}} states and sets current instance\textquotesingle{}s member variables to memento state. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classWarEngine_a3c95a6990a6eabd99f1ea0ade30f85f2}{War\+Engine}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for class. Is responsible for ensuring only a single instance of class exists. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWarEngine_a0c3e8e1ca61c1e85ffcbbaa26b9a749c}\label{classWarEngine_a0c3e8e1ca61c1e85ffcbbaa26b9a749c}} 
 \mbox{\hyperlink{classWarEngine_a0c3e8e1ca61c1e85ffcbbaa26b9a749c}{War\+Engine}} (int \&war\+Engine)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for class. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+Class that contains all information regarding current simulation. Only one instance of class is allowed. 
 
-
-Definition at line \mbox{\hyperlink{WarEngine_8h_source_l00004}{4}} of file \mbox{\hyperlink{WarEngine_8h_source}{War\+Engine.\+h}}.
+Definition at line 8 of file War\+Engine.\+h.
 
 
 
@@ -25,37 +32,23 @@ Definition at line \mbox{\hyperlink{WarEngine_8h_source_l00004}{4}} of file \mbo
 \mbox{\Hypertarget{classWarEngine_a3c95a6990a6eabd99f1ea0ade30f85f2}\label{classWarEngine_a3c95a6990a6eabd99f1ea0ade30f85f2}} 
 \index{WarEngine@{WarEngine}!WarEngine@{WarEngine}}
 \index{WarEngine@{WarEngine}!WarEngine@{WarEngine}}
-\doxysubsubsection{\texorpdfstring{WarEngine()}{WarEngine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+\doxysubsubsection{\texorpdfstring{WarEngine()}{WarEngine()}}
 {\footnotesize\ttfamily War\+Engine\+::\+War\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
 
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Constructor for class. Is responsible for ensuring only a single instance of class exists. 
+
+
+
+Definition at line 3 of file War\+Engine.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003                      \{}
-\DoxyCodeLine{00004     \textcolor{comment}{// TODO -\/ implement WarEngine::WarEngine}}
-\DoxyCodeLine{00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00006 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classWarEngine_a0c3e8e1ca61c1e85ffcbbaa26b9a749c}\label{classWarEngine_a0c3e8e1ca61c1e85ffcbbaa26b9a749c}} 
-\index{WarEngine@{WarEngine}!WarEngine@{WarEngine}}
-\index{WarEngine@{WarEngine}!WarEngine@{WarEngine}}
-\doxysubsubsection{\texorpdfstring{WarEngine()}{WarEngine()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily War\+Engine\+::\+War\+Engine (\begin{DoxyParamCaption}\item[{int \&}]{war\+Engine }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
-
-
-
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00008                                    \{}
-\DoxyCodeLine{00009     \textcolor{comment}{// TODO -\/ implement WarEngine::WarEngine}}
-\DoxyCodeLine{00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{3                      \{}
+\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement WarEngine::WarEngine}}
+\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{6 \}}
 
 \end{DoxyCode}
 
@@ -69,14 +62,26 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00008}{8}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00018}{18}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Takes in an instance of saved \mbox{\hyperlink{classWarEngine}{War\+Engine}} states and sets current instance\textquotesingle{}s member variables to memento state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em save} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 18 of file War\+Engine.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00018                                              \{}
-\DoxyCodeLine{00019     \textcolor{comment}{// TODO -\/ implement WarEngine::loadState}}
-\DoxyCodeLine{00020     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00021 \}}
+\DoxyCodeLine{18                                              \{}
+\DoxyCodeLine{19     \textcolor{comment}{// TODO -\/ implement WarEngine::loadState}}
+\DoxyCodeLine{20     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{21 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classWarEngine_a3ce98b4a76487348a712a4ffb54a71f2}\label{classWarEngine_a3ce98b4a76487348a712a4ffb54a71f2}} 
@@ -87,14 +92,21 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00018}{18}} of file \
 
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Captures current state of simulation via member variables and creates \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} instance storing all relevant members in \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}}. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file War\+Engine.\+cpp.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                                       \{}
-\DoxyCodeLine{00014     \textcolor{comment}{// TODO -\/ implement WarEngine::saveState}}
-\DoxyCodeLine{00015     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00016 \}}
+\DoxyCodeLine{13                                       \{}
+\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement WarEngine::saveState}}
+\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
+\DoxyCodeLine{16 \}}
 
 \end{DoxyCode}
 

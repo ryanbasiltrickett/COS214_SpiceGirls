@@ -1,6 +1,6 @@
 #include "WarEngineMemento.h"
 
-WarEngineMemento::WarEngineMemento(Alliance* playOne, Alliance* playTwo, Area* warTheatre) {
+WarEngineMemento(vector<Alliance* players>, vector<Area*> warTheatre) {
 	// TODO - implement WarEngineMemento::WarEngineMemento
 	throw "Not yet implemented";
 }
