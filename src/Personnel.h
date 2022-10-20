@@ -1,7 +1,9 @@
 #ifndef PERSONNEL_H
 #define PERSONNEL_H
 
-class Personnel : Entity {
+#include "Entity.h"
+
+class Personnel : public Entity {
 
 
 public:
