@@ -13,8 +13,11 @@ class PersonnelFactory : Factory {
 public:
 	/**
 	 * @brief Instantiates the Personnel factory
+	 * 
+	 * @param type must be a Type*
+	 * @param addOn must be a AddOn*
 	 */
-	PersonnelFactory(Type* type, AddOn* addOns);
+	PersonnelFactory(Type* type, AddOn* addOn);
 
 	/**
 	 * @brief Instantiates and returns a Personnel for the given alliance

@@ -13,6 +13,9 @@ class SupportFactory : Factory {
 public:
 	/**
 	 * @brief Instantiates the support factory
+	 * 
+	 * @param type must be a Type*
+	 * @param addOn must be a AddOn*
 	 */
 	SupportFactory(Type* type, AddOn* addOn);
 

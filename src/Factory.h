@@ -18,6 +18,9 @@ private:
 public:
 	/**
 	 * @brief Instantiates the factory
+	 * 
+	 * @param type must be a Type*
+	 * @param addOn must be a AddOn*
 	 */
 	Factory(Type* type, AddOn* addOn);
 

@@ -12,6 +12,9 @@ class VehicleFactory : public Factory {
 public:
 	/**
 	 * @brief Instantiates the vehicle factory
+	 * 
+	 * @param type must be a Type*
+	 * @param addOn must be a AddOn*
 	 */
 	VehicleFactory(Type* type, AddOn* addOn);
 
