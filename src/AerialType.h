@@ -1,8 +1,14 @@
 #ifndef AERIALTYPE_H
 #define AERIALTYPE_H
 
-class AerialType : Type {
+#include "Type.h"
 
+/**
+ * @brief AerialType class
+ * 
+ * Used to define Entity objects as ariel type.
+ */
+class AerialType : public Type {
 
 public:
 	/**
