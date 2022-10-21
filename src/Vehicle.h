@@ -1,8 +1,14 @@
 #ifndef VEHICLE_H
 #define VEHICLE_H
 
-class Vehicle : Entity {
+#include "Entity.h"
 
+/**
+ * @brief Vehicle class
+ * 
+ * Used to add addtional functionality to Entity objects.
+ */
+class Vehicle : Entity {
 
 public:
 	/**
@@ -10,7 +16,7 @@ public:
 	 * 
 	 * @param type must be a Type*
 	 */
-	Vehicle();
+	Vehicle(Type* type, int health = 500, int damage = 10);
 
 	/**
 	 * @brief Removes health from the vehicle object

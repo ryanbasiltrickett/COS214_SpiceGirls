@@ -1,16 +1,11 @@
 #include "Vehicle.h"
 
-Vehicle::Vehicle() {
-	// TODO - implement Vehicle::Vehicle
-	throw "Not yet implemented";
-}
+Vehicle::Vehicle(Type* type, int health, int damage): Entity(type, health, damage) {}
 
 void Vehicle::takeDamage(int damage) {
-	// TODO - implement Vehicle::takeDamage
-	throw "Not yet implemented";
+	setHealth(getHealth() - damage);
 }
 
 void Vehicle::dealDamage(Entity* entity) {
-	// TODO - implement Vehicle::dealDamage
-	throw "Not yet implemented";
+	entity->takeDamage(getDamage());
 }

@@ -3,8 +3,12 @@
 
 #include "Entity.h"
 
+/**
+ * @brief Personnel class
+ * 
+ * Used to add addtional functionality to Entity objects.
+ */
 class Personnel : public Entity {
-
 
 public:
 	/**
@@ -12,7 +16,7 @@ public:
 	 * 
 	 * @param type must be a Type*
 	 */
-	Personnel();
+	Personnel(Type* type, int health = 100, int damage = 10);
 
 	/**
 	 * @brief Removes health from the Personnel object

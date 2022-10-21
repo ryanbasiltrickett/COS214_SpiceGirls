@@ -1,11 +1,7 @@
 #include "Support.h"
 
-Support::Support() {
-	// TODO - implement Support::Support
-	throw "Not yet implemented";
-}
+Support::Support(Type* type, int health, int damage): Entity(type, health, damage) {}
 
 void Support::dealDamage(Entity* entity) {
-	// TODO - implement Support::dealDamage
-	throw "Not yet implemented";
+	entity->takeDamage(getDamage());
 }
