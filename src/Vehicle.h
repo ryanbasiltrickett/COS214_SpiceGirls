@@ -8,7 +8,7 @@
  * 
  * Used to add addtional functionality to Entity objects.
  */
-class Vehicle : Entity {
+class Vehicle : public Entity {
 
 public:
 	/**

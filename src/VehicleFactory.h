@@ -2,8 +2,18 @@
 #define VEHICLEFACTORY_H
 #include "Factory.h"
 
+/**
+ * @brief VehicleFactory class
+ * 
+ * Used to instantiate Vehicle objects.
+ */
 class VehicleFactory : public Factory {
 
+public:
+	/**
+	 * @brief Instantiates the vehicle factory
+	 */
+	VehicleFactory(Type* type, AddOn* addOn);
 
 	/**
 	 * @brief Instantiates and returns a vehicle for the given alliance
@@ -17,10 +27,7 @@ class VehicleFactory : public Factory {
 	 * @param alliance must be a Alliance*
 	 * @return Vehicle* The instatiated vehicle
 	 */
-public:
-	VehicleFactory();
-
-	Vehicle* createEntity(Alliance* alliance);
+	Entity* createEntity(Alliance* alliance);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current vehicle factory

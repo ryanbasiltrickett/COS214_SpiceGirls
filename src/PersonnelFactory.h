@@ -1,14 +1,20 @@
 #ifndef PERSONNELFACTORY_H
 #define PERSONNELFACTORY_H
 
-class PersonnelFactory : Factory {
+#include "Factory.h"
 
+/**
+ * @brief PersonnelFactory class
+ * 
+ * Used to instantiate Personnel objects.
+ */
+class PersonnelFactory : Factory {
 
 public:
 	/**
 	 * @brief Instantiates the Personnel factory
 	 */
-	PersonnelFactory();
+	PersonnelFactory(Type* type, AddOn* addOns);
 
 	/**
 	 * @brief Instantiates and returns a Personnel for the given alliance
@@ -20,9 +26,9 @@ public:
 	 *  - Returns the instantiated Personnel object with specific state
 	 *
 	 * @param alliance must be a Alliance*
-	 * @return Personnel* The instatiated personal
+	 * @return Entity* The instatiated personnel
 	 */
-	Personnel* createEntity(Alliance* alliance);
+	Entity* createEntity(Alliance* alliance);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Personnel factory
