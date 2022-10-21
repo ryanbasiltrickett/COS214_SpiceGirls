@@ -14,6 +14,8 @@ public:
 	/**
 	 * @brief Instantiates the support
 	 * 
+	 * @param health must be an int
+	 * @param damage must be an int
 	 * @param type must be a Type*
 	 */
 	Support(Type* type, int health = 1000, int damage = 30);

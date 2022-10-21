@@ -14,6 +14,8 @@ public:
 	/**
 	 * @brief Instantiates the Personnel
 	 * 
+	 * @param health must be an int
+	 * @param damage must be an int
 	 * @param type must be a Type*
 	 */
 	Personnel(Type* type, int health = 100, int damage = 10);
