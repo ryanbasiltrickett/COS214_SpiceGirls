@@ -8,7 +8,7 @@
  * 
  * Used to add protective armour to Entity objects.
  */
-class Armour : AddOn {
+class Armour : public AddOn {
 
 
 public:
