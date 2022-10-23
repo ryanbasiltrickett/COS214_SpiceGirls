@@ -1,16 +1,19 @@
 #include "SupportFactory.h"
+#include "Support.h"
 
-SupportFactory::SupportFactory() {
-	// TODO - implement SupportFactory::SupportFactory
-	throw "Not yet implemented";
-}
+SupportFactory::SupportFactory(Type* type, AddOn* addOn): Factory(type, addOn) {}
 
-Support* SupportFactory::createEntity(Alliance* alliance) {
-	// TODO - implement SupportFactory::createEntity
-	throw "Not yet implemented";
+Entity* SupportFactory::createEntity(Alliance* alliance) {
+	Support* s = new Support(getType()->clone());
+	if (getAddOn() != NULL) {
+		AddOn* personnelAddOn = getAddOn()->clone();
+		personnelAddOn->connectEntity(s);
+		return personnelAddOn;
+	} else {
+		return s;
+	}
 }
 
 Factory* SupportFactory::clone() {
-	// TODO - implement SupportFactory::clone
-	throw "Not yet implemented";
+	return new SupportFactory(getType(), getAddOn());
 }

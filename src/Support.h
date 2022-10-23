@@ -1,16 +1,24 @@
 #ifndef SUPPORT_H
 #define SUPPORT_H
 
-class Support : Entity {
+#include "Entity.h"
 
+/**
+ * @brief Support class
+ * 
+ * Used to add addtional functionality to Entity objects.
+ */
+class Support : public Entity {
 
 public:
 	/**
 	 * @brief Instantiates the support
 	 * 
+	 * @param health must be an int
+	 * @param damage must be an int
 	 * @param type must be a Type*
 	 */
-	Support();
+	Support(Type* type, int health = 1000, int damage = 30);
 
 	/**
 	 * @brief Removes health from the support object

@@ -7,7 +7,7 @@
  * 
  * Used to add addtional functionality to Entity objects.
  */
-class AddOn : Entity {
+class AddOn : public Entity {
 
 protected:
 	int value;

@@ -1,8 +1,14 @@
 #ifndef AQUATICTYPE_H
 #define AQUATICTYPE_H
 
-class AquaticType : Type {
+#include "Type.h"
 
+/**
+ * @brief AquaticType class
+ * 
+ * Used to define Entity objects as aquatic type.
+ */
+class AquaticType : public Type {
 
 public:
 	/**

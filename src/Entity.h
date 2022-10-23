@@ -1,10 +1,13 @@
 #ifndef ENTITY_H
 #define ENTITY_H
 
+#include "Type.h"
+#include "Alliance.h"
+
 /**
  * @brief Entity class
  * 
- * Used to add addtional functionality to Entity objects.
+ * Used to simulate war entity objects.
  */
 class Entity {
 
@@ -12,6 +15,7 @@ private:
 	Type* type;
 	Alliance* alliance;
 	int health;
+	int damage;
 
 public:
 	/**
@@ -19,7 +23,7 @@ public:
 	 * 
 	 * @param type must be a Type*
 	 */
-	Entity(Type* type);
+	Entity(Type* type, int health, int damage);
 
 	/**
 	 * @brief Returns entities type state
@@ -83,7 +87,7 @@ public:
 	 * @brief Sets the entities health
 	 *
 	 * Preconditions:
-	 *  - alliance must be an int
+	 *  - health must be an int
 	 *
 	 * Postconditions:
 	 *  - Sets the health of the entity object
@@ -92,6 +96,30 @@ public:
 	 * @return void
 	 */
 	void setHealth(int health);
+
+	/**
+	 * @brief Returns entities damage
+	 *
+	 * Postconditions:
+	 *  - Returns the damage
+	 *
+	 * @return int The damage of the entity object
+	 */
+	int getDamage();
+
+	/**
+	 * @brief Sets the entities damage
+	 *
+	 * Preconditions:
+	 *  - damage must be an int
+	 *
+	 * Postconditions:
+	 *  - Sets the damage of the entity object
+	 *
+	 * @param damage must be an int
+	 * @return void
+	 */
+	void setDamage(int damage);
 
 	virtual void takeDamage(int damage) = 0;
 

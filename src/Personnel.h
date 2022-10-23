@@ -1,16 +1,24 @@
 #ifndef PERSONNEL_H
 #define PERSONNEL_H
 
-class Personnel : Entity {
+#include "Entity.h"
 
+/**
+ * @brief Personnel class
+ * 
+ * Used to add addtional functionality to Entity objects.
+ */
+class Personnel : public Entity {
 
 public:
 	/**
 	 * @brief Instantiates the Personnel
 	 * 
+	 * @param health must be an int
+	 * @param damage must be an int
 	 * @param type must be a Type*
 	 */
-	Personnel();
+	Personnel(Type* type, int health = 100, int damage = 10);
 
 	/**
 	 * @brief Removes health from the Personnel object

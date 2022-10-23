@@ -1,6 +1,9 @@
 #ifndef FACTORY_H
 #define FACTORY_H
 
+#include "Type.h"
+#include "AddOn.h"
+
 /**
  * @brief Factory class
  * 
@@ -10,13 +13,16 @@ class Factory {
 
 private:
 	Type* type;
-	addOn* addOns;
+	AddOn* addOn;
 
 public:
 	/**
 	 * @brief Instantiates the factory
+	 * 
+	 * @param type must be a Type*
+	 * @param addOn must be a AddOn*
 	 */
-	Factory();
+	Factory(Type* type, AddOn* addOn);
 
 	/**
 	 * @brief Destroys the factory object
@@ -24,10 +30,9 @@ public:
 	 * Postconditions:
 	 *  - All dynamic memory should be deallocated from the factory object
 	 */
-	void ~Factory();
+	~Factory();
 
 	virtual Entity* createEntity(Alliance* alliance) = 0;
-
 	
 	/**
 	 * @brief Returns factories type state
@@ -63,7 +68,7 @@ public:
 	 *
 	 * @return AddOn* The decorators for the factory object
 	 */
-	AddOn* getAddOns();
+	AddOn* getAddOn();
 
 	/**
 	 * @brief Sets the factories add ons
@@ -74,10 +79,10 @@ public:
 	 * Postconditions:
 	 *  - Sets the add ons of the factory object
 	 *
-	 * @param addOns must be a AddOn*
+	 * @param addOn must be a AddOn*
 	 * @return void
 	 */
-	void setAddOns(AddOn* addOns);
+	void setAddOns(AddOn* addOn);
 
 	virtual Factory* clone() = 0;
 };
