@@ -1,5 +1,6 @@
 #ifndef WEATHER_H
 #define WEATHER_H
+#include <string>
 
 class Weather {
 
@@ -17,7 +18,7 @@ public:
 
 	virtual void handleChange(KeyPoint* k) = 0;
 
-	virtual string getWeather() = 0;
+	virtual std::string getWeather() = 0;
 };
 
 #endif
