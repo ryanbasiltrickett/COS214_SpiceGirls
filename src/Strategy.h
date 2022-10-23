@@ -1,6 +1,7 @@
 #ifndef STRATEGY_H
 #define STRATEGY_H
 #include "KeyPoint.h"
+#include "Alliance.h"
 #include <string>
 
 class Strategy {
@@ -27,14 +28,19 @@ public:
 	 * @param keyPoint A strategy will then be performed at this specific keypoint
 	 * @return void The function will return a void
 	 */
-	virtual void performStrat(KeyPoint* keyPoint) = 0;
+	virtual void performStrat(KeyPoint* keyPoint, Alliance* alliance) = 0;
 
 	/**
 	 * @brief Set the Strategy object
 	 * 
+	 * Preconditions: 
+	 * - Takes in a string as a parameter, which is the name of the strategy
+	 * 
 	 * @param strategy This will b the new Strategy
+	 * 
 	 * @return true If settibng the strategy was successful
-	 * @return false If if setting the strategy was unsuccessful
+	 * 
+	 * @return false If setting the strategy was unsuccessful
 	 */
 	bool setStrategy(std::string strategy);
 
@@ -43,7 +49,7 @@ public:
 	 * 
 	 * @return Strategy* The current Strategy
 	 */
-	Strategy* getStrategy() const;
+	std::string getStrategy() const;
 };
 
 #endif

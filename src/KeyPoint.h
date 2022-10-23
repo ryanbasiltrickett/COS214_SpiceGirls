@@ -1,5 +1,10 @@
 #ifndef KEYPOINT_H
 #define KEYPOINT_H
+#include "Area.h"
+#include "Weather.h"
+#include "Entity.h"
+#include "CommandCenter.h"
+#include <vector>
 
 /**
  * @brief Keypoint class
@@ -53,7 +58,7 @@ public:
 	 * Postconditions:
 	 *  - Move troops to other area
 	 *
-	 * @param area musy be an Area*
+	 * @param area must be an Area*
 	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
@@ -110,7 +115,7 @@ public:
 	 * @return void
 	 */
 	void notify();
-
+	
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
 	 *
@@ -120,6 +125,13 @@ public:
 	 * @return Area* The Keypoint clone
 	 */
 	Area* clone();
+
+	/**
+	 * @brief Set the Weather object
+	 * 
+	 * @param weather 
+	 */
+	void setWeather(Weather* weather);
 };
 
 #endif

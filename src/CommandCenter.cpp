@@ -1,16 +1,20 @@
 #include "CommandCenter.h"
 
 CommandCenter::CommandCenter() {
-	// TODO - implement CommandCenter::CommandCenter
-	throw "Not yet implemented";
+	
 }
 
 void CommandCenter::update(KeyPoint* keyPoint) {
-	// TODO - implement CommandCenter::update
-	throw "Not yet implemented";
+
+	this->keyPoint = keyPoint;
 }
 
 CommandCenter* CommandCenter::clone() {
-	// TODO - implement CommandCenter::clone
-	throw "Not yet implemented";
+	
+	CommandCenter* commandCenterClone = new CommandCenter(); 
+
+	commandCenterClone->setGeneral(this->general);
+	commandCenterClone->setKeyPoint(this->keyPoint);
+
+	return commandCenterClone;
 }

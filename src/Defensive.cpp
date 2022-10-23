@@ -2,10 +2,10 @@
 
 Defensive::Defensive() {
 	// TODO - implement Defensive::Defensive
-	throw "Not yet implemented";
+	this->strategy = "Defensive";
 }
 
-void Defensive::performStrat(KeyPoint* keyPoint) {
+void Defensive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 	// TODO - implement Defensive::performStrat
-	throw "Not yet implemented";
+	keyPoint->attack(alliance);
 }

@@ -43,6 +43,34 @@ public:
 	 * @return CommandCenter* The CommandCenter clone
 	 */
 	CommandCenter* clone();
+
+	/**
+	 * @brief Set the General object
+	 * 
+	 * PreConditions:
+	 * - general must be of type General*
+	 * 
+	 * PostConditions:
+	 * - General object will be set to passed in parameter
+	 * 
+	 * @param general 
+	 * @return void
+	 */
+	void setGeneral(General* general);
+
+	/**
+	 * @brief Set the KeyPoint object
+	 * 
+	 * PreConditions:
+	 * - keyPoint must be of type KeyPoint*
+	 * 
+	 * PostConditions:
+	 * - KeyPoint object will be set to passed in parameter
+	 * 
+	 * @param keyPoint 
+	 * @return void
+	 */
+	void setKeyPoint(KeyPoint* keyPoint); 
 };
 
 #endif

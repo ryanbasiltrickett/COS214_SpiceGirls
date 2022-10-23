@@ -2,11 +2,12 @@
 
 Aggressive::Aggressive() {
 	// TODO - implement Aggressive::Aggressive
-	throw "Not yet implemented";
+	this->strategy = "Aggressive";
 }
 
-void Aggressive::performStrat(Keypoint* keyPoint) {
+void Aggressive::void performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 	// TODO - implement Aggressive::performStrat
-	throw "Not yet implemented";
+
+	
 }
 

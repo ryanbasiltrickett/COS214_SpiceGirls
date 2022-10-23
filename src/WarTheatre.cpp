@@ -27,5 +27,10 @@ void WarTheatre::addArea(Area* area) {
 
 Area* WarTheatre::clone() {
 	// TODO - implement WarTheatre::clone
-	throw "Not yet implemented";
+ WarTheatre* warTheatreClone = new WarTheatre();
+
+ for(int i = 0 ; i < this->areas.size(); ++i)
+	warTheatreClone->addArea(this->areas[i]);
+
+	return warTheatreClone;
 }

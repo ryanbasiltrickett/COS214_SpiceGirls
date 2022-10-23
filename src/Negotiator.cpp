@@ -1,8 +1,7 @@
 #include "Negotiator.h"
 
 Negotiator::Negotiator() {
-	// TODO - implement Negotiator::Negotiator
-	throw "Not yet implemented";
+	
 }
 
 bool Negotiator::sendPeace(int id) {
@@ -10,17 +9,22 @@ bool Negotiator::sendPeace(int id) {
 	throw "Not yet implemented";
 }
 
-void Negotiator::removeAlliance() {
-	// TODO - implement Negotiator::removeAlliance
-	throw "Not yet implemented";
+void Negotiator::removeAlliance(Alliance* alliance) {
+	
+
 }
 
-void Negotiator::addAlliance() {
-	// TODO - implement Negotiator::addAlliance
-	throw "Not yet implemented";
+void Negotiator::addAlliance(Alliance* alliance) {
+
+	this->alliances.push_back(alliance);
 }
 
 Negotiator* Negotiator::clone() {
-	// TODO - implement Negotiator::clone
-	throw "Not yet implemented";
+	
+	Negotiator* negotiatorClone = new Negotiator();
+
+	for(int i = 0; i < this->alliances.size(); ++i)
+		negotiatorClone->addAlliance(this->alliances[i]);
+
+		return allianceClone;
 }
