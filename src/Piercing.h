@@ -6,7 +6,7 @@
  * 
  * Used to add to the damage Entity objects inflict.
  */
-class Piercing : AddOn {
+class Piercing : public AddOn {
 
 
 public:
