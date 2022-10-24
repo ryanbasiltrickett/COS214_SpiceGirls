@@ -1,8 +1,6 @@
 #include "Armour.h"
 
-Armour::Armour(Entity* entity, int value) {
-	this->entity = entity;
-	this->value = value;
+Armour::Armour() : AddOn() {	
 }
 
 void Armour::takeDamage(int damage) {
@@ -15,4 +13,10 @@ void Armour::takeDamage(int damage) {
 
 void Armour::dealDamage(Entity* entity) {
 	return;
+}
+
+AddOn* Armour::clone() {
+	Armour* armour = new Armour();
+	armour->setValue(value);
+	return armour;
 }

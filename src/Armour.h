@@ -14,11 +14,8 @@ class Armour : public AddOn {
 public:
 	/**
 	 * @brief Instantiates an Armour
-	 * 
-	 * @param entity must be a Entity*
-	 * @param value must be a int
 	 */
-	Armour(Entity* entity, int value);
+	Armour();
 	
 	/**
 	 * @brief Decreases the entities' armour value (or health when their armour has depleted)
@@ -47,6 +44,16 @@ public:
 	 * @return void
 	 */
 	void dealDamage(Entity* entity);
+
+	/**
+	 * @brief Instantiates and returns a clone of the current AddOn
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current AddOn
+	 *
+	 * @return AddOn* The AddOn clone
+	 */
+	AddOn* clone();
 };
 
 #endif
