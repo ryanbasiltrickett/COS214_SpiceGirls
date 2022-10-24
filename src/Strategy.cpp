@@ -3,7 +3,6 @@
 using namespace std;
 
 Strategy::Strategy() {
-	// TODO - implement Strategy::Strategy
 }
 
 Strategy::~Strategy(){

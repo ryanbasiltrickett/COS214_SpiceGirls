@@ -1,7 +1,7 @@
 #include "Alliance.h"
 
 Alliance::Alliance() {
-	// TODO - implement Alliance::Alliance
+	
 	
 }
 

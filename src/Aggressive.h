@@ -7,6 +7,7 @@
 #include "TerrainType.h"
 #include "AquaticType.h"
 #include "AerialType.h"
+#include "Support.h"
 
 class Aggressive : public Strategy {
 

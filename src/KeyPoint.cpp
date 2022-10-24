@@ -21,8 +21,7 @@ void KeyPoint::moveEntities(Area* area, Alliance* alliance) {
 }
 
 void KeyPoint::addEntity(Entity* entity) {
-	// TODO - implement KeyPoint::addEntity
-	throw "Not yet implemented";
+	entities.push_back(entity);
 }
 
 void KeyPoint::attach(CommandCenter* comCenter) {
@@ -54,6 +53,6 @@ Area* KeyPoint::clone() {
 	return keyPointClone;
 }
 
-string KeyPoint::getAresType() const{
+string KeyPoint::getAreaType() const{
 	return this->AreaType;
 }

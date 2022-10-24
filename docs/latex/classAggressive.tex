@@ -1,4 +1,4 @@
-\hypertarget{classAggressive}{}\doxysection{Aggressive Class Reference}
+\hypertarget{classAggressive}{}\section{Aggressive Class Reference}
 \label{classAggressive}\index{Aggressive@{Aggressive}}
 Inheritance diagram for Aggressive\+:\begin{figure}[H]
 \begin{center}
@@ -6,19 +6,86 @@ Inheritance diagram for Aggressive\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classAggressive}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classAggressive_a4f2c68be3d9505c742acfc7ffede5f20}\label{classAggressive_a4f2c68be3d9505c742acfc7ffede5f20}} 
-void {\bfseries perform\+Strat} (Keypoint $\ast$key\+Point)
-\end{DoxyCompactItemize}
+void void \hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{perform\+Strat} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$key\+Point, \hyperlink{classAlliance}{Alliance} $\ast$alliance)
+\begin{DoxyCompactList}\small\item\em This function will perform an \hyperlink{classAggressive}{Aggressive} strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 
 
-Definition at line 4 of file Aggressive.\+h.
+Definition at line 12 of file Aggressive.\+h.
 
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classAggressive_a84122a24be95be256f9992c21127b0d1}\label{classAggressive_a84122a24be95be256f9992c21127b0d1}} 
+\index{Aggressive@{Aggressive}!perform\+Strat@{perform\+Strat}}
+\index{perform\+Strat@{perform\+Strat}!Aggressive@{Aggressive}}
+\subsubsection{\texorpdfstring{perform\+Strat()}{performStrat()}}
+{\footnotesize\ttfamily void Aggressive\+::perform\+Strat (\begin{DoxyParamCaption}\item[{\hyperlink{classKeyPoint}{Key\+Point} $\ast$}]{key\+Point,  }\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+This function will perform an \hyperlink{classAggressive}{Aggressive} strategy. 
+
+\begin{DoxyAuthor}{Author}
+Antwi-\/\+Antwi
+\end{DoxyAuthor}
+Preconditions\+:
+\begin{DoxyItemize}
+\item Takes in object of type \hyperlink{classKeyPoint}{Key\+Point} as parameter
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the \hyperlink{classStrategy}{Strategy} type
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Point} & an \hyperlink{classAggressive}{Aggressive} strategy will then be performed at this specific keypoint\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void The function will return a void 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{Strategy}.
+
+
+
+Definition at line 7 of file Aggressive.\+cpp.
+
+
+\begin{DoxyCode}
+7                                                                     \{
+8 
+9     keyPoint->\hyperlink{classKeyPoint_a5b21817babe753b2b684d70479f3eaf2}{notify}();
+10     \hyperlink{classType}{Type}* type;
+11     \textcolor{keywordflow}{if}(keyPoint->\hyperlink{classKeyPoint_a2e7f0accc7c9be244da25bb1189c5a1d}{getAreaType}() == \textcolor{stringliteral}{"Terrain"})
+12         type = \textcolor{keyword}{new} \hyperlink{classTerrainType}{TerrainType}();
+13     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(keyPoint->\hyperlink{classKeyPoint_a2e7f0accc7c9be244da25bb1189c5a1d}{getAreaType}() == \textcolor{stringliteral}{"Aquatic"})
+14         type = \textcolor{keyword}{new} \hyperlink{classAquaticType}{AquaticType}();
+15     \textcolor{keywordflow}{else}
+16         type = \textcolor{keyword}{new} \hyperlink{classAerialType}{AerialType}();
+17         
+18     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0;i < 2; ++i)
+19         keyPoint->\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}(\textcolor{keyword}{new} \hyperlink{classVehicle}{Vehicle}(type));
+20 
+21     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 5; ++i)
+22         keyPoint->\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}(\textcolor{keyword}{new} \hyperlink{classPersonnel}{Personnel}(type));
+23 
+24     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 3; ++i)
+25         keyPoint->\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}(\textcolor{keyword}{new} \hyperlink{classSupport}{Support}(type));
+26     
+27     keyPoint->\hyperlink{classKeyPoint_a3fc425554378989ba83ebd22f7305f14}{moveEntities}(keyPoint, alliance);
+28 \}
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

@@ -1,42 +1,46 @@
-\hypertarget{classAlliance}{}\doxysection{Alliance Class Reference}
+\hypertarget{classAlliance}{}\section{Alliance Class Reference}
 \label{classAlliance}\index{Alliance@{Alliance}}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classAlliance_a262a2819e969b465eb9548e419bad521}\label{classAlliance_a262a2819e969b465eb9548e419bad521}} 
-\mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a80f9a001ba5bad946690111b775c2349}{set\+Negotiator}} (\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$n)
+\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classAlliance}{Alliance}. \end{DoxyCompactList}\item 
+void \hyperlink{classAlliance_a80f9a001ba5bad946690111b775c2349}{set\+Negotiator} (\hyperlink{classNegotiator}{Negotiator} $\ast$n)
 \begin{DoxyCompactList}\small\item\em Sets the entity negotiator. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classAlliance_a7e5d92ca269e0d21b80978b0f72a2230}{add\+Country}} (\mbox{\hyperlink{classCountry}{Country}} $\ast$nation)
+bool \hyperlink{classAlliance_a7e5d92ca269e0d21b80978b0f72a2230}{add\+Country} (\hyperlink{classCountry}{Country} $\ast$nation)
 \begin{DoxyCompactList}\small\item\em Adds a country into the members vector which holds countries. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classAlliance_acd8720fdba717c3e551a88ff6a1010b5}{consider\+Peace}} (int id)
+bool \hyperlink{classAlliance_acd8720fdba717c3e551a88ff6a1010b5}{consider\+Peace} (int id)
 \begin{DoxyCompactList}\small\item\em Considers to stop war with the allaince passed into the function header. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_ab1ba99d78866c13e17031afa3bdd727e}{add\+Factory}} (\mbox{\hyperlink{classFactory}{Factory}} $\ast$f)
+void \hyperlink{classAlliance_ab1ba99d78866c13e17031afa3bdd727e}{add\+Factory} (\hyperlink{classFactory}{Factory} $\ast$f)
 \begin{DoxyCompactList}\small\item\em Adds a factory into the production vector which holds factories. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}} ()
+void \hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender} ()
 \begin{DoxyCompactList}\small\item\em Makes the current alliance give up of the war by surrendering. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{get\+ID}} ()
-\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{classAlliance}{Alliance}}\textquotesingle{}s a\+ID. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classAlliance_aa774a70192e6d4fd034cc7689b3ff5a8}{off\+Peace}} ()
+int \hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{get\+ID} ()
+\begin{DoxyCompactList}\small\item\em Returns \hyperlink{classAlliance}{Alliance}\textquotesingle{}s a\+ID. \end{DoxyCompactList}\item 
+bool \hyperlink{classAlliance_aa774a70192e6d4fd034cc7689b3ff5a8}{off\+Peace} ()
 \begin{DoxyCompactList}\small\item\em Offers peace to stop war with the alliance fighting against using send\+Peace. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ \mbox{\hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classAlliance}{Alliance} $\ast$ \hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{clone} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \hyperlink{classAlliance}{Alliance}. \end{DoxyCompactList}\item 
+void \hyperlink{classAlliance_ace044c4ae0ede7f19990279f163b6f37}{set\+ID} (int ID)
+\begin{DoxyCompactList}\small\item\em Sets the passed in parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}{set\+Active\+Status} (bool active)
+\begin{DoxyCompactList}\small\item\em Sets variable active to the passed in parameter. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 
 
 Definition at line 4 of file Alliance.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classAlliance_a7e5d92ca269e0d21b80978b0f72a2230}\label{classAlliance_a7e5d92ca269e0d21b80978b0f72a2230}} 
-\index{Alliance@{Alliance}!addCountry@{addCountry}}
-\index{addCountry@{addCountry}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{addCountry()}{addCountry()}}
-{\footnotesize\ttfamily bool Alliance\+::add\+Country (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCountry}{Country}} $\ast$}]{nation }\end{DoxyParamCaption})}
+\index{Alliance@{Alliance}!add\+Country@{add\+Country}}
+\index{add\+Country@{add\+Country}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{add\+Country()}{addCountry()}}
+{\footnotesize\ttfamily bool Alliance\+::add\+Country (\begin{DoxyParamCaption}\item[{\hyperlink{classCountry}{Country} $\ast$}]{nation }\end{DoxyParamCaption})}
 
 
 
@@ -49,7 +53,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item \mbox{\hyperlink{classCountry}{Country}} is added to the members vector
+\item \hyperlink{classCountry}{Country} is added to the members vector
 \end{DoxyItemize}
 
 
@@ -65,18 +69,17 @@ bool
 Definition at line 12 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{12                                          \{}
-\DoxyCodeLine{13     \textcolor{comment}{// TODO -\/ implement Alliance::addCountry}}
-\DoxyCodeLine{14     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{15 \}}
-
+\begin{DoxyCode}
+12                                          \{
+13 
+14     this->members.push\_back(nation);
+15 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_ab1ba99d78866c13e17031afa3bdd727e}\label{classAlliance_ab1ba99d78866c13e17031afa3bdd727e}} 
-\index{Alliance@{Alliance}!addFactory@{addFactory}}
-\index{addFactory@{addFactory}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{addFactory()}{addFactory()}}
-{\footnotesize\ttfamily void Alliance\+::add\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFactory}{Factory}} $\ast$}]{f }\end{DoxyParamCaption})}
+\index{Alliance@{Alliance}!add\+Factory@{add\+Factory}}
+\index{add\+Factory@{add\+Factory}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{add\+Factory()}{addFactory()}}
+{\footnotesize\ttfamily void Alliance\+::add\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classFactory}{Factory} $\ast$}]{f }\end{DoxyParamCaption})}
 
 
 
@@ -89,7 +92,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item \mbox{\hyperlink{classFactory}{Factory}} is added to the production vector
+\item \hyperlink{classFactory}{Factory} is added to the production vector
 \end{DoxyItemize}
 
 
@@ -105,26 +108,25 @@ void
 Definition at line 22 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{22                                     \{}
-\DoxyCodeLine{23     \textcolor{comment}{// TODO -\/ implement Alliance::addFactory}}
-\DoxyCodeLine{24     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{25 \}}
-
+\begin{DoxyCode}
+22                                     \{
+23     
+24     this->production.push\_back(f);
+25 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_adc67a41223565105889493f9cfd350d0}\label{classAlliance_adc67a41223565105889493f9cfd350d0}} 
 \index{Alliance@{Alliance}!clone@{clone}}
 \index{clone@{clone}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ Alliance\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classAlliance}{Alliance} $\ast$ Alliance\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Instantiates and returns a clone of the current \mbox{\hyperlink{classAlliance}{Alliance}}. 
+Instantiates and returns a clone of the current \hyperlink{classAlliance}{Alliance}. 
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Returns the clone of the current \mbox{\hyperlink{classAlliance}{Alliance}}
+\item Returns the clone of the current \hyperlink{classAlliance}{Alliance}
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
@@ -132,20 +134,31 @@ Alliance$\ast$ The alliance clone
 \end{DoxyReturn}
 
 
-Definition at line 42 of file Alliance.\+cpp.
+Definition at line 41 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{42                           \{}
-\DoxyCodeLine{43     \textcolor{comment}{// TODO -\/ implement Alliance::clone}}
-\DoxyCodeLine{44     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{45 \}}
-
+\begin{DoxyCode}
+41                           \{
+42     
+43     \hyperlink{classAlliance}{Alliance}* allianceClone = \textcolor{keyword}{new} \hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}();
+44 
+45     allianceClone->\hyperlink{classAlliance_ace044c4ae0ede7f19990279f163b6f37}{setID}(this->aID);
+46     allianceClone->\hyperlink{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}{setActiveStatus}(this->active);
+47     allianceClone->\hyperlink{classAlliance_a80f9a001ba5bad946690111b775c2349}{setNegotiator}(this->negotiator);
+48 
+49     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < this->production.size(); ++i)
+50         allianceClone->\hyperlink{classAlliance_ab1ba99d78866c13e17031afa3bdd727e}{addFactory}(this->production[i]);
+51 
+52     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < this->members.size(); ++i)
+53         allianceClone->\hyperlink{classAlliance_a7e5d92ca269e0d21b80978b0f72a2230}{addCountry}(this->members[i]);
+54 
+55     \textcolor{keywordflow}{return} allianceClone;
+56 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_acd8720fdba717c3e551a88ff6a1010b5}\label{classAlliance_acd8720fdba717c3e551a88ff6a1010b5}} 
-\index{Alliance@{Alliance}!considerPeace@{considerPeace}}
-\index{considerPeace@{considerPeace}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{considerPeace()}{considerPeace()}}
+\index{Alliance@{Alliance}!consider\+Peace@{consider\+Peace}}
+\index{consider\+Peace@{consider\+Peace}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{consider\+Peace()}{considerPeace()}}
 {\footnotesize\ttfamily bool Alliance\+::consider\+Peace (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
 
 
@@ -175,22 +188,21 @@ bool
 Definition at line 17 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{17                                    \{}
-\DoxyCodeLine{18     \textcolor{comment}{// TODO -\/ implement Alliance::considerPeace}}
-\DoxyCodeLine{19     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{20 \}}
-
+\begin{DoxyCode}
+17                                    \{
+18     \textcolor{comment}{// TODO - implement Alliance::considerPeace}
+19     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
+20 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_a7f23330454f02b0056eb92bd2072359d}\label{classAlliance_a7f23330454f02b0056eb92bd2072359d}} 
-\index{Alliance@{Alliance}!getID@{getID}}
-\index{getID@{getID}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{getID()}{getID()}}
+\index{Alliance@{Alliance}!get\+ID@{get\+ID}}
+\index{get\+ID@{get\+ID}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{get\+I\+D()}{getID()}}
 {\footnotesize\ttfamily int Alliance\+::get\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Returns \mbox{\hyperlink{classAlliance}{Alliance}}\textquotesingle{}s a\+ID. 
+Returns \hyperlink{classAlliance}{Alliance}\textquotesingle{}s a\+ID. 
 
 Postconditions\+:
 \begin{DoxyItemize}
@@ -198,24 +210,22 @@ Postconditions\+:
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
-int The ID of the \mbox{\hyperlink{classAlliance}{Alliance}} object 
+int The ID of the \hyperlink{classAlliance}{Alliance} object 
 \end{DoxyReturn}
 
 
 Definition at line 32 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{32                     \{}
-\DoxyCodeLine{33     \textcolor{comment}{// TODO -\/ implement Alliance::getID}}
-\DoxyCodeLine{34     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{35 \}}
-
+\begin{DoxyCode}
+32                     \{
+33     \textcolor{keywordflow}{return} this->aID;
+34 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_aa774a70192e6d4fd034cc7689b3ff5a8}\label{classAlliance_aa774a70192e6d4fd034cc7689b3ff5a8}} 
-\index{Alliance@{Alliance}!offPeace@{offPeace}}
-\index{offPeace@{offPeace}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{offPeace()}{offPeace()}}
+\index{Alliance@{Alliance}!off\+Peace@{off\+Peace}}
+\index{off\+Peace@{off\+Peace}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{off\+Peace()}{offPeace()}}
 {\footnotesize\ttfamily bool Alliance\+::off\+Peace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -232,21 +242,70 @@ bool
 \end{DoxyReturn}
 
 
-Definition at line 37 of file Alliance.\+cpp.
+Definition at line 36 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{37                         \{}
-\DoxyCodeLine{38     \textcolor{comment}{// TODO -\/ implement Alliance::offPeace}}
-\DoxyCodeLine{39     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{40 \}}
-
+\begin{DoxyCode}
+36                         \{
+37     \textcolor{comment}{// TODO - implement Alliance::offPeace}
+38     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
+39 \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}\label{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}} 
+\index{Alliance@{Alliance}!set\+Active\+Status@{set\+Active\+Status}}
+\index{set\+Active\+Status@{set\+Active\+Status}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{set\+Active\+Status()}{setActiveStatus()}}
+{\footnotesize\ttfamily void Alliance\+::set\+Active\+Status (\begin{DoxyParamCaption}\item[{bool}]{active }\end{DoxyParamCaption})}
+
+
+
+Sets variable active to the passed in parameter. 
+
+Pre\+Condtions\+:
+\begin{DoxyItemize}
+\item active must be an a bool
+\end{DoxyItemize}
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item The varriable active is set to the passed in the parameter
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & a bool parameter \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAlliance_ace044c4ae0ede7f19990279f163b6f37}\label{classAlliance_ace044c4ae0ede7f19990279f163b6f37}} 
+\index{Alliance@{Alliance}!set\+ID@{set\+ID}}
+\index{set\+ID@{set\+ID}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{set\+I\+D()}{setID()}}
+{\footnotesize\ttfamily void Alliance\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{ID }\end{DoxyParamCaption})}
+
+
+
+Sets the passed in parameter. 
+
+Pre\+Condtions\+:
+\begin{DoxyItemize}
+\item ID must be an int
+\end{DoxyItemize}
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item The ID is set to the passed in the parameter
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{classAlliance_a80f9a001ba5bad946690111b775c2349}\label{classAlliance_a80f9a001ba5bad946690111b775c2349}} 
-\index{Alliance@{Alliance}!setNegotiator@{setNegotiator}}
-\index{setNegotiator@{setNegotiator}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{setNegotiator()}{setNegotiator()}}
-{\footnotesize\ttfamily void Alliance\+::set\+Negotiator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$}]{n }\end{DoxyParamCaption})}
+\index{Alliance@{Alliance}!set\+Negotiator@{set\+Negotiator}}
+\index{set\+Negotiator@{set\+Negotiator}!Alliance@{Alliance}}
+\subsubsection{\texorpdfstring{set\+Negotiator()}{setNegotiator()}}
+{\footnotesize\ttfamily void Alliance\+::set\+Negotiator (\begin{DoxyParamCaption}\item[{\hyperlink{classNegotiator}{Negotiator} $\ast$}]{n }\end{DoxyParamCaption})}
 
 
 
@@ -259,7 +318,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Sets the negotiator of the \mbox{\hyperlink{classAlliance}{Alliance}} object
+\item Sets the negotiator of the \hyperlink{classAlliance}{Alliance} object
 \end{DoxyItemize}
 
 
@@ -275,16 +334,15 @@ void
 Definition at line 8 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                                           \{}
-\DoxyCodeLine{9     this-\/>negotiator = n;}
-\DoxyCodeLine{10 \}}
-
+\begin{DoxyCode}
+8                                           \{
+9     this->negotiator = n;
+10 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}\label{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}} 
 \index{Alliance@{Alliance}!surrender@{surrender}}
 \index{surrender@{surrender}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{surrender()}{surrender()}}
+\subsubsection{\texorpdfstring{surrender()}{surrender()}}
 {\footnotesize\ttfamily void Alliance\+::surrender (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -304,12 +362,11 @@ void
 Definition at line 27 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{27                          \{}
-\DoxyCodeLine{28     \textcolor{comment}{// TODO -\/ implement Alliance::surrender}}
-\DoxyCodeLine{29     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{30 \}}
-
+\begin{DoxyCode}
+27                         \{
+28 
+29     this->active = \textcolor{keyword}{false};
+30 \}
 \end{DoxyCode}
 
 

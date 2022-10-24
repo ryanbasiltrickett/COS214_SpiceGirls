@@ -6,10 +6,11 @@ Aggressive::Aggressive() {
 
 void Aggressive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 
+	keyPoint->notify();
 	Type* type;
-	if(keyPoint->getAresType() == "Terrain")
+	if(keyPoint->getAreaType() == "Terrain")
 		type = new TerrainType();
-	else if(keyPoint->getAresType() == "Aquatic")
+	else if(keyPoint->getAreaType() == "Aquatic")
 		type = new AquaticType();
 	else
 		type = new AerialType();
@@ -19,6 +20,9 @@ void Aggressive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 
 	for(int i = 0; i < 5; ++i)
 		keyPoint->addEntity(new Personnel(type));
+
+	for(int i = 0; i < 3; ++i)
+		keyPoint->addEntity(new Support(type));
 	
 	keyPoint->moveEntities(keyPoint, alliance);
 }

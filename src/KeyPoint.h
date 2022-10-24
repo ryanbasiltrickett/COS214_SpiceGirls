@@ -139,7 +139,7 @@ public:
 	 * 
 	 * @return string The area type
 	 */
-	std::string getAresType() const;
+	std::string getAreaType() const;
 };
 
 #endif

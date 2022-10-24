@@ -9,4 +9,7 @@ Passive::Passive() {
 
 void Passive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 	
+	alliance->surrender();
+	keyPoint->notify()
+
 }

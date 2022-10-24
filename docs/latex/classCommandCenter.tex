@@ -1,28 +1,32 @@
-\hypertarget{classCommandCenter}{}\doxysection{Command\+Center Class Reference}
-\label{classCommandCenter}\index{CommandCenter@{CommandCenter}}
+\hypertarget{classCommandCenter}{}\section{Command\+Center Class Reference}
+\label{classCommandCenter}\index{Command\+Center@{Command\+Center}}
 
 
-\mbox{\hyperlink{classCommandCenter}{Command\+Center}} class.  
+\hyperlink{classCommandCenter}{Command\+Center} class.  
 
 
 
 
 {\ttfamily \#include $<$Command\+Center.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}\label{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}} 
-\mbox{\hyperlink{classCommandCenter_a3fc4f465f7c24d9c9158baf0e03ac571}{Command\+Center}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCommandCenter}{Command\+Center}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}{update}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point)
+\mbox{\Hypertarget{classCommandCenter_a0ecec9fd6d0a28f082665837a791ef07}\label{classCommandCenter_a0ecec9fd6d0a28f082665837a791ef07}} 
+\hyperlink{classCommandCenter_a0ecec9fd6d0a28f082665837a791ef07}{Command\+Center} (\hyperlink{classGeneral}{General} $\ast$general, \hyperlink{classKeyPoint}{Key\+Point} $\ast$keypoint)
+\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classCommandCenter}{Command\+Center}. \end{DoxyCompactList}\item 
+void \hyperlink{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}{update} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$key\+Point)
 \begin{DoxyCompactList}\small\item\em Updates the command center\textquotesingle{}s keypoint state. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ \mbox{\hyperlink{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Command Center. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classCommandCenter}{Command\+Center} $\ast$ \hyperlink{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}{clone} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Command Center. \end{DoxyCompactList}\item 
+void \hyperlink{classCommandCenter_a755d1f8677d6764a59ba8e8e4909103d}{set\+General} (\hyperlink{classGeneral}{General} $\ast$general)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classGeneral}{General} object. \end{DoxyCompactList}\item 
+void \hyperlink{classCommandCenter_a585052e0a546ce307090c43b95dad5fa}{set\+Key\+Point} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$key\+Point)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classKeyPoint}{Key\+Point} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-\mbox{\hyperlink{classCommandCenter}{Command\+Center}} class. 
+\subsection{Detailed Description}
+\hyperlink{classCommandCenter}{Command\+Center} class. 
 
 Used to observe the entities and weather at the Keypoint objects. 
 
@@ -30,12 +34,12 @@ Definition at line 11 of file Command\+Center.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}\label{classCommandCenter_aef666a19f24fd089edd089e4b2cb9542}} 
-\index{CommandCenter@{CommandCenter}!clone@{clone}}
-\index{clone@{clone}!CommandCenter@{CommandCenter}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$ Command\+Center\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\index{Command\+Center@{Command\+Center}!clone@{clone}}
+\index{clone@{clone}!Command\+Center@{Command\+Center}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classCommandCenter}{Command\+Center} $\ast$ Command\+Center\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -43,29 +47,84 @@ Instantiates and returns a clone of the current Command Center.
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Returns the clone of the current \mbox{\hyperlink{classCommandCenter}{Command\+Center}}
+\item Returns the clone of the current \hyperlink{classCommandCenter}{Command\+Center}
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
-Command\+Center$\ast$ The \mbox{\hyperlink{classCommandCenter}{Command\+Center}} clone 
+Command\+Center$\ast$ The \hyperlink{classCommandCenter}{Command\+Center} clone 
 \end{DoxyReturn}
 
 
-Definition at line 13 of file Command\+Center.\+cpp.
+Definition at line 12 of file Command\+Center.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{13                                     \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement CommandCenter::clone}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
-
+\begin{DoxyCode}
+12                                     \{
+13     
+14     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classCommandCenter_a0ecec9fd6d0a28f082665837a791ef07}{CommandCenter}(this->general, this->keyPoint);
+15 \}
 \end{DoxyCode}
+\mbox{\Hypertarget{classCommandCenter_a755d1f8677d6764a59ba8e8e4909103d}\label{classCommandCenter_a755d1f8677d6764a59ba8e8e4909103d}} 
+\index{Command\+Center@{Command\+Center}!set\+General@{set\+General}}
+\index{set\+General@{set\+General}!Command\+Center@{Command\+Center}}
+\subsubsection{\texorpdfstring{set\+General()}{setGeneral()}}
+{\footnotesize\ttfamily void Command\+Center\+::set\+General (\begin{DoxyParamCaption}\item[{\hyperlink{classGeneral}{General} $\ast$}]{general }\end{DoxyParamCaption})}
+
+
+
+Set the \hyperlink{classGeneral}{General} object. 
+
+Pre\+Conditions\+:
+\begin{DoxyItemize}
+\item general must be of type General$\ast$
+\end{DoxyItemize}
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item \hyperlink{classGeneral}{General} object will be set to passed in parameter
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em general} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCommandCenter_a585052e0a546ce307090c43b95dad5fa}\label{classCommandCenter_a585052e0a546ce307090c43b95dad5fa}} 
+\index{Command\+Center@{Command\+Center}!set\+Key\+Point@{set\+Key\+Point}}
+\index{set\+Key\+Point@{set\+Key\+Point}!Command\+Center@{Command\+Center}}
+\subsubsection{\texorpdfstring{set\+Key\+Point()}{setKeyPoint()}}
+{\footnotesize\ttfamily void Command\+Center\+::set\+Key\+Point (\begin{DoxyParamCaption}\item[{\hyperlink{classKeyPoint}{Key\+Point} $\ast$}]{key\+Point }\end{DoxyParamCaption})}
+
+
+
+Set the \hyperlink{classKeyPoint}{Key\+Point} object. 
+
+Pre\+Conditions\+:
+\begin{DoxyItemize}
+\item key\+Point must be of type Key\+Point$\ast$
+\end{DoxyItemize}
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item \hyperlink{classKeyPoint}{Key\+Point} object will be set to passed in parameter
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Point} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}\label{classCommandCenter_a1aee52be7351e2e2c78c8d239d31cff0}} 
-\index{CommandCenter@{CommandCenter}!update@{update}}
-\index{update@{update}!CommandCenter@{CommandCenter}}
-\doxysubsubsection{\texorpdfstring{update()}{update()}}
-{\footnotesize\ttfamily void Command\+Center\+::update (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{key\+Point }\end{DoxyParamCaption})}
+\index{Command\+Center@{Command\+Center}!update@{update}}
+\index{update@{update}!Command\+Center@{Command\+Center}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void Command\+Center\+::update (\begin{DoxyParamCaption}\item[{\hyperlink{classKeyPoint}{Key\+Point} $\ast$}]{key\+Point }\end{DoxyParamCaption})}
 
 
 
@@ -91,15 +150,14 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 8 of file Command\+Center.\+cpp.
+Definition at line 7 of file Command\+Center.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                                              \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement CommandCenter::update}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
-
+\begin{DoxyCode}
+7                                              \{
+8 
+9     this->keyPoint = keyPoint;
+10 \}
 \end{DoxyCode}
 
 
