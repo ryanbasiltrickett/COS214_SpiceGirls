@@ -1,7 +1,9 @@
 #include "General.h"
 
-General::General() {
-
+General::General(Alliance* alliance, KeyPoint* keyPoint, Strategy* strategy) {
+	this->alliance = alliance;
+	this->keyPoint = keyPoint;
+	this->strategy = strategy;
 }
 
 void General::evaluateStrategy() {
@@ -14,13 +16,7 @@ void General::initiateStrategy() {
 
 General* General::clone() {
 
-	General* generalClone = new General();
-
-	generalClone->setKeyPoint(this->keyPoint);
-	generalClone->setStrategy(this->strat);
-	generalClone->SetAlliance(this->alliance);
-
-	return generalClone;
+	return new General(this->alliance, this->keyPoint, this->strategy);
 }
 
 bool General::setKeyPoint(Strategy* strategy){

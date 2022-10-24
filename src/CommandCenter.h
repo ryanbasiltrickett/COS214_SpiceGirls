@@ -18,7 +18,7 @@ public:
 	/**
 	 * @brief Instantiates the CommandCenter
 	 */
-	CommandCenter();
+	CommandCenter(General* general, KeyPoint* keypoint);
 
 	/**
 	 * @brief Updates the command center's keypoint state

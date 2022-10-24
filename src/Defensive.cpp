@@ -6,6 +6,6 @@ Defensive::Defensive() {
 }
 
 void Defensive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
-	// TODO - implement Defensive::performStrat
-	keyPoint->attack(alliance);
+	
+	
 }

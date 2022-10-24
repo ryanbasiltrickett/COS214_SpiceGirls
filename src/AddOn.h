@@ -25,6 +25,7 @@ public:
 	virtual void takeDamage(int damage) = 0;
 
 	virtual void dealDamage(Entity* entity) = 0;
+	
 };
 
 #endif

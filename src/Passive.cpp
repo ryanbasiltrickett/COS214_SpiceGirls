@@ -7,7 +7,6 @@ Passive::Passive() {
 	this->strategy = "Passive";
 }
 
-void Passive::void performStrat(KeyPoint* keyPoint, Alliance* alliance) {
+void Passive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 	
-	keyPoint->attack(alliance);
 }

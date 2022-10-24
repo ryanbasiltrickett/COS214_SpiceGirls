@@ -1,6 +1,6 @@
 #include "CommandCenter.h"
 
-CommandCenter::CommandCenter() {
+CommandCenter::CommandCenter(General* general, KeyPoint* keypoint): general(general), keyPoint(keyPoint) {
 	
 }
 
@@ -11,10 +11,5 @@ void CommandCenter::update(KeyPoint* keyPoint) {
 
 CommandCenter* CommandCenter::clone() {
 	
-	CommandCenter* commandCenterClone = new CommandCenter(); 
-
-	commandCenterClone->setGeneral(this->general);
-	commandCenterClone->setKeyPoint(this->keyPoint);
-
-	return commandCenterClone;
+	return new CommandCenter(this->general, this->keyPoint);
 }

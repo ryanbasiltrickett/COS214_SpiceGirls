@@ -6,8 +6,11 @@ Armour::Armour(Entity* entity, int value) {
 }
 
 void Armour::takeDamage(int damage) {
-	// TODO - implement Armour::takeDamage
-	throw "Not yet implemented";
+	if (value > 0) {
+		value -= damage;
+	} else {
+		entity->takeDamage(damage);
+	}
 }
 
 void Armour::dealDamage(Entity* entity) {

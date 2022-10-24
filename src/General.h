@@ -8,10 +8,10 @@ class General {
 private:
 	Alliance* alliance;
 	KeyPoint* keyPoint;
-	Strategy* strat;
+	Strategy* strategy;
 
 public:
-	General();
+	General(Alliance* alliance, KeyPoint* keyPoint, Strategy* stratety);
 
 	void evaluateStrategy();
 

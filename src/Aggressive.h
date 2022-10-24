@@ -2,6 +2,11 @@
 #define AGGRESSIVE_H
 #include "Strategy.h"
 #include "KeyPoint.h"
+#include "Vehicle.h"
+#include "Personnel.h"
+#include "TerrainType.h"
+#include "AquaticType.h"
+#include "AerialType.h"
 
 class Aggressive : public Strategy {
 

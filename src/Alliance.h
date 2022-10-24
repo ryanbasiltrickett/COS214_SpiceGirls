@@ -129,7 +129,7 @@ public:
 	 * @brief Sets variable active to the passed in parameter
 	 * 
 	 * PreCondtions:
-	 * - avtive must be an a bool
+	 * - active must be an a bool
 	 * 
 	 * PostConditions:
 	 * - The varriable active is set to the passed in the parameter
