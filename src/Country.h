@@ -1,17 +1,23 @@
 #ifndef COUNTRY_H
 #define COUNTRY_H
 
+#include <string>
+
+using namespace std;
+
 class Country {
 
 private:
-	std::string name;
+	string name;
 	int id;
 
 public:
 	/**
 	 * @brief Instantiates the Country
+	 * 
+	 * @param name must be a string
 	 */
-	Country();
+	Country(string name);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Country

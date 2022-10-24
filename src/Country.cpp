@@ -1,11 +1,10 @@
 #include "Country.h"
 
-Country::Country() {
-	// TODO - implement Country::Country
-	throw "Not yet implemented";
+Country::Country(string name) {
+	this->name = name;
+	id = rand();
 }
 
 Country* Country::clone() {
-	// TODO - implement Country::clone
-	throw "Not yet implemented";
+	return new Country(*this);
 }
