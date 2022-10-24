@@ -46,12 +46,12 @@ public:
 	void dealDamage(Entity* entity);
 
 	/**
-	 * @brief Instantiates and returns a clone of the current AddOn
+	 * @brief Instantiates and returns a clone of the current Armour
 	 *
 	 * Postconditions:
-	 *  - Returns the clone of the current AddOn
+	 *  - Returns the clone of the current Armour
 	 *
-	 * @return AddOn* The AddOn clone
+	 * @return Armour* The Armour clone
 	 */
 	AddOn* clone();
 };
