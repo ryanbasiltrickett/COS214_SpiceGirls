@@ -2,7 +2,8 @@
 #define DEFENSIVE_H
 #include "Strategy.h"
 #include "KeyPoint.h"
-
+#include "Alliance.h"
+#include "Personnel.h"
 class Defensive : public Strategy {
 
 
