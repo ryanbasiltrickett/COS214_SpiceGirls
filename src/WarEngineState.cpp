@@ -1,17 +1,26 @@
 #include "WarEngineState.h"
 
-WarEngineState::WarEngineState() {
-	// TODO - implement WarEngineState::WarEngineState
-	throw "Not yet implemented";
-}
+WarEngineState::WarEngineState() {}
 
+WarEngineState::WarEngineState(WarEngineState* state){
+
+	for(Area* a : state->areas){
+		this->areas.push_back(a);
+	}
+
+	for(Alliance* alliance : state->alliances){
+		this->alliances.push_back(alliance);
+	}
+
+}
+	
 void WarEngineState::setAreas(vector<Area*> areaVect) {
 	this->areas = areaVect;
 }
 
 vector<Area*> WarEngineState::getAreas() {
 
-	if(areas == nullptr)
+	if(areas.size() == 0)
 	throw "No Areas Stored.";
 
 	return areas;
@@ -23,8 +32,12 @@ void WarEngineState::setAlliances(vector<Alliance*> alliances) {
 
 vector<Alliance*> WarEngineState::getAlliances() {
 
-	if(this->alliances == nullptr)
+	if(alliances.size() == 0)
 	throw "No Alliances stored";
 
-	return this->alliances;
+	return alliances;
+}
+
+WarEngineState* WarEngineState::clone(){
+	return new WarEngineState(this);
 }

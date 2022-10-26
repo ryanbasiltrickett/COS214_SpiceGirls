@@ -2,6 +2,9 @@
 #define WARENGINESTATE_H
 #include "Alliance.h"
 #include "Area.h"
+#include <vector>
+
+using namespace std;
 
 /**
  * @class WarEngineState
@@ -23,6 +26,11 @@ public:
 	*/
 	WarEngineState();
 
+	/**
+	 * @brief Initializes an instance of the WarEngineState class with values from an existing.
+	*/
+	WarEngineState(WarEngineState* state);
+	
 	/**
 	 * @brief Takes in a vector of Area and sets it to the areas member of the WarEngineState instance.
 	 * @param vector<Area*> areaVect
@@ -49,6 +57,12 @@ public:
 	 * 
 	*/
 	vector<Alliance*> getAlliances();
+
+	/**
+	 * @brief Returns a clone of the current WarEngineMemento object.
+	 * @return WarEngineMemento*
+	*/
+	WarEngineState* clone();
 };
 
 #endif
