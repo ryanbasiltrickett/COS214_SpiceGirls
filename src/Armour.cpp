@@ -12,7 +12,7 @@ void Armour::takeDamage(int damage) {
 }
 
 void Armour::dealDamage(Entity* entity) {
-	return;
+	entity->takeDamage(this->entity->getDamage());
 }
 
 AddOn* Armour::clone() {
