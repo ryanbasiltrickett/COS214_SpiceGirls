@@ -1,6 +1,6 @@
 #ifndef SAVEARCHIVE_H
 #define SAVEARCHIVE_H
-#include <vector>
+#include <unordered_map>
 #include <string>
 #include "WarEngineMemento.h"
 
@@ -11,7 +11,7 @@
 class SaveArchive {
 
 private:
-	std::vector<WarEngineMemento*> saveList;
+	std::unordered_map<std::string, WarEngineMemento*> saveList;
 
 public:
 	/**
@@ -24,13 +24,15 @@ public:
 	 * 
 	 * Preconditions:
 	 * 	- newSave must be a WarEngineMemento*
+	 * 	- newSaveName must be a string
 	 * 
 	 * Postconditions:
-	 * 	- Appends a new 
+	 * 	- Adds a new memento to list of saves 
 	 * @param newSave must be a WarEngineMemento*
+	 * @param newSaveName must be a string
 	 * @return void
 	*/
-	void addNewSave(WarEngineMemento* newSave);
+	void addNewSave(std::string newSaveName, WarEngineMemento* newSave);
 
 	/**
 	 * @brief Returns the last saved memento.
@@ -65,10 +67,9 @@ public:
 	 * Postconditions:
 	 * 	- Clears all elements in the saveList vector
 	 * 
-	 * @return boolean
-	 * 
+	 * @return void
 	*/
-	bool clearSaveList();
+	void clearSaveList();
 
 	/**
 	 * @brief Deletes a memento with the matching given name from the list of saved mementos.
@@ -80,11 +81,10 @@ public:
 	 * 
 	 * @param name a string
 	 * 
-	 * @return boolean
-	 * 
+	 * @return void
 	 * @exception std::out_of_range save archive is empty
 	*/
-	bool deleteSave(std::string name);
+	void deleteSave(std::string name);
 };
 
 #endif
