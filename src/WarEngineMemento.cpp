@@ -1,8 +1,8 @@
 #include "WarEngineMemento.h"
 
-WarEngineMemento::WarEngineMemento(WarEngineState* state, std::string timestamp){
+WarEngineMemento::WarEngineMemento(WarEngineState* state, std::string name){
 	this->state = state;
-	this->timestamp = timestamp;
+	this->name = name;
 }
 
 void WarEngineMemento::setState(WarEngineState* state){
@@ -13,6 +13,6 @@ WarEngineState* WarEngineMemento::getState(){
 	return state;
 }
 
-std::string WarEngineMemento::getTimestamp(){
-	return timestamp;
+std::string WarEngineMemento::getName(){
+	return name;
 }

@@ -40,25 +40,25 @@ public:
 	 * 
 	 * @return WarEngineMemento*
 	 * @exception std::out_of_range save archive is empty
-	 * @exception std::invalid_argument memento with given timestamp is not found in memento list. 
+	 * @exception std::invalid_argument memento with given name is not found in memento list. 
 	*/
 	WarEngineMemento* getLastSave();
 
 	/**
 	 * @brief Returns the last saved memento.
 	 * Preconditions:
-	 * 	- timestamp must be a string in date/time format
+	 * 	- name must be a string
 	 * 
 	 * Postconditions:
 	 * 	- Returns the last element in the saveList vector
 	 * 
-	 * @param timestamp a UTC time formatted string
+	 * @param name a string
 	 * 
 	 * @return WarEngineMemento*
 	 * 
 	 * @exception std::out_of_range save archive is empty
 	*/
-	WarEngineMemento* getSave(std::string timestamp);
+	WarEngineMemento* getSave(std::string name);
 	
 	/**
 	 * @brief Erases all saved mementos from the list of saves.
@@ -71,20 +71,20 @@ public:
 	bool clearSaveList();
 
 	/**
-	 * @brief Deletes a memento with the matching given timestamp from the list of saved mementos.
+	 * @brief Deletes a memento with the matching given name from the list of saved mementos.
 	 * Preconditions:
-	 * 	- timestamp must be a string in date/time format
+	 * 	- name must be a string in date/time format
 	 * 
 	 * Postconditions:
-	 * 	- Removes the element in the saveList vector with a timestamp matching that of the parameter
+	 * 	- Removes the element in the saveList vector with a name matching that of the parameter
 	 * 
-	 * @param timestamp a UTC time formatted string
+	 * @param name a string
 	 * 
 	 * @return boolean
 	 * 
 	 * @exception std::out_of_range save archive is empty
 	*/
-	bool deleteSave(std::string timestamp);
+	bool deleteSave(std::string name);
 };
 
 #endif

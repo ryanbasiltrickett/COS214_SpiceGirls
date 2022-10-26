@@ -14,18 +14,18 @@ class WarEngineMemento {
 private:
 	WarEngineState* state;
 	
-	std::string timestamp;
+	std::string name;
 
 public:
 	/**
 	 * @brief Instantiates a WarEngineMemento class instance, setting the state to the given parameters.
 	 * 
 	 * @param state must be a WarEngineState*
-	 * @param timestamp must be a UTC time formatted string.
+	 * @param name must be a string.
 	 * 
 	 * 	
 	 * */
-	WarEngineMemento(WarEngineState* state, std::string timestamp);
+	WarEngineMemento(WarEngineState* state, std::string name);
 
 	/**
 	 * @brief Sets the memento's state to the passed in state.
@@ -48,14 +48,14 @@ public:
 	WarEngineState* getState();
 
 	/**
-	 * @brief Returns the UTC timestamp string value of memento.
+	 * @brief Returns the UTC name string value of memento.
 	 * 
 	 * Postconditions:
-	 * 	- Returns the string value stored in timestamp variable.
+	 * 	- Returns the string value stored in name variable.
 	 * 
 	 * @return string
 	*/
-	std::string getTimestamp();
+	std::string getName();
 };
 
 #endif

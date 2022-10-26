@@ -1,9 +1,6 @@
 #include "SaveArchive.h"
 
-SaveArchive::SaveArchive() {
-	std::vector<WarEngineMemento*> temp (1);
-	saveList = temp;
-}
+SaveArchive::SaveArchive() {}
 
 void SaveArchive::addNewSave(WarEngineMemento* newSave) {
 	saveList.push_back(newSave);
@@ -22,7 +19,7 @@ WarEngineMemento* SaveArchive::getLastSave() {
 	return lastSave;
 }
 
-WarEngineMemento* SaveArchive::getSave(std::string timestamp) {
+WarEngineMemento* SaveArchive::getSave(std::string name) {
 	if(saveList.size() == 0){
 		std::__throw_out_of_range("Save archive is empty");
 	}
@@ -31,21 +28,19 @@ WarEngineMemento* SaveArchive::getSave(std::string timestamp) {
 		
 		WarEngineMemento * currMemento = saveList[i];
 
-		if(timestamp.compare(currMemento->getTimestamp()) == 0 ){
+		if(name.compare(currMemento->getName()) == 0 ){
 			return currMemento;
 		}
 	}
 
-	std::__throw_invalid_argument("No save with given timestamp exists");
+	std::__throw_invalid_argument("No save with given name exists");
 }
 
-bool SaveArchive::clearSaveList() {
+void SaveArchive::clearSaveList() {
 	saveList.clear();
-
-	return true;	
 }
 
-bool SaveArchive::deleteSave(std::string timestamp) {
+bool SaveArchive::deleteSave(std::string name) {
 	if(saveList.size() == 0){
 		std::__throw_out_of_range("Save archive is empty");
 	}
@@ -54,7 +49,7 @@ bool SaveArchive::deleteSave(std::string timestamp) {
 		
 		WarEngineMemento * currMemento = saveList[i];
 
-		if(timestamp.compare(currMemento->getTimestamp()) == 0 ){
+		if(name.compare(currMemento->getName()) == 0 ){
 			return true;
 		}
 	}
