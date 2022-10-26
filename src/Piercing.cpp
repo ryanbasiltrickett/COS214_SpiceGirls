@@ -4,7 +4,7 @@ Piercing::Piercing() : AddOn() {
 }
 
 void Piercing::takeDamage(int damage) {
-	return;
+	entity->takeDamage(damage);
 }
 
 void Piercing::dealDamage(Entity* entity) {
