@@ -6,11 +6,15 @@ KeyPoint::KeyPoint() {
 }
 
 bool KeyPoint::isKeyPoint() {
-	// TODO - implement KeyPoint::isKeyPoint
+	return true;
+}
+
+void KeyPoint::simulateBattle(Alliance* alliance) {
+	// TODO - implement KeyPoint::attack
 	throw "Not yet implemented";
 }
 
-void KeyPoint::attack(Alliance* alliance) {
+void KeyPoint::clearBattlefield() {
 	// TODO - implement KeyPoint::attack
 	throw "Not yet implemented";
 }
@@ -21,18 +25,21 @@ void KeyPoint::moveEntities(Area* area, Alliance* alliance) {
 }
 
 void KeyPoint::addEntity(Entity* entity) {
-	// TODO - implement KeyPoint::addEntity
-	throw "Not yet implemented";
+	entities.push_back(entity);
 }
 
 void KeyPoint::attach(CommandCenter* comCenter) {
-	// TODO - implement KeyPoint::attach
-	throw "Not yet implemented";
+	comCenters.push_back(comCenter);
 }
 
 void KeyPoint::detach(CommandCenter* comCenter) {
-	// TODO - implement KeyPoint::detach
-	throw "Not yet implemented";
+	
+	for (int i = 0; i < comCenters.size(); i++) {
+		if (comCenters[i] == comCenter) {
+			delete comCenter;
+			comCenters.erase()
+		}
+	}
 }
 
 void KeyPoint::notify() {

@@ -1,12 +1,21 @@
 #ifndef KEYPOINT_H
 #define KEYPOINT_H
 
+#include "Alliance.h"
+#include "Area.h"
+#include "Entity.h"
+#include "CommandCenter.h"
+#include "Weather.h"
+#include <vector>
+
+using namespace std;
+
 /**
  * @brief Keypoint class
  * 
  * Used to emulate strategic positions.
  */
-class KeyPoint : Area {
+class KeyPoint : public Area {
 
 private:
 	vector<Entity*> entities;
@@ -30,7 +39,7 @@ public:
 	bool isKeyPoint();
 
 	/**
-	 * @brief Attack with troops from the alliance passed in
+	 * @brief Simulate Battle with troops from the alliance passed in
 	 *
 	 * Preconditions:
 	 *  - alliance must be an Alliance*
@@ -41,7 +50,17 @@ public:
 	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
-	void attack(Alliance* alliance);
+	void simulateBattle(Alliance* alliance);
+
+	/**
+	 * @brief Clears the battlefield of all deceased troops
+	 *
+	 * Postconditions:
+	 *  - Notify command centers of each troop who is killed
+	 * 
+	 * @return void
+	 */
+	void clearBattlefield();
 
 	/**
 	 * @brief Moves a specific alliances troops from one area to another
