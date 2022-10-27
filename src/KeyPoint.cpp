@@ -1,9 +1,6 @@
 #include "KeyPoint.h"
 
-KeyPoint::KeyPoint() {
-	// TODO - implement KeyPoint::KeyPoint
-	throw "Not yet implemented";
-}
+KeyPoint::KeyPoint(): Area() {}
 
 bool KeyPoint::isKeyPoint() {
 	return true;
@@ -15,12 +12,23 @@ void KeyPoint::simulateBattle(Alliance* alliance) {
 }
 
 void KeyPoint::clearBattlefield() {
-	// TODO - implement KeyPoint::attack
+	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
+		if ((*it)->getHealth() <= 0) {
+			delete *it;
+			entities.erase(it);
+			// TODO - notify comCenter
+			throw "Not yet implemented";
+		}
+	}
+}
+
+void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
+	// TODO - implement KeyPoint::moveEntitiesInto
 	throw "Not yet implemented";
 }
 
-void KeyPoint::moveEntities(Area* area, Alliance* alliance) {
-	// TODO - implement KeyPoint::moveEntities
+void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
+	// TODO - implement KeyPoint::moveEntitiesOutOf
 	throw "Not yet implemented";
 }
 
@@ -33,18 +41,13 @@ void KeyPoint::attach(CommandCenter* comCenter) {
 }
 
 void KeyPoint::detach(CommandCenter* comCenter) {
-	
-	for (int i = 0; i < comCenters.size(); i++) {
-		if (comCenters[i] == comCenter) {
+	for (vector<CommandCenter*>::iterator it = comCenters.begin();  it != comCenters.end(); ++it) {
+		if (*it == comCenter) {
 			delete comCenter;
-			comCenters.erase()
+			comCenters.erase(it);
+			return;
 		}
 	}
-}
-
-void KeyPoint::notify() {
-	// TODO - implement KeyPoint::notify
-	throw "Not yet implemented";
 }
 
 Area* KeyPoint::clone() {

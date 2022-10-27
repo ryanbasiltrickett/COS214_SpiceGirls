@@ -63,20 +63,36 @@ public:
 	void clearBattlefield();
 
 	/**
-	 * @brief Moves a specific alliances troops from one area to another
+	 * @brief Moves a specific alliances troops into this keypoint
 	 *
 	 * Preconditions:
-	 * 	- area must be an Area*
 	 *  - alliance must be an Alliance*
+	 *  - numTroops must be an int
 	 *
 	 * Postconditions:
-	 *  - Move troops to other area
+	 *  - Move troops to into this keypoint
 	 *
-	 * @param area musy be an Area*
 	 * @param alliance must be an Alliance*
+	 * @param numTroops must be an int
 	 * @return void
 	 */
-	void moveEntities(Area* area, Alliance* alliance);
+	void moveEntitiesInto(Alliance* alliance, int numTroops);
+
+	/**
+	 * @brief Moves a specific alliances troops out of the keypoint
+	 *
+	 * Preconditions:
+	 *  - alliance must be an Alliance*
+	 *  - numTroops must be an int
+	 *
+	 * Postconditions:
+	 *  - Move troops to reserve
+	 *
+	 * @param alliance must be an Alliance*
+	 * @param numTroops must be an int
+	 * @return void
+	 */
+	void moveEntitiesOutOf(Alliance* alliance, int numTroops);
 
 	/**
 	 * @brief Adds an enitity to the key point object
@@ -119,16 +135,6 @@ public:
 	 * @return void
 	 */
 	void detach(CommandCenter* comCenter);
-
-	/**
-	 * @brief Notifies the attached command centers when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * Postconditions:
-	 *  - Notifies the command centers in the comCenters vector when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * @return void
-	 */
-	void notify();
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
