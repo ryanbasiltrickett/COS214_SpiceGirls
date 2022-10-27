@@ -21,10 +21,5 @@ void Negotiator::addAlliance(Alliance* alliance) {
 
 Negotiator* Negotiator::clone() {
 	
-	Negotiator* negotiatorClone = new Negotiator();
-
-	for(int i = 0; i < this->alliances.size(); ++i)
-		negotiatorClone->addAlliance(this->alliances[i]);
-
-		return allianceClone;
+	throw "Not yet implemented";
 }
