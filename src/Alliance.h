@@ -4,6 +4,7 @@
 class Alliance {
 
 private:
+	static int totalNum;
 	int aID;
 	vector<Factory*> production;
 	Negotiator* negotiator;
@@ -40,9 +41,9 @@ public:
 	 *  - Country is added to the members vector
 	 *
 	 * @param nation must be an Country*
-	 * @return bool
+	 * @return void
 	 */
-	bool addCountry(Country* nation);
+	void addCountry(Country* nation);
 
 	/**
 	 * @brief Considers to stop war with the allaince passed into the function header
@@ -77,6 +78,7 @@ public:
 	 *
 	 * Postconditions:
 	 *  - Sets the active variable to false
+	 *  - Removes this alliance from the Negotiator vector
 	 *
 	 * @return void
 	 */

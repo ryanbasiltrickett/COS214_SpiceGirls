@@ -1,42 +1,50 @@
 #include "Alliance.h"
+#include <time.h>
+
+int Alliance::totalNum = 0;
 
 Alliance::Alliance() {
-	// TODO - implement Alliance::Alliance
-	throw "Not yet implemented";
+	
+	this->active = true;
+	this->aID = totalNum++;
+	srand(time(0));
 }
 
 void Alliance::setNegotiator(Negotiator* n) {
 	this->negotiator = n;
 }
 
-bool Alliance::addCountry(Country* nation) {
-	// TODO - implement Alliance::addCountry
-	throw "Not yet implemented";
+void Alliance::addCountry(Country* nation) {
+	members.push_back(nation);
 }
 
 bool Alliance::considerPeace(int id) {
-	// TODO - implement Alliance::considerPeace
-	throw "Not yet implemented";
+	return (rand() % 2 == 0);
 }
 
 void Alliance::addFactory(Factory* f) {
-	// TODO - implement Alliance::addFactory
-	throw "Not yet implemented";
+	production.push_back(f);
 }
 
 void Alliance::surrender() {
-	// TODO - implement Alliance::surrender
-	throw "Not yet implemented";
+	this->active =false;
+
+	this->negotiator->removeAlliance(aID);
 }
 
 int Alliance::getID() {
-	// TODO - implement Alliance::getID
-	throw "Not yet implemented";
+	return this->aID;
 }
 
 bool Alliance::offPeace() {
-	// TODO - implement Alliance::offPeace
-	throw "Not yet implemented";
+
+	if (this->negotiator->sendPeace(aID)) //Send the peace deal to all the alliances fighting against
+	{
+		this->active =false;
+		return true;
+	}
+	
+	return false; 
 }
 
 Alliance* Alliance::clone() {

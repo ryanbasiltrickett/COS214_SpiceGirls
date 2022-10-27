@@ -15,6 +15,11 @@ public:
 	Negotiator();
 
 	/**
+	 * @brief Destructor for the Negotiator object
+	 */
+	~Negotiator();
+
+	/**
 	 * @brief Sets the entities type state
 	 *
 	 * Preconditions:
@@ -31,22 +36,29 @@ public:
 	/**
 	 * @brief Removes an alliance from the alliance vector
 	 *
+	 * Preconditions:
+	 *  - id must be an integer
+	 *
 	 * Postconditions:
 	 *  - Alliance is removed from vector
 	 *
 	 * @return void
 	 */
-	void removeAlliance();
+	
+	void removeAlliance(int id);
 
 	/**
 	 * @brief Adds an alliance to the alliance vector
+	 *
+	 * Preconditions:
+	 *  - newAlliance must be an Alliance pointer
 	 *
 	 * Postconditions:
 	 *  - Alliance is added to the vector
 	 *
 	 * @return void
 	 */
-	void addAlliance();
+	void addAlliance(Alliance* newAlliance);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Negotiator
