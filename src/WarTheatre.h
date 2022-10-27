@@ -1,11 +1,16 @@
 #ifndef WARTHEATRE_H
 #define WARTHEATRE_H
 
-class WarTheatre : Area {
+#include "Area.h"
+#include "Alliance.h"
+#include <vector>
+
+using namespace std;
+
+class WarTheatre : public Area {
 
 private:
 	vector<Area*> areas;
-
 
 public:
 	/**
@@ -19,7 +24,7 @@ public:
 	 * Postconditions:
 	 *  - All dynamic memory should be deallocated from the war theatre object
 	 */
-	void ~WarTheatre();
+	~WarTheatre();
 
 	/**
 	 * @brief Returns area type
@@ -32,7 +37,7 @@ public:
 	bool isKeyPoint();
 
 	/**
-	 * @brief Attack with troops from the alliance passed in
+	 * @brief Simulate Battle with troops from the alliance passed in
 	 *
 	 * Preconditions:
 	 *  - alliance must be an Alliance*
@@ -43,23 +48,7 @@ public:
 	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
-	void attack(Alliance* alliance);
-
-	/**
-	 * @brief Moves a specific alliances troops from one area to another
-	 *
-	 * Preconditions:
-	 * 	- area must be an Area*
-	 *  - alliance must be an Alliance*
-	 *
-	 * Postconditions:
-	 *  - Call move troops function on correct area
-	 *
-	 * @param area musy be an Area*
-	 * @param alliance must be an Alliance*
-	 * @return void
-	 */
-	void moveEntities(Area* area, Alliance* alliance);
+	void simulateBattle(Alliance* alliance);
 
 	/**
 	 * @brief Adds an area to the war theatre object
@@ -75,7 +64,7 @@ public:
 	 */
 	void addArea(Area* area);
 
-	Area* clone();
+	WarTheatre* clone();
 };
 
 #endif
