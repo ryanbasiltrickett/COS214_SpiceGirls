@@ -1,6 +1,9 @@
 #ifndef WARENGINEMEMENTO_H
 #define WARENGINEMEMENTO_H
 
+#include "WarEngineState.h"
+#include <string>
+#include <vector>
 class WarEngineMemento {
 
 /**
@@ -9,15 +12,50 @@ class WarEngineMemento {
  * 
 */
 private:
-	WarEngineState state;
+	WarEngineState* state;
+	
+	std::string name;
 
 public:
 	/**
 	 * @brief Instantiates a WarEngineMemento class instance, setting the state to the given parameters.
-	 * @param players Vector of all active players in the simulation.
-	 * @param warTheatre Vector of all warTheatre instances (and keypoints) currently active in simulation.
+	 * 
+	 * @param state must be a WarEngineState*
+	 * @param name must be a string.
+	 * 
+	 * 	
+	 * */
+	WarEngineMemento(WarEngineState* state, std::string name);
+
+	/**
+	 * @brief Sets the memento's state to the passed in state.
+	 * 
+	 * Preconditions:
+	 * 	- state must be a WarEngineState*
+	 * 
+	 * @param state must be of type WarEngineState*
+	 * @return void
 	*/
-	WarEngineMemento(vector<Alliance*> players, vector<Area*> warTheatre);
+	void setState(WarEngineState* state);
+
+	/**
+	 * @brief Returns the memento's state.
+	 * Postconditions:
+	 * 	- Returns the state stored in state member variable.
+	 * 
+	 * @return WarEngineState*
+	*/
+	WarEngineState* getState();
+
+	/**
+	 * @brief Returns the UTC name string value of memento.
+	 * 
+	 * Postconditions:
+	 * 	- Returns the string value stored in name variable.
+	 * 
+	 * @return string
+	*/
+	std::string getName();
 };
 
 #endif
