@@ -1,30 +1,21 @@
 #include "WarTheatre.h"
 
-WarTheatre::WarTheatre() {
-	// TODO - implement WarTheatre::WarTheatre
-	throw "Not yet implemented";
-}
+WarTheatre::WarTheatre(): Area() {}
 
 bool WarTheatre::isKeyPoint() {
-	// TODO - implement WarTheatre::isKeyPoint
-	throw "Not yet implemented";
+	return false;
 }
 
-void WarTheatre::attack(Alliance* alliance) {
-	// TODO - implement WarTheatre::attack
-	throw "Not yet implemented";
-}
-
-void WarTheatre::moveEntities(Area* area, Alliance* alliance) {
-	// TODO - implement WarTheatre::moveEntities
-	throw "Not yet implemented";
+void WarTheatre::simulateBattle(Alliance* alliance) {
+	for (int i = 0; i < areas.size(); i++)
+		areas[i]->simulateBattle(alliance);
 }
 
 void WarTheatre::addArea(Area* area) {
-	// TODO - implement WarTheatre::addArea
-	throw "Not yet implemented";
+	areas.push_back(area);
 }
 
+<<<<<<< HEAD
 Area* WarTheatre::clone() {
 	// TODO - implement WarTheatre::clone
  WarTheatre* warTheatreClone = new WarTheatre();
@@ -33,4 +24,13 @@ Area* WarTheatre::clone() {
 	warTheatreClone->addArea(this->areas[i]);
 
 	return warTheatreClone;
+=======
+WarTheatre* WarTheatre::clone() {
+	WarTheatre* w = new WarTheatre();
+
+	for (int i = 0; i < areas.size(); i++)
+		w->addArea(areas[i]->clone());
+
+	return w;
+>>>>>>> a4295e93de29acc2a81d07b2501bf4500def6f80
 }
