@@ -2,6 +2,7 @@
 
 WarEngineState::WarEngineState() {}
 
+
 WarEngineState::WarEngineState(WarEngineState* state){
 
 	for(Area* a : state->areas){
@@ -33,11 +34,16 @@ void WarEngineState::setAlliances(vector<Alliance*> alliances) {
 vector<Alliance*> WarEngineState::getAlliances() {
 
 	if(alliances.size() == 0)
-	throw "No Alliances stored";
+		std::__throw_out_of_range("No Alliances stored.");
 
 	return alliances;
 }
 
 WarEngineState* WarEngineState::clone(){
 	return new WarEngineState(this);
+}
+
+WarEngineState::~WarEngineState(){
+	//TODO: To be Implemented
+	throw "To be implemented";
 }
