@@ -1,8 +1,6 @@
 #include "Armour.h"
 
-Armour::Armour(Entity* entity, int value) {
-	// TODO - implement Armour::Armour
-	throw "Not yet implemented";
+Armour::Armour() : AddOn() {	
 }
 
 void Armour::takeDamage(int damage) {
@@ -14,6 +12,11 @@ void Armour::takeDamage(int damage) {
 }
 
 void Armour::dealDamage(Entity* entity) {
-	// TODO - implement Armour::dealDamage
-	throw "Not yet implemented";
+	this->entity->dealDamage(entity);
+}
+
+AddOn* Armour::clone() {
+	Armour* armour = new Armour();
+	armour->setValue(value);
+	return armour;
 }

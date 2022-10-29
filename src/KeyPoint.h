@@ -62,15 +62,10 @@ public:
 	 * @brief Clears the battlefield of all deceased troops
 	 *
 	 * Postconditions:
-<<<<<<< HEAD
 	 *  - Move troops to other area
 	 *
 	 * @param area must be an Area*
 	 * @param alliance must be an Alliance*
-=======
-	 *  - Notify command centers of each troop who is killed
-	 * 
->>>>>>> a4295e93de29acc2a81d07b2501bf4500def6f80
 	 * @return void
 	 */
 	void clearBattlefield();
@@ -150,7 +145,6 @@ public:
 	void detach(CommandCenter* comCenter);
 
 	/**
-<<<<<<< HEAD
 	 * @brief Notifies the attached command centers when a change in the Keypoint's state (entities or weather) occurs
 	 *
 	 * Postconditions:
@@ -161,8 +155,6 @@ public:
 	void notify();
 	
 	/**
-=======
->>>>>>> a4295e93de29acc2a81d07b2501bf4500def6f80
 	 * @brief Instantiates and returns a clone of the current Keypoint
 	 *
 	 * Postconditions:
