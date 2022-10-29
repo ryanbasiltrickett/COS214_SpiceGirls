@@ -64,6 +64,14 @@ public:
 	 */
 	void addArea(Area* area);
 
+	/**
+	 * @brief Instantiates and returns a clone of the current war theatre
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current war theatre
+	 *
+	 * @return WarTheatre* The war theatre clone
+	 */
 	WarTheatre* clone();
 };
 

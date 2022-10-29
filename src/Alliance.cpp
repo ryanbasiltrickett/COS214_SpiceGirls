@@ -40,17 +40,5 @@ bool Alliance::offPeace() {
 
 Alliance* Alliance::clone() {
 	
-	Alliance* allianceClone = new Alliance();
-
-	allianceClone->setID(this->aID);
-	allianceClone->setActiveStatus(this->active);
-	allianceClone->setNegotiator(this->negotiator);
-
-	for(int i = 0; i < this->production.size(); ++i)
-		allianceClone->addFactory(this->production[i]);
-
-	for(int i = 0; i < this->members.size(); ++i)
-		allianceClone->addCountry(this->members[i]);
-
-	return allianceClone;
+	throw "Not yet implemented";
 }

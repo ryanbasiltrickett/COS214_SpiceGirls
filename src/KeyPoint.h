@@ -8,6 +8,13 @@
 #include "Weather.h"
 #include <vector>
 
+#include "Alliance.h"
+#include "Area.h"
+#include "Entity.h"
+#include "CommandCenter.h"
+#include "Weather.h"
+#include <vector>
+
 using namespace std;
 
 /**
