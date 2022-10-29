@@ -26,7 +26,7 @@ public:
 	/**
 	 * @brief Instantiates the key point
 	 */
-	KeyPoint();
+	KeyPoint(std::string areaType);
 
 	/**
 	 * @brief Returns area type
@@ -145,6 +145,13 @@ public:
 	 * @return Area* The Keypoint clone
 	 */
 	Area* clone();
+
+	/**
+	 * @brief Get the Area Type object
+	 * 
+	 * @return std::string reaturns the type
+	 */
+	std::string getAreaType() const;
 };
 
 #endif

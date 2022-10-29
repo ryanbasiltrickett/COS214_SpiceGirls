@@ -16,7 +16,7 @@ public:
 	/**
 	 * @brief Instantiates the war theatre
 	 */
-	WarTheatre();
+	WarTheatre(std::string areaType);
 
 	/**
 	 * @brief Destroys the war theatre object
@@ -64,7 +64,19 @@ public:
 	 */
 	void addArea(Area* area);
 
+	/**
+	 * @brief Clones a WarTheathr object and returns it
+	 * 
+	 * @return WarTheatre* Th pointer to an warTheatr object that has been cloned
+	 */
 	WarTheatre* clone();
+
+	/**
+	 * @brief Get the Area Type object
+	 * 
+	 * @return std::string reaturns the type
+	 */
+	std::string getAreaType() const;
 };
 
 #endif

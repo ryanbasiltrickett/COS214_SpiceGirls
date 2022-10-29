@@ -1,6 +1,10 @@
 #include "WarTheatre.h"
 
-WarTheatre::WarTheatre(): Area() {}
+using namespace std;
+
+WarTheatre::WarTheatre(string areaType): Area(areaType), areaType(areaType) {
+	
+}
 
 bool WarTheatre::isKeyPoint() {
 	return false;
@@ -23,3 +27,10 @@ WarTheatre* WarTheatre::clone() {
 
 	return w;
 }
+
+string WarTheatre::getAreaType() const {
+
+	return this->areaType;
+}
+
+
