@@ -1,36 +1,74 @@
-\hypertarget{classSupportFactory}{}\doxysection{Support\+Factory Class Reference}
-\label{classSupportFactory}\index{SupportFactory@{SupportFactory}}
+\hypertarget{classSupportFactory}{}\section{Support\+Factory Class Reference}
+\label{classSupportFactory}\index{Support\+Factory@{Support\+Factory}}
+
+
+\hyperlink{classSupportFactory}{Support\+Factory} class.  
+
+
+
+
+{\ttfamily \#include $<$Support\+Factory.\+h$>$}
+
 Inheritance diagram for Support\+Factory\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classSupportFactory}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}\label{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}} 
-\mbox{\hyperlink{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}{Support\+Factory}} ()
+\hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{Support\+Factory} (\hyperlink{classType}{Type} $\ast$type, \hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Instantiates the support factory. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classSupport}{Support}} $\ast$ \mbox{\hyperlink{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
+\hyperlink{classEntity}{Entity} $\ast$ \hyperlink{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}{create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a support for the given alliance. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}} ()
+\hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current support factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
+\hyperlink{classSupportFactory}{Support\+Factory} class. 
+
+Used to instantiate \hyperlink{classSupport}{Support} objects. 
+
+Definition at line 11 of file Support\+Factory.\+h.
 
 
-Definition at line 4 of file Support\+Factory.\+h.
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}\label{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}} 
+\index{Support\+Factory@{Support\+Factory}!Support\+Factory@{Support\+Factory}}
+\index{Support\+Factory@{Support\+Factory}!Support\+Factory@{Support\+Factory}}
+\subsubsection{\texorpdfstring{Support\+Factory()}{SupportFactory()}}
+{\footnotesize\ttfamily Support\+Factory\+::\+Support\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classType}{Type} $\ast$}]{type,  }\item[{\hyperlink{classAddOn}{Add\+On} $\ast$}]{add\+On }\end{DoxyParamCaption})}
 
 
 
-\doxysubsection{Member Function Documentation}
+Instantiates the support factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+{\em add\+On} & must be a Add\+On$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file Support\+Factory.\+cpp.
+
+
+\begin{DoxyCode}
+4 : \hyperlink{classFactory_aca946f8877efb5b5bae700f74537d99d}{Factory}(type, addOn) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}\label{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}} 
-\index{SupportFactory@{SupportFactory}!clone@{clone}}
-\index{clone@{clone}!SupportFactory@{SupportFactory}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classFactory}{Factory}} $\ast$ Support\+Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Support\+Factory@{Support\+Factory}!clone@{clone}}
+\index{clone@{clone}!Support\+Factory@{Support\+Factory}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classFactory}{Factory} $\ast$ Support\+Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -46,25 +84,23 @@ Factory$\ast$ The support factory clone
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classFactory}{Factory}}.
+Implements \hyperlink{classFactory}{Factory}.
 
 
 
-Definition at line 13 of file Support\+Factory.\+cpp.
+Definition at line 17 of file Support\+Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{13                                \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement SupportFactory::clone}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
-
+\begin{DoxyCode}
+17                                \{
+18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{SupportFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}(), \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}());
+19 \}
 \end{DoxyCode}
-\mbox{\Hypertarget{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}\label{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}} 
-\index{SupportFactory@{SupportFactory}!createEntity@{createEntity}}
-\index{createEntity@{createEntity}!SupportFactory@{SupportFactory}}
-\doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classSupport}{Support}} $\ast$ Support\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}\label{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}} 
+\index{Support\+Factory@{Support\+Factory}!create\+Entity@{create\+Entity}}
+\index{create\+Entity@{create\+Entity}!Support\+Factory@{Support\+Factory}}
+\subsubsection{\texorpdfstring{create\+Entity()}{createEntity()}}
+{\footnotesize\ttfamily \hyperlink{classEntity}{Entity} $\ast$ Support\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -86,23 +122,28 @@ Postconditions\+:
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Support$\ast$ The instatiated support 
+Entity$\ast$ The instatiated support 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classFactory}{Factory}}.
+Implements \hyperlink{classFactory}{Factory}.
 
 
 
-Definition at line 8 of file Support\+Factory.\+cpp.
+Definition at line 6 of file Support\+Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                                                         \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement SupportFactory::createEntity}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
-
+\begin{DoxyCode}
+6                                                        \{
+7     \hyperlink{classSupport}{Support}* s = \textcolor{keyword}{new} \hyperlink{classSupport}{Support}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}());
+8     \textcolor{keywordflow}{if} (\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}() != NULL) \{
+9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->clone();
+10         personnelAddOn->connectEntity(s);
+11         \textcolor{keywordflow}{return} personnelAddOn;
+12     \} \textcolor{keywordflow}{else} \{
+13         \textcolor{keywordflow}{return} s;
+14     \}
+15 \}
 \end{DoxyCode}
 
 

@@ -1,5 +1,10 @@
 #ifndef KEYPOINT_H
 #define KEYPOINT_H
+#include "Area.h"
+#include "Weather.h"
+#include "Entity.h"
+#include "CommandCenter.h"
+#include <vector>
 
 #include "Alliance.h"
 #include "Area.h"
@@ -21,12 +26,13 @@ private:
 	vector<Entity*> entities;
 	vector<CommandCenter*> comCenters;
 	Weather* weather;
+	std::string AreaType;
 
 public:
 	/**
 	 * @brief Instantiates the key point
 	 */
-	KeyPoint();
+	KeyPoint(std::string AreaType);
 
 	/**
 	 * @brief Returns area type
@@ -145,6 +151,20 @@ public:
 	 * @return Area* The Keypoint clone
 	 */
 	Area* clone();
+
+	/**
+	 * @brief Set the Weather object
+	 * 
+	 * @param weather 
+	 */
+	void setWeather(Weather* weather);
+
+	/**
+	 * @brief The area type is returned
+	 * 
+	 * @return string The area type
+	 */
+	std::string getAreaType() const;
 };
 
 #endif

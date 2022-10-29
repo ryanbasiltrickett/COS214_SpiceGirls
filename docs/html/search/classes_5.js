@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['general_95',['General',['../classGeneral.html',1,'']]]
+  ['general',['General',['../classGeneral.html',1,'']]]
 ];

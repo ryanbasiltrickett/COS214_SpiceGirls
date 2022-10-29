@@ -1,15 +1,11 @@
 #include "Passive.h"
 
-using namespace std;;
+using namespace std;
 
 Passive::Passive() {
-	// TODO - implement Passive::Passive
-	throw "Not yet implemented";
+
 }
 
-void Passive::performStrat(Keypoint* keyPoint) {
-	// TODO - implement Passive::performStrat
+void Passive::performStrat(KeyPoint* keyPoint) {
 	throw "Not yet implemented";
 }
-
-Passive::getStrategy(string nae)

@@ -1,8 +1,8 @@
 #include "Alliance.h"
 
 Alliance::Alliance() {
-	// TODO - implement Alliance::Alliance
-	throw "Not yet implemented";
+	
+	
 }
 
 void Alliance::setNegotiator(Negotiator* n) {
@@ -10,8 +10,8 @@ void Alliance::setNegotiator(Negotiator* n) {
 }
 
 bool Alliance::addCountry(Country* nation) {
-	// TODO - implement Alliance::addCountry
-	throw "Not yet implemented";
+
+	this->members.push_back(nation);
 }
 
 bool Alliance::considerPeace(int id) {
@@ -20,18 +20,17 @@ bool Alliance::considerPeace(int id) {
 }
 
 void Alliance::addFactory(Factory* f) {
-	// TODO - implement Alliance::addFactory
-	throw "Not yet implemented";
+	
+	this->production.push_back(f);
 }
 
-void Alliance::surrender() {
-	// TODO - implement Alliance::surrender
-	throw "Not yet implemented";
+void Alliance::surrender(){
+
+	this->active = false;
 }
 
 int Alliance::getID() {
-	// TODO - implement Alliance::getID
-	throw "Not yet implemented";
+	return this->aID;
 }
 
 bool Alliance::offPeace() {
@@ -40,6 +39,6 @@ bool Alliance::offPeace() {
 }
 
 Alliance* Alliance::clone() {
-	// TODO - implement Alliance::clone
+	
 	throw "Not yet implemented";
 }

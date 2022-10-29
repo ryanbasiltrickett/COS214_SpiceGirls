@@ -1,33 +1,44 @@
-\hypertarget{classAerialType}{}\doxysection{Aerial\+Type Class Reference}
-\label{classAerialType}\index{AerialType@{AerialType}}
+\hypertarget{classAerialType}{}\section{Aerial\+Type Class Reference}
+\label{classAerialType}\index{Aerial\+Type@{Aerial\+Type}}
+
+
+\hyperlink{classAerialType}{Aerial\+Type} class.  
+
+
+
+
+{\ttfamily \#include $<$Aerial\+Type.\+h$>$}
+
 Inheritance diagram for Aerial\+Type\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classAerialType}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classAerialType_af31f880cd2a2437544e77d38f60d1c99}\label{classAerialType_af31f880cd2a2437544e77d38f60d1c99}} 
-\mbox{\hyperlink{classAerialType_af31f880cd2a2437544e77d38f60d1c99}{Aerial\+Type}} ()
+\hyperlink{classAerialType_af31f880cd2a2437544e77d38f60d1c99}{Aerial\+Type} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the ariel type. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}{get\+Type\+Desc}} ()
+string \hyperlink{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}{get\+Type\+Desc} ()
 \begin{DoxyCompactList}\small\item\em Returns ariel type description. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
+\hyperlink{classAerialType}{Aerial\+Type} class. 
+
+Used to define \hyperlink{classEntity}{Entity} objects as ariel type. 
+
+Definition at line 11 of file Aerial\+Type.\+h.
 
 
-Definition at line 4 of file Aerial\+Type.\+h.
 
-
-
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}\label{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}} 
-\index{AerialType@{AerialType}!getTypeDesc@{getTypeDesc}}
-\index{getTypeDesc@{getTypeDesc}!AerialType@{AerialType}}
-\doxysubsubsection{\texorpdfstring{getTypeDesc()}{getTypeDesc()}}
+\index{Aerial\+Type@{Aerial\+Type}!get\+Type\+Desc@{get\+Type\+Desc}}
+\index{get\+Type\+Desc@{get\+Type\+Desc}!Aerial\+Type@{Aerial\+Type}}
+\subsubsection{\texorpdfstring{get\+Type\+Desc()}{getTypeDesc()}}
 {\footnotesize\ttfamily string Aerial\+Type\+::get\+Type\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -44,19 +55,17 @@ string The ariel type string
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classType}{Type}}.
+Implements \hyperlink{classType}{Type}.
 
 
 
-Definition at line 8 of file Aerial\+Type.\+cpp.
+Definition at line 5 of file Aerial\+Type.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                                \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement AerialType::getTypeDesc}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
-
+\begin{DoxyCode}
+5                                \{
+6     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Aerial"};
+7 \}
 \end{DoxyCode}
 
 
