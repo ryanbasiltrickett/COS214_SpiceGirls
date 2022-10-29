@@ -6,12 +6,21 @@
 #include "CommandCenter.h"
 #include <vector>
 
+#include "Alliance.h"
+#include "Area.h"
+#include "Entity.h"
+#include "CommandCenter.h"
+#include "Weather.h"
+#include <vector>
+
+using namespace std;
+
 /**
  * @brief Keypoint class
  * 
  * Used to emulate strategic positions.
  */
-class KeyPoint : Area {
+class KeyPoint : public Area {
 
 private:
 	vector<Entity*> entities;
@@ -36,7 +45,7 @@ public:
 	bool isKeyPoint();
 
 	/**
-	 * @brief Attack with troops from the alliance passed in
+	 * @brief Simulate Battle with troops from the alliance passed in
 	 *
 	 * Preconditions:
 	 *  - alliance must be an Alliance*
@@ -47,23 +56,49 @@ public:
 	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
-	void attack(Alliance* alliance);
+	void simulateBattle(Alliance* alliance);
 
 	/**
-	 * @brief Moves a specific alliances troops from one area to another
-	 *
-	 * Preconditions:
-	 * 	- area must be an Area*
-	 *  - alliance must be an Alliance*
+	 * @brief Clears the battlefield of all deceased troops
 	 *
 	 * Postconditions:
-	 *  - Move troops to other area
-	 *
-	 * @param area must be an Area*
-	 * @param alliance must be an Alliance*
+	 *  - Notify command centers of each troop who is killed
+	 * 
 	 * @return void
 	 */
-	void moveEntities(Area* area, Alliance* alliance);
+	void clearBattlefield();
+
+	/**
+	 * @brief Moves a specific alliances troops into this keypoint
+	 *
+	 * Preconditions:
+	 *  - alliance must be an Alliance*
+	 *  - numTroops must be an int
+	 *
+	 * Postconditions:
+	 *  - Move troops to into this keypoint
+	 *
+	 * @param alliance must be an Alliance*
+	 * @param numTroops must be an int
+	 * @return void
+	 */
+	void moveEntitiesInto(Alliance* alliance, int numTroops);
+
+	/**
+	 * @brief Moves a specific alliances troops out of the keypoint
+	 *
+	 * Preconditions:
+	 *  - alliance must be an Alliance*
+	 *  - numTroops must be an int
+	 *
+	 * Postconditions:
+	 *  - Move troops to reserve
+	 *
+	 * @param alliance must be an Alliance*
+	 * @param numTroops must be an int
+	 * @return void
+	 */
+	void moveEntitiesOutOf(Alliance* alliance, int numTroops);
 
 	/**
 	 * @brief Adds an enitity to the key point object
@@ -107,16 +142,6 @@ public:
 	 */
 	void detach(CommandCenter* comCenter);
 
-	/**
-	 * @brief Notifies the attached command centers when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * Postconditions:
-	 *  - Notifies the command centers in the comCenters vector when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * @return void
-	 */
-	void notify();
-	
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
 	 *
