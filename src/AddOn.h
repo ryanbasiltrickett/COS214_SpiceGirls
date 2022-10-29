@@ -50,12 +50,8 @@ public:
 	virtual void takeDamage(int damage) = 0;
 
 	virtual void dealDamage(Entity* entity) = 0;
-<<<<<<< HEAD
-	
-=======
-
+  
 	virtual AddOn* clone() = 0;
->>>>>>> f804840ea0e9704e8c223c7ca67e69bb88a06ca0
 };
 
 #endif

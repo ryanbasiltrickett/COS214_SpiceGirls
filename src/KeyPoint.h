@@ -1,9 +1,11 @@
 #ifndef KEYPOINT_H
 #define KEYPOINT_H
+
+#include "Alliance.h"
 #include "Area.h"
-#include "Weather.h"
 #include "Entity.h"
 #include "CommandCenter.h"
+#include "Weather.h"
 #include <vector>
 
 #include "Alliance.h"
@@ -62,10 +64,8 @@ public:
 	 * @brief Clears the battlefield of all deceased troops
 	 *
 	 * Postconditions:
-	 *  - Move troops to other area
-	 *
-	 * @param area must be an Area*
-	 * @param alliance must be an Alliance*
+	 *  - Notify command centers of each troop who is killed
+	 * 
 	 * @return void
 	 */
 	void clearBattlefield();
@@ -144,16 +144,6 @@ public:
 	 */
 	void detach(CommandCenter* comCenter);
 
-	/**
-	 * @brief Notifies the attached command centers when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * Postconditions:
-	 *  - Notifies the command centers in the comCenters vector when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * @return void
-	 */
-	void notify();
-	
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
 	 *
