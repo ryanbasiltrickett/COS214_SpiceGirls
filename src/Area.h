@@ -13,11 +13,11 @@ public:
 	/**
 	 * @brief Destroys the area object
 	 */
-	virtual void ~Area();
+	virtual ~Area();
 
 	virtual bool isKeyPoint() = 0;
 
-	virtual void attack(Alliance* alliance) = 0;
+	virtual void simulateBattle(Alliance* alliance) = 0;
 
 	virtual void moveEntities(Area* area, Alliance* alliance) = 0;
 
