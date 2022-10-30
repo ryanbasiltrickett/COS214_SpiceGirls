@@ -9,13 +9,18 @@ private:
 	vector<Factory*> production;
 	Negotiator* negotiator;
 	vector<Country*> members;
-	bool active;
+	int active;
 
 public:
 	/**
 	 * @brief Instantiates the Alliance
 	 */
 	Alliance();
+
+	/**
+	 * @brief Destructor for the Alliance object
+	 */
+	~Alliance();
 
 	/**
 	 * @brief Sets the entity negotiator
