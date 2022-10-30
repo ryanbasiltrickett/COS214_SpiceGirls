@@ -151,6 +151,33 @@ AddOn.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOn.cpp.s
 .PHONY : AddOn.cpp.s
 
+AddOnTest.o: AddOnTest.cpp.o
+
+.PHONY : AddOnTest.o
+
+# target to build an object file
+AddOnTest.cpp.o:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOnTest.cpp.o
+.PHONY : AddOnTest.cpp.o
+
+AddOnTest.i: AddOnTest.cpp.i
+
+.PHONY : AddOnTest.i
+
+# target to preprocess a source file
+AddOnTest.cpp.i:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOnTest.cpp.i
+.PHONY : AddOnTest.cpp.i
+
+AddOnTest.s: AddOnTest.cpp.s
+
+.PHONY : AddOnTest.s
+
+# target to generate assembly for a file
+AddOnTest.cpp.s:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOnTest.cpp.s
+.PHONY : AddOnTest.cpp.s
+
 AerialType.o: AerialType.cpp.o
 
 .PHONY : AerialType.o
@@ -555,6 +582,33 @@ Negotiator.s: Negotiator.cpp.s
 Negotiator.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Negotiator.cpp.s
 .PHONY : Negotiator.cpp.s
+
+NegotiatorTest.o: NegotiatorTest.cpp.o
+
+.PHONY : NegotiatorTest.o
+
+# target to build an object file
+NegotiatorTest.cpp.o:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/NegotiatorTest.cpp.o
+.PHONY : NegotiatorTest.cpp.o
+
+NegotiatorTest.i: NegotiatorTest.cpp.i
+
+.PHONY : NegotiatorTest.i
+
+# target to preprocess a source file
+NegotiatorTest.cpp.i:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/NegotiatorTest.cpp.i
+.PHONY : NegotiatorTest.cpp.i
+
+NegotiatorTest.s: NegotiatorTest.cpp.s
+
+.PHONY : NegotiatorTest.s
+
+# target to generate assembly for a file
+NegotiatorTest.cpp.s:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/NegotiatorTest.cpp.s
+.PHONY : NegotiatorTest.cpp.s
 
 Passive.o: Passive.cpp.o
 
@@ -1081,6 +1135,9 @@ help:
 	@echo "... AddOn.o"
 	@echo "... AddOn.i"
 	@echo "... AddOn.s"
+	@echo "... AddOnTest.o"
+	@echo "... AddOnTest.i"
+	@echo "... AddOnTest.s"
 	@echo "... AerialType.o"
 	@echo "... AerialType.i"
 	@echo "... AerialType.s"
@@ -1126,6 +1183,9 @@ help:
 	@echo "... Negotiator.o"
 	@echo "... Negotiator.i"
 	@echo "... Negotiator.s"
+	@echo "... NegotiatorTest.o"
+	@echo "... NegotiatorTest.i"
+	@echo "... NegotiatorTest.s"
 	@echo "... Passive.o"
 	@echo "... Passive.i"
 	@echo "... Passive.s"
