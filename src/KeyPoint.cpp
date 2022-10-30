@@ -1,6 +1,6 @@
 #include "KeyPoint.h"
 
-KeyPoint::KeyPoint(string areaType): Area(areaType), areaType(areaType) {
+KeyPoint::KeyPoint(string areaName): Area(areaName) {
 }
 
 bool KeyPoint::isKeyPoint() {
@@ -56,7 +56,7 @@ Area* KeyPoint::clone() {
 	throw "Not yet implemented";
 }
 
-std::string KeyPoint::getAreaType() const {
+std::string KeyPoint::getAreaName() const {
 	
-	 return this->areaType;
+	 return this->areaName;
 }

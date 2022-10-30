@@ -5,13 +5,13 @@
 class Area {
 
 protected:
-	std::string areaType;
+	std::string areaName;
 
 public:
 	/**
 	 * @brief Instantiates the area
 	 */
-	Area(std::string areaType);
+	Area(std::string areaName);
 
 	/**
 	 * @brief Destroys the area object
@@ -29,7 +29,7 @@ public:
 	 * 
 	 * @return std::string reaturns the type
 	 */
-	virtual std::string getAreaType() const = 0;
+	virtual std::string getAreaName() const = 0;
 
 	virtual Area* clone() = 0;
 };

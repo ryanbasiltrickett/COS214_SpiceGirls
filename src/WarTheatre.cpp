@@ -2,7 +2,7 @@
 
 using namespace std;
 
-WarTheatre::WarTheatre(string areaType): Area(areaType), areaType(areaType) {
+WarTheatre::WarTheatre(string areaName): Area(areaName) {
 	
 }
 
@@ -28,9 +28,9 @@ WarTheatre* WarTheatre::clone() {
 	return w;
 }
 
-string WarTheatre::getAreaType() const {
+string WarTheatre::getAreaName() const {
 
-	return this->areaType;
+	return this->areaName;
 }
 
 

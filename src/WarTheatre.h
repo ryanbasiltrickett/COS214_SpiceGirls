@@ -16,7 +16,7 @@ public:
 	/**
 	 * @brief Instantiates the war theatre
 	 */
-	WarTheatre(std::string areaType);
+	WarTheatre(std::string areaName);
 
 	/**
 	 * @brief Destroys the war theatre object
@@ -76,7 +76,7 @@ public:
 	 * 
 	 * @return std::string reaturns the type
 	 */
-	std::string getAreaType() const;
+	std::string getAreaName() const;
 };
 
 #endif

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-Area::Area(string areaType): areaType(areaType) {
+Area::Area(string areaName): areaName(areaName) {
 
 }
 
