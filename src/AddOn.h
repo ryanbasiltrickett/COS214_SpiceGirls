@@ -16,8 +16,10 @@ protected:
 public:
 	/**
 	 * @brief Instantiates an AddOn
+	 * 
+	 * @param value must be an int
 	 */
-	AddOn();
+	AddOn(int value);
 
 	/**
 	 * @brief Sets the AddOn's value attribute

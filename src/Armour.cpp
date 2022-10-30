@@ -1,6 +1,6 @@
 #include "Armour.h"
 
-Armour::Armour() : AddOn() {	
+Armour::Armour(int value) : AddOn(value) {	
 }
 
 void Armour::takeDamage(int damage) {
