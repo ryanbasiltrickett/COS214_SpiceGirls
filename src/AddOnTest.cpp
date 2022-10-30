@@ -91,7 +91,7 @@ namespace {
 
     // Test Precondition Positive
     TEST(ArmourTakeDamageTest, TestPreconditionPositive) {
-
+        
     }
 
     // Test Precondition Bounds
