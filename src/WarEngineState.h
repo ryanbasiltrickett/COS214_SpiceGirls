@@ -27,19 +27,6 @@ public:
 	WarEngineState();
 
 	/**
-	 * @brief Initializes an instance of the WarEngineState class with values from an existing.
-	 * 
-	 * @param state WarEngineState*
-	 * 
-	 * Preconditions:
-	 * 	- State must be a WarEngineState*
-	 * 
-	 * Postconditions:
-	 * 	- Creates an instance of the WarEngineState class with the passed in state parameter.
-	*/
-	WarEngineState(WarEngineState* state);
-	
-	/**
 	 * @brief Takes in a vector of Area and sets it to the areas member of the WarEngineState instance.
 	 * @param areaVect vector<Area*>
 	 * 

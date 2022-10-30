@@ -2,19 +2,6 @@
 
 WarEngineState::WarEngineState() {}
 
-
-WarEngineState::WarEngineState(WarEngineState* state){
-
-	for(Area* a : state->areas){
-		this->areas.push_back(a);
-	}
-
-	for(Alliance* alliance : state->alliances){
-		this->alliances.push_back(alliance);
-	}
-
-}
-	
 void WarEngineState::setAreas(vector<Area*> areaVect) {
 	this->areas = areaVect;
 }
@@ -40,8 +27,26 @@ vector<Alliance*> WarEngineState::getAlliances() {
 }
 
 WarEngineState* WarEngineState::clone(){
-	return new WarEngineState(this);
-}
+
+	WarEngineState* clonedState = new WarEngineState();
+
+	for(Area* a : this->areas){
+		
+		Area * cloneArea = a->clone();
+
+		clonedState->areas.push_back(a);
+	}
+
+	for(Alliance* alliance : this->alliances){
+		
+		Alliance* clonedAlliance = alliance->clone();
+
+		clonedState->alliances.push_back(alliance);
+
+	}
+
+		return clonedState;
+	}
 
 WarEngineState::~WarEngineState(){
 	//TODO: To be Implemented
