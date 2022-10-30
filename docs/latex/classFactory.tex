@@ -1,8 +1,8 @@
-\hypertarget{classFactory}{}\doxysection{Factory Class Reference}
+\hypertarget{classFactory}{}\section{Factory Class Reference}
 \label{classFactory}\index{Factory@{Factory}}
 
 
-\mbox{\hyperlink{classFactory}{Factory}} class.  
+\hyperlink{classFactory}{Factory} class.  
 
 
 
@@ -15,45 +15,72 @@ Inheritance diagram for Factory\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classFactory}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classFactory_ac792bf88cfb7b6804b479529da5308cc}\label{classFactory_ac792bf88cfb7b6804b479529da5308cc}} 
-\mbox{\hyperlink{classFactory_ac792bf88cfb7b6804b479529da5308cc}{Factory}} ()
+\hyperlink{classFactory_aca946f8877efb5b5bae700f74537d99d}{Factory} (\hyperlink{classType}{Type} $\ast$type, \hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Instantiates the factory. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFactory_a203d43ed769c39bac5dbe74e452a4222}{$\sim$\+Factory}} ()
+\hyperlink{classFactory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory} ()
 \begin{DoxyCompactList}\small\item\em Destroys the factory object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classFactory_a80da95da98b407948dc815f2bca6a283}\label{classFactory_a80da95da98b407948dc815f2bca6a283}} 
-virtual \mbox{\hyperlink{classEntity}{Entity}} $\ast$ {\bfseries create\+Entity} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)=0
+virtual \hyperlink{classEntity}{Entity} $\ast$ {\bfseries create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)=0
 \item 
-\mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{get\+Type}} ()
+\hyperlink{classType}{Type} $\ast$ \hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{get\+Type} ()
 \begin{DoxyCompactList}\small\item\em Returns factories type state. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{set\+Type}} (\mbox{\hyperlink{classType}{Type}} $\ast$type)
+void \hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{set\+Type} (\hyperlink{classType}{Type} $\ast$type)
 \begin{DoxyCompactList}\small\item\em Sets the factories type state. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAddOn}{Add\+On}} $\ast$ \mbox{\hyperlink{classFactory_a46f89194541b0246a017f1eaf51ab654}{get\+Add\+Ons}} ()
+\hyperlink{classAddOn}{Add\+On} $\ast$ \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{get\+Add\+On} ()
 \begin{DoxyCompactList}\small\item\em Returns factories add ons. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classFactory_a958217b0bc29ce69ace69ade5e701984}{set\+Add\+Ons}} (\mbox{\hyperlink{classAddOn}{Add\+On}} $\ast$add\+Ons)
+void \hyperlink{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}{set\+Add\+Ons} (\hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Sets the factories add ons. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classFactory_a00881ec5050751e4b747db5dfd266192}\label{classFactory_a00881ec5050751e4b747db5dfd266192}} 
-virtual \mbox{\hyperlink{classFactory}{Factory}} $\ast$ {\bfseries clone} ()=0
+virtual \hyperlink{classFactory}{Factory} $\ast$ {\bfseries clone} ()=0
 \end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
-\mbox{\hyperlink{classFactory}{Factory}} class. 
+\subsection{Detailed Description}
+\hyperlink{classFactory}{Factory} class. 
 
-Used to instantiate \mbox{\hyperlink{classEntity}{Entity}} objects. 
+Used to instantiate \hyperlink{classEntity}{Entity} objects. 
 
-Definition at line 9 of file Factory.\+h.
+Definition at line 12 of file Factory.\+h.
 
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classFactory_a203d43ed769c39bac5dbe74e452a4222}\label{classFactory_a203d43ed769c39bac5dbe74e452a4222}} 
-\index{Factory@{Factory}!````~Factory@{$\sim$Factory}}
-\index{````~Factory@{$\sim$Factory}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{$\sim$Factory()}{~Factory()}}
-{\footnotesize\ttfamily void Factory\+::$\sim$\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classFactory_aca946f8877efb5b5bae700f74537d99d}\label{classFactory_aca946f8877efb5b5bae700f74537d99d}} 
+\index{Factory@{Factory}!Factory@{Factory}}
+\index{Factory@{Factory}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{Factory()}{Factory()}}
+{\footnotesize\ttfamily Factory\+::\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classType}{Type} $\ast$}]{type,  }\item[{\hyperlink{classAddOn}{Add\+On} $\ast$}]{add\+On }\end{DoxyParamCaption})}
+
+
+
+Instantiates the factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+{\em add\+On} & must be a Add\+On$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file Factory.\+cpp.
+
+
+\begin{DoxyCode}
+3                                          \{
+4     this->type = type;
+5     this->addOn = addOn;
+6 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classFactory_a8f71456f48e4df402c778a44191ff40e}\label{classFactory_a8f71456f48e4df402c778a44191ff40e}} 
+\index{Factory@{Factory}!````~Factory@{$\sim$\+Factory}}
+\index{````~Factory@{$\sim$\+Factory}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{$\sim$\+Factory()}{~Factory()}}
+{\footnotesize\ttfamily Factory\+::$\sim$\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -64,12 +91,23 @@ Postconditions\+:
 \item All dynamic memory should be deallocated from the factory object 
 \end{DoxyItemize}
 
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classFactory_a46f89194541b0246a017f1eaf51ab654}\label{classFactory_a46f89194541b0246a017f1eaf51ab654}} 
-\index{Factory@{Factory}!getAddOns@{getAddOns}}
-\index{getAddOns@{getAddOns}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{getAddOns()}{getAddOns()}}
-{\footnotesize\ttfamily add\+On $\ast$ Factory\+::get\+Add\+Ons (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Definition at line 8 of file Factory.\+cpp.
+
+
+\begin{DoxyCode}
+8                   \{
+9     \textcolor{keyword}{delete} type;
+10     \textcolor{keyword}{delete} addOn;
+11 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFactory_a994153930f59cafb280e91d5b100b5aa}\label{classFactory_a994153930f59cafb280e91d5b100b5aa}} 
+\index{Factory@{Factory}!get\+Add\+On@{get\+Add\+On}}
+\index{get\+Add\+On@{get\+Add\+On}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{get\+Add\+On()}{getAddOn()}}
+{\footnotesize\ttfamily \hyperlink{classAddOn}{Add\+On} $\ast$ Factory\+::get\+Add\+On (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -85,20 +123,19 @@ Add\+On$\ast$ The decorators for the factory object
 \end{DoxyReturn}
 
 
-Definition at line 16 of file Factory.\+cpp.
+Definition at line 21 of file Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{16                           \{}
-\DoxyCodeLine{17     \textcolor{keywordflow}{return} this-\/>addOns;}
-\DoxyCodeLine{18 \}}
-
+\begin{DoxyCode}
+21                          \{
+22     \textcolor{keywordflow}{return} this->addOn;
+23 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}\label{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}} 
-\index{Factory@{Factory}!getType@{getType}}
-\index{getType@{getType}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classType}{Type}} $\ast$ Factory\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\index{Factory@{Factory}!get\+Type@{get\+Type}}
+\index{get\+Type@{get\+Type}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{get\+Type()}{getType()}}
+{\footnotesize\ttfamily \hyperlink{classType}{Type} $\ast$ Factory\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
@@ -114,20 +151,19 @@ Type$\ast$ The type state of the factory object
 \end{DoxyReturn}
 
 
-Definition at line 8 of file Factory.\+cpp.
+Definition at line 13 of file Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                        \{}
-\DoxyCodeLine{9     \textcolor{keywordflow}{return} this-\/>type;}
-\DoxyCodeLine{10 \}}
-
+\begin{DoxyCode}
+13                        \{
+14     \textcolor{keywordflow}{return} this->type;
+15 \}
 \end{DoxyCode}
-\mbox{\Hypertarget{classFactory_a958217b0bc29ce69ace69ade5e701984}\label{classFactory_a958217b0bc29ce69ace69ade5e701984}} 
-\index{Factory@{Factory}!setAddOns@{setAddOns}}
-\index{setAddOns@{setAddOns}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{setAddOns()}{setAddOns()}}
-{\footnotesize\ttfamily void Factory\+::set\+Add\+Ons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAddOn}{Add\+On}} $\ast$}]{add\+Ons }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}\label{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}} 
+\index{Factory@{Factory}!set\+Add\+Ons@{set\+Add\+Ons}}
+\index{set\+Add\+Ons@{set\+Add\+Ons}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{set\+Add\+Ons()}{setAddOns()}}
+{\footnotesize\ttfamily void Factory\+::set\+Add\+Ons (\begin{DoxyParamCaption}\item[{\hyperlink{classAddOn}{Add\+On} $\ast$}]{add\+On }\end{DoxyParamCaption})}
 
 
 
@@ -145,7 +181,7 @@ Postconditions\+:
 
 
 \begin{DoxyParams}{Parameters}
-{\em add\+Ons} & must be a Add\+On$\ast$ \\
+{\em add\+On} & must be a Add\+On$\ast$ \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -153,20 +189,19 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 20 of file Factory.\+cpp.
+Definition at line 25 of file Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{20                                      \{}
-\DoxyCodeLine{21     this-\/>addOns = addOns;}
-\DoxyCodeLine{22 \}}
-
+\begin{DoxyCode}
+25                                     \{
+26     this->addOn = addOn;
+27 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classFactory_a7484d514b094114231dbeb3df70e9d0b}\label{classFactory_a7484d514b094114231dbeb3df70e9d0b}} 
-\index{Factory@{Factory}!setType@{setType}}
-\index{setType@{setType}!Factory@{Factory}}
-\doxysubsubsection{\texorpdfstring{setType()}{setType()}}
-{\footnotesize\ttfamily void Factory\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type }\end{DoxyParamCaption})}
+\index{Factory@{Factory}!set\+Type@{set\+Type}}
+\index{set\+Type@{set\+Type}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{set\+Type()}{setType()}}
+{\footnotesize\ttfamily void Factory\+::set\+Type (\begin{DoxyParamCaption}\item[{\hyperlink{classType}{Type} $\ast$}]{type }\end{DoxyParamCaption})}
 
 
 
@@ -192,14 +227,13 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 12 of file Factory.\+cpp.
+Definition at line 17 of file Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{12                                 \{}
-\DoxyCodeLine{13     this-\/>type = type;}
-\DoxyCodeLine{14 \}}
-
+\begin{DoxyCode}
+17                                 \{
+18     this->type = type;
+19 \}
 \end{DoxyCode}
 
 

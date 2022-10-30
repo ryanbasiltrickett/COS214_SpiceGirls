@@ -1,36 +1,106 @@
-\hypertarget{classVehicleFactory}{}\doxysection{Vehicle\+Factory Class Reference}
-\label{classVehicleFactory}\index{VehicleFactory@{VehicleFactory}}
+\hypertarget{classVehicleFactory}{}\section{Vehicle\+Factory Class Reference}
+\label{classVehicleFactory}\index{Vehicle\+Factory@{Vehicle\+Factory}}
+
+
+\hyperlink{classVehicleFactory}{Vehicle\+Factory} class.  
+
+
+
+
+{\ttfamily \#include $<$Vehicle\+Factory.\+h$>$}
+
 Inheritance diagram for Vehicle\+Factory\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classVehicleFactory}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classVehicleFactory_ad20e739afc40f61315fb842773df8498}{Vehicle\+Factory}} ()
+\hyperlink{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}{Vehicle\+Factory} (\hyperlink{classType}{Type} $\ast$type, \hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
+\begin{DoxyCompactList}\small\item\em Instantiates the vehicle factory. \end{DoxyCompactList}\item 
+\hyperlink{classEntity}{Entity} $\ast$ \hyperlink{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}{create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a vehicle for the given alliance. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classVehicleFactory_a36324223b0cd4ee93bb92249cfc639f0}\label{classVehicleFactory_a36324223b0cd4ee93bb92249cfc639f0}} 
-\mbox{\hyperlink{classVehicle}{Vehicle}} $\ast$ {\bfseries create\+Entity} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\item 
-\mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone}} ()
+\hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current vehicle factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
+\hyperlink{classVehicleFactory}{Vehicle\+Factory} class. 
+
+Used to instantiate \hyperlink{classVehicle}{Vehicle} objects. 
+
+Definition at line 10 of file Vehicle\+Factory.\+h.
 
 
-Definition at line 5 of file Vehicle\+Factory.\+h.
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}\label{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}} 
+\index{Vehicle\+Factory@{Vehicle\+Factory}!Vehicle\+Factory@{Vehicle\+Factory}}
+\index{Vehicle\+Factory@{Vehicle\+Factory}!Vehicle\+Factory@{Vehicle\+Factory}}
+\subsubsection{\texorpdfstring{Vehicle\+Factory()}{VehicleFactory()}}
+{\footnotesize\ttfamily Vehicle\+Factory\+::\+Vehicle\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classType}{Type} $\ast$}]{type,  }\item[{\hyperlink{classAddOn}{Add\+On} $\ast$}]{add\+On }\end{DoxyParamCaption})}
 
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classVehicleFactory_ad20e739afc40f61315fb842773df8498}\label{classVehicleFactory_ad20e739afc40f61315fb842773df8498}} 
-\index{VehicleFactory@{VehicleFactory}!VehicleFactory@{VehicleFactory}}
-\index{VehicleFactory@{VehicleFactory}!VehicleFactory@{VehicleFactory}}
-\doxysubsubsection{\texorpdfstring{VehicleFactory()}{VehicleFactory()}}
-{\footnotesize\ttfamily Vehicle\+Factory\+::\+Vehicle\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+Instantiates the vehicle factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+{\em add\+On} & must be a Add\+On$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file Vehicle\+Factory.\+cpp.
+
+
+\begin{DoxyCode}
+4 : \hyperlink{classFactory_aca946f8877efb5b5bae700f74537d99d}{Factory}(type, addOn) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}\label{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}} 
+\index{Vehicle\+Factory@{Vehicle\+Factory}!clone@{clone}}
+\index{clone@{clone}!Vehicle\+Factory@{Vehicle\+Factory}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classFactory}{Factory} $\ast$ Vehicle\+Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Instantiates and returns a clone of the current vehicle factory. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current vehicle factory
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ The vehicle factory clone 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classFactory}{Factory}.
+
+
+
+Definition at line 17 of file Vehicle\+Factory.\+cpp.
+
+
+\begin{DoxyCode}
+17                                \{
+18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}{VehicleFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}(), \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}());
+19 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}\label{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}} 
+\index{Vehicle\+Factory@{Vehicle\+Factory}!create\+Entity@{create\+Entity}}
+\index{create\+Entity@{create\+Entity}!Vehicle\+Factory@{Vehicle\+Factory}}
+\subsubsection{\texorpdfstring{create\+Entity()}{createEntity()}}
+{\footnotesize\ttfamily \hyperlink{classEntity}{Entity} $\ast$ Vehicle\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -56,52 +126,24 @@ Vehicle$\ast$ The instatiated vehicle
 \end{DoxyReturn}
 
 
-Definition at line 3 of file Vehicle\+Factory.\+cpp.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{3                                \{}
-\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement VehicleFactory::VehicleFactory}}
-\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{6 \}}
-
-\end{DoxyCode}
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}\label{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}} 
-\index{VehicleFactory@{VehicleFactory}!clone@{clone}}
-\index{clone@{clone}!VehicleFactory@{VehicleFactory}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classFactory}{Factory}} $\ast$ Vehicle\+Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+Implements \hyperlink{classFactory}{Factory}.
 
 
 
-Instantiates and returns a clone of the current vehicle factory. 
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Returns the clone of the current vehicle factory
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-Factory$\ast$ The vehicle factory clone 
-\end{DoxyReturn}
+Definition at line 6 of file Vehicle\+Factory.\+cpp.
 
 
-Implements \mbox{\hyperlink{classFactory}{Factory}}.
-
-
-
-Definition at line 13 of file Vehicle\+Factory.\+cpp.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{13                                \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement VehicleFactory::clone}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
-
+\begin{DoxyCode}
+6                                                        \{
+7     \hyperlink{classVehicle}{Vehicle}* v = \textcolor{keyword}{new} \hyperlink{classVehicle}{Vehicle}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone}());
+8     \textcolor{keywordflow}{if} (\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}() != NULL) \{
+9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->clone();
+10         personnelAddOn->connectEntity(v);
+11         \textcolor{keywordflow}{return} personnelAddOn;
+12     \} \textcolor{keywordflow}{else} \{
+13         \textcolor{keywordflow}{return} v;
+14     \}
+15 \}
 \end{DoxyCode}
 
 
