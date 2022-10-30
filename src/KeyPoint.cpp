@@ -1,15 +1,23 @@
 #include "KeyPoint.h"
+#include <cstdlib>
 
-KeyPoint::KeyPoint(string areaName): Area(areaName) {
-}
+KeyPoint::KeyPoint(string areaName): Area(areaName) {}
 
 bool KeyPoint::isKeyPoint() {
 	return true;
 }
 
 void KeyPoint::simulateBattle(Alliance* alliance) {
-	// TODO - implement KeyPoint::attack
-	throw "Not yet implemented";
+	for (int i = 0; i < entities.size(); i++) {
+		if (entities[i]->getAlliance() == alliance) {
+			int random;
+			do {
+				random = rand() % entities.size();
+			} while (entities[random]->getAlliance() == alliance);
+
+			entities[i]->dealDamage(entities[random]);
+		}
+	}
 }
 
 void KeyPoint::clearBattlefield() {
@@ -24,13 +32,26 @@ void KeyPoint::clearBattlefield() {
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
-	// TODO - implement KeyPoint::moveEntitiesInto
-	throw "Not yet implemented";
+	
+	for (int i = 0; i < numTroops; i++) {
+		try {
+			entities.push_back(alliance->retrieveEntity());
+		} catch (...) {
+			break;
+		}
+	}
 }
 
 void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
-	// TODO - implement KeyPoint::moveEntitiesOutOf
-	throw "Not yet implemented";
+	vector<Entity*>::iterator it = entities.begin();
+	for (int i = 0; i < numTroops && it != entities.end(); i++) {
+		for (; it != entities.end(); ++it) {
+			if ((*it)->getAlliance() == alliance) {
+				alliance->addEntity(*it);
+				entities.erase(it);
+			}
+		}
+	}
 }
 
 void KeyPoint::addEntity(Entity* entity) {
