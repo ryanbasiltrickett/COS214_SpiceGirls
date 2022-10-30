@@ -1,4 +1,5 @@
 #include "KeyPoint.h"
+using namespace std;
 
 KeyPoint::KeyPoint(): Area() {}
 
@@ -51,6 +52,19 @@ void KeyPoint::detach(CommandCenter* comCenter) {
 }
 
 Area* KeyPoint::clone() {
-	// TODO - implement KeyPoint::clone
-	throw "Not yet implemented";
+	
+	KeyPoint* keyPointClone = new KeyPoint();
+	keyPointClone->setWeather(this->weather);
+
+	for(int i = 0; i < this->entities.size(); ++i)
+		keyPointClone->addEntity(this->entities[i]);
+
+	for(int i = 0; this->comCenters.size(); ++i)
+		keyPointClone->attach(this->comCenters[i]);
+
+	return keyPointClone;
+}
+
+string KeyPoint::getAreaType() const{
+	return this->AreaType;
 }

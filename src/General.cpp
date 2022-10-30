@@ -1,21 +1,35 @@
 #include "General.h"
 
-General::General() {
-	// TODO - implement General::General
-	throw "Not yet implemented";
+General::General(Alliance* alliance, KeyPoint* keyPoint, Strategy* strategy) {
+	this->alliance = alliance;
+	this->keyPoint = keyPoint;
+	this->strategy = strategy;
 }
 
 void General::evaluateStrategy() {
-	// TODO - implement General::evaluateStrategy
 	throw "Not yet implemented";
 }
 
 void General::initiateStrategy() {
-	// TODO - implement General::initiateStrategy
-	throw "Not yet implemented";
+	strat->performStrat(this->keyPoint, this->alliance);
 }
 
 General* General::clone() {
-	// TODO - implement General::clone
-	throw "Not yet implemented";
+
+	return new General(this->alliance, this->keyPoint, this->strategy);
+}
+
+bool General::setKeyPoint(Strategy* strategy){
+	this->strategy = strategy;
+	return true;
+}
+
+bool General::setKeyPoint(KeyPoint* keypoint){
+	this->keyPoint = keyPoint;
+	return true;
+}
+
+bool General::SetAlliance(Alliance* alliance){
+	this->alliance = alliance;
+	return true;
 }

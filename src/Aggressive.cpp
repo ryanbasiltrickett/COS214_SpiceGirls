@@ -1,12 +1,11 @@
 #include "Aggressive.h"
 
 Aggressive::Aggressive() {
-	// TODO - implement Aggressive::Aggressive
-	throw "Not yet implemented";
+
 }
 
-void Aggressive::performStrat(Keypoint* keyPoint) {
-	// TODO - implement Aggressive::performStrat
+void Aggressive::performStrat(KeyPoint* keyPoint) {
+	
 	throw "Not yet implemented";
 }
 

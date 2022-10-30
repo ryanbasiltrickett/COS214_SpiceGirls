@@ -1,33 +1,44 @@
-\hypertarget{classTerrainType}{}\doxysection{Terrain\+Type Class Reference}
-\label{classTerrainType}\index{TerrainType@{TerrainType}}
+\hypertarget{classTerrainType}{}\section{Terrain\+Type Class Reference}
+\label{classTerrainType}\index{Terrain\+Type@{Terrain\+Type}}
+
+
+\hyperlink{classTerrainType}{Terrain\+Type} class.  
+
+
+
+
+{\ttfamily \#include $<$Terrain\+Type.\+h$>$}
+
 Inheritance diagram for Terrain\+Type\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classTerrainType}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classTerrainType_aea114fb5e125b58bf9d9c9ab964749c7}\label{classTerrainType_aea114fb5e125b58bf9d9c9ab964749c7}} 
-\mbox{\hyperlink{classTerrainType_aea114fb5e125b58bf9d9c9ab964749c7}{Terrain\+Type}} ()
+\hyperlink{classTerrainType_aea114fb5e125b58bf9d9c9ab964749c7}{Terrain\+Type} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the terrain type. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{classTerrainType_af24f4291676b6862c90b0d29598fcb11}{get\+Type\+Desc}} ()
+string \hyperlink{classTerrainType_af24f4291676b6862c90b0d29598fcb11}{get\+Type\+Desc} ()
 \begin{DoxyCompactList}\small\item\em Returns terrain type description. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
+\hyperlink{classTerrainType}{Terrain\+Type} class. 
+
+Used to define \hyperlink{classEntity}{Entity} objects as terrain type. 
+
+Definition at line 11 of file Terrain\+Type.\+h.
 
 
-Definition at line 4 of file Terrain\+Type.\+h.
 
-
-
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classTerrainType_af24f4291676b6862c90b0d29598fcb11}\label{classTerrainType_af24f4291676b6862c90b0d29598fcb11}} 
-\index{TerrainType@{TerrainType}!getTypeDesc@{getTypeDesc}}
-\index{getTypeDesc@{getTypeDesc}!TerrainType@{TerrainType}}
-\doxysubsubsection{\texorpdfstring{getTypeDesc()}{getTypeDesc()}}
+\index{Terrain\+Type@{Terrain\+Type}!get\+Type\+Desc@{get\+Type\+Desc}}
+\index{get\+Type\+Desc@{get\+Type\+Desc}!Terrain\+Type@{Terrain\+Type}}
+\subsubsection{\texorpdfstring{get\+Type\+Desc()}{getTypeDesc()}}
 {\footnotesize\ttfamily string Terrain\+Type\+::get\+Type\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -44,19 +55,17 @@ string The terrain type string
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classType}{Type}}.
+Implements \hyperlink{classType}{Type}.
 
 
 
-Definition at line 8 of file Terrain\+Type.\+cpp.
+Definition at line 5 of file Terrain\+Type.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                                 \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement TerrainType::getTypeDesc}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
-
+\begin{DoxyCode}
+5                                 \{
+6     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Terrain"};
+7 \}
 \end{DoxyCode}
 
 
