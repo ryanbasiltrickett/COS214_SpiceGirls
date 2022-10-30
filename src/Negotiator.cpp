@@ -1,8 +1,6 @@
 #include "Negotiator.h"
 
-Negotiator::Negotiator() {
-
-}
+Negotiator::Negotiator() {}
 
 Negotiator::~Negotiator() {
 	alliance.clear();
@@ -37,6 +35,6 @@ void Negotiator::addAlliance(Alliance* newAlliance) {
 }
 
 Negotiator* Negotiator::clone() {
-	// TODO - implement Negotiator::clone
+	
 	throw "Not yet implemented";
 }

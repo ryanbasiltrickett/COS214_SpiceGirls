@@ -1,11 +1,34 @@
 #include "Country.h"
 
-Country::Country() {
-	// TODO - implement Country::Country
-	throw "Not yet implemented";
+using namespace std;
+
+Country::Country(){
+}
+	
+
+Country* Country::clone(){
+	
+	Country* countryClone = new Country();
+	countryClone->setID(this->id);
+	countryClone->setName(this->name);
+
+	return countryClone;
 }
 
-Country* Country::clone() {
-	// TODO - implement Country::clone
-	throw "Not yet implemented";
+void Country::setID(int id){
+	this->id = id;
 }
+
+void Country::setName(string name){
+	this->name = name;
+}
+
+string Country::getName() const{
+	return this->name;
+}
+
+int Country::getID() const{
+	return this->id;
+}
+
+

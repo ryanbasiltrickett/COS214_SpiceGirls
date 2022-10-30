@@ -1,74 +1,110 @@
-\hypertarget{classPersonnelFactory}{}\doxysection{Personnel\+Factory Class Reference}
-\label{classPersonnelFactory}\index{PersonnelFactory@{PersonnelFactory}}
+\hypertarget{classPersonnelFactory}{}\section{Personnel\+Factory Class Reference}
+\label{classPersonnelFactory}\index{Personnel\+Factory@{Personnel\+Factory}}
+
+
+\hyperlink{classPersonnelFactory}{Personnel\+Factory} class.  
+
+
+
+
+{\ttfamily \#include $<$Personnel\+Factory.\+h$>$}
+
 Inheritance diagram for Personnel\+Factory\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classPersonnelFactory}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classPersonnelFactory_af7ea99463e95d91fad372640df01f04d}\label{classPersonnelFactory_af7ea99463e95d91fad372640df01f04d}} 
-\mbox{\hyperlink{classPersonnelFactory_af7ea99463e95d91fad372640df01f04d}{Personnel\+Factory}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classPersonnel}{Personnel}} factory. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classPersonnel}{Personnel}} $\ast$ \mbox{\hyperlink{classPersonnelFactory_ae8684c246d5dfb1f469f368525867394}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a \mbox{\hyperlink{classPersonnel}{Personnel}} for the given alliance. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classPersonnel}{Personnel}} factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\hyperlink{classPersonnelFactory_a71cd406976230cacebfcfd723d2a2615}{Personnel\+Factory} (\hyperlink{classType}{Type} $\ast$type, \hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
+\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classPersonnel}{Personnel} factory. \end{DoxyCompactList}\item 
+\hyperlink{classEntity}{Entity} $\ast$ \hyperlink{classPersonnelFactory_ae8684c246d5dfb1f469f368525867394}{create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a \hyperlink{classPersonnel}{Personnel} for the given alliance. \end{DoxyCompactList}\item 
+\hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}{clone} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \hyperlink{classPersonnel}{Personnel} factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
+\hyperlink{classPersonnelFactory}{Personnel\+Factory} class. 
+
+Used to instantiate \hyperlink{classPersonnel}{Personnel} objects. 
+
+Definition at line 11 of file Personnel\+Factory.\+h.
 
 
-Definition at line 4 of file Personnel\+Factory.\+h.
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPersonnelFactory_a71cd406976230cacebfcfd723d2a2615}\label{classPersonnelFactory_a71cd406976230cacebfcfd723d2a2615}} 
+\index{Personnel\+Factory@{Personnel\+Factory}!Personnel\+Factory@{Personnel\+Factory}}
+\index{Personnel\+Factory@{Personnel\+Factory}!Personnel\+Factory@{Personnel\+Factory}}
+\subsubsection{\texorpdfstring{Personnel\+Factory()}{PersonnelFactory()}}
+{\footnotesize\ttfamily Personnel\+Factory\+::\+Personnel\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classType}{Type} $\ast$}]{type,  }\item[{\hyperlink{classAddOn}{Add\+On} $\ast$}]{add\+On }\end{DoxyParamCaption})}
 
 
 
-\doxysubsection{Member Function Documentation}
+Instantiates the \hyperlink{classPersonnel}{Personnel} factory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & must be a Type$\ast$ \\
+\hline
+{\em add\+On} & must be a Add\+On$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 4 of file Personnel\+Factory.\+cpp.
+
+
+\begin{DoxyCode}
+4 : \hyperlink{classFactory_aca946f8877efb5b5bae700f74537d99d}{Factory}(type, addOn) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}\label{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}} 
-\index{PersonnelFactory@{PersonnelFactory}!clone@{clone}}
-\index{clone@{clone}!PersonnelFactory@{PersonnelFactory}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classFactory}{Factory}} $\ast$ Personnel\+Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Personnel\+Factory@{Personnel\+Factory}!clone@{clone}}
+\index{clone@{clone}!Personnel\+Factory@{Personnel\+Factory}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classFactory}{Factory} $\ast$ Personnel\+Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Instantiates and returns a clone of the current \mbox{\hyperlink{classPersonnel}{Personnel}} factory. 
+Instantiates and returns a clone of the current \hyperlink{classPersonnel}{Personnel} factory. 
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Returns the clone of the current \mbox{\hyperlink{classPersonnel}{Personnel}} factory
+\item Returns the clone of the current \hyperlink{classPersonnel}{Personnel} factory
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
-Factory$\ast$ The \mbox{\hyperlink{classPersonnel}{Personnel}} factory clone 
+Factory$\ast$ The \hyperlink{classPersonnel}{Personnel} factory clone 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classFactory}{Factory}}.
+Implements \hyperlink{classFactory}{Factory}.
 
 
 
-Definition at line 13 of file Personnel\+Factory.\+cpp.
+Definition at line 17 of file Personnel\+Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{13                                  \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement PersonalFactory::clone}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
-
+\begin{DoxyCode}
+17                                  \{
+18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classPersonnelFactory_a71cd406976230cacebfcfd723d2a2615}{PersonnelFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}(), \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}());
+19 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonnelFactory_ae8684c246d5dfb1f469f368525867394}\label{classPersonnelFactory_ae8684c246d5dfb1f469f368525867394}} 
-\index{PersonnelFactory@{PersonnelFactory}!createEntity@{createEntity}}
-\index{createEntity@{createEntity}!PersonnelFactory@{PersonnelFactory}}
-\doxysubsubsection{\texorpdfstring{createEntity()}{createEntity()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Personnel\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Personnel\+Factory@{Personnel\+Factory}!create\+Entity@{create\+Entity}}
+\index{create\+Entity@{create\+Entity}!Personnel\+Factory@{Personnel\+Factory}}
+\subsubsection{\texorpdfstring{create\+Entity()}{createEntity()}}
+{\footnotesize\ttfamily \hyperlink{classEntity}{Entity} $\ast$ Personnel\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Instantiates and returns a \mbox{\hyperlink{classPersonnel}{Personnel}} for the given alliance. 
+Instantiates and returns a \hyperlink{classPersonnel}{Personnel} for the given alliance. 
 
 Preconditions\+:
 \begin{DoxyItemize}
@@ -77,7 +113,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Returns the instantiated \mbox{\hyperlink{classPersonnel}{Personnel}} object with specific state
+\item Returns the instantiated \hyperlink{classPersonnel}{Personnel} object with specific state
 \end{DoxyItemize}
 
 
@@ -86,23 +122,28 @@ Postconditions\+:
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Personnel$\ast$ The instatiated personal 
+Entity$\ast$ The instatiated personnel 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classFactory}{Factory}}.
+Implements \hyperlink{classFactory}{Factory}.
 
 
 
-Definition at line 8 of file Personnel\+Factory.\+cpp.
+Definition at line 6 of file Personnel\+Factory.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{8                                                          \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement PersonalFactory::createEntity}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
-
+\begin{DoxyCode}
+6                                                          \{
+7     \hyperlink{classPersonnel}{Personnel}* p = \textcolor{keyword}{new} \hyperlink{classPersonnel}{Personnel}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}{clone}());
+8     \textcolor{keywordflow}{if} (\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}() != NULL) \{
+9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->clone();
+10         personnelAddOn->connectEntity(p);
+11         \textcolor{keywordflow}{return} personnelAddOn;
+12     \} \textcolor{keywordflow}{else} \{
+13         \textcolor{keywordflow}{return} p;
+14     \}
+15 \}
 \end{DoxyCode}
 
 
