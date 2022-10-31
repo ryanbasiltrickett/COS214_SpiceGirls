@@ -1,31 +1,50 @@
 #include "SaveArchive.h"
 
-SaveArchive::SaveArchive() {
-	// TODO - implement SaveArchive::SaveArchive
-	throw "Not yet implemented";
-}
+SaveArchive::SaveArchive() {}
 
-void SaveArchive::addNewSave(WarEngineMemento* newSave) {
-	// TODO - implement SaveArchive::addNewSave
-	throw "Not yet implemented";
+void SaveArchive::addNewSave(std::string newSaveName, WarEngineMemento* newSave) {
+	saveList.insert({newSaveName, newSave});
 }
 
 WarEngineMemento* SaveArchive::getLastSave() {
-	// TODO - implement SaveArchive::getLastSave
-	throw "Not yet implemented";
+	
+	if(saveList.size() == 0){
+		throw "Save archive is empty.";
+	}
+
+	WarEngineMemento* lastSave = saveList.begin()->second;
+
+	saveList.erase( saveList.begin() );
+
+	return lastSave;
 }
 
-void SaveArchive::getSave(string timestamp) {
-	// TODO - implement SaveArchive::getSave
-	throw "Not yet implemented";
+WarEngineMemento* SaveArchive::getSave(std::string name) {
+	if(saveList.size() == 0){
+		std::__throw_out_of_range("Save archive is empty");
+	}
+	
+	auto iter = saveList.find(name);
+
+	if(iter == saveList.end())
+		std::__throw_invalid_argument("No save with given name exists");
+
+	return iter->second;
 }
 
-boolean SaveArchive::clearSaveList() {
-	// TODO - implement SaveArchive::clearSaveList
-	throw "Not yet implemented";
+void SaveArchive::clearSaveList() {
+	saveList.clear();
 }
 
-boolean SaveArchive::deleteSave(string timestamp) {
-	// TODO - implement SaveArchive::deleteSave
-	throw "Not yet implemented";
+void SaveArchive::deleteSave(std::string name) {
+	if(saveList.size() == 0){
+		std::__throw_out_of_range("Save archive is empty");
+	}
+
+	auto iter = saveList.find(name) ;
+
+	if(iter == saveList.end())
+		return;
+
+	saveList.erase( iter );
 }

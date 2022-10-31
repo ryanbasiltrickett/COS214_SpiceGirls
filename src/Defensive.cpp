@@ -1,11 +1,11 @@
 #include "Defensive.h"
 
 Defensive::Defensive() {
-	// TODO - implement Defensive::Defensive
-	throw "Not yet implemented";
+
 }
 
-void Defensive::performStrat(KeyPoint* keyPoint) {
-	// TODO - implement Defensive::performStrat
-	throw "Not yet implemented";
+void Defensive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
+
+    int randomNumber = (rand() % 5) + 1;
+    keyPoint->moveEntitiesInto(alliance, randomNumber);
 }

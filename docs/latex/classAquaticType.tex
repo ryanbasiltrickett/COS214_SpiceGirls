@@ -1,33 +1,44 @@
-\hypertarget{classAquaticType}{}\doxysection{Aquatic\+Type Class Reference}
-\label{classAquaticType}\index{AquaticType@{AquaticType}}
+\hypertarget{classAquaticType}{}\section{Aquatic\+Type Class Reference}
+\label{classAquaticType}\index{Aquatic\+Type@{Aquatic\+Type}}
+
+
+\hyperlink{classAquaticType}{Aquatic\+Type} class.  
+
+
+
+
+{\ttfamily \#include $<$Aquatic\+Type.\+h$>$}
+
 Inheritance diagram for Aquatic\+Type\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classAquaticType}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classAquaticType_a2e9287ecb48a58ca5d8fd560da4d9d57}\label{classAquaticType_a2e9287ecb48a58ca5d8fd560da4d9d57}} 
-\mbox{\hyperlink{classAquaticType_a2e9287ecb48a58ca5d8fd560da4d9d57}{Aquatic\+Type}} ()
+\hyperlink{classAquaticType_a2e9287ecb48a58ca5d8fd560da4d9d57}{Aquatic\+Type} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the aquatic type. \end{DoxyCompactList}\item 
-string \mbox{\hyperlink{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}{get\+Type\+Desc}} ()
+string \hyperlink{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}{get\+Type\+Desc} ()
 \begin{DoxyCompactList}\small\item\em Returns aquatic type description. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
+\hyperlink{classAquaticType}{Aquatic\+Type} class. 
+
+Used to define \hyperlink{classEntity}{Entity} objects as aquatic type. 
+
+Definition at line 11 of file Aquatic\+Type.\+h.
 
 
-Definition at line 4 of file Aquatic\+Type.\+h.
 
-
-
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}\label{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}} 
-\index{AquaticType@{AquaticType}!getTypeDesc@{getTypeDesc}}
-\index{getTypeDesc@{getTypeDesc}!AquaticType@{AquaticType}}
-\doxysubsubsection{\texorpdfstring{getTypeDesc()}{getTypeDesc()}}
+\index{Aquatic\+Type@{Aquatic\+Type}!get\+Type\+Desc@{get\+Type\+Desc}}
+\index{get\+Type\+Desc@{get\+Type\+Desc}!Aquatic\+Type@{Aquatic\+Type}}
+\subsubsection{\texorpdfstring{get\+Type\+Desc()}{getTypeDesc()}}
 {\footnotesize\ttfamily string Aquatic\+Type\+::get\+Type\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -44,19 +55,17 @@ string The aquatic type string
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classType}{Type}}.
+Implements \hyperlink{classType}{Type}.
 
 
 
-Definition at line 10 of file Aquatic\+Type.\+cpp.
+Definition at line 7 of file Aquatic\+Type.\+cpp.
 
 
-\begin{DoxyCode}{0}
-\DoxyCodeLine{10                                 \{}
-\DoxyCodeLine{11     \textcolor{comment}{// TODO -\/ implement AquaticType::getTypeDesc}}
-\DoxyCodeLine{12     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{13 \}}
-
+\begin{DoxyCode}
+7                                 \{
+8     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"Aquatic"};
+9 \}
 \end{DoxyCode}
 
 

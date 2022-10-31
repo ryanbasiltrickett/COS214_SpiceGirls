@@ -6,7 +6,7 @@
 class Negotiator {
 
 private:
-	vector<Alliance*> alliance;
+	vector<Alliance*> alliances;
 
 public:
 	/**
@@ -36,7 +36,7 @@ public:
 	 *
 	 * @return void
 	 */
-	void removeAlliance();
+	void removeAlliance(Alliance* alliance);
 
 	/**
 	 * @brief Adds an alliance to the alliance vector
@@ -46,7 +46,7 @@ public:
 	 *
 	 * @return void
 	 */
-	void addAlliance();
+	void addAlliance(Alliance* alliance);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Negotiator

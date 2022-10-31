@@ -8,6 +8,13 @@
 #include "Weather.h"
 #include <vector>
 
+#include "Alliance.h"
+#include "Area.h"
+#include "Entity.h"
+#include "CommandCenter.h"
+#include "Weather.h"
+#include <vector>
+
 using namespace std;
 
 /**
@@ -21,6 +28,7 @@ private:
 	vector<Entity*> entities;
 	vector<CommandCenter*> comCenters;
 	Weather* weather;
+	std::string AreaType;
 
 public:
 	/**
@@ -152,6 +160,12 @@ public:
 	 * @return std::string reaturns the type
 	 */
 	std::string getAreaName() const;
+  
+	 * @brief Set the Weather object
+	 * 
+	 * @param weather 
+	 */
+	void setWeather(Weather* weather);
 };
 
 #endif

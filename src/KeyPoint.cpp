@@ -1,7 +1,10 @@
 #include "KeyPoint.h"
 #include <cstdlib>
 
+using namespace std;
+
 KeyPoint::KeyPoint(string areaName): Area(areaName) {}
+}
 
 bool KeyPoint::isKeyPoint() {
 	return true;

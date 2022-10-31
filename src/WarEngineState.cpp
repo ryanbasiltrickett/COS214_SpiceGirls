@@ -1,9 +1,6 @@
 #include "WarEngineState.h"
 
-WarEngineState::WarEngineState() {
-	// TODO - implement WarEngineState::WarEngineState
-	throw "Not yet implemented";
-}
+WarEngineState::WarEngineState() {}
 
 void WarEngineState::setAreas(vector<Area*> areaVect) {
 	this->areas = areaVect;
@@ -11,7 +8,7 @@ void WarEngineState::setAreas(vector<Area*> areaVect) {
 
 vector<Area*> WarEngineState::getAreas() {
 
-	if(areas == nullptr)
+	if(areas.size() == 0)
 	throw "No Areas Stored.";
 
 	return areas;
@@ -23,8 +20,35 @@ void WarEngineState::setAlliances(vector<Alliance*> alliances) {
 
 vector<Alliance*> WarEngineState::getAlliances() {
 
-	if(this->alliances == nullptr)
-	throw "No Alliances stored";
+	if(alliances.size() == 0)
+		std::__throw_out_of_range("No Alliances stored.");
 
-	return this->alliances;
+	return alliances;
+}
+
+WarEngineState* WarEngineState::clone(){
+
+	WarEngineState* clonedState = new WarEngineState();
+
+	for(Area* a : this->areas){
+		
+		Area * cloneArea = a->clone();
+
+		clonedState->areas.push_back(a);
+	}
+
+	for(Alliance* alliance : this->alliances){
+		
+		Alliance* clonedAlliance = alliance->clone();
+
+		clonedState->alliances.push_back(alliance);
+
+	}
+
+		return clonedState;
+	}
+
+WarEngineState::~WarEngineState(){
+	//TODO: To be Implemented
+	throw "To be implemented";
 }

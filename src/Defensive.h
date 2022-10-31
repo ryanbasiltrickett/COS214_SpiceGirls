@@ -2,7 +2,8 @@
 #define DEFENSIVE_H
 #include "Strategy.h"
 #include "KeyPoint.h"
-
+#include "Alliance.h"
+#include "Personnel.h"
 class Defensive : public Strategy {
 
 
@@ -18,7 +19,7 @@ public:
 	 * 
 	 * @return void The function will return a void
 	 */
-	void performStrat(KeyPoint* keyPoint);
+	void performStrat(KeyPoint* keyPoint, Alliance* alliance);
 };
 
 #endif

@@ -19,6 +19,7 @@ public:
 	Type();
 
 	virtual string getTypeDesc() = 0;
+	
 };
 
 #endif

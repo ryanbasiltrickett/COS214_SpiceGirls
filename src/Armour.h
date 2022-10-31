@@ -8,17 +8,16 @@
  * 
  * Used to add protective armour to Entity objects.
  */
-class Armour : AddOn {
+class Armour : public AddOn {
 
 
 public:
 	/**
 	 * @brief Instantiates an Armour
 	 * 
-	 * @param entity must be a Entity*
-	 * @param value must be a int
+	 * @param value must be an int
 	 */
-	Armour(Entity* entity, int value);
+	Armour(int value);
 	
 	/**
 	 * @brief Decreases the entities' armour value (or health when their armour has depleted)
@@ -47,6 +46,16 @@ public:
 	 * @return void
 	 */
 	void dealDamage(Entity* entity);
+
+	/**
+	 * @brief Instantiates and returns a clone of the current Armour
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current Armour
+	 *
+	 * @return Armour* The Armour clone
+	 */
+	AddOn* clone();
 };
 
 #endif

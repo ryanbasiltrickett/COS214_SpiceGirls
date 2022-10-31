@@ -1,17 +1,19 @@
 #include "Piercing.h"
-#include "Entity.h"
 
-Piercing::Piercing(Entity* entity, int value) {
-	// TODO - implement Piercing::Piercing
-	throw "Not yet implemented";
+Piercing::Piercing(int value) : AddOn(value) {	
 }
 
 void Piercing::takeDamage(int damage) {
-	// TODO - implement Piercing::takeDamage
-	throw "Not yet implemented";
+	entity->takeDamage(damage);
 }
 
 void Piercing::dealDamage(Entity* entity) {
-	// TODO - implement Piercing::dealDamage
-	throw "Not yet implemented";
+	int sumValue = this->entity->getDamage() + value;
+	entity->takeDamage(sumValue);
+}
+
+AddOn* Piercing::clone() {
+	Piercing* piercing = new Piercing();
+	Piercing->setValue(value);
+	return piercing;
 }
