@@ -35,14 +35,9 @@ void KeyPoint::clearBattlefield() {
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
-	
-	for (int i = 0; i < numTroops; i++) {
-		try {
-			entities.push_back(alliance->retrieveEntity());
-		} catch (...) {
-			break;
-		}
-	}
+	vector<Entity*> troops = alliance.getReserveEntities(numTroops);
+	for (int i = 0; i < troops.size(); i++)
+		entities.push_back(troops[i]);
 }
 
 void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
@@ -50,7 +45,7 @@ void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
 	for (int i = 0; i < numTroops && it != entities.end(); i++) {
 		for (; it != entities.end(); ++it) {
 			if ((*it)->getAlliance() == alliance) {
-				alliance->addEntity(*it);
+				alliance->addReserveEntity(*it);
 				entities.erase(it);
 			}
 		}
