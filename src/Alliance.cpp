@@ -12,7 +12,7 @@ Alliance::Alliance() {
 
 Alliance::~Alliance() {
 	
-	this->negotiator->removeAlliance(aID);
+	this->negotiator->removeAlliance(this);
 
 	if (totalNum == 1)
 		delete this->negotiator;
@@ -38,7 +38,7 @@ void Alliance::addFactory(Factory* factory) {
 void Alliance::surrender() {
 	this->active = 2; //Number 2 means that Alliance has surrendered
 
-	this->negotiator->removeAlliance(aID);
+	this->negotiator->removeAlliance(this);
 }
 
 int Alliance::getID() {

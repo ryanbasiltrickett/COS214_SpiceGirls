@@ -8,8 +8,9 @@ Negotiator::~Negotiator() {
 	alliance.clear();
 }
 
-bool Negotiator::sendPeace(int id) {
+bool Negotiator::sendPeace(Alliance* offerAlliance) {
 	
+	int id = offerAlliance->getID();
 	for (int yy = 0; yy < alliance.size(); yy++)
 	{
 		if (alliance[yy]->getID() != id && alliance[yy]->considerPeace(id) == false)
@@ -20,11 +21,11 @@ bool Negotiator::sendPeace(int id) {
 	return true; // All the alliances being fought against agreed to the peace deal
 }
 
-void Negotiator::removeAlliance(int id) {
+void Negotiator::removeAlliance(Alliance* oldAlliance) {
 	
 	for (int xx = 0; xx < alliance.size(); xx++)
 	{
-		if (alliance[xx]->getID() == id)
+		if (alliance[xx]->getID() == oldAlliance->getID())
 			alliance.erase( alliance.begin() + xx ); // Removes the specific alliance from this negotiator
 	
 	}
@@ -33,10 +34,24 @@ void Negotiator::removeAlliance(int id) {
 
 void Negotiator::addAlliance(Alliance* newAlliance) {
 	
-	alliance.push_back(newAlliance);
+	if (isFound(newAlliance) != true)
+		alliance.push_back(newAlliance);
+	
 }
 
 Negotiator* Negotiator::clone() {
 	// TODO - implement Negotiator::clone
 	throw "Not yet implemented";
+}
+
+bool isFound(Alliance* newAlliance) {
+	
+	for (int qq = 0; qq < alliance.size(); qq++)
+	{
+		if (alliance[qq]->getID() == newAlliance->getID())
+			return true; 
+	
+	}
+
+	return false; // newAlliance is not in vector already
 }

@@ -20,10 +20,10 @@ public:
 	~Negotiator();
 
 	/**
-	 * @brief Sets the entities type state
+	 * @brief Tries to offer peace to all the alliances in vector
 	 *
 	 * Preconditions:
-	 *  - id must be an integer
+	 *  - offerAlliance must be an Alliance pointer
 	 *
 	 * Postconditions:
 	 *  - Iterates through alliance vector and calls considerPeace for the enemies
@@ -31,13 +31,13 @@ public:
 	 * @param id must be an int
 	 * @return bool
 	 */
-	bool sendPeace(int id);
+	bool sendPeace(Alliance* offerAlliance);
 
 	/**
 	 * @brief Removes an alliance from the alliance vector
 	 *
 	 * Preconditions:
-	 *  - id must be an integer
+	 *  - oldAlliance must be an Alliance pointer
 	 *
 	 * Postconditions:
 	 *  - Alliance is removed from vector
@@ -45,7 +45,7 @@ public:
 	 * @return void
 	 */
 	
-	void removeAlliance(int id);
+	void removeAlliance(Alliance* oldAlliance);
 
 	/**
 	 * @brief Adds an alliance to the alliance vector
