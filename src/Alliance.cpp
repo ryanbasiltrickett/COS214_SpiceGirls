@@ -1,4 +1,6 @@
 #include "Alliance.h"
+#include "Negotiator.h"
+#include "Entity.h"
 #include <time.h>
 
 int Alliance::totalNum = 0;
@@ -24,6 +26,20 @@ void Alliance::setNegotiator(Negotiator* negotiator) {
 
 void Alliance::addCountry(Country* nation) {
 	members.push_back(nation);
+}
+
+vector<Entity*> Alliance::getReserveEntities(int number) {
+	vector<Entity*> out;
+	for (int i = 0; i < number && i < reserveEntities.size(); i++) {
+		out.push_back(reserveEntities[i]);
+		reserveEntities.erase(reverseEntities.begin() + i);
+	}
+
+	return out;
+}	
+
+void Alliance::addReserveEntity(Entity* entity) {
+	reverseEntities.push_back(entity);
 }
 
 bool Alliance::considerPeace(int id) {
