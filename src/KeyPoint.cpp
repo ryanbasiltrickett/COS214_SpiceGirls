@@ -1,43 +1,60 @@
 #include "KeyPoint.h"
+using namespace std;
 
-KeyPoint::KeyPoint() {
-	// TODO - implement KeyPoint::KeyPoint
-	throw "Not yet implemented";
+<<<<<<< HEAD
+KeyPoint::KeyPoint(string AreaType): AreaType(AreaType) {
+	
 }
+=======
+KeyPoint::KeyPoint(): Area() {}
+>>>>>>> a4295e93de29acc2a81d07b2501bf4500def6f80
 
 bool KeyPoint::isKeyPoint() {
-	// TODO - implement KeyPoint::isKeyPoint
-	throw "Not yet implemented";
+	return true;
 }
 
-void KeyPoint::attack(Alliance* alliance) {
+void KeyPoint::simulateBattle(Alliance* alliance) {
 	// TODO - implement KeyPoint::attack
 	throw "Not yet implemented";
 }
 
-void KeyPoint::moveEntities(Area* area, Alliance* alliance) {
-	// TODO - implement KeyPoint::moveEntities
+void KeyPoint::clearBattlefield() {
+	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
+		if ((*it)->getHealth() <= 0) {
+			delete *it;
+			entities.erase(it);
+			// TODO - notify comCenter
+			throw "Not yet implemented";
+		}
+	}
+}
+
+void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
+	// TODO - implement KeyPoint::moveEntitiesInto
+	throw "Not yet implemented";
+}
+
+void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
+	// TODO - implement KeyPoint::moveEntitiesOutOf
 	throw "Not yet implemented";
 }
 
 void KeyPoint::addEntity(Entity* entity) {
-	// TODO - implement KeyPoint::addEntity
-	throw "Not yet implemented";
+	entities.push_back(entity);
 }
 
 void KeyPoint::attach(CommandCenter* comCenter) {
-	// TODO - implement KeyPoint::attach
-	throw "Not yet implemented";
+	comCenters.push_back(comCenter);
 }
 
 void KeyPoint::detach(CommandCenter* comCenter) {
-	// TODO - implement KeyPoint::detach
-	throw "Not yet implemented";
-}
-
-void KeyPoint::notify() {
-	// TODO - implement KeyPoint::notify
-	throw "Not yet implemented";
+	for (vector<CommandCenter*>::iterator it = comCenters.begin();  it != comCenters.end(); ++it) {
+		if (*it == comCenter) {
+			delete comCenter;
+			comCenters.erase(it);
+			return;
+		}
+	}
 }
 
 Area* KeyPoint::clone() {

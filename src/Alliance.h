@@ -118,6 +118,34 @@ public:
 	 * @return Alliance* The alliance clone
 	 */
 	Alliance* clone();
+
+	/**
+	 * @brief Sets the passed in parameter
+	 * 
+	 * PreCondtions:
+	 * - ID must be an int
+	 * 
+	 * PostConditions:
+	 * - The ID is set to the passed in the  parameter
+	 * 
+	 * @param ID 
+	 */
+	void setID(int ID);
+
+	/**
+	 * @brief Sets variable active to the passed in parameter
+	 * 
+	 * PreCondtions:
+	 * - active must be an a bool
+	 * 
+	 * PostConditions:
+	 * - The varriable active is set to the passed in the parameter
+	 * 
+	 * @param ID a bool parameter
+	 */
+	void setActiveStatus(bool active);
+
+
 };
 
 #endif

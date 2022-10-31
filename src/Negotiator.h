@@ -6,7 +6,7 @@
 class Negotiator {
 
 private:
-	vector<Alliance*> alliance;
+	vector<Alliance*> alliances;
 
 public:
 	/**

@@ -1,6 +1,14 @@
 #include "AddOn.h"
 
-AddOn::AddOn(Entity* entity, int value) {
-	// TODO - implement AddOn::AddOn
-	throw "Not yet implemented";
+AddOn::AddOn(int value) {
+	this->value = value;
+	entity = NULL;
+}
+
+void AddOn::setValue(int value) {
+	this->value = value;
+}
+
+void AddOn::setEntity(Entity* entity) {
+	this->entity = entity;
 }

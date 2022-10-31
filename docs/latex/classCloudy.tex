@@ -1,4 +1,4 @@
-\hypertarget{classCloudy}{}\doxysection{Cloudy Class Reference}
+\hypertarget{classCloudy}{}\section{Cloudy Class Reference}
 \label{classCloudy}\index{Cloudy@{Cloudy}}
 Inheritance diagram for Cloudy\+:\begin{figure}[H]
 \begin{center}
@@ -6,30 +6,30 @@ Inheritance diagram for Cloudy\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classCloudy}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\Hypertarget{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}\label{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}} 
-\mbox{\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{Cloudy}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCloudy}{Cloudy}} object of the state pattern. \end{DoxyCompactList}\item 
-virtual std\+::string \mbox{\hyperlink{classCloudy_a4570dd10132fac93ec1123aad0f5c883}{get\+Weather}} ()
+\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{Cloudy} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classCloudy}{Cloudy} object of the state pattern. \end{DoxyCompactList}\item 
+virtual std\+::string \hyperlink{classCloudy_a4570dd10132fac93ec1123aad0f5c883}{get\+Weather} ()
 \begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
+virtual void \hyperlink{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}{handle\+Change} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$k)
 \begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\subsection{Detailed Description}
 
 
 Definition at line 7 of file Cloudy.\+h.
 
 
 
-\doxysubsection{Member Function Documentation}
+\subsection{Member Function Documentation}
 \mbox{\Hypertarget{classCloudy_a4570dd10132fac93ec1123aad0f5c883}\label{classCloudy_a4570dd10132fac93ec1123aad0f5c883}} 
-\index{Cloudy@{Cloudy}!getWeather@{getWeather}}
-\index{getWeather@{getWeather}!Cloudy@{Cloudy}}
-\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
+\index{Cloudy@{Cloudy}!get\+Weather@{get\+Weather}}
+\index{get\+Weather@{get\+Weather}!Cloudy@{Cloudy}}
+\subsubsection{\texorpdfstring{get\+Weather()}{getWeather()}}
 {\footnotesize\ttfamily virtual std\+::string Cloudy\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -46,13 +46,13 @@ std\+::string which is the current state
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classWeather}{Weather}}.
+Implements \hyperlink{classWeather}{Weather}.
 
 \mbox{\Hypertarget{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}\label{classCloudy_ad76de74d84d8bc7c070ff1a9dc935600}} 
-\index{Cloudy@{Cloudy}!handleChange@{handleChange}}
-\index{handleChange@{handleChange}!Cloudy@{Cloudy}}
-\doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
-{\footnotesize\ttfamily virtual void Cloudy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Cloudy@{Cloudy}!handle\+Change@{handle\+Change}}
+\index{handle\+Change@{handle\+Change}!Cloudy@{Cloudy}}
+\subsubsection{\texorpdfstring{handle\+Change()}{handleChange()}}
+{\footnotesize\ttfamily virtual void Cloudy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\hyperlink{classKeyPoint}{Key\+Point} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -65,7 +65,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classRainy}{Rainy}})
+\item Changes the current weather to the next one in the state pattern (\hyperlink{classRainy}{Rainy})
 \end{DoxyItemize}
 
 
@@ -78,7 +78,7 @@ void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classWeather}{Weather}}.
+Implements \hyperlink{classWeather}{Weather}.
 
 
 

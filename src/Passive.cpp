@@ -1,15 +1,13 @@
 #include "Passive.h"
 
-using namespace std;;
+using namespace std;
 
 Passive::Passive() {
-	// TODO - implement Passive::Passive
-	throw "Not yet implemented";
+
 }
 
-void Passive::performStrat(Keypoint* keyPoint) {
-	// TODO - implement Passive::performStrat
-	throw "Not yet implemented";
+void Passive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
+	
+	int randomNumber = (rand() % 10) + 5;
+	keyPoint->moveEntitiesOutOf(alliance, randomNumber);
 }
-
-Passive::getStrategy(string nae)

@@ -1,22 +1,23 @@
 #ifndef PIERCING_H
 #define PIERCING_H
+#include "AddOn.h"
+#include "Entity.h"
 
 /**
  * @brief Piercing class
  * 
  * Used to add to the damage Entity objects inflict.
  */
-class Piercing : AddOn {
+class Piercing : public AddOn {
 
 
 public:
 	/**
 	 * @brief Instantiates an Piercing
 	 * 
-	 * @param entity must be a Entity*
-	 * @param value must be a int
+	 * @param value must be an int
 	 */
-	Piercing(Entity* entity, int value);
+	Piercing(int value);
 
 	/**
 	 * @brief Decreases the entities' armour value (or health when their armour has depleted)
@@ -45,6 +46,16 @@ public:
 	 * @return void
 	 */
 	void dealDamage(Entity* entity);
+
+	/**
+	 * @brief Instantiates and returns a clone of the current Piercing
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current Piercing
+	 *
+	 * @return Piercing* The Piercing clone
+	 */
+	AddOn* clone();
 };
 
 #endif

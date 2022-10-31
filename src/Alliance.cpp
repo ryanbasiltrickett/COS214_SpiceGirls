@@ -4,7 +4,6 @@
 int Alliance::totalNum = 0;
 
 Alliance::Alliance() {
-	
 	this->active = 1;
 	this->aID = totalNum++;
 	srand(time(0));
@@ -57,6 +56,6 @@ bool Alliance::offPeace() {
 }
 
 Alliance* Alliance::clone() {
-	// TODO - implement Alliance::clone
+	
 	throw "Not yet implemented";
 }
