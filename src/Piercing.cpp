@@ -1,6 +1,6 @@
 #include "Piercing.h"
 
-Piercing::Piercing() : AddOn() {	
+Piercing::Piercing(int value) : AddOn(value) {	
 }
 
 void Piercing::takeDamage(int damage) {

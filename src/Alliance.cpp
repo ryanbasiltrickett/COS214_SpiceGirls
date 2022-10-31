@@ -1,9 +1,6 @@
 #include "Alliance.h"
 
-Alliance::Alliance() {
-	
-	
-}
+Alliance::Alliance() {}
 
 void Alliance::setNegotiator(Negotiator* n) {
 	this->negotiator = n;
