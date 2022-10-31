@@ -1,9 +1,11 @@
 #ifndef KEYPOINT_H
 #define KEYPOINT_H
+
+#include "Alliance.h"
 #include "Area.h"
-#include "Weather.h"
 #include "Entity.h"
 #include "CommandCenter.h"
+#include "Weather.h"
 #include <vector>
 
 #include "Alliance.h"
