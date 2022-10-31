@@ -13,7 +13,7 @@ void EasySetup::loadPrevSave {
     try{
         WarEngineMemento* saveFile = SaveArchive->getLastSave();
 
-        WarEngine->loadSave(*saveFile->getState());
+        WarEngine->loadSave(saveFile->getState());
     }
     catch(const std::exception& error){
 
@@ -28,7 +28,7 @@ void EasySetup::loadSpecificSave(string name) {
         
         WarEngineMemento* saveFile = SaveArchive->getSave(name);
 
-        WarEngine->loadSave(*saveFile->getState());
+        WarEngine->loadSave(saveFile->getState());
     }
     catch(const std::out_of_range& range_error){
 
