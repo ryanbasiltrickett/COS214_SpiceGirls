@@ -1,6 +1,15 @@
 #ifndef ALLIANCE_H
 #define ALLIANCE_H
 
+#include "Factory.h"
+#include "Country.h"
+#include <vector>
+
+class Negotiator;
+class Entity;
+
+using namespace std;
+
 class Alliance {
 
 private:
@@ -10,6 +19,7 @@ private:
 	Negotiator* negotiator;
 	vector<Country*> members;
 	int active;
+	vector<Entity*> reserveEntities;
 
 public:
 	/**
@@ -49,6 +59,35 @@ public:
 	 * @return void
 	 */
 	void addCountry(Country* nation);
+
+	/**
+	 * @brief Return a given number of reserve entites vector
+	 *
+	 * Precondition:
+	 *  - number must be an int
+	 * 
+	 * Postconditions:
+	 *  - Return a given number of reserve entities
+	 *  - If not enough reseverves return amount available
+	 *
+	 * @param number must be an int
+	 * @return vector<Entity*>*
+	 */
+	vector<Entity*> getReserveEntities(int number);
+
+	/**
+	 * @brief Adds a entity to the reserve entities
+	 *
+	 * Preconditions:
+	 *  - nation must be an Entity*
+	 *
+	 * Postconditions:
+	 *  - Entity is added to the reserveEntities vector
+	 *
+	 * @param entity must be an Entity*
+	 * @return void
+	 */
+	void addReserveEntity(Entity* entity);
 
 	/**
 	 * @brief Considers to stop war with the allaince passed into the function header
