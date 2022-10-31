@@ -40,6 +40,10 @@ void Alliance::surrender() {
 	this->negotiator->removeAlliance(this);
 }
 
+vector<Entity*> Alliance::getEntities() {
+	return this->reserveEntities;
+}
+
 int Alliance::getID() {
 	return this->aID;
 }
@@ -53,6 +57,14 @@ bool Alliance::offPeace() {
 	}
 	
 	return false; 
+}
+
+void Alliance::setEntities(vector<Entity*> entities) {
+	this->reserveEntities = entities;
+}
+
+void Alliance::addEntity(Entity* entity) {
+	this->reserveEntities.push_back(entity);
 }
 
 Alliance* Alliance::clone() {
