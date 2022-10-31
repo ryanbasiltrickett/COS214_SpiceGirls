@@ -31,9 +31,9 @@ void Negotiator::removeAlliance(Alliance* oldAlliance) {
 }
 
 void Negotiator::addAlliance(Alliance* newAlliance) {
-	
-	if (isFound(newAlliance) != true)
-		alliance.push_back(newAlliance);
+    
+	if (std::find(alliance.begin(), alliance.end(), newAlliance) != alliance.end() == false) 
+        alliance.push_back(newAlliance);
 	
 }
 
@@ -42,14 +42,3 @@ Negotiator* Negotiator::clone() {
 	throw "Not yet implemented";
 }
 
-bool isFound(Alliance* newAlliance) {
-	
-	for (int qq = 0; qq < alliance.size(); qq++)
-	{
-		if (alliance[qq]->getID() == newAlliance->getID())
-			return true; 
-	
-	}
-
-	return false; // newAlliance is not in vector already
-}
