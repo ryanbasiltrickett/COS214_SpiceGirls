@@ -17,7 +17,7 @@ public:
 	 * 
 	 * @return void The function will return void
 	 */
-	void performStrat(KeyPoint* keyPoint);
+	void performStrat(KeyPoint* keyPoint, Alliance* alliance);
 };
 
 #endif

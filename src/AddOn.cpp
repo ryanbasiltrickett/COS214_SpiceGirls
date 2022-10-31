@@ -1,7 +1,7 @@
 #include "AddOn.h"
 
-AddOn::AddOn() {
-	value = 0;
+AddOn::AddOn(int value) {
+	this->value = value;
 	entity = NULL;
 }
 

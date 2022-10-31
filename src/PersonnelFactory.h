@@ -8,7 +8,7 @@
  * 
  * Used to instantiate Personnel objects.
  */
-class PersonnelFactory : Factory {
+class PersonnelFactory : public Factory {
 
 public:
 	/**

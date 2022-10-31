@@ -2,6 +2,9 @@
 #define WARENGINESTATE_H
 #include "Alliance.h"
 #include "Area.h"
+#include <vector>
+
+using namespace std;
 
 /**
  * @class WarEngineState
@@ -25,7 +28,14 @@ public:
 
 	/**
 	 * @brief Takes in a vector of Area and sets it to the areas member of the WarEngineState instance.
-	 * @param vector<Area*> areaVect
+	 * @param areaVect vector<Area*>
+	 * 
+	 * Preconditions:
+	 * 	- areaVect must be a Area*
+	 * 
+	 * Postconditions:
+	 * 	- Sets the WarEngineState areas member variable to the passed in state parameter.
+	 * 
 	 * @return void
 	*/
 	void setAreas(vector<Area*> areaVect);
@@ -39,16 +49,38 @@ public:
 	/**
 	 * @brief Sets the given vector of Alliance object pointers to the alliances member variable.
 	 * @param vector<Alliance*> alliances
+	 * 
+	 * Preconditions:
+	 * 	- alliances must be a vector of Alliance*
+	 * 
+	 * Postconditions:
+	 * 	- Sets the instance's alliances member variable to the passed in parameter.
+	 * 
 	 * @return void
 	*/
 	void setAlliances(vector<Alliance*> alliances);
 
 	/**
 	 * @brief Returns the alliances member variable.
+	 * 
 	 * @return vector <Alliance*>
 	 * 
+	 * @exception out_of_range save archive is empty
+	 *
 	*/
 	vector<Alliance*> getAlliances();
+
+	/**
+	 * @brief Returns a clone of the current WarEngineMemento object.
+	 *
+	 * @return WarEngineState*
+	*/
+	WarEngineState* clone();
+
+	/**
+	 * @brief Destructor for class.
+	*/
+	~WarEngineState(){}
 };
 
 #endif

@@ -1,0 +1,52 @@
+#include <stdexcept>
+#include "Negotiator.h"
+#include "Alliance.h"
+#include "gtest/gtest.h"
+
+namespace {
+
+    // Tests Negotiator Functionality
+
+    // Tests AddOn setEntity()
+    // ============ Positive Testing ============
+    // Test Preconditions Bounds
+    TEST(NegotiatorOfferPeace, PositiveTesting) {
+        Alliance* a = new Alliance();  
+        Alliance* b = new Alliance();
+        Negotiator* n = new Negotiator();
+        n->addAlliance(a);
+        n->addAlliance(b);
+
+        if (a->offerPeace())
+            EXPECT_EQ(false, a->getActive());
+        else 
+            EXPECT_EQ(true, a->getActive());
+    }
+
+    TEST(NegotiatorSurrender, PositiveTesting) {
+        Alliance* a = new Alliance();  
+        Alliance* b = new Alliance();  
+        Alliance* c = new Alliance(); 
+        Alliance* d = new Alliance();
+        Alliance* e = new Alliance();
+        Negotiator* n = new Negotiator();
+        n->addAlliance(a);
+        n->addAlliance(b);
+        n->addAlliance(c);
+        n->addAlliance(d);
+        n->addAlliance(e);
+
+        a->surrender()
+        EXPECT_EQ(false, a->getActive());
+
+        b->surrender()
+        EXPECT_EQ(false, a->getActive());
+
+        c->surrender()
+        EXPECT_EQ(false, a->getActive());
+
+        d->surrender()
+        EXPECT_EQ(false, a->getActive());
+    }
+
+}
