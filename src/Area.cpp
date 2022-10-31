@@ -2,8 +2,8 @@
 
 using namespace std;
 
-Area::Area(string areaName): areaName(areaName) {
-
+Area::Area(string areaName) {
+    this->areaName = areaName;
 }
 
 
