@@ -1,11 +1,11 @@
 #ifndef STRATEGY_H
 #define STRATEGY_H
-#include "KeyPoint.h"
-#include "Alliance.h"
 #include <string>
 #include <ctime>
 #include <cstdlib>
 
+class KeyPoint;
+class Alliance;
 
 class Strategy {
 

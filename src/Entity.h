@@ -2,7 +2,8 @@
 #define ENTITY_H
 
 #include "Type.h"
-#include "Alliance.h"
+
+class Alliance;
 
 /**
  * @brief Entity class
@@ -18,6 +19,8 @@ private:
 	int damage;
 
 public:
+	Entity();
+
 	/**
 	 * @brief Instantiates the entity
 	 * 

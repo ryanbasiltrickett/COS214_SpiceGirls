@@ -36,7 +36,7 @@ namespace {
     TEST(AddOnSetValueTest, TestPreconditionBounds) {
         Armour* a = new Armour(5);
         try {
-            a->setValue(0)
+            a->setValue(0);
             FAIL();
         } catch (std::invalid_argument& err) {
             EXPECT_EQ(err.what(), std::string("value must be greater than zero"));
@@ -73,7 +73,7 @@ namespace {
     // ============ Positive Testing ============
     // Test Preconditions Bounds
     TEST(AddOnSetEntityTest, PositiveTesting) {
-        Armour* a = new Armour();
+        Armour* a = new Armour(5);
         
         Personnel* p = new Personnel(new TerrainType(), 100, 10);  
         a->setEntity(p);
@@ -182,15 +182,15 @@ namespace {
         pi->setEntity(p);
 
         pi->takeDamage(10);
-        EXPECT_EQ(10, a->getValue());
+        EXPECT_EQ(10, pi->getValue());
         EXPECT_EQ(90, p->getHealth());
         
         pi->takeDamage(10);
-        EXPECT_EQ(10, a->getValue());
+        EXPECT_EQ(10, pi->getValue());
         EXPECT_EQ(80, p->getHealth());
 
         pi->takeDamage(10);
-        EXPECT_EQ(10, a->getValue());
+        EXPECT_EQ(10, pi->getValue());
         EXPECT_EQ(70, p->getHealth());
     }
     
@@ -205,14 +205,14 @@ namespace {
 
         pi->dealDamage(x);
         EXPECT_EQ(10, pi->getValue());
-        EXPECT_EQ(80, x->getValue());
+        EXPECT_EQ(80, x->getHealth());
         
         pi->dealDamage(x);
         EXPECT_EQ(10, pi->getValue());
-        EXPECT_EQ(60, x->getValue());
+        EXPECT_EQ(60, x->getHealth());
         
         pi->dealDamage(x);
         EXPECT_EQ(10, pi->getValue());
-        EXPECT_EQ(40, x->getValue());
+        EXPECT_EQ(40, x->getHealth());
     }
 }

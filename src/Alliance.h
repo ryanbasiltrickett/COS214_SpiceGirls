@@ -2,9 +2,6 @@
 #define ALLIANCE_H
 #include "Country.h"
 #include "Factory.h"
-#include "Negotiator.h"
-
-#include "Factory.h"
 #include "Country.h"
 #include <vector>
 
