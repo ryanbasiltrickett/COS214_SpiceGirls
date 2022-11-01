@@ -26,7 +26,7 @@ void WarEngine::simulate() {
 
 		for(int j = 0; j < alliances.size(); j++) {
 
-			area[i]->simulateBattle(alliances[i]);
+			area[i]->simulateBattle(alliances[j]);
 		}
 	}
 
