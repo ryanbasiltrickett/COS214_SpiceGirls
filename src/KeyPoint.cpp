@@ -1,21 +1,27 @@
 #include "KeyPoint.h"
+#include <cstdlib>
+
 using namespace std;
 
-<<<<<<< HEAD
-KeyPoint::KeyPoint(string AreaType): AreaType(AreaType) {
-	
+KeyPoint::KeyPoint(string areaName): Area(areaName) {
+	comCenter = new CommandCenter();
 }
-=======
-KeyPoint::KeyPoint(): Area() {}
->>>>>>> a4295e93de29acc2a81d07b2501bf4500def6f80
 
 bool KeyPoint::isKeyPoint() {
 	return true;
 }
 
 void KeyPoint::simulateBattle(Alliance* alliance) {
-	// TODO - implement KeyPoint::attack
-	throw "Not yet implemented";
+	for (int i = 0; i < entities.size(); i++) {
+		if (entities[i]->getAlliance() == alliance) {
+			int random;
+			do {
+				random = rand() % entities.size();
+			} while (entities[random]->getAlliance() == alliance);
+
+			entities[i]->dealDamage(entities[random]);
+		}
+	}
 }
 
 void KeyPoint::clearBattlefield() {
@@ -30,13 +36,21 @@ void KeyPoint::clearBattlefield() {
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
-	// TODO - implement KeyPoint::moveEntitiesInto
-	throw "Not yet implemented";
+	vector<Entity*> troops = alliance.getReserveEntities(numTroops);
+	for (int i = 0; i < troops.size(); i++)
+		entities.push_back(troops[i]);
 }
 
 void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
-	// TODO - implement KeyPoint::moveEntitiesOutOf
-	throw "Not yet implemented";
+	vector<Entity*>::iterator it = entities.begin();
+	for (int i = 0; i < numTroops && it != entities.end(); i++) {
+		for (; it != entities.end(); ++it) {
+			if ((*it)->getAlliance() == alliance) {
+				alliance->addReserveEntity(*it);
+				entities.erase(it);
+			}
+		}
+	}
 }
 
 void KeyPoint::addEntity(Entity* entity) {
@@ -60,4 +74,9 @@ void KeyPoint::detach(CommandCenter* comCenter) {
 Area* KeyPoint::clone() {
 	// TODO - implement KeyPoint::clone
 	throw "Not yet implemented";
+}
+
+std::string KeyPoint::getAreaName() const {
+	
+	 return this->areaName;
 }
