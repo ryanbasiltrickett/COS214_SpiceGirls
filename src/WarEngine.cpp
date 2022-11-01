@@ -19,3 +19,15 @@ void WarEngine::loadState(WarEngineState save) {
 	// TODO - implement WarEngine::loadState
 	throw "Not yet implemented";
 }
+
+void WarEngine::simulate() {
+
+	for(int i = 0; i < areas.size(); i++) {
+
+		for(int j = 0; j < alliances.size(); j++) {
+
+			area[i]->simulateBattle(alliances[i]);
+		}
+	}
+
+}

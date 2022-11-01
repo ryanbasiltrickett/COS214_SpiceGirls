@@ -23,3 +23,4 @@ WarTheatre* WarTheatre::clone() {
 
 	return w;
 }
+git stat
