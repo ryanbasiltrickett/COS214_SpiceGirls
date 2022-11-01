@@ -15,7 +15,6 @@ void General::initiateStrategy(KeyPoint* keyPoint) {
 }
 
 General* General::clone() {
-
 	return new General(this->alliance, this->keyPoint, this->strategy);
 }
 
