@@ -3,7 +3,8 @@
 
 using namespace std;
 
-KeyPoint::KeyPoint(string areaName): Area(areaName) {}
+KeyPoint::KeyPoint(string areaName): Area(areaName) {
+	comCenter = new CommandCenter();
 }
 
 bool KeyPoint::isKeyPoint() {
