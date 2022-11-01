@@ -2,7 +2,7 @@
 #define COMMANDCENTER_H
 #include "General.h"
 #include "KeyPoint.h"
-
+#include <vector>
 /**
  * @brief CommandCenter class
  * 
@@ -11,14 +11,13 @@
 class CommandCenter {
 
 private:
-	General* general;
-	KeyPoint* keyPoint;
+	vector<General*> generals;
 
 public:
 	/**
 	 * @brief Instantiates the CommandCenter
 	 */
-	CommandCenter(General* general, KeyPoint* keypoint);
+	CommandCenter();
 
 	/**
 	 * @brief Updates the command center's keypoint state
@@ -45,32 +44,18 @@ public:
 	CommandCenter* clone();
 
 	/**
-	 * @brief Set the General object
+	 * @brief Adds a General object
 	 * 
 	 * PreConditions:
 	 * - general must be of type General*
 	 * 
 	 * PostConditions:
-	 * - General object will be set to passed in parameter
+	 * - Generals vector will add the passed in parameter
 	 * 
 	 * @param general 
 	 * @return void
 	 */
-	void setGeneral(General* general);
-
-	/**
-	 * @brief Set the KeyPoint object
-	 * 
-	 * PreConditions:
-	 * - keyPoint must be of type KeyPoint*
-	 * 
-	 * PostConditions:
-	 * - KeyPoint object will be set to passed in parameter
-	 * 
-	 * @param keyPoint 
-	 * @return void
-	 */
-	void setKeyPoint(KeyPoint* keyPoint); 
+	void addGeneral(General* general);
 };
 
 #endif

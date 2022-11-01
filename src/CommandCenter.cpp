@@ -1,15 +1,20 @@
 #include "CommandCenter.h"
 
-CommandCenter::CommandCenter(General* general, KeyPoint* keypoint): general(general), keyPoint(keyPoint) {
-	
+CommandCenter::CommandCenter() {}
+
+void CommandCenter::update(KeyPoint* keyPoint, Alliance* alliance) {
+	for (int i = 0; i < generals.size(); i++) {
+		if (generals[i]->getAlliance() == alliance) {
+			generals[i]->initiateStrategy(keyPoint);
+			return;
+		}
+	}
 }
 
-void CommandCenter::update(KeyPoint* keyPoint) {
-
-	this->keyPoint = keyPoint;
+void CommandCenter::addGeneral(General* general) {
+	generals.push_back(general);
 }
 
 CommandCenter* CommandCenter::clone() {
-	
-	return new CommandCenter(this->general, this->keyPoint);
+	return new CommandCenter();
 }

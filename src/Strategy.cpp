@@ -2,10 +2,7 @@
 
 using namespace std;
 
-Strategy::Strategy() {
-}
+Strategy::Strategy() {}
 
-Strategy::~Strategy(){
-
-}
+Strategy::~Strategy(){}
 
