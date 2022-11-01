@@ -75,14 +75,6 @@ bool Alliance::offPeace() {
 	return false; 
 }
 
-void Alliance::setEntities(vector<Entity*> entities) {
-	this->reserveEntities = entities;
-}
-
-void Alliance::addEntity(Entity* entity) {
-	this->reserveEntities.push_back(entity);
-}
-
 Alliance* Alliance::clone() {
 	
 	throw "Not yet implemented";
