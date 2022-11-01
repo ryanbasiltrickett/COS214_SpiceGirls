@@ -2,6 +2,8 @@
 #define WEATHER_H
 #include <string>
 
+class KeyPoint;
+
 class Weather {
 
 

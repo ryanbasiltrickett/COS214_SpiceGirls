@@ -11,7 +11,7 @@ void General::evaluateStrategy() {
 }
 
 void General::initiateStrategy() {
-	strat->performStrat(this->keyPoint, this->alliance);
+	strategy->performStrat(this->keyPoint, this->alliance);
 }
 
 General* General::clone() {
@@ -19,13 +19,8 @@ General* General::clone() {
 	return new General(this->alliance, this->keyPoint, this->strategy);
 }
 
-bool General::setKeyPoint(Strategy* strategy){
+bool General::setStrategy(Strategy* strategy){
 	this->strategy = strategy;
-	return true;
-}
-
-bool General::setKeyPoint(KeyPoint* keypoint){
-	this->keyPoint = keyPoint;
 	return true;
 }
 

@@ -1,8 +1,10 @@
 #ifndef GENERAL_H
 #define GENERAL_H
 #include "Alliance.h"
-#include "KeyPoint.h"
 #include "Strategy.h"
+
+class KeyPoint;
+
 class General {
 
 private:

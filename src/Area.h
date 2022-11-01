@@ -1,6 +1,7 @@
 #ifndef AREA_H
 #define AREA_H
 #include <string>
+#include "Alliance.h"
 
 class Area {
 
