@@ -13,15 +13,19 @@ private:
 	int numDeaths;
 
 public:
+	/**
+	 * @brief Construct a new General object
+	 * 
+	 * @param alliance must be an Alliance*
+	 * @param stratety must be a Strategy*
+	 */
 	General(Alliance* alliance, Strategy* stratety);
-
-	void evaluateStrategy();
 
 	/**
 	 * @brief The function intiates the strategy
 	 * 
-	 * Precodition:
-	 * 	- keyPoint must be a KeyPoint*
+	 * Precondition:
+	 * 	- keyPoint muse be a KeyPoint*
 	 * 
 	 * @param keyPoint must be a KeyPoint*
 	 * @return void
@@ -55,7 +59,7 @@ public:
 	bool setStrategy(Strategy* strategy);
 
 	/**
-	 * @brief Return the Alliance object
+	 * @brief Returns the Alliance object
 	 * 
 	 * PostConditions:
 	 *  - Returns the alliance of the general

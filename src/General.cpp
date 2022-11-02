@@ -6,20 +6,16 @@ General::General(Alliance* alliance, Strategy* strategy) {
 	numDeaths = 0;
 }
 
-void General::evaluateStrategy() {
-	throw "Not yet implemented";
-}
-
 void General::initiateStrategy(KeyPoint* keyPoint) {
 	numDeaths++;
 	if (numDeaths >= 5) {
-		strategy->performStrat(keyPoint, this->alliance);
+		strat->performStrat(keyPoint, this->alliance);
 		numDeaths = 0;
 	}
 }
 
 General* General::clone() {
-	return new General(this->alliance, this->strategy);
+	return new General(this->alliance, this->keyPoint, this->strategy);
 }
 
 bool General::setStrategy(Strategy* strategy){
