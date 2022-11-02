@@ -27,10 +27,9 @@ void KeyPoint::simulateBattle(Alliance* alliance) {
 void KeyPoint::clearBattlefield() {
 	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
 		if ((*it)->getHealth() <= 0) {
+			comCenter->update(this, (*it)->getAlliance());
 			delete *it;
 			entities.erase(it);
-			// TODO - notify comCenter
-			throw "Not yet implemented";
 		}
 	}
 }
