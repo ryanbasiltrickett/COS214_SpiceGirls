@@ -31,7 +31,8 @@
 *.out
 *.app
 .GroupProjectUML.vpp.lck
-.gitignore
 sh.exe.stackdump
 GroupProjectUML.vpp-journal
 *GroupProjectUML.vpp.bak*
+.gitignore
+sh.exe.stackdump

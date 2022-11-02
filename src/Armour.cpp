@@ -16,7 +16,6 @@ void Armour::dealDamage(Entity* entity) {
 }
 
 AddOn* Armour::clone() {
-	Armour* armour = new Armour();
-	armour->setValue(value);
+	Armour* armour = new Armour(value);
 	return armour;
 }

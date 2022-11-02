@@ -8,13 +8,6 @@
 #include "Weather.h"
 #include <vector>
 
-#include "Alliance.h"
-#include "Area.h"
-#include "Entity.h"
-#include "CommandCenter.h"
-#include "Weather.h"
-#include <vector>
-
 using namespace std;
 
 /**
@@ -26,7 +19,7 @@ class KeyPoint : public Area {
 
 private:
 	vector<Entity*> entities;
-	vector<CommandCenter*> comCenters;
+	CommandCenter* comCenter;
 	Weather* weather;
 	std::string AreaType;
 
@@ -34,7 +27,7 @@ public:
 	/**
 	 * @brief Instantiates the key point
 	 */
-	KeyPoint(std::string AreaType);
+	KeyPoint(std::string areaName);
 
 	/**
 	 * @brief Returns area type
@@ -115,34 +108,6 @@ public:
 	 * @return void
 	 */
 	void addEntity(Entity* entity);
-	
-	/**
-	 * @brief Adds command centers to the comCenters vector
-	 *
-	 * Preconditions:
-	 *  - comCenter must be a CommandCenter*
-	 *
-	 * Postconditions:
-	 *  - Adds the passed in comCenter to the comCenters vector 
-	 *
-	 * @param comCenter must be a CommandCenter*
-	 * @return void
-	 */
-	void attach(CommandCenter* comCenter);
-
-	/**
-	 * @brief Removes command centers from the comCenters vector
-	 *
-	 * Preconditions:
-	 *  - comCenter must be a CommandCenter*
-	 *
-	 * Postconditions:
-	 *  - Removes the passed in comCenter from the comCenters vector 
-	 *
-	 * @param comCenter must be a CommandCenter*
-	 * @return void
-	 */
-	void detach(CommandCenter* comCenter);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
@@ -155,31 +120,39 @@ public:
 	Area* clone();
 
 	/**
-	 * @brief Set the Weather object
+	 * @brief Get the Area Type object
 	 * 
-	 * @param weather 
+	 * @return std::string reaturns the type
 	 */
-	void setWeather(Weather* weather);
-
+	std::string getAreaName() const;
+  
 	/**
 	 * @brief Switches the Weather object to the next state
 	 * 
 	 */
 	void changeWeather();
-
-	/**
-	 * @brief The area type is returned
+  
+  /**
+	 * @brief Set the Weather object
 	 * 
-	 * @return string The area type
+	 * Preconditions:
+	 *  - weather must be a Weather*
+	 * 
+	 * Postconditions:
+	 * 	- must set the keyPoints weather state
+	 * 
+	 * @param weather must be a Weather*
+	 * @return void
 	 */
-	std::string getAreaType() const;
-
+  void setWeather(Weather* weather);
+   
 	/**
 	 * @brief The weather at the current state is returned
 	 * 
 	 * @return string The weather state
 	 */
 	std::string getWeather() const;
+	
 };
 
 #endif

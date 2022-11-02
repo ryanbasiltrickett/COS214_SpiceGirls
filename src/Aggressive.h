@@ -1,16 +1,8 @@
 #ifndef AGGRESSIVE_H
 #define AGGRESSIVE_H
 #include "Strategy.h"
-#include "KeyPoint.h"
-#include "Vehicle.h"
-#include "Personnel.h"
-#include "TerrainType.h"
-#include "AquaticType.h"
-#include "AerialType.h"
-#include "Support.h"
 
 class Aggressive : public Strategy {
-
 
 public:
 	Aggressive();
@@ -30,5 +22,7 @@ public:
 	 * 
 	 * @return void The function will return a void
 	 */
-	void void performStrat(KeyPoint* keyPoint, Alliance* alliance);
+	void performStrat(KeyPoint* keyPoint, Alliance* alliance);
 };
+
+#endif
