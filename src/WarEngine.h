@@ -2,7 +2,6 @@
 #define WARENGINE_H
 
 #include "WarEngineMemento.h"
-
 /**
  * @class WarEngine
  * @details Class that contains all information regarding current simulation. Only one instance of class is allowed.
@@ -66,6 +65,28 @@ public:
 	 * @return WarEngine&
 	*/
 	static WarEngine& getInstance();
+
+	/**
+	 * @brief Simulates battle on WarTheatres.
+	 * 
+	 * @return void 
+	*/
+	void simulate();
+
+	/**
+	 * @brief Sets the state's area to passed in battleGround parameter.
+	 * 
+	 * @param battleGround must be a WarTheatre*
+	 * 
+	 * Preconditions:
+	 * 	- battleGround must be of type WarTheatre*
+	 * 
+	 * Postconditions:
+	 * 	- sets area in WarEngineState to passed in WarTheatre.
+	 * 
+	 * @return void
+	*/
+	void setWarTheatre(WarTheatre* battleGround);
 };
 
 #endif

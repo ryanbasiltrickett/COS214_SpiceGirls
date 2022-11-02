@@ -4,25 +4,18 @@ WarEngine::WarEngine(){
 	this->state = new WarEngineState();
 }
 
-WarEngine::WarEngine(const warEngine&) {
-	
-}
+WarEngine::WarEngine(const warEngine&) {}
 
 WarEngineMemento* WarEngine::saveState() {
 	WarEngineState* cloneState = new WarEngineState();	
 	vector<Alliance*> cloneAlliances;
-	vector<Alliance*> cloneAreas;
-
+	
 	for(Alliance* alliance : this->state->getAlliances()){
 		cloneAlliances.push_back(alliance->clone());
 	}
 
-	for(Area* area : this->state->getAreas()){
-		cloneAreas.push_back(area->clone());
-	}
-	
-	cloneState->setAreas(cloneAreas);
-	cloneState->setAreas(cloneAreas);
+	cloneState->setArea(this->state->getArea()->clone());
+	cloneState->setAlliances(cloneAlliances);
 
 	return new WarEngineMemento(cloneState);
 }
@@ -38,14 +31,21 @@ WarEngine& WarEngine::getInstance(){
 }
 
 WarEngine::~WarEngine(){
-
-	for(Alliance* alliance : this->state->getAlliances()){
-		delete alliance;
-	}
-
-	for(Area* area : this->state->getAreas()){
-		delete area;
-	}
-	
 	delete this->state;
+}
+
+void WarEngine::simulate() {
+
+	for(int i = 0; i < areas.size(); i++) {
+
+		for(int j = 0; j < alliances.size(); j++) {
+
+			area[i]->simulateBattle(alliances[j]);
+		}
+	}
+
+}
+
+void WarEngine::setWarTheatre(WarTheatre* battleGround){
+	state->setArea(battleGround);
 }
