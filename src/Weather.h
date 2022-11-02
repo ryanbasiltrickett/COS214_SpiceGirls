@@ -1,6 +1,8 @@
 #ifndef WEATHER_H
 #define WEATHER_H
 #include <string>
+#include "Weather.h"
+#include "KeyPoint.h"
 
 class Weather {
 

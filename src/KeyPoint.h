@@ -162,11 +162,24 @@ public:
 	void setWeather(Weather* weather);
 
 	/**
+	 * @brief Switches the Weather object to the next state
+	 * 
+	 */
+	void changeWeather();
+
+	/**
 	 * @brief The area type is returned
 	 * 
 	 * @return string The area type
 	 */
 	std::string getAreaType() const;
+
+	/**
+	 * @brief The weather at the current state is returned
+	 * 
+	 * @return string The weather state
+	 */
+	std::string getWeather() const;
 };
 
 #endif

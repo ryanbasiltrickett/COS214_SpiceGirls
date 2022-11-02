@@ -1,6 +1,15 @@
 #include "Rainy.h"
+#include "Sunny.h"
 
 Rainy::Rainy() {
-	// TODO - implement Rainy::Rainy
-	throw "Not yet implemented";
+	
+}
+
+std::string Rainy::getWeather() {
+	return "Rainy";
+}
+
+void Rainy::handleChange(KeyPoint* k) {
+	Sunny* newWeather = new Sunny();
+	k->setWeather(newWeather);
 }

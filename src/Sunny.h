@@ -1,5 +1,7 @@
 #ifndef SUNNY_H
 #define SUNNY_H
+#include "Weather.h"
+#include "KeyPoint.h"
 
 class Sunny : Weather {
 
