@@ -80,7 +80,7 @@ public:
 	/**
 	 * @brief Destructor for class.
 	*/
-	~WarEngineState(){}
+	~WarEngineState();
 };
 
 #endif

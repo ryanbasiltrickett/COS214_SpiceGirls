@@ -156,7 +156,7 @@ public:
 	 *
 	 * @return bool
 	 */
-	bool offPeace();
+	bool offerPeace();
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Alliance
@@ -208,7 +208,7 @@ public:
 	 */
 	void setActiveStatus(bool active);
 
-
+	int getActive();
 };
 
 #endif

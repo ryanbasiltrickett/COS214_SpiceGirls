@@ -23,8 +23,6 @@ public:
 
 	virtual void simulateBattle(Alliance* alliance) = 0;
 
-	virtual void moveEntities(Area* area, Alliance* alliance) = 0;
-
 	/**
 	 * @brief Get the Area Type object
 	 * 

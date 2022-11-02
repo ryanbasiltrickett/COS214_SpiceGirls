@@ -1,18 +1,19 @@
 #include "Negotiator.h"
+#include<bits/stdc++.h>
 
 Negotiator::Negotiator() {}
 
 Negotiator::~Negotiator() {
-	alliance.clear();
+	alliances.clear();
 }
 
 bool Negotiator::sendPeace(Alliance* offerAlliance) {
 	
 	int id = offerAlliance->getID();
-	for (int yy = 0; yy < alliance.size(); yy++)
+	for (int yy = 0; yy < alliances.size(); yy++)
 	{
-		if (alliance[yy]->getID() != id && alliance[yy]->considerPeace(id) == false)
-			return false; // There is at least one enemy alliance that does not want the peace deal
+		if (alliances[yy]->getID() != id && alliances[yy]->considerPeace(id) == false)
+			return false; // There is at least one enemy alliances that does not want the peace deal
 	
 	}
 
@@ -21,20 +22,23 @@ bool Negotiator::sendPeace(Alliance* offerAlliance) {
 
 void Negotiator::removeAlliance(Alliance* oldAlliance) {
 	
-	for (int xx = 0; xx < alliance.size(); xx++)
+	for (int xx = 0; xx < alliances.size(); xx++)
 	{
-		if (alliance[xx]->getID() == oldAlliance->getID())
-			alliance.erase( alliance.begin() + xx ); // Removes the specific alliance from this negotiator
-	
+		if (alliances[xx]->getID() == oldAlliance->getID())
+			alliances.erase( alliances.begin() + xx ); // Removes the specific alliances from this negotiator
 	}
 	
 }
 
 void Negotiator::addAlliance(Alliance* newAlliance) {
     
-	if (std::find(alliance.begin(), alliance.end(), newAlliance) != alliance.end() == false) 
-        alliance.push_back(newAlliance);
+	if (std::find(alliances.begin(), alliances.end(), newAlliance) != alliances.end()) 
+        alliances.push_back(newAlliance);
 	
+}
+
+int Negotiator::getNumAlliances() {
+	return this->alliances.size();
 }
 
 Negotiator* Negotiator::clone() {

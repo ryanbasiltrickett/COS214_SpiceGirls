@@ -13,7 +13,6 @@ set(OLD_GLOB
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp"
-  "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.cpp"
@@ -41,6 +40,7 @@ set(OLD_GLOB
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.cpp"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.cpp"
+  "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/testmain.cpp"
   )
 if(NOT "${NEW_GLOB}" STREQUAL "${OLD_GLOB}")
   message("-- GLOB mismatch!")
@@ -58,7 +58,6 @@ set(OLD_GLOB
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.h"
-  "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h"

@@ -25,7 +25,6 @@ CMakeFiles/build.dir/Aggressive.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
@@ -66,17 +65,6 @@ CMakeFiles/build.dir/Cloudy.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
-CMakeFiles/build.dir/CommandCenter.cpp.o
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.cpp
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
 CMakeFiles/build.dir/Country.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
@@ -84,7 +72,6 @@ CMakeFiles/build.dir/Defensive.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
@@ -124,7 +111,6 @@ CMakeFiles/build.dir/KeyPoint.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
@@ -156,7 +142,6 @@ CMakeFiles/build.dir/Passive.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
@@ -190,7 +175,6 @@ CMakeFiles/build.dir/Rainy.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
@@ -217,7 +201,6 @@ CMakeFiles/build.dir/Strategy.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
- /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
@@ -230,6 +213,7 @@ CMakeFiles/build.dir/Strategy.cpp.o
 CMakeFiles/build.dir/Sunny.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Sunny.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Sunny.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
 CMakeFiles/build.dir/Support.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Support.cpp
@@ -264,8 +248,17 @@ CMakeFiles/build.dir/VehicleFactory.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.h
 CMakeFiles/build.dir/WarEngine.cpp.o
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineMemento.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
 CMakeFiles/build.dir/WarEngineMemento.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
@@ -300,3 +293,5 @@ CMakeFiles/build.dir/WarTheatre.cpp.o
 CMakeFiles/build.dir/Weather.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
+CMakeFiles/build.dir/testmain.cpp.o
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/testmain.cpp

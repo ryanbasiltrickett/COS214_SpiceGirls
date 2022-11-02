@@ -4,11 +4,9 @@
 #include "Alliance.h"
 #include "Area.h"
 #include "Entity.h"
-#include "CommandCenter.h"
+#include "General.h"
 #include "Weather.h"
 #include <vector>
-
-using namespace std;
 
 /**
  * @brief Keypoint class
@@ -19,7 +17,7 @@ class KeyPoint : public Area {
 
 private:
 	vector<Entity*> entities;
-	CommandCenter* comCenter;
+	vector<General*> generals;
 	Weather* weather;
 	std::string AreaType;
 
@@ -108,6 +106,10 @@ public:
 	 * @return void
 	 */
 	void addEntity(Entity* entity);
+
+	void addGeneral(General* general);
+
+	void removeGeneral(General* general);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint

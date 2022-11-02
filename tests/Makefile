@@ -367,33 +367,6 @@ Cloudy.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Cloudy.cpp.s
 .PHONY : Cloudy.cpp.s
 
-CommandCenter.o: CommandCenter.cpp.o
-
-.PHONY : CommandCenter.o
-
-# target to build an object file
-CommandCenter.cpp.o:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/CommandCenter.cpp.o
-.PHONY : CommandCenter.cpp.o
-
-CommandCenter.i: CommandCenter.cpp.i
-
-.PHONY : CommandCenter.i
-
-# target to preprocess a source file
-CommandCenter.cpp.i:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/CommandCenter.cpp.i
-.PHONY : CommandCenter.cpp.i
-
-CommandCenter.s: CommandCenter.cpp.s
-
-.PHONY : CommandCenter.s
-
-# target to generate assembly for a file
-CommandCenter.cpp.s:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/CommandCenter.cpp.s
-.PHONY : CommandCenter.cpp.s
-
 Country.o: Country.cpp.o
 
 .PHONY : Country.o
@@ -1123,6 +1096,33 @@ Weather.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Weather.cpp.s
 .PHONY : Weather.cpp.s
 
+testmain.o: testmain.cpp.o
+
+.PHONY : testmain.o
+
+# target to build an object file
+testmain.cpp.o:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/testmain.cpp.o
+.PHONY : testmain.cpp.o
+
+testmain.i: testmain.cpp.i
+
+.PHONY : testmain.i
+
+# target to preprocess a source file
+testmain.cpp.i:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/testmain.cpp.i
+.PHONY : testmain.cpp.i
+
+testmain.s: testmain.cpp.s
+
+.PHONY : testmain.s
+
+# target to generate assembly for a file
+testmain.cpp.s:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/testmain.cpp.s
+.PHONY : testmain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1159,9 +1159,6 @@ help:
 	@echo "... Cloudy.o"
 	@echo "... Cloudy.i"
 	@echo "... Cloudy.s"
-	@echo "... CommandCenter.o"
-	@echo "... CommandCenter.i"
-	@echo "... CommandCenter.s"
 	@echo "... Country.o"
 	@echo "... Country.i"
 	@echo "... Country.s"
@@ -1243,6 +1240,9 @@ help:
 	@echo "... Weather.o"
 	@echo "... Weather.i"
 	@echo "... Weather.s"
+	@echo "... testmain.o"
+	@echo "... testmain.i"
+	@echo "... testmain.s"
 .PHONY : help
 
 

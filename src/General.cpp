@@ -1,22 +1,25 @@
 #include "General.h"
 
-General::General(Alliance* alliance, KeyPoint* keyPoint, Strategy* strategy) {
+General::General(Alliance* alliance, Strategy* strategy) {
 	this->alliance = alliance;
-	this->keyPoint = keyPoint;
 	this->strategy = strategy;
+	numDeaths = 0;
 }
 
 void General::evaluateStrategy() {
 	throw "Not yet implemented";
 }
 
-void General::initiateStrategy() {
-	strategy->performStrat(this->keyPoint, this->alliance);
+void General::initiateStrategy(KeyPoint* keyPoint) {
+	numDeaths++;
+	if (numDeaths >= 5) {
+		strategy->performStrat(keyPoint, this->alliance);
+		numDeaths = 0;
+	}
 }
 
 General* General::clone() {
-
-	return new General(this->alliance, this->keyPoint, this->strategy);
+	return new General(this->alliance, this->strategy);
 }
 
 bool General::setStrategy(Strategy* strategy){
@@ -24,7 +27,6 @@ bool General::setStrategy(Strategy* strategy){
 	return true;
 }
 
-bool General::SetAlliance(Alliance* alliance){
-	this->alliance = alliance;
-	return true;
+Alliance* General::getAlliance(){
+	return this->alliance;
 }

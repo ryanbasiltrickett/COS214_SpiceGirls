@@ -18,9 +18,9 @@ namespace {
         n->addAlliance(b);
 
         if (a->offerPeace())
-            EXPECT_EQ(false, a->getActive());
+            EXPECT_EQ(3, a->getActive());
         else 
-            EXPECT_EQ(true, a->getActive());
+            EXPECT_EQ(1, a->getActive());
     }
 
     TEST(NegotiatorSurrender, PositiveTesting) {
@@ -36,17 +36,17 @@ namespace {
         n->addAlliance(d);
         n->addAlliance(e);
 
-        a->surrender()
-        EXPECT_EQ(false, a->getActive());
+        a->surrender();
+        EXPECT_EQ(2, a->getActive());
 
-        b->surrender()
-        EXPECT_EQ(false, a->getActive());
+        b->surrender();
+        EXPECT_EQ(2, a->getActive());
 
-        c->surrender()
-        EXPECT_EQ(false, a->getActive());
+        c->surrender();
+        EXPECT_EQ(2, a->getActive());
 
-        d->surrender()
-        EXPECT_EQ(false, a->getActive());
+        d->surrender();
+        EXPECT_EQ(2, a->getActive());
     }
 
 }

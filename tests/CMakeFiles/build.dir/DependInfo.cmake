@@ -13,7 +13,6 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Area.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Armour.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Cloudy.cpp.o"
-  "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/CommandCenter.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Country.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Defensive.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Entity.cpp.o"
@@ -41,6 +40,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/WarEngineState.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/WarTheatre.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Weather.cpp.o"
+  "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/testmain.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/testmain.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

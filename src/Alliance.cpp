@@ -56,15 +56,11 @@ void Alliance::surrender() {
 	this->negotiator->removeAlliance(this);
 }
 
-vector<Entity*> Alliance::getEntities() {
-	return this->reserveEntities;
-}
-
 int Alliance::getID() {
 	return this->aID;
 }
 
-bool Alliance::offPeace() {
+bool Alliance::offerPeace() {
 
 	if (this->negotiator->sendPeace(this)) //Send the peace deal to all the alliances fighting against
 	{
@@ -73,6 +69,10 @@ bool Alliance::offPeace() {
 	}
 	
 	return false; 
+}
+
+int Alliance::getActive() {
+	return active;
 }
 
 Alliance* Alliance::clone() {
