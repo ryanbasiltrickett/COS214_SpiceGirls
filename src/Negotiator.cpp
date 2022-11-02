@@ -1,25 +1,44 @@
 #include "Negotiator.h"
 
-Negotiator::Negotiator() {
+Negotiator::Negotiator() {}
+
+Negotiator::~Negotiator() {
+	alliance.clear();
+}
+
+bool Negotiator::sendPeace(Alliance* offerAlliance) {
+	
+	int id = offerAlliance->getID();
+	for (int yy = 0; yy < alliance.size(); yy++)
+	{
+		if (alliance[yy]->getID() != id && alliance[yy]->considerPeace(id) == false)
+			return false; // There is at least one enemy alliance that does not want the peace deal
+	
+	}
+
+	return true; // All the alliances being fought against agreed to the peace deal
+}
+
+void Negotiator::removeAlliance(Alliance* oldAlliance) {
+	
+	for (int xx = 0; xx < alliance.size(); xx++)
+	{
+		if (alliance[xx]->getID() == oldAlliance->getID())
+			alliance.erase( alliance.begin() + xx ); // Removes the specific alliance from this negotiator
+	
+	}
 	
 }
 
-bool Negotiator::sendPeace(int id) {
-	// TODO - implement Negotiator::sendPeace
-	throw "Not yet implemented";
-}
-
-void Negotiator::removeAlliance(Alliance* alliance) {
+void Negotiator::addAlliance(Alliance* newAlliance) {
+    
+	if (std::find(alliance.begin(), alliance.end(), newAlliance) != alliance.end() == false) 
+        alliance.push_back(newAlliance);
 	
-
-}
-
-void Negotiator::addAlliance(Alliance* alliance) {
-
-	this->alliances.push_back(alliance);
 }
 
 Negotiator* Negotiator::clone() {
 	
 	throw "Not yet implemented";
 }
+

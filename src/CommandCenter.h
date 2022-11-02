@@ -1,8 +1,10 @@
 #ifndef COMMANDCENTER_H
 #define COMMANDCENTER_H
 #include "General.h"
-#include "KeyPoint.h"
 #include <vector>
+
+class KeyPoint;
+
 /**
  * @brief CommandCenter class
  * 

@@ -1,29 +1,63 @@
 #include "Alliance.h"
+#include "Negotiator.h"
+#include "Entity.h"
+#include <time.h>
 
-Alliance::Alliance() {}
+int Alliance::totalNum = 0;
 
-void Alliance::setNegotiator(Negotiator* n) {
-	this->negotiator = n;
+Alliance::Alliance() {
+	this->active = 1;
+	this->aID = totalNum++;
+	srand(time(0));
 }
 
-bool Alliance::addCountry(Country* nation) {
+Alliance::~Alliance() {
+	
+	this->negotiator->removeAlliance(this);
 
-	this->members.push_back(nation);
+	if (totalNum == 1)
+		delete this->negotiator;
+	
+}
+
+void Alliance::setNegotiator(Negotiator* negotiator) {
+	this->negotiator = negotiator;
+}
+
+void Alliance::addCountry(Country* nation) {
+	members.push_back(nation);
+}
+
+vector<Entity*> Alliance::getReserveEntities(int number) {
+	vector<Entity*> out;
+	for (int i = 0; i < number && i < reserveEntities.size(); i++) {
+		out.push_back(reserveEntities[i]);
+		reserveEntities.erase(reserveEntities.begin() + i);
+	}
+
+	return out;
+}	
+
+void Alliance::addReserveEntity(Entity* entity) {
+	reserveEntities.push_back(entity);
 }
 
 bool Alliance::considerPeace(int id) {
-	// TODO - implement Alliance::considerPeace
-	throw "Not yet implemented";
+	return (rand() % 2 == 0);
 }
 
-void Alliance::addFactory(Factory* f) {
-	
-	this->production.push_back(f);
+void Alliance::addFactory(Factory* factory) {
+	production.push_back(factory);
 }
 
-void Alliance::surrender(){
+void Alliance::surrender() {
+	this->active = 2; //Number 2 means that Alliance has surrendered
 
-	this->active = false;
+	this->negotiator->removeAlliance(this);
+}
+
+vector<Entity*> Alliance::getEntities() {
+	return this->reserveEntities;
 }
 
 int Alliance::getID() {
@@ -31,8 +65,14 @@ int Alliance::getID() {
 }
 
 bool Alliance::offPeace() {
-	// TODO - implement Alliance::offPeace
-	throw "Not yet implemented";
+
+	if (this->negotiator->sendPeace(this)) //Send the peace deal to all the alliances fighting against
+	{
+		this->active = 3; //Number 3 means that Alliance chose to peacefully pull out of war
+		return true;
+	}
+	
+	return false; 
 }
 
 Alliance* Alliance::clone() {
