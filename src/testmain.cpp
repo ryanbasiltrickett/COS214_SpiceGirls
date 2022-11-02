@@ -1,3 +1,5 @@
+#include "NegotiatorTest.h"
+#include "AddOnTest.h"
 #include <gtest/gtest.h>
 
 int main(int argc, char **argv) {

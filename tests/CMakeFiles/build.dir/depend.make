@@ -6,15 +6,6 @@ CMakeFiles/build.dir/AddOn.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Te
 CMakeFiles/build.dir/AddOn.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
 CMakeFiles/build.dir/AddOn.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOnTest.cpp
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Armour.h
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Personnel.h
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Piercing.h
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/TerrainType.h
-CMakeFiles/build.dir/AddOnTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
-
 CMakeFiles/build.dir/AerialType.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AerialType.cpp
 CMakeFiles/build.dir/AerialType.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AerialType.h
 CMakeFiles/build.dir/AerialType.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
@@ -128,15 +119,6 @@ CMakeFiles/build.dir/Negotiator.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS2
 CMakeFiles/build.dir/Negotiator.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Negotiator.cpp
 CMakeFiles/build.dir/Negotiator.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Negotiator.h
 CMakeFiles/build.dir/Negotiator.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
-
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.h
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.h
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Negotiator.h
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/NegotiatorTest.cpp
-CMakeFiles/build.dir/NegotiatorTest.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 
 CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
 CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
@@ -293,5 +275,18 @@ CMakeFiles/build.dir/WarTheatre.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS2
 CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.cpp
 CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOnTest.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Armour.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Negotiator.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/NegotiatorTest.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Personnel.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Piercing.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/TerrainType.h
+CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/testmain.cpp
 

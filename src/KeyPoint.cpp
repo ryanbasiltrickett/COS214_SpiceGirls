@@ -5,6 +5,16 @@ using namespace std;
 
 KeyPoint::KeyPoint(string areaName): Area(areaName) {}
 
+KeyPoint::~KeyPoint() {
+	for (int i = 0; i < entities.size(); i++)
+		delete entities[i];
+
+	for (int i = 0; i < generals.size(); i++)
+		delete generals[i];
+
+	delete weather;
+}
+
 bool KeyPoint::isKeyPoint() {
 	return true;
 }
@@ -75,8 +85,4 @@ void KeyPoint::removeGeneral(General* general) {
 Area* KeyPoint::clone() {
 	// TODO - implement KeyPoint::clone
 	throw "Not yet implemented";
-}
-
-std::string KeyPoint::getAreaName() const {
-	 return this->areaName;
 }

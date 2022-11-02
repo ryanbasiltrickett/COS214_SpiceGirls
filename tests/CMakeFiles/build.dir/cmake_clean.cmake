@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/build.dir/AddOn.cpp.o"
-  "CMakeFiles/build.dir/AddOnTest.cpp.o"
   "CMakeFiles/build.dir/AerialType.cpp.o"
   "CMakeFiles/build.dir/Aggressive.cpp.o"
   "CMakeFiles/build.dir/Alliance.cpp.o"
@@ -15,7 +14,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/build.dir/General.cpp.o"
   "CMakeFiles/build.dir/KeyPoint.cpp.o"
   "CMakeFiles/build.dir/Negotiator.cpp.o"
-  "CMakeFiles/build.dir/NegotiatorTest.cpp.o"
   "CMakeFiles/build.dir/Passive.cpp.o"
   "CMakeFiles/build.dir/Personnel.cpp.o"
   "CMakeFiles/build.dir/PersonnelFactory.cpp.o"

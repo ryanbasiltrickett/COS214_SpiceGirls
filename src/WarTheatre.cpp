@@ -26,9 +26,4 @@ WarTheatre* WarTheatre::clone() {
 	return w;
 }
 
-string WarTheatre::getAreaName() const {
-
-	return this->areaName;
-}
-
 

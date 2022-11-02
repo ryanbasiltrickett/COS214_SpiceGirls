@@ -5,7 +5,7 @@
 
 class Area {
 
-protected:
+private:
 	std::string areaName;
 
 public:
@@ -28,7 +28,7 @@ public:
 	 * 
 	 * @return std::string reaturns the type
 	 */
-	virtual std::string getAreaName() const = 0;
+	std::string getAreaName() const;
 
 	virtual Area* clone() = 0;
 };

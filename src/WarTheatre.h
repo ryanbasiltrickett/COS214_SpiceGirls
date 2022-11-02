@@ -73,13 +73,6 @@ public:
 	 * @return WarTheatre* The war theatre clone
 	 */
 	WarTheatre* clone();
-
-	/**
-	 * @brief Get the Area Type object
-	 * 
-	 * @return std::string reaturns the type
-	 */
-	std::string getAreaName() const;
 };
 
 #endif

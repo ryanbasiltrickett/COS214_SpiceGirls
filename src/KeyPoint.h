@@ -27,6 +27,8 @@ public:
 	 */
 	KeyPoint(std::string areaName);
 
+	~KeyPoint();
+
 	/**
 	 * @brief Returns area type
 	 *
@@ -120,13 +122,6 @@ public:
 	 * @return Area* The Keypoint clone
 	 */
 	Area* clone();
-
-	/**
-	 * @brief Get the Area Type object
-	 * 
-	 * @return std::string reaturns the type
-	 */
-	std::string getAreaName() const;
   
 	/**
 	 * @brief Set the Weather object
