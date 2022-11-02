@@ -161,9 +161,22 @@ CMakeFiles/build.dir/Cloudy.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/build.dir/Cloudy.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp" -o CMakeFiles/build.dir/Cloudy.cpp.s
 
+CMakeFiles/build.dir/CommandCenter.cpp.o: CMakeFiles/build.dir/flags.make
+CMakeFiles/build.dir/CommandCenter.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/CommandCenter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/build.dir/CommandCenter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/CommandCenter.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.cpp"
+
+CMakeFiles/build.dir/CommandCenter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/build.dir/CommandCenter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.cpp" > CMakeFiles/build.dir/CommandCenter.cpp.i
+
+CMakeFiles/build.dir/CommandCenter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/build.dir/CommandCenter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/CommandCenter.cpp" -o CMakeFiles/build.dir/CommandCenter.cpp.s
+
 CMakeFiles/build.dir/Country.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Country.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/build.dir/Country.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/build.dir/Country.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Country.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.cpp"
 
 CMakeFiles/build.dir/Country.cpp.i: cmake_force
@@ -176,7 +189,7 @@ CMakeFiles/build.dir/Country.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Defensive.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Defensive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Defensive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/build.dir/Defensive.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/build.dir/Defensive.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Defensive.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.cpp"
 
 CMakeFiles/build.dir/Defensive.cpp.i: cmake_force
@@ -189,7 +202,7 @@ CMakeFiles/build.dir/Defensive.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Entity.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Entity.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/build.dir/Entity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/build.dir/Entity.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Entity.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.cpp"
 
 CMakeFiles/build.dir/Entity.cpp.i: cmake_force
@@ -202,7 +215,7 @@ CMakeFiles/build.dir/Entity.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Factory.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Factory.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/build.dir/Factory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/build.dir/Factory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Factory.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.cpp"
 
 CMakeFiles/build.dir/Factory.cpp.i: cmake_force
@@ -215,7 +228,7 @@ CMakeFiles/build.dir/Factory.cpp.s: cmake_force
 
 CMakeFiles/build.dir/General.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/General.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/General.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/build.dir/General.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/build.dir/General.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/General.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.cpp"
 
 CMakeFiles/build.dir/General.cpp.i: cmake_force
@@ -228,7 +241,7 @@ CMakeFiles/build.dir/General.cpp.s: cmake_force
 
 CMakeFiles/build.dir/KeyPoint.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/KeyPoint.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/KeyPoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/build.dir/KeyPoint.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/build.dir/KeyPoint.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/KeyPoint.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.cpp"
 
 CMakeFiles/build.dir/KeyPoint.cpp.i: cmake_force
@@ -241,7 +254,7 @@ CMakeFiles/build.dir/KeyPoint.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Negotiator.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Negotiator.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Negotiator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/build.dir/Negotiator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/build.dir/Negotiator.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Negotiator.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Negotiator.cpp"
 
 CMakeFiles/build.dir/Negotiator.cpp.i: cmake_force
@@ -254,7 +267,7 @@ CMakeFiles/build.dir/Negotiator.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Passive.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Passive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/build.dir/Passive.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/build.dir/Passive.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Passive.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Passive.cpp"
 
 CMakeFiles/build.dir/Passive.cpp.i: cmake_force
@@ -267,7 +280,7 @@ CMakeFiles/build.dir/Passive.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Personnel.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Personnel.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Personnel.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/build.dir/Personnel.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/build.dir/Personnel.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Personnel.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.cpp"
 
 CMakeFiles/build.dir/Personnel.cpp.i: cmake_force
@@ -280,7 +293,7 @@ CMakeFiles/build.dir/Personnel.cpp.s: cmake_force
 
 CMakeFiles/build.dir/PersonnelFactory.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/PersonnelFactory.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/PersonnelFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/build.dir/PersonnelFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/build.dir/PersonnelFactory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/PersonnelFactory.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.cpp"
 
 CMakeFiles/build.dir/PersonnelFactory.cpp.i: cmake_force
@@ -293,7 +306,7 @@ CMakeFiles/build.dir/PersonnelFactory.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Piercing.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Piercing.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Piercing.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/build.dir/Piercing.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/build.dir/Piercing.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Piercing.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.cpp"
 
 CMakeFiles/build.dir/Piercing.cpp.i: cmake_force
@@ -306,7 +319,7 @@ CMakeFiles/build.dir/Piercing.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Rainy.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Rainy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/build.dir/Rainy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/build.dir/Rainy.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Rainy.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Rainy.cpp"
 
 CMakeFiles/build.dir/Rainy.cpp.i: cmake_force
@@ -319,7 +332,7 @@ CMakeFiles/build.dir/Rainy.cpp.s: cmake_force
 
 CMakeFiles/build.dir/SaveArchive.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/SaveArchive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/SaveArchive.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/build.dir/SaveArchive.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/build.dir/SaveArchive.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/SaveArchive.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SaveArchive.cpp"
 
 CMakeFiles/build.dir/SaveArchive.cpp.i: cmake_force
@@ -332,7 +345,7 @@ CMakeFiles/build.dir/SaveArchive.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Strategy.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Strategy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/build.dir/Strategy.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/build.dir/Strategy.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Strategy.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.cpp"
 
 CMakeFiles/build.dir/Strategy.cpp.i: cmake_force
@@ -345,7 +358,7 @@ CMakeFiles/build.dir/Strategy.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Sunny.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Sunny.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/build.dir/Sunny.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/build.dir/Sunny.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Sunny.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Sunny.cpp"
 
 CMakeFiles/build.dir/Sunny.cpp.i: cmake_force
@@ -358,7 +371,7 @@ CMakeFiles/build.dir/Sunny.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Support.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Support.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Support.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/build.dir/Support.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/build.dir/Support.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Support.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Support.cpp"
 
 CMakeFiles/build.dir/Support.cpp.i: cmake_force
@@ -371,7 +384,7 @@ CMakeFiles/build.dir/Support.cpp.s: cmake_force
 
 CMakeFiles/build.dir/SupportFactory.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/SupportFactory.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/SupportFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/build.dir/SupportFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/build.dir/SupportFactory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/SupportFactory.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.cpp"
 
 CMakeFiles/build.dir/SupportFactory.cpp.i: cmake_force
@@ -384,7 +397,7 @@ CMakeFiles/build.dir/SupportFactory.cpp.s: cmake_force
 
 CMakeFiles/build.dir/TerrainType.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/TerrainType.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/TerrainType.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/build.dir/TerrainType.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/build.dir/TerrainType.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/TerrainType.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.cpp"
 
 CMakeFiles/build.dir/TerrainType.cpp.i: cmake_force
@@ -397,7 +410,7 @@ CMakeFiles/build.dir/TerrainType.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Type.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Type.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/build.dir/Type.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/build.dir/Type.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Type.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.cpp"
 
 CMakeFiles/build.dir/Type.cpp.i: cmake_force
@@ -410,7 +423,7 @@ CMakeFiles/build.dir/Type.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Vehicle.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Vehicle.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Vehicle.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/build.dir/Vehicle.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/build.dir/Vehicle.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Vehicle.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Vehicle.cpp"
 
 CMakeFiles/build.dir/Vehicle.cpp.i: cmake_force
@@ -423,7 +436,7 @@ CMakeFiles/build.dir/Vehicle.cpp.s: cmake_force
 
 CMakeFiles/build.dir/VehicleFactory.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/VehicleFactory.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/VehicleFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/build.dir/VehicleFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/build.dir/VehicleFactory.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/VehicleFactory.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.cpp"
 
 CMakeFiles/build.dir/VehicleFactory.cpp.i: cmake_force
@@ -436,7 +449,7 @@ CMakeFiles/build.dir/VehicleFactory.cpp.s: cmake_force
 
 CMakeFiles/build.dir/WarEngine.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/WarEngine.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/WarEngine.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/build.dir/WarEngine.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/build.dir/WarEngine.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/WarEngine.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.cpp"
 
 CMakeFiles/build.dir/WarEngine.cpp.i: cmake_force
@@ -449,7 +462,7 @@ CMakeFiles/build.dir/WarEngine.cpp.s: cmake_force
 
 CMakeFiles/build.dir/WarEngineMemento.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/WarEngineMemento.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/WarEngineMemento.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/build.dir/WarEngineMemento.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/build.dir/WarEngineMemento.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/WarEngineMemento.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineMemento.cpp"
 
 CMakeFiles/build.dir/WarEngineMemento.cpp.i: cmake_force
@@ -462,7 +475,7 @@ CMakeFiles/build.dir/WarEngineMemento.cpp.s: cmake_force
 
 CMakeFiles/build.dir/WarEngineState.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/WarEngineState.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/WarEngineState.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/build.dir/WarEngineState.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/build.dir/WarEngineState.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/WarEngineState.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.cpp"
 
 CMakeFiles/build.dir/WarEngineState.cpp.i: cmake_force
@@ -475,7 +488,7 @@ CMakeFiles/build.dir/WarEngineState.cpp.s: cmake_force
 
 CMakeFiles/build.dir/WarTheatre.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/WarTheatre.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/WarTheatre.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/build.dir/WarTheatre.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/build.dir/WarTheatre.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/WarTheatre.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.cpp"
 
 CMakeFiles/build.dir/WarTheatre.cpp.i: cmake_force
@@ -488,7 +501,7 @@ CMakeFiles/build.dir/WarTheatre.cpp.s: cmake_force
 
 CMakeFiles/build.dir/Weather.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/build.dir/Weather.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/build.dir/Weather.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/Weather.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.cpp"
 
 CMakeFiles/build.dir/Weather.cpp.i: cmake_force
@@ -501,7 +514,7 @@ CMakeFiles/build.dir/Weather.cpp.s: cmake_force
 
 CMakeFiles/build.dir/testmain.cpp.o: CMakeFiles/build.dir/flags.make
 CMakeFiles/build.dir/testmain.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/testmain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/build.dir/testmain.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/build.dir/testmain.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/build.dir/testmain.cpp.o -c "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/testmain.cpp"
 
 CMakeFiles/build.dir/testmain.cpp.i: cmake_force
@@ -522,6 +535,7 @@ build_OBJECTS = \
 "CMakeFiles/build.dir/Area.cpp.o" \
 "CMakeFiles/build.dir/Armour.cpp.o" \
 "CMakeFiles/build.dir/Cloudy.cpp.o" \
+"CMakeFiles/build.dir/CommandCenter.cpp.o" \
 "CMakeFiles/build.dir/Country.cpp.o" \
 "CMakeFiles/build.dir/Defensive.cpp.o" \
 "CMakeFiles/build.dir/Entity.cpp.o" \
@@ -561,6 +575,7 @@ build: CMakeFiles/build.dir/AquaticType.cpp.o
 build: CMakeFiles/build.dir/Area.cpp.o
 build: CMakeFiles/build.dir/Armour.cpp.o
 build: CMakeFiles/build.dir/Cloudy.cpp.o
+build: CMakeFiles/build.dir/CommandCenter.cpp.o
 build: CMakeFiles/build.dir/Country.cpp.o
 build: CMakeFiles/build.dir/Defensive.cpp.o
 build: CMakeFiles/build.dir/Entity.cpp.o
@@ -591,7 +606,7 @@ build: CMakeFiles/build.dir/testmain.cpp.o
 build: CMakeFiles/build.dir/build.make
 build: /usr/lib/x86_64-linux-gnu/libgtest.a
 build: CMakeFiles/build.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_36) "Linking CXX executable build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable build"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/build.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

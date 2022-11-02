@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/build.dir/Area.cpp.o"
   "CMakeFiles/build.dir/Armour.cpp.o"
   "CMakeFiles/build.dir/Cloudy.cpp.o"
+  "CMakeFiles/build.dir/CommandCenter.cpp.o"
   "CMakeFiles/build.dir/Country.cpp.o"
   "CMakeFiles/build.dir/Defensive.cpp.o"
   "CMakeFiles/build.dir/Entity.cpp.o"

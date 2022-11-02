@@ -10,22 +10,6 @@
 Entity.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOnTest.h
-stdexcept
--
-AddOn.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
-Piercing.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
-Armour.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
-Personnel.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
-TerrainType.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
-gtest/gtest.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/gtest/gtest.h
-
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
 Country.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
@@ -36,12 +20,6 @@ Country.h
 vector
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
-AddOn.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
-Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
-
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
 string
 -
@@ -56,45 +34,25 @@ Type.h
 AddOn.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Negotiator.h
-vector
--
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.cpp
+General.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
 Alliance.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+Strategy.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/NegotiatorTest.h
-stdexcept
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
+string
 -
-Negotiator.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Negotiator.h
-Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
-gtest/gtest.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/gtest/gtest.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
-Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
-AddOn.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
-Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
-Type.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+ctime
+-
+cstdlib
+-
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
 string
--
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/testmain.cpp
-NegotiatorTest.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/NegotiatorTest.h
-AddOnTest.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOnTest.h
-gtest/gtest.h
 -
 

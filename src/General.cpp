@@ -9,13 +9,13 @@ General::General(Alliance* alliance, Strategy* strategy) {
 void General::initiateStrategy(KeyPoint* keyPoint) {
 	numDeaths++;
 	if (numDeaths >= 5) {
-		strat->performStrat(keyPoint, this->alliance);
+		strategy->performStrat(keyPoint, this->alliance);
 		numDeaths = 0;
 	}
 }
 
 General* General::clone() {
-	return new General(this->alliance, this->keyPoint, this->strategy);
+	return new General(this->alliance, this->strategy);
 }
 
 bool General::setStrategy(Strategy* strategy){

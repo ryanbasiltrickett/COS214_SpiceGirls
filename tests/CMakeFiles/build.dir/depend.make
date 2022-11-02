@@ -56,6 +56,8 @@ CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/T
 CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Cloudy.h
 CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
+CMakeFiles/build.dir/CommandCenter.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/CommandCenter.cpp
+
 CMakeFiles/build.dir/Country.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.cpp
 CMakeFiles/build.dir/Country.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.h
 
