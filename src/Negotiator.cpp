@@ -9,11 +9,12 @@ Negotiator::~Negotiator() {
 
 bool Negotiator::sendPeace(Alliance* offerAlliance) {
 	
-	int id = offerAlliance->getID();
 	for (int yy = 0; yy < alliances.size(); yy++)
 	{
-		if (alliances[yy]->getID() != id && alliances[yy]->considerPeace(id) == false)
-			return false; // There is at least one enemy alliances that does not want the peace deal
+		if (alliances[yy] != offerAlliance) {
+			if (alliances[yy]->considerPeace() == false)
+				return false; // There is at least one enemy alliances that does not want the peace deal
+		}
 	
 	}
 

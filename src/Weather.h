@@ -13,11 +13,6 @@ public:
 	 */
 	Weather();
 
-	/**
-	 * @brief Destructor for the Weather object
-	 */
-	~Weather();
-
 	virtual void handleChange(KeyPoint* k) = 0;
 
 	virtual std::string getWeather() = 0;

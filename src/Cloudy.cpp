@@ -1,6 +1,6 @@
 #include "Cloudy.h"
 
-Cloudy::Cloudy() {
+Cloudy::Cloudy(): Weather() {
 	// TODO - implement Cloudy::Cloudy
 	throw "Not yet implemented";
 }

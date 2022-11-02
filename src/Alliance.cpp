@@ -42,7 +42,7 @@ void Alliance::addReserveEntity(Entity* entity) {
 	reserveEntities.push_back(entity);
 }
 
-bool Alliance::considerPeace(int id) {
+bool Alliance::considerPeace() {
 	return (rand() % 2 == 0);
 }
 

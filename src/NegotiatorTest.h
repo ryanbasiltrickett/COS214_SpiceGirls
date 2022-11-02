@@ -16,11 +16,14 @@ namespace {
         Negotiator* n = new Negotiator();
         n->addAlliance(a);
         n->addAlliance(b);
+        a->setNegotiator(n);
+        b->setNegotiator(n);
 
-        if (a->offerPeace())
+        if (a->offerPeace()) {
             EXPECT_EQ(3, a->getActive());
-        else 
+        } else { 
             EXPECT_EQ(1, a->getActive());
+        }
     }
 
     TEST(NegotiatorSurrender, PositiveTesting) {
@@ -35,6 +38,11 @@ namespace {
         n->addAlliance(c);
         n->addAlliance(d);
         n->addAlliance(e);
+        a->setNegotiator(n);
+        b->setNegotiator(n);
+        c->setNegotiator(n);
+        d->setNegotiator(n);
+        e->setNegotiator(n);
 
         a->surrender();
         EXPECT_EQ(2, a->getActive());

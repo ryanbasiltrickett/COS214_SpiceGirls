@@ -98,10 +98,9 @@ public:
 	 * Postconditions:
 	 *  - Result of consideration returned in the form of a bool
 	 *
-	 * @param id must be an int
 	 * @return bool
 	 */
-	bool considerPeace(int id);
+	bool considerPeace();
 
 	/**
 	 * @brief Adds a factory into the production vector which holds factories
