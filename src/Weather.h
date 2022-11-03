@@ -6,6 +6,8 @@
 
 class Weather {
 
+protected:
+	double multiplier;
 
 public:
 	/**
@@ -17,6 +19,16 @@ public:
 	 * @brief Destructor for the Weather object
 	 */
 	~Weather();
+
+	/**
+	 * @brief Returns double which shows the weather multiplier
+	 *
+	 * Postconditions:
+	 *  - Returns the double multiplier
+	 *
+	 * @return double which is the multiplier
+	 */
+	double getMultiplier();
 
 	virtual void handleChange(KeyPoint* k) = 0;
 

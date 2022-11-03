@@ -2,7 +2,7 @@
 #include "Sunny.h"
 
 Rainy::Rainy() {
-	
+	this->multiplier = 0.5;
 }
 
 std::string Rainy::getWeather() {

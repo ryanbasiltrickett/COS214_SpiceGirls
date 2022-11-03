@@ -13,7 +13,7 @@ public:
 	Sunny();
 
 	/**
-	 * @brief Returns string which tels us the weather
+	 * @brief Returns string which tells us the weather
 	 *
 	 * Postconditions:
 	 *  - Returns the wether of ths current state
