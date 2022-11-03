@@ -7,7 +7,7 @@ Entity* SupportFactory::createEntity(Alliance* alliance) {
 	Support* s = new Support(getType()->clone());
 	if (getAddOn() != NULL) {
 		AddOn* personnelAddOn = getAddOn()->clone();
-		personnelAddOn->connectEntity(s);
+		personnelAddOn->setEntity(s);
 		return personnelAddOn;
 	} else {
 		return s;

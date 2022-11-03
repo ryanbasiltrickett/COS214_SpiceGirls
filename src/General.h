@@ -62,9 +62,9 @@ public:
 	 * @brief Returns the Alliance object
 	 * 
 	 * PostConditions:
-	 *  - returns the alliance of the general
+	 *  - Returns the alliance of the general
 	 * 
-	 * @return Alliance* the alliance of the general
+	 * @return Alliance* The alliance that the general is associated
 	 */
 	Alliance* getAlliance();
 };

@@ -60,6 +60,8 @@ public:
 	 */
 	void addAlliance(Alliance* newAlliance);
 
+	int getNumAlliances();
+
 	/**
 	 * @brief Instantiates and returns a clone of the current Negotiator
 	 *

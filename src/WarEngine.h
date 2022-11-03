@@ -1,6 +1,10 @@
 #ifndef WARENGINE_H
 #define WARENGINE_H
 
+#include "WarEngineState.h"
+#include "WarEngineMemento.h"
+#include "Alliance.h"
+
 /**
  * @class WarEngine
  * @details Class that contains all information regarding current simulation. Only one instance of class is allowed.
@@ -10,8 +14,7 @@ class WarEngine {
 private:
 	static WarEngine* uniqueInstance;
 	WarEngineState* state;
-	boolean gameOver;
-	Area* currentWarTheatre;
+	bool gameOver;
 	vector<Alliance*> alliances;
 
 protected:
