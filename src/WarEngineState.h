@@ -2,7 +2,6 @@
 #define WARENGINESTATE_H
 #include "Alliance.h"
 #include "Area.h"
-#include "WarTheatre.h"
 #include <vector>
 
 using namespace std;
@@ -17,7 +16,7 @@ class WarEngineState {
 
 
 private:
-	WarTheatre* area;
+	Area* area;
 	vector<Alliance*> alliances;
 
 public:
@@ -29,23 +28,27 @@ public:
 
 	/**
 	 * @brief Takes in a vector of Area and sets it to the areas member of the WarEngineState instance.
-	 * @param area WarTheatre*
 	 * 
 	 * Preconditions:
-	 * 	- area must be of type WarTheatre*
+	 * 	- area must be of type Area*
 	 * 
 	 * Postconditions:
 	 * 	- Sets the WarEngineState area member variable to the passed in parameter.
 	 * 
+	 * @param area must be an Area*
 	 * @return void
 	*/
-	void setArea(WarTheatre* area);
+	void setArea(Area* area);
 
 	/**
 	 * @brief Returns the member variable area.
-	 * @return WarTheatre*
+	 * 
+	 * Postconditions:
+	 * 	- Retruns the area stored in the state
+	 * 
+	 * @return Area*
 	*/
-	WarTheatre* getArea();
+	Area* getArea();
 
 	/**
 	 * @brief Sets the given vector of Alliance object pointers to the alliances member variable.

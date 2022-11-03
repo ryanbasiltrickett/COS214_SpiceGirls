@@ -24,16 +24,6 @@ public:
 	WarEngineMemento(WarEngineState* state);
 
 	/**
-	 * @brief Instantiates a WarEngineMemento class instance, setting the state to the given parameters.
-	 * 
-	 * @param state must be a WarEngineState*
-	 * @param name must be a string.
-	 * 
-	 * 	
-	 * */
-	WarEngineMemento(WarEngineState* state);
-
-	/**
 	 * @brief Sets the memento's state to the passed in state.
 	 * 
 	 * Preconditions:

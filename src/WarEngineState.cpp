@@ -4,14 +4,14 @@ WarEngineState::WarEngineState() {
 	area = nullptr;
 }
 
-void WarEngineState::setArea(WarTheatre* area) {
+void WarEngineState::setArea(Area* area) {
 	this->area = area;
 }
 
-WarTheatre* WarEngineState::getArea() {
+Area* WarEngineState::getArea() {
 
 	if(area == nullptr)
-	throw "No Areas Stored.";
+		throw "No Areas Stored.";
 
 	return this->area;
 }

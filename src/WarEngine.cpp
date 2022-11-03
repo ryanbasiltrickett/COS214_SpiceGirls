@@ -4,8 +4,6 @@ WarEngine::WarEngine(){
 	this->state = new WarEngineState();
 }
 
-WarEngine::WarEngine(const warEngine&) {}
-
 WarEngineMemento* WarEngine::saveState() {
 	WarEngineState* cloneState = new WarEngineState();	
 	vector<Alliance*> cloneAlliances;
@@ -37,15 +35,9 @@ WarEngine::~WarEngine(){
 void WarEngine::simulate() {
 
 	vector<Alliance*> alliances = this->state->getAlliances();
-	
-	vector<Area*> areas = this->state->getArea();
 
-	for(int i = 0; i < areas.size(); i++) {
-
-		for(int j = 0; j < alliances.size(); j++) {
-
-			area[i]->simulateBattle(alliances[j]);
-		}
+	for(int j = 0; j < alliances.size(); j++) {
+		state->getArea()->simulateBattle(alliances[j]);
 	}
 
 }

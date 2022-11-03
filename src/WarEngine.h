@@ -3,6 +3,7 @@
 
 #include "WarEngineState.h"
 #include "WarEngineMemento.h"
+#include "WarTheatre.h"
 
 /**
  * @class WarEngine
@@ -12,7 +13,7 @@ class WarEngine {
 
 private:
 	WarEngineState* state;
-	boolean gameOver;
+	bool gameOver;
 
 protected:
 	/**
@@ -20,6 +21,7 @@ protected:
 	 * 
 	*/
 	WarEngine();
+
 	/**
 	 * @brief Parameterized constructor for class. 
 	 *
@@ -29,10 +31,11 @@ protected:
 	 * 	- parameter must be of type WarEngine&
 	*/
 	WarEngine(const WarEngine&){};
+
 	/**
 	 * @brief Overloaded operator = for class.
 	*/
-	WarEngine& operator=(const WarEngine&){};
+	WarEngine& operator=(const WarEngine&){ return *this; };
 
 	/**
 	 * @brief Destrcutor for class responsible for freeing all allocated memory.
