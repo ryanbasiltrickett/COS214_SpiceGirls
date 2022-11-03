@@ -29,7 +29,8 @@ void KeyPoint::simulateBattle(Alliance* alliance) {
 				random = rand() % entities.size();
 			} while (entities[random]->getAlliance() == alliance);
 
-			entities[i]->dealDamage(entities[random]);
+			if (rand() % (int)(weather->getMultiplier() * 100) <= (int)(weather->getMultiplier() * 100))
+				entities[i]->dealDamage(entities[random]);
 		}
 	}
 }
