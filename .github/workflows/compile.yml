@@ -13,11 +13,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v1
       - name: Setup cmake
-        uses: jwlawson/actions-setup-cmake@v1.13
-        with:
-          cmake-version: '3.16.x'
-      - name: Use cmake
-        run: cmake --version
+        run: sudo apt-get install build-essential cmake
       - name: Test Compile
         working-directory: tests
         run: make
