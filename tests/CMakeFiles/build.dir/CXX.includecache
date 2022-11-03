@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.cpp
+AddOn.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
+
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
 Entity.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
@@ -25,6 +29,14 @@ TerrainType.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
 gtest/gtest.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/gtest/gtest.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AerialType.cpp
+AerialType.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AerialType.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AerialType.h
+Type.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.cpp
 Aggressive.h
@@ -56,6 +68,14 @@ Country.h
 vector
 -
 
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AquaticType.cpp
+AquaticType.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AquaticType.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AquaticType.h
+Type.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.cpp
 Area.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
@@ -66,11 +86,25 @@ string
 Alliance.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
 
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.cpp
+Armour.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
+
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
 AddOn.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
 Entity.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp
+Cloudy.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.h
+Weather.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
+string
+-
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
 string
@@ -99,6 +133,10 @@ Alliance.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
 Type.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.cpp
+Factory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
 Type.h
@@ -168,9 +206,27 @@ Strategy.h
 KeyPoint.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
 
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.cpp
+Personnel.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
 Entity.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.cpp
+PersonnelFactory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.h
+Personnel.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.h
+Factory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.cpp
+Piercing.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
 AddOn.h
@@ -216,13 +272,65 @@ ctime
 cstdlib
 -
 
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Sunny.cpp
+Sunny.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Sunny.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Sunny.h
+Weather.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Support.cpp
+Support.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Support.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Support.h
+Entity.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.cpp
+SupportFactory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.h
+Support.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Support.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.h
+Factory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.cpp
+TerrainType.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
+Type.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.cpp
 Type.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
 string
 -
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Vehicle.cpp
+Vehicle.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Vehicle.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Vehicle.h
+Entity.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.cpp
+VehicleFactory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.h
+Vehicle.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Vehicle.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.h
+Factory.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.cpp
 WarEngine.h
@@ -271,6 +379,10 @@ Alliance.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
 vector
 -
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.cpp
+Weather.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
 string

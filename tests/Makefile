@@ -340,33 +340,6 @@ Cloudy.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Cloudy.cpp.s
 .PHONY : Cloudy.cpp.s
 
-CommandCenter.o: CommandCenter.cpp.o
-
-.PHONY : CommandCenter.o
-
-# target to build an object file
-CommandCenter.cpp.o:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/CommandCenter.cpp.o
-.PHONY : CommandCenter.cpp.o
-
-CommandCenter.i: CommandCenter.cpp.i
-
-.PHONY : CommandCenter.i
-
-# target to preprocess a source file
-CommandCenter.cpp.i:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/CommandCenter.cpp.i
-.PHONY : CommandCenter.cpp.i
-
-CommandCenter.s: CommandCenter.cpp.s
-
-.PHONY : CommandCenter.s
-
-# target to generate assembly for a file
-CommandCenter.cpp.s:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/CommandCenter.cpp.s
-.PHONY : CommandCenter.cpp.s
-
 Country.o: Country.cpp.o
 
 .PHONY : Country.o
@@ -1129,9 +1102,6 @@ help:
 	@echo "... Cloudy.o"
 	@echo "... Cloudy.i"
 	@echo "... Cloudy.s"
-	@echo "... CommandCenter.o"
-	@echo "... CommandCenter.i"
-	@echo "... CommandCenter.s"
 	@echo "... Country.o"
 	@echo "... Country.i"
 	@echo "... Country.s"
