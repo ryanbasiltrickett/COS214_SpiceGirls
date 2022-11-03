@@ -1,8 +1,17 @@
 #include "Sunny.h"
+#include "Cloudy.h"
 
 Sunny::Sunny() {
-	// TODO - implement Sunny::Sunny
-	throw "Not yet implemented";
+	this->multiplier = 1.0;
+}
+
+std::string Sunny::getWeather() {
+	return "Sunny";
+}
+
+void Sunny::handleChange(KeyPoint* k) {
+	Cloudy* newWeather = new Cloudy();
+	k->setWeather(newWeather);
 }
 
 void Sunny::handleChange(KeyPoint* k) {

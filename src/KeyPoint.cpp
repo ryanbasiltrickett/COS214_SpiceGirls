@@ -1,4 +1,5 @@
 #include "KeyPoint.h"
+#include <time.h>
 #include <cstdlib>
 
 using namespace std;
@@ -85,4 +86,30 @@ void KeyPoint::removeGeneral(General* general) {
 Area* KeyPoint::clone() {
 	// TODO - implement KeyPoint::clone
 	throw "Not yet implemented";
+}
+
+void KeyPoint::setWeather(Weather* weather) {
+	delete this->weather;
+	this->weather = weather;
+}
+
+void KeyPoint::changeWeather() {
+
+	srand(time(0));
+
+	int randomNum = 1 + (rand() % 10);
+	std::string currWeather = this->weather->getWeather();
+
+	if (currWeather == "Sunny" && randomNum > 6) // 60% chance of not changing weather from Sunny and staying
+		this->weather->handleChange(this);
+	else if (currWeather == "Cloudy" && randomNum > 3) // 30% chance of not changing weather from Cloudy and staying
+		this->weather->handleChange(this);
+	else if (currWeather == "Rainy" && randomNum > 1) // 10% chance of not changing weather from Rainy and staying
+		this->weather->handleChange(this);
+	
+
+}
+
+std::string KeyPoint::getWeather() const {
+	return this->weather->getWeather();
 }

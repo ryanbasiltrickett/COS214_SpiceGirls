@@ -1,5 +1,7 @@
 #ifndef SUNNY_H
 #define SUNNY_H
+#include "Weather.h"
+#include "KeyPoint.h"
 
 #include "Weather.h"
 
@@ -12,7 +14,7 @@ public:
 	Sunny();
 
 	/**
-	 * @brief Returns string which tels us the weather
+	 * @brief Returns string which tells us the weather
 	 *
 	 * Postconditions:
 	 *  - Returns the wether of ths current state

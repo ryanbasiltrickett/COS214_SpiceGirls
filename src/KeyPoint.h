@@ -124,6 +124,12 @@ public:
 	Area* clone();
   
 	/**
+	 * @brief Switches the Weather object to the next state
+	 * 
+	 */
+	void changeWeather();
+  
+  /**
 	 * @brief Set the Weather object
 	 * 
 	 * Preconditions:
@@ -135,7 +141,15 @@ public:
 	 * @param weather must be a Weather*
 	 * @return void
 	 */
-	void setWeather(Weather* weather);
+  void setWeather(Weather* weather);
+   
+	/**
+	 * @brief The weather at the current state is returned
+	 * 
+	 * @return string The weather state
+	 */
+	std::string getWeather() const;
+	
 };
 
 #endif
