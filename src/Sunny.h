@@ -3,8 +3,9 @@
 #include "Weather.h"
 #include "KeyPoint.h"
 
-class Sunny : Weather {
+#include "Weather.h"
 
+class Sunny : public Weather {
 
 public:
 	/**

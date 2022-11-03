@@ -4,8 +4,16 @@
 
 using namespace std;
 
-KeyPoint::KeyPoint(string areaName): Area(areaName) {
-	comCenter = new CommandCenter();
+KeyPoint::KeyPoint(string areaName): Area(areaName) {}
+
+KeyPoint::~KeyPoint() {
+	for (int i = 0; i < entities.size(); i++)
+		delete entities[i];
+
+	for (int i = 0; i < generals.size(); i++)
+		delete generals[i];
+
+	delete weather;
 }
 
 bool KeyPoint::isKeyPoint() {
@@ -28,15 +36,19 @@ void KeyPoint::simulateBattle(Alliance* alliance) {
 void KeyPoint::clearBattlefield() {
 	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
 		if ((*it)->getHealth() <= 0) {
-			comCenter->update(this, (*it)->getAlliance());
-			delete *it;
-			entities.erase(it);
+			for (int i = 0; i < generals.size(); i++) {
+				if (generals[i]->getAlliance() == (*it)->getAlliance()) {
+					generals[i]->initiateStrategy(this);
+					delete *it;
+					entities.erase(it);
+				}
+			}
 		}
 	}
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
-	vector<Entity*> troops = alliance.getReserveEntities(numTroops);
+	vector<Entity*> troops = alliance->getReserveEntities(numTroops);
 	for (int i = 0; i < troops.size(); i++)
 		entities.push_back(troops[i]);
 }
@@ -57,15 +69,15 @@ void KeyPoint::addEntity(Entity* entity) {
 	entities.push_back(entity);
 }
 
-void KeyPoint::attach(CommandCenter* comCenter) {
-	comCenters.push_back(comCenter);
+void KeyPoint::addGeneral(General* general) {
+	generals.push_back(general);
 }
 
-void KeyPoint::detach(CommandCenter* comCenter) {
-	for (vector<CommandCenter*>::iterator it = comCenters.begin();  it != comCenters.end(); ++it) {
-		if (*it == comCenter) {
-			delete comCenter;
-			comCenters.erase(it);
+void KeyPoint::removeGeneral(General* general) {
+	for (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) {
+		if (*it == general) {
+			delete *it;
+			generals.erase(it);
 			return;
 		}
 	}

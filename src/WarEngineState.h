@@ -16,7 +16,7 @@ class WarEngineState {
 
 
 private:
-	vector<Area*> areas;
+	Area* area;
 	vector<Alliance*> alliances;
 
 public:
@@ -28,23 +28,27 @@ public:
 
 	/**
 	 * @brief Takes in a vector of Area and sets it to the areas member of the WarEngineState instance.
-	 * @param areaVect vector<Area*>
 	 * 
 	 * Preconditions:
-	 * 	- areaVect must be a Area*
+	 * 	- area must be of type Area*
 	 * 
 	 * Postconditions:
-	 * 	- Sets the WarEngineState areas member variable to the passed in state parameter.
+	 * 	- Sets the WarEngineState area member variable to the passed in parameter.
 	 * 
+	 * @param area must be an Area*
 	 * @return void
 	*/
-	void setAreas(vector<Area*> areaVect);
+	void setArea(Area* area);
 
 	/**
-	 * @brief Returns the member variable areas.
-	 * @return vector<Area*>
+	 * @brief Returns the member variable area.
+	 * 
+	 * Postconditions:
+	 * 	- Retruns the area stored in the state
+	 * 
+	 * @return Area*
 	*/
-	vector<Area*> getAreas();
+	Area* getArea();
 
 	/**
 	 * @brief Sets the given vector of Alliance object pointers to the alliances member variable.
@@ -80,7 +84,7 @@ public:
 	/**
 	 * @brief Destructor for class.
 	*/
-	~WarEngineState(){}
+	~WarEngineState();
 };
 
 #endif

@@ -1,7 +1,7 @@
 #include "Cloudy.h"
 #include "Rainy.h"
 
-Cloudy::Cloudy() {
+Cloudy::Cloudy(): Weather() {
 	this->multiplier = 0.75;
 }
 

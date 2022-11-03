@@ -98,10 +98,9 @@ public:
 	 * Postconditions:
 	 *  - Result of consideration returned in the form of a bool
 	 *
-	 * @param id must be an int
 	 * @return bool
 	 */
-	bool considerPeace(int id);
+	bool considerPeace();
 
 	/**
 	 * @brief Adds a factory into the production vector which holds factories
@@ -129,16 +128,6 @@ public:
 	void surrender();
 
 	/**
-	 * @brief Returns Entity vector
-	 *
-	 * Postconditions:
-	 *  - Returns the reserveEntities
-	 *
-	 * @return vector<Entity*> The reserveEntities of the Alliance object
-	 */
-	vector<Entity*> getEntities();
-
-	/**
 	 * @brief Returns Alliance's aID
 	 *
 	 * Postconditions:
@@ -156,7 +145,7 @@ public:
 	 *
 	 * @return bool
 	 */
-	bool offPeace();
+	bool offerPeace();
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Alliance
@@ -167,33 +156,6 @@ public:
 	 * @return Alliance* The alliance clone
 	 */
 	Alliance* clone();
-
-	/**
-	 * @brief Sets the reserveEntities vector with the passed in vector
-	 * 
-	 * PreCondtions:
-	 * - entities must be an Entity* vector
-	 * 
-	 * PostConditions:
-	 * - The reserveEntities is populated with the passed in vector from the parameter
-	 * 
-	 * @param ID 
-	 */
-	void setEntities(vector<Entity*> entities);
-	
-	/**
-	 * @brief Adds an entity into the reserveEntities vector which holds entities in this alliance
-	 *
-	 * Preconditions:
-	 *  - entity must be an Entity*
-	 *
-	 * Postconditions:
-	 *  - entity is added to the reserveEntities vector
-	 *
-	 * @param entity must be an Entity*
-	 * @return void
-	 */
-	void addEntity(Entity* entity);
 
 	/**
 	 * @brief Sets variable active to the passed in parameter
@@ -208,7 +170,7 @@ public:
 	 */
 	void setActiveStatus(bool active);
 
-
+	int getActive();
 };
 
 #endif
