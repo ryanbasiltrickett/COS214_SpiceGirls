@@ -1,8 +1,11 @@
 #include "WarEngineMemento.h"
 
-WarEngineMemento::WarEngineMemento(WarEngineState* state, std::string name){
+WarEngineMemento::WarEngineMemento(WarEngineState * state){
 	this->state = state;
-	this->name = name;
+}
+
+WarEngineMemento::WarEngineMemento(WarEngineState* state){
+	this->state = state;
 }
 
 void WarEngineMemento::setState(WarEngineState* state){
@@ -11,8 +14,4 @@ void WarEngineMemento::setState(WarEngineState* state){
 
 WarEngineState* WarEngineMemento::getState(){
 	return state;
-}
-
-std::string WarEngineMemento::getName(){
-	return name;
 }

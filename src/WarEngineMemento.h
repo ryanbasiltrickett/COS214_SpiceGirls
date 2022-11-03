@@ -13,10 +13,16 @@ class WarEngineMemento {
 */
 private:
 	WarEngineState* state;
-	
-	std::string name;
 
 public:
+	/**
+	 * @brief Instantiates a WarEngineMemento class instance, setting the state to the given parameters.
+	 * 
+	 * @param state must be a WarEngineState*
+	 * 
+	 * */
+	WarEngineMemento(WarEngineState* state);
+
 	/**
 	 * @brief Instantiates a WarEngineMemento class instance, setting the state to the given parameters.
 	 * 
@@ -25,7 +31,7 @@ public:
 	 * 
 	 * 	
 	 * */
-	WarEngineMemento(WarEngineState* state, std::string name);
+	WarEngineMemento(WarEngineState* state);
 
 	/**
 	 * @brief Sets the memento's state to the passed in state.
@@ -46,16 +52,6 @@ public:
 	 * @return WarEngineState*
 	*/
 	WarEngineState* getState();
-
-	/**
-	 * @brief Returns the UTC name string value of memento.
-	 * 
-	 * Postconditions:
-	 * 	- Returns the string value stored in name variable.
-	 * 
-	 * @return string
-	*/
-	std::string getName();
 };
 
 #endif

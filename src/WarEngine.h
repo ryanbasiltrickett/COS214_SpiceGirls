@@ -3,7 +3,6 @@
 
 #include "WarEngineState.h"
 #include "WarEngineMemento.h"
-#include "Alliance.h"
 
 /**
  * @class WarEngine
@@ -12,10 +11,8 @@
 class WarEngine {
 
 private:
-	static WarEngine* uniqueInstance;
 	WarEngineState* state;
-	bool gameOver;
-	vector<Alliance*> alliances;
+	boolean gameOver;
 
 protected:
 	/**
@@ -24,22 +21,74 @@ protected:
 	*/
 	WarEngine();
 	/**
-	 *@brief Parameterized constructor for class. 
+	 * @brief Parameterized constructor for class. 
+	 *
+	 * @param warEngine& An anonymous warEngine reference.
+	 *  
+	 * Postconditions:
+	 * 	- parameter must be of type WarEngine&
 	*/
-	WarEngine(int& warEngine);
+	WarEngine(const WarEngine&){};
+	/**
+	 * @brief Overloaded operator = for class.
+	*/
+	WarEngine& operator=(const WarEngine&){};
+
+	/**
+	 * @brief Destrcutor for class responsible for freeing all allocated memory.
+	 * 
+	*/
+	~WarEngine();
 
 public:
 	/**
 	 * @brief Captures current state of simulation via member variables and creates WarEngineMemento instance storing all relevant members in WarEngineState.
-	 * @return WarEngineMemento
+	 * @return WarEngineMemento*
 	*/
-	WarEngineMemento saveState();
+	WarEngineMemento* saveState();
+
 	/**
 	 * @brief Takes in an instance of saved WarEngine states and sets current instance's member variables to memento state.
 	 * @param save
+	 * 
+	 * Preconditions:
+	 * 	- Save must be of type WarEngineState*
+	 * 
+	 * Postconditions:
+	 * 	- Sets the instance of the class' state member variable to the passed in save parameter.
+	 * 
 	 * @return void
 	*/
-	void loadState(WarEngineState save);
+	void loadState(WarEngineState* save);
+
+	/**
+	 * @brief Function that returns a reference to the current (and only) instance of the class.
+	 * 
+	 * @return WarEngine&
+	*/
+	static WarEngine& getInstance();
+
+	/**
+	 * @brief Simulates battle on WarTheatres.
+	 * 
+	 * @return void 
+	*/
+	void simulate();
+
+	/**
+	 * @brief Sets the state's area to passed in battleGround parameter.
+	 * 
+	 * @param battleGround must be a WarTheatre*
+	 * 
+	 * Preconditions:
+	 * 	- battleGround must be of type WarTheatre*
+	 * 
+	 * Postconditions:
+	 * 	- sets area in WarEngineState to passed in WarTheatre.
+	 * 
+	 * @return void
+	*/
+	void setWarTheatre(WarTheatre* battleGround);
 };
 
 #endif
