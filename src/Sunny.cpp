@@ -13,11 +13,3 @@ void Sunny::handleChange(KeyPoint* k) {
 	Cloudy* newWeather = new Cloudy();
 	k->setWeather(newWeather);
 }
-
-void Sunny::handleChange(KeyPoint* k) {
-
-}
-
-std::string Sunny::getWeather() {
-	
-}

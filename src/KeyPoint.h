@@ -5,8 +5,9 @@
 #include "Area.h"
 #include "Entity.h"
 #include "General.h"
-#include "Weather.h"
 #include <vector>
+
+class Weather;
 
 /**
  * @brief Keypoint class

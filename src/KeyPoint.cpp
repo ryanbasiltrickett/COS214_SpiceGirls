@@ -1,4 +1,5 @@
 #include "KeyPoint.h"
+#include "Weather.h"
 #include <time.h>
 #include <cstdlib>
 

@@ -22,7 +22,6 @@ CMakeFiles/build.dir/Aggressive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS2
 CMakeFiles/build.dir/Aggressive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/KeyPoint.h
 CMakeFiles/build.dir/Aggressive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
 CMakeFiles/build.dir/Aggressive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
-CMakeFiles/build.dir/Aggressive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
 CMakeFiles/build.dir/Alliance.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
 CMakeFiles/build.dir/Alliance.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.cpp
@@ -52,8 +51,19 @@ CMakeFiles/build.dir/Armour.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/T
 CMakeFiles/build.dir/Armour.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
 CMakeFiles/build.dir/Armour.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Area.h
 CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Cloudy.cpp
 CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Cloudy.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/General.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/KeyPoint.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Rainy.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
+CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 CMakeFiles/build.dir/Cloudy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
 CMakeFiles/build.dir/Country.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.cpp
@@ -72,7 +82,6 @@ CMakeFiles/build.dir/Defensive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS21
 CMakeFiles/build.dir/Defensive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Personnel.h
 CMakeFiles/build.dir/Defensive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
 CMakeFiles/build.dir/Defensive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
-CMakeFiles/build.dir/Defensive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
 CMakeFiles/build.dir/Entity.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
 CMakeFiles/build.dir/Entity.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
@@ -132,7 +141,6 @@ CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/
 CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Passive.h
 CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
 CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
-CMakeFiles/build.dir/Passive.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
 CMakeFiles/build.dir/Personnel.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
 CMakeFiles/build.dir/Personnel.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Personnel.cpp
@@ -164,6 +172,7 @@ CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Te
 CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Rainy.cpp
 CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Rainy.h
 CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
+CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Sunny.h
 CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 CMakeFiles/build.dir/Rainy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
@@ -190,10 +199,20 @@ CMakeFiles/build.dir/Strategy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214
 CMakeFiles/build.dir/Strategy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.cpp
 CMakeFiles/build.dir/Strategy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
 CMakeFiles/build.dir/Strategy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
-CMakeFiles/build.dir/Strategy.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Area.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Cloudy.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/General.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/KeyPoint.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
 CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Sunny.cpp
 CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Sunny.h
+CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 CMakeFiles/build.dir/Sunny.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
 CMakeFiles/build.dir/Support.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
@@ -273,6 +292,16 @@ CMakeFiles/build.dir/WarTheatre.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS2
 CMakeFiles/build.dir/WarTheatre.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/WarTheatre.cpp
 CMakeFiles/build.dir/WarTheatre.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/WarTheatre.h
 
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/AddOn.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Alliance.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Area.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Country.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Entity.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/General.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/KeyPoint.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Strategy.h
+CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Type.h
 CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.cpp
 CMakeFiles/build.dir/Weather.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Weather.h
 
