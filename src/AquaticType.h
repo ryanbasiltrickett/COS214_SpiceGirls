@@ -25,6 +25,8 @@ public:
 	 * @return string The aquatic type string
 	 */
 	string getTypeDesc();
+
+	Type* clone();
 };
 
 #endif

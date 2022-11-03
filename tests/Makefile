@@ -151,33 +151,6 @@ AddOn.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOn.cpp.s
 .PHONY : AddOn.cpp.s
 
-AddOnTest.o: AddOnTest.cpp.o
-
-.PHONY : AddOnTest.o
-
-# target to build an object file
-AddOnTest.cpp.o:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOnTest.cpp.o
-.PHONY : AddOnTest.cpp.o
-
-AddOnTest.i: AddOnTest.cpp.i
-
-.PHONY : AddOnTest.i
-
-# target to preprocess a source file
-AddOnTest.cpp.i:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOnTest.cpp.i
-.PHONY : AddOnTest.cpp.i
-
-AddOnTest.s: AddOnTest.cpp.s
-
-.PHONY : AddOnTest.s
-
-# target to generate assembly for a file
-AddOnTest.cpp.s:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/AddOnTest.cpp.s
-.PHONY : AddOnTest.cpp.s
-
 AerialType.o: AerialType.cpp.o
 
 .PHONY : AerialType.o
@@ -582,33 +555,6 @@ Negotiator.s: Negotiator.cpp.s
 Negotiator.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Negotiator.cpp.s
 .PHONY : Negotiator.cpp.s
-
-NegotiatorTest.o: NegotiatorTest.cpp.o
-
-.PHONY : NegotiatorTest.o
-
-# target to build an object file
-NegotiatorTest.cpp.o:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/NegotiatorTest.cpp.o
-.PHONY : NegotiatorTest.cpp.o
-
-NegotiatorTest.i: NegotiatorTest.cpp.i
-
-.PHONY : NegotiatorTest.i
-
-# target to preprocess a source file
-NegotiatorTest.cpp.i:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/NegotiatorTest.cpp.i
-.PHONY : NegotiatorTest.cpp.i
-
-NegotiatorTest.s: NegotiatorTest.cpp.s
-
-.PHONY : NegotiatorTest.s
-
-# target to generate assembly for a file
-NegotiatorTest.cpp.s:
-	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/NegotiatorTest.cpp.s
-.PHONY : NegotiatorTest.cpp.s
 
 Passive.o: Passive.cpp.o
 
@@ -1123,6 +1069,33 @@ Weather.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Weather.cpp.s
 .PHONY : Weather.cpp.s
 
+testmain.o: testmain.cpp.o
+
+.PHONY : testmain.o
+
+# target to build an object file
+testmain.cpp.o:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/testmain.cpp.o
+.PHONY : testmain.cpp.o
+
+testmain.i: testmain.cpp.i
+
+.PHONY : testmain.i
+
+# target to preprocess a source file
+testmain.cpp.i:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/testmain.cpp.i
+.PHONY : testmain.cpp.i
+
+testmain.s: testmain.cpp.s
+
+.PHONY : testmain.s
+
+# target to generate assembly for a file
+testmain.cpp.s:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/testmain.cpp.s
+.PHONY : testmain.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1135,9 +1108,6 @@ help:
 	@echo "... AddOn.o"
 	@echo "... AddOn.i"
 	@echo "... AddOn.s"
-	@echo "... AddOnTest.o"
-	@echo "... AddOnTest.i"
-	@echo "... AddOnTest.s"
 	@echo "... AerialType.o"
 	@echo "... AerialType.i"
 	@echo "... AerialType.s"
@@ -1183,9 +1153,6 @@ help:
 	@echo "... Negotiator.o"
 	@echo "... Negotiator.i"
 	@echo "... Negotiator.s"
-	@echo "... NegotiatorTest.o"
-	@echo "... NegotiatorTest.i"
-	@echo "... NegotiatorTest.s"
 	@echo "... Passive.o"
 	@echo "... Passive.i"
 	@echo "... Passive.s"
@@ -1243,6 +1210,9 @@ help:
 	@echo "... Weather.o"
 	@echo "... Weather.i"
 	@echo "... Weather.s"
+	@echo "... testmain.o"
+	@echo "... testmain.i"
+	@echo "... testmain.s"
 .PHONY : help
 
 

@@ -1,6 +1,6 @@
 #include "AddOn.h"
 
-AddOn::AddOn(int value) {
+AddOn::AddOn(int value): Entity() {
 	this->value = value;
 	entity = NULL;
 }
@@ -15,4 +15,8 @@ int AddOn::getValue() {
 
 void AddOn::setEntity(Entity* entity) {
 	this->entity = entity;
+}
+
+Entity* AddOn::getEntity() {
+	return this->entity;
 }

@@ -9,20 +9,28 @@ class General {
 
 private:
 	Alliance* alliance;
-	KeyPoint* keyPoint;
 	Strategy* strategy;
+	int numDeaths;
 
 public:
-	General(Alliance* alliance, KeyPoint* keyPoint, Strategy* stratety);
-
-	void evaluateStrategy();
+	/**
+	 * @brief Construct a new General object
+	 * 
+	 * @param alliance must be an Alliance*
+	 * @param stratety must be a Strategy*
+	 */
+	General(Alliance* alliance, Strategy* stratety);
 
 	/**
 	 * @brief The function intiates the strategy
 	 * 
+	 * Precondition:
+	 * 	- keyPoint muse be a KeyPoint*
+	 * 
+	 * @param keyPoint must be a KeyPoint*
 	 * @return void
 	 */ 
-	void initiateStrategy();
+	void initiateStrategy(KeyPoint* keyPoint);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current General
@@ -51,36 +59,14 @@ public:
 	bool setStrategy(Strategy* strategy);
 
 	/**
-	 * @brief Set the KeyPoint object
-	 * 
-	 * PreConditons:
-	 * - keyPoint must be of type KeyPoint*
+	 * @brief Returns the Alliance object
 	 * 
 	 * PostConditions:
-	 * - true is returned if setting the KeyPoint object was successful
-	 * - false is returned if setting the KeyPoint object was unsuccessful
+	 *  - Returns the alliance of the general
 	 * 
-	 * @param keyPoint 
-	 * @return true if the setting the KeyPoint object was successful
-	 * @return false if the setting the KeyPoint object was unsuccessful
+	 * @return Alliance* The alliance that the general is associated
 	 */
-	bool setKeyPoint(KeyPoint* keyPoint);
-
-	/**
-	 * @brief Set the Alliance object
-	 * 
-	 * PreConditons:
-	 * - alliance must be of type Alliance*
-	 * 
-	 * PostConditions:
-	 * - true is returned if setting the Alliance object was successful
-	 * - false is returned if setting the Alliance object was unsuccessful
-	 * 
-	 * @param alliance 
-	 * @return true if the setting the Alliance object was successful
-	 * @return false if the setting the Alliance object was unsuccessful
-	 */
-	bool SetAlliance(Alliance* alliance);
+	Alliance* getAlliance();
 };
 
 #endif
