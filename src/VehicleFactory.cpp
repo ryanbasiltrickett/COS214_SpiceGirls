@@ -7,7 +7,7 @@ Entity* VehicleFactory::createEntity(Alliance* alliance) {
 	Vehicle* v = new Vehicle(getType()->clone());
 	if (getAddOn() != NULL) {
 		AddOn* personnelAddOn = getAddOn()->clone();
-		personnelAddOn->connectEntity(v);
+		personnelAddOn->setEntity(v);
 		return personnelAddOn;
 	} else {
 		return v;

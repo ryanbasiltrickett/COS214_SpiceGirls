@@ -1,7 +1,9 @@
 #ifndef WARENGINE_H
 #define WARENGINE_H
 
+#include "WarEngineState.h"
 #include "WarEngineMemento.h"
+
 /**
  * @class WarEngine
  * @details Class that contains all information regarding current simulation. Only one instance of class is allowed.

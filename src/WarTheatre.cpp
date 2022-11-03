@@ -2,8 +2,11 @@
 
 using namespace std;
 
-WarTheatre::WarTheatre(string areaName): Area(areaName) {
-	
+WarTheatre::WarTheatre(string areaName): Area(areaName) {}
+
+WarTheatre::~WarTheatre() {
+	for (int i = 0; i < areas.size(); i++)
+		delete areas[i];
 }
 
 bool WarTheatre::isKeyPoint() {
@@ -20,17 +23,12 @@ void WarTheatre::addArea(Area* area) {
 }
 
 WarTheatre* WarTheatre::clone() {
-	WarTheatre* w = new WarTheatre();
+	WarTheatre* w = new WarTheatre(getAreaName());
 
 	for (int i = 0; i < areas.size(); i++)
 		w->addArea(areas[i]->clone());
 
 	return w;
-}
-
-string WarTheatre::getAreaName() const {
-
-	return this->areaName;
 }
 
 

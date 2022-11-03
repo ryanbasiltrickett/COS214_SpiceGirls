@@ -2,6 +2,8 @@
 #define WEATHER_H
 #include <string>
 
+class KeyPoint;
+
 class Weather {
 
 
@@ -10,11 +12,6 @@ public:
 	 * @brief Instantiates the Weather object
 	 */
 	Weather();
-
-	/**
-	 * @brief Destructor for the Weather object
-	 */
-	~Weather();
 
 	virtual void handleChange(KeyPoint* k) = 0;
 

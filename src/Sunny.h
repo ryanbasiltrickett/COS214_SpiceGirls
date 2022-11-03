@@ -1,8 +1,9 @@
 #ifndef SUNNY_H
 #define SUNNY_H
 
-class Sunny : Weather {
+#include "Weather.h"
 
+class Sunny : public Weather {
 
 public:
 	/**

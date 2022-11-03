@@ -1,10 +1,11 @@
 #ifndef AREA_H
 #define AREA_H
 #include <string>
+#include "Alliance.h"
 
 class Area {
 
-protected:
+private:
 	std::string areaName;
 
 public:
@@ -22,14 +23,12 @@ public:
 
 	virtual void simulateBattle(Alliance* alliance) = 0;
 
-	virtual void moveEntities(Area* area, Alliance* alliance) = 0;
-
 	/**
 	 * @brief Get the Area Type object
 	 * 
 	 * @return std::string reaturns the type
 	 */
-	virtual std::string getAreaName() const = 0;
+	std::string getAreaName() const;
 
 	virtual Area* clone() = 0;
 };
