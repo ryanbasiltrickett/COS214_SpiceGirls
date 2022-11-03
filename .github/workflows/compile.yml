@@ -1,0 +1,20 @@
+name: CI
+
+on: 
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main", "develop" ]
+    
+jobs:
+  compilation_unit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v1
+      - name: Test Compile
+        working-directory: ./tests
+        run: make
+      - name: Test Unit Tests
+        working-directory: ./tests
+        run: ./build
