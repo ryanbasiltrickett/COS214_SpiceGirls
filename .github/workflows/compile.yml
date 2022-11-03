@@ -1,4 +1,4 @@
-name: CI
+name: Compilation
 
 on: 
   push:
@@ -13,8 +13,8 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v1
       - name: Test Compile
-        working-directory: ./tests
+        working-directory: tests
         run: make
       - name: Test Unit Tests
-        working-directory: ./tests
+        working-directory: tests
         run: ./build
