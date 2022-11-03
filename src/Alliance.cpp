@@ -17,7 +17,6 @@ Alliance::~Alliance() {
 
 	if (totalNum == 1)
 		delete this->negotiator;
-	
 }
 
 void Alliance::setNegotiator(Negotiator* negotiator) {
