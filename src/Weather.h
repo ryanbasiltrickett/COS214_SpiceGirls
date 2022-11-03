@@ -4,6 +4,8 @@
 #include "Weather.h"
 #include "KeyPoint.h"
 
+class KeyPoint;
+
 class Weather {
 
 protected:

@@ -1,12 +1,10 @@
 #ifndef CLOUDY_H
 #define CLOUDY_H
 #include "Weather.h"
-#include "KeyPoint.h"
 #include <string>
 
 class Cloudy : public Weather {
-
-
+	
 public:
 	/**
 	 * @brief Instantiates the Cloudy object of the state pattern
