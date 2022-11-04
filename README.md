@@ -3,7 +3,7 @@
 
 A generic war simulator that allows users to setup the battle/war enviroment and automatically 
 simulate the outcome. The system is very generic, thus allowing integration into other systems,
-and the ability to simulate different war enviroments.
+and the ability to simulate different war environments.
 
 
 ## Authors
