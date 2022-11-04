@@ -1108,21 +1108,21 @@ INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\wasy\wasy10.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
@@ -1273,6 +1273,10 @@ INPUT classAlliance.tex
 INPUT .\classAlliance.tex
 INPUT .\classAlliance.tex
 INPUT classAlliance.tex
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrb8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8r.tfm
 INPUT .\classAquaticType.tex
 INPUT .\classAquaticType.tex
 INPUT .\classAquaticType.tex
@@ -1406,10 +1410,6 @@ INPUT .\classEntity-eps-converted-to.pdf
 INPUT .\classEntity-eps-converted-to.pdf
 INPUT .\classEntity-eps-converted-to.pdf
 INPUT .\classEntity-eps-converted-to.pdf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrb8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8r.tfm
 INPUT .\classFactory.tex
 INPUT .\classFactory.tex
 INPUT .\classFactory.tex
