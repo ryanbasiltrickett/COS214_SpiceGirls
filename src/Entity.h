@@ -19,6 +19,9 @@ private:
 	int damage;
 
 public:
+	/**
+	 * @brief Instantiates the entity
+	 */
 	Entity();
 
 	/**
@@ -127,6 +130,8 @@ public:
 	virtual void takeDamage(int damage) = 0;
 
 	virtual void dealDamage(Entity* entity) = 0;
+
+	virtual Entity* clone() = 0;
 };
 
 #endif

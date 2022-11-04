@@ -4,17 +4,21 @@
 #include "WarEngineState.h"
 #include <string>
 #include <vector>
-class WarEngineMemento {
+
+class WarEngine;
 
 /**
  * @class WarEngineMemento
  * @details Class that encapsulates and externalises WarEngine State.
  * 
 */
+class WarEngineMemento {
+
+friend class WarEngine;
+
 private:
 	WarEngineState* state;
 
-public:
 	/**
 	 * @brief Instantiates a WarEngineMemento class instance, setting the state to the given parameters.
 	 * 
@@ -42,6 +46,7 @@ public:
 	 * @return WarEngineState*
 	*/
 	WarEngineState* getState();
+
 };
 
 #endif

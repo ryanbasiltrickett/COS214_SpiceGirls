@@ -9,3 +9,7 @@ void Support::dealDamage(Entity* entity) {
 void Support::takeDamage(int damage) {
 	this->setHealth(this->getHealth() - damage);
 }
+
+Entity* Support::clone() {
+	return new Support(this->getType()->clone(), this->getHealth(), this->getDamage());
+}

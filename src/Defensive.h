@@ -20,6 +20,13 @@ public:
 	 * @return void The function will return a void
 	 */
 	void performStrat(KeyPoint* keyPoint, Alliance* alliance);
+
+	/**
+	 * @brief Returns the clone of the Deffensive Strategy object
+	 * 
+	 * @return Strategy* The clone of the Defensive Strategy object
+	 */
+	Strategy* clone();
 };
 
 #endif

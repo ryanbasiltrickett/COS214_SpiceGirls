@@ -15,5 +15,5 @@ Entity* SupportFactory::createEntity(Alliance* alliance) {
 }
 
 Factory* SupportFactory::clone() {
-	return new SupportFactory(getType(), getAddOn());
+	return new SupportFactory(getType()->clone(), getAddOn()->clone());
 }

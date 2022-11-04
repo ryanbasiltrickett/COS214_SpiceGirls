@@ -36,6 +36,13 @@ public:
 	 * @return void
 	 */
 	virtual void handleChange(KeyPoint* k);
+
+	/**
+	 * @brief Returns the clone of the Sunny object
+	 * 
+	 * @return Weather* Returns the clone of the sunny object
+	 */
+	Weather* clone();
 };
 
 #endif

@@ -8,14 +8,31 @@ int Alliance::totalNum = 0;
 Alliance::Alliance() {
 	this->active = 1;
 	this->aID = totalNum++;
+	this->negotiator = NULL;
 	srand(time(0));
+}
+
+Alliance::Alliance(Alliance& alliance) {
+	this->active = alliance.active;
+	this->aID = alliance.aID;
+
+	for (int i = 0; i < alliance.members.size(); i++)
+		this->addCountry(alliance.members[i]->clone());
+
+	for (int i = 0; i < alliance.production.size(); i++)
+		this->addCountry(alliance.production[i]->clone());
+
+	for (int i = 0; i < alliance.reserveEntities.size(); i++)
+		this->addReserveEntity(alliance.reserveEntities[i]->clone());
+
+	this->negotiator = NULL;
 }
 
 Alliance::~Alliance() {
 	
 	this->negotiator->removeAlliance(this);
 
-	if (totalNum == 1)
+	if (this->negotiator->getNumAlliances() == 1)
 		delete this->negotiator;
 }
 
@@ -75,6 +92,5 @@ int Alliance::getActive() {
 }
 
 Alliance* Alliance::clone() {
-	
-	throw "Not yet implemented";
+	return new Alliance(*this);
 }

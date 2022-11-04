@@ -35,6 +35,8 @@ public:
 	virtual void handleChange(KeyPoint* k) = 0;
 
 	virtual std::string getWeather() = 0;
+
+	virtual Weather* clone() = 0;
 };
 
 #endif

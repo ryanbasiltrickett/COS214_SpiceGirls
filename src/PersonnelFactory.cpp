@@ -15,5 +15,5 @@ Entity* PersonnelFactory::createEntity(Alliance* alliance) {
 }
 
 Factory* PersonnelFactory::clone() {
-	return new PersonnelFactory(getType(), getAddOn());
+	return new PersonnelFactory(getType()->clone(), getAddOn()->clone());
 }
