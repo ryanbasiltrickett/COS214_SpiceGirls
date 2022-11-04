@@ -4,11 +4,10 @@
 #include "Alliance.h"
 #include "Area.h"
 #include "Entity.h"
-#include "CommandCenter.h"
-#include "Weather.h"
+#include "General.h"
 #include <vector>
 
-using namespace std;
+class Weather;
 
 /**
  * @brief Keypoint class
@@ -19,7 +18,7 @@ class KeyPoint : public Area {
 
 private:
 	vector<Entity*> entities;
-	CommandCenter* comCenter;
+	vector<General*> generals;
 	Weather* weather;
 	std::string AreaType;
 
@@ -28,6 +27,8 @@ public:
 	 * @brief Instantiates the key point
 	 */
 	KeyPoint(std::string areaName);
+
+	~KeyPoint();
 
 	/**
 	 * @brief Returns area type
@@ -109,6 +110,10 @@ public:
 	 */
 	void addEntity(Entity* entity);
 
+	void addGeneral(General* general);
+
+	void removeGeneral(General* general);
+
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
 	 *
@@ -118,15 +123,14 @@ public:
 	 * @return Area* The Keypoint clone
 	 */
 	Area* clone();
-
-	/**
-	 * @brief Get the Area Type object
-	 * 
-	 * @return std::string reaturns the type
-	 */
-	std::string getAreaName() const;
   
 	/**
+	 * @brief Switches the Weather object to the next state
+	 * 
+	 */
+	void changeWeather();
+  
+  /**
 	 * @brief Set the Weather object
 	 * 
 	 * Preconditions:
@@ -138,7 +142,15 @@ public:
 	 * @param weather must be a Weather*
 	 * @return void
 	 */
-	void setWeather(Weather* weather);
+  void setWeather(Weather* weather);
+   
+	/**
+	 * @brief The weather at the current state is returned
+	 * 
+	 * @return string The weather state
+	 */
+	std::string getWeather() const;
+	
 };
 
 #endif

@@ -17,7 +17,6 @@ Alliance::~Alliance() {
 
 	if (totalNum == 1)
 		delete this->negotiator;
-	
 }
 
 void Alliance::setNegotiator(Negotiator* negotiator) {
@@ -42,7 +41,7 @@ void Alliance::addReserveEntity(Entity* entity) {
 	reserveEntities.push_back(entity);
 }
 
-bool Alliance::considerPeace(int id) {
+bool Alliance::considerPeace() {
 	return (rand() % 2 == 0);
 }
 
@@ -56,15 +55,11 @@ void Alliance::surrender() {
 	this->negotiator->removeAlliance(this);
 }
 
-vector<Entity*> Alliance::getEntities() {
-	return this->reserveEntities;
-}
-
 int Alliance::getID() {
 	return this->aID;
 }
 
-bool Alliance::offPeace() {
+bool Alliance::offerPeace() {
 
 	if (this->negotiator->sendPeace(this)) //Send the peace deal to all the alliances fighting against
 	{
@@ -73,6 +68,10 @@ bool Alliance::offPeace() {
 	}
 	
 	return false; 
+}
+
+int Alliance::getActive() {
+	return active;
 }
 
 Alliance* Alliance::clone() {

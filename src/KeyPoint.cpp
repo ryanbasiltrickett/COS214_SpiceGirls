@@ -1,10 +1,20 @@
 #include "KeyPoint.h"
+#include "Weather.h"
+#include <time.h>
 #include <cstdlib>
 
 using namespace std;
 
-KeyPoint::KeyPoint(string areaName): Area(areaName) {
-	comCenter = new CommandCenter();
+KeyPoint::KeyPoint(string areaName): Area(areaName) {}
+
+KeyPoint::~KeyPoint() {
+	for (int i = 0; i < entities.size(); i++)
+		delete entities[i];
+
+	for (int i = 0; i < generals.size(); i++)
+		delete generals[i];
+
+	delete weather;
 }
 
 bool KeyPoint::isKeyPoint() {
@@ -19,7 +29,8 @@ void KeyPoint::simulateBattle(Alliance* alliance) {
 				random = rand() % entities.size();
 			} while (entities[random]->getAlliance() == alliance);
 
-			entities[i]->dealDamage(entities[random]);
+			if (rand() % (int)(weather->getMultiplier() * 100) <= (int)(weather->getMultiplier() * 100))
+				entities[i]->dealDamage(entities[random]);
 		}
 	}
 }
@@ -27,15 +38,19 @@ void KeyPoint::simulateBattle(Alliance* alliance) {
 void KeyPoint::clearBattlefield() {
 	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
 		if ((*it)->getHealth() <= 0) {
-			comCenter->update(this, (*it)->getAlliance());
-			delete *it;
-			entities.erase(it);
+			for (int i = 0; i < generals.size(); i++) {
+				if (generals[i]->getAlliance() == (*it)->getAlliance()) {
+					generals[i]->initiateStrategy(this);
+					delete *it;
+					entities.erase(it);
+				}
+			}
 		}
 	}
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
-	vector<Entity*> troops = alliance.getReserveEntities(numTroops);
+	vector<Entity*> troops = alliance->getReserveEntities(numTroops);
 	for (int i = 0; i < troops.size(); i++)
 		entities.push_back(troops[i]);
 }
@@ -56,15 +71,15 @@ void KeyPoint::addEntity(Entity* entity) {
 	entities.push_back(entity);
 }
 
-void KeyPoint::attach(CommandCenter* comCenter) {
-	comCenters.push_back(comCenter);
+void KeyPoint::addGeneral(General* general) {
+	generals.push_back(general);
 }
 
-void KeyPoint::detach(CommandCenter* comCenter) {
-	for (vector<CommandCenter*>::iterator it = comCenters.begin();  it != comCenters.end(); ++it) {
-		if (*it == comCenter) {
-			delete comCenter;
-			comCenters.erase(it);
+void KeyPoint::removeGeneral(General* general) {
+	for (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) {
+		if (*it == general) {
+			delete *it;
+			generals.erase(it);
 			return;
 		}
 	}
@@ -75,7 +90,28 @@ Area* KeyPoint::clone() {
 	throw "Not yet implemented";
 }
 
-std::string KeyPoint::getAreaName() const {
+void KeyPoint::setWeather(Weather* weather) {
+	delete this->weather;
+	this->weather = weather;
+}
+
+void KeyPoint::changeWeather() {
+
+	srand(time(0));
+
+	int randomNum = 1 + (rand() % 10);
+	std::string currWeather = this->weather->getWeather();
+
+	if (currWeather == "Sunny" && randomNum > 6) // 60% chance of not changing weather from Sunny and staying
+		this->weather->handleChange(this);
+	else if (currWeather == "Cloudy" && randomNum > 3) // 30% chance of not changing weather from Cloudy and staying
+		this->weather->handleChange(this);
+	else if (currWeather == "Rainy" && randomNum > 1) // 10% chance of not changing weather from Rainy and staying
+		this->weather->handleChange(this);
 	
-	 return this->areaName;
+
+}
+
+std::string KeyPoint::getWeather() const {
+	return this->weather->getWeather();
 }

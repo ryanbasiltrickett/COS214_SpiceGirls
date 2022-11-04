@@ -1,17 +1,19 @@
 #include "WarEngineState.h"
 
-WarEngineState::WarEngineState() {}
-
-void WarEngineState::setAreas(vector<Area*> areaVect) {
-	this->areas = areaVect;
+WarEngineState::WarEngineState() {
+	area = nullptr;
 }
 
-vector<Area*> WarEngineState::getAreas() {
+void WarEngineState::setArea(Area* area) {
+	this->area = area;
+}
 
-	if(areas.size() == 0)
-	throw "No Areas Stored.";
+Area* WarEngineState::getArea() {
 
-	return areas;
+	if(area == nullptr)
+		throw "No Areas Stored.";
+
+	return this->area;
 }
 
 void WarEngineState::setAlliances(vector<Alliance*> alliances) {
@@ -30,12 +32,7 @@ WarEngineState* WarEngineState::clone(){
 
 	WarEngineState* clonedState = new WarEngineState();
 
-	for(Area* a : this->areas){
-		
-		Area * cloneArea = a->clone();
-
-		clonedState->areas.push_back(a);
-	}
+	clonedState->setArea( this->area->clone() );
 
 	for(Alliance* alliance : this->alliances){
 		
@@ -49,6 +46,11 @@ WarEngineState* WarEngineState::clone(){
 	}
 
 WarEngineState::~WarEngineState(){
-	//TODO: To be Implemented
-	throw "To be implemented";
+
+	for(Alliance* alliance : this->alliances){
+		delete alliance;
+	}
+
+	delete this->area;
+		
 }
