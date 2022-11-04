@@ -28,6 +28,13 @@ public:
 	Alliance();
 
 	/**
+	 * @brief Instantiates a copy of an Alliance
+	 * 
+	 * @param alliance must be an alliance instance
+	 */
+	Alliance(Alliance& alliance);
+
+	/**
 	 * @brief Destructor for the Alliance object
 	 */
 	~Alliance();

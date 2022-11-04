@@ -14,6 +14,6 @@ void Cloudy::handleChange(KeyPoint* k) {
 	k->setWeather(newWeather);
 }
 
-Weather* clone() {
+Weather* Cloudy::clone() {
 	return new Cloudy();
 }

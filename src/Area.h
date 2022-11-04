@@ -5,7 +5,7 @@
 
 class Area {
 
-protected:
+private:
 	std::string areaName;
 
 public:

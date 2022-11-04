@@ -7,9 +7,7 @@ using namespace std;
 
 KeyPoint::KeyPoint(string areaName): Area(areaName) {}
 
-KeyPoint::KeyPoint(KeyPoint& keyPoint) {
-	areaName = keyPoint.areaName;
-
+KeyPoint::KeyPoint(KeyPoint& keyPoint): Area(keyPoint.getAreaName()) {
 	for (int i = 0; i < keyPoint.entities.size(); i++)
 		this->addEntity(keyPoint.entities[i]->clone());
 

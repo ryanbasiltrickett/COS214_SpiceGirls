@@ -20,7 +20,7 @@ Alliance::Alliance(Alliance& alliance) {
 		this->addCountry(alliance.members[i]->clone());
 
 	for (int i = 0; i < alliance.production.size(); i++)
-		this->addCountry(alliance.production[i]->clone());
+		this->addFactory(alliance.production[i]->clone());
 
 	for (int i = 0; i < alliance.reserveEntities.size(); i++)
 		this->addReserveEntity(alliance.reserveEntities[i]->clone());
