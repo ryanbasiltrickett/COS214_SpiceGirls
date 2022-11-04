@@ -23,7 +23,9 @@ Inheritance diagram for Support\+:\begin{figure}[H]
 void \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the support object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classSupport}{Support}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -61,12 +63,40 @@ Definition at line \mbox{\hyperlink{Support_8cpp_source_l00003}{3}} of file \mbo
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}\label{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}} 
+\index{Support@{Support}!clone@{clone}}
+\index{clone@{clone}!Support@{Support}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Support\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classSupport}{Support}} object. 
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ The clone of the support object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
+
+
+
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                        \{}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classSupport_a5f2cb243e746adea36b3c78548029ce3}\label{classSupport_a5f2cb243e746adea36b3c78548029ce3}} 
 \index{Support@{Support}!dealDamage@{dealDamage}}
 \index{dealDamage@{dealDamage}!Support@{Support}}

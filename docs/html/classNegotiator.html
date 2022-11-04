@@ -94,10 +94,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:acff1b9b66c8c7761d687b47a1a75883a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an alliance to the alliance vector.  <a href="classNegotiator.html#acff1b9b66c8c7761d687b47a1a75883a">More...</a><br /></td></tr>
 <tr class="separator:acff1b9b66c8c7761d687b47a1a75883a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20af02012820a0296ac14f75e0b87282"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNegotiator.html#a20af02012820a0296ac14f75e0b87282">getNumAlliances</a> ()</td></tr>
+<tr class="memdesc:a20af02012820a0296ac14f75e0b87282"><td class="mdescLeft">&#160;</td><td class="mdescRight">gets the number of Alliances in the negotiator  <a href="classNegotiator.html#a20af02012820a0296ac14f75e0b87282">More...</a><br /></td></tr>
 <tr class="separator:a20af02012820a0296ac14f75e0b87282"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adafefed500d3f36649696b3d2fc92be7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classNegotiator.html">Negotiator</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNegotiator.html#adafefed500d3f36649696b3d2fc92be7">clone</a> ()</td></tr>
-<tr class="memdesc:adafefed500d3f36649696b3d2fc92be7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current <a class="el" href="classNegotiator.html">Negotiator</a>.  <a href="classNegotiator.html#adafefed500d3f36649696b3d2fc92be7">More...</a><br /></td></tr>
-<tr class="separator:adafefed500d3f36649696b3d2fc92be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -185,35 +183,6 @@ Public Member Functions</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="adafefed500d3f36649696b3d2fc92be7" name="adafefed500d3f36649696b3d2fc92be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adafefed500d3f36649696b3d2fc92be7">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classNegotiator.html">Negotiator</a> * Negotiator::clone </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Instantiates and returns a clone of the current <a class="el" href="classNegotiator.html">Negotiator</a>. </p>
-<p >Postconditions:</p><ul>
-<li>Returns the clone of the current <a class="el" href="classNegotiator.html">Negotiator</a></li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>Negotiator* The negotiator clone </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="Negotiator_8cpp_source.html#l00045">45</a> of file <a class="el" href="Negotiator_8cpp_source.html">Negotiator.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                              {</div>
-<div class="line"><span class="lineno">   46</span>    </div>
-<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Not yet implemented&quot;</span>;</div>
-<div class="line"><span class="lineno">   48</span>}</div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a20af02012820a0296ac14f75e0b87282" name="a20af02012820a0296ac14f75e0b87282"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20af02012820a0296ac14f75e0b87282">&#9670;&#160;</a></span>getNumAlliances()</h2>
 
@@ -228,6 +197,12 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>gets the number of Alliances in the negotiator </p>
+<p >Postconditions:</p><ul>
+<li>Returns the number of alliances</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>int Number of alliances </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="Negotiator_8cpp_source.html#l00041">41</a> of file <a class="el" href="Negotiator_8cpp_source.html">Negotiator.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   41</span>                                {</div>
@@ -271,7 +246,7 @@ Public Member Functions</h2></td></tr>
 <div class="line"><span class="lineno">   30</span>    }</div>
 <div class="line"><span class="lineno">   31</span>    </div>
 <div class="line"><span class="lineno">   32</span>}</div>
-<div class="ttc" id="aclassAlliance_html_a7f23330454f02b0056eb92bd2072359d"><div class="ttname"><a href="classAlliance.html#a7f23330454f02b0056eb92bd2072359d">Alliance::getID</a></div><div class="ttdeci">int getID()</div><div class="ttdoc">Returns Alliance's aID.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00058">Alliance.cpp:58</a></div></div>
+<div class="ttc" id="aclassAlliance_html_a7f23330454f02b0056eb92bd2072359d"><div class="ttname"><a href="classAlliance.html#a7f23330454f02b0056eb92bd2072359d">Alliance::getID</a></div><div class="ttdeci">int getID()</div><div class="ttdoc">Returns Alliance's aID.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00075">Alliance.cpp:75</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

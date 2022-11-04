@@ -10,7 +10,9 @@ Inheritance diagram for Defensive\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classDefensive}{Defensive}} strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classDefensive}{Defensive}} strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the Deffensive \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -42,6 +44,34 @@ Definition at line \mbox{\hyperlink{Defensive_8cpp_source_l00003}{3}} of file \m
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}\label{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}} 
+\index{Defensive@{Defensive}!clone@{clone}}
+\index{clone@{clone}!Defensive@{Defensive}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ Defensive\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the Deffensive \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ The clone of the \mbox{\hyperlink{classDefensive}{Defensive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+
+
+
+Definition at line \mbox{\hyperlink{Defensive_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Defensive_8cpp_source}{Defensive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                            \{}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classDefensive}{Defensive}}();}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}\label{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}} 
 \index{Defensive@{Defensive}!performStrat@{performStrat}}
 \index{performStrat@{performStrat}!Defensive@{Defensive}}
@@ -67,7 +97,7 @@ void The function will return a void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{Strategy}}.
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
 
 
 

@@ -8,115 +8,121 @@
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00005}00005 }
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00006}00006 \textcolor{keyword}{using namespace }std;}
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00008}\mbox{\hyperlink{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}{00008}} \mbox{\hyperlink{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}{KeyPoint::KeyPoint}}(\textcolor{keywordtype}{string} areaName): \mbox{\hyperlink{classArea}{Area}}(areaName) \{\}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00008}00008 \mbox{\hyperlink{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}{KeyPoint::KeyPoint}}(\textcolor{keywordtype}{string} areaName): \mbox{\hyperlink{classArea}{Area}}(areaName) \{\}}
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00010}00010 KeyPoint::\string~KeyPoint() \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00011}00011     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++)}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00012}00012         \textcolor{keyword}{delete} entities[i];}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00010}\mbox{\hyperlink{classKeyPoint_abea6fbaf9140408e16462ad05282febf}{00010}} \mbox{\hyperlink{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}{KeyPoint::KeyPoint}}(\mbox{\hyperlink{classKeyPoint}{KeyPoint}}\& keyPoint): \mbox{\hyperlink{classArea}{Area}}(keyPoint.getAreaName()) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00011}00011     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPoint.entities.size(); i++)}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00012}00012         this-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(keyPoint.entities[i]-\/>clone());}
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00013}00013 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00014}00014     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++)}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00015}00015         \textcolor{keyword}{delete} generals[i];}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00014}00014     weather = keyPoint.weather-\/>clone();}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00015}00015 \}}
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00016}00016 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00017}00017     \textcolor{keyword}{delete} weather;}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00018}00018 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00019}00019 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00020}\mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{00020}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{KeyPoint::isKeyPoint}}() \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00021}00021     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00022}00022 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00017}00017 KeyPoint::\string~KeyPoint() \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00018}00018     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++)}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00019}00019         \textcolor{keyword}{delete} entities[i];}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00021}00021     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++)}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00022}00022         \textcolor{keyword}{delete} generals[i];}
 \DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00023}00023 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00024}\mbox{\hyperlink{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}{00024}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}{KeyPoint::simulateBattle}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00025}00025     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00026}00026         \textcolor{keywordflow}{if} (entities[i]-\/>getAlliance() == alliance) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00027}00027             \textcolor{keywordtype}{int} random;}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00028}00028             \textcolor{keywordflow}{do} \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00029}00029                 random = rand() \% entities.size();}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00030}00030             \} \textcolor{keywordflow}{while} (entities[random]-\/>getAlliance() == alliance);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00031}00031 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00032}00032             \textcolor{keywordflow}{if} (rand() \% (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100) <= (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100))}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00033}00033                 entities[i]-\/>dealDamage(entities[random]);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00034}00034         \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00035}00035     \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00036}00036 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00037}00037 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00038}\mbox{\hyperlink{classKeyPoint_aa43cf43a4d0272f8511f3a79d2dc143b}{00038}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_aa43cf43a4d0272f8511f3a79d2dc143b}{KeyPoint::clearBattlefield}}() \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00039}00039     \textcolor{keywordflow}{for} (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00040}00040         \textcolor{keywordflow}{if} ((*it)-\/>getHealth() <= 0) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00041}00041             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00042}00042                 \textcolor{keywordflow}{if} (generals[i]-\/>getAlliance() == (*it)-\/>getAlliance()) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00043}00043                     generals[i]-\/>initiateStrategy(\textcolor{keyword}{this});}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00044}00044                     \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00045}00045                     entities.erase(it);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00046}00046                 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00047}00047             \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00048}00048         \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00049}00049     \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00050}00050 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00051}00051 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00052}\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{00052}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{KeyPoint::moveEntitiesInto}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance, \textcolor{keywordtype}{int} numTroops) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00053}00053     vector<Entity*> troops = alliance-\/>\mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{getReserveEntities}}(numTroops);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00054}00054     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < troops.size(); i++)}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00055}00055         entities.push\_back(troops[i]);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00056}00056 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00057}00057 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00058}\mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{00058}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{KeyPoint::moveEntitiesOutOf}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance, \textcolor{keywordtype}{int} numTroops) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00059}00059     vector<Entity*>::iterator it = entities.begin();}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00060}00060     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numTroops \&\& it != entities.end(); i++) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00061}00061         \textcolor{keywordflow}{for} (; it != entities.end(); ++it) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00062}00062             \textcolor{keywordflow}{if} ((*it)-\/>getAlliance() == alliance) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00063}00063                 alliance-\/>\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{addReserveEntity}}(*it);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00064}00064                 entities.erase(it);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00065}00065             \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00066}00066         \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00067}00067     \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00068}00068 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00069}00069 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00070}\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{00070}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{KeyPoint::addEntity}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00071}00071     entities.push\_back(entity);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00072}00072 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00073}00073 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00074}00074 \textcolor{keywordtype}{void} KeyPoint::addGeneral(\mbox{\hyperlink{classGeneral}{General}}* general) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00075}00075     generals.push\_back(general);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00076}00076 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00077}00077 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00078}00078 \textcolor{keywordtype}{void} KeyPoint::removeGeneral(\mbox{\hyperlink{classGeneral}{General}}* general) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00079}00079     \textcolor{keywordflow}{for} (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00080}00080         \textcolor{keywordflow}{if} (*it == general) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00081}00081             \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00082}00082             generals.erase(it);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00083}00083             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00084}00084         \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00085}00085     \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00086}00086 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00087}00087 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00088}\mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{00088}} \mbox{\hyperlink{classArea}{Area}}* \mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{KeyPoint::clone}}() \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00089}00089     \textcolor{comment}{// TODO -\/ implement KeyPoint::clone}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00090}00090     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00091}00091 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00092}00092 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00093}\mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{00093}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{KeyPoint::setWeather}}(\mbox{\hyperlink{classWeather}{Weather}}* weather) \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00094}00094     \textcolor{keyword}{delete} this-\/>weather;}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00095}00095     this-\/>weather = weather;}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00096}00096 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00097}00097 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00098}\mbox{\hyperlink{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}{00098}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}{KeyPoint::changeWeather}}() \{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00099}00099 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00100}00100     srand(time(0));}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00101}00101 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00102}00102     \textcolor{keywordtype}{int} randomNum = 1 + (rand() \% 10);}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00103}00103     std::string currWeather = this-\/>weather-\/>getWeather();}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00104}00104 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00105}00105     \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Sunny"{}} \&\& randomNum > 6) \textcolor{comment}{// 60\% chance of not changing weather from Sunny and staying}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00106}00106         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00107}00107     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Cloudy"{}} \&\& randomNum > 3) \textcolor{comment}{// 30\% chance of not changing weather from Cloudy and staying}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00108}00108         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00109}00109     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Rainy"{}} \&\& randomNum > 1) \textcolor{comment}{// 10\% chance of not changing weather from Rainy and staying}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00110}00110         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00111}00111     }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00112}00112 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00113}00113 \}}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00114}00114 }
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00115}\mbox{\hyperlink{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}{00115}} std::string \mbox{\hyperlink{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}{KeyPoint::getWeather}}()\textcolor{keyword}{ const }\{}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00116}00116     \textcolor{keywordflow}{return} this-\/>weather-\/>getWeather();}
-\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00117}00117 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00024}00024     \textcolor{keyword}{delete} weather;}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00025}00025 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00027}\mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{00027}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{KeyPoint::isKeyPoint}}() \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00028}00028     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00029}00029 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00030}00030 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00031}\mbox{\hyperlink{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}{00031}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}{KeyPoint::simulateBattle}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00032}00032     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00033}00033         \textcolor{keywordflow}{if} (entities[i]-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00034}00034             \textcolor{keywordtype}{int} random;}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00035}00035             \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00036}00036                 random = rand() \% entities.size();}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00037}00037             \} \textcolor{keywordflow}{while} (entities[random]-\/>getAlliance() == alliance);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00039}00039             \textcolor{keywordflow}{if} (rand() \% (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100) <= (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100))}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00040}00040                 entities[i]-\/>dealDamage(entities[random]);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00041}00041         \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00042}00042     \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00043}00043 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00045}\mbox{\hyperlink{classKeyPoint_aa43cf43a4d0272f8511f3a79d2dc143b}{00045}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_aa43cf43a4d0272f8511f3a79d2dc143b}{KeyPoint::clearBattlefield}}() \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00046}00046     \textcolor{keywordflow}{for} (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00047}00047         \textcolor{keywordflow}{if} ((*it)-\/>getHealth() <= 0) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00048}00048             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00049}00049                 \textcolor{keywordflow}{if} (generals[i]-\/>getAlliance() == (*it)-\/>getAlliance()) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00050}00050                     generals[i]-\/>initiateStrategy(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00051}00051                     \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00052}00052                     entities.erase(it);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00053}00053                 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00054}00054             \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00055}00055         \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00056}00056     \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00057}00057 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00059}\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{00059}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{KeyPoint::moveEntitiesInto}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance, \textcolor{keywordtype}{int} numTroops) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00060}00060     vector<Entity*> troops = alliance-\/>\mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{getReserveEntities}}(numTroops);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00061}00061     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < troops.size(); i++)}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00062}00062         entities.push\_back(troops[i]);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00063}00063 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00065}\mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{00065}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{KeyPoint::moveEntitiesOutOf}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance, \textcolor{keywordtype}{int} numTroops) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00066}00066     vector<Entity*>::iterator it = entities.begin();}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00067}00067     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numTroops \&\& it != entities.end(); i++) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00068}00068         \textcolor{keywordflow}{for} (; it != entities.end(); ++it) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00069}00069             \textcolor{keywordflow}{if} ((*it)-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00070}00070                 alliance-\/>\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{addReserveEntity}}(*it);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00071}00071                 entities.erase(it);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00072}00072             \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00073}00073         \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00074}00074     \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00075}00075 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00076}00076 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00077}\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{00077}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{KeyPoint::addEntity}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00078}00078     entities.push\_back(entity);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00079}00079 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00081}00081 \textcolor{keywordtype}{void} KeyPoint::addGeneral(\mbox{\hyperlink{classGeneral}{General}}* general) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00082}00082     generals.push\_back(general);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00083}00083 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00084}00084 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00085}00085 \textcolor{keywordtype}{void} KeyPoint::removeGeneral(\mbox{\hyperlink{classGeneral}{General}}* general) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00086}00086     \textcolor{keywordflow}{for} (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00087}00087         \textcolor{keywordflow}{if} (*it == general) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00088}00088             \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00089}00089             generals.erase(it);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00090}00090             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00091}00091         \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00092}00092     \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00093}00093 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00095}\mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{00095}} \mbox{\hyperlink{classArea}{Area}}* \mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{KeyPoint::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00096}00096     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(*\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00099}\mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{00099}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{KeyPoint::setWeather}}(\mbox{\hyperlink{classWeather}{Weather}}* weather) \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00100}00100     \textcolor{keyword}{delete} this-\/>weather;}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00101}00101     this-\/>weather = weather;}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00102}00102 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00104}\mbox{\hyperlink{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}{00104}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}{KeyPoint::changeWeather}}() \{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00106}00106     srand(time(0));}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00108}00108     \textcolor{keywordtype}{int} randomNum = 1 + (rand() \% 10);}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00109}00109     std::string currWeather = this-\/>weather-\/>getWeather();}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00110}00110 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00111}00111     \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Sunny"{}} \&\& randomNum > 6) \textcolor{comment}{// 60\% chance of not changing weather from Sunny and staying}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00112}00112         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00113}00113     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Cloudy"{}} \&\& randomNum > 3) \textcolor{comment}{// 30\% chance of not changing weather from Cloudy and staying}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00114}00114         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00115}00115     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Rainy"{}} \&\& randomNum > 1) \textcolor{comment}{// 10\% chance of not changing weather from Rainy and staying}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00116}00116         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00117}00117     }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00119}00119 \}}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00121}\mbox{\hyperlink{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}{00121}} std::string \mbox{\hyperlink{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}{KeyPoint::getWeather}}()\textcolor{keyword}{ const }\{}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00122}00122     \textcolor{keywordflow}{return} this-\/>weather-\/>getWeather();}
+\DoxyCodeLine{\Hypertarget{KeyPoint_8cpp_source_l00123}00123 \}}
 
 \end{DoxyCode}

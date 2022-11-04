@@ -20,6 +20,8 @@ Inheritance diagram for Key\+Point\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}{Key\+Point}} (std\+::string area\+Name)
 \begin{DoxyCompactList}\small\item\em Instantiates the key point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classKeyPoint_abea6fbaf9140408e16462ad05282febf}{Key\+Point}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} \&key\+Point)
+\begin{DoxyCompactList}\small\item\em Instantiates a copy of a \mbox{\hyperlink{classKeyPoint}{Key\+Point}}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{is\+Key\+Point}} ()
 \begin{DoxyCompactList}\small\item\em Returns area type. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}{simulate\+Battle}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
@@ -59,7 +61,7 @@ Definition at line \mbox{\hyperlink{KeyPoint_8h_source_l00017}{17}} of file \mbo
 \mbox{\Hypertarget{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}\label{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}} 
 \index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
 \index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{KeyPoint()}{KeyPoint()}}
+\doxysubsubsection{\texorpdfstring{KeyPoint()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Key\+Point\+::\+Key\+Point (\begin{DoxyParamCaption}\item[{std\+::string}]{area\+Name }\end{DoxyParamCaption})}
 
 
@@ -67,12 +69,37 @@ Definition at line \mbox{\hyperlink{KeyPoint_8h_source_l00017}{17}} of file \mbo
 Instantiates the key point. 
 
 
+\begin{DoxyParams}{Parameters}
+{\em area\+Name} & must be an string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyPoint_abea6fbaf9140408e16462ad05282febf}\label{classKeyPoint_abea6fbaf9140408e16462ad05282febf}} 
+\index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
+\index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{KeyPoint()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Key\+Point\+::\+Key\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} \&}]{key\+Point }\end{DoxyParamCaption})}
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+Instantiates a copy of a \mbox{\hyperlink{classKeyPoint}{Key\+Point}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Point} & must be an \mbox{\hyperlink{classKeyPoint}{Key\+Point}} instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008 : \mbox{\hyperlink{classArea}{Area}}(areaName) \{\}}
+\DoxyCodeLine{00010                                     : \mbox{\hyperlink{classArea}{Area}}(keyPoint.\mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}()) \{}
+\DoxyCodeLine{00011     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPoint.entities.size(); i++)}
+\DoxyCodeLine{00012         this-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(keyPoint.entities[i]-\/>clone());}
+\DoxyCodeLine{00013 }
+\DoxyCodeLine{00014     weather = keyPoint.weather-\/>clone();}
+\DoxyCodeLine{00015 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a6bf5e6613c329a8f2afeb8c66aa116bd}\label{classKeyPoint_a6bf5e6613c329a8f2afeb8c66aa116bd}} 
@@ -83,19 +110,19 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00008}{8}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00010                     \{}
-\DoxyCodeLine{00011     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++)}
-\DoxyCodeLine{00012         \textcolor{keyword}{delete} entities[i];}
-\DoxyCodeLine{00013 }
-\DoxyCodeLine{00014     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++)}
-\DoxyCodeLine{00015         \textcolor{keyword}{delete} generals[i];}
-\DoxyCodeLine{00016 }
-\DoxyCodeLine{00017     \textcolor{keyword}{delete} weather;}
-\DoxyCodeLine{00018 \}}
+\DoxyCodeLine{00017                     \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++)}
+\DoxyCodeLine{00019         \textcolor{keyword}{delete} entities[i];}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++)}
+\DoxyCodeLine{00022         \textcolor{keyword}{delete} generals[i];}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024     \textcolor{keyword}{delete} weather;}
+\DoxyCodeLine{00025 \}}
 
 \end{DoxyCode}
 
@@ -131,13 +158,13 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00077}{77}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00070                                        \{}
-\DoxyCodeLine{00071     entities.push\_back(entity);}
-\DoxyCodeLine{00072 \}}
+\DoxyCodeLine{00077                                        \{}
+\DoxyCodeLine{00078     entities.push\_back(entity);}
+\DoxyCodeLine{00079 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}\label{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}} 
@@ -148,13 +175,13 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00070}{70}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00081}{81}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00074                                           \{}
-\DoxyCodeLine{00075     generals.push\_back(general);}
-\DoxyCodeLine{00076 \}}
+\DoxyCodeLine{00081                                           \{}
+\DoxyCodeLine{00082     generals.push\_back(general);}
+\DoxyCodeLine{00083 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}\label{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}} 
@@ -169,26 +196,26 @@ Switches the \mbox{\hyperlink{classWeather}{Weather}} object to the next state.
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00098}{98}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00104}{104}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00098                              \{}
-\DoxyCodeLine{00099 }
-\DoxyCodeLine{00100     srand(time(0));}
-\DoxyCodeLine{00101 }
-\DoxyCodeLine{00102     \textcolor{keywordtype}{int} randomNum = 1 + (rand() \% 10);}
-\DoxyCodeLine{00103     std::string currWeather = this-\/>weather-\/>getWeather();}
-\DoxyCodeLine{00104 }
-\DoxyCodeLine{00105     \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Sunny"{}} \&\& randomNum > 6) \textcolor{comment}{// 60\% chance of not changing weather from Sunny and staying}}
-\DoxyCodeLine{00106         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
-\DoxyCodeLine{00107     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Cloudy"{}} \&\& randomNum > 3) \textcolor{comment}{// 30\% chance of not changing weather from Cloudy and staying}}
-\DoxyCodeLine{00108         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
-\DoxyCodeLine{00109     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Rainy"{}} \&\& randomNum > 1) \textcolor{comment}{// 10\% chance of not changing weather from Rainy and staying}}
-\DoxyCodeLine{00110         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
-\DoxyCodeLine{00111     }
-\DoxyCodeLine{00112 }
-\DoxyCodeLine{00113 \}}
+\DoxyCodeLine{00104                              \{}
+\DoxyCodeLine{00105 }
+\DoxyCodeLine{00106     srand(time(0));}
+\DoxyCodeLine{00107 }
+\DoxyCodeLine{00108     \textcolor{keywordtype}{int} randomNum = 1 + (rand() \% 10);}
+\DoxyCodeLine{00109     std::string currWeather = this-\/>weather-\/>getWeather();}
+\DoxyCodeLine{00110 }
+\DoxyCodeLine{00111     \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Sunny"{}} \&\& randomNum > 6) \textcolor{comment}{// 60\% chance of not changing weather from Sunny and staying}}
+\DoxyCodeLine{00112         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
+\DoxyCodeLine{00113     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Cloudy"{}} \&\& randomNum > 3) \textcolor{comment}{// 30\% chance of not changing weather from Cloudy and staying}}
+\DoxyCodeLine{00114         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
+\DoxyCodeLine{00115     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Rainy"{}} \&\& randomNum > 1) \textcolor{comment}{// 10\% chance of not changing weather from Rainy and staying}}
+\DoxyCodeLine{00116         this-\/>weather-\/>handleChange(\textcolor{keyword}{this});}
+\DoxyCodeLine{00117     }
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_aa43cf43a4d0272f8511f3a79d2dc143b}\label{classKeyPoint_aa43cf43a4d0272f8511f3a79d2dc143b}} 
@@ -211,23 +238,23 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00038}{38}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00038                                 \{}
-\DoxyCodeLine{00039     \textcolor{keywordflow}{for} (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) \{}
-\DoxyCodeLine{00040         \textcolor{keywordflow}{if} ((*it)-\/>getHealth() <= 0) \{}
-\DoxyCodeLine{00041             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++) \{}
-\DoxyCodeLine{00042                 \textcolor{keywordflow}{if} (generals[i]-\/>getAlliance() == (*it)-\/>getAlliance()) \{}
-\DoxyCodeLine{00043                     generals[i]-\/>initiateStrategy(\textcolor{keyword}{this});}
-\DoxyCodeLine{00044                     \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{00045                     entities.erase(it);}
-\DoxyCodeLine{00046                 \}}
-\DoxyCodeLine{00047             \}}
-\DoxyCodeLine{00048         \}}
-\DoxyCodeLine{00049     \}}
-\DoxyCodeLine{00050 \}}
+\DoxyCodeLine{00045                                 \{}
+\DoxyCodeLine{00046     \textcolor{keywordflow}{for} (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) \{}
+\DoxyCodeLine{00047         \textcolor{keywordflow}{if} ((*it)-\/>getHealth() <= 0) \{}
+\DoxyCodeLine{00048             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++) \{}
+\DoxyCodeLine{00049                 \textcolor{keywordflow}{if} (generals[i]-\/>getAlliance() == (*it)-\/>getAlliance()) \{}
+\DoxyCodeLine{00050                     generals[i]-\/>initiateStrategy(\textcolor{keyword}{this});}
+\DoxyCodeLine{00051                     \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{00052                     entities.erase(it);}
+\DoxyCodeLine{00053                 \}}
+\DoxyCodeLine{00054             \}}
+\DoxyCodeLine{00055         \}}
+\DoxyCodeLine{00056     \}}
+\DoxyCodeLine{00057 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}\label{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}} 
@@ -254,14 +281,13 @@ Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00088}{88}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00095}{95}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00088                       \{}
-\DoxyCodeLine{00089     \textcolor{comment}{// TODO -\/ implement KeyPoint::clone}}
-\DoxyCodeLine{00090     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{00091 \}}
+\DoxyCodeLine{00095                       \{}
+\DoxyCodeLine{00096     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00097 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}\label{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}} 
@@ -279,13 +305,13 @@ string The weather state
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00115}{115}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00121}{121}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00115                                      \{}
-\DoxyCodeLine{00116     \textcolor{keywordflow}{return} this-\/>weather-\/>getWeather();}
-\DoxyCodeLine{00117 \}}
+\DoxyCodeLine{00121                                      \{}
+\DoxyCodeLine{00122     \textcolor{keywordflow}{return} this-\/>weather-\/>getWeather();}
+\DoxyCodeLine{00123 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a1beb436d8efa973f3dc290a722727961}\label{classKeyPoint_a1beb436d8efa973f3dc290a722727961}} 
@@ -312,13 +338,13 @@ Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00027}{27}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00020                           \{}
-\DoxyCodeLine{00021     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
-\DoxyCodeLine{00022 \}}
+\DoxyCodeLine{00027                           \{}
+\DoxyCodeLine{00028     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00029 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}\label{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}} 
@@ -354,15 +380,15 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00059}{59}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00052                                                                  \{}
-\DoxyCodeLine{00053     vector<Entity*> troops = alliance-\/>\mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{getReserveEntities}}(numTroops);}
-\DoxyCodeLine{00054     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < troops.size(); i++)}
-\DoxyCodeLine{00055         entities.push\_back(troops[i]);}
-\DoxyCodeLine{00056 \}}
+\DoxyCodeLine{00059                                                                  \{}
+\DoxyCodeLine{00060     vector<Entity*> troops = alliance-\/>\mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{getReserveEntities}}(numTroops);}
+\DoxyCodeLine{00061     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < troops.size(); i++)}
+\DoxyCodeLine{00062         entities.push\_back(troops[i]);}
+\DoxyCodeLine{00063 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}\label{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}} 
@@ -398,21 +424,21 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00058}{58}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00058                                                                   \{}
-\DoxyCodeLine{00059     vector<Entity*>::iterator it = entities.begin();}
-\DoxyCodeLine{00060     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numTroops \&\& it != entities.end(); i++) \{}
-\DoxyCodeLine{00061         \textcolor{keywordflow}{for} (; it != entities.end(); ++it) \{}
-\DoxyCodeLine{00062             \textcolor{keywordflow}{if} ((*it)-\/>getAlliance() == alliance) \{}
-\DoxyCodeLine{00063                 alliance-\/>\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{addReserveEntity}}(*it);}
-\DoxyCodeLine{00064                 entities.erase(it);}
-\DoxyCodeLine{00065             \}}
-\DoxyCodeLine{00066         \}}
-\DoxyCodeLine{00067     \}}
-\DoxyCodeLine{00068 \}}
+\DoxyCodeLine{00065                                                                   \{}
+\DoxyCodeLine{00066     vector<Entity*>::iterator it = entities.begin();}
+\DoxyCodeLine{00067     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numTroops \&\& it != entities.end(); i++) \{}
+\DoxyCodeLine{00068         \textcolor{keywordflow}{for} (; it != entities.end(); ++it) \{}
+\DoxyCodeLine{00069             \textcolor{keywordflow}{if} ((*it)-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{00070                 alliance-\/>\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{addReserveEntity}}(*it);}
+\DoxyCodeLine{00071                 entities.erase(it);}
+\DoxyCodeLine{00072             \}}
+\DoxyCodeLine{00073         \}}
+\DoxyCodeLine{00074     \}}
+\DoxyCodeLine{00075 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_abe2ba3c8d36eb45711f396ff295fa32e}\label{classKeyPoint_abe2ba3c8d36eb45711f396ff295fa32e}} 
@@ -423,19 +449,19 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00058}{58}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00085}{85}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00078                                              \{}
-\DoxyCodeLine{00079     \textcolor{keywordflow}{for} (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) \{}
-\DoxyCodeLine{00080         \textcolor{keywordflow}{if} (*it == general) \{}
-\DoxyCodeLine{00081             \textcolor{keyword}{delete} *it;}
-\DoxyCodeLine{00082             generals.erase(it);}
-\DoxyCodeLine{00083             \textcolor{keywordflow}{return};}
-\DoxyCodeLine{00084         \}}
-\DoxyCodeLine{00085     \}}
-\DoxyCodeLine{00086 \}}
+\DoxyCodeLine{00085                                              \{}
+\DoxyCodeLine{00086     \textcolor{keywordflow}{for} (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) \{}
+\DoxyCodeLine{00087         \textcolor{keywordflow}{if} (*it == general) \{}
+\DoxyCodeLine{00088             \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{00089             generals.erase(it);}
+\DoxyCodeLine{00090             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00091         \}}
+\DoxyCodeLine{00092     \}}
+\DoxyCodeLine{00093 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}\label{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}} 
@@ -468,14 +494,14 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00093}{93}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00099}{99}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00093                                           \{}
-\DoxyCodeLine{00094     \textcolor{keyword}{delete} this-\/>weather;}
-\DoxyCodeLine{00095     this-\/>weather = weather;}
-\DoxyCodeLine{00096 \}}
+\DoxyCodeLine{00099                                           \{}
+\DoxyCodeLine{00100     \textcolor{keyword}{delete} this-\/>weather;}
+\DoxyCodeLine{00101     this-\/>weather = weather;}
+\DoxyCodeLine{00102 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}\label{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}} 
@@ -512,23 +538,23 @@ Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
 
-Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00024                                                 \{}
-\DoxyCodeLine{00025     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++) \{}
-\DoxyCodeLine{00026         \textcolor{keywordflow}{if} (entities[i]-\/>getAlliance() == alliance) \{}
-\DoxyCodeLine{00027             \textcolor{keywordtype}{int} random;}
-\DoxyCodeLine{00028             \textcolor{keywordflow}{do} \{}
-\DoxyCodeLine{00029                 random = rand() \% entities.size();}
-\DoxyCodeLine{00030             \} \textcolor{keywordflow}{while} (entities[random]-\/>getAlliance() == alliance);}
-\DoxyCodeLine{00031 }
-\DoxyCodeLine{00032             \textcolor{keywordflow}{if} (rand() \% (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100) <= (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100))}
-\DoxyCodeLine{00033                 entities[i]-\/>dealDamage(entities[random]);}
-\DoxyCodeLine{00034         \}}
-\DoxyCodeLine{00035     \}}
-\DoxyCodeLine{00036 \}}
+\DoxyCodeLine{00031                                                 \{}
+\DoxyCodeLine{00032     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++) \{}
+\DoxyCodeLine{00033         \textcolor{keywordflow}{if} (entities[i]-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{00034             \textcolor{keywordtype}{int} random;}
+\DoxyCodeLine{00035             \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{00036                 random = rand() \% entities.size();}
+\DoxyCodeLine{00037             \} \textcolor{keywordflow}{while} (entities[random]-\/>getAlliance() == alliance);}
+\DoxyCodeLine{00038 }
+\DoxyCodeLine{00039             \textcolor{keywordflow}{if} (rand() \% (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100) <= (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100))}
+\DoxyCodeLine{00040                 entities[i]-\/>dealDamage(entities[random]);}
+\DoxyCodeLine{00041         \}}
+\DoxyCodeLine{00042     \}}
+\DoxyCodeLine{00043 \}}
 
 \end{DoxyCode}
 

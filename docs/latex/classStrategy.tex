@@ -14,7 +14,9 @@ Inheritance diagram for Strategy\+:\begin{figure}[H]
 \mbox{\hyperlink{classStrategy_a37c0bbdd64fd7dfcdd91578784a64775}{$\sim$\+Strategy}} ()
 \begin{DoxyCompactList}\small\item\em Destroy the \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)=0
-\begin{DoxyCompactList}\small\item\em This function will perform an spifice strategy based on the specific derived class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classStrategy_a552c2eba68a51d04aab5795508dcb075}{clone}} ()=0
+\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -71,27 +73,22 @@ Definition at line \mbox{\hyperlink{Strategy_8cpp_source_l00009}{9}} of file \mb
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStrategy_a552c2eba68a51d04aab5795508dcb075}\label{classStrategy_a552c2eba68a51d04aab5795508dcb075}} 
+\index{Strategy@{Strategy}!clone@{clone}}
+\index{clone@{clone}!Strategy@{Strategy}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ Strategy\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}{Aggressive}}, \mbox{\hyperlink{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}{Defensive}}, and \mbox{\hyperlink{classPassive_a576243ca77e794959cfcb33e772856a4}{Passive}}.
+
 \mbox{\Hypertarget{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}\label{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}} 
 \index{Strategy@{Strategy}!performStrat@{performStrat}}
 \index{performStrat@{performStrat}!Strategy@{Strategy}}
 \doxysubsubsection{\texorpdfstring{performStrat()}{performStrat()}}
 {\footnotesize\ttfamily virtual void Strategy\+::perform\+Strat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{key\+Point,  }\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
-
-
-This function will perform an spifice strategy based on the specific derived class. 
-
-\begin{DoxyAuthor}{Author}
-Antwi-\/\+Antwi 
-\end{DoxyAuthor}
-
-\begin{DoxyParams}{Parameters}
-{\em key\+Point} & A strategy will then be performed at this specific keypoint \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void The function will return a void 
-\end{DoxyReturn}
 
 
 Implemented in \mbox{\hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{Aggressive}}, \mbox{\hyperlink{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}{Defensive}}, and \mbox{\hyperlink{classPassive_ab296d4f8ba8ad68dacef1f80e3041aa7}{Passive}}.

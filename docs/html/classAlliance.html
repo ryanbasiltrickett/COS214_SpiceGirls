@@ -81,6 +81,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a262a2819e969b465eb9548e419bad521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlliance.html#a262a2819e969b465eb9548e419bad521">Alliance</a> ()</td></tr>
 <tr class="memdesc:a262a2819e969b465eb9548e419bad521"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the <a class="el" href="classAlliance.html">Alliance</a>.  <a href="classAlliance.html#a262a2819e969b465eb9548e419bad521">More...</a><br /></td></tr>
 <tr class="separator:a262a2819e969b465eb9548e419bad521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acde91b73cf63cf19ed13448a8644d139"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlliance.html#acde91b73cf63cf19ed13448a8644d139">Alliance</a> (<a class="el" href="classAlliance.html">Alliance</a> &amp;alliance)</td></tr>
+<tr class="memdesc:acde91b73cf63cf19ed13448a8644d139"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates a copy of an <a class="el" href="classAlliance.html">Alliance</a>.  <a href="classAlliance.html#acde91b73cf63cf19ed13448a8644d139">More...</a><br /></td></tr>
+<tr class="separator:acde91b73cf63cf19ed13448a8644d139"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a5357e96f284da2f00d72d14605b6fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlliance.html#a6a5357e96f284da2f00d72d14605b6fe">~Alliance</a> ()</td></tr>
 <tr class="memdesc:a6a5357e96f284da2f00d72d14605b6fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for the <a class="el" href="classAlliance.html">Alliance</a> object.  <a href="classAlliance.html#a6a5357e96f284da2f00d72d14605b6fe">More...</a><br /></td></tr>
 <tr class="separator:a6a5357e96f284da2f00d72d14605b6fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Alliance_8h_source.html#l00013">13</a> of file <a class="el" href="Alliance_8h_source.html">Alliance.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a262a2819e969b465eb9548e419bad521" name="a262a2819e969b465eb9548e419bad521"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a262a2819e969b465eb9548e419bad521">&#9670;&#160;</a></span>Alliance()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a262a2819e969b465eb9548e419bad521">&#9670;&#160;</a></span>Alliance() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,8 +148,55 @@ Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">    8</span>                   {</div>
 <div class="line"><span class="lineno">    9</span>    this-&gt;active = 1;</div>
 <div class="line"><span class="lineno">   10</span>    this-&gt;aID = totalNum++;</div>
-<div class="line"><span class="lineno">   11</span>    srand(time(0));</div>
-<div class="line"><span class="lineno">   12</span>}</div>
+<div class="line"><span class="lineno">   11</span>    this-&gt;negotiator = NULL;</div>
+<div class="line"><span class="lineno">   12</span>    srand(time(0));</div>
+<div class="line"><span class="lineno">   13</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="acde91b73cf63cf19ed13448a8644d139" name="acde91b73cf63cf19ed13448a8644d139"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acde91b73cf63cf19ed13448a8644d139">&#9670;&#160;</a></span>Alliance() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Alliance::Alliance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classAlliance.html">Alliance</a> &amp;&#160;</td>
+          <td class="paramname"><em>alliance</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Instantiates a copy of an <a class="el" href="classAlliance.html">Alliance</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">alliance</td><td>must be an alliance instance </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00015">15</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                                     {</div>
+<div class="line"><span class="lineno">   16</span>    this-&gt;active = alliance.active;</div>
+<div class="line"><span class="lineno">   17</span>    this-&gt;aID = alliance.aID;</div>
+<div class="line"><span class="lineno">   18</span> </div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; alliance.members.size(); i++)</div>
+<div class="line"><span class="lineno">   20</span>        this-&gt;<a class="code hl_function" href="classAlliance.html#a5aad3039bd784cb26755fce97c92708a">addCountry</a>(alliance.members[i]-&gt;clone());</div>
+<div class="line"><span class="lineno">   21</span> </div>
+<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; alliance.production.size(); i++)</div>
+<div class="line"><span class="lineno">   23</span>        this-&gt;<a class="code hl_function" href="classAlliance.html#a0558b1f3532044e9b5648c0bd1c151bf">addFactory</a>(alliance.production[i]-&gt;clone());</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; alliance.reserveEntities.size(); i++)</div>
+<div class="line"><span class="lineno">   26</span>        this-&gt;<a class="code hl_function" href="classAlliance.html#a37c4045fb37caf729d1f8f266f5f1bf0">addReserveEntity</a>(alliance.reserveEntities[i]-&gt;clone());</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>    this-&gt;negotiator = NULL;</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="aclassAlliance_html_a0558b1f3532044e9b5648c0bd1c151bf"><div class="ttname"><a href="classAlliance.html#a0558b1f3532044e9b5648c0bd1c151bf">Alliance::addFactory</a></div><div class="ttdeci">void addFactory(Factory *factory)</div><div class="ttdoc">Adds a factory into the production vector which holds factories.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00065">Alliance.cpp:65</a></div></div>
+<div class="ttc" id="aclassAlliance_html_a37c4045fb37caf729d1f8f266f5f1bf0"><div class="ttname"><a href="classAlliance.html#a37c4045fb37caf729d1f8f266f5f1bf0">Alliance::addReserveEntity</a></div><div class="ttdeci">void addReserveEntity(Entity *entity)</div><div class="ttdoc">Adds a entity to the reserve entities.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00057">Alliance.cpp:57</a></div></div>
+<div class="ttc" id="aclassAlliance_html_a5aad3039bd784cb26755fce97c92708a"><div class="ttname"><a href="classAlliance.html#a5aad3039bd784cb26755fce97c92708a">Alliance::addCountry</a></div><div class="ttdeci">void addCountry(Country *nation)</div><div class="ttdoc">Adds a country into the members vector which holds countries.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00043">Alliance.cpp:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -167,14 +217,15 @@ Public Member Functions</h2></td></tr>
 
 <p>Destructor for the <a class="el" href="classAlliance.html">Alliance</a> object. </p>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00014">14</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>                    {</div>
-<div class="line"><span class="lineno">   15</span>    </div>
-<div class="line"><span class="lineno">   16</span>    this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#ac6ec48dbce55bf196c299342695054ef">removeAlliance</a>(<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">if</span> (totalNum == 1)</div>
-<div class="line"><span class="lineno">   19</span>        <span class="keyword">delete</span> this-&gt;negotiator;</div>
-<div class="line"><span class="lineno">   20</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00031">31</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                    {</div>
+<div class="line"><span class="lineno">   32</span>    </div>
+<div class="line"><span class="lineno">   33</span>    this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#ac6ec48dbce55bf196c299342695054ef">removeAlliance</a>(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#a20af02012820a0296ac14f75e0b87282">getNumAlliances</a>() == 1)</div>
+<div class="line"><span class="lineno">   36</span>        <span class="keyword">delete</span> this-&gt;negotiator;</div>
+<div class="line"><span class="lineno">   37</span>}</div>
+<div class="ttc" id="aclassNegotiator_html_a20af02012820a0296ac14f75e0b87282"><div class="ttname"><a href="classNegotiator.html#a20af02012820a0296ac14f75e0b87282">Negotiator::getNumAlliances</a></div><div class="ttdeci">int getNumAlliances()</div><div class="ttdoc">gets the number of Alliances in the negotiator</div><div class="ttdef"><b>Definition:</b> <a href="Negotiator_8cpp_source.html#l00041">Negotiator.cpp:41</a></div></div>
 <div class="ttc" id="aclassNegotiator_html_ac6ec48dbce55bf196c299342695054ef"><div class="ttname"><a href="classNegotiator.html#ac6ec48dbce55bf196c299342695054ef">Negotiator::removeAlliance</a></div><div class="ttdeci">void removeAlliance(Alliance *oldAlliance)</div><div class="ttdoc">Removes an alliance from the alliance vector.</div><div class="ttdef"><b>Definition:</b> <a href="Negotiator_8cpp_source.html#l00024">Negotiator.cpp:24</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -211,10 +262,10 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00026">26</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                                         {</div>
-<div class="line"><span class="lineno">   27</span>    members.push_back(nation);</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00043">43</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   43</span>                                         {</div>
+<div class="line"><span class="lineno">   44</span>    members.push_back(nation);</div>
+<div class="line"><span class="lineno">   45</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -249,10 +300,10 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00048">48</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                          {</div>
-<div class="line"><span class="lineno">   49</span>    production.push_back(factory);</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00065">65</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                                          {</div>
+<div class="line"><span class="lineno">   66</span>    production.push_back(factory);</div>
+<div class="line"><span class="lineno">   67</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -287,10 +338,10 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00040">40</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                              {</div>
-<div class="line"><span class="lineno">   41</span>    reserveEntities.push_back(entity);</div>
-<div class="line"><span class="lineno">   42</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00057">57</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                              {</div>
+<div class="line"><span class="lineno">   58</span>    reserveEntities.push_back(entity);</div>
+<div class="line"><span class="lineno">   59</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -315,11 +366,11 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>Alliance* The alliance clone </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00077">77</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                          {</div>
-<div class="line"><span class="lineno">   78</span>    </div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Not yet implemented&quot;</span>;</div>
-<div class="line"><span class="lineno">   80</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00094">94</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                          {</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_function" href="classAlliance.html#a262a2819e969b465eb9548e419bad521">Alliance</a>(*<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   96</span>}</div>
+<div class="ttc" id="aclassAlliance_html_a262a2819e969b465eb9548e419bad521"><div class="ttname"><a href="classAlliance.html#a262a2819e969b465eb9548e419bad521">Alliance::Alliance</a></div><div class="ttdeci">Alliance()</div><div class="ttdoc">Instantiates the Alliance.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00008">Alliance.cpp:8</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -347,10 +398,10 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00044">44</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                             {</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> (rand() % 2 == 0);</div>
-<div class="line"><span class="lineno">   46</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00061">61</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>                             {</div>
+<div class="line"><span class="lineno">   62</span>    <span class="keywordflow">return</span> (rand() % 2 == 0);</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -369,10 +420,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00073">73</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                        {</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> active;</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00090">90</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   90</span>                        {</div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> active;</div>
+<div class="line"><span class="lineno">   92</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -397,10 +448,10 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>int The ID of the <a class="el" href="classAlliance.html">Alliance</a> object </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00058">58</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>                    {</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> this-&gt;aID;</div>
-<div class="line"><span class="lineno">   60</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00075">75</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   75</span>                    {</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">return</span> this-&gt;aID;</div>
+<div class="line"><span class="lineno">   77</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -436,16 +487,16 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>vector&lt;Entity*&gt;* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00030">30</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>                                                       {</div>
-<div class="line"><span class="lineno">   31</span>    vector&lt;Entity*&gt; out;</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; number &amp;&amp; i &lt; reserveEntities.size(); i++) {</div>
-<div class="line"><span class="lineno">   33</span>        out.push_back(reserveEntities[i]);</div>
-<div class="line"><span class="lineno">   34</span>        reserveEntities.erase(reserveEntities.begin() + i);</div>
-<div class="line"><span class="lineno">   35</span>    }</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   38</span>}   </div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00047">47</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                       {</div>
+<div class="line"><span class="lineno">   48</span>    vector&lt;Entity*&gt; out;</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; number &amp;&amp; i &lt; reserveEntities.size(); i++) {</div>
+<div class="line"><span class="lineno">   50</span>        out.push_back(reserveEntities[i]);</div>
+<div class="line"><span class="lineno">   51</span>        reserveEntities.erase(reserveEntities.begin() + i);</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span> </div>
+<div class="line"><span class="lineno">   54</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">   55</span>}   </div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -470,17 +521,17 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>bool </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00062">62</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                          {</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#aa95e7f447a76c6d5ef84b92731ccb00d">sendPeace</a>(<span class="keyword">this</span>)) <span class="comment">//Send the peace deal to all the alliances fighting against</span></div>
-<div class="line"><span class="lineno">   65</span>    {</div>
-<div class="line"><span class="lineno">   66</span>        this-&gt;active = 3; <span class="comment">//Number 3 means that Alliance chose to peacefully pull out of war</span></div>
-<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   68</span>    }</div>
-<div class="line"><span class="lineno">   69</span>    </div>
-<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>; </div>
-<div class="line"><span class="lineno">   71</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00079">79</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   79</span>                          {</div>
+<div class="line"><span class="lineno">   80</span> </div>
+<div class="line"><span class="lineno">   81</span>    <span class="keywordflow">if</span> (this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#aa95e7f447a76c6d5ef84b92731ccb00d">sendPeace</a>(<span class="keyword">this</span>)) <span class="comment">//Send the peace deal to all the alliances fighting against</span></div>
+<div class="line"><span class="lineno">   82</span>    {</div>
+<div class="line"><span class="lineno">   83</span>        this-&gt;active = 3; <span class="comment">//Number 3 means that Alliance chose to peacefully pull out of war</span></div>
+<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   86</span>    </div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>; </div>
+<div class="line"><span class="lineno">   88</span>}</div>
 <div class="ttc" id="aclassNegotiator_html_aa95e7f447a76c6d5ef84b92731ccb00d"><div class="ttname"><a href="classNegotiator.html#aa95e7f447a76c6d5ef84b92731ccb00d">Negotiator::sendPeace</a></div><div class="ttdeci">bool sendPeace(Alliance *offerAlliance)</div><div class="ttdoc">Tries to offer peace to all the alliances in vector.</div><div class="ttdef"><b>Definition:</b> <a href="Negotiator_8cpp_source.html#l00010">Negotiator.cpp:10</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -548,10 +599,10 @@ Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00022">22</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   22</span>                                                   {</div>
-<div class="line"><span class="lineno">   23</span>    this-&gt;negotiator = negotiator;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00039">39</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                                   {</div>
+<div class="line"><span class="lineno">   40</span>    this-&gt;negotiator = negotiator;</div>
+<div class="line"><span class="lineno">   41</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -577,12 +628,12 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00052">52</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                         {</div>
-<div class="line"><span class="lineno">   53</span>    this-&gt;active = 2; <span class="comment">//Number 2 means that Alliance has surrendered</span></div>
-<div class="line"><span class="lineno">   54</span> </div>
-<div class="line"><span class="lineno">   55</span>    this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#ac6ec48dbce55bf196c299342695054ef">removeAlliance</a>(<span class="keyword">this</span>);</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<p class="definition">Definition at line <a class="el" href="Alliance_8cpp_source.html#l00069">69</a> of file <a class="el" href="Alliance_8cpp_source.html">Alliance.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                         {</div>
+<div class="line"><span class="lineno">   70</span>    this-&gt;active = 2; <span class="comment">//Number 2 means that Alliance has surrendered</span></div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>    this-&gt;negotiator-&gt;<a class="code hl_function" href="classNegotiator.html#ac6ec48dbce55bf196c299342695054ef">removeAlliance</a>(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   73</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

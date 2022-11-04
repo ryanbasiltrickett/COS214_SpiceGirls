@@ -14,7 +14,9 @@ Inheritance diagram for Cloudy\+:\begin{figure}[H]
 std\+::string \mbox{\hyperlink{classCloudy_a859714ec61c789dc12ed5447fd3692ac}{get\+Weather}} ()
 \begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classCloudy_aa01a409307657c9a7cad11a6f93456fd}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
-\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns a clone of the \mbox{\hyperlink{classCloudy}{Cloudy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -50,6 +52,34 @@ Definition at line \mbox{\hyperlink{Cloudy_8cpp_source_l00004}{4}} of file \mbox
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}\label{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}} 
+\index{Cloudy@{Cloudy}!clone@{clone}}
+\index{clone@{clone}!Cloudy@{Cloudy}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Cloudy\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a clone of the \mbox{\hyperlink{classCloudy}{Cloudy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Weather$\ast$ Clone of cloudy object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
+
+
+
+Definition at line \mbox{\hyperlink{Cloudy_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Cloudy_8cpp_source}{Cloudy.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                        \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{Cloudy}}();}
+\DoxyCodeLine{00019 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classCloudy_a859714ec61c789dc12ed5447fd3692ac}\label{classCloudy_a859714ec61c789dc12ed5447fd3692ac}} 
 \index{Cloudy@{Cloudy}!getWeather@{getWeather}}
 \index{getWeather@{getWeather}!Cloudy@{Cloudy}}

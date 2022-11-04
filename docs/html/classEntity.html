@@ -97,6 +97,9 @@ Inheritance diagram for Entity:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:a980f368aa07ce358583982821533a54a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity.html#a980f368aa07ce358583982821533a54a">Entity</a> ()</td></tr>
+<tr class="memdesc:a980f368aa07ce358583982821533a54a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the entity.  <a href="classEntity.html#a980f368aa07ce358583982821533a54a">More...</a><br /></td></tr>
+<tr class="separator:a980f368aa07ce358583982821533a54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68e832f69650ee80b83228a038eb66f0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity.html#a68e832f69650ee80b83228a038eb66f0">Entity</a> (<a class="el" href="classType.html">Type</a> *type, int health, int damage)</td></tr>
 <tr class="memdesc:a68e832f69650ee80b83228a038eb66f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates the entity.  <a href="classEntity.html#a68e832f69650ee80b83228a038eb66f0">More...</a><br /></td></tr>
 <tr class="separator:a68e832f69650ee80b83228a038eb66f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,6 +131,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a9cc5a2246a5580ceed0f081c18211e53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff881f545fc88b2c328ff559a99c7fba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity.html#aff881f545fc88b2c328ff559a99c7fba">dealDamage</a> (<a class="el" href="classEntity.html">Entity</a> *entity)=0</td></tr>
 <tr class="separator:aff881f545fc88b2c328ff559a99c7fba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6107392c2c813bedbc7994618b395db"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classEntity.html">Entity</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classEntity.html#af6107392c2c813bedbc7994618b395db">clone</a> ()=0</td></tr>
+<tr class="separator:af6107392c2c813bedbc7994618b395db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p ><a class="el" href="classEntity.html" title="Entity class.">Entity</a> class. </p>
@@ -149,6 +154,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Instantiates the entity. </p>
 
 <p class="definition">Definition at line <a class="el" href="Entity_8cpp_source.html#l00005">5</a> of file <a class="el" href="Entity_8cpp_source.html">Entity.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    5</span>               {</div>
@@ -209,6 +216,33 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="af6107392c2c813bedbc7994618b395db" name="af6107392c2c813bedbc7994618b395db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6107392c2c813bedbc7994618b395db">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classEntity.html">Entity</a> * Entity::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classArmour.html#ab200b02561ecc30c20397913a2bc9511">Armour</a>, <a class="el" href="classPersonnel.html#a5eea18b5b6bbe0794956e53db316bd34">Personnel</a>, <a class="el" href="classPiercing.html#aeb41b04515f5aad4d9f153b0de332849">Piercing</a>, <a class="el" href="classSupport.html#aa54197d3679118ba6c2dfaf7f15ac5de">Support</a>, and <a class="el" href="classVehicle.html#a705081c9b479d76cd6113a661d9c8770">Vehicle</a>.</p>
+
+</div>
+</div>
 <a id="aff881f545fc88b2c328ff559a99c7fba" name="aff881f545fc88b2c328ff559a99c7fba"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aff881f545fc88b2c328ff559a99c7fba">&#9670;&#160;</a></span>dealDamage()</h2>
 

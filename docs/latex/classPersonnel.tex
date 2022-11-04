@@ -23,7 +23,9 @@ Inheritance diagram for Personnel\+:\begin{figure}[H]
 void \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classPersonnel}{Personnel}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -61,12 +63,40 @@ Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00003}{3}} of file \m
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}\label{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}} 
+\index{Personnel@{Personnel}!clone@{clone}}
+\index{clone@{clone}!Personnel@{Personnel}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Personnel\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classPersonnel}{Personnel}} object. 
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ Clone of personnel object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
+
+
+
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                          \{}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}\label{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}} 
 \index{Personnel@{Personnel}!dealDamage@{dealDamage}}
 \index{dealDamage@{dealDamage}!Personnel@{Personnel}}

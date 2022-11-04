@@ -97,8 +97,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a37c0bbdd64fd7dfcdd91578784a64775"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroy the <a class="el" href="classStrategy.html">Strategy</a> object.  <a href="classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775">More...</a><br /></td></tr>
 <tr class="separator:a37c0bbdd64fd7dfcdd91578784a64775"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa0692005cb67d0ee2441046f6b302e7d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStrategy.html#aa0692005cb67d0ee2441046f6b302e7d">performStrat</a> (<a class="el" href="classKeyPoint.html">KeyPoint</a> *keyPoint, <a class="el" href="classAlliance.html">Alliance</a> *alliance)=0</td></tr>
-<tr class="memdesc:aa0692005cb67d0ee2441046f6b302e7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This function will perform an spifice strategy based on the specific derived class.  <a href="classStrategy.html#aa0692005cb67d0ee2441046f6b302e7d">More...</a><br /></td></tr>
 <tr class="separator:aa0692005cb67d0ee2441046f6b302e7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a552c2eba68a51d04aab5795508dcb075"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="classStrategy.html">Strategy</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStrategy.html#a552c2eba68a51d04aab5795508dcb075">clone</a> ()=0</td></tr>
+<tr class="separator:a552c2eba68a51d04aab5795508dcb075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -154,6 +155,33 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a552c2eba68a51d04aab5795508dcb075" name="a552c2eba68a51d04aab5795508dcb075"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a552c2eba68a51d04aab5795508dcb075">&#9670;&#160;</a></span>clone()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual <a class="el" href="classStrategy.html">Strategy</a> * Strategy::clone </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classAggressive.html#a43a336fbcafb3a36545dad09de1c2eea">Aggressive</a>, <a class="el" href="classDefensive.html#afad21efc8bf51879f85f9d02e695cfa6">Defensive</a>, and <a class="el" href="classPassive.html#a576243ca77e794959cfcb33e772856a4">Passive</a>.</p>
+
+</div>
+</div>
 <a id="aa0692005cb67d0ee2441046f6b302e7d" name="aa0692005cb67d0ee2441046f6b302e7d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa0692005cb67d0ee2441046f6b302e7d">&#9670;&#160;</a></span>performStrat()</h2>
 
@@ -187,16 +215,6 @@ Protected Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>This function will perform an spifice strategy based on the specific derived class. </p>
-<dl class="section author"><dt>Author</dt><dd>Antwi-Antwi </dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">keyPoint</td><td>A strategy will then be performed at this specific keypoint </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>void The function will return a void </dd></dl>
 
 <p>Implemented in <a class="el" href="classAggressive.html#a84122a24be95be256f9992c21127b0d1">Aggressive</a>, <a class="el" href="classDefensive.html#a4cc4f2f71160bcade2cf2be8ade39903">Defensive</a>, and <a class="el" href="classPassive.html#ab296d4f8ba8ad68dacef1f80e3041aa7">Passive</a>.</p>
 

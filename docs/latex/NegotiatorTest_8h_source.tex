@@ -10,7 +10,7 @@
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00007}00007 }
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00008}00008     \textcolor{comment}{// Tests Negotiator Functionality}}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00010}00010     \textcolor{comment}{// Tests AddOn setEntity()}}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00010}00010     \textcolor{comment}{// Tests Negotiator offerPeace()}}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00011}00011     \textcolor{comment}{// ============ Positive Testing ============}}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00012}00012     \textcolor{comment}{// Test Preconditions Bounds}}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00013}00013     TEST(NegotiatorOfferPeace, PositiveTesting) \{}
@@ -29,37 +29,40 @@
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00026}00026         \}}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00027}00027     \}}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00028}00028 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00029}00029     TEST(NegotiatorSurrender, PositiveTesting) \{}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00030}00030         \mbox{\hyperlink{classAlliance}{Alliance}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();  }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00031}00031         \mbox{\hyperlink{classAlliance}{Alliance}}* b = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();  }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00032}00032         \mbox{\hyperlink{classAlliance}{Alliance}}* c = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}(); }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00033}00033         \mbox{\hyperlink{classAlliance}{Alliance}}* d = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00034}00034         \mbox{\hyperlink{classAlliance}{Alliance}}* e = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00035}00035         \mbox{\hyperlink{classNegotiator}{Negotiator}}* n = \textcolor{keyword}{new} \mbox{\hyperlink{classNegotiator}{Negotiator}}();}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00036}00036         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(a);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00037}00037         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(b);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00038}00038         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(c);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00039}00039         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(d);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00040}00040         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(e);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00041}00041         a-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00042}00042         b-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00043}00043         c-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00044}00044         d-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00045}00045         e-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00046}00046 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00047}00047         a-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00048}00048         EXPECT\_EQ(2, a-\/>getActive());}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00029}00029     \textcolor{comment}{// Tests Negotiator surrender()}}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00030}00030     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00031}00031     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00032}00032     TEST(NegotiatorSurrender, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00033}00033         \mbox{\hyperlink{classAlliance}{Alliance}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();  }
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00034}00034         \mbox{\hyperlink{classAlliance}{Alliance}}* b = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();  }
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00035}00035         \mbox{\hyperlink{classAlliance}{Alliance}}* c = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}(); }
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00036}00036         \mbox{\hyperlink{classAlliance}{Alliance}}* d = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00037}00037         \mbox{\hyperlink{classAlliance}{Alliance}}* e = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00038}00038         \mbox{\hyperlink{classNegotiator}{Negotiator}}* n = \textcolor{keyword}{new} \mbox{\hyperlink{classNegotiator}{Negotiator}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00039}00039         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(a);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00040}00040         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(b);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00041}00041         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(c);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00042}00042         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(d);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00043}00043         n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(e);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00044}00044         a-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00045}00045         b-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00046}00046         c-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00047}00047         d-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00048}00048         e-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00049}00049 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00050}00050         b-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00050}00050         a-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00051}00051         EXPECT\_EQ(2, a-\/>getActive());}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00052}00052 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00053}00053         c-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00053}00053         b-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00054}00054         EXPECT\_EQ(2, a-\/>getActive());}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00055}00055 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00056}00056         d-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00056}00056         c-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
 \DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00057}00057         EXPECT\_EQ(2, a-\/>getActive());}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00058}00058     \}}
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00059}00059 }
-\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00060}00060 \}}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00059}00059         d-\/>\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}}();}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00060}00060         EXPECT\_EQ(2, a-\/>getActive());}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00061}00061     \}}
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{NegotiatorTest_8h_source_l00063}00063 \}}
 
 \end{DoxyCode}

@@ -84,9 +84,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a7a2239276a120f53446cb60b24d61496"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeneral.html#a7a2239276a120f53446cb60b24d61496">initiateStrategy</a> (<a class="el" href="classKeyPoint.html">KeyPoint</a> *keyPoint)</td></tr>
 <tr class="memdesc:a7a2239276a120f53446cb60b24d61496"><td class="mdescLeft">&#160;</td><td class="mdescRight">The function intiates the strategy.  <a href="classGeneral.html#a7a2239276a120f53446cb60b24d61496">More...</a><br /></td></tr>
 <tr class="separator:a7a2239276a120f53446cb60b24d61496"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c73103d464cf8f3ed95deea76d788d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classGeneral.html">General</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeneral.html#a6c73103d464cf8f3ed95deea76d788d5">clone</a> ()</td></tr>
-<tr class="memdesc:a6c73103d464cf8f3ed95deea76d788d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current <a class="el" href="classGeneral.html">General</a>.  <a href="classGeneral.html#a6c73103d464cf8f3ed95deea76d788d5">More...</a><br /></td></tr>
-<tr class="separator:a6c73103d464cf8f3ed95deea76d788d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe8dcb93ddb9b79bd8e75e8c642758ba"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGeneral.html#abe8dcb93ddb9b79bd8e75e8c642758ba">setStrategy</a> (<a class="el" href="classStrategy.html">Strategy</a> *strategy)</td></tr>
 <tr class="memdesc:abe8dcb93ddb9b79bd8e75e8c642758ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the <a class="el" href="classStrategy.html">Strategy</a> object.  <a href="classGeneral.html#abe8dcb93ddb9b79bd8e75e8c642758ba">More...</a><br /></td></tr>
 <tr class="separator:abe8dcb93ddb9b79bd8e75e8c642758ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,35 +140,6 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6c73103d464cf8f3ed95deea76d788d5" name="a6c73103d464cf8f3ed95deea76d788d5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c73103d464cf8f3ed95deea76d788d5">&#9670;&#160;</a></span>clone()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classGeneral.html">General</a> * General::clone </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Instantiates and returns a clone of the current <a class="el" href="classGeneral.html">General</a>. </p>
-<p >Postconditions:</p><ul>
-<li>Returns the clone of the current <a class="el" href="classGeneral.html">General</a></li>
-</ul>
-<dl class="section return"><dt>Returns</dt><dd>General* The <a class="el" href="classGeneral.html">General</a> clone </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="General_8cpp_source.html#l00017">17</a> of file <a class="el" href="General_8cpp_source.html">General.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>                        {</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_class" href="classGeneral.html">General</a>(this-&gt;alliance, this-&gt;strategy);</div>
-<div class="line"><span class="lineno">   19</span>}</div>
-<div class="ttc" id="aclassGeneral_html"><div class="ttname"><a href="classGeneral.html">General</a></div><div class="ttdef"><b>Definition:</b> <a href="General_8h_source.html#l00008">General.h:8</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
 <a id="a4cff7ae050a44bbbd077f4257078291c" name="a4cff7ae050a44bbbd077f4257078291c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4cff7ae050a44bbbd077f4257078291c">&#9670;&#160;</a></span>getAlliance()</h2>
 
@@ -193,10 +161,10 @@ Public Member Functions</h2></td></tr>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>Alliance* The alliance that the general is associated </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="General_8cpp_source.html#l00026">26</a> of file <a class="el" href="General_8cpp_source.html">General.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   26</span>                              {</div>
-<div class="line"><span class="lineno">   27</span>    <span class="keywordflow">return</span> this-&gt;alliance;</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<p class="definition">Definition at line <a class="el" href="General_8cpp_source.html#l00022">22</a> of file <a class="el" href="General_8cpp_source.html">General.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   22</span>                              {</div>
+<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> this-&gt;alliance;</div>
+<div class="line"><span class="lineno">   24</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -232,11 +200,10 @@ Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">    9</span>                                                 {</div>
 <div class="line"><span class="lineno">   10</span>    numDeaths++;</div>
 <div class="line"><span class="lineno">   11</span>    <span class="keywordflow">if</span> (numDeaths &gt;= 5) {</div>
-<div class="line"><span class="lineno">   12</span>        strategy-&gt;<a class="code hl_function" href="classStrategy.html#aa0692005cb67d0ee2441046f6b302e7d">performStrat</a>(keyPoint, this-&gt;alliance);</div>
+<div class="line"><span class="lineno">   12</span>        strategy-&gt;performStrat(keyPoint, this-&gt;alliance);</div>
 <div class="line"><span class="lineno">   13</span>        numDeaths = 0;</div>
 <div class="line"><span class="lineno">   14</span>    }</div>
 <div class="line"><span class="lineno">   15</span>}</div>
-<div class="ttc" id="aclassStrategy_html_aa0692005cb67d0ee2441046f6b302e7d"><div class="ttname"><a href="classStrategy.html#aa0692005cb67d0ee2441046f6b302e7d">Strategy::performStrat</a></div><div class="ttdeci">virtual void performStrat(KeyPoint *keyPoint, Alliance *alliance)=0</div><div class="ttdoc">This function will perform an spifice strategy based on the specific derived class.</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -274,11 +241,11 @@ Public Member Functions</h2></td></tr>
 <dd>
 false if the setting the <a class="el" href="classStrategy.html">Strategy</a> object was unsuccessful </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="General_8cpp_source.html#l00021">21</a> of file <a class="el" href="General_8cpp_source.html">General.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                           {</div>
-<div class="line"><span class="lineno">   22</span>    this-&gt;strategy = strategy;</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   24</span>}</div>
+<p class="definition">Definition at line <a class="el" href="General_8cpp_source.html#l00017">17</a> of file <a class="el" href="General_8cpp_source.html">General.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                           {</div>
+<div class="line"><span class="lineno">   18</span>    this-&gt;strategy = strategy;</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   20</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>

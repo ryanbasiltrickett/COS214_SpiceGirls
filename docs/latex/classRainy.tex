@@ -14,7 +14,9 @@ Inheritance diagram for Rainy\+:\begin{figure}[H]
 std\+::string \mbox{\hyperlink{classRainy_adc4d5851d1e9efd45b153ae0d5ead832}{get\+Weather}} ()
 \begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classRainy_a723a0dce680b6de43aaf6569a2e2a4d8}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
-\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classRainy_a30adf6c86ad1dab6089e90a16b5d0753}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns a clone of the \mbox{\hyperlink{classRainy}{Rainy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -50,6 +52,34 @@ Definition at line \mbox{\hyperlink{Rainy_8cpp_source_l00004}{4}} of file \mbox{
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRainy_a30adf6c86ad1dab6089e90a16b5d0753}\label{classRainy_a30adf6c86ad1dab6089e90a16b5d0753}} 
+\index{Rainy@{Rainy}!clone@{clone}}
+\index{clone@{clone}!Rainy@{Rainy}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Rainy\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns a clone of the \mbox{\hyperlink{classRainy}{Rainy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Weather$\ast$ The clone of the rainy object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
+
+
+
+Definition at line \mbox{\hyperlink{Rainy_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Rainy_8cpp_source}{Rainy.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                       \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classRainy_aae3bc68f19aacf2a863e9524b0b3e302}{Rainy}}();}
+\DoxyCodeLine{00019 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classRainy_adc4d5851d1e9efd45b153ae0d5ead832}\label{classRainy_adc4d5851d1e9efd45b153ae0d5ead832}} 
 \index{Rainy@{Rainy}!getWeather@{getWeather}}
 \index{getWeather@{getWeather}!Rainy@{Rainy}}

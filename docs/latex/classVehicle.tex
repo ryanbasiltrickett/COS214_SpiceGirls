@@ -23,7 +23,9 @@ Inheritance diagram for Vehicle\+:\begin{figure}[H]
 void \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the vehicle object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classVehicle}{Vehicle}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -61,12 +63,40 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00003}{3}} of file \mbo
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicle_a705081c9b479d76cd6113a661d9c8770}\label{classVehicle_a705081c9b479d76cd6113a661d9c8770}} 
+\index{Vehicle@{Vehicle}!clone@{clone}}
+\index{clone@{clone}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Vehicle\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classVehicle}{Vehicle}} object. 
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ The clone of the vehicle object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
+
+
+
+Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                        \{}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}\label{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}} 
 \index{Vehicle@{Vehicle}!dealDamage@{dealDamage}}
 \index{dealDamage@{dealDamage}!Vehicle@{Vehicle}}

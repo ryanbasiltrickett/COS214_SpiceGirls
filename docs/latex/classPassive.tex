@@ -10,7 +10,9 @@ Inheritance diagram for Passive\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classPassive_ab296d4f8ba8ad68dacef1f80e3041aa7}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em This function will perform a \mbox{\hyperlink{classPassive}{Passive}} strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function will perform a \mbox{\hyperlink{classPassive}{Passive}} strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classPassive_a576243ca77e794959cfcb33e772856a4}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classPassive}{Passive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -34,14 +36,40 @@ Definition at line \mbox{\hyperlink{Passive_8cpp_source_l00005}{5}} of file \mbo
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00005                  \{}
-\DoxyCodeLine{00006 }
-\DoxyCodeLine{00007 \}}
+\DoxyCodeLine{00005 \{\}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPassive_a576243ca77e794959cfcb33e772856a4}\label{classPassive_a576243ca77e794959cfcb33e772856a4}} 
+\index{Passive@{Passive}!clone@{clone}}
+\index{clone@{clone}!Passive@{Passive}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ Passive\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classPassive}{Passive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ The clone of the \mbox{\hyperlink{classPassive}{Passive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+
+
+
+Definition at line \mbox{\hyperlink{Passive_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Passive_8cpp_source}{Passive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                          \{}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classPassive}{Passive}}();}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classPassive_ab296d4f8ba8ad68dacef1f80e3041aa7}\label{classPassive_ab296d4f8ba8ad68dacef1f80e3041aa7}} 
 \index{Passive@{Passive}!performStrat@{performStrat}}
 \index{performStrat@{performStrat}!Passive@{Passive}}
@@ -67,19 +95,19 @@ void The function will return void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{Strategy}}.
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
 
 
 
-Definition at line \mbox{\hyperlink{Passive_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Passive_8cpp_source}{Passive.\+cpp}}.
+Definition at line \mbox{\hyperlink{Passive_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Passive_8cpp_source}{Passive.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00009                                                                  \{}
-\DoxyCodeLine{00010     }
-\DoxyCodeLine{00011     \textcolor{keywordtype}{int} randomNumber = (rand() \% 10) + 5;}
-\DoxyCodeLine{00012     keyPoint-\/>\mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{moveEntitiesOutOf}}(alliance, randomNumber);}
-\DoxyCodeLine{00013 \}}
+\DoxyCodeLine{00007                                                                  \{}
+\DoxyCodeLine{00008     }
+\DoxyCodeLine{00009     \textcolor{keywordtype}{int} randomNumber = (rand() \% 10) + 5;}
+\DoxyCodeLine{00010     keyPoint-\/>\mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{moveEntitiesOutOf}}(alliance, randomNumber);}
+\DoxyCodeLine{00011 \}}
 
 \end{DoxyCode}
 

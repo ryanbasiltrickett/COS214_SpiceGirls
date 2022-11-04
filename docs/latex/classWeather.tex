@@ -18,6 +18,8 @@ double \mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{get\+Mul
 virtual void \mbox{\hyperlink{classWeather_af697ebc3ce0db3c7c6bc9b45854114e7}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)=0
 \item 
 virtual std\+::string \mbox{\hyperlink{classWeather_ad0a29227308b87e98808cdff52232df3}{get\+Weather}} ()=0
+\item 
+virtual \mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}{clone}} ()=0
 \end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
@@ -75,6 +77,16 @@ Definition at line \mbox{\hyperlink{Weather_8cpp_source_l00005}{5}} of file \mbo
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}\label{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}} 
+\index{Weather@{Weather}!clone@{clone}}
+\index{clone@{clone}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Weather\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{Cloudy}}, \mbox{\hyperlink{classRainy_a30adf6c86ad1dab6089e90a16b5d0753}{Rainy}}, and \mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{Sunny}}.
+
 \mbox{\Hypertarget{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}\label{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}} 
 \index{Weather@{Weather}!getMultiplier@{getMultiplier}}
 \index{getMultiplier@{getMultiplier}!Weather@{Weather}}

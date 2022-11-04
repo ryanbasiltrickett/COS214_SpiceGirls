@@ -14,7 +14,9 @@ Inheritance diagram for Sunny\+:\begin{figure}[H]
 virtual std\+::string \mbox{\hyperlink{classSunny_a46747aed1564621c150127532b0d84f5}{get\+Weather}} ()
 \begin{DoxyCompactList}\small\item\em Returns string which tells us the weather. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classSunny_a940d045e5bfef4e92233f0269a194815}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
-\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classSunny}{Sunny}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -50,6 +52,34 @@ Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00004}{4}} of file \mbox{
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}\label{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}} 
+\index{Sunny@{Sunny}!clone@{clone}}
+\index{clone@{clone}!Sunny@{Sunny}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Sunny\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classSunny}{Sunny}} object. 
+
+\begin{DoxyReturn}{Returns}
+Weather$\ast$ Returns the clone of the sunny object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
+
+
+
+Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Sunny_8cpp_source}{Sunny.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                       \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny}}();}
+\DoxyCodeLine{00019 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classSunny_a46747aed1564621c150127532b0d84f5}\label{classSunny_a46747aed1564621c150127532b0d84f5}} 
 \index{Sunny@{Sunny}!getWeather@{getWeather}}
 \index{getWeather@{getWeather}!Sunny@{Sunny}}

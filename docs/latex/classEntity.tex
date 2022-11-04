@@ -18,6 +18,8 @@ Inheritance diagram for Entity\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the entity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classEntity_a68e832f69650ee80b83228a038eb66f0}{Entity}} (\mbox{\hyperlink{classType}{Type}} $\ast$type, int health, int damage)
 \begin{DoxyCompactList}\small\item\em Instantiates the entity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{get\+Type}} ()
@@ -39,6 +41,8 @@ void \mbox{\hyperlink{classEntity_aae05f62767eb7438c846300704f9579b}{set\+Damage
 virtual void \mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{take\+Damage}} (int damage)=0
 \item 
 virtual void \mbox{\hyperlink{classEntity_aff881f545fc88b2c328ff559a99c7fba}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)=0
+\item 
+virtual \mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classEntity_af6107392c2c813bedbc7994618b395db}{clone}} ()=0
 \end{DoxyCompactItemize}
 
 
@@ -57,6 +61,10 @@ Definition at line \mbox{\hyperlink{Entity_8h_source_l00013}{13}} of file \mbox{
 \index{Entity@{Entity}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the entity. 
 
 
 
@@ -102,6 +110,16 @@ Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00011}{11}} of file \mbo
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_af6107392c2c813bedbc7994618b395db}\label{classEntity_af6107392c2c813bedbc7994618b395db}} 
+\index{Entity@{Entity}!clone@{clone}}
+\index{clone@{clone}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Entity\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Implemented in \mbox{\hyperlink{classArmour_ab200b02561ecc30c20397913a2bc9511}{Armour}}, \mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{Personnel}}, \mbox{\hyperlink{classPiercing_aeb41b04515f5aad4d9f153b0de332849}{Piercing}}, \mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{Support}}, and \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{Vehicle}}.
+
 \mbox{\Hypertarget{classEntity_aff881f545fc88b2c328ff559a99c7fba}\label{classEntity_aff881f545fc88b2c328ff559a99c7fba}} 
 \index{Entity@{Entity}!dealDamage@{dealDamage}}
 \index{dealDamage@{dealDamage}!Entity@{Entity}}

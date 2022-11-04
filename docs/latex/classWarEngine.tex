@@ -101,13 +101,13 @@ Destrcutor for class responsible for freeing all allocated memory.
 
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00031                      \{}
-\DoxyCodeLine{00032     \textcolor{keyword}{delete} this-\/>state;}
-\DoxyCodeLine{00033 \}}
+\DoxyCodeLine{00021                      \{}
+\DoxyCodeLine{00022     \textcolor{keyword}{delete} this-\/>state;}
+\DoxyCodeLine{00023 \}}
 
 \end{DoxyCode}
 
@@ -128,14 +128,14 @@ Function that returns a reference to the current (and only) instance of the clas
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00026}{26}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00026                                  \{}
-\DoxyCodeLine{00027     \textcolor{keyword}{static} \mbox{\hyperlink{classWarEngine}{WarEngine}} uniqueInstance\_;}
-\DoxyCodeLine{00028     \textcolor{keywordflow}{return} uniqueInstance\_;}
-\DoxyCodeLine{00029 \}}
+\DoxyCodeLine{00016                                  \{}
+\DoxyCodeLine{00017     \textcolor{keyword}{static} \mbox{\hyperlink{classWarEngine}{WarEngine}} uniqueInstance\_;}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} uniqueInstance\_;}
+\DoxyCodeLine{00019 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classWarEngine_a4078fbdcd78fbe1e26e1482e2ba00624}\label{classWarEngine_a4078fbdcd78fbe1e26e1482e2ba00624}} 
@@ -168,14 +168,14 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00021                                               \{}
-\DoxyCodeLine{00022     \textcolor{keyword}{delete} this-\/>state;}
-\DoxyCodeLine{00023     this-\/>state = save;}
-\DoxyCodeLine{00024 \}}
+\DoxyCodeLine{00011                                               \{}
+\DoxyCodeLine{00012     \textcolor{keyword}{delete} this-\/>state;}
+\DoxyCodeLine{00013     this-\/>state = save;}
+\DoxyCodeLine{00014 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classWarEngine_a56aed2dc646f6734e0c2e9ff41776d2e}\label{classWarEngine_a56aed2dc646f6734e0c2e9ff41776d2e}} 
@@ -217,18 +217,8 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00007}{7}} of file \m
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00007                                        \{}
-\DoxyCodeLine{00008     \mbox{\hyperlink{classWarEngineState}{WarEngineState}}* cloneState = \textcolor{keyword}{new} \mbox{\hyperlink{classWarEngineState}{WarEngineState}}();  }
-\DoxyCodeLine{00009     vector<Alliance*> cloneAlliances;}
-\DoxyCodeLine{00010     }
-\DoxyCodeLine{00011     \textcolor{keywordflow}{for}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance : this-\/>state-\/>\mbox{\hyperlink{classWarEngineState_aa88851d165886c80521e93c2d74338d5}{getAlliances}}())\{}
-\DoxyCodeLine{00012         cloneAlliances.push\_back(alliance-\/>clone());}
-\DoxyCodeLine{00013     \}}
-\DoxyCodeLine{00014 }
-\DoxyCodeLine{00015     cloneState-\/>\mbox{\hyperlink{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}{setArea}}(this-\/>state-\/>\mbox{\hyperlink{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}{getArea}}()-\/>clone());}
-\DoxyCodeLine{00016     cloneState-\/>\mbox{\hyperlink{classWarEngineState_a262f8e5974144a644a24ca4edc949562}{setAlliances}}(cloneAlliances);}
-\DoxyCodeLine{00017 }
-\DoxyCodeLine{00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}(cloneState);}
-\DoxyCodeLine{00019 \}}
+\DoxyCodeLine{00008     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}(state-\/>\mbox{\hyperlink{classWarEngineState_a89508b034ce4006ed830f671b525f745}{clone}}());}
+\DoxyCodeLine{00009 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classWarEngine_ad3204f345ee8d36a37e8d47700420825}\label{classWarEngine_ad3204f345ee8d36a37e8d47700420825}} 
@@ -261,13 +251,13 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00045                                                      \{}
-\DoxyCodeLine{00046     state-\/>\mbox{\hyperlink{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}{setArea}}(battleGround);}
-\DoxyCodeLine{00047 \}}
+\DoxyCodeLine{00035                                                      \{}
+\DoxyCodeLine{00036     state-\/>\mbox{\hyperlink{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}{setArea}}(battleGround);}
+\DoxyCodeLine{00037 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}\label{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}} 
@@ -285,19 +275,19 @@ void
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00035                          \{}
-\DoxyCodeLine{00036 }
-\DoxyCodeLine{00037     vector<Alliance*> alliances = this-\/>state-\/>\mbox{\hyperlink{classWarEngineState_aa88851d165886c80521e93c2d74338d5}{getAlliances}}();}
-\DoxyCodeLine{00038 }
-\DoxyCodeLine{00039     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < alliances.size(); j++) \{}
-\DoxyCodeLine{00040         state-\/>\mbox{\hyperlink{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}{getArea}}()-\/>simulateBattle(alliances[j]);}
-\DoxyCodeLine{00041     \}}
-\DoxyCodeLine{00042 }
-\DoxyCodeLine{00043 \}}
+\DoxyCodeLine{00025                          \{}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     vector<Alliance*> alliances = this-\/>state-\/>\mbox{\hyperlink{classWarEngineState_aa88851d165886c80521e93c2d74338d5}{getAlliances}}();}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < alliances.size(); j++) \{}
+\DoxyCodeLine{00030         state-\/>\mbox{\hyperlink{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}{getArea}}()-\/>simulateBattle(alliances[j]);}
+\DoxyCodeLine{00031     \}}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033 \}}
 
 \end{DoxyCode}
 

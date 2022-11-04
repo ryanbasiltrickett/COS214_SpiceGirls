@@ -10,7 +10,9 @@ Inheritance diagram for Aggressive\+:\begin{figure}[H]
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
 
 
@@ -40,6 +42,34 @@ Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00004}{4}} of file \
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}\label{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}} 
+\index{Aggressive@{Aggressive}!clone@{clone}}
+\index{clone@{clone}!Aggressive@{Aggressive}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ Aggressive\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ The clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+
+
+
+Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011                             \{}
+\DoxyCodeLine{00012     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classAggressive}{Aggressive}}();}
+\DoxyCodeLine{00013 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classAggressive_a84122a24be95be256f9992c21127b0d1}\label{classAggressive_a84122a24be95be256f9992c21127b0d1}} 
 \index{Aggressive@{Aggressive}!performStrat@{performStrat}}
 \index{performStrat@{performStrat}!Aggressive@{Aggressive}}
@@ -49,11 +79,6 @@ Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00004}{4}} of file \
 
 
 This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. 
-
-\begin{DoxyAuthor}{Author}
-Antwi-\/\+Antwi
-\end{DoxyAuthor}
-
 
 Preconditions\+:
 \begin{DoxyItemize}
@@ -75,7 +100,7 @@ void The function will return a void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{Strategy}}.
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
 
 
 
