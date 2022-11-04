@@ -26,21 +26,19 @@ string
 Alliance.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp
-Cloudy.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.h
-Rainy.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Rainy.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.h
-Weather.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
-string
--
-
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
 string
 -
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
+Strategy.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
+KeyPoint.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
+Alliance.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+Personnel.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
 Type.h
@@ -70,11 +68,15 @@ General.h
 vector
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Rainy.h
-Weather.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
-KeyPoint.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Negotiator.h
+vector
+-
+Alliance.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+Entity.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
 string
@@ -88,11 +90,19 @@ cstdlib
 string
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
-string
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.cpp
+WarEngineState.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
+Negotiator.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Negotiator.h
+Defensive.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
+Alliance.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+Area.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+vector
 -
-Weather.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Weather.h
-KeyPoint.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
 

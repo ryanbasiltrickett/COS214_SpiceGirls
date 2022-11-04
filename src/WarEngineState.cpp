@@ -1,4 +1,6 @@
 #include "WarEngineState.h"
+#include "Negotiator.h"
+#include "Defensive.h"
 
 WarEngineState::WarEngineState() {
 	area = nullptr;
@@ -31,19 +33,22 @@ vector<Alliance*> WarEngineState::getAlliances() {
 WarEngineState* WarEngineState::clone(){
 
 	WarEngineState* clonedState = new WarEngineState();
+	Area* copiedArea = this->area->clone();
 
-	clonedState->setArea( this->area->clone() );
-
+	Negotiator* negotiator = new Negotiator();
 	for(Alliance* alliance : this->alliances){
 		
 		Alliance* clonedAlliance = alliance->clone();
 
-		clonedState->alliances.push_back(alliance);
-
+		clonedState->alliances.push_back(clonedAlliance);
+		negotiator->addAlliance(clonedAlliance);
+		copiedArea->addGeneral(new General(clonedAlliance, new Defensive()));
 	}
 
-		return clonedState;
-	}
+	clonedState->setArea(copiedArea);
+
+	return clonedState;
+}
 
 WarEngineState::~WarEngineState(){
 
