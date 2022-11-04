@@ -1,8 +1,8 @@
-\hypertarget{classSupport}{}\section{Support Class Reference}
+\hypertarget{classSupport}{}\doxysection{Support Class Reference}
 \label{classSupport}\index{Support@{Support}}
 
 
-\hyperlink{classSupport}{Support} class.  
+\mbox{\hyperlink{classSupport}{Support}} class.  
 
 
 
@@ -15,32 +15,32 @@ Inheritance diagram for Support\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classSupport}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}{Support} (\hyperlink{classType}{Type} $\ast$type, int health=1000, int damage=30)
+\mbox{\hyperlink{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}{Support}} (\mbox{\hyperlink{classType}{Type}} $\ast$type, int health=1000, int damage=30)
 \begin{DoxyCompactList}\small\item\em Instantiates the support. \end{DoxyCompactList}\item 
-void \hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{take\+Damage} (int damage)
+void \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the support object. \end{DoxyCompactList}\item 
-void \hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage} (\hyperlink{classEntity}{Entity} $\ast$entity)
+void \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
 \begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-\hyperlink{classSupport}{Support} class. 
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classSupport}{Support}} class. 
 
-Used to add addtional functionality to \hyperlink{classEntity}{Entity} objects. 
+Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
 
-Definition at line 11 of file Support.\+h.
+Definition at line \mbox{\hyperlink{Support_8h_source_l00011}{11}} of file \mbox{\hyperlink{Support_8h_source}{Support.\+h}}.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}\label{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}} 
 \index{Support@{Support}!Support@{Support}}
 \index{Support@{Support}!Support@{Support}}
-\subsubsection{\texorpdfstring{Support()}{Support()}}
-{\footnotesize\ttfamily Support\+::\+Support (\begin{DoxyParamCaption}\item[{\hyperlink{classType}{Type} $\ast$}]{type,  }\item[{int}]{health = {\ttfamily 1000},  }\item[{int}]{damage = {\ttfamily 30} }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Support()}{Support()}}
+{\footnotesize\ttfamily Support\+::\+Support (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type,  }\item[{int}]{health = {\ttfamily 1000},  }\item[{int}]{damage = {\ttfamily 30} }\end{DoxyParamCaption})}
 
 
 
@@ -57,20 +57,21 @@ Instantiates the support.
 \end{DoxyParams}
 
 
-Definition at line 3 of file Support.\+cpp.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
-\begin{DoxyCode}
-3 : \hyperlink{classEntity_a68e832f69650ee80b83228a038eb66f0}{Entity}(type, health, damage) \{\}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+
 \end{DoxyCode}
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classSupport_a5f2cb243e746adea36b3c78548029ce3}\label{classSupport_a5f2cb243e746adea36b3c78548029ce3}} 
-\index{Support@{Support}!deal\+Damage@{deal\+Damage}}
-\index{deal\+Damage@{deal\+Damage}!Support@{Support}}
-\subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}}
-{\footnotesize\ttfamily void Support\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Support@{Support}!dealDamage@{dealDamage}}
+\index{dealDamage@{dealDamage}!Support@{Support}}
+\doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
+{\footnotesize\ttfamily void Support\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -96,22 +97,23 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classEntity}{Entity}.
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line 5 of file Support.\+cpp.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
-\begin{DoxyCode}
-5                                        \{
-6     entity->takeDamage(\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}());
-7 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005                                        \{}
+\DoxyCodeLine{00006     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00007 \}}
+
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupport_afb159bd8c474ec67ad5d03fa24c38564}\label{classSupport_afb159bd8c474ec67ad5d03fa24c38564}} 
-\index{Support@{Support}!take\+Damage@{take\+Damage}}
-\index{take\+Damage@{take\+Damage}!Support@{Support}}
-\subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
+\index{Support@{Support}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Support@{Support}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void Support\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -138,17 +140,18 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classEntity}{Entity}.
+Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line 9 of file Support.\+cpp.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
-\begin{DoxyCode}
-9                                    \{
-10     this->\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}(this->\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}() - damage);
-11 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009                                    \{}
+\DoxyCodeLine{00010     this-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{00011 \}}
+
 \end{DoxyCode}
 
 

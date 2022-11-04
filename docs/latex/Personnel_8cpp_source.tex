@@ -1,0 +1,16 @@
+\hypertarget{Personnel_8cpp_source}{}\doxysection{Personnel.\+cpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Personnel.h"{}}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00003}\mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{00003}} \mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{Personnel::Personnel}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health, \textcolor{keywordtype}{int} damage): \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00005}\mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{00005}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{Personnel::takeDamage}}(\textcolor{keywordtype}{int} damage) \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00006}00006     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00007}00007 \}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00009}\mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{00009}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{Personnel::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00010}00010     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00011}00011 \}}
+
+\end{DoxyCode}

@@ -1,39 +1,119 @@
-\hypertarget{classWarEngineMemento}{}\section{War\+Engine\+Memento Class Reference}
-\label{classWarEngineMemento}\index{War\+Engine\+Memento@{War\+Engine\+Memento}}
-\subsection*{Public Member Functions}
+\hypertarget{classWarEngineMemento}{}\doxysection{War\+Engine\+Memento Class Reference}
+\label{classWarEngineMemento}\index{WarEngineMemento@{WarEngineMemento}}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classWarEngineMemento_a3aaa1bdc205f48cfdc9e60770d6def47}{War\+Engine\+Memento} (vector$<$ \hyperlink{classAlliance}{Alliance} $\ast$$>$ players, vector$<$ \hyperlink{classArea}{Area} $\ast$$>$ war\+Theatre)
-\begin{DoxyCompactList}\small\item\em Instantiates a \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} class instance, setting the state to the given parameters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\mbox{\hyperlink{classWarEngineMemento_a8fe002f715e66e7790849b5596c56379}{War\+Engine\+Memento}} (\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Instantiates a \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} class instance, setting the state to the given parameters. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarEngineMemento_a31cdd5dcb5163ddb60f72ec3d5d554cd}{set\+State}} (\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$state)
+\begin{DoxyCompactList}\small\item\em Sets the memento\textquotesingle{}s state to the passed in state. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$ \mbox{\hyperlink{classWarEngineMemento_a04c8cc2af6b484cbd9b2adf03dad3bc9}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Returns the memento\textquotesingle{}s state. Postconditions\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\subsection{Detailed Description}
-Class that encapsulates and externalises \hyperlink{classWarEngine}{War\+Engine} State. 
+\doxysubsection{Detailed Description}
+Class that encapsulates and externalises \mbox{\hyperlink{classWarEngine}{War\+Engine}} State. 
 
-Definition at line 4 of file War\+Engine\+Memento.\+h.
-
-
-
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classWarEngineMemento_a3aaa1bdc205f48cfdc9e60770d6def47}\label{classWarEngineMemento_a3aaa1bdc205f48cfdc9e60770d6def47}} 
-\index{War\+Engine\+Memento@{War\+Engine\+Memento}!War\+Engine\+Memento@{War\+Engine\+Memento}}
-\index{War\+Engine\+Memento@{War\+Engine\+Memento}!War\+Engine\+Memento@{War\+Engine\+Memento}}
-\subsubsection{\texorpdfstring{War\+Engine\+Memento()}{WarEngineMemento()}}
-{\footnotesize\ttfamily War\+Engine\+Memento\+::\+War\+Engine\+Memento (\begin{DoxyParamCaption}\item[{vector$<$ \hyperlink{classAlliance}{Alliance} $\ast$$>$}]{players,  }\item[{vector$<$ \hyperlink{classArea}{Area} $\ast$$>$}]{war\+Theatre }\end{DoxyParamCaption})}
+Definition at line \mbox{\hyperlink{WarEngineMemento_8h_source_l00007}{7}} of file \mbox{\hyperlink{WarEngineMemento_8h_source}{War\+Engine\+Memento.\+h}}.
 
 
 
-Instantiates a \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} class instance, setting the state to the given parameters. 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWarEngineMemento_a8fe002f715e66e7790849b5596c56379}\label{classWarEngineMemento_a8fe002f715e66e7790849b5596c56379}} 
+\index{WarEngineMemento@{WarEngineMemento}!WarEngineMemento@{WarEngineMemento}}
+\index{WarEngineMemento@{WarEngineMemento}!WarEngineMemento@{WarEngineMemento}}
+\doxysubsubsection{\texorpdfstring{WarEngineMemento()}{WarEngineMemento()}}
+{\footnotesize\ttfamily War\+Engine\+Memento\+::\+War\+Engine\+Memento (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Instantiates a \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} class instance, setting the state to the given parameters. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em players} & Vector of all active players in the simulation. \\
-\hline
-{\em war\+Theatre} & Vector of all war\+Theatre instances (and keypoints) currently active in simulation. \\
+{\em state} & must be a War\+Engine\+State$\ast$ \\
 \hline
 \end{DoxyParams}
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line \mbox{\hyperlink{WarEngineMemento_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{WarEngineMemento_8cpp_source}{War\+Engine\+Memento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003                                                         \{}
+\DoxyCodeLine{00004     this-\/>state = state;}
+\DoxyCodeLine{00005 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWarEngineMemento_a04c8cc2af6b484cbd9b2adf03dad3bc9}\label{classWarEngineMemento_a04c8cc2af6b484cbd9b2adf03dad3bc9}} 
+\index{WarEngineMemento@{WarEngineMemento}!getState@{getState}}
+\index{getState@{getState}!WarEngineMemento@{WarEngineMemento}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$ War\+Engine\+Memento\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the memento\textquotesingle{}s state. Postconditions\+: 
+
+
+\begin{DoxyItemize}
+\item Returns the state stored in state member variable.
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+War\+Engine\+State$\ast$ 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{WarEngineMemento_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{WarEngineMemento_8cpp_source}{War\+Engine\+Memento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011                                           \{}
+\DoxyCodeLine{00012     \textcolor{keywordflow}{return} state;}
+\DoxyCodeLine{00013 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classWarEngineMemento_a31cdd5dcb5163ddb60f72ec3d5d554cd}\label{classWarEngineMemento_a31cdd5dcb5163ddb60f72ec3d5d554cd}} 
+\index{WarEngineMemento@{WarEngineMemento}!setState@{setState}}
+\index{setState@{setState}!WarEngineMemento@{WarEngineMemento}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void War\+Engine\+Memento\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$}]{state }\end{DoxyParamCaption})}
+
+
+
+Sets the memento\textquotesingle{}s state to the passed in state. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item state must be a War\+Engine\+State$\ast$
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & must be of type War\+Engine\+State$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{WarEngineMemento_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{WarEngineMemento_8cpp_source}{War\+Engine\+Memento.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007                                                     \{}
+\DoxyCodeLine{00008     this-\/>state = state;}
+\DoxyCodeLine{00009 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-War\+Engine\+Memento.\+h\end{DoxyCompactItemize}
+War\+Engine\+Memento.\+h\item 
+War\+Engine\+Memento.\+cpp\end{DoxyCompactItemize}

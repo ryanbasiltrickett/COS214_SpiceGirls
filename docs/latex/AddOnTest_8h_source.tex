@@ -1,0 +1,223 @@
+\hypertarget{AddOnTest_8h_source}{}\doxysection{Add\+On\+Test.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00001}00001 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00002}00002 \textcolor{preprocessor}{\#include "{}AddOn.h"{}}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}Piercing.h"{}}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}Armour.h"{}}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}Personnel.h"{}}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}TerrainType.h"{}}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00007}00007 \textcolor{preprocessor}{\#include "{}gtest/gtest.h"{}}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00009}00009 \textcolor{keyword}{namespace }\{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00011}00011     \textcolor{comment}{// Tests General AddOn Functionality}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00013}00013     \textcolor{comment}{// Tests AddOn setValue()}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00014}00014     \textcolor{comment}{// ============ Precondition Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00015}00015     \textcolor{comment}{// Test Precondition Negative}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00016}00016     TEST(AddOnSetValueTest, TestPreconditionNegative) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00017}00017         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00018}00018         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00019}00019             a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(-\/5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00020}00020             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00021}00021         \} \textcolor{keywordflow}{catch} (std::invalid\_argument\& err) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00022}00022             EXPECT\_EQ(err.what(), std::string(\textcolor{stringliteral}{"{}value must be greater than zero"{}}));}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00023}00023         \} \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00024}00024             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00025}00025         \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00026}00026     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00028}00028     \textcolor{comment}{// Test Precondition Positive}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00029}00029     TEST(AddOnSetValueTest, TestPreconditionPositive) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00030}00030         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00031}00031         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00032}00032         EXPECT\_EQ(5, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00033}00033     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00035}00035     \textcolor{comment}{// Test Precondition Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00036}00036     TEST(AddOnSetValueTest, TestPreconditionBounds) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00037}00037         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00038}00038         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00039}00039             a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(0);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00040}00040             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00041}00041         \} \textcolor{keywordflow}{catch} (std::invalid\_argument\& err) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00042}00042             EXPECT\_EQ(err.what(), std::string(\textcolor{stringliteral}{"{}value must be greater than zero"{}}));}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00043}00043         \} \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00044}00044             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00045}00045         \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00046}00046     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00048}00048     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00049}00049     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00050}00050     TEST(AddOnSetValueTest, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00051}00051         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00052}00052         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00053}00053         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00054}00054         EXPECT\_EQ(5, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00056}00056         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00057}00057         EXPECT\_EQ(10, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00058}00058 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00059}00059         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(20);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00060}00060         EXPECT\_EQ(20, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00062}00062         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(55);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00063}00063         EXPECT\_EQ(55, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00065}00065         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(3);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00066}00066         EXPECT\_EQ(3, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00068}00068         a-\/>\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{setValue}}(100);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00069}00069         EXPECT\_EQ(100, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00070}00070     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00071}00071     }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00072}00072     \textcolor{comment}{// Tests AddOn setEntity()}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00073}00073     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00074}00074     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00075}00075     TEST(AddOnSetEntityTest, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00076}00076         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00077}00077         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00078}00078         \mbox{\hyperlink{classPersonnel}{Personnel}}* p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10);  }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00079}00079         a-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(p);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00080}00080         EXPECT\_EQ(p, a-\/>\mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{getEntity}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00082}00082         \mbox{\hyperlink{classPersonnel}{Personnel}}* m = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10);  }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00083}00083         a-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(m);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00084}00084         EXPECT\_EQ(m, a-\/>\mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{getEntity}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00085}00085 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00086}00086         \mbox{\hyperlink{classPersonnel}{Personnel}}* n = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10);  }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00087}00087         a-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(n);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00088}00088         EXPECT\_EQ(n, a-\/>\mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{getEntity}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00090}00090     }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00091}00091     \textcolor{comment}{// Tests Armour AddOn Functionality}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00093}00093     \textcolor{comment}{// Tests Armour takeDamage()}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00094}00094     \textcolor{comment}{// ============ Precondition Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00095}00095     \textcolor{comment}{// Test Precondition Negative}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00096}00096     TEST(ArmourTakeDamageTest, TestPreconditionNegative) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00097}00097         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00098}00098         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00099}00099             a-\/>\mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{takeDamage}}(-\/5);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00100}00100             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00101}00101         \} \textcolor{keywordflow}{catch} (std::invalid\_argument\& err) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00102}00102             EXPECT\_EQ(err.what(), std::string(\textcolor{stringliteral}{"{}damage must be greater than zero"{}}));}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00103}00103         \} \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00104}00104             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00105}00105         \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00106}00106     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00108}00108     \textcolor{comment}{// Test Precondition Positive}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00109}00109     TEST(ArmourTakeDamageTest, TestPreconditionPositive) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00110}00110         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00111}00111         \mbox{\hyperlink{classPersonnel}{Personnel}}* p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10); }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00112}00112         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00113}00113         a-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(p);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00114}00114         a-\/>\mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00115}00115         EXPECT\_EQ(0, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00116}00116         EXPECT\_EQ(100, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00117}00117     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00118}00118 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00119}00119     \textcolor{comment}{// Test Precondition Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00120}00120     TEST(ArmourTakeDamageTest, TestPreconditionBounds) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00121}00121         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00122}00122         \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00123}00123             a-\/>\mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{takeDamage}}(0);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00124}00124             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00125}00125         \} \textcolor{keywordflow}{catch} (std::invalid\_argument\& err) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00126}00126             EXPECT\_EQ(err.what(), std::string(\textcolor{stringliteral}{"{}damage must be greater than zero"{}}));}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00127}00127         \} \textcolor{keywordflow}{catch} (...) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00128}00128             FAIL();}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00129}00129         \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00130}00130     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00131}00131 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00132}00132     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00133}00133     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00134}00134     TEST(ArmourTakeDamageTest, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00135}00135         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(20);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00136}00136         \mbox{\hyperlink{classPersonnel}{Personnel}}* p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10); }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00137}00137         a-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(p);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00138}00138         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00139}00139         a-\/>\mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00140}00140         EXPECT\_EQ(10, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00141}00141         EXPECT\_EQ(100, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00142}00142         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00143}00143         a-\/>\mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00144}00144         EXPECT\_EQ(0, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00145}00145         EXPECT\_EQ(100, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00146}00146         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00147}00147         a-\/>\mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00148}00148         EXPECT\_EQ(0, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00149}00149         EXPECT\_EQ(90, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00150}00150     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00151}00151     }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00152}00152     \textcolor{comment}{// Tests Armour dealDamage()}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00153}00153     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00154}00154     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00155}00155     TEST(ArmourDealDamageTest, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00156}00156         \mbox{\hyperlink{classArmour}{Armour}}* a = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00157}00157         \mbox{\hyperlink{classPersonnel}{Personnel}}* p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10);  }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00158}00158         a-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(p);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00159}00159         \mbox{\hyperlink{classPersonnel}{Personnel}}* x = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00160}00160         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00161}00161         a-\/>\mbox{\hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{dealDamage}}(x);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00162}00162         EXPECT\_EQ(10, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00163}00163         EXPECT\_EQ(90, x-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00164}00164         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00165}00165         a-\/>\mbox{\hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{dealDamage}}(x);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00166}00166         EXPECT\_EQ(10, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00167}00167         EXPECT\_EQ(80, x-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00168}00168         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00169}00169         a-\/>\mbox{\hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{dealDamage}}(x);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00170}00170         EXPECT\_EQ(10, a-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00171}00171         EXPECT\_EQ(70, x-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00172}00172     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00173}00173 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00174}00174     \textcolor{comment}{// Tests Piercing AddOn Functionality}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00175}00175     }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00176}00176     \textcolor{comment}{// Tests Piercing takeDamage()}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00177}00177     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00178}00178     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00179}00179     TEST(PiercingTakeDamageTest, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00180}00180         \mbox{\hyperlink{classPiercing}{Piercing}}* pi = \textcolor{keyword}{new} \mbox{\hyperlink{classPiercing}{Piercing}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00181}00181         \mbox{\hyperlink{classPersonnel}{Personnel}}* p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10); }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00182}00182         pi-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(p);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00183}00183 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00184}00184         pi-\/>\mbox{\hyperlink{classPiercing_a103634469a43e1662bd5e07e66901667}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00185}00185         EXPECT\_EQ(10, pi-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00186}00186         EXPECT\_EQ(90, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00187}00187         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00188}00188         pi-\/>\mbox{\hyperlink{classPiercing_a103634469a43e1662bd5e07e66901667}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00189}00189         EXPECT\_EQ(10, pi-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00190}00190         EXPECT\_EQ(80, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00191}00191 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00192}00192         pi-\/>\mbox{\hyperlink{classPiercing_a103634469a43e1662bd5e07e66901667}{takeDamage}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00193}00193         EXPECT\_EQ(10, pi-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00194}00194         EXPECT\_EQ(70, p-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00195}00195     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00196}00196     }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00197}00197     \textcolor{comment}{// Tests Piercing dealDamage()}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00198}00198     \textcolor{comment}{// ============ Positive Testing ============}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00199}00199     \textcolor{comment}{// Test Preconditions Bounds}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00200}00200     TEST(PiercingDealDamageTest, PositiveTesting) \{}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00201}00201         \mbox{\hyperlink{classPiercing}{Piercing}}* pi = \textcolor{keyword}{new} \mbox{\hyperlink{classPiercing}{Piercing}}(10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00202}00202         \mbox{\hyperlink{classPersonnel}{Personnel}}* p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10); }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00203}00203         pi-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(p);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00204}00204         \mbox{\hyperlink{classPersonnel}{Personnel}}* x = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(\textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}}(), 100, 10);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00205}00205 }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00206}00206         pi-\/>\mbox{\hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{dealDamage}}(x);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00207}00207         EXPECT\_EQ(10, pi-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00208}00208         EXPECT\_EQ(80, x-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00209}00209         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00210}00210         pi-\/>\mbox{\hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{dealDamage}}(x);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00211}00211         EXPECT\_EQ(10, pi-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00212}00212         EXPECT\_EQ(60, x-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00213}00213         }
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00214}00214         pi-\/>\mbox{\hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{dealDamage}}(x);}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00215}00215         EXPECT\_EQ(10, pi-\/>\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{getValue}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00216}00216         EXPECT\_EQ(40, x-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}());}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00217}00217     \}}
+\DoxyCodeLine{\Hypertarget{AddOnTest_8h_source_l00218}00218 \}}
+
+\end{DoxyCode}

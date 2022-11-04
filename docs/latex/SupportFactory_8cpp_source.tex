@@ -2,20 +2,23 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}SupportFactory.h"{}}}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00003}\mbox{\hyperlink{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}{00003}} \mbox{\hyperlink{classSupportFactory_a9f243fc85549d8da34aa0b7476905466}{SupportFactory::SupportFactory}}() \{}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement SupportFactory::SupportFactory}}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00006}00006 \}}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00008}\mbox{\hyperlink{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}{00008}} \mbox{\hyperlink{classSupport}{Support}}* \mbox{\hyperlink{classSupportFactory_ae78e2f65e24d2ae2f73032bc465b879b}{SupportFactory::createEntity}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00009}00009     \textcolor{comment}{// TODO -\/ implement SupportFactory::createEntity}}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00010}00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00011}00011 \}}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00012}00012 }
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00013}\mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{00013}} \mbox{\hyperlink{classFactory}{Factory}}* \mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{SupportFactory::clone}}() \{}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00014}00014     \textcolor{comment}{// TODO -\/ implement SupportFactory::clone}}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00015}00015     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00016}00016 \}}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Support.h"{}}}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00004}\mbox{\hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{00004}} \mbox{\hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{SupportFactory::SupportFactory}}(\mbox{\hyperlink{classType}{Type}}* type, \mbox{\hyperlink{classAddOn}{AddOn}}* addOn): \mbox{\hyperlink{classFactory}{Factory}}(type, addOn) \{\}}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00006}\mbox{\hyperlink{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}{00006}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}{SupportFactory::createEntity}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00007}00007     \mbox{\hyperlink{classSupport}{Support}}* s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(\mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}}()-\/>\mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}}());}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00008}00008     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}}() != NULL) \{}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00009}00009         \mbox{\hyperlink{classAddOn}{AddOn}}* personnelAddOn = \mbox{\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}}()-\/>clone();}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00010}00010         personnelAddOn-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(s);}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00011}00011         \textcolor{keywordflow}{return} personnelAddOn;}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00012}00012     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00013}00013         \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00014}00014     \}}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00017}\mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{00017}} \mbox{\hyperlink{classFactory}{Factory}}* \mbox{\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{SupportFactory::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSupportFactory}{SupportFactory}}(\mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}}(), \mbox{\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}}());}
+\DoxyCodeLine{\Hypertarget{SupportFactory_8cpp_source_l00019}00019 \}}
 
 \end{DoxyCode}

@@ -3,16 +3,27 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef STRATEGY\_H}}
 \DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00002}00002 \textcolor{preprocessor}{\#define STRATEGY\_H}}
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00003}00003 }
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00004}\mbox{\hyperlink{classStrategy}{00004}} \textcolor{keyword}{class }\mbox{\hyperlink{classStrategy}{Strategy}} : \mbox{\hyperlink{classGeneral}{General}} \{}
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <ctime>}}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00005}00005 \textcolor{preprocessor}{\#include <cstdlib>}}
 \DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00006}00006 }
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00007}00007 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00008}00008     \mbox{\hyperlink{classStrategy}{Strategy}}();}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00007}00007 \textcolor{keyword}{class }\mbox{\hyperlink{classKeyPoint}{KeyPoint}};}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00008}00008 \textcolor{keyword}{class }\mbox{\hyperlink{classAlliance}{Alliance}};}
 \DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00010}00010     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} performStrat(Keypoint* keyPoint) = 0;}
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00011}00011 \};}
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00012}00012 }
-\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00013}00013 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00010}\mbox{\hyperlink{classStrategy}{00010}} \textcolor{keyword}{class }\mbox{\hyperlink{classStrategy}{Strategy}} \{}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00012}00012 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00013}00013     std::string strategy;}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00015}00015 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00020}00020     \mbox{\hyperlink{classStrategy_a2021a15bbc4f0d13f7b92f8933db2235}{Strategy}}();}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00021}00021 }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00026}00026     \mbox{\hyperlink{classStrategy_a37c0bbdd64fd7dfcdd91578784a64775}{\string~Strategy}}();}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00027}00027     }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00034}\mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{00034}}     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} \mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{performStrat}}(\mbox{\hyperlink{classKeyPoint}{KeyPoint}}* keyPoint, \mbox{\hyperlink{classAlliance}{Alliance}}* alliance) = 0;}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00035}00035 }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00036}00036 \};}
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00037}00037 }
+\DoxyCodeLine{\Hypertarget{Strategy_8h_source_l00038}00038 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

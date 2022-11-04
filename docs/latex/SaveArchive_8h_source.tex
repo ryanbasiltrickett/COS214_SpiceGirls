@@ -3,26 +3,29 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef SAVEARCHIVE\_H}}
 \DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00002}00002 \textcolor{preprocessor}{\#define SAVEARCHIVE\_H}}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00003}00003 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00004}\mbox{\hyperlink{classSaveArchive}{00004}} \textcolor{keyword}{class }\mbox{\hyperlink{classSaveArchive}{SaveArchive}} \{}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00005}00005 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00006}00006 \textcolor{keyword}{private}:}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00007}00007     vector<WarEngineMemento*> saveList;}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00008}00008 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00009}00009 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00010}00010     \mbox{\hyperlink{classSaveArchive}{SaveArchive}}();}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00011}00011 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00012}00012     \textcolor{keywordtype}{void} addNewSave(\mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* newSave);}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00013}00013 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00014}00014     \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* getLastSave();}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00003}00003 \textcolor{preprocessor}{\#include <unordered\_map>}}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00004}00004 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}WarEngineMemento.h"{}}}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00011}\mbox{\hyperlink{classSaveArchive}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classSaveArchive}{SaveArchive}} \{}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00013}00013 \textcolor{keyword}{private}:}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00014}00014     std::unordered\_map<std::string, WarEngineMemento*> saveList;}
 \DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00015}00015 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00016}00016     \textcolor{keywordtype}{void} getSave(\textcolor{keywordtype}{string} timestamp);}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00017}00017 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00018}00018     \textcolor{keywordtype}{boolean} clearSaveList();}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00019}00019 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00020}00020     \textcolor{keywordtype}{boolean} deleteSave(\textcolor{keywordtype}{string} timestamp);}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00021}00021 \};}
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00022}00022 }
-\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00023}00023 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00016}00016 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00020}00020     \mbox{\hyperlink{classSaveArchive_a676252cf830fbe7b2a2b37ce2371a859}{SaveArchive}}();}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00021}00021     }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00035}00035     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSaveArchive_ab6927785f5b7f07b079a424773796d49}{addNewSave}}(std::string newSaveName, \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* newSave);}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00047}00047     \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* \mbox{\hyperlink{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}{getLastSave}}();}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00063}00063     \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* \mbox{\hyperlink{classSaveArchive_ad65ce77b8a9027b4e4a5d67ca1f06877}{getSave}}(std::string name);}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00064}00064     }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00072}00072     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSaveArchive_a70c8ccaf0ac543dd8d4474f2f6383b35}{clearSaveList}}();}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00087}00087     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSaveArchive_a416beb211cd59fed04df7347ebe41f36}{deleteSave}}(std::string name);}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00088}00088 \};}
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{SaveArchive_8h_source_l00090}00090 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

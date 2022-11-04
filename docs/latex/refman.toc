@@ -1,0 +1,395 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}On Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Detailed Description}{8}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Constructor \& Destructor Documentation}{8}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}AddOn()}{8}{subsubsection.4.1.2.1}%
+\contentsline {subsection}{\numberline {4.1.3}Member Function Documentation}{8}{subsection.4.1.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.1}clone()}{8}{subsubsection.4.1.3.1}%
+\contentsline {subsubsection}{\numberline {4.1.3.2}dealDamage()}{8}{subsubsection.4.1.3.2}%
+\contentsline {subsubsection}{\numberline {4.1.3.3}getEntity()}{9}{subsubsection.4.1.3.3}%
+\contentsline {subsubsection}{\numberline {4.1.3.4}getValue()}{9}{subsubsection.4.1.3.4}%
+\contentsline {subsubsection}{\numberline {4.1.3.5}setEntity()}{9}{subsubsection.4.1.3.5}%
+\contentsline {subsubsection}{\numberline {4.1.3.6}setValue()}{10}{subsubsection.4.1.3.6}%
+\contentsline {subsubsection}{\numberline {4.1.3.7}takeDamage()}{10}{subsubsection.4.1.3.7}%
+\contentsline {subsection}{\numberline {4.1.4}Member Data Documentation}{11}{subsection.4.1.4}%
+\contentsline {subsubsection}{\numberline {4.1.4.1}entity}{11}{subsubsection.4.1.4.1}%
+\contentsline {subsubsection}{\numberline {4.1.4.2}value}{11}{subsubsection.4.1.4.2}%
+\contentsline {section}{\numberline {4.2}Aerial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Class Reference}{11}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Detailed Description}{12}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Constructor \& Destructor Documentation}{12}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}AerialType()}{12}{subsubsection.4.2.2.1}%
+\contentsline {subsection}{\numberline {4.2.3}Member Function Documentation}{12}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}clone()}{12}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}getTypeDesc()}{12}{subsubsection.4.2.3.2}%
+\contentsline {section}{\numberline {4.3}Aggressive Class Reference}{13}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Detailed Description}{13}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Constructor \& Destructor Documentation}{13}{subsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.2.1}Aggressive()}{13}{subsubsection.4.3.2.1}%
+\contentsline {subsection}{\numberline {4.3.3}Member Function Documentation}{13}{subsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.3.1}performStrat()}{13}{subsubsection.4.3.3.1}%
+\contentsline {section}{\numberline {4.4}Alliance Class Reference}{14}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Detailed Description}{15}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Constructor \& Destructor Documentation}{15}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Alliance()}{15}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}$\sim $Alliance()}{15}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Member Function Documentation}{15}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}addCountry()}{15}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}addFactory()}{16}{subsubsection.4.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.4.3.3}addReserveEntity()}{16}{subsubsection.4.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.4}clone()}{17}{subsubsection.4.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.4.3.5}considerPeace()}{18}{subsubsection.4.4.3.5}%
+\contentsline {subsubsection}{\numberline {4.4.3.6}getActive()}{18}{subsubsection.4.4.3.6}%
+\contentsline {subsubsection}{\numberline {4.4.3.7}getID()}{18}{subsubsection.4.4.3.7}%
+\contentsline {subsubsection}{\numberline {4.4.3.8}getReserveEntities()}{19}{subsubsection.4.4.3.8}%
+\contentsline {subsubsection}{\numberline {4.4.3.9}offerPeace()}{19}{subsubsection.4.4.3.9}%
+\contentsline {subsubsection}{\numberline {4.4.3.10}setActiveStatus()}{20}{subsubsection.4.4.3.10}%
+\contentsline {subsubsection}{\numberline {4.4.3.11}setNegotiator()}{20}{subsubsection.4.4.3.11}%
+\contentsline {subsubsection}{\numberline {4.4.3.12}surrender()}{21}{subsubsection.4.4.3.12}%
+\contentsline {section}{\numberline {4.5}Aquatic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Class Reference}{21}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Detailed Description}{22}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}Constructor \& Destructor Documentation}{22}{subsection.4.5.2}%
+\contentsline {subsubsection}{\numberline {4.5.2.1}AquaticType()}{22}{subsubsection.4.5.2.1}%
+\contentsline {subsection}{\numberline {4.5.3}Member Function Documentation}{22}{subsection.4.5.3}%
+\contentsline {subsubsection}{\numberline {4.5.3.1}clone()}{22}{subsubsection.4.5.3.1}%
+\contentsline {subsubsection}{\numberline {4.5.3.2}getTypeDesc()}{22}{subsubsection.4.5.3.2}%
+\contentsline {section}{\numberline {4.6}Area Class Reference}{23}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Detailed Description}{23}{subsection.4.6.1}%
+\contentsline {subsection}{\numberline {4.6.2}Constructor \& Destructor Documentation}{23}{subsection.4.6.2}%
+\contentsline {subsubsection}{\numberline {4.6.2.1}Area()}{23}{subsubsection.4.6.2.1}%
+\contentsline {subsubsection}{\numberline {4.6.2.2}$\sim $Area()}{23}{subsubsection.4.6.2.2}%
+\contentsline {subsection}{\numberline {4.6.3}Member Function Documentation}{24}{subsection.4.6.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.1}clone()}{24}{subsubsection.4.6.3.1}%
+\contentsline {subsubsection}{\numberline {4.6.3.2}getAreaName()}{24}{subsubsection.4.6.3.2}%
+\contentsline {subsubsection}{\numberline {4.6.3.3}isKeyPoint()}{24}{subsubsection.4.6.3.3}%
+\contentsline {subsubsection}{\numberline {4.6.3.4}simulateBattle()}{24}{subsubsection.4.6.3.4}%
+\contentsline {section}{\numberline {4.7}Armour Class Reference}{25}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{25}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{25}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}Armour()}{25}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{26}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}clone()}{26}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}dealDamage()}{26}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}takeDamage()}{27}{subsubsection.4.7.3.3}%
+\contentsline {section}{\numberline {4.8}Cloudy Class Reference}{28}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Detailed Description}{28}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Constructor \& Destructor Documentation}{28}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}Cloudy()}{28}{subsubsection.4.8.2.1}%
+\contentsline {subsection}{\numberline {4.8.3}Member Function Documentation}{28}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}getWeather()}{29}{subsubsection.4.8.3.1}%
+\contentsline {subsubsection}{\numberline {4.8.3.2}handleChange()}{29}{subsubsection.4.8.3.2}%
+\contentsline {section}{\numberline {4.9}Country Class Reference}{30}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Detailed Description}{30}{subsection.4.9.1}%
+\contentsline {subsection}{\numberline {4.9.2}Constructor \& Destructor Documentation}{30}{subsection.4.9.2}%
+\contentsline {subsubsection}{\numberline {4.9.2.1}Country()}{30}{subsubsection.4.9.2.1}%
+\contentsline {subsection}{\numberline {4.9.3}Member Function Documentation}{30}{subsection.4.9.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.1}clone()}{31}{subsubsection.4.9.3.1}%
+\contentsline {subsubsection}{\numberline {4.9.3.2}getID()}{31}{subsubsection.4.9.3.2}%
+\contentsline {subsubsection}{\numberline {4.9.3.3}getName()}{32}{subsubsection.4.9.3.3}%
+\contentsline {subsubsection}{\numberline {4.9.3.4}setID()}{32}{subsubsection.4.9.3.4}%
+\contentsline {subsubsection}{\numberline {4.9.3.5}setName()}{32}{subsubsection.4.9.3.5}%
+\contentsline {section}{\numberline {4.10}Defensive Class Reference}{33}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Detailed Description}{33}{subsection.4.10.1}%
+\contentsline {subsection}{\numberline {4.10.2}Constructor \& Destructor Documentation}{34}{subsection.4.10.2}%
+\contentsline {subsubsection}{\numberline {4.10.2.1}Defensive()}{34}{subsubsection.4.10.2.1}%
+\contentsline {subsection}{\numberline {4.10.3}Member Function Documentation}{34}{subsection.4.10.3}%
+\contentsline {subsubsection}{\numberline {4.10.3.1}performStrat()}{34}{subsubsection.4.10.3.1}%
+\contentsline {section}{\numberline {4.11}Entity Class Reference}{35}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Detailed Description}{35}{subsection.4.11.1}%
+\contentsline {subsection}{\numberline {4.11.2}Constructor \& Destructor Documentation}{35}{subsection.4.11.2}%
+\contentsline {subsubsection}{\numberline {4.11.2.1}Entity()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{36}{subsubsection.4.11.2.1}%
+\contentsline {subsubsection}{\numberline {4.11.2.2}Entity()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{36}{subsubsection.4.11.2.2}%
+\contentsline {subsection}{\numberline {4.11.3}Member Function Documentation}{36}{subsection.4.11.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.1}dealDamage()}{36}{subsubsection.4.11.3.1}%
+\contentsline {subsubsection}{\numberline {4.11.3.2}getAlliance()}{36}{subsubsection.4.11.3.2}%
+\contentsline {subsubsection}{\numberline {4.11.3.3}getDamage()}{37}{subsubsection.4.11.3.3}%
+\contentsline {subsubsection}{\numberline {4.11.3.4}getHealth()}{37}{subsubsection.4.11.3.4}%
+\contentsline {subsubsection}{\numberline {4.11.3.5}getType()}{38}{subsubsection.4.11.3.5}%
+\contentsline {subsubsection}{\numberline {4.11.3.6}setAlliance()}{38}{subsubsection.4.11.3.6}%
+\contentsline {subsubsection}{\numberline {4.11.3.7}setDamage()}{39}{subsubsection.4.11.3.7}%
+\contentsline {subsubsection}{\numberline {4.11.3.8}setHealth()}{39}{subsubsection.4.11.3.8}%
+\contentsline {subsubsection}{\numberline {4.11.3.9}setType()}{40}{subsubsection.4.11.3.9}%
+\contentsline {subsubsection}{\numberline {4.11.3.10}takeDamage()}{40}{subsubsection.4.11.3.10}%
+\contentsline {section}{\numberline {4.12}Factory Class Reference}{41}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Detailed Description}{41}{subsection.4.12.1}%
+\contentsline {subsection}{\numberline {4.12.2}Constructor \& Destructor Documentation}{41}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}Factory()}{41}{subsubsection.4.12.2.1}%
+\contentsline {subsubsection}{\numberline {4.12.2.2}$\sim $Factory()}{42}{subsubsection.4.12.2.2}%
+\contentsline {subsection}{\numberline {4.12.3}Member Function Documentation}{42}{subsection.4.12.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.1}clone()}{42}{subsubsection.4.12.3.1}%
+\contentsline {subsubsection}{\numberline {4.12.3.2}createEntity()}{42}{subsubsection.4.12.3.2}%
+\contentsline {subsubsection}{\numberline {4.12.3.3}getAddOn()}{43}{subsubsection.4.12.3.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.4}getType()}{43}{subsubsection.4.12.3.4}%
+\contentsline {subsubsection}{\numberline {4.12.3.5}setAddOns()}{43}{subsubsection.4.12.3.5}%
+\contentsline {subsubsection}{\numberline {4.12.3.6}setType()}{44}{subsubsection.4.12.3.6}%
+\contentsline {section}{\numberline {4.13}General Class Reference}{45}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Detailed Description}{45}{subsection.4.13.1}%
+\contentsline {subsection}{\numberline {4.13.2}Constructor \& Destructor Documentation}{45}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}General()}{45}{subsubsection.4.13.2.1}%
+\contentsline {subsection}{\numberline {4.13.3}Member Function Documentation}{45}{subsection.4.13.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.1}clone()}{46}{subsubsection.4.13.3.1}%
+\contentsline {subsubsection}{\numberline {4.13.3.2}getAlliance()}{46}{subsubsection.4.13.3.2}%
+\contentsline {subsubsection}{\numberline {4.13.3.3}initiateStrategy()}{46}{subsubsection.4.13.3.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.4}setStrategy()}{47}{subsubsection.4.13.3.4}%
+\contentsline {section}{\numberline {4.14}Key\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point Class Reference}{48}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Detailed Description}{48}{subsection.4.14.1}%
+\contentsline {subsection}{\numberline {4.14.2}Constructor \& Destructor Documentation}{49}{subsection.4.14.2}%
+\contentsline {subsubsection}{\numberline {4.14.2.1}KeyPoint()}{49}{subsubsection.4.14.2.1}%
+\contentsline {subsubsection}{\numberline {4.14.2.2}$\sim $KeyPoint()}{49}{subsubsection.4.14.2.2}%
+\contentsline {subsection}{\numberline {4.14.3}Member Function Documentation}{49}{subsection.4.14.3}%
+\contentsline {subsubsection}{\numberline {4.14.3.1}addEntity()}{49}{subsubsection.4.14.3.1}%
+\contentsline {subsubsection}{\numberline {4.14.3.2}addGeneral()}{50}{subsubsection.4.14.3.2}%
+\contentsline {subsubsection}{\numberline {4.14.3.3}changeWeather()}{50}{subsubsection.4.14.3.3}%
+\contentsline {subsubsection}{\numberline {4.14.3.4}clearBattlefield()}{51}{subsubsection.4.14.3.4}%
+\contentsline {subsubsection}{\numberline {4.14.3.5}clone()}{51}{subsubsection.4.14.3.5}%
+\contentsline {subsubsection}{\numberline {4.14.3.6}getWeather()}{52}{subsubsection.4.14.3.6}%
+\contentsline {subsubsection}{\numberline {4.14.3.7}isKeyPoint()}{52}{subsubsection.4.14.3.7}%
+\contentsline {subsubsection}{\numberline {4.14.3.8}moveEntitiesInto()}{52}{subsubsection.4.14.3.8}%
+\contentsline {subsubsection}{\numberline {4.14.3.9}moveEntitiesOutOf()}{53}{subsubsection.4.14.3.9}%
+\contentsline {subsubsection}{\numberline {4.14.3.10}removeGeneral()}{54}{subsubsection.4.14.3.10}%
+\contentsline {subsubsection}{\numberline {4.14.3.11}setWeather()}{54}{subsubsection.4.14.3.11}%
+\contentsline {subsubsection}{\numberline {4.14.3.12}simulateBattle()}{55}{subsubsection.4.14.3.12}%
+\contentsline {section}{\numberline {4.15}Negotiator Class Reference}{55}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Detailed Description}{56}{subsection.4.15.1}%
+\contentsline {subsection}{\numberline {4.15.2}Constructor \& Destructor Documentation}{56}{subsection.4.15.2}%
+\contentsline {subsubsection}{\numberline {4.15.2.1}Negotiator()}{56}{subsubsection.4.15.2.1}%
+\contentsline {subsubsection}{\numberline {4.15.2.2}$\sim $Negotiator()}{56}{subsubsection.4.15.2.2}%
+\contentsline {subsection}{\numberline {4.15.3}Member Function Documentation}{56}{subsection.4.15.3}%
+\contentsline {subsubsection}{\numberline {4.15.3.1}addAlliance()}{57}{subsubsection.4.15.3.1}%
+\contentsline {subsubsection}{\numberline {4.15.3.2}clone()}{57}{subsubsection.4.15.3.2}%
+\contentsline {subsubsection}{\numberline {4.15.3.3}getNumAlliances()}{58}{subsubsection.4.15.3.3}%
+\contentsline {subsubsection}{\numberline {4.15.3.4}removeAlliance()}{58}{subsubsection.4.15.3.4}%
+\contentsline {subsubsection}{\numberline {4.15.3.5}sendPeace()}{58}{subsubsection.4.15.3.5}%
+\contentsline {section}{\numberline {4.16}Passive Class Reference}{59}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Detailed Description}{59}{subsection.4.16.1}%
+\contentsline {subsection}{\numberline {4.16.2}Constructor \& Destructor Documentation}{60}{subsection.4.16.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.1}Passive()}{60}{subsubsection.4.16.2.1}%
+\contentsline {subsection}{\numberline {4.16.3}Member Function Documentation}{60}{subsection.4.16.3}%
+\contentsline {subsubsection}{\numberline {4.16.3.1}performStrat()}{60}{subsubsection.4.16.3.1}%
+\contentsline {section}{\numberline {4.17}Personnel Class Reference}{61}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Detailed Description}{61}{subsection.4.17.1}%
+\contentsline {subsection}{\numberline {4.17.2}Constructor \& Destructor Documentation}{61}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}Personnel()}{61}{subsubsection.4.17.2.1}%
+\contentsline {subsection}{\numberline {4.17.3}Member Function Documentation}{62}{subsection.4.17.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.1}dealDamage()}{62}{subsubsection.4.17.3.1}%
+\contentsline {subsubsection}{\numberline {4.17.3.2}takeDamage()}{62}{subsubsection.4.17.3.2}%
+\contentsline {section}{\numberline {4.18}Personnel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{63}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{63}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}Constructor \& Destructor Documentation}{64}{subsection.4.18.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.1}PersonnelFactory()}{64}{subsubsection.4.18.2.1}%
+\contentsline {subsection}{\numberline {4.18.3}Member Function Documentation}{64}{subsection.4.18.3}%
+\contentsline {subsubsection}{\numberline {4.18.3.1}clone()}{64}{subsubsection.4.18.3.1}%
+\contentsline {subsubsection}{\numberline {4.18.3.2}createEntity()}{65}{subsubsection.4.18.3.2}%
+\contentsline {section}{\numberline {4.19}Piercing Class Reference}{65}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{66}{subsection.4.19.1}%
+\contentsline {subsection}{\numberline {4.19.2}Constructor \& Destructor Documentation}{66}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}Piercing()}{66}{subsubsection.4.19.2.1}%
+\contentsline {subsection}{\numberline {4.19.3}Member Function Documentation}{66}{subsection.4.19.3}%
+\contentsline {subsubsection}{\numberline {4.19.3.1}clone()}{66}{subsubsection.4.19.3.1}%
+\contentsline {subsubsection}{\numberline {4.19.3.2}dealDamage()}{67}{subsubsection.4.19.3.2}%
+\contentsline {subsubsection}{\numberline {4.19.3.3}takeDamage()}{68}{subsubsection.4.19.3.3}%
+\contentsline {section}{\numberline {4.20}Rainy Class Reference}{68}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{69}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Constructor \& Destructor Documentation}{69}{subsection.4.20.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.1}Rainy()}{69}{subsubsection.4.20.2.1}%
+\contentsline {subsection}{\numberline {4.20.3}Member Function Documentation}{69}{subsection.4.20.3}%
+\contentsline {subsubsection}{\numberline {4.20.3.1}getWeather()}{69}{subsubsection.4.20.3.1}%
+\contentsline {subsubsection}{\numberline {4.20.3.2}handleChange()}{70}{subsubsection.4.20.3.2}%
+\contentsline {section}{\numberline {4.21}Save\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Archive Class Reference}{70}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Detailed Description}{71}{subsection.4.21.1}%
+\contentsline {subsection}{\numberline {4.21.2}Constructor \& Destructor Documentation}{71}{subsection.4.21.2}%
+\contentsline {subsubsection}{\numberline {4.21.2.1}SaveArchive()}{71}{subsubsection.4.21.2.1}%
+\contentsline {subsection}{\numberline {4.21.3}Member Function Documentation}{71}{subsection.4.21.3}%
+\contentsline {subsubsection}{\numberline {4.21.3.1}addNewSave()}{71}{subsubsection.4.21.3.1}%
+\contentsline {subsubsection}{\numberline {4.21.3.2}clearSaveList()}{72}{subsubsection.4.21.3.2}%
+\contentsline {subsubsection}{\numberline {4.21.3.3}deleteSave()}{72}{subsubsection.4.21.3.3}%
+\contentsline {subsubsection}{\numberline {4.21.3.4}getLastSave()}{73}{subsubsection.4.21.3.4}%
+\contentsline {subsubsection}{\numberline {4.21.3.5}getSave()}{74}{subsubsection.4.21.3.5}%
+\contentsline {section}{\numberline {4.22}Strategy Class Reference}{74}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}Detailed Description}{75}{subsection.4.22.1}%
+\contentsline {subsection}{\numberline {4.22.2}Constructor \& Destructor Documentation}{75}{subsection.4.22.2}%
+\contentsline {subsubsection}{\numberline {4.22.2.1}Strategy()}{75}{subsubsection.4.22.2.1}%
+\contentsline {subsubsection}{\numberline {4.22.2.2}$\sim $Strategy()}{75}{subsubsection.4.22.2.2}%
+\contentsline {subsection}{\numberline {4.22.3}Member Function Documentation}{75}{subsection.4.22.3}%
+\contentsline {subsubsection}{\numberline {4.22.3.1}performStrat()}{75}{subsubsection.4.22.3.1}%
+\contentsline {subsection}{\numberline {4.22.4}Member Data Documentation}{76}{subsection.4.22.4}%
+\contentsline {subsubsection}{\numberline {4.22.4.1}strategy}{76}{subsubsection.4.22.4.1}%
+\contentsline {section}{\numberline {4.23}Sunny Class Reference}{76}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Detailed Description}{77}{subsection.4.23.1}%
+\contentsline {subsection}{\numberline {4.23.2}Constructor \& Destructor Documentation}{77}{subsection.4.23.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.1}Sunny()}{77}{subsubsection.4.23.2.1}%
+\contentsline {subsection}{\numberline {4.23.3}Member Function Documentation}{77}{subsection.4.23.3}%
+\contentsline {subsubsection}{\numberline {4.23.3.1}getWeather()}{77}{subsubsection.4.23.3.1}%
+\contentsline {subsubsection}{\numberline {4.23.3.2}handleChange()}{77}{subsubsection.4.23.3.2}%
+\contentsline {section}{\numberline {4.24}Support Class Reference}{78}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Detailed Description}{78}{subsection.4.24.1}%
+\contentsline {subsection}{\numberline {4.24.2}Constructor \& Destructor Documentation}{79}{subsection.4.24.2}%
+\contentsline {subsubsection}{\numberline {4.24.2.1}Support()}{79}{subsubsection.4.24.2.1}%
+\contentsline {subsection}{\numberline {4.24.3}Member Function Documentation}{79}{subsection.4.24.3}%
+\contentsline {subsubsection}{\numberline {4.24.3.1}dealDamage()}{79}{subsubsection.4.24.3.1}%
+\contentsline {subsubsection}{\numberline {4.24.3.2}takeDamage()}{80}{subsubsection.4.24.3.2}%
+\contentsline {section}{\numberline {4.25}Support\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{81}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}Detailed Description}{81}{subsection.4.25.1}%
+\contentsline {subsection}{\numberline {4.25.2}Constructor \& Destructor Documentation}{81}{subsection.4.25.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.1}SupportFactory()}{81}{subsubsection.4.25.2.1}%
+\contentsline {subsection}{\numberline {4.25.3}Member Function Documentation}{82}{subsection.4.25.3}%
+\contentsline {subsubsection}{\numberline {4.25.3.1}clone()}{82}{subsubsection.4.25.3.1}%
+\contentsline {subsubsection}{\numberline {4.25.3.2}createEntity()}{82}{subsubsection.4.25.3.2}%
+\contentsline {section}{\numberline {4.26}Terrain\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type Class Reference}{83}{section.4.26}%
+\contentsline {subsection}{\numberline {4.26.1}Detailed Description}{83}{subsection.4.26.1}%
+\contentsline {subsection}{\numberline {4.26.2}Constructor \& Destructor Documentation}{84}{subsection.4.26.2}%
+\contentsline {subsubsection}{\numberline {4.26.2.1}TerrainType()}{84}{subsubsection.4.26.2.1}%
+\contentsline {subsection}{\numberline {4.26.3}Member Function Documentation}{84}{subsection.4.26.3}%
+\contentsline {subsubsection}{\numberline {4.26.3.1}clone()}{84}{subsubsection.4.26.3.1}%
+\contentsline {subsubsection}{\numberline {4.26.3.2}getTypeDesc()}{84}{subsubsection.4.26.3.2}%
+\contentsline {section}{\numberline {4.27}Type Class Reference}{85}{section.4.27}%
+\contentsline {subsection}{\numberline {4.27.1}Detailed Description}{85}{subsection.4.27.1}%
+\contentsline {subsection}{\numberline {4.27.2}Constructor \& Destructor Documentation}{85}{subsection.4.27.2}%
+\contentsline {subsubsection}{\numberline {4.27.2.1}Type()}{85}{subsubsection.4.27.2.1}%
+\contentsline {subsection}{\numberline {4.27.3}Member Function Documentation}{85}{subsection.4.27.3}%
+\contentsline {subsubsection}{\numberline {4.27.3.1}getTypeDesc()}{86}{subsubsection.4.27.3.1}%
+\contentsline {section}{\numberline {4.28}Vehicle Class Reference}{86}{section.4.28}%
+\contentsline {subsection}{\numberline {4.28.1}Detailed Description}{86}{subsection.4.28.1}%
+\contentsline {subsection}{\numberline {4.28.2}Constructor \& Destructor Documentation}{86}{subsection.4.28.2}%
+\contentsline {subsubsection}{\numberline {4.28.2.1}Vehicle()}{86}{subsubsection.4.28.2.1}%
+\contentsline {subsection}{\numberline {4.28.3}Member Function Documentation}{87}{subsection.4.28.3}%
+\contentsline {subsubsection}{\numberline {4.28.3.1}dealDamage()}{87}{subsubsection.4.28.3.1}%
+\contentsline {subsubsection}{\numberline {4.28.3.2}takeDamage()}{88}{subsubsection.4.28.3.2}%
+\contentsline {section}{\numberline {4.29}Vehicle\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory Class Reference}{88}{section.4.29}%
+\contentsline {subsection}{\numberline {4.29.1}Detailed Description}{89}{subsection.4.29.1}%
+\contentsline {subsection}{\numberline {4.29.2}Constructor \& Destructor Documentation}{89}{subsection.4.29.2}%
+\contentsline {subsubsection}{\numberline {4.29.2.1}VehicleFactory()}{89}{subsubsection.4.29.2.1}%
+\contentsline {subsection}{\numberline {4.29.3}Member Function Documentation}{89}{subsection.4.29.3}%
+\contentsline {subsubsection}{\numberline {4.29.3.1}clone()}{89}{subsubsection.4.29.3.1}%
+\contentsline {subsubsection}{\numberline {4.29.3.2}createEntity()}{90}{subsubsection.4.29.3.2}%
+\contentsline {section}{\numberline {4.30}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine Class Reference}{91}{section.4.30}%
+\contentsline {subsection}{\numberline {4.30.1}Detailed Description}{91}{subsection.4.30.1}%
+\contentsline {subsection}{\numberline {4.30.2}Constructor \& Destructor Documentation}{91}{subsection.4.30.2}%
+\contentsline {subsubsection}{\numberline {4.30.2.1}WarEngine()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{92}{subsubsection.4.30.2.1}%
+\contentsline {subsubsection}{\numberline {4.30.2.2}WarEngine()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{92}{subsubsection.4.30.2.2}%
+\contentsline {subsubsection}{\numberline {4.30.2.3}$\sim $WarEngine()}{92}{subsubsection.4.30.2.3}%
+\contentsline {subsection}{\numberline {4.30.3}Member Function Documentation}{92}{subsection.4.30.3}%
+\contentsline {subsubsection}{\numberline {4.30.3.1}getInstance()}{93}{subsubsection.4.30.3.1}%
+\contentsline {subsubsection}{\numberline {4.30.3.2}loadState()}{93}{subsubsection.4.30.3.2}%
+\contentsline {subsubsection}{\numberline {4.30.3.3}operator=()}{94}{subsubsection.4.30.3.3}%
+\contentsline {subsubsection}{\numberline {4.30.3.4}saveState()}{94}{subsubsection.4.30.3.4}%
+\contentsline {subsubsection}{\numberline {4.30.3.5}setWarTheatre()}{94}{subsubsection.4.30.3.5}%
+\contentsline {subsubsection}{\numberline {4.30.3.6}simulate()}{95}{subsubsection.4.30.3.6}%
+\contentsline {section}{\numberline {4.31}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Memento Class Reference}{95}{section.4.31}%
+\contentsline {subsection}{\numberline {4.31.1}Detailed Description}{95}{subsection.4.31.1}%
+\contentsline {subsection}{\numberline {4.31.2}Constructor \& Destructor Documentation}{96}{subsection.4.31.2}%
+\contentsline {subsubsection}{\numberline {4.31.2.1}WarEngineMemento()}{96}{subsubsection.4.31.2.1}%
+\contentsline {subsection}{\numberline {4.31.3}Member Function Documentation}{96}{subsection.4.31.3}%
+\contentsline {subsubsection}{\numberline {4.31.3.1}getState()}{96}{subsubsection.4.31.3.1}%
+\contentsline {subsubsection}{\numberline {4.31.3.2}setState()}{96}{subsubsection.4.31.3.2}%
+\contentsline {section}{\numberline {4.32}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State Class Reference}{97}{section.4.32}%
+\contentsline {subsection}{\numberline {4.32.1}Detailed Description}{97}{subsection.4.32.1}%
+\contentsline {subsection}{\numberline {4.32.2}Constructor \& Destructor Documentation}{98}{subsection.4.32.2}%
+\contentsline {subsubsection}{\numberline {4.32.2.1}WarEngineState()}{98}{subsubsection.4.32.2.1}%
+\contentsline {subsubsection}{\numberline {4.32.2.2}$\sim $WarEngineState()}{98}{subsubsection.4.32.2.2}%
+\contentsline {subsection}{\numberline {4.32.3}Member Function Documentation}{98}{subsection.4.32.3}%
+\contentsline {subsubsection}{\numberline {4.32.3.1}clone()}{98}{subsubsection.4.32.3.1}%
+\contentsline {subsubsection}{\numberline {4.32.3.2}getAlliances()}{99}{subsubsection.4.32.3.2}%
+\contentsline {subsubsection}{\numberline {4.32.3.3}getArea()}{99}{subsubsection.4.32.3.3}%
+\contentsline {subsubsection}{\numberline {4.32.3.4}setAlliances()}{99}{subsubsection.4.32.3.4}%
+\contentsline {subsubsection}{\numberline {4.32.3.5}setArea()}{100}{subsubsection.4.32.3.5}%
+\contentsline {section}{\numberline {4.33}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Theatre Class Reference}{101}{section.4.33}%
+\contentsline {subsection}{\numberline {4.33.1}Detailed Description}{101}{subsection.4.33.1}%
+\contentsline {subsection}{\numberline {4.33.2}Constructor \& Destructor Documentation}{101}{subsection.4.33.2}%
+\contentsline {subsubsection}{\numberline {4.33.2.1}WarTheatre()}{102}{subsubsection.4.33.2.1}%
+\contentsline {subsubsection}{\numberline {4.33.2.2}$\sim $WarTheatre()}{102}{subsubsection.4.33.2.2}%
+\contentsline {subsection}{\numberline {4.33.3}Member Function Documentation}{102}{subsection.4.33.3}%
+\contentsline {subsubsection}{\numberline {4.33.3.1}addArea()}{102}{subsubsection.4.33.3.1}%
+\contentsline {subsubsection}{\numberline {4.33.3.2}clone()}{103}{subsubsection.4.33.3.2}%
+\contentsline {subsubsection}{\numberline {4.33.3.3}isKeyPoint()}{103}{subsubsection.4.33.3.3}%
+\contentsline {subsubsection}{\numberline {4.33.3.4}simulateBattle()}{104}{subsubsection.4.33.3.4}%
+\contentsline {section}{\numberline {4.34}Weather Class Reference}{104}{section.4.34}%
+\contentsline {subsection}{\numberline {4.34.1}Detailed Description}{105}{subsection.4.34.1}%
+\contentsline {subsection}{\numberline {4.34.2}Constructor \& Destructor Documentation}{105}{subsection.4.34.2}%
+\contentsline {subsubsection}{\numberline {4.34.2.1}Weather()}{105}{subsubsection.4.34.2.1}%
+\contentsline {subsubsection}{\numberline {4.34.2.2}$\sim $Weather()}{105}{subsubsection.4.34.2.2}%
+\contentsline {subsection}{\numberline {4.34.3}Member Function Documentation}{105}{subsection.4.34.3}%
+\contentsline {subsubsection}{\numberline {4.34.3.1}getMultiplier()}{106}{subsubsection.4.34.3.1}%
+\contentsline {subsubsection}{\numberline {4.34.3.2}getWeather()}{106}{subsubsection.4.34.3.2}%
+\contentsline {subsubsection}{\numberline {4.34.3.3}handleChange()}{106}{subsubsection.4.34.3.3}%
+\contentsline {subsection}{\numberline {4.34.4}Member Data Documentation}{106}{subsection.4.34.4}%
+\contentsline {subsubsection}{\numberline {4.34.4.1}multiplier}{106}{subsubsection.4.34.4.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{107}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}On.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{107}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}On.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{107}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}On\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{108}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Aerial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{110}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Aerial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{110}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Aggressive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{111}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Aggressive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{111}{section.5.7}%
+\contentsline {section}{\numberline {5.8}Alliance.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{111}{section.5.8}%
+\contentsline {section}{\numberline {5.9}Alliance.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{112}{section.5.9}%
+\contentsline {section}{\numberline {5.10}Aquatic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{113}{section.5.10}%
+\contentsline {section}{\numberline {5.11}Aquatic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{113}{section.5.11}%
+\contentsline {section}{\numberline {5.12}Area.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{113}{section.5.12}%
+\contentsline {section}{\numberline {5.13}Area.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{113}{section.5.13}%
+\contentsline {section}{\numberline {5.14}Armour.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{114}{section.5.14}%
+\contentsline {section}{\numberline {5.15}Armour.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{114}{section.5.15}%
+\contentsline {section}{\numberline {5.16}Cloudy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{114}{section.5.16}%
+\contentsline {section}{\numberline {5.17}Cloudy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{115}{section.5.17}%
+\contentsline {section}{\numberline {5.18}Country.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{115}{section.5.18}%
+\contentsline {section}{\numberline {5.19}Country.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{115}{section.5.19}%
+\contentsline {section}{\numberline {5.20}Defensive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{116}{section.5.20}%
+\contentsline {section}{\numberline {5.21}Defensive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{116}{section.5.21}%
+\contentsline {section}{\numberline {5.22}Entity.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{116}{section.5.22}%
+\contentsline {section}{\numberline {5.23}Entity.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{117}{section.5.23}%
+\contentsline {section}{\numberline {5.24}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{117}{section.5.24}%
+\contentsline {section}{\numberline {5.25}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{118}{section.5.25}%
+\contentsline {section}{\numberline {5.26}General.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{118}{section.5.26}%
+\contentsline {section}{\numberline {5.27}General.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{119}{section.5.27}%
+\contentsline {section}{\numberline {5.28}Key\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{119}{section.5.28}%
+\contentsline {section}{\numberline {5.29}Key\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Point.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{120}{section.5.29}%
+\contentsline {section}{\numberline {5.30}Negotiator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{121}{section.5.30}%
+\contentsline {section}{\numberline {5.31}Negotiator.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{122}{section.5.31}%
+\contentsline {section}{\numberline {5.32}Negotiator\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Test.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{122}{section.5.32}%
+\contentsline {section}{\numberline {5.33}Passive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{123}{section.5.33}%
+\contentsline {section}{\numberline {5.34}Passive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{123}{section.5.34}%
+\contentsline {section}{\numberline {5.35}Personnel.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{123}{section.5.35}%
+\contentsline {section}{\numberline {5.36}Personnel.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{124}{section.5.36}%
+\contentsline {section}{\numberline {5.37}Personnel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{124}{section.5.37}%
+\contentsline {section}{\numberline {5.38}Personnel\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{124}{section.5.38}%
+\contentsline {section}{\numberline {5.39}Piercing.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{124}{section.5.39}%
+\contentsline {section}{\numberline {5.40}Piercing.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{125}{section.5.40}%
+\contentsline {section}{\numberline {5.41}Rainy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{125}{section.5.41}%
+\contentsline {section}{\numberline {5.42}Rainy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{125}{section.5.42}%
+\contentsline {section}{\numberline {5.43}Save\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Archive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{125}{section.5.43}%
+\contentsline {section}{\numberline {5.44}Save\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Archive.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{126}{section.5.44}%
+\contentsline {section}{\numberline {5.45}Strategy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{126}{section.5.45}%
+\contentsline {section}{\numberline {5.46}Strategy.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{127}{section.5.46}%
+\contentsline {section}{\numberline {5.47}Sunny.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{127}{section.5.47}%
+\contentsline {section}{\numberline {5.48}Sunny.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{127}{section.5.48}%
+\contentsline {section}{\numberline {5.49}Support.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{128}{section.5.49}%
+\contentsline {section}{\numberline {5.50}Support.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{128}{section.5.50}%
+\contentsline {section}{\numberline {5.51}Support\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{128}{section.5.51}%
+\contentsline {section}{\numberline {5.52}Support\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{128}{section.5.52}%
+\contentsline {section}{\numberline {5.53}Terrain\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{129}{section.5.53}%
+\contentsline {section}{\numberline {5.54}Terrain\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{129}{section.5.54}%
+\contentsline {section}{\numberline {5.55}testmain.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{129}{section.5.55}%
+\contentsline {section}{\numberline {5.56}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{129}{section.5.56}%
+\contentsline {section}{\numberline {5.57}Type.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{129}{section.5.57}%
+\contentsline {section}{\numberline {5.58}Vehicle.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{130}{section.5.58}%
+\contentsline {section}{\numberline {5.59}Vehicle.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{130}{section.5.59}%
+\contentsline {section}{\numberline {5.60}Vehicle\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{130}{section.5.60}%
+\contentsline {section}{\numberline {5.61}Vehicle\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Factory.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{130}{section.5.61}%
+\contentsline {section}{\numberline {5.62}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{131}{section.5.62}%
+\contentsline {section}{\numberline {5.63}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{131}{section.5.63}%
+\contentsline {section}{\numberline {5.64}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Memento.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{132}{section.5.64}%
+\contentsline {section}{\numberline {5.65}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Memento.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{132}{section.5.65}%
+\contentsline {section}{\numberline {5.66}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{132}{section.5.66}%
+\contentsline {section}{\numberline {5.67}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Engine\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}State.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{133}{section.5.67}%
+\contentsline {section}{\numberline {5.68}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Theatre.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{133}{section.5.68}%
+\contentsline {section}{\numberline {5.69}War\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Theatre.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{134}{section.5.69}%
+\contentsline {section}{\numberline {5.70}Weather.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}cpp}{134}{section.5.70}%
+\contentsline {section}{\numberline {5.71}Weather.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h}{134}{section.5.71}%
+\contentsline {chapter}{Index}{137}{section*.74}%
