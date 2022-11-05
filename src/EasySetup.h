@@ -26,12 +26,17 @@ class EasySetup
     private:
         WarEngine* warEngine;
         SaveArchive* saveArchive;
-    
+        WarTheatre** mainBattleGround;  
+        WarTheatre** battleGrounds;
+        vector<int> numKeyPoints;
+        Alliance* alliance;
+        int sizeOfGrounds;
+
     public:
         void setupSimulation();
         void runSimulation();
         void loadPrevSave();
-        void loadSpecificSave(string name);
+        void loadSpecificSave(std::string name);
         void saveSimulationSetup();
 };
 

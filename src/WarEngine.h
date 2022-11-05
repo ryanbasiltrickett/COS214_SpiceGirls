@@ -10,8 +10,8 @@ class WarEngine {
 private:
 	static WarEngine* uniqueInstance;
 	WarEngineState* state;
-	boolean gameOver;
-	Area* currentWarTheatre;
+	bool gameOver;
+	vector<Area*> areas;
 	vector<Alliance*> alliances;
 
 protected:
@@ -37,6 +37,15 @@ public:
 	 * @return void
 	*/
 	void loadState(WarEngineState* save);
+
+	/**
+	 * @brief Simulates the war
+	 * 
+	 * PostConditions:
+	 * - Will simulate the war by running the engine
+	 * @return void
+	 */
+	void simulate();
 };
 
 #endif
