@@ -15,6 +15,7 @@
 #include "VehicleFactory.h"
 #include "SupportFactory.h"
 #include "KeyPoint.h"
+#include "WarTheatre.h"
 #include "WarEngine.h"
 #include "SaveArchive.h"
 

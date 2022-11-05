@@ -177,8 +177,6 @@ void EasySetup::setupSimulation() {
                 keyPoint = new KeyPoint(keyPointName);
            
                 for (int a = 0; a < numAlliesAndGenerals; a++) {
-                    keyPoint->addGeneral(generals[a]);
-
                     tryAgain:
                     cout << "There are " << alliances[a]->numRemainingEntities() << " for Alliance " << a+1 << endl;
                     cout << "How many would you like to place in " << keyPointName << " keypoint? ";
@@ -188,7 +186,7 @@ void EasySetup::setupSimulation() {
                         cout << "You selected more than the available amount. Try again " << endl;
                         goto tryAgain;
                     }else if (alliances[a]->numRemainingEntities() <= 0) {
-                        continue;
+                        break;;
                     }else {
                         keyPoint->moveEntitiesInto(alliances[a], numEntitiesInKeyPt);
                     }
@@ -198,6 +196,10 @@ void EasySetup::setupSimulation() {
             }
 
             mainBattleGround->addArea(battleGrounds[i]);
+        }
+        
+        for (int i = 0; i < numAlliesAndGenerals; i++) {
+            mainBattleGround->addGeneral(generals[i]);
         }
 
         warEngine->setWarTheatre(mainBattleGround); 
