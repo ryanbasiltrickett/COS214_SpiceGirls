@@ -16,7 +16,7 @@ public:
 	/**
 	 * @brief Instantiates the war theatre
 	 */
-	WarTheatre();
+	WarTheatre(std::string areaName);
 
 	/**
 	 * @brief Destroys the war theatre object

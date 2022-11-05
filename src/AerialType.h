@@ -25,6 +25,8 @@ public:
 	 * @return string The ariel type string
 	 */
 	string getTypeDesc();
+
+	Type* clone();
 };
 
 #endif

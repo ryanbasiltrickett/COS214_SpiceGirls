@@ -1,4 +1,12 @@
 #include "Entity.h"
+#include "Alliance.h"
+
+
+Entity::Entity() {
+	health = 0;
+	damage = 0;
+	type = NULL;
+}
 
 Entity::Entity(Type* type, int health, int damage) {
 	this->health = health;

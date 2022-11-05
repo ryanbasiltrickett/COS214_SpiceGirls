@@ -1,7 +1,6 @@
 #include "Armour.h"
 
-Armour::Armour() : AddOn() {	
-}
+Armour::Armour(int value) : AddOn(value) {}
 
 void Armour::takeDamage(int damage) {
 	if (value > 0) {
@@ -16,7 +15,6 @@ void Armour::dealDamage(Entity* entity) {
 }
 
 AddOn* Armour::clone() {
-	Armour* armour = new Armour();
-	armour->setValue(value);
+	Armour* armour = new Armour(value);
 	return armour;
 }

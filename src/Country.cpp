@@ -2,8 +2,7 @@
 
 using namespace std;
 
-Country::Country(){
-}
+Country::Country(){}
 	
 
 Country* Country::clone(){

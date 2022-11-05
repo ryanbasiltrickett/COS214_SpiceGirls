@@ -14,8 +14,10 @@ class Armour : public AddOn {
 public:
 	/**
 	 * @brief Instantiates an Armour
+	 * 
+	 * @param value must be an int
 	 */
-	Armour();
+	Armour(int value);
 	
 	/**
 	 * @brief Decreases the entities' armour value (or health when their armour has depleted)

@@ -14,8 +14,10 @@ class Piercing : public AddOn {
 public:
 	/**
 	 * @brief Instantiates an Piercing
+	 * 
+	 * @param value must be an int
 	 */
-	Piercing();
+	Piercing(int value);
 
 	/**
 	 * @brief Decreases the entities' armour value (or health when their armour has depleted)

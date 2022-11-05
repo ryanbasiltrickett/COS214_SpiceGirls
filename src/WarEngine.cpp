@@ -1,33 +1,48 @@
 #include "WarEngine.h"
 
-WarEngine::WarEngine() {
-	// TODO - implement WarEngine::WarEngine
-	throw "Not yet implemented";
+WarEngine::WarEngine(){
+	this->state = new WarEngineState();
 }
 
-WarEngine::WarEngine(int& warEngine) {
-	// TODO - implement WarEngine::WarEngine
-	throw "Not yet implemented";
-}
+WarEngineMemento* WarEngine::saveState() {
+	WarEngineState* cloneState = new WarEngineState();	
+	vector<Alliance*> cloneAlliances;
+	
+	for(Alliance* alliance : this->state->getAlliances()){
+		cloneAlliances.push_back(alliance->clone());
+	}
 
-WarEngineMemento WarEngine::saveState() {
-	// TODO - implement WarEngine::saveState
-	throw "Not yet implemented";
+	cloneState->setArea(this->state->getArea()->clone());
+	cloneState->setAlliances(cloneAlliances);
+
+	return new WarEngineMemento(cloneState);
 }
 
 void WarEngine::loadState(WarEngineState* save) {
-	// TODO - implement WarEngine::loadState
-	throw "Not yet implemented";
+	delete this->state;
+	this->state = save;
 }
+
+WarEngine& WarEngine::getInstance(){
+	static WarEngine uniqueInstance_;
+	return uniqueInstance_;
+}
+
+WarEngine::~WarEngine(){
+	delete this->state;
+}
+
 
 void WarEngine::simulate() {
 
-	for(int i = 0; i < areas.size(); i++) {
+	vector<Alliance*> alliances = this->state->getAlliances();
 
-		for(int j = 0; j < alliances.size(); j++) {
-
-			area[i]->simulateBattle(alliances[j]);
-		}
+	for(int j = 0; j < alliances.size(); j++) {
+		state->getArea()->simulateBattle(alliances[j]);
 	}
 
+}
+
+void WarEngine::setWarTheatre(WarTheatre* battleGround){
+	state->setArea(battleGround);
 }

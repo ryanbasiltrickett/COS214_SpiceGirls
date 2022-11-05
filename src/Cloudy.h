@@ -1,12 +1,10 @@
 #ifndef CLOUDY_H
 #define CLOUDY_H
 #include "Weather.h"
-#include "KeyPoint.h"
 #include <string>
 
 class Cloudy : public Weather {
-
-
+	
 public:
 	/**
 	 * @brief Instantiates the Cloudy object of the state pattern
@@ -21,7 +19,7 @@ public:
 	 *
 	 * @return std::string which is the current state
 	 */
-	virtual std::string getWeather();
+	std::string getWeather();
 
 	/**
 	 * @brief Will change the current state of the weather inside the specific keypoint
@@ -35,7 +33,7 @@ public:
 	 * @param k must be a KeyPoint*
 	 * @return void
 	 */
-	virtual void handleChange(KeyPoint* k);
+	void handleChange(KeyPoint* k);
 };
 
 #endif

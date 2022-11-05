@@ -19,6 +19,8 @@ public:
 	Type();
 
 	virtual string getTypeDesc() = 0;
+
+	virtual Type* clone() = 0;
 	
 };
 

@@ -1,7 +1,6 @@
 #include "Piercing.h"
 
-Piercing::Piercing() : AddOn() {	
-}
+Piercing::Piercing(int value) : AddOn(value) {}
 
 void Piercing::takeDamage(int damage) {
 	entity->takeDamage(damage);
@@ -13,7 +12,6 @@ void Piercing::dealDamage(Entity* entity) {
 }
 
 AddOn* Piercing::clone() {
-	Piercing* piercing = new Piercing();
-	Piercing->setValue(value);
+	Piercing* piercing = new Piercing(value);
 	return piercing;
 }
