@@ -38,12 +38,13 @@ void EasySetup::setupSimulation() {
     }
     
     setup:
-        // Creating alliances
-        int numAlliances;
+        // Creating alliances and generals
+        int numAlliesAndGenerals;
         cout << "Enter number of alliances: ";
-        cin >> numAlliances;
+        cin >> numAlliesAndGenerals;
 
-        Alliance** alliances = new Alliance*[numAlliances];
+        Alliance** alliances = new Alliance*[numAlliesAndGenerals];
+        General** generals = new General*[numAlliesAndGenerals];
         
         int numCountries,
             numFactories;
@@ -56,7 +57,7 @@ void EasySetup::setupSimulation() {
         AddOn* addOn;
         Factory* factory;
 
-        for (int i = 0; i < numAlliances; i++) {
+        for (int i = 0; i < numAlliesAndGenerals; i++) {
             alliances[i] = new Alliance;
 
             cout << "Enter number of countries for Alliance " << alliances[i]->getID() << ": ";
@@ -115,6 +116,7 @@ void EasySetup::setupSimulation() {
                 }
                 
                 alliances[i]->addFactory(factory);
+                generals[i] = new General(alliances);
             } 
         }
         
@@ -173,15 +175,20 @@ void EasySetup::setupSimulation() {
                 cout << "Set key point" << i+1 << "'s name: ";
                 getline(cin, keyPointName);
                 keyPoint = new KeyPoint(keyPointName);
-                
-                for (int a = 0; a < numAlliances; a++) {
+           
+                for (int a = 0; a < numAlliesAndGenerals; a++) {
+                    keyPoint->addGeneral(generals[a]);
+
                     tryAgain:
                     cout << "There are " << alliances[a]->numRemainingEntities() << " for Alliance " << a+1 << endl;
                     cout << "How many would you like to place in " << keyPointName << " keypoint? ";
                     cin >> numEntitiesInKeyPt;
 
-                    if (alliances[a]->numRemainingEntities() < numEntitiesInKeyPt) {
+                    if (alliances[a]->numRemainingEntities() > 0 && alliances[a]->numRemainingEntities() < numEntitiesInKeyPt) {
+                        cout << "You selected more than the available amount. Try again " << endl;
                         goto tryAgain;
+                    }else if (alliances[a]->numRemainingEntities() <= 0) {
+                        continue;
                     }else {
                         keyPoint->moveEntitiesInto(alliances[a], numEntitiesInKeyPt);
                     }
@@ -202,31 +209,10 @@ void EasySetup::runSimulation {
 
 void EasySetup::loadPrevSave {
 
-    try{
-        WarEngineMemento* saveFile = SaveArchive->getLastSave();
-
-        WarEngine->loadSave(saveFile->getState());
-    }
-    catch(const std::exception& error){
-
-        std::cerr << error.what() << "\n"; 
-    
-    }
 }
 
 void EasySetup::loadSpecificSave(string name) {
 
-    try{
-        
-        WarEngineMemento* saveFile = SaveArchive->getSave(name);
-
-        WarEngine->loadSave(saveFile->getState());
-    }
-    catch(const std::out_of_range& range_error){
-
-        std::cerr << range_error.what() << "\n"; 
-    
-    }
 }
 
 void EasySetup::sameSimulationSetup() {
