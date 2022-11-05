@@ -36,7 +36,7 @@ public:
 	 * @param save
 	 * @return void
 	*/
-	void loadState(WarEngineState save);
+	void loadState(WarEngineState* save);
 };
 
 #endif

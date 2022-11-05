@@ -15,7 +15,7 @@ WarEngineMemento WarEngine::saveState() {
 	throw "Not yet implemented";
 }
 
-void WarEngine::loadState(WarEngineState save) {
+void WarEngine::loadState(WarEngineState* save) {
 	// TODO - implement WarEngine::loadState
 	throw "Not yet implemented";
 }
