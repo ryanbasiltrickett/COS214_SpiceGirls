@@ -124,8 +124,33 @@ public:
 	 */
 	void setDamage(int damage);
 
+	/**
+	 * @brief Reduces health from the Personnel object
+	 * 
+	 * Preconditions:
+	 *  - damage must be an int
+	 *
+	 * Postconditions:
+	 *  - Reduces the health of the Entity object
+	 * 
+	 * @param damage must be an int
+	 * @return void
+	 */
+
 	virtual void takeDamage(int damage) = 0;
 
+	/**
+	 * @brief Inflicts damage onto another entity
+	 * 
+	 * Preconditions:
+	 *  - entity must be an Entity*
+	 *
+	 * Postconditions:
+	 *  - Reduces the health of the entity
+	 * 
+	 * @param entity must be an Entity*
+	 * @return void
+	 */
 	virtual void dealDamage(Entity* entity) = 0;
 };
 

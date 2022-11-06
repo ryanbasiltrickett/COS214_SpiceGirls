@@ -170,6 +170,14 @@ public:
 	 */
 	void setActiveStatus(bool active);
 
+	/**
+	 * @brief Get the active state of the Alliance
+	 * 
+	 * PostConditions:
+	 * - returns an active variable
+	 * 
+	 * @return int the active variable
+	 */
 	int getActive();
 };
 
