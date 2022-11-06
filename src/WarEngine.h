@@ -52,17 +52,17 @@ public:
 
 	/**
 	 * @brief Takes in an instance of saved WarEngine states and sets current instance's member variables to memento state.
-	 * @param save
 	 * 
 	 * Preconditions:
-	 * 	- Save must be of type WarEngineState*
+	 * 	- Save must be of type WarEngineMemento*
 	 * 
 	 * Postconditions:
-	 * 	- Sets the instance of the class' state member variable to the passed in save parameter.
+	 * 	- Sets the instance of the class'state member variable to the passed in save parameter.
 	 * 
+	 * @param save must be a WarEngineMemento*
 	 * @return void
 	*/
-	void loadState(WarEngineState* save);
+	void loadSave(WarEngineMemento* save);
 
 	/**
 	 * @brief Function that returns a reference to the current (and only) instance of the class.
@@ -70,13 +70,6 @@ public:
 	 * @return WarEngine&
 	*/
 	static WarEngine& getInstance();
-
-	/**
-	 * @brief Simulates battle on WarTheatres.
-	 * 
-	 * @return void 
-	*/
-	void simulate();
 
 	/**
 	 * @brief Sets the state's area to passed in battleGround parameter.
@@ -92,6 +85,17 @@ public:
 	 * @return void
 	*/
 	void setWarTheatre(WarTheatre* battleGround);
+
+	/**
+	 * @brief Simulates the war
+	 * 
+	 * PostConditions:
+	 * - Will simulate the war by running the engine
+	 * 
+	 * @return void
+	 */
+	void simulate();
+  
 };
 
 #endif

@@ -2,24 +2,14 @@
 
 using namespace std;
 
-Country::Country(){}
+Country::Country(std::string name){
+	this->name = name;
+	this->id = rand() % 1000;
+}
 	
 
 Country* Country::clone(){
-	
-	Country* countryClone = new Country();
-	countryClone->setID(this->id);
-	countryClone->setName(this->name);
-
-	return countryClone;
-}
-
-void Country::setID(int id){
-	this->id = id;
-}
-
-void Country::setName(string name){
-	this->name = name;
+	return new Country(this->name);
 }
 
 string Country::getName() const{

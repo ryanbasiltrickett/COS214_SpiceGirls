@@ -8,7 +8,7 @@
  * 
  * Used to instantiate Support objects.
  */
-class SupportFactory : Factory {
+class SupportFactory : public Factory {
 
 public:
 	/**

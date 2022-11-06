@@ -96,6 +96,8 @@ public:
 	 */
 	void addReserveEntity(Entity* entity);
 
+	int numRemainingEntities();
+
 	/**
 	 * @brief Considers to stop war with the allaince passed into the function header
 	 *
@@ -122,6 +124,8 @@ public:
 	 * @return void
 	 */
 	void addFactory(Factory* factory);
+
+	void runFactories();
 
 	/**
 	 * @brief Makes the current alliance give up of the war by surrendering
