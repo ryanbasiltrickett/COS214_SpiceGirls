@@ -3,14 +3,10 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classCountry_a4cba457856775a13a17dfcb11a77e224}{Country}} ()
+\mbox{\hyperlink{classCountry_a6bc76183c9ee9e74e0a1c68a38283ebc}{Country}} (std\+::string name)
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCountry}{Country}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCountry}{Country}} $\ast$ \mbox{\hyperlink{classCountry_a82562b18230bbeceb22b13c0ab046a1c}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classCountry}{Country}}. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{set\+Name}} (std\+::string name)
-\begin{DoxyCompactList}\small\item\em Set the name of the country. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{set\+ID}} (int id)
-\begin{DoxyCompactList}\small\item\em Set the if of the country. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classCountry_af86e64cecec9c266dbf284329ab072f3}{get\+Name}} () const
 \begin{DoxyCompactList}\small\item\em Get the name of the country. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCountry_abb770576662c91a71c01cf078b98c0af}{get\+ID}} () const
@@ -25,23 +21,31 @@ Definition at line \mbox{\hyperlink{Country_8h_source_l00005}{5}} of file \mbox{
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classCountry_a4cba457856775a13a17dfcb11a77e224}\label{classCountry_a4cba457856775a13a17dfcb11a77e224}} 
+\mbox{\Hypertarget{classCountry_a6bc76183c9ee9e74e0a1c68a38283ebc}\label{classCountry_a6bc76183c9ee9e74e0a1c68a38283ebc}} 
 \index{Country@{Country}!Country@{Country}}
 \index{Country@{Country}!Country@{Country}}
 \doxysubsubsection{\texorpdfstring{Country()}{Country()}}
-{\footnotesize\ttfamily Country\+::\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Country\+::\+Country (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
 
 
 
 Instantiates the \mbox{\hyperlink{classCountry}{Country}}. 
 
 
+\begin{DoxyParams}{Parameters}
+{\em name} & must be a string \\
+\hline
+\end{DoxyParams}
+
 
 Definition at line \mbox{\hyperlink{Country_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00005 \{\}}
+\DoxyCodeLine{00005                               \{}
+\DoxyCodeLine{00006     this-\/>name = name;}
+\DoxyCodeLine{00007     this-\/>\textcolor{keywordtype}{id} = rand() \% 1000;}
+\DoxyCodeLine{00008 \}}
 
 \end{DoxyCode}
 
@@ -67,18 +71,13 @@ Country$\ast$ The country clone
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
+Definition at line \mbox{\hyperlink{Country_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00008                        \{}
-\DoxyCodeLine{00009     }
-\DoxyCodeLine{00010     \mbox{\hyperlink{classCountry}{Country}}* countryClone = \textcolor{keyword}{new} \mbox{\hyperlink{classCountry_a4cba457856775a13a17dfcb11a77e224}{Country}}();}
-\DoxyCodeLine{00011     countryClone-\/>\mbox{\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{setID}}(this-\/>\textcolor{keywordtype}{id});}
-\DoxyCodeLine{00012     countryClone-\/>\mbox{\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{setName}}(this-\/>name);}
-\DoxyCodeLine{00013 }
-\DoxyCodeLine{00014     \textcolor{keywordflow}{return} countryClone;}
-\DoxyCodeLine{00015 \}}
+\DoxyCodeLine{00011                        \{}
+\DoxyCodeLine{00012     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classCountry}{Country}}(this-\/>name);}
+\DoxyCodeLine{00013 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classCountry_abb770576662c91a71c01cf078b98c0af}\label{classCountry_abb770576662c91a71c01cf078b98c0af}} 
@@ -102,13 +101,13 @@ int
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
+Definition at line \mbox{\hyperlink{Country_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00029                         \{}
-\DoxyCodeLine{00030     \textcolor{keywordflow}{return} this-\/>id;}
-\DoxyCodeLine{00031 \}}
+\DoxyCodeLine{00019                         \{}
+\DoxyCodeLine{00020     \textcolor{keywordflow}{return} this-\/>id;}
+\DoxyCodeLine{00021 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classCountry_af86e64cecec9c266dbf284329ab072f3}\label{classCountry_af86e64cecec9c266dbf284329ab072f3}} 
@@ -131,81 +130,13 @@ string
 \end{DoxyReturn}
 
 
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
+Definition at line \mbox{\hyperlink{Country_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00025                              \{}
-\DoxyCodeLine{00026     \textcolor{keywordflow}{return} this-\/>name;}
-\DoxyCodeLine{00027 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classCountry_a35ecd0419e6a6eaf358889527c280d82}\label{classCountry_a35ecd0419e6a6eaf358889527c280d82}} 
-\index{Country@{Country}!setID@{setID}}
-\index{setID@{setID}!Country@{Country}}
-\doxysubsubsection{\texorpdfstring{setID()}{setID()}}
-{\footnotesize\ttfamily void Country\+::set\+ID (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
-
-
-
-Set the if of the country. 
-
-Precondition\+:
-\begin{DoxyItemize}
-\item The variale if is type of int
-\end{DoxyItemize}
-
-Preconditions\+:
-\begin{DoxyItemize}
-\item The variable id is set the the passed in parameter 
-\begin{DoxyParams}{Parameters}
-{\em id} & \\
-\hline
-\end{DoxyParams}
-
-\end{DoxyItemize}
-
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00017                          \{}
-\DoxyCodeLine{00018     this-\/>\textcolor{keywordtype}{id} = id;}
-\DoxyCodeLine{00019 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}\label{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}} 
-\index{Country@{Country}!setName@{setName}}
-\index{setName@{setName}!Country@{Country}}
-\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
-{\footnotesize\ttfamily void Country\+::set\+Name (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
-
-
-
-Set the name of the country. 
-
-Precondition\+:
-\begin{DoxyItemize}
-\item The variale name is type of string
-\end{DoxyItemize}
-
-Preconditions\+:
-\begin{DoxyItemize}
-\item The variable name is set the the passed in parameter 
-\begin{DoxyParams}{Parameters}
-{\em name} & \\
-\hline
-\end{DoxyParams}
-
-\end{DoxyItemize}
-
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00021                                 \{}
-\DoxyCodeLine{00022     this-\/>name = name;}
-\DoxyCodeLine{00023 \}}
+\DoxyCodeLine{00015                              \{}
+\DoxyCodeLine{00016     \textcolor{keywordflow}{return} this-\/>name;}
+\DoxyCodeLine{00017 \}}
 
 \end{DoxyCode}
 

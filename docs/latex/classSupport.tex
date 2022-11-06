@@ -59,11 +59,11 @@ Instantiates the support.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{00004 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
 
 \end{DoxyCode}
 
@@ -88,13 +88,22 @@ Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                        \{}
-\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00015 \}}
+\DoxyCodeLine{00015                        \{}
+\DoxyCodeLine{00016     \mbox{\hyperlink{classSupport}{Support}}* s;}
+\DoxyCodeLine{00017     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{00018         s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00019     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00020         s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00021     \}}
+\DoxyCodeLine{00022 }
+\DoxyCodeLine{00023     s-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{00026 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupport_a5f2cb243e746adea36b3c78548029ce3}\label{classSupport_a5f2cb243e746adea36b3c78548029ce3}} 
@@ -131,13 +140,14 @@ Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00005                                        \{}
-\DoxyCodeLine{00006     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00007 \}}
+\DoxyCodeLine{00006                                        \{}
+\DoxyCodeLine{00007     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{00008     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00009 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupport_afb159bd8c474ec67ad5d03fa24c38564}\label{classSupport_afb159bd8c474ec67ad5d03fa24c38564}} 
@@ -174,13 +184,13 @@ Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00009                                    \{}
-\DoxyCodeLine{00010     this-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{00011                                    \{}
+\DoxyCodeLine{00012     this-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{00013 \}}
 
 \end{DoxyCode}
 

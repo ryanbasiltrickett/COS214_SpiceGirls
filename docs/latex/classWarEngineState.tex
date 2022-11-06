@@ -9,23 +9,11 @@ Class for storing current state of entire simulation.
 
 {\ttfamily \#include $<$War\+Engine\+State.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsection*{Friends}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classWarEngineState_a78b3ab46445c7abc7797531004cd6d67}{War\+Engine\+State}} ()
-\begin{DoxyCompactList}\small\item\em Initializes an instance of the \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} class. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}{set\+Area}} (\mbox{\hyperlink{classArea}{Area}} $\ast$area)
-\begin{DoxyCompactList}\small\item\em Takes in a vector of \mbox{\hyperlink{classArea}{Area}} and sets it to the areas member of the \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} instance. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classArea}{Area}} $\ast$ \mbox{\hyperlink{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}{get\+Area}} ()
-\begin{DoxyCompactList}\small\item\em Returns the member variable area. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classWarEngineState_a262f8e5974144a644a24ca4edc949562}{set\+Alliances}} (vector$<$ \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ $>$ alliances)
-\begin{DoxyCompactList}\small\item\em Sets the given vector of \mbox{\hyperlink{classAlliance}{Alliance}} object pointers to the alliances member variable. \end{DoxyCompactList}\item 
-vector$<$ \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ $>$ \mbox{\hyperlink{classWarEngineState_aa88851d165886c80521e93c2d74338d5}{get\+Alliances}} ()
-\begin{DoxyCompactList}\small\item\em Returns the alliances member variable. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$ \mbox{\hyperlink{classWarEngineState_a89508b034ce4006ed830f671b525f745}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Returns a clone of the current \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} object. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classWarEngineState_a7cad5162c75ba597dfd8f4691e6049aa}{$\sim$\+War\+Engine\+State}} ()
-\begin{DoxyCompactList}\small\item\em Destructor for class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+class \mbox{\hyperlink{classWarEngineState_abc1564d646c3fdc348c5320f301d01ff}{War\+Engine}}
+\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -33,243 +21,21 @@ Class for storing current state of entire simulation.
 
 Class contains member variables areas which stores a vector of all war theatres and keypoints as well as a vector of all alliances in current simulation. 
 
-Definition at line \mbox{\hyperlink{WarEngineState_8h_source_l00015}{15}} of file \mbox{\hyperlink{WarEngineState_8h_source}{War\+Engine\+State.\+h}}.
+Definition at line \mbox{\hyperlink{WarEngineState_8h_source_l00017}{17}} of file \mbox{\hyperlink{WarEngineState_8h_source}{War\+Engine\+State.\+h}}.
 
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classWarEngineState_a78b3ab46445c7abc7797531004cd6d67}\label{classWarEngineState_a78b3ab46445c7abc7797531004cd6d67}} 
-\index{WarEngineState@{WarEngineState}!WarEngineState@{WarEngineState}}
-\index{WarEngineState@{WarEngineState}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{WarEngineState()}{WarEngineState()}}
-{\footnotesize\ttfamily War\+Engine\+State\+::\+War\+Engine\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classWarEngineState_abc1564d646c3fdc348c5320f301d01ff}\label{classWarEngineState_abc1564d646c3fdc348c5320f301d01ff}} 
+\index{WarEngineState@{WarEngineState}!WarEngine@{WarEngine}}
+\index{WarEngine@{WarEngine}!WarEngineState@{WarEngineState}}
+\doxysubsubsection{\texorpdfstring{WarEngine}{WarEngine}}
+{\footnotesize\ttfamily friend class \mbox{\hyperlink{classWarEngine}{War\+Engine}}\hspace{0.3cm}{\ttfamily [friend]}}
 
 
 
-Initializes an instance of the \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} class. 
+Definition at line \mbox{\hyperlink{WarEngineState_8h_source_l00019}{19}} of file \mbox{\hyperlink{WarEngineState_8h_source}{War\+Engine\+State.\+h}}.
 
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00003                                \{}
-\DoxyCodeLine{00004     area = \textcolor{keyword}{nullptr};}
-\DoxyCodeLine{00005 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classWarEngineState_a7cad5162c75ba597dfd8f4691e6049aa}\label{classWarEngineState_a7cad5162c75ba597dfd8f4691e6049aa}} 
-\index{WarEngineState@{WarEngineState}!````~WarEngineState@{$\sim$WarEngineState}}
-\index{````~WarEngineState@{$\sim$WarEngineState}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{$\sim$WarEngineState()}{~WarEngineState()}}
-{\footnotesize\ttfamily War\+Engine\+State\+::$\sim$\+War\+Engine\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Destructor for class. 
-
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00048                                \{}
-\DoxyCodeLine{00049 }
-\DoxyCodeLine{00050     \textcolor{keywordflow}{for}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance : this-\/>alliances)\{}
-\DoxyCodeLine{00051         \textcolor{keyword}{delete} alliance;}
-\DoxyCodeLine{00052     \}}
-\DoxyCodeLine{00053 }
-\DoxyCodeLine{00054     \textcolor{keyword}{delete} this-\/>area;}
-\DoxyCodeLine{00055         }
-\DoxyCodeLine{00056 \}}
-
-\end{DoxyCode}
-
-
-\doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classWarEngineState_a89508b034ce4006ed830f671b525f745}\label{classWarEngineState_a89508b034ce4006ed830f671b525f745}} 
-\index{WarEngineState@{WarEngineState}!clone@{clone}}
-\index{clone@{clone}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} $\ast$ War\+Engine\+State\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns a clone of the current \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} object. 
-
-\begin{DoxyReturn}{Returns}
-War\+Engine\+State$\ast$ 
-\end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00031}{31}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00031                                      \{}
-\DoxyCodeLine{00032 }
-\DoxyCodeLine{00033     \mbox{\hyperlink{classWarEngineState}{WarEngineState}}* clonedState = \textcolor{keyword}{new} \mbox{\hyperlink{classWarEngineState_a78b3ab46445c7abc7797531004cd6d67}{WarEngineState}}();}
-\DoxyCodeLine{00034 }
-\DoxyCodeLine{00035     clonedState-\/>\mbox{\hyperlink{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}{setArea}}( this-\/>area-\/>clone() );}
-\DoxyCodeLine{00036 }
-\DoxyCodeLine{00037     \textcolor{keywordflow}{for}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance : this-\/>alliances)\{}
-\DoxyCodeLine{00038         }
-\DoxyCodeLine{00039         \mbox{\hyperlink{classAlliance}{Alliance}}* clonedAlliance = alliance-\/>\mbox{\hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{clone}}();}
-\DoxyCodeLine{00040 }
-\DoxyCodeLine{00041         clonedState-\/>alliances.push\_back(alliance);}
-\DoxyCodeLine{00042 }
-\DoxyCodeLine{00043     \}}
-\DoxyCodeLine{00044 }
-\DoxyCodeLine{00045         \textcolor{keywordflow}{return} clonedState;}
-\DoxyCodeLine{00046     \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classWarEngineState_aa88851d165886c80521e93c2d74338d5}\label{classWarEngineState_aa88851d165886c80521e93c2d74338d5}} 
-\index{WarEngineState@{WarEngineState}!getAlliances@{getAlliances}}
-\index{getAlliances@{getAlliances}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{getAlliances()}{getAlliances()}}
-{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ $>$ War\+Engine\+State\+::get\+Alliances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns the alliances member variable. 
-
-\begin{DoxyReturn}{Returns}
-vector \texorpdfstring{$<$}{<}Alliance$\ast$\texorpdfstring{$>$}{>}
-\end{DoxyReturn}
-
-\begin{DoxyExceptions}{Exceptions}
-{\em out\+\_\+of\+\_\+range} & save archive is empty \\
-\hline
-\end{DoxyExceptions}
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00023                                                \{}
-\DoxyCodeLine{00024 }
-\DoxyCodeLine{00025     \textcolor{keywordflow}{if}(alliances.size() == 0)}
-\DoxyCodeLine{00026         std::\_\_throw\_out\_of\_range(\textcolor{stringliteral}{"{}No Alliances stored."{}});}
-\DoxyCodeLine{00027 }
-\DoxyCodeLine{00028     \textcolor{keywordflow}{return} alliances;}
-\DoxyCodeLine{00029 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}\label{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}} 
-\index{WarEngineState@{WarEngineState}!getArea@{getArea}}
-\index{getArea@{getArea}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{getArea()}{getArea()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classArea}{Area}} $\ast$ War\+Engine\+State\+::get\+Area (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns the member variable area. 
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Retruns the area stored in the state
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-Area$\ast$ 
-\end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00011                               \{}
-\DoxyCodeLine{00012 }
-\DoxyCodeLine{00013     \textcolor{keywordflow}{if}(area == \textcolor{keyword}{nullptr})}
-\DoxyCodeLine{00014         \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}No Areas Stored."{}};}
-\DoxyCodeLine{00015 }
-\DoxyCodeLine{00016     \textcolor{keywordflow}{return} this-\/>area;}
-\DoxyCodeLine{00017 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classWarEngineState_a262f8e5974144a644a24ca4edc949562}\label{classWarEngineState_a262f8e5974144a644a24ca4edc949562}} 
-\index{WarEngineState@{WarEngineState}!setAlliances@{setAlliances}}
-\index{setAlliances@{setAlliances}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{setAlliances()}{setAlliances()}}
-{\footnotesize\ttfamily void War\+Engine\+State\+::set\+Alliances (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ $>$}]{alliances }\end{DoxyParamCaption})}
-
-
-
-Sets the given vector of \mbox{\hyperlink{classAlliance}{Alliance}} object pointers to the alliances member variable. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em vector$<$\+Alliance$\ast$$>$} & alliances\\
-\hline
-\end{DoxyParams}
-Preconditions\+:
-\begin{DoxyItemize}
-\item alliances must be a vector of Alliance$\ast$
-\end{DoxyItemize}
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Sets the instance\textquotesingle{}s alliances member variable to the passed in parameter.
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-void 
-\end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00019                                                              \{}
-\DoxyCodeLine{00020     this-\/>alliances = alliances;}
-\DoxyCodeLine{00021 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}\label{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}} 
-\index{WarEngineState@{WarEngineState}!setArea@{setArea}}
-\index{setArea@{setArea}!WarEngineState@{WarEngineState}}
-\doxysubsubsection{\texorpdfstring{setArea()}{setArea()}}
-{\footnotesize\ttfamily void War\+Engine\+State\+::set\+Area (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArea}{Area}} $\ast$}]{area }\end{DoxyParamCaption})}
-
-
-
-Takes in a vector of \mbox{\hyperlink{classArea}{Area}} and sets it to the areas member of the \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} instance. 
-
-Preconditions\+:
-\begin{DoxyItemize}
-\item area must be of type Area$\ast$
-\end{DoxyItemize}
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Sets the \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} area member variable to the passed in parameter.
-\end{DoxyItemize}
-
-
-\begin{DoxyParams}{Parameters}
-{\em area} & must be an Area$\ast$ \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void 
-\end{DoxyReturn}
-
-
-Definition at line \mbox{\hyperlink{WarEngineState_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{WarEngineState_8cpp_source}{War\+Engine\+State.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00007                                        \{}
-\DoxyCodeLine{00008     this-\/>area = area;}
-\DoxyCodeLine{00009 \}}
-
-\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

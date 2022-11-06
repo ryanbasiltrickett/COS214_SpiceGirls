@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.4)  4 NOV 2022 14:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.4)  6 NOV 2022 17:39
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -775,7 +775,9 @@ File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 6.29996pt on input line 174.
- [1] [2] [3] [4] [5] [6] [7] [8] [9] [10]
+ [1] [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 177.
 
 Chapter 1.
@@ -795,7 +797,6 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
 ) [1
-
 
 ] [2
 
@@ -868,166 +869,178 @@ LaTeX Warning: Reference `Defensive_8cpp_source' on page 5 undefined on input li
 LaTeX Warning: Reference `Defensive_8h_source' on page 5 undefined on input line 23.
 
 
-LaTeX Warning: Reference `Entity_8cpp_source' on page 5 undefined on input line 24.
+LaTeX Warning: Reference `EasySetup_8cpp_source' on page 5 undefined on input line 24.
 
 
-LaTeX Warning: Reference `Entity_8h_source' on page 5 undefined on input line 25.
+LaTeX Warning: Reference `EasySetup_8h_source' on page 5 undefined on input line 25.
 
 
-LaTeX Warning: Reference `Factory_8cpp_source' on page 5 undefined on input line 26.
+LaTeX Warning: Reference `Entity_8cpp_source' on page 5 undefined on input line 26.
 
 
-LaTeX Warning: Reference `Factory_8h_source' on page 5 undefined on input line 27.
+LaTeX Warning: Reference `Entity_8h_source' on page 5 undefined on input line 27.
 
 
-LaTeX Warning: Reference `General_8cpp_source' on page 5 undefined on input line 28.
+LaTeX Warning: Reference `Factory_8cpp_source' on page 5 undefined on input line 28.
 
 
-LaTeX Warning: Reference `General_8h_source' on page 5 undefined on input line 29.
+LaTeX Warning: Reference `Factory_8h_source' on page 5 undefined on input line 29.
 
 
-LaTeX Warning: Reference `KeyPoint_8cpp_source' on page 5 undefined on input line 30.
+LaTeX Warning: Reference `General_8cpp_source' on page 5 undefined on input line 30.
 
 
-LaTeX Warning: Reference `KeyPoint_8h_source' on page 5 undefined on input line 31.
+LaTeX Warning: Reference `General_8h_source' on page 5 undefined on input line 31.
 
 
-LaTeX Warning: Reference `Negotiator_8cpp_source' on page 5 undefined on input line 32.
+LaTeX Warning: Reference `KeyPoint_8cpp_source' on page 5 undefined on input line 32.
 
 
-LaTeX Warning: Reference `Negotiator_8h_source' on page 5 undefined on input line 33.
+LaTeX Warning: Reference `KeyPoint_8h_source' on page 5 undefined on input line 33.
 
 
-LaTeX Warning: Reference `NegotiatorTest_8h_source' on page 5 undefined on input line 34.
+LaTeX Warning: Reference `Negotiator_8cpp_source' on page 5 undefined on input line 34.
 
 
-LaTeX Warning: Reference `Passive_8cpp_source' on page 5 undefined on input line 35.
+LaTeX Warning: Reference `Negotiator_8h_source' on page 5 undefined on input line 35.
 
 
-LaTeX Warning: Reference `Passive_8h_source' on page 5 undefined on input line 36.
+LaTeX Warning: Reference `NegotiatorTest_8h_source' on page 5 undefined on input line 36.
 
 
-LaTeX Warning: Reference `Personnel_8cpp_source' on page 5 undefined on input line 37.
+LaTeX Warning: Reference `Passive_8cpp_source' on page 5 undefined on input line 37.
 
 
-LaTeX Warning: Reference `Personnel_8h_source' on page 5 undefined on input line 38.
+LaTeX Warning: Reference `Passive_8h_source' on page 5 undefined on input line 38.
 
 
-LaTeX Warning: Reference `PersonnelFactory_8cpp_source' on page 5 undefined on input line 39.
+LaTeX Warning: Reference `Personnel_8cpp_source' on page 5 undefined on input line 39.
 
 
-LaTeX Warning: Reference `PersonnelFactory_8h_source' on page 5 undefined on input line 40.
+LaTeX Warning: Reference `Personnel_8h_source' on page 5 undefined on input line 40.
 
 
-LaTeX Warning: Reference `Piercing_8cpp_source' on page 5 undefined on input line 41.
+LaTeX Warning: Reference `PersonnelFactory_8cpp_source' on page 5 undefined on input line 41.
 
 [5
 
 ]
 
-LaTeX Warning: Reference `Piercing_8h_source' on page 6 undefined on input line 42.
+LaTeX Warning: Reference `PersonnelFactory_8h_source' on page 6 undefined on input line 42.
 
 
-LaTeX Warning: Reference `Rainy_8cpp_source' on page 6 undefined on input line 43.
+LaTeX Warning: Reference `Piercing_8cpp_source' on page 6 undefined on input line 43.
 
 
-LaTeX Warning: Reference `Rainy_8h_source' on page 6 undefined on input line 44.
+LaTeX Warning: Reference `Piercing_8h_source' on page 6 undefined on input line 44.
 
 
-LaTeX Warning: Reference `SaveArchive_8cpp_source' on page 6 undefined on input line 45.
+LaTeX Warning: Reference `Rainy_8cpp_source' on page 6 undefined on input line 45.
 
 
-LaTeX Warning: Reference `SaveArchive_8h_source' on page 6 undefined on input line 46.
+LaTeX Warning: Reference `Rainy_8h_source' on page 6 undefined on input line 46.
 
 
-LaTeX Warning: Reference `Strategy_8cpp_source' on page 6 undefined on input line 47.
+LaTeX Warning: Reference `RoundStats_8cpp_source' on page 6 undefined on input line 47.
 
 
-LaTeX Warning: Reference `Strategy_8h_source' on page 6 undefined on input line 48.
+LaTeX Warning: Reference `RoundStats_8h_source' on page 6 undefined on input line 48.
 
 
-LaTeX Warning: Reference `Sunny_8cpp_source' on page 6 undefined on input line 49.
+LaTeX Warning: Reference `SaveArchive_8cpp_source' on page 6 undefined on input line 49.
 
 
-LaTeX Warning: Reference `Sunny_8h_source' on page 6 undefined on input line 50.
+LaTeX Warning: Reference `SaveArchive_8h_source' on page 6 undefined on input line 50.
 
 
-LaTeX Warning: Reference `Support_8cpp_source' on page 6 undefined on input line 51.
+LaTeX Warning: Reference `Strategy_8cpp_source' on page 6 undefined on input line 51.
 
 
-LaTeX Warning: Reference `Support_8h_source' on page 6 undefined on input line 52.
+LaTeX Warning: Reference `Strategy_8h_source' on page 6 undefined on input line 52.
 
 
-LaTeX Warning: Reference `SupportFactory_8cpp_source' on page 6 undefined on input line 53.
+LaTeX Warning: Reference `Sunny_8cpp_source' on page 6 undefined on input line 53.
 
 
-LaTeX Warning: Reference `SupportFactory_8h_source' on page 6 undefined on input line 54.
+LaTeX Warning: Reference `Sunny_8h_source' on page 6 undefined on input line 54.
 
 
-LaTeX Warning: Reference `TerrainType_8cpp_source' on page 6 undefined on input line 55.
+LaTeX Warning: Reference `Support_8cpp_source' on page 6 undefined on input line 55.
 
 
-LaTeX Warning: Reference `TerrainType_8h_source' on page 6 undefined on input line 56.
+LaTeX Warning: Reference `Support_8h_source' on page 6 undefined on input line 56.
 
 
-LaTeX Warning: Reference `testmain_8cpp_source' on page 6 undefined on input line 57.
+LaTeX Warning: Reference `SupportFactory_8cpp_source' on page 6 undefined on input line 57.
 
 
-LaTeX Warning: Reference `Type_8cpp_source' on page 6 undefined on input line 58.
+LaTeX Warning: Reference `SupportFactory_8h_source' on page 6 undefined on input line 58.
 
 
-LaTeX Warning: Reference `Type_8h_source' on page 6 undefined on input line 59.
+LaTeX Warning: Reference `TerrainType_8cpp_source' on page 6 undefined on input line 59.
 
 
-LaTeX Warning: Reference `Vehicle_8cpp_source' on page 6 undefined on input line 60.
+LaTeX Warning: Reference `TerrainType_8h_source' on page 6 undefined on input line 60.
 
 
-LaTeX Warning: Reference `Vehicle_8h_source' on page 6 undefined on input line 61.
+LaTeX Warning: Reference `testmain_8cpp_source' on page 6 undefined on input line 61.
 
 
-LaTeX Warning: Reference `VehicleFactory_8cpp_source' on page 6 undefined on input line 62.
+LaTeX Warning: Reference `Type_8cpp_source' on page 6 undefined on input line 62.
 
 
-LaTeX Warning: Reference `VehicleFactory_8h_source' on page 6 undefined on input line 63.
+LaTeX Warning: Reference `Type_8h_source' on page 6 undefined on input line 63.
 
 
-LaTeX Warning: Reference `WarEngine_8cpp_source' on page 6 undefined on input line 64.
+LaTeX Warning: Reference `Vehicle_8cpp_source' on page 6 undefined on input line 64.
 
 
-LaTeX Warning: Reference `WarEngine_8h_source' on page 6 undefined on input line 65.
+LaTeX Warning: Reference `Vehicle_8h_source' on page 6 undefined on input line 65.
 
 
-LaTeX Warning: Reference `WarEngineMemento_8cpp_source' on page 6 undefined on input line 66.
+LaTeX Warning: Reference `VehicleFactory_8cpp_source' on page 6 undefined on input line 66.
 
 
-LaTeX Warning: Reference `WarEngineMemento_8h_source' on page 6 undefined on input line 67.
+LaTeX Warning: Reference `VehicleFactory_8h_source' on page 6 undefined on input line 67.
 
 
-LaTeX Warning: Reference `WarEngineState_8cpp_source' on page 6 undefined on input line 68.
+LaTeX Warning: Reference `WarEngine_8cpp_source' on page 6 undefined on input line 68.
 
 
-LaTeX Warning: Reference `WarEngineState_8h_source' on page 6 undefined on input line 69.
+LaTeX Warning: Reference `WarEngine_8h_source' on page 6 undefined on input line 69.
 
 
-LaTeX Warning: Reference `WarTheatre_8cpp_source' on page 6 undefined on input line 70.
+LaTeX Warning: Reference `WarEngineMemento_8cpp_source' on page 6 undefined on input line 70.
 
 
-LaTeX Warning: Reference `WarTheatre_8h_source' on page 6 undefined on input line 71.
+LaTeX Warning: Reference `WarEngineMemento_8h_source' on page 6 undefined on input line 71.
 
 
-LaTeX Warning: Reference `Weather_8cpp_source' on page 6 undefined on input line 72.
+LaTeX Warning: Reference `WarEngineState_8cpp_source' on page 6 undefined on input line 72.
 
 
-LaTeX Warning: Reference `Weather_8h_source' on page 6 undefined on input line 73.
+LaTeX Warning: Reference `WarEngineState_8h_source' on page 6 undefined on input line 73.
+
+
+LaTeX Warning: Reference `WarTheatre_8cpp_source' on page 6 undefined on input line 74.
+
+
+LaTeX Warning: Reference `WarTheatre_8h_source' on page 6 undefined on input line 75.
+
+
+LaTeX Warning: Reference `Weather_8cpp_source' on page 6 undefined on input line 76.
+
+
+LaTeX Warning: Reference `Weather_8h_source' on page 6 undefined on input line 77.
 
 ) [6]
 Chapter 4.
 (classAddOn.tex
 Package epstopdf Info: Source file: <classAddOn.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3982 bytes
 (epstopdf)             Output file: <classAddOn-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:03
+(epstopdf)                    date: 2022-11-06 17:38:24
 (epstopdf)                    size: 5975 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAddOn-eps-converted-to.pdf classAddOn.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1036,7 +1049,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAddOn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAddOn-eps-converted-to.pdf>
-<classAddOn-eps-converted-to.pdf, id=2381, 501.875pt x 449.68pt>
+<classAddOn-eps-converted-to.pdf, id=2509, 501.875pt x 449.68pt>
 File: classAddOn-eps-converted-to.pdf Graphic file (type pdf)
 <use classAddOn-eps-converted-to.pdf>
 Package pdftex.def Info: classAddOn-eps-converted-to.pdf  used on input line 15.
@@ -1090,10 +1103,10 @@ Underfull \hbox (badness 10000) detected at line 236
 
 [10]) (classAerialType.tex
 Package epstopdf Info: Source file: <classAerialType.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3770 bytes
 (epstopdf)             Output file: <classAerialType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:04
+(epstopdf)                    date: 2022-11-06 17:38:25
 (epstopdf)                    size: 4848 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAerialType-eps-converted-to.pdf classAerialType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1102,7 +1115,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAerialType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAerialType-eps-converted-to.pdf>
-<classAerialType-eps-converted-to.pdf, id=2502, 501.875pt x 489.83pt>
+<classAerialType-eps-converted-to.pdf, id=2629, 501.875pt x 489.83pt>
 File: classAerialType-eps-converted-to.pdf Graphic file (type pdf)
 <use classAerialType-eps-converted-to.pdf>
 Package pdftex.def Info: classAerialType-eps-converted-to.pdf  used on input line 15.
@@ -1114,10 +1127,10 @@ Underfull \hbox (badness 10000) detected at line 97
 
 ) (classAggressive.tex
 Package epstopdf Info: Source file: <classAggressive.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3778 bytes
 (epstopdf)             Output file: <classAggressive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:05
+(epstopdf)                    date: 2022-11-06 17:38:27
 (epstopdf)                    size: 5294 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAggressive-eps-converted-to.pdf classAggressive.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1126,7 +1139,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAggressive-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAggressive-eps-converted-to.pdf>
-<classAggressive-eps-converted-to.pdf, id=2537, 501.875pt x 478.78876pt>
+<classAggressive-eps-converted-to.pdf, id=2665, 501.875pt x 478.78876pt>
 File: classAggressive-eps-converted-to.pdf Graphic file (type pdf)
 <use classAggressive-eps-converted-to.pdf>
 Package pdftex.def Info: classAggressive-eps-converted-to.pdf  used on input line 6.
@@ -1145,66 +1158,63 @@ Underfull \hbox (badness 10000) detected at line 98
 
 ) (classAlliance.tex [14]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 7.19995pt on input line 49.
+(Font)              scaled to size 7.19995pt on input line 53.
  [15] [16]
-Underfull \hbox (badness 10000) detected at line 161
+Underfull \hbox (badness 10000) detected at line 170
 [][][]
  []
 
 [17]
-Underfull \hbox (badness 10000) detected at line 200
+Underfull \hbox (badness 10000) detected at line 209
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 239
+Underfull \hbox (badness 10000) detected at line 248
 [][][]
  []
 
 [18]
-Underfull \hbox (badness 10000) detected at line 268
+Underfull \hbox (badness 10000) detected at line 277
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 302
+Underfull \hbox (badness 10000) detected at line 311
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 348
+Underfull \hbox (badness 10000) detected at line 357
 [][][]
  []
 
 [19]
-Underfull \hbox (badness 10000) detected at line 388
+Underfull \hbox (badness 10000) detected at line 397
 [][][]
  []
 
 [20]
-Underfull \hbox (badness 10000) detected at line 423
+Underfull \hbox (badness 10000) detected at line 449
 [][][]
  []
 
-
-Overfull \vbox (4.14366pt too high) has occurred while \output is active []
-
- [21]
-Underfull \hbox (badness 10000) detected at line 494
+[21]
+Underfull \hbox (badness 10000) detected at line 540
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 524
+[22]
+Underfull \hbox (badness 10000) detected at line 570
 [][][]
  []
 
-) (classAquaticType.tex [22]
+) (classAquaticType.tex
 Package epstopdf Info: Source file: <classAquaticType.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classAquaticType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:06
+(epstopdf)                    date: 2022-11-06 17:38:28
 (epstopdf)                    size: 5118 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAquaticType-eps-converted-to.pdf classAquaticType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1213,7 +1223,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAquaticType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAquaticType-eps-converted-to.pdf>
-<classAquaticType-eps-converted-to.pdf, id=2766, 501.875pt x 446.66875pt>
+<classAquaticType-eps-converted-to.pdf, id=2902, 501.875pt x 446.66875pt>
 File: classAquaticType-eps-converted-to.pdf Graphic file (type pdf)
 <use classAquaticType-eps-converted-to.pdf>
 Package pdftex.def Info: classAquaticType-eps-converted-to.pdf  used on input line 15.
@@ -1225,10 +1235,10 @@ Underfull \hbox (badness 10000) detected at line 97
 
 ) (classArea.tex
 Package epstopdf Info: Source file: <classArea.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3885 bytes
 (epstopdf)             Output file: <classArea-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:08
+(epstopdf)                    date: 2022-11-06 17:38:29
 (epstopdf)                    size: 5531 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classArea-eps-converted-to.pdf classArea.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1237,22 +1247,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classArea-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classArea-eps-converted-to.pdf>
-<classArea-eps-converted-to.pdf, id=2801, 501.875pt x 233.87375pt>
+<classArea-eps-converted-to.pdf, id=2937, 501.875pt x 233.87375pt>
 File: classArea-eps-converted-to.pdf Graphic file (type pdf)
 <use classArea-eps-converted-to.pdf>
 Package pdftex.def Info: classArea-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 122.11424pt x 56.9055pt.
  [24] [25]
-Underfull \hbox (badness 10000) detected at line 97
+Underfull \hbox (badness 10000) detected at line 109
 [][][]
  []
 
-) (classArmour.tex
+) (classArmour.tex [26]
 Package epstopdf Info: Source file: <classArmour.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3867 bytes
 (epstopdf)             Output file: <classArmour-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:09
+(epstopdf)                    date: 2022-11-06 17:38:30
 (epstopdf)                    size: 5377 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classArmour-eps-converted-to.pdf classArmour.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1261,32 +1271,32 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classArmour-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classArmour-eps-converted-to.pdf>
-<classArmour-eps-converted-to.pdf, id=2858, 501.875pt x 971.63pt>
+<classArmour-eps-converted-to.pdf, id=3008, 501.875pt x 971.63pt>
 File: classArmour-eps-converted-to.pdf Graphic file (type pdf)
 <use classArmour-eps-converted-to.pdf>
 Package pdftex.def Info: classArmour-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 44.08702pt x 85.35826pt.
- [26] [27]
+ [27]
 Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
 [28]
-Underfull \hbox (badness 10000) detected at line 129
+Underfull \hbox (badness 10000) detected at line 130
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 172
+[29]
+Underfull \hbox (badness 10000) detected at line 173
 [][][]
  []
 
 ) (classCloudy.tex
 Package epstopdf Info: Source file: <classCloudy.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3768 bytes
 (epstopdf)             Output file: <classCloudy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:10
+(epstopdf)                    date: 2022-11-06 17:38:32
 (epstopdf)                    size: 5254 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classCloudy-eps-converted-to.pdf classCloudy.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1295,17 +1305,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classCloudy-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classCloudy-eps-converted-to.pdf>
-<classCloudy-eps-converted-to.pdf, id=2926, 501.875pt x 600.2425pt>
+<classCloudy-eps-converted-to.pdf, id=3077, 501.875pt x 600.2425pt>
 File: classCloudy-eps-converted-to.pdf Graphic file (type pdf)
 <use classCloudy-eps-converted-to.pdf>
 Package pdftex.def Info: classCloudy-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
- [29]
+ [30]
 Underfull \hbox (badness 10000) detected at line 65
 [][][]
  []
 
-[30]
+
 Underfull \hbox (badness 10000) detected at line 98
 [][][]
  []
@@ -1316,31 +1326,31 @@ Underfull \hbox (badness 10000) detected at line 141
  []
 
 ) (classCountry.tex [32]
-Underfull \hbox (badness 10000) detected at line 65
+Underfull \hbox (badness 10000) detected at line 69
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
- []
-
-
-Underfull \hbox (badness 10000) detected at line 100
-[][][]
  []
 
 [33]
-Underfull \hbox (badness 10000) detected at line 129
+Underfull \hbox (badness 10000) detected at line 99
 [][][]
  []
 
-[34]) (classDefensive.tex
+
+Underfull \hbox (badness 10000) detected at line 128
+[][][]
+ []
+
+) (classDefensive.tex
 Package epstopdf Info: Source file: <classDefensive.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3776 bytes
 (epstopdf)             Output file: <classDefensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:11
+(epstopdf)                    date: 2022-11-06 17:38:33
 (epstopdf)                    size: 5534 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classDefensive-eps-converted-to.pdf classDefensive.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1349,12 +1359,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classDefensive-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classDefensive-eps-converted-to.pdf>
-<classDefensive-eps-converted-to.pdf, id=3052, 501.875pt x 521.95pt>
+<classDefensive-eps-converted-to.pdf, id=3178, 501.875pt x 521.95pt>
 File: classDefensive-eps-converted-to.pdf Graphic file (type pdf)
 <use classDefensive-eps-converted-to.pdf>
 Package pdftex.def Info: classDefensive-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 54.71631pt x 56.9055pt.
- [35]
+ [34]
 Underfull \hbox (badness 10000) detected at line 57
 [][][]
  []
@@ -1364,17 +1374,17 @@ Underfull \hbox (badness 10000) detected at line 85
 [][][]
  []
 
-[36]
+[35]
 Underfull \hbox (badness 10000) detected at line 95
 [][][]
  []
 
-) (classEntity.tex
+) (classEasySetup.tex [36] [37] [38] [39] [40]) (classEntity.tex
 Package epstopdf Info: Source file: <classEntity.eps>
-(epstopdf)                    date: 2022-11-04 14:53:57
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 4249 bytes
 (epstopdf)             Output file: <classEntity-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:12
+(epstopdf)                    date: 2022-11-06 17:38:34
 (epstopdf)                    size: 6833 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classEntity-eps-converted-to.pdf classEntity.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1383,22 +1393,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classEntity-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classEntity-eps-converted-to.pdf>
-<classEntity-eps-converted-to.pdf, id=3107, 501.875pt x 156.585pt>
+<classEntity-eps-converted-to.pdf, id=3357, 501.875pt x 156.585pt>
 File: classEntity-eps-converted-to.pdf Graphic file (type pdf)
 <use classEntity-eps-converted-to.pdf>
 Package pdftex.def Info: classEntity-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 273.5892pt x 85.35826pt.
- [37] [38]
+ [41] [42]
 Underfull \hbox (badness 10000) detected at line 148
 [][][]
  []
 
-[39]
+
 Underfull \hbox (badness 10000) detected at line 177
 [][][]
  []
 
-
+[43]
 Underfull \hbox (badness 10000) detected at line 206
 [][][]
  []
@@ -1408,12 +1418,12 @@ Underfull \hbox (badness 10000) detected at line 235
 [][][]
  []
 
-[40]
+[44]
 Underfull \hbox (badness 10000) detected at line 274
 [][][]
  []
 
-[41]
+[45]
 Underfull \hbox (badness 10000) detected at line 313
 [][][]
  []
@@ -1423,18 +1433,18 @@ Underfull \hbox (badness 10000) detected at line 352
 [][][]
  []
 
-[42]
+[46]
 Underfull \hbox (badness 10000) detected at line 391
 [][][]
  []
 
 ) (classFactory.tex
 Package epstopdf Info: Source file: <classFactory.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
-(epstopdf)                    size: 4005 bytes
+(epstopdf)                    date: 2022-11-06 17:37:41
+(epstopdf)                    size: 4004 bytes
 (epstopdf)             Output file: <classFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:14
-(epstopdf)                    size: 6029 bytes
+(epstopdf)                    date: 2022-11-06 17:38:35
+(epstopdf)                    size: 6012 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classFactory-eps-converted-to.pdf classFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
@@ -1442,12 +1452,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classFactory-eps-converted-to.pdf>
-<classFactory-eps-converted-to.pdf, id=3240, 501.875pt x 111.41624pt>
+<classFactory-eps-converted-to.pdf, id=3490, 501.875pt x 111.41624pt>
 File: classFactory-eps-converted-to.pdf Graphic file (type pdf)
 <use classFactory-eps-converted-to.pdf>
 Package pdftex.def Info: classFactory-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 256.3281pt x 56.9055pt.
- [43] [44]
+ [47] [48]
 Underfull \hbox (badness 10000) detected at line 141
 [][][]
  []
@@ -1457,22 +1467,22 @@ Underfull \hbox (badness 10000) detected at line 170
 [][][]
  []
 
-[45]
+[49]
 Underfull \hbox (badness 10000) detected at line 209
 [][][]
  []
 
-[46]
+[50]
 Underfull \hbox (badness 10000) detected at line 248
 [][][]
  []
 
-) (classGeneral.tex [47]
+) (classGeneral.tex [51]
 Underfull \hbox (badness 10000) detected at line 72
 [][][]
  []
 
-[48]
+[52]
 Underfull \hbox (badness 10000) detected at line 106
 [][][]
  []
@@ -1484,10 +1494,10 @@ Underfull \hbox (badness 10000) detected at line 150
 
 ) (classKeyPoint.tex
 Package epstopdf Info: Source file: <classKeyPoint.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3766 bytes
 (epstopdf)             Output file: <classKeyPoint-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:15
+(epstopdf)                    date: 2022-11-06 17:38:37
 (epstopdf)                    size: 5142 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classKeyPoint-eps-converted-to.pdf classKeyPoint.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1496,28 +1506,23 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classKeyPoint-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classKeyPoint-eps-converted-to.pdf>
-<classKeyPoint-eps-converted-to.pdf, id=3392, 501.875pt x 574.145pt>
+<classKeyPoint-eps-converted-to.pdf, id=3642, 501.875pt x 574.145pt>
 File: classKeyPoint-eps-converted-to.pdf Graphic file (type pdf)
 <use classKeyPoint-eps-converted-to.pdf>
 Package pdftex.def Info: classKeyPoint-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 49.73862pt x 56.9055pt.
- [49] [50] [51]
+ [53] [54] [55]
 Underfull \hbox (badness 10000) detected at line 156
 [][][]
  []
 
-[52]
-Underfull \hbox (badness 10000) detected at line 236
+[56]
+Underfull \hbox (badness 10000) detected at line 245
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 275
-[][][]
- []
-
-[53]
-Underfull \hbox (badness 10000) detected at line 303
+[57]
+Underfull \hbox (badness 10000) detected at line 304
 [][][]
  []
 
@@ -1526,52 +1531,57 @@ Underfull \hbox (badness 10000) detected at line 332
 [][][]
  []
 
-[54]
-Underfull \hbox (badness 10000) detected at line 378
-[][][]
- []
-
-[55]
-Underfull \hbox (badness 10000) detected at line 422
-[][][]
- []
-
-[56]
-Underfull \hbox (badness 10000) detected at line 492
+[58]
+Underfull \hbox (badness 10000) detected at line 361
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 532
-[][][]
- []
-
-[57]) (classNegotiator.tex [58]
-Underfull \hbox (badness 10000) detected at line 91
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 123
+Underfull \hbox (badness 10000) detected at line 407
 [][][]
  []
 
 [59]
-Underfull \hbox (badness 10000) detected at line 157
+Underfull \hbox (badness 10000) detected at line 451
 [][][]
  []
 
 [60]
+Underfull \hbox (badness 10000) detected at line 521
+[][][]
+ []
+
+[61]
+Underfull \hbox (badness 10000) detected at line 561
+[][][]
+ []
+
+) (classNegotiator.tex [62]
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+[63]
+Underfull \hbox (badness 10000) detected at line 123
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 157
+[][][]
+ []
+
+[64]
 Underfull \hbox (badness 10000) detected at line 202
 [][][]
  []
 
 ) (classPassive.tex
 Package epstopdf Info: Source file: <classPassive.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classPassive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:16
+(epstopdf)                    date: 2022-11-06 17:38:38
 (epstopdf)                    size: 5313 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPassive-eps-converted-to.pdf classPassive.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1580,12 +1590,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classPassive-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classPassive-eps-converted-to.pdf>
-<classPassive-eps-converted-to.pdf, id=3615, 501.875pt x 600.2425pt>
+<classPassive-eps-converted-to.pdf, id=3869, 501.875pt x 600.2425pt>
 File: classPassive-eps-converted-to.pdf Graphic file (type pdf)
 <use classPassive-eps-converted-to.pdf>
 Package pdftex.def Info: classPassive-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
- [61]
+ [65]
 Underfull \hbox (badness 10000) detected at line 55
 [][][]
  []
@@ -1596,16 +1606,19 @@ Underfull \hbox (badness 10000) detected at line 83
  []
 
 
+Overfull \vbox (0.95244pt too high) has occurred while \output is active []
+
+ [66]
 Underfull \hbox (badness 10000) detected at line 93
 [][][]
  []
 
-[62]) (classPersonnel.tex
+) (classPersonnel.tex
 Package epstopdf Info: Source file: <classPersonnel.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classPersonnel-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:18
+(epstopdf)                    date: 2022-11-06 17:38:39
 (epstopdf)                    size: 5076 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPersonnel-eps-converted-to.pdf classPersonnel.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1614,32 +1627,32 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classPersonnel-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classPersonnel-eps-converted-to.pdf>
-<classPersonnel-eps-converted-to.pdf, id=3673, 501.875pt x 521.95pt>
+<classPersonnel-eps-converted-to.pdf, id=3928, 501.875pt x 521.95pt>
 File: classPersonnel-eps-converted-to.pdf Graphic file (type pdf)
 <use classPersonnel-eps-converted-to.pdf>
 Package pdftex.def Info: classPersonnel-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 54.71631pt x 56.9055pt.
- [63]
+ [67]
 Underfull \hbox (badness 10000) detected at line 82
 [][][]
  []
 
-[64]
-Underfull \hbox (badness 10000) detected at line 125
+[68]
+Underfull \hbox (badness 10000) detected at line 134
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 168
+[69]
+Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
-) (classPersonnelFactory.tex [65]
+) (classPersonnelFactory.tex
 Package epstopdf Info: Source file: <classPersonnelFactory.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3788 bytes
 (epstopdf)             Output file: <classPersonnelFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:20
+(epstopdf)                    date: 2022-11-06 17:38:40
 (epstopdf)                    size: 5204 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPersonnelFactory-eps-converted-to.pdf classPersonnelFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1648,27 +1661,27 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classPersonnelFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classPersonnelFactory-eps-converted-to.pdf>
-<classPersonnelFactory-eps-converted-to.pdf, id=3745, 501.875pt x 332.24126pt>
+<classPersonnelFactory-eps-converted-to.pdf, id=4006, 501.875pt x 332.24126pt>
 File: classPersonnelFactory-eps-converted-to.pdf Graphic file (type pdf)
 <use classPersonnelFactory-eps-converted-to.pdf>
 Package pdftex.def Info: classPersonnelFactory-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 85.95323pt x 56.9055pt.
- [66]
+ [70]
 Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
 
-[67]
+[71]
 Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
 
 ) (classPiercing.tex
 Package epstopdf Info: Source file: <classPiercing.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3871 bytes
 (epstopdf)             Output file: <classPiercing-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:21
+(epstopdf)                    date: 2022-11-06 17:38:42
 (epstopdf)                    size: 5551 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPiercing-eps-converted-to.pdf classPiercing.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1677,32 +1690,32 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classPiercing-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classPiercing-eps-converted-to.pdf>
-<classPiercing-eps-converted-to.pdf, id=3817, 501.875pt x 899.36pt>
+<classPiercing-eps-converted-to.pdf, id=4080, 501.875pt x 899.36pt>
 File: classPiercing-eps-converted-to.pdf Graphic file (type pdf)
 <use classPiercing-eps-converted-to.pdf>
 Package pdftex.def Info: classPiercing-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 47.63266pt x 85.35826pt.
- [68]
+ [72] [73]
 Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
-[69]
-Underfull \hbox (badness 10000) detected at line 129
+
+Underfull \hbox (badness 10000) detected at line 130
 [][][]
  []
 
-[70]
-Underfull \hbox (badness 10000) detected at line 173
+[74]
+Underfull \hbox (badness 10000) detected at line 175
 [][][]
  []
 
 ) (classRainy.tex
 Package epstopdf Info: Source file: <classRainy.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3766 bytes
 (epstopdf)             Output file: <classRainy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:22
+(epstopdf)                    date: 2022-11-06 17:38:43
 (epstopdf)                    size: 5054 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classRainy-eps-converted-to.pdf classRainy.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1711,57 +1724,57 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classRainy-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classRainy-eps-converted-to.pdf>
-<classRainy-eps-converted-to.pdf, id=3883, 501.875pt x 600.2425pt>
+<classRainy-eps-converted-to.pdf, id=4148, 501.875pt x 600.2425pt>
 File: classRainy-eps-converted-to.pdf Graphic file (type pdf)
 <use classRainy-eps-converted-to.pdf>
 Package pdftex.def Info: classRainy-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
- [71]
+ [75]
 Underfull \hbox (badness 10000) detected at line 65
 [][][]
  []
 
-
+[76]
 Underfull \hbox (badness 10000) detected at line 98
 [][][]
  []
 
-[72]
+
 Underfull \hbox (badness 10000) detected at line 141
 [][][]
  []
 
-) (classSaveArchive.tex [73] [74]
+[77]) (classRoundStats.tex [78]) (classSaveArchive.tex [79] [80]
 Underfull \hbox (badness 10000) detected at line 84
 [][][]
  []
 
-
+[81]
 Underfull \hbox (badness 10000) detected at line 114
 [][][]
  []
 
-[75]
+
 Underfull \hbox (badness 10000) detected at line 153
 [][][]
  []
 
-
+[82]
 Underfull \hbox (badness 10000) detected at line 196
 [][][]
  []
 
-[76]
+[83]
 Underfull \hbox (badness 10000) detected at line 251
 [][][]
  []
 
 ) (classStrategy.tex
 Package epstopdf Info: Source file: <classStrategy.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3970 bytes
 (epstopdf)             Output file: <classStrategy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:24
+(epstopdf)                    date: 2022-11-06 17:38:45
 (epstopdf)                    size: 5869 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classStrategy-eps-converted-to.pdf classStrategy.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1770,17 +1783,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classStrategy-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classStrategy-eps-converted-to.pdf>
-<classStrategy-eps-converted-to.pdf, id=4004, 501.875pt x 159.59625pt>
+<classStrategy-eps-converted-to.pdf, id=4320, 501.875pt x 159.59625pt>
 File: classStrategy-eps-converted-to.pdf Graphic file (type pdf)
 <use classStrategy-eps-converted-to.pdf>
 Package pdftex.def Info: classStrategy-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 178.94415pt x 56.9055pt.
- [77] [78]) (classSunny.tex
+ [84]) (classSunny.tex
 Package epstopdf Info: Source file: <classSunny.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3766 bytes
 (epstopdf)             Output file: <classSunny-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:25
+(epstopdf)                    date: 2022-11-06 17:38:46
 (epstopdf)                    size: 5099 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classSunny-eps-converted-to.pdf classSunny.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1789,12 +1802,12 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classSunny-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classSunny-eps-converted-to.pdf>
-<classSunny-eps-converted-to.pdf, id=4061, 501.875pt x 600.2425pt>
+<classSunny-eps-converted-to.pdf, id=4370, 501.875pt x 600.2425pt>
 File: classSunny-eps-converted-to.pdf Graphic file (type pdf)
 <use classSunny-eps-converted-to.pdf>
 Package pdftex.def Info: classSunny-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
- [79]
+ [85] [86]
 Underfull \hbox (badness 10000) detected at line 65
 [][][]
  []
@@ -1804,17 +1817,17 @@ Underfull \hbox (badness 10000) detected at line 98
 [][][]
  []
 
-[80]
+[87]
 Underfull \hbox (badness 10000) detected at line 141
 [][][]
  []
 
-[81]) (classSupport.tex
+) (classSupport.tex
 Package epstopdf Info: Source file: <classSupport.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3768 bytes
 (epstopdf)             Output file: <classSupport-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:26
+(epstopdf)                    date: 2022-11-06 17:38:47
 (epstopdf)                    size: 5038 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classSupport-eps-converted-to.pdf classSupport.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1823,33 +1836,33 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classSupport-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classSupport-eps-converted-to.pdf>
-<classSupport-eps-converted-to.pdf, id=4125, 501.875pt x 627.34375pt>
+<classSupport-eps-converted-to.pdf, id=4433, 501.875pt x 627.34375pt>
 File: classSupport-eps-converted-to.pdf Graphic file (type pdf)
 <use classSupport-eps-converted-to.pdf>
 Package pdftex.def Info: classSupport-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 45.51906pt x 56.9055pt.
- [82]
+ [88] [89]
 Underfull \hbox (badness 10000) detected at line 82
 [][][]
  []
 
-[83]
-Underfull \hbox (badness 10000) detected at line 125
+
+Underfull \hbox (badness 10000) detected at line 134
 [][][]
  []
 
-
-Underfull \hbox (badness 10000) detected at line 168
+[90]
+Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
-) (classSupportFactory.tex [84]
+) (classSupportFactory.tex
 Package epstopdf Info: Source file: <classSupportFactory.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
-(epstopdf)                    size: 3786 bytes
+(epstopdf)                    date: 2022-11-06 17:37:42
+(epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <classSupportFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:27
-(epstopdf)                    size: 5079 bytes
+(epstopdf)                    date: 2022-11-06 17:38:49
+(epstopdf)                    size: 5066 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classSupportFactory-eps-converted-to.pdf classSupportFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
@@ -1857,27 +1870,27 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classSupportFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classSupportFactory-eps-converted-to.pdf>
-<classSupportFactory-eps-converted-to.pdf, id=4191, 501.875pt x 372.39125pt>
+<classSupportFactory-eps-converted-to.pdf, id=4508, 501.875pt x 372.39125pt>
 File: classSupportFactory-eps-converted-to.pdf Graphic file (type pdf)
 <use classSupportFactory-eps-converted-to.pdf>
 Package pdftex.def Info: classSupportFactory-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 76.68706pt x 56.9055pt.
- [85]
+ [91] [92]
 Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
 
-[86]
+
 Underfull \hbox (badness 10000) detected at line 126
 [][][]
  []
 
-) (classTerrainType.tex
+) (classTerrainType.tex [93]
 Package epstopdf Info: Source file: <classTerrainType.eps>
-(epstopdf)                    date: 2022-11-04 14:53:58
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classTerrainType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:29
+(epstopdf)                    date: 2022-11-06 17:38:50
 (epstopdf)                    size: 4760 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classTerrainType-eps-converted-to.pdf classTerrainType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1886,22 +1899,22 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classTerrainType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classTerrainType-eps-converted-to.pdf>
-<classTerrainType-eps-converted-to.pdf, id=4254, 501.875pt x 451.6875pt>
+<classTerrainType-eps-converted-to.pdf, id=4578, 501.875pt x 451.6875pt>
 File: classTerrainType-eps-converted-to.pdf Graphic file (type pdf)
 <use classTerrainType-eps-converted-to.pdf>
 Package pdftex.def Info: classTerrainType-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 63.22432pt x 56.9055pt.
- [87]
+ [94]
 Underfull \hbox (badness 10000) detected at line 97
 [][][]
  []
 
 ) (classType.tex
 Package epstopdf Info: Source file: <classType.eps>
-(epstopdf)                    date: 2022-11-04 14:53:59
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3974 bytes
 (epstopdf)             Output file: <classType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:30
+(epstopdf)                    date: 2022-11-06 17:38:51
 (epstopdf)                    size: 5508 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classType-eps-converted-to.pdf classType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1910,17 +1923,17 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classType-eps-converted-to.pdf>
-<classType-eps-converted-to.pdf, id=4290, 501.875pt x 149.55875pt>
+<classType-eps-converted-to.pdf, id=4614, 501.875pt x 149.55875pt>
 File: classType-eps-converted-to.pdf Graphic file (type pdf)
 <use classType-eps-converted-to.pdf>
 Package pdftex.def Info: classType-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 190.95953pt x 56.9055pt.
- [88]) (classVehicle.tex [89]
+ [95]) (classVehicle.tex
 Package epstopdf Info: Source file: <classVehicle.eps>
-(epstopdf)                    date: 2022-11-04 14:53:59
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3768 bytes
 (epstopdf)             Output file: <classVehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:31
+(epstopdf)                    date: 2022-11-06 17:38:53
 (epstopdf)                    size: 4906 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classVehicle-eps-converted-to.pdf classVehicle.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1929,32 +1942,32 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classVehicle-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classVehicle-eps-converted-to.pdf>
-<classVehicle-eps-converted-to.pdf, id=4327, 501.875pt x 637.38126pt>
+<classVehicle-eps-converted-to.pdf, id=4641, 501.875pt x 637.38126pt>
 File: classVehicle-eps-converted-to.pdf Graphic file (type pdf)
 <use classVehicle-eps-converted-to.pdf>
 Package pdftex.def Info: classVehicle-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 44.80687pt x 56.9055pt.
- [90]
+ [96] [97]
 Underfull \hbox (badness 10000) detected at line 82
 [][][]
  []
 
-[91]
-Underfull \hbox (badness 10000) detected at line 125
+[98]
+Underfull \hbox (badness 10000) detected at line 134
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 168
+Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
-) (classVehicleFactory.tex [92]
+) (classVehicleFactory.tex [99]
 Package epstopdf Info: Source file: <classVehicleFactory.eps>
-(epstopdf)                    date: 2022-11-04 14:53:59
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <classVehicleFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:33
+(epstopdf)                    date: 2022-11-06 17:38:54
 (epstopdf)                    size: 5127 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classVehicleFactory-eps-converted-to.pdf classVehicleFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1963,77 +1976,52 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classVehicleFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classVehicleFactory-eps-converted-to.pdf>
-<classVehicleFactory-eps-converted-to.pdf, id=4394, 501.875pt x 375.4025pt>
+<classVehicleFactory-eps-converted-to.pdf, id=4725, 501.875pt x 375.4025pt>
 File: classVehicleFactory-eps-converted-to.pdf Graphic file (type pdf)
 <use classVehicleFactory-eps-converted-to.pdf>
 Package pdftex.def Info: classVehicleFactory-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 76.07442pt x 56.9055pt.
- [93]
+ [100]
 Underfull \hbox (badness 10000) detected at line 83
 [][][]
  []
 
-[94]
-Underfull \hbox (badness 10000) detected at line 126
-[][][]
- []
-
-) (classWarEngine.tex [95] [96]
-Underfull \hbox (badness 10000) detected at line 126
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 166
-[][][]
- []
-
-[97]
-Underfull \hbox (badness 10000) detected at line 210
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 249
-[][][]
- []
-
-[98]
-Underfull \hbox (badness 10000) detected at line 273
-[][][]
- []
-
-) (classWarEngineMemento.tex) (classWarEngineState.tex [99] [100]
-Underfull \hbox (badness 10000) detected at line 102
-[][][]
- []
-
 [101]
-Underfull \hbox (badness 10000) detected at line 139
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+) (classWarEngine.tex [102] [103]
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+[104]
+Underfull \hbox (badness 10000) detected at line 185
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 177
+Underfull \hbox (badness 10000) detected at line 229
 [][][]
  []
 
-[102]
-Underfull \hbox (badness 10000) detected at line 220
+[105]
+Underfull \hbox (badness 10000) detected at line 268
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 259
+Underfull \hbox (badness 10000) detected at line 297
 [][][]
  []
 
-[103]) (classWarTheatre.tex
+) (classWarEngineMemento.tex [106]) (classWarEngineState.tex [107]) (classWarTheatre.tex
 Package epstopdf Info: Source file: <classWarTheatre.eps>
-(epstopdf)                    date: 2022-11-04 14:53:59
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3770 bytes
 (epstopdf)             Output file: <classWarTheatre-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:34
+(epstopdf)                    date: 2022-11-06 17:38:55
 (epstopdf)                    size: 4774 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classWarTheatre-eps-converted-to.pdf classWarTheatre.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -2042,37 +2030,37 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classWarTheatre-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classWarTheatre-eps-converted-to.pdf>
-<classWarTheatre-eps-converted-to.pdf, id=4660, 501.875pt x 467.7475pt>
+<classWarTheatre-eps-converted-to.pdf, id=4918, 501.875pt x 467.7475pt>
 File: classWarTheatre-eps-converted-to.pdf Graphic file (type pdf)
 <use classWarTheatre-eps-converted-to.pdf>
 Package pdftex.def Info: classWarTheatre-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 61.05711pt x 56.9055pt.
- [104] [105]
-Underfull \hbox (badness 10000) detected at line 106
+ [108] [109]
+Underfull \hbox (badness 10000) detected at line 108
+[][][]
+ []
+
+[110]
+Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 135
-[][][]
- []
-
-
-Underfull \hbox (badness 10000) detected at line 173
-[][][]
- []
-
-[106]
 Underfull \hbox (badness 10000) detected at line 216
+[][][]
+ []
+
+[111]
+Underfull \hbox (badness 10000) detected at line 259
 [][][]
  []
 
 ) (classWeather.tex
 Package epstopdf Info: Source file: <classWeather.eps>
-(epstopdf)                    date: 2022-11-04 14:53:59
+(epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3948 bytes
 (epstopdf)             Output file: <classWeather-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-04 14:54:36
+(epstopdf)                    date: 2022-11-06 17:38:56
 (epstopdf)                    size: 5836 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classWeather-eps-converted-to.pdf classWeather.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -2081,46 +2069,45 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classWeather-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classWeather-eps-converted-to.pdf>
-<classWeather-eps-converted-to.pdf, id=4725, 501.875pt x 200.75pt>
+<classWeather-eps-converted-to.pdf, id=4998, 501.875pt x 200.75pt>
 File: classWeather-eps-converted-to.pdf Graphic file (type pdf)
 <use classWeather-eps-converted-to.pdf>
 Package pdftex.def Info: classWeather-eps-converted-to.pdf  used on input line 6.
 (pdftex.def)             Requested size: 142.26239pt x 56.9055pt.
- [107] [108]
+ [112]
 Underfull \hbox (badness 10000) detected at line 105
 [][][]
  []
 
-) [109] [110
-
-]
+[113]) [114]
 Chapter 5.
-(AddOn_8cpp_source.tex) (AddOn_8h_source.tex) (AddOnTest_8h_source.tex [111] [112] [113]) (AerialType_8cpp_source.tex) (AerialType_8h_source.tex) (Aggressive_8cpp_source.tex [114]) (Aggressive_8h_source.tex) (Alliance_8cpp_source.tex [115]) (Alliance_8h_source.tex [116]) (AquaticType_8cpp_source.tex) (AquaticType_8h_source.tex) (Area_8cpp_source.tex [117]) (Area_8h_source.tex) (Armour_8cpp_source.tex) (Armour_8h_source.tex) (Cloudy_8cpp_source.tex [118]) (Cloudy_8h_source.tex) (Country_8cpp_source.tex [119]) (Country_8h_source.tex) (Defensive_8cpp_source.tex) (Defensive_8h_source.tex) (Entity_8cpp_source.tex [120]) (Entity_8h_source.tex [121]) (Factory_8cpp_source.tex) (Factory_8h_source.tex) (General_8cpp_source.tex [122]) (General_8h_source.tex) (KeyPoint_8cpp_source.tex [123] [124]) (KeyPoint_8h_source.tex) (Negotiator_8cpp_source.tex [125]) (Negotiator_8h_source.tex) (NegotiatorTest_8h_source.tex [126]) (Passive_8cpp_source.tex) (Passive_8h_source.tex [127]) (Personnel_8cpp_source.tex) (Personnel_8h_source.tex) (PersonnelFactory_8cpp_source.tex) (PersonnelFactory_8h_source.tex [128]) (Piercing_8cpp_source.tex) (Piercing_8h_source.tex) (Rainy_8cpp_source.tex [129]) (Rainy_8h_source.tex) (SaveArchive_8cpp_source.tex [130]) (SaveArchive_8h_source.tex) (Strategy_8cpp_source.tex) (Strategy_8h_source.tex) (Sunny_8cpp_source.tex [131]) (Sunny_8h_source.tex) (Support_8cpp_source.tex) (Support_8h_source.tex [132]) (SupportFactory_8cpp_source.tex) (SupportFactory_8h_source.tex) (TerrainType_8cpp_source.tex) (TerrainType_8h_source.tex [133]) (testmain_8cpp_source.tex) (Type_8cpp_source.tex) (Type_8h_source.tex) (Vehicle_8cpp_source.tex) (Vehicle_8h_source.tex [134]) (VehicleFactory_8cpp_source.tex) (VehicleFactory_8h_source.tex) (WarEngine_8cpp_source.tex [135]) (WarEngine_8h_source.tex) (WarEngineMemento_8cpp_source.tex) (WarEngineMemento_8h_source.tex [136]) (WarEngineState_8cpp_source.tex [137]) (WarEngineState_8h_source.tex) (WarTheatre_8cpp_source.tex) (WarTheatre_8h_source.tex [138]) (Weather_8cpp_source.tex) (Weather_8h_source.tex) [139] [140
+(AddOn_8cpp_source.tex) (AddOn_8h_source.tex) (AddOnTest_8h_source.tex [115
 
-] (refman.ind [141
+] [116] [117]) (AerialType_8cpp_source.tex) (AerialType_8h_source.tex) (Aggressive_8cpp_source.tex [118]) (Aggressive_8h_source.tex) (Alliance_8cpp_source.tex [119]) (Alliance_8h_source.tex [120]) (AquaticType_8cpp_source.tex) (AquaticType_8h_source.tex [121]) (Area_8cpp_source.tex) (Area_8h_source.tex) (Armour_8cpp_source.tex [122]) (Armour_8h_source.tex) (Cloudy_8cpp_source.tex) (Cloudy_8h_source.tex) (Country_8cpp_source.tex [123]) (Country_8h_source.tex) (Defensive_8cpp_source.tex) (Defensive_8h_source.tex [124]) (EasySetup_8cpp_source.tex [125] [126] [127]) (EasySetup_8h_source.tex [128]) (Entity_8cpp_source.tex) (Entity_8h_source.tex [129]) (Factory_8cpp_source.tex) (Factory_8h_source.tex [130]) (General_8cpp_source.tex) (General_8h_source.tex) (KeyPoint_8cpp_source.tex [131] [132]) (KeyPoint_8h_source.tex [133]) (Negotiator_8cpp_source.tex [134]) (Negotiator_8h_source.tex) (NegotiatorTest_8h_source.tex [135]) (Passive_8cpp_source.tex) (Passive_8h_source.tex) (Personnel_8cpp_source.tex [136]) (Personnel_8h_source.tex) (PersonnelFactory_8cpp_source.tex) (PersonnelFactory_8h_source.tex [137]) (Piercing_8cpp_source.tex) (Piercing_8h_source.tex) (Rainy_8cpp_source.tex [138]) (Rainy_8h_source.tex) (RoundStats_8cpp_source.tex) (RoundStats_8h_source.tex [139]) (SaveArchive_8cpp_source.tex) (SaveArchive_8h_source.tex [140]) (Strategy_8cpp_source.tex) (Strategy_8h_source.tex) (Sunny_8cpp_source.tex) (Sunny_8h_source.tex [141]) (Support_8cpp_source.tex) (Support_8h_source.tex) (SupportFactory_8cpp_source.tex [142]) (SupportFactory_8h_source.tex) (TerrainType_8cpp_source.tex) (TerrainType_8h_source.tex) (testmain_8cpp_source.tex [143]) (Type_8cpp_source.tex) (Type_8h_source.tex) (Vehicle_8cpp_source.tex [144]) (Vehicle_8h_source.tex) (VehicleFactory_8cpp_source.tex) (VehicleFactory_8h_source.tex [145]) (WarEngine_8cpp_source.tex) (WarEngine_8h_source.tex [146]) (WarEngineMemento_8cpp_source.tex) (WarEngineMemento_8h_source.tex) (WarEngineState_8cpp_source.tex [147]) (WarEngineState_8h_source.tex [148]) (WarTheatre_8cpp_source.tex) (WarTheatre_8h_source.tex [149]) (Weather_8cpp_source.tex) (Weather_8h_source.tex) [150] (refman.ind [151
 
 
-] [142] [143] [144] [145
+
+] [152] [153] [154] [155
 
 ]) (refman.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `refman.out' has not changed.
-(rerunfilecheck)             Checksum: B999EE0A2B69C20F81B50031244AB8DC;78807.
+(rerunfilecheck)             Checksum: 0322B060AEE96BEE9899C6D2A4AD4400;83260.
  ) 
 Here is how much of TeX's memory you used:
- 22968 strings out of 475380
- 424796 string characters out of 2786590
- 751083 words of memory out of 3000000
- 40767 multiletter control sequences out of 15000+600000
+ 23639 strings out of 475380
+ 443607 string characters out of 2786590
+ 759862 words of memory out of 3000000
+ 40820 multiletter control sequences out of 15000+600000
  529476 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  99i,16n,117p,673b,740s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{D:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on refman.pdf (157 pages, 1698915 bytes).
+{D:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (169 pages, 1888960 bytes).
 PDF statistics:
- 8891 PDF objects out of 8907 (max. 8388607)
- 3020 named destinations out of 3580 (max. 500000)
- 3355 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 10006 PDF objects out of 10688 (max. 8388607)
+ 3626 named destinations out of 4296 (max. 500000)
+ 3523 words of extra memory for PDF output out of 10000 (max. 10000000)
 

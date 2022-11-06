@@ -1389,6 +1389,13 @@ INPUT .\classDefensive-eps-converted-to.pdf
 INPUT .\classDefensive-eps-converted-to.pdf
 INPUT .\classDefensive-eps-converted-to.pdf
 INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT classEasySetup.tex
 INPUT .\classEntity.tex
 INPUT .\classEntity.tex
 INPUT .\classEntity.tex
@@ -1571,6 +1578,13 @@ INPUT .\classRainy-eps-converted-to.pdf
 INPUT .\classRainy-eps-converted-to.pdf
 INPUT .\classRainy-eps-converted-to.pdf
 INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT classRoundStats.tex
 INPUT .\classSaveArchive.tex
 INPUT .\classSaveArchive.tex
 INPUT .\classSaveArchive.tex
@@ -1956,6 +1970,20 @@ INPUT Defensive_8h_source.tex
 INPUT .\Defensive_8h_source.tex
 INPUT .\Defensive_8h_source.tex
 INPUT Defensive_8h_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT EasySetup_8h_source.tex
 INPUT .\Entity_8cpp_source.tex
 INPUT .\Entity_8cpp_source.tex
 INPUT .\Entity_8cpp_source.tex
@@ -2103,6 +2131,20 @@ INPUT Rainy_8h_source.tex
 INPUT .\Rainy_8h_source.tex
 INPUT .\Rainy_8h_source.tex
 INPUT Rainy_8h_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT RoundStats_8h_source.tex
 INPUT .\SaveArchive_8cpp_source.tex
 INPUT .\SaveArchive_8cpp_source.tex
 INPUT .\SaveArchive_8cpp_source.tex
@@ -2320,6 +2362,8 @@ INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
 INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb

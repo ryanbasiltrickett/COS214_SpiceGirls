@@ -1,0 +1,404 @@
+\hypertarget{classEasySetup}{}\doxysection{Easy\+Setup Class Reference}
+\label{classEasySetup}\index{EasySetup@{EasySetup}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classEasySetup_a981235de9d25590d4244431156ed988b}{setup\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{classEasySetup_a1ac115d19445ab58d548d432f84b5475}{run\+Simulation}} ()
+\item 
+void \mbox{\hyperlink{classEasySetup_a4a5ca518b7815635460c6b9d05d9f472}{load\+Prev\+Save}} ()
+\item 
+void \mbox{\hyperlink{classEasySetup_a1d0a99d9c878a774cb3b7eddf3de8ffa}{load\+Specific\+Save}} (std\+::string name)
+\item 
+void \mbox{\hyperlink{classEasySetup_aa24cd1c17aef0bc5eb95373365c791ed}{save\+Simulation\+Setup}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8h_source_l00011}{11}} of file \mbox{\hyperlink{EasySetup_8h_source}{Easy\+Setup.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEasySetup_a85a2ae47ff2c1542f43b209ecc82434d}\label{classEasySetup_a85a2ae47ff2c1542f43b209ecc82434d}} 
+\index{EasySetup@{EasySetup}!EasySetup@{EasySetup}}
+\index{EasySetup@{EasySetup}!EasySetup@{EasySetup}}
+\doxysubsubsection{\texorpdfstring{EasySetup()}{EasySetup()}}
+{\footnotesize\ttfamily Easy\+Setup\+::\+Easy\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{EasySetup_8cpp_source}{Easy\+Setup.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00021                      \{}
+\DoxyCodeLine{00022     saveArchive = \textcolor{keyword}{new} \mbox{\hyperlink{classSaveArchive}{SaveArchive}}();}
+\DoxyCodeLine{00023 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEasySetup_a4a5ca518b7815635460c6b9d05d9f472}\label{classEasySetup_a4a5ca518b7815635460c6b9d05d9f472}} 
+\index{EasySetup@{EasySetup}!loadPrevSave@{loadPrevSave}}
+\index{loadPrevSave@{loadPrevSave}!EasySetup@{EasySetup}}
+\doxysubsubsection{\texorpdfstring{loadPrevSave()}{loadPrevSave()}}
+{\footnotesize\ttfamily void Easy\+Setup\+::load\+Prev\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8cpp_source_l00284}{284}} of file \mbox{\hyperlink{EasySetup_8cpp_source}{Easy\+Setup.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00284                              \{}
+\DoxyCodeLine{00285 }
+\DoxyCodeLine{00286     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00287         \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* saveFile = saveArchive-\/>\mbox{\hyperlink{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}{getLastSave}}();}
+\DoxyCodeLine{00288 }
+\DoxyCodeLine{00289         \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{loadSave}}(saveFile);}
+\DoxyCodeLine{00290     \}}
+\DoxyCodeLine{00291     \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} std::exception\& error)\{}
+\DoxyCodeLine{00292 }
+\DoxyCodeLine{00293         std::cerr << error.what() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}; }
+\DoxyCodeLine{00294     }
+\DoxyCodeLine{00295     \}}
+\DoxyCodeLine{00296 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEasySetup_a1d0a99d9c878a774cb3b7eddf3de8ffa}\label{classEasySetup_a1d0a99d9c878a774cb3b7eddf3de8ffa}} 
+\index{EasySetup@{EasySetup}!loadSpecificSave@{loadSpecificSave}}
+\index{loadSpecificSave@{loadSpecificSave}!EasySetup@{EasySetup}}
+\doxysubsubsection{\texorpdfstring{loadSpecificSave()}{loadSpecificSave()}}
+{\footnotesize\ttfamily void Easy\+Setup\+::load\+Specific\+Save (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8cpp_source_l00298}{298}} of file \mbox{\hyperlink{EasySetup_8cpp_source}{Easy\+Setup.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00298                                             \{}
+\DoxyCodeLine{00299 }
+\DoxyCodeLine{00300     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{00301         }
+\DoxyCodeLine{00302         \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* saveFile = saveArchive-\/>\mbox{\hyperlink{classSaveArchive_ad65ce77b8a9027b4e4a5d67ca1f06877}{getSave}}(name);}
+\DoxyCodeLine{00303 }
+\DoxyCodeLine{00304         \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{loadSave}}(saveFile);}
+\DoxyCodeLine{00305     \}}
+\DoxyCodeLine{00306     \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} std::out\_of\_range\& range\_error)\{}
+\DoxyCodeLine{00307 }
+\DoxyCodeLine{00308         std::cerr << range\_error.what() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}; }
+\DoxyCodeLine{00309     }
+\DoxyCodeLine{00310     \}}
+\DoxyCodeLine{00311 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEasySetup_a1ac115d19445ab58d548d432f84b5475}\label{classEasySetup_a1ac115d19445ab58d548d432f84b5475}} 
+\index{EasySetup@{EasySetup}!runSimulation@{runSimulation}}
+\index{runSimulation@{runSimulation}!EasySetup@{EasySetup}}
+\doxysubsubsection{\texorpdfstring{runSimulation()}{runSimulation()}}
+{\footnotesize\ttfamily void Easy\+Setup\+::run\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8cpp_source_l00267}{267}} of file \mbox{\hyperlink{EasySetup_8cpp_source}{Easy\+Setup.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00267                               \{}
+\DoxyCodeLine{00268 }
+\DoxyCodeLine{00269     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate}}();}
+\DoxyCodeLine{00270 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEasySetup_aa24cd1c17aef0bc5eb95373365c791ed}\label{classEasySetup_aa24cd1c17aef0bc5eb95373365c791ed}} 
+\index{EasySetup@{EasySetup}!saveSimulationSetup@{saveSimulationSetup}}
+\index{saveSimulationSetup@{saveSimulationSetup}!EasySetup@{EasySetup}}
+\doxysubsubsection{\texorpdfstring{saveSimulationSetup()}{saveSimulationSetup()}}
+{\footnotesize\ttfamily void Easy\+Setup\+::save\+Simulation\+Setup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8cpp_source_l00272}{272}} of file \mbox{\hyperlink{EasySetup_8cpp_source}{Easy\+Setup.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00272                                     \{}
+\DoxyCodeLine{00273 }
+\DoxyCodeLine{00274     \textcolor{comment}{// Getting the name of the save}}
+\DoxyCodeLine{00275     cout << \textcolor{stringliteral}{"{}Please enter name of save: "{}};}
+\DoxyCodeLine{00276     \textcolor{keywordtype}{string} saveName;}
+\DoxyCodeLine{00277     getline(cin, saveName);}
+\DoxyCodeLine{00278 }
+\DoxyCodeLine{00279     \textcolor{comment}{// saving the current state of the simulation}}
+\DoxyCodeLine{00280     saveArchive-\/>\mbox{\hyperlink{classSaveArchive_ab6927785f5b7f07b079a424773796d49}{addNewSave}}(saveName, \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().saveState());}
+\DoxyCodeLine{00281 }
+\DoxyCodeLine{00282 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEasySetup_a981235de9d25590d4244431156ed988b}\label{classEasySetup_a981235de9d25590d4244431156ed988b}} 
+\index{EasySetup@{EasySetup}!setupSimulation@{setupSimulation}}
+\index{setupSimulation@{setupSimulation}!EasySetup@{EasySetup}}
+\doxysubsubsection{\texorpdfstring{setupSimulation()}{setupSimulation()}}
+{\footnotesize\ttfamily void Easy\+Setup\+::setup\+Simulation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{EasySetup_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{EasySetup_8cpp_source}{Easy\+Setup.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00025                                 \{}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{00027     \{}
+\DoxyCodeLine{00028         cout << \textcolor{stringliteral}{"{}Load simulation (L) or New Simulation (N): "{}};}
+\DoxyCodeLine{00029         \textcolor{keywordtype}{string} selectedOption;}
+\DoxyCodeLine{00030         cin >> selectedOption;}
+\DoxyCodeLine{00031         cin.ignore();}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033         \textcolor{keywordflow}{if}(toupper(selectedOption[0]) == \textcolor{charliteral}{'L'})}
+\DoxyCodeLine{00034         \{}
+\DoxyCodeLine{00035             \textcolor{keywordtype}{string} saveName;}
+\DoxyCodeLine{00036             cout << \textcolor{stringliteral}{"{}Please enter the name of the save to be re-\/simulated"{}} << endl;}
+\DoxyCodeLine{00037             getline(cin, saveName); \textcolor{comment}{// getting the name of the save-\/archive}}
+\DoxyCodeLine{00038             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{00039                 this-\/>loadSpecificSave(saveName); \textcolor{comment}{// loading the save-\/archive}}
+\DoxyCodeLine{00040                 \textcolor{keywordflow}{return}; \textcolor{comment}{// will return if the above the function does not throw an exception  }}
+\DoxyCodeLine{00041             \} \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} std::exception\& exception) \{}
+\DoxyCodeLine{00042                 cout << \textcolor{stringliteral}{"{}Error: "{}} << exception.what() << endl;}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044                 \textcolor{keywordflow}{if} (strcmp(exception.what(), \textcolor{stringliteral}{"{}Save archive is empty"{}}) == 0) \{}
+\DoxyCodeLine{00045                     cout << \textcolor{stringliteral}{"{}Please create new simulation"{}} << endl;}
+\DoxyCodeLine{00046                     \textcolor{keywordflow}{goto} setup;}
+\DoxyCodeLine{00047     }
+\DoxyCodeLine{00048                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strcmp(exception.what(), \textcolor{stringliteral}{"{}No save with given name exists"{}}) == 0) \{}
+\DoxyCodeLine{00049 }
+\DoxyCodeLine{00050                     cout << \textcolor{stringliteral}{"{}Please enter the correct name of save-\/archive and try again or create new simulation"{}} << endl;}
+\DoxyCodeLine{00051                 \}}
+\DoxyCodeLine{00052             \}}
+\DoxyCodeLine{00053         }
+\DoxyCodeLine{00054         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(toupper(selectedOption[0]) == \textcolor{charliteral}{'N'}) \{}
+\DoxyCodeLine{00055             \textcolor{comment}{// setting up a new simulation}}
+\DoxyCodeLine{00056             \textcolor{keywordflow}{goto} setup;}
+\DoxyCodeLine{00057         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00058             cout << \textcolor{stringliteral}{"{}Incorrect input: Please enter (L) or (N)"{}} << endl;}
+\DoxyCodeLine{00059         \}}
+\DoxyCodeLine{00060     \}}
+\DoxyCodeLine{00061     }
+\DoxyCodeLine{00062     setup:}
+\DoxyCodeLine{00063         \textcolor{comment}{// Creating alliances and generals}}
+\DoxyCodeLine{00064         \textcolor{keywordtype}{int} numAlliesAndGenerals;}
+\DoxyCodeLine{00065         cout << \textcolor{stringliteral}{"{}Enter number of alliances: "{}};}
+\DoxyCodeLine{00066         cin >> numAlliesAndGenerals;}
+\DoxyCodeLine{00067 }
+\DoxyCodeLine{00068         \mbox{\hyperlink{classAlliance}{Alliance}}** alliances = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}*[numAlliesAndGenerals];}
+\DoxyCodeLine{00069         \mbox{\hyperlink{classGeneral}{General}}** generals = \textcolor{keyword}{new} \mbox{\hyperlink{classGeneral}{General}}*[numAlliesAndGenerals];}
+\DoxyCodeLine{00070         }
+\DoxyCodeLine{00071         \textcolor{keywordtype}{int} numCountries,}
+\DoxyCodeLine{00072             numFactories;}
+\DoxyCodeLine{00073         \textcolor{keywordtype}{string}  countryName,}
+\DoxyCodeLine{00074                 factoryType,}
+\DoxyCodeLine{00075                 selectedFactory,}
+\DoxyCodeLine{00076                 selectedAddOn;}
+\DoxyCodeLine{00077         \mbox{\hyperlink{classCountry}{Country}}* country;}
+\DoxyCodeLine{00078         \mbox{\hyperlink{classType}{Type}}* type;}
+\DoxyCodeLine{00079         \mbox{\hyperlink{classAddOn}{AddOn}}* addOn;}
+\DoxyCodeLine{00080         \mbox{\hyperlink{classFactory}{Factory}}* factory;}
+\DoxyCodeLine{00081 }
+\DoxyCodeLine{00082         \mbox{\hyperlink{classNegotiator}{Negotiator}}* negotiator = \textcolor{keyword}{new} \mbox{\hyperlink{classNegotiator}{Negotiator}}();}
+\DoxyCodeLine{00083 }
+\DoxyCodeLine{00084         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numAlliesAndGenerals; i++) \{}
+\DoxyCodeLine{00085             alliances[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
+\DoxyCodeLine{00086             negotiator-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(alliances[i]);}
+\DoxyCodeLine{00087             alliances[i]-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(negotiator);}
+\DoxyCodeLine{00088             \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().addAlliance(alliances[i]);}
+\DoxyCodeLine{00089 }
+\DoxyCodeLine{00090             cout << \textcolor{stringliteral}{"{}Enter number of countries for Alliance "{}} << alliances[i]-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}() << \textcolor{stringliteral}{"{}: "{}};}
+\DoxyCodeLine{00091             cin >> numCountries;}
+\DoxyCodeLine{00092             cin.ignore();}
+\DoxyCodeLine{00093 }
+\DoxyCodeLine{00094             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < numCountries; k++) \{}
+\DoxyCodeLine{00095                 cout << \textcolor{stringliteral}{"{}Enter name of county "{}} << k+1 << \textcolor{stringliteral}{"{}: "{}};}
+\DoxyCodeLine{00096                 getline(cin, countryName);}
+\DoxyCodeLine{00097                 country = \textcolor{keyword}{new} \mbox{\hyperlink{classCountry}{Country}}(countryName);}
+\DoxyCodeLine{00098                 alliances[i]-\/>\mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{addCountry}}(country);}
+\DoxyCodeLine{00099             \}}
+\DoxyCodeLine{00100 }
+\DoxyCodeLine{00101             cout << \textcolor{stringliteral}{"{}Enter number of factories for Alliance "{}} << alliances[i]-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}() << \textcolor{stringliteral}{"{}: "{}};}
+\DoxyCodeLine{00102             cin >> numFactories;}
+\DoxyCodeLine{00103 }
+\DoxyCodeLine{00104             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < numFactories; k++) \{}
+\DoxyCodeLine{00105                 retryType:}
+\DoxyCodeLine{00106                 cout << \textcolor{stringliteral}{"{}Factory "{}} << k+1 << \textcolor{stringliteral}{"{} is of type Aquatic(Q), Aerial(E), or Terrain(T) : "{}};}
+\DoxyCodeLine{00107                 cin >> factoryType;}
+\DoxyCodeLine{00108                 cin.ignore();}
+\DoxyCodeLine{00109 }
+\DoxyCodeLine{00110                 \textcolor{keywordflow}{if} (toupper(factoryType[0]) == \textcolor{charliteral}{'Q'}) \{}
+\DoxyCodeLine{00111                     type = \textcolor{keyword}{new} \mbox{\hyperlink{classAerialType}{AerialType}};}
+\DoxyCodeLine{00112                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(factoryType[0]) == \textcolor{charliteral}{'E'}) \{}
+\DoxyCodeLine{00113                     type = \textcolor{keyword}{new} \mbox{\hyperlink{classAerialType}{AerialType}};}
+\DoxyCodeLine{00114                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(factoryType[0]) == \textcolor{charliteral}{'T'}) \{}
+\DoxyCodeLine{00115                     type = \textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}};}
+\DoxyCodeLine{00116                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00117                     cout << \textcolor{stringliteral}{"{}Invalid type input! Try again"{}} << endl;}
+\DoxyCodeLine{00118                     \textcolor{keywordflow}{goto} retryType;}
+\DoxyCodeLine{00119                 \}}
+\DoxyCodeLine{00120 }
+\DoxyCodeLine{00121                 retryAddOn:}
+\DoxyCodeLine{00122                 cout << \textcolor{stringliteral}{"{}Select AddOn for factory "{}} << k+1 << \textcolor{stringliteral}{"{} Armour(A), Piercing(P) or None(N) : "{}};}
+\DoxyCodeLine{00123                 getline(cin, selectedAddOn);}
+\DoxyCodeLine{00124                 \textcolor{keywordflow}{if} (toupper(selectedAddOn[0]) == \textcolor{charliteral}{'A'}) \{}
+\DoxyCodeLine{00125                     \textcolor{keywordtype}{int} value;}
+\DoxyCodeLine{00126                     cout << \textcolor{stringliteral}{"{}Enter armour value: "{}};}
+\DoxyCodeLine{00127                     cin >> value;}
+\DoxyCodeLine{00128                     cin.ignore();}
+\DoxyCodeLine{00129                     addOn = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(value);}
+\DoxyCodeLine{00130                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedAddOn[0]) == \textcolor{charliteral}{'P'}) \{}
+\DoxyCodeLine{00131                     \textcolor{keywordtype}{int} value;}
+\DoxyCodeLine{00132                     cout << \textcolor{stringliteral}{"{}Enter piercing value: "{}};}
+\DoxyCodeLine{00133                     cin >> value;}
+\DoxyCodeLine{00134                     cin.ignore();}
+\DoxyCodeLine{00135                     addOn = \textcolor{keyword}{new} \mbox{\hyperlink{classPiercing}{Piercing}}(value);                }
+\DoxyCodeLine{00136                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedAddOn[0] == \textcolor{charliteral}{'N'})) \{}
+\DoxyCodeLine{00137                     addOn = NULL;}
+\DoxyCodeLine{00138                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00139                     cout << \textcolor{stringliteral}{"{}Invalid AddOn input! Try again"{}} << endl;}
+\DoxyCodeLine{00140                     \textcolor{keywordflow}{goto} retryAddOn;}
+\DoxyCodeLine{00141                 \}}
+\DoxyCodeLine{00142                 }
+\DoxyCodeLine{00143                 retryFactory:}
+\DoxyCodeLine{00144                 cout << \textcolor{stringliteral}{"{}Which factory is factory "{}} << k+1 << \textcolor{stringliteral}{"{} Vehicle(V), Personnel(P), or Support(S) : "{}};}
+\DoxyCodeLine{00145                 getline(cin, selectedFactory);}
+\DoxyCodeLine{00146                 \textcolor{keywordflow}{if} (toupper(selectedFactory[0]) == \textcolor{charliteral}{'V'}) \{}
+\DoxyCodeLine{00147                     factory = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicleFactory}{VehicleFactory}}(type, addOn);}
+\DoxyCodeLine{00148                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedFactory[0]) == \textcolor{charliteral}{'P'}) \{}
+\DoxyCodeLine{00149                     factory = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnelFactory}{PersonnelFactory}}(type, addOn);}
+\DoxyCodeLine{00150                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedFactory[0]) == \textcolor{charliteral}{'S'}) \{}
+\DoxyCodeLine{00151                     factory = \textcolor{keyword}{new} \mbox{\hyperlink{classSupportFactory}{SupportFactory}}(type, addOn);}
+\DoxyCodeLine{00152                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00153                     cout << \textcolor{stringliteral}{"{}Invalid factory input! Try again"{}} << endl;}
+\DoxyCodeLine{00154                     \textcolor{keywordflow}{goto} retryFactory;}
+\DoxyCodeLine{00155                 \}}
+\DoxyCodeLine{00156                 }
+\DoxyCodeLine{00157                 alliances[i]-\/>\mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{addFactory}}(factory);}
+\DoxyCodeLine{00158             \} }
+\DoxyCodeLine{00159             }
+\DoxyCodeLine{00160             \textcolor{keywordtype}{string} selectedStrat;}
+\DoxyCodeLine{00161             \mbox{\hyperlink{classStrategy}{Strategy}}* strat;}
+\DoxyCodeLine{00162             }
+\DoxyCodeLine{00163             retryStrat:}
+\DoxyCodeLine{00164             cout << \textcolor{stringliteral}{"{}What is this Alliances generals strategy Passive(P), Defensive(D), or Aggressive(A) : "{}};}
+\DoxyCodeLine{00165             getline(cin, selectedStrat);}
+\DoxyCodeLine{00166             \textcolor{keywordflow}{if} (toupper(selectedStrat[0]) == \textcolor{charliteral}{'P'}) \{}
+\DoxyCodeLine{00167                 strat = \textcolor{keyword}{new} \mbox{\hyperlink{classPassive}{Passive}}();}
+\DoxyCodeLine{00168             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedStrat[0]) == \textcolor{charliteral}{'D'}) \{}
+\DoxyCodeLine{00169                 strat = \textcolor{keyword}{new} \mbox{\hyperlink{classDefensive}{Defensive}}();}
+\DoxyCodeLine{00170             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedStrat[0]) == \textcolor{charliteral}{'A'}) \{}
+\DoxyCodeLine{00171                 strat = \textcolor{keyword}{new} \mbox{\hyperlink{classAggressive}{Aggressive}}();}
+\DoxyCodeLine{00172             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00173                 cout << \textcolor{stringliteral}{"{}Invalid strategy input! Try again"{}} << endl;}
+\DoxyCodeLine{00174                 \textcolor{keywordflow}{goto} retryStrat;}
+\DoxyCodeLine{00175             \}}
+\DoxyCodeLine{00176             }
+\DoxyCodeLine{00177             generals[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classGeneral}{General}}(alliances[i], strat);}
+\DoxyCodeLine{00178         \}}
+\DoxyCodeLine{00179         }
+\DoxyCodeLine{00180         \textcolor{keywordtype}{int} factoryRun;}
+\DoxyCodeLine{00181         cout << \textcolor{stringliteral}{"{}How many production runs do you wish to perform: "{}};}
+\DoxyCodeLine{00182         cin >> factoryRun;}
+\DoxyCodeLine{00183         cin.ignore();}
+\DoxyCodeLine{00184         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numAlliesAndGenerals; i++) \{}
+\DoxyCodeLine{00185             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < factoryRun; j++) \{}
+\DoxyCodeLine{00186                 alliances[i]-\/>runFactories();}
+\DoxyCodeLine{00187             \}}
+\DoxyCodeLine{00188         \}}
+\DoxyCodeLine{00189 }
+\DoxyCodeLine{00190         \textcolor{comment}{// Creating main WarTheatre}}
+\DoxyCodeLine{00191         \mbox{\hyperlink{classWarTheatre}{WarTheatre}}* mainBattleGround;}
+\DoxyCodeLine{00192         cout << \textcolor{stringliteral}{"{}Creating the main battle ground"{}} << endl;}
+\DoxyCodeLine{00193         \textcolor{keywordtype}{string} battleGroundName;}
+\DoxyCodeLine{00194         cout << \textcolor{stringliteral}{"{}Set main battle ground's name: "{}};}
+\DoxyCodeLine{00195         getline(cin, battleGroundName);}
+\DoxyCodeLine{00196         mainBattleGround = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}(battleGroundName);}
+\DoxyCodeLine{00197 }
+\DoxyCodeLine{00198         \textcolor{keywordtype}{int} sizeOfGrounds;}
+\DoxyCodeLine{00199         cout << \textcolor{stringliteral}{"{}Enter number of battle grounds in "{}} << battleGroundName << \textcolor{stringliteral}{"{} battle ground: "{}};}
+\DoxyCodeLine{00200         cin >> sizeOfGrounds;}
+\DoxyCodeLine{00201         cin.ignore();}
+\DoxyCodeLine{00202         \mbox{\hyperlink{classWarTheatre}{WarTheatre}}** battleGrounds = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}*[sizeOfGrounds];}
+\DoxyCodeLine{00203         }
+\DoxyCodeLine{00204         \textcolor{comment}{// Creating sub WarTheatres}}
+\DoxyCodeLine{00205         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sizeOfGrounds; i++) \{}
+\DoxyCodeLine{00206             battleGroundName.clear();}
+\DoxyCodeLine{00207             cout << \textcolor{stringliteral}{"{}Set battle ground "{}} << i+1 << \textcolor{stringliteral}{"{}'s name: "{}};}
+\DoxyCodeLine{00208             getline(cin, battleGroundName);}
+\DoxyCodeLine{00209             battleGrounds[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}(battleGroundName);}
+\DoxyCodeLine{00210         \}}
+\DoxyCodeLine{00211 }
+\DoxyCodeLine{00212         vector<int> numKeyPoints;}
+\DoxyCodeLine{00213         \textcolor{keywordtype}{int} numKeyPoint = 0;}
+\DoxyCodeLine{00214 }
+\DoxyCodeLine{00215         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sizeOfGrounds; i++) \{}
+\DoxyCodeLine{00216             cout << \textcolor{stringliteral}{"{}Enter number of key points in "{}} << battleGrounds[i]-\/>\mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}() << \textcolor{stringliteral}{"{} battle ground: "{}};}
+\DoxyCodeLine{00217             cin >> numKeyPoint;}
+\DoxyCodeLine{00218             cin.ignore();}
+\DoxyCodeLine{00219             numKeyPoints.push\_back(numKeyPoint);}
+\DoxyCodeLine{00220             numKeyPoint = 0;}
+\DoxyCodeLine{00221         \}}
+\DoxyCodeLine{00222 }
+\DoxyCodeLine{00223         \mbox{\hyperlink{classKeyPoint}{KeyPoint}}* keyPoint;}
+\DoxyCodeLine{00224         \textcolor{keywordtype}{string} keyPointName;}
+\DoxyCodeLine{00225         \textcolor{keywordtype}{int} numEntitiesInKeyPt;}
+\DoxyCodeLine{00226 }
+\DoxyCodeLine{00227         \textcolor{comment}{// Creating KeyPoints for the sub WarTheatres}}
+\DoxyCodeLine{00228         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sizeOfGrounds; i++) \{}
+\DoxyCodeLine{00229             numKeyPoint = numKeyPoints[i];}
+\DoxyCodeLine{00230             cout << \textcolor{stringliteral}{"{}For "{}} << battleGrounds[i]-\/>\mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}() << \textcolor{stringliteral}{"{}'s key points"{}} << endl;}
+\DoxyCodeLine{00231         }
+\DoxyCodeLine{00232             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < numKeyPoint; k++) \{}
+\DoxyCodeLine{00233                 cout << \textcolor{stringliteral}{"{}Set key point "{}} << i+1 << \textcolor{stringliteral}{"{}'s name: "{}};}
+\DoxyCodeLine{00234                 getline(cin, keyPointName);}
+\DoxyCodeLine{00235                 keyPoint = \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(keyPointName);}
+\DoxyCodeLine{00236            }
+\DoxyCodeLine{00237                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} a = 0; a < numAlliesAndGenerals; a++) \{}
+\DoxyCodeLine{00238                     tryAgain:}
+\DoxyCodeLine{00239                     cout << \textcolor{stringliteral}{"{}There are "{}} << alliances[a]-\/>numRemainingEntities() << \textcolor{stringliteral}{"{} for Alliance "{}} << a+1 << endl;}
+\DoxyCodeLine{00240                     cout << \textcolor{stringliteral}{"{}How many would you like to place in "{}} << keyPointName << \textcolor{stringliteral}{"{} keypoint? "{}};}
+\DoxyCodeLine{00241                     cin >> numEntitiesInKeyPt;}
+\DoxyCodeLine{00242                     cin.ignore();}
+\DoxyCodeLine{00243 }
+\DoxyCodeLine{00244                     \textcolor{keywordflow}{if} (alliances[a]-\/>numRemainingEntities() > 0 \&\& alliances[a]-\/>numRemainingEntities() < numEntitiesInKeyPt) \{}
+\DoxyCodeLine{00245                         cout << \textcolor{stringliteral}{"{}You selected more than the available amount. Try again "{}} << endl;}
+\DoxyCodeLine{00246                         \textcolor{keywordflow}{goto} tryAgain;}
+\DoxyCodeLine{00247                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alliances[a]-\/>numRemainingEntities() <= 0) \{}
+\DoxyCodeLine{00248                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{00249                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00250                         keyPoint-\/>\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{moveEntitiesInto}}(alliances[a], numEntitiesInKeyPt);}
+\DoxyCodeLine{00251                     \}}
+\DoxyCodeLine{00252                 \}}
+\DoxyCodeLine{00253                 }
+\DoxyCodeLine{00254                 battleGrounds[i]-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(keyPoint);}
+\DoxyCodeLine{00255             \}}
+\DoxyCodeLine{00256 }
+\DoxyCodeLine{00257             mainBattleGround-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(battleGrounds[i]);}
+\DoxyCodeLine{00258         \}}
+\DoxyCodeLine{00259         }
+\DoxyCodeLine{00260         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numAlliesAndGenerals; i++) \{}
+\DoxyCodeLine{00261             mainBattleGround-\/>\mbox{\hyperlink{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}{addGeneral}}(generals[i]);}
+\DoxyCodeLine{00262         \}}
+\DoxyCodeLine{00263 }
+\DoxyCodeLine{00264         \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{setWarTheatre}}(mainBattleGround); }
+\DoxyCodeLine{00265 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Easy\+Setup.\+h\item 
+Easy\+Setup.\+cpp\end{DoxyCompactItemize}

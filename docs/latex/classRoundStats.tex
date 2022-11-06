@@ -1,0 +1,140 @@
+\hypertarget{classRoundStats}{}\doxysection{Round\+Stats Class Reference}
+\label{classRoundStats}\index{RoundStats@{RoundStats}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classRoundStats_a626ca0fed01a791415e755fb3dc1e34b}{clear\+Stats}} ()
+\item 
+static string \mbox{\hyperlink{classRoundStats_a135ade21af867029ba795fc8cc177964}{to\+String}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{classRoundStats_a557ad67ae309863625d2cd1b658a142b}{num\+Entities\+Created}} = 0
+\item 
+static int \mbox{\hyperlink{classRoundStats_a0c8c578deb83f5e7295f8fb0cb68e6ab}{num\+Entities\+Destroyed}} = 0
+\item 
+static int \mbox{\hyperlink{classRoundStats_adb7e6760d84236ee68353b411b90cf0c}{damage\+Done}} = 0
+\item 
+static vector$<$ string $>$ \mbox{\hyperlink{classRoundStats_ad41e424868e647b7d696ce179e2b5034}{key\+Point\+Information}}
+\item 
+static vector$<$ string $>$ \mbox{\hyperlink{classRoundStats_af096630414552d42fd1977824e749d6d}{entity\+Movement\+Information}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00009}{9}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoundStats_a626ca0fed01a791415e755fb3dc1e34b}\label{classRoundStats_a626ca0fed01a791415e755fb3dc1e34b}} 
+\index{RoundStats@{RoundStats}!clearStats@{clearStats}}
+\index{clearStats@{clearStats}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{clearStats()}{clearStats()}}
+{\footnotesize\ttfamily void Round\+Stats\+::clear\+Stats (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{RoundStats_8cpp_source}{Round\+Stats.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00009                             \{}
+\DoxyCodeLine{00010     numEntitiesCreated = 0;}
+\DoxyCodeLine{00011     numEntitiesDestroyed = 0;}
+\DoxyCodeLine{00012     keyPointInformation.clear();}
+\DoxyCodeLine{00013     entityMovementInformation.clear();}
+\DoxyCodeLine{00014 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classRoundStats_a135ade21af867029ba795fc8cc177964}\label{classRoundStats_a135ade21af867029ba795fc8cc177964}} 
+\index{RoundStats@{RoundStats}!toString@{toString}}
+\index{toString@{toString}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{toString()}{toString()}}
+{\footnotesize\ttfamily string Round\+Stats\+::to\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{RoundStats_8cpp_source}{Round\+Stats.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00016                             \{}
+\DoxyCodeLine{00017     \textcolor{keywordtype}{string} out = \textcolor{stringliteral}{"{}Number of Entities Created: "{}} + to\_string(numEntitiesCreated) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00018     out += \textcolor{stringliteral}{"{}Number of Entities Destroyed by Alliance: "{}} + to\_string(numEntitiesDestroyed) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00019     out += \textcolor{stringliteral}{"{}Damage Given by Alliance: "{}} + to\_string(damageDone) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     out += \textcolor{stringliteral}{"{}\(\backslash\)nKey Point Round Information:\(\backslash\)n"{}};}
+\DoxyCodeLine{00022     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPointInformation.size(); i++)}
+\DoxyCodeLine{00023         out += keyPointInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00024 }
+\DoxyCodeLine{00025     out += \textcolor{stringliteral}{"{}\(\backslash\)nMovement Round Information:\(\backslash\)n"{}};}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entityMovementInformation.size(); i++)}
+\DoxyCodeLine{00027         out += entityMovementInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{00030 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRoundStats_adb7e6760d84236ee68353b411b90cf0c}\label{classRoundStats_adb7e6760d84236ee68353b411b90cf0c}} 
+\index{RoundStats@{RoundStats}!damageDone@{damageDone}}
+\index{damageDone@{damageDone}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{damageDone}{damageDone}}
+{\footnotesize\ttfamily int Round\+Stats\+::damage\+Done = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00013}{13}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_af096630414552d42fd1977824e749d6d}\label{classRoundStats_af096630414552d42fd1977824e749d6d}} 
+\index{RoundStats@{RoundStats}!entityMovementInformation@{entityMovementInformation}}
+\index{entityMovementInformation@{entityMovementInformation}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{entityMovementInformation}{entityMovementInformation}}
+{\footnotesize\ttfamily vector$<$ string $>$ Round\+Stats\+::entity\+Movement\+Information\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00015}{15}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_ad41e424868e647b7d696ce179e2b5034}\label{classRoundStats_ad41e424868e647b7d696ce179e2b5034}} 
+\index{RoundStats@{RoundStats}!keyPointInformation@{keyPointInformation}}
+\index{keyPointInformation@{keyPointInformation}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{keyPointInformation}{keyPointInformation}}
+{\footnotesize\ttfamily vector$<$ string $>$ Round\+Stats\+::key\+Point\+Information\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00014}{14}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_a557ad67ae309863625d2cd1b658a142b}\label{classRoundStats_a557ad67ae309863625d2cd1b658a142b}} 
+\index{RoundStats@{RoundStats}!numEntitiesCreated@{numEntitiesCreated}}
+\index{numEntitiesCreated@{numEntitiesCreated}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{numEntitiesCreated}{numEntitiesCreated}}
+{\footnotesize\ttfamily int Round\+Stats\+::num\+Entities\+Created = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00011}{11}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_a0c8c578deb83f5e7295f8fb0cb68e6ab}\label{classRoundStats_a0c8c578deb83f5e7295f8fb0cb68e6ab}} 
+\index{RoundStats@{RoundStats}!numEntitiesDestroyed@{numEntitiesDestroyed}}
+\index{numEntitiesDestroyed@{numEntitiesDestroyed}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{numEntitiesDestroyed}{numEntitiesDestroyed}}
+{\footnotesize\ttfamily int Round\+Stats\+::num\+Entities\+Destroyed = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00012}{12}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Round\+Stats.\+h\item 
+Round\+Stats.\+cpp\end{DoxyCompactItemize}

@@ -19,6 +19,8 @@ void \mbox{\hyperlink{classWarTheatre_a2b3a98ad63087ab1f858ecbb5651253d}{simulat
 \begin{DoxyCompactList}\small\item\em Simulate Battle with troops from the alliance passed in. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{add\+Area}} (\mbox{\hyperlink{classArea}{Area}} $\ast$area)
 \begin{DoxyCompactList}\small\item\em Adds an area to the war theatre object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}{add\+General}} (\mbox{\hyperlink{classGeneral}{General}} $\ast$general)
+\begin{DoxyCompactList}\small\item\em Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classWarTheatre}{War\+Theatre}} $\ast$ \mbox{\hyperlink{classWarTheatre_afc32ceef9af26ba4e858c91bf769aef9}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current war theatre. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -115,6 +117,47 @@ Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00021}{21}} of file 
 \DoxyCodeLine{00021                                    \{}
 \DoxyCodeLine{00022     areas.push\_back(area);}
 \DoxyCodeLine{00023 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}\label{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}} 
+\index{WarTheatre@{WarTheatre}!addGeneral@{addGeneral}}
+\index{addGeneral@{addGeneral}!WarTheatre@{WarTheatre}}
+\doxysubsubsection{\texorpdfstring{addGeneral()}{addGeneral()}}
+{\footnotesize\ttfamily void War\+Theatre\+::add\+General (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGeneral}{General}} $\ast$}]{general }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. 
+
+Precoditions\+:
+\begin{DoxyItemize}
+\item general must be a General$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add general to all points
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em general} & must be a General$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classArea}{Area}}.
+
+
+
+Definition at line \mbox{\hyperlink{WarTheatre_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{WarTheatre_8cpp_source}{War\+Theatre.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00034                                             \{}
+\DoxyCodeLine{00035     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < areas.size(); i++)}
+\DoxyCodeLine{00036         areas[i]-\/>\mbox{\hyperlink{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}{addGeneral}}(general);}
+\DoxyCodeLine{00037 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classWarTheatre_afc32ceef9af26ba4e858c91bf769aef9}\label{classWarTheatre_afc32ceef9af26ba4e858c91bf769aef9}} 

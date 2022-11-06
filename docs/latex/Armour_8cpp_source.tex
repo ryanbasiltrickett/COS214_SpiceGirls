@@ -19,8 +19,9 @@
 \DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00016}00016 }
 \DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00017}\mbox{\hyperlink{classArmour_ab200b02561ecc30c20397913a2bc9511}{00017}} \mbox{\hyperlink{classAddOn}{AddOn}}* \mbox{\hyperlink{classArmour_ab200b02561ecc30c20397913a2bc9511}{Armour::clone}}() \{}
 \DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00018}00018     \mbox{\hyperlink{classArmour}{Armour}}* armour = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(value);}
-\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00019}00019     armour-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(entity-\/>clone());}
-\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00020}00020     \textcolor{keywordflow}{return} armour;}
-\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00019}00019     \textcolor{keywordflow}{if} (\mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{getEntity}}() != NULL)}
+\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00020}00020         armour-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(entity-\/>clone());}
+\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00021}00021     \textcolor{keywordflow}{return} armour;}
+\DoxyCodeLine{\Hypertarget{Armour_8cpp_source_l00022}00022 \}}
 
 \end{DoxyCode}
