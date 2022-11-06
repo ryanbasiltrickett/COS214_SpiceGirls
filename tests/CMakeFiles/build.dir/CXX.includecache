@@ -63,22 +63,6 @@ EasySetup.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.h
 string.h
 -
-Passive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Passive.h
-Aggressive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.h
-Defensive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.h
-iostream
--
-cctype
--
-string
--
-vector
--
 Alliance.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
 Country.h
@@ -103,8 +87,24 @@ KeyPoint.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
 WarTheatre.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
+Passive.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Passive.h
+Aggressive.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.h
+Defensive.h
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
 WarEngine.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
+
+/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.h
+iostream
+-
+cctype
+-
+string
+-
+vector
+-
 SaveArchive.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SaveArchive.h
 
@@ -188,10 +188,6 @@ string
 Factory.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.cpp
-WarEngine.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
-
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
 WarEngineState.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
@@ -215,10 +211,6 @@ Area.h
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
 vector
 -
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.cpp
-WarTheatre.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
 
 /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
 Area.h

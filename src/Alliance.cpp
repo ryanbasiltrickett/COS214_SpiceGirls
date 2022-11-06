@@ -2,6 +2,9 @@
 #include "Negotiator.h"
 #include "Entity.h"
 #include <time.h>
+#include <iostream>
+
+using namespace std;
 
 int Alliance::totalNum = 0;
 

@@ -1,5 +1,6 @@
 #include "PersonnelFactory.h"
 #include "Personnel.h"
+#include <iostream>
 
 PersonnelFactory::PersonnelFactory(Type* type, AddOn* addOn): Factory(type, addOn) {}
 
