@@ -32,6 +32,7 @@ WarEngine::~WarEngine(){
 	delete this->state;
 }
 
+
 void WarEngine::simulate() {
 
 	vector<Alliance*> alliances = this->state->getAlliances();

@@ -92,6 +92,16 @@ public:
 	 * @return void
 	*/
 	void setWarTheatre(WarTheatre* battleGround);
+
+	/**
+	 * @brief Simulates the war
+	 * 
+	 * PostConditions:
+	 * - Will simulate the war by running the engine
+	 * @return void
+	 */
+	void simulate();
+  
 };
 
 #endif
