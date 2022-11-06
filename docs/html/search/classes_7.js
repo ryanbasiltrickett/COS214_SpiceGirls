@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['negotiator',['Negotiator',['../classNegotiator.html',1,'']]]
+  ['terraintype',['TerrainType',['../classTerrainType.html',1,'']]],
+  ['type',['Type',['../classType.html',1,'']]]
 ];

@@ -22,14 +22,16 @@ Inheritance diagram for Support\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Instantiates the support. \end{DoxyCompactList}\item 
 void \hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{take\+Damage} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the support object. \end{DoxyCompactList}\item 
-void \hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage} (\hyperlink{classEntity}{Entity} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage} (Entity $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+Entity $\ast$ \hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \hyperlink{classSupport}{Support} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{classSupport}{Support} class. 
 
-Used to add addtional functionality to \hyperlink{classEntity}{Entity} objects. 
+Used to add addtional functionality to Entity objects. 
 
 Definition at line 11 of file Support.\+h.
 
@@ -61,16 +63,39 @@ Definition at line 3 of file Support.\+cpp.
 
 
 \begin{DoxyCode}
-3 : \hyperlink{classEntity_a68e832f69650ee80b83228a038eb66f0}{Entity}(type, health, damage) \{\}
+3 : Entity(type, health, damage) \{\}
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}\label{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}} 
+\index{Support@{Support}!clone@{clone}}
+\index{clone@{clone}!Support@{Support}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily Entity $\ast$ Support\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the clone of the \hyperlink{classSupport}{Support} object. 
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ The clone of the support object 
+\end{DoxyReturn}
+
+
+Definition at line 13 of file Support.\+cpp.
+
+
+\begin{DoxyCode}
+13                        \{
+14     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}{Support}(this->getType()->\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}(), this->getHealth(), this->getDamage());
+15 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{classSupport_a5f2cb243e746adea36b3c78548029ce3}\label{classSupport_a5f2cb243e746adea36b3c78548029ce3}} 
 \index{Support@{Support}!deal\+Damage@{deal\+Damage}}
 \index{deal\+Damage@{deal\+Damage}!Support@{Support}}
 \subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}}
-{\footnotesize\ttfamily void Support\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Support\+::deal\+Damage (\begin{DoxyParamCaption}\item[{Entity $\ast$}]{entity }\end{DoxyParamCaption})}
 
 
 
@@ -96,23 +121,19 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classEntity}{Entity}.
-
-
-
 Definition at line 5 of file Support.\+cpp.
 
 
 \begin{DoxyCode}
 5                                        \{
-6     entity->takeDamage(\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}());
+6     entity->takeDamage(getDamage());
 7 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupport_afb159bd8c474ec67ad5d03fa24c38564}\label{classSupport_afb159bd8c474ec67ad5d03fa24c38564}} 
 \index{Support@{Support}!take\+Damage@{take\+Damage}}
 \index{take\+Damage@{take\+Damage}!Support@{Support}}
 \subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
-{\footnotesize\ttfamily void Support\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Support\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
 
 
 
@@ -138,16 +159,12 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classEntity}{Entity}.
-
-
-
 Definition at line 9 of file Support.\+cpp.
 
 
 \begin{DoxyCode}
 9                                    \{
-10     this->\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}(this->\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}() - damage);
+10     this->setHealth(this->getHealth() - damage);
 11 \}
 \end{DoxyCode}
 

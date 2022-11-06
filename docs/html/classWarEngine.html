@@ -61,6 +61,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classWarEngine-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -72,12 +73,24 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3ce98b4a76487348a712a4ffb54a71f2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWarEngineMemento.html">WarEngineMemento</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a3ce98b4a76487348a712a4ffb54a71f2">saveState</a> ()</td></tr>
-<tr class="memdesc:a3ce98b4a76487348a712a4ffb54a71f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures current state of simulation via member variables and creates <a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> instance storing all relevant members in <a class="el" href="classWarEngineState.html" title="Class for storing current state of entire simulation. ">WarEngineState</a>.  <a href="#a3ce98b4a76487348a712a4ffb54a71f2">More...</a><br /></td></tr>
-<tr class="separator:a3ce98b4a76487348a712a4ffb54a71f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a76994dd9d009fff3dd272a87710bfae5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a76994dd9d009fff3dd272a87710bfae5">loadState</a> (<a class="el" href="classWarEngineState.html">WarEngineState</a> save)</td></tr>
-<tr class="memdesc:a76994dd9d009fff3dd272a87710bfae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an instance of saved <a class="el" href="classWarEngine.html">WarEngine</a> states and sets current instance's member variables to memento state.  <a href="#a76994dd9d009fff3dd272a87710bfae5">More...</a><br /></td></tr>
-<tr class="separator:a76994dd9d009fff3dd272a87710bfae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7e71964cca280d52f4298e97e1a8d7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#afe7e71964cca280d52f4298e97e1a8d7">saveState</a> ()</td></tr>
+<tr class="memdesc:afe7e71964cca280d52f4298e97e1a8d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Captures current state of simulation via member variables and creates <a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> instance storing all relevant members in <a class="el" href="classWarEngineState.html">WarEngineState</a>.  <a href="#afe7e71964cca280d52f4298e97e1a8d7">More...</a><br /></td></tr>
+<tr class="separator:afe7e71964cca280d52f4298e97e1a8d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715995a703811197d16102ca80bf6fca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a715995a703811197d16102ca80bf6fca">loadSave</a> (<a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> *save)</td></tr>
+<tr class="memdesc:a715995a703811197d16102ca80bf6fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes in an instance of saved <a class="el" href="classWarEngine.html">WarEngine</a> states and sets current instance's member variables to memento state.  <a href="#a715995a703811197d16102ca80bf6fca">More...</a><br /></td></tr>
+<tr class="separator:a715995a703811197d16102ca80bf6fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3204f345ee8d36a37e8d47700420825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#ad3204f345ee8d36a37e8d47700420825">setWarTheatre</a> (<a class="el" href="classWarTheatre.html">WarTheatre</a> *battleGround)</td></tr>
+<tr class="memdesc:ad3204f345ee8d36a37e8d47700420825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the state's area to passed in battleGround parameter.  <a href="#ad3204f345ee8d36a37e8d47700420825">More...</a><br /></td></tr>
+<tr class="separator:ad3204f345ee8d36a37e8d47700420825"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8990aec96d7e77f10b39f4ac05dca43b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a8990aec96d7e77f10b39f4ac05dca43b">simulate</a> ()</td></tr>
+<tr class="memdesc:a8990aec96d7e77f10b39f4ac05dca43b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Simulates the war.  <a href="#a8990aec96d7e77f10b39f4ac05dca43b">More...</a><br /></td></tr>
+<tr class="separator:a8990aec96d7e77f10b39f4ac05dca43b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:aa8219fbd385bb54ad0363257915fe986"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classWarEngine.html">WarEngine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#aa8219fbd385bb54ad0363257915fe986">getInstance</a> ()</td></tr>
+<tr class="memdesc:aa8219fbd385bb54ad0363257915fe986"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function that returns a reference to the current (and only) instance of the class.  <a href="#aa8219fbd385bb54ad0363257915fe986">More...</a><br /></td></tr>
+<tr class="separator:aa8219fbd385bb54ad0363257915fe986"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -85,26 +98,104 @@ Protected Member Functions</h2></td></tr>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a3c95a6990a6eabd99f1ea0ade30f85f2">WarEngine</a> ()</td></tr>
 <tr class="memdesc:a3c95a6990a6eabd99f1ea0ade30f85f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for class. Is responsible for ensuring only a single instance of class exists. <br /></td></tr>
 <tr class="separator:a3c95a6990a6eabd99f1ea0ade30f85f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c3e8e1ca61c1e85ffcbbaa26b9a749c"><td class="memItemLeft" align="right" valign="top"><a id="a0c3e8e1ca61c1e85ffcbbaa26b9a749c"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a0c3e8e1ca61c1e85ffcbbaa26b9a749c">WarEngine</a> (int &amp;warEngine)</td></tr>
-<tr class="memdesc:a0c3e8e1ca61c1e85ffcbbaa26b9a749c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor for class. <br /></td></tr>
-<tr class="separator:a0c3e8e1ca61c1e85ffcbbaa26b9a749c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76af9e002be42642841c863b9d0ab710"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a76af9e002be42642841c863b9d0ab710">WarEngine</a> (const <a class="el" href="classWarEngine.html">WarEngine</a> &amp;)</td></tr>
+<tr class="memdesc:a76af9e002be42642841c863b9d0ab710"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parameterized constructor for class.  <a href="#a76af9e002be42642841c863b9d0ab710">More...</a><br /></td></tr>
+<tr class="separator:a76af9e002be42642841c863b9d0ab710"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af57a2339eba0706693be0021719528ea"><td class="memItemLeft" align="right" valign="top"><a id="af57a2339eba0706693be0021719528ea"></a>
+<a class="el" href="classWarEngine.html">WarEngine</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#af57a2339eba0706693be0021719528ea">operator=</a> (const <a class="el" href="classWarEngine.html">WarEngine</a> &amp;)</td></tr>
+<tr class="memdesc:af57a2339eba0706693be0021719528ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Overloaded operator = for class. <br /></td></tr>
+<tr class="separator:af57a2339eba0706693be0021719528ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23425e290b562445897d4c54a80c5485"><td class="memItemLeft" align="right" valign="top"><a id="a23425e290b562445897d4c54a80c5485"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classWarEngine.html#a23425e290b562445897d4c54a80c5485">~WarEngine</a> ()</td></tr>
+<tr class="memdesc:a23425e290b562445897d4c54a80c5485"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destrcutor for class responsible for freeing all allocated memory. <br /></td></tr>
+<tr class="separator:a23425e290b562445897d4c54a80c5485"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class that contains all information regarding current simulation. Only one instance of class is allowed. </p>
 
-<p class="definition">Definition at line <a class="el" href="WarEngine_8h_source.html#l00008">8</a> of file <a class="el" href="WarEngine_8h_source.html">WarEngine.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a76994dd9d009fff3dd272a87710bfae5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a76994dd9d009fff3dd272a87710bfae5">&#9670;&nbsp;</a></span>loadState()</h2>
+<p class="definition">Definition at line <a class="el" href="WarEngine_8h_source.html#l00012">12</a> of file <a class="el" href="WarEngine_8h_source.html">WarEngine.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a76af9e002be42642841c863b9d0ab710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76af9e002be42642841c863b9d0ab710">&#9670;&nbsp;</a></span>WarEngine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WarEngine::WarEngine </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classWarEngine.html">WarEngine</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Parameterized constructor for class. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">warEngine&amp;</td><td>An anonymous warEngine reference.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Postconditions:</p><ul>
+<li>parameter must be of type <a class="el" href="classWarEngine.html">WarEngine</a>&amp; </li>
+</ul>
+
+<p class="definition">Definition at line <a class="el" href="WarEngine_8h_source.html#l00033">33</a> of file <a class="el" href="WarEngine_8h_source.html">WarEngine.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{};</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa8219fbd385bb54ad0363257915fe986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8219fbd385bb54ad0363257915fe986">&#9670;&nbsp;</a></span>getInstance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classWarEngine.html">WarEngine</a> &amp; WarEngine::getInstance </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Function that returns a reference to the current (and only) instance of the class. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classWarEngine.html">WarEngine</a>&amp; </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00016">16</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                 {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keyword">static</span> <a class="code" href="classWarEngine.html">WarEngine</a> uniqueInstance_;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">return</span> uniqueInstance_;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div><div class="ttc" id="classWarEngine_html"><div class="ttname"><a href="classWarEngine.html">WarEngine</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngine_8h_source.html#l00012">WarEngine.h:12</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a715995a703811197d16102ca80bf6fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715995a703811197d16102ca80bf6fca">&#9670;&nbsp;</a></span>loadSave()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void WarEngine::loadState </td>
+          <td class="memname">void WarEngine::loadSave </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classWarEngineState.html">WarEngineState</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> *&#160;</td>
           <td class="paramname"><em>save</em></td><td>)</td>
           <td></td>
         </tr>
@@ -112,26 +203,32 @@ Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Takes in an instance of saved <a class="el" href="classWarEngine.html">WarEngine</a> states and sets current instance's member variables to memento state. </p>
+<p>Preconditions:</p><ul>
+<li>Save must be of type WarEngineMemento*</li>
+</ul>
+<p>Postconditions:</p><ul>
+<li>Sets the instance of the class'state member variable to the passed in save parameter.</li>
+</ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">save</td><td></td></tr>
+    <tr><td class="paramname">save</td><td>must be a WarEngineMemento* </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00018">18</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                             {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// TODO - implement WarEngine::loadState</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Not yet implemented&quot;</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00011">11</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                                               {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">delete</span> this-&gt;state;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    this-&gt;state = save-&gt;getState();</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
-<a id="a3ce98b4a76487348a712a4ffb54a71f2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3ce98b4a76487348a712a4ffb54a71f2">&#9670;&nbsp;</a></span>saveState()</h2>
+<a id="afe7e71964cca280d52f4298e97e1a8d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe7e71964cca280d52f4298e97e1a8d7">&#9670;&nbsp;</a></span>saveState()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> WarEngine::saveState </td>
+          <td class="memname"><a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> * WarEngine::saveState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -139,11 +236,72 @@ Protected Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Captures current state of simulation via member variables and creates <a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> instance storing all relevant members in <a class="el" href="classWarEngineState.html" title="Class for storing current state of entire simulation. ">WarEngineState</a>. </p>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> </dd></dl>
+<p>Captures current state of simulation via member variables and creates <a class="el" href="classWarEngineMemento.html">WarEngineMemento</a> instance storing all relevant members in <a class="el" href="classWarEngineState.html">WarEngineState</a>. </p>
+<dl class="section return"><dt>Returns</dt><dd>WarEngineMemento* </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00013">13</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
-<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                      {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// TODO - implement WarEngine::saveState</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keywordflow">throw</span> <span class="stringliteral">&quot;Not yet implemented&quot;</span>;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;}</div></div><!-- fragment -->
+<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00007">7</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;                                       {</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code" href="classWarEngineMemento.html">WarEngineMemento</a>(state-&gt;clone());</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;}</div><div class="ttc" id="classWarEngineMemento_html"><div class="ttname"><a href="classWarEngineMemento.html">WarEngineMemento</a></div><div class="ttdef"><b>Definition:</b> <a href="WarEngineMemento_8h_source.html#l00015">WarEngineMemento.h:15</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad3204f345ee8d36a37e8d47700420825"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3204f345ee8d36a37e8d47700420825">&#9670;&nbsp;</a></span>setWarTheatre()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WarEngine::setWarTheatre </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classWarTheatre.html">WarTheatre</a> *&#160;</td>
+          <td class="paramname"><em>battleGround</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the state's area to passed in battleGround parameter. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">battleGround</td><td>must be a WarTheatre*</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Preconditions:</p><ul>
+<li>battleGround must be of type WarTheatre*</li>
+</ul>
+<p>Postconditions:</p><ul>
+<li>sets area in <a class="el" href="classWarEngineState.html">WarEngineState</a> to passed in <a class="el" href="classWarTheatre.html">WarTheatre</a>.</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00036">36</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                     {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    state-&gt;setArea(battleGround);</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div></div><!-- fragment -->
+</div>
+</div>
+<a id="a8990aec96d7e77f10b39f4ac05dca43b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8990aec96d7e77f10b39f4ac05dca43b">&#9670;&nbsp;</a></span>simulate()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WarEngine::simulate </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Simulates the war. </p>
+<p>PostConditions:</p><ul>
+<li>Will simulate the war by running the engine</li>
+</ul>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="WarEngine_8cpp_source.html#l00026">26</a> of file <a class="el" href="WarEngine_8cpp_source.html">WarEngine.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                         {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    vector&lt;Alliance*&gt; alliances = this-&gt;state-&gt;getAlliances();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; alliances.size(); j++) {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        state-&gt;getArea()-&gt;simulateBattle(alliances[j]);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>

@@ -1,26 +1,9 @@
 var searchData=
 [
-  ['savearchive',['SaveArchive',['../classSaveArchive.html',1,'']]],
-  ['savestate',['saveState',['../classWarEngine.html#a3ce98b4a76487348a712a4ffb54a71f2',1,'WarEngine']]],
-  ['sendpeace',['sendPeace',['../classNegotiator.html#a30efddcdba1469a147a7429a540033b1',1,'Negotiator']]],
-  ['setactivestatus',['setActiveStatus',['../classAlliance.html#a21492fd899af1441c9d8ddf11a558e7d',1,'Alliance']]],
-  ['setaddons',['setAddOns',['../classFactory.html#a58dbf2659ee06c61b2dae1a9a36fac53',1,'Factory']]],
-  ['setalliance',['setAlliance',['../classEntity.html#af804dcaa600e770cf0e2b4537f6fba23',1,'Entity::setAlliance()'],['../classGeneral.html#a4256fe7650e6162ca6785c2132364057',1,'General::SetAlliance()']]],
-  ['setalliances',['setAlliances',['../classWarEngineState.html#ad7ec9ef65bbbf550b6566a54b7938136',1,'WarEngineState']]],
-  ['setareas',['setAreas',['../classWarEngineState.html#a5cb156803af207c0498a8e1d33972cd8',1,'WarEngineState']]],
-  ['setdamage',['setDamage',['../classEntity.html#aae05f62767eb7438c846300704f9579b',1,'Entity']]],
-  ['setgeneral',['setGeneral',['../classCommandCenter.html#a755d1f8677d6764a59ba8e8e4909103d',1,'CommandCenter']]],
-  ['sethealth',['setHealth',['../classEntity.html#a7dae281ff92be9bc98672cafe05c77ab',1,'Entity']]],
-  ['setid',['setID',['../classAlliance.html#ace044c4ae0ede7f19990279f163b6f37',1,'Alliance::setID()'],['../classCountry.html#a35ecd0419e6a6eaf358889527c280d82',1,'Country::setID()']]],
-  ['setkeypoint',['setKeyPoint',['../classCommandCenter.html#a585052e0a546ce307090c43b95dad5fa',1,'CommandCenter::setKeyPoint()'],['../classGeneral.html#ae82ae73aef77ee8379aed00dcd5fe953',1,'General::setKeyPoint()']]],
-  ['setname',['setName',['../classCountry.html#ae4773ebfffe4f9d2d2db1b54181b67ab',1,'Country']]],
-  ['setnegotiator',['setNegotiator',['../classAlliance.html#a80f9a001ba5bad946690111b775c2349',1,'Alliance']]],
-  ['setstrategy',['setStrategy',['../classGeneral.html#abe8dcb93ddb9b79bd8e75e8c642758ba',1,'General::setStrategy()'],['../classStrategy.html#a35c4bbd2d37efaf24e21b7a0e82b4c96',1,'Strategy::setStrategy()']]],
-  ['settype',['setType',['../classEntity.html#a5d04ce64c9ca214900422865e298e36c',1,'Entity::setType()'],['../classFactory.html#a7484d514b094114231dbeb3df70e9d0b',1,'Factory::setType()']]],
-  ['setweather',['setWeather',['../classKeyPoint.html#a5c4b9314440a00fca7ab4d82ea4693a5',1,'KeyPoint']]],
-  ['strategy',['Strategy',['../classStrategy.html',1,'Strategy'],['../classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235',1,'Strategy::Strategy()']]],
-  ['sunny',['Sunny',['../classSunny.html',1,'Sunny'],['../classSunny.html#a7f849e14ad8e3da056638135729f293d',1,'Sunny::Sunny()']]],
-  ['support',['Support',['../classSupport.html',1,'Support'],['../classSupport.html#a8b4c631dcfd81be50ee86f3ed01d5c1e',1,'Support::Support()']]],
-  ['supportfactory',['SupportFactory',['../classSupportFactory.html',1,'SupportFactory'],['../classSupportFactory.html#a8e0b10fb625f7d4a93cec9989bef45c4',1,'SupportFactory::SupportFactory()']]],
-  ['surrender',['surrender',['../classAlliance.html#ad3b8272ccec63d3a32b7e241434948e9',1,'Alliance']]]
+  ['_7earea',['~Area',['../classArea.html#ace0975982b61a16746c564a0d43a4cc8',1,'Area']]],
+  ['_7efactory',['~Factory',['../classFactory.html#a8f71456f48e4df402c778a44191ff40e',1,'Factory']]],
+  ['_7estrategy',['~Strategy',['../classStrategy.html#a37c0bbdd64fd7dfcdd91578784a64775',1,'Strategy']]],
+  ['_7ewarengine',['~WarEngine',['../classWarEngine.html#a23425e290b562445897d4c54a80c5485',1,'WarEngine']]],
+  ['_7ewartheatre',['~WarTheatre',['../classWarTheatre.html#a28324e2234a88933e1697c0f7f9ff222',1,'WarTheatre']]],
+  ['_7eweather',['~Weather',['../classWeather.html#a6cc4f6ce440531f5c882547dcf40eb22',1,'Weather']]]
 ];

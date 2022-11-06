@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['defensive',['Defensive',['../classDefensive.html',1,'']]]
+  ['easysetup',['EasySetup',['../classEasySetup.html',1,'']]]
 ];

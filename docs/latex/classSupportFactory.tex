@@ -20,7 +20,7 @@ Inheritance diagram for Support\+Factory\+:\begin{figure}[H]
 \item 
 \hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{Support\+Factory} (\hyperlink{classType}{Type} $\ast$type, \hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Instantiates the support factory. \end{DoxyCompactList}\item 
-\hyperlink{classEntity}{Entity} $\ast$ \hyperlink{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}{create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)
+Entity $\ast$ \hyperlink{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}{create\+Entity} (Alliance $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a support for the given alliance. \end{DoxyCompactList}\item 
 \hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current support factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -84,7 +84,7 @@ Factory$\ast$ The support factory clone
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classFactory}{Factory}.
+Implements \hyperlink{classFactory_a00881ec5050751e4b747db5dfd266192}{Factory}.
 
 
 
@@ -93,14 +93,15 @@ Definition at line 17 of file Support\+Factory.\+cpp.
 
 \begin{DoxyCode}
 17                                \{
-18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{SupportFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}(), \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}());
+18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classSupportFactory_a8e0b10fb625f7d4a93cec9989bef45c4}{SupportFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}(), 
+      \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}());
 19 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}\label{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}} 
 \index{Support\+Factory@{Support\+Factory}!create\+Entity@{create\+Entity}}
 \index{create\+Entity@{create\+Entity}!Support\+Factory@{Support\+Factory}}
 \subsubsection{\texorpdfstring{create\+Entity()}{createEntity()}}
-{\footnotesize\ttfamily \hyperlink{classEntity}{Entity} $\ast$ Support\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily Entity $\ast$ Support\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{Alliance $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -137,8 +138,8 @@ Definition at line 6 of file Support\+Factory.\+cpp.
 6                                                        \{
 7     \hyperlink{classSupport}{Support}* s = \textcolor{keyword}{new} \hyperlink{classSupport}{Support}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{clone}());
 8     \textcolor{keywordflow}{if} (\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}() != NULL) \{
-9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->clone();
-10         personnelAddOn->connectEntity(s);
+9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->\hyperlink{classAddOn_a5a090bf8b4e7260aa35d6f5b9d151955}{clone}();
+10         personnelAddOn->\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}(s);
 11         \textcolor{keywordflow}{return} personnelAddOn;
 12     \} \textcolor{keywordflow}{else} \{
 13         \textcolor{keywordflow}{return} s;

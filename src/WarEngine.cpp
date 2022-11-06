@@ -5,22 +5,12 @@ WarEngine::WarEngine(){
 }
 
 WarEngineMemento* WarEngine::saveState() {
-	WarEngineState* cloneState = new WarEngineState();	
-	vector<Alliance*> cloneAlliances;
-	
-	for(Alliance* alliance : this->state->getAlliances()){
-		cloneAlliances.push_back(alliance->clone());
-	}
-
-	cloneState->setArea(this->state->getArea()->clone());
-	cloneState->setAlliances(cloneAlliances);
-
-	return new WarEngineMemento(cloneState);
+	return new WarEngineMemento(state->clone());
 }
 
-void WarEngine::loadState(WarEngineState* save) {
+void WarEngine::loadSave(WarEngineMemento* save) {
 	delete this->state;
-	this->state = save;
+	this->state = save->getState();
 }
 
 WarEngine& WarEngine::getInstance(){
@@ -31,6 +21,7 @@ WarEngine& WarEngine::getInstance(){
 WarEngine::~WarEngine(){
 	delete this->state;
 }
+
 
 void WarEngine::simulate() {
 

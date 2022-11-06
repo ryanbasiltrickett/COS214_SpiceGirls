@@ -83,6 +83,36 @@ CMakeFiles/build.dir/Defensive.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+CMakeFiles/build.dir/EasySetup.cpp.o
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AerialType.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AquaticType.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.cpp
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Passive.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SaveArchive.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineMemento.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
 CMakeFiles/build.dir/Entity.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
@@ -277,8 +307,14 @@ CMakeFiles/build.dir/WarEngineState.cpp.o
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Negotiator.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+ /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.cpp
  /mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h

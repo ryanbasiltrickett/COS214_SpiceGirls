@@ -394,6 +394,33 @@ Defensive.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Defensive.cpp.s
 .PHONY : Defensive.cpp.s
 
+EasySetup.o: EasySetup.cpp.o
+
+.PHONY : EasySetup.o
+
+# target to build an object file
+EasySetup.cpp.o:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/EasySetup.cpp.o
+.PHONY : EasySetup.cpp.o
+
+EasySetup.i: EasySetup.cpp.i
+
+.PHONY : EasySetup.i
+
+# target to preprocess a source file
+EasySetup.cpp.i:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/EasySetup.cpp.i
+.PHONY : EasySetup.cpp.i
+
+EasySetup.s: EasySetup.cpp.s
+
+.PHONY : EasySetup.s
+
+# target to generate assembly for a file
+EasySetup.cpp.s:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/EasySetup.cpp.s
+.PHONY : EasySetup.cpp.s
+
 Entity.o: Entity.cpp.o
 
 .PHONY : Entity.o
@@ -1108,6 +1135,9 @@ help:
 	@echo "... Defensive.o"
 	@echo "... Defensive.i"
 	@echo "... Defensive.s"
+	@echo "... EasySetup.o"
+	@echo "... EasySetup.i"
+	@echo "... EasySetup.s"
 	@echo "... Entity.o"
 	@echo "... Entity.i"
 	@echo "... Entity.s"

@@ -2,12 +2,14 @@
 
 using namespace std;
 
-Passive::Passive() {
-
-}
+Passive::Passive() {}
 
 void Passive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
 	
 	int randomNumber = (rand() % 10) + 5;
 	keyPoint->moveEntitiesOutOf(alliance, randomNumber);
+}
+
+Strategy* Passive::clone() {
+	return new Passive();
 }

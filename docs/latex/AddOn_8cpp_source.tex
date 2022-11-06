@@ -3,9 +3,25 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}AddOn.h"{}}}
 \DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00003}00003 AddOn::AddOn(\mbox{\hyperlink{classEntity}{Entity}}* entity, \textcolor{keywordtype}{int} value) \{}
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement AddOn::AddOn}}
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00003}\mbox{\hyperlink{classAddOn_a64f23691b6c7fc49b6584f8f761ce4d9}{00003}} \mbox{\hyperlink{classAddOn_a64f23691b6c7fc49b6584f8f761ce4d9}{AddOn::AddOn}}(\textcolor{keywordtype}{int} value): \mbox{\hyperlink{classEntity}{Entity}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00004}00004     this-\/>value = value;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00005}00005     entity = NULL;}
 \DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00008}\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{00008}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{AddOn::setValue}}(\textcolor{keywordtype}{int} value) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00009}00009     this-\/>value = value;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00012}\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{00012}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{AddOn::getValue}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00013}00013     \textcolor{keywordflow}{return} value;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00014}00014 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00015}00015 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00016}\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{00016}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{AddOn::setEntity}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00017}00017     this-\/>entity = entity;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00018}00018 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00020}\mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{00020}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{AddOn::getEntity}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00021}00021     \textcolor{keywordflow}{return} this-\/>entity;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00022}00022 \}}
 
 \end{DoxyCode}

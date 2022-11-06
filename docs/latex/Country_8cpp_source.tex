@@ -3,14 +3,36 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Country.h"{}}}
 \DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00003}00003 Country::Country() \{}
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Country::Country}}
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00003}00003 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00005}\mbox{\hyperlink{classCountry_a4cba457856775a13a17dfcb11a77e224}{00005}} \mbox{\hyperlink{classCountry_a4cba457856775a13a17dfcb11a77e224}{Country::Country}}()\{\}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00006}00006     }
 \DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00008}00008 \mbox{\hyperlink{classCountry}{Country}}* Country::clone() \{}
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00009}00009     \textcolor{comment}{// TODO -\/ implement Country::clone}}
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00010}00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00008}\mbox{\hyperlink{classCountry_a82562b18230bbeceb22b13c0ab046a1c}{00008}} \mbox{\hyperlink{classCountry}{Country}}* \mbox{\hyperlink{classCountry_a82562b18230bbeceb22b13c0ab046a1c}{Country::clone}}()\{}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00009}00009     }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00010}00010     \mbox{\hyperlink{classCountry}{Country}}* countryClone = \textcolor{keyword}{new} \mbox{\hyperlink{classCountry_a4cba457856775a13a17dfcb11a77e224}{Country}}();}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00011}00011     countryClone-\/>\mbox{\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{setID}}(this-\/>\textcolor{keywordtype}{id});}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00012}00012     countryClone-\/>\mbox{\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{setName}}(this-\/>name);}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} countryClone;}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00017}\mbox{\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{Country::setID}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id})\{}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00018}00018     this-\/>\textcolor{keywordtype}{id} = id;}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00021}\mbox{\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{00021}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{Country::setName}}(\textcolor{keywordtype}{string} name)\{}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00022}00022     this-\/>name = name;}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00025}\mbox{\hyperlink{classCountry_af86e64cecec9c266dbf284329ab072f3}{00025}} \textcolor{keywordtype}{string} \mbox{\hyperlink{classCountry_af86e64cecec9c266dbf284329ab072f3}{Country::getName}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00026}00026     \textcolor{keywordflow}{return} this-\/>name;}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00029}\mbox{\hyperlink{classCountry_abb770576662c91a71c01cf078b98c0af}{00029}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classCountry_abb770576662c91a71c01cf078b98c0af}{Country::getID}}()\textcolor{keyword}{ const}\{}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} this-\/>id;}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{Country_8cpp_source_l00033}00033 }
 
 \end{DoxyCode}

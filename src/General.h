@@ -33,16 +33,6 @@ public:
 	void initiateStrategy(KeyPoint* keyPoint);
 
 	/**
-	 * @brief Instantiates and returns a clone of the current General
-	 *
-	 * Postconditions:
-	 *  - Returns the clone of the current General
-	 *
-	 * @return General* The General clone
-	 */
-	General* clone();
-
-	/**
 	 * @brief Set the Strategy object
 	 * 
 	 * PreConditons:

@@ -20,7 +20,7 @@ Inheritance diagram for Vehicle\+Factory\+:\begin{figure}[H]
 \item 
 \hyperlink{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}{Vehicle\+Factory} (\hyperlink{classType}{Type} $\ast$type, \hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Instantiates the vehicle factory. \end{DoxyCompactList}\item 
-\hyperlink{classEntity}{Entity} $\ast$ \hyperlink{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}{create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)
+Entity $\ast$ \hyperlink{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}{create\+Entity} (Alliance $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a vehicle for the given alliance. \end{DoxyCompactList}\item 
 \hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current vehicle factory. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -84,7 +84,7 @@ Factory$\ast$ The vehicle factory clone
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classFactory}{Factory}.
+Implements \hyperlink{classFactory_a00881ec5050751e4b747db5dfd266192}{Factory}.
 
 
 
@@ -93,14 +93,15 @@ Definition at line 17 of file Vehicle\+Factory.\+cpp.
 
 \begin{DoxyCode}
 17                                \{
-18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}{VehicleFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}(), \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}());
+18     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classVehicleFactory_a9bc9faf52aef1ad02193b3640b661f59}{VehicleFactory}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone}(), 
+      \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->\hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone}());
 19 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}\label{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}} 
 \index{Vehicle\+Factory@{Vehicle\+Factory}!create\+Entity@{create\+Entity}}
 \index{create\+Entity@{create\+Entity}!Vehicle\+Factory@{Vehicle\+Factory}}
 \subsubsection{\texorpdfstring{create\+Entity()}{createEntity()}}
-{\footnotesize\ttfamily \hyperlink{classEntity}{Entity} $\ast$ Vehicle\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily Entity $\ast$ Vehicle\+Factory\+::create\+Entity (\begin{DoxyParamCaption}\item[{Alliance $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -137,8 +138,8 @@ Definition at line 6 of file Vehicle\+Factory.\+cpp.
 6                                                        \{
 7     \hyperlink{classVehicle}{Vehicle}* v = \textcolor{keyword}{new} \hyperlink{classVehicle}{Vehicle}(\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{getType}()->\hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{clone}());
 8     \textcolor{keywordflow}{if} (\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}() != NULL) \{
-9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->clone();
-10         personnelAddOn->connectEntity(v);
+9         \hyperlink{classAddOn}{AddOn}* personnelAddOn = \hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{getAddOn}()->\hyperlink{classAddOn_a5a090bf8b4e7260aa35d6f5b9d151955}{clone}();
+10         personnelAddOn->\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}(v);
 11         \textcolor{keywordflow}{return} personnelAddOn;
 12     \} \textcolor{keywordflow}{else} \{
 13         \textcolor{keywordflow}{return} v;

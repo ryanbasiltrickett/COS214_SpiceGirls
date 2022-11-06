@@ -14,6 +14,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Cloudy.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Cloudy.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Country.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Defensive.cpp.o"
+  "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/EasySetup.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Entity.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/Factory.cpp.o"
   "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.cpp" "/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir/General.cpp.o"

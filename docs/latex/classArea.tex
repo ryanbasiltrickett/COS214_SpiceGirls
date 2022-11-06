@@ -9,31 +9,80 @@ Inheritance diagram for Area\+:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classArea_aa92851fcffb0a9f1c6c8c283204f7003}\label{classArea_aa92851fcffb0a9f1c6c8c283204f7003}} 
-\hyperlink{classArea_aa92851fcffb0a9f1c6c8c283204f7003}{Area} ()
+\mbox{\Hypertarget{classArea_a765c2ee1798421e3079ab77f97abf367}\label{classArea_a765c2ee1798421e3079ab77f97abf367}} 
+\hyperlink{classArea_a765c2ee1798421e3079ab77f97abf367}{Area} (std\+::string area\+Name)
 \begin{DoxyCompactList}\small\item\em Instantiates the area. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classArea_a3c2f6940eb1f05981553ca4bc442bf61}\label{classArea_a3c2f6940eb1f05981553ca4bc442bf61}} 
-virtual void \hyperlink{classArea_a3c2f6940eb1f05981553ca4bc442bf61}{$\sim$\+Area} ()
+\mbox{\Hypertarget{classArea_ace0975982b61a16746c564a0d43a4cc8}\label{classArea_ace0975982b61a16746c564a0d43a4cc8}} 
+virtual \hyperlink{classArea_ace0975982b61a16746c564a0d43a4cc8}{$\sim$\+Area} ()
 \begin{DoxyCompactList}\small\item\em Destroys the area object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classArea_a5572fd57878be1d0d1f243de4be742db}\label{classArea_a5572fd57878be1d0d1f243de4be742db}} 
 virtual bool {\bfseries is\+Key\+Point} ()=0
 \item 
-\mbox{\Hypertarget{classArea_a1716b2f2d07575b44f0ad858f615e417}\label{classArea_a1716b2f2d07575b44f0ad858f615e417}} 
-virtual void {\bfseries attack} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)=0
+\mbox{\Hypertarget{classArea_a21450849c93621152b13bafcf6e248d5}\label{classArea_a21450849c93621152b13bafcf6e248d5}} 
+virtual void {\bfseries simulate\+Battle} (Alliance $\ast$alliance)=0
 \item 
-\mbox{\Hypertarget{classArea_af51429707bbcbf7ec9349626eef87bd6}\label{classArea_af51429707bbcbf7ec9349626eef87bd6}} 
-virtual void {\bfseries move\+Entities} (\hyperlink{classArea}{Area} $\ast$area, \hyperlink{classAlliance}{Alliance} $\ast$alliance)=0
-\item 
-\mbox{\Hypertarget{classArea_a383d61c76b8fac66ef903036d776a3a4}\label{classArea_a383d61c76b8fac66ef903036d776a3a4}} 
-virtual \hyperlink{classArea}{Area} $\ast$ {\bfseries clone} ()=0
+std\+::string \hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{get\+Area\+Name} () const
+\begin{DoxyCompactList}\small\item\em Get the \hyperlink{classArea}{Area} \hyperlink{classType}{Type} object. \end{DoxyCompactList}\item 
+virtual \hyperlink{classArea}{Area} $\ast$ \hyperlink{classArea_a383d61c76b8fac66ef903036d776a3a4}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current war theatre. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}\label{classArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}} 
+virtual void {\bfseries add\+General} (\hyperlink{classGeneral}{General} $\ast$general)=0
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 
 
-Definition at line 4 of file Area.\+h.
+Definition at line 8 of file Area.\+h.
 
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classArea_a383d61c76b8fac66ef903036d776a3a4}\label{classArea_a383d61c76b8fac66ef903036d776a3a4}} 
+\index{Area@{Area}!clone@{clone}}
+\index{clone@{clone}!Area@{Area}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classArea}{Area}$\ast$ Area\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Instantiates and returns a clone of the current war theatre. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current war theatre
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+War\+Theatre$\ast$ The war theatre clone 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classWarTheatre_afc32ceef9af26ba4e858c91bf769aef9}{War\+Theatre}.
+
+\mbox{\Hypertarget{classArea_ad67916df281b6b172c4423627b65062a}\label{classArea_ad67916df281b6b172c4423627b65062a}} 
+\index{Area@{Area}!get\+Area\+Name@{get\+Area\+Name}}
+\index{get\+Area\+Name@{get\+Area\+Name}!Area@{Area}}
+\subsubsection{\texorpdfstring{get\+Area\+Name()}{getAreaName()}}
+{\footnotesize\ttfamily std\+::string Area\+::get\+Area\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Get the \hyperlink{classArea}{Area} \hyperlink{classType}{Type} object. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string reaturns the type 
+\end{DoxyReturn}
+
+
+Definition at line 11 of file Area.\+cpp.
+
+
+\begin{DoxyCode}
+11                                   \{
+12     \textcolor{keywordflow}{return} areaName;
+13 \}
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

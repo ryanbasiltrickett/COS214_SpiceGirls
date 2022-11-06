@@ -12,35 +12,38 @@
 Inheritance diagram for Piercing\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classPiercing}
+\includegraphics[height=3.000000cm]{classPiercing}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classPiercing_a45a6d5d3b6e7ac24ebba63e56246d887}{Piercing} (\hyperlink{classEntity}{Entity} $\ast$entity, int value)
+\hyperlink{classPiercing_ad97c2ba97b49b1de3ac2d2c2253453fe}{Piercing} (int value)
 \begin{DoxyCompactList}\small\item\em Instantiates an \hyperlink{classPiercing}{Piercing}. \end{DoxyCompactList}\item 
 void \hyperlink{classPiercing_a103634469a43e1662bd5e07e66901667}{take\+Damage} (int damage)
 \begin{DoxyCompactList}\small\item\em Decreases the entities\textquotesingle{} armour value (or health when their armour has depleted) \end{DoxyCompactList}\item 
-void \hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{deal\+Damage} (\hyperlink{classEntity}{Entity} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Adds to the damage \hyperlink{classEntity}{Entity} objects inflict. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{deal\+Damage} (Entity $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Adds to the damage Entity objects inflict. \end{DoxyCompactList}\item 
+\hyperlink{classAddOn}{Add\+On} $\ast$ \hyperlink{classPiercing_aeb41b04515f5aad4d9f153b0de332849}{clone} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \hyperlink{classPiercing}{Piercing}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
 \hyperlink{classPiercing}{Piercing} class. 
 
-Used to add to the damage \hyperlink{classEntity}{Entity} objects inflict. 
+Used to add to the damage Entity objects inflict. 
 
-Definition at line 9 of file Piercing.\+h.
+Definition at line 11 of file Piercing.\+h.
 
 
 
 \subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classPiercing_a45a6d5d3b6e7ac24ebba63e56246d887}\label{classPiercing_a45a6d5d3b6e7ac24ebba63e56246d887}} 
+\mbox{\Hypertarget{classPiercing_ad97c2ba97b49b1de3ac2d2c2253453fe}\label{classPiercing_ad97c2ba97b49b1de3ac2d2c2253453fe}} 
 \index{Piercing@{Piercing}!Piercing@{Piercing}}
 \index{Piercing@{Piercing}!Piercing@{Piercing}}
 \subsubsection{\texorpdfstring{Piercing()}{Piercing()}}
-{\footnotesize\ttfamily Piercing\+::\+Piercing (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity,  }\item[{int}]{value }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Piercing\+::\+Piercing (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
 
 
 
@@ -48,34 +51,63 @@ Instantiates an \hyperlink{classPiercing}{Piercing}.
 
 
 \begin{DoxyParams}{Parameters}
-{\em entity} & must be a Entity$\ast$ \\
-\hline
-{\em value} & must be a int \\
+{\em value} & must be an int \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 4 of file Piercing.\+cpp.
+Definition at line 3 of file Piercing.\+cpp.
 
 
 \begin{DoxyCode}
-4                                             \{
-5     \textcolor{comment}{// TODO - implement Piercing::Piercing}
-6     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
-7 \}
+3 : \hyperlink{classAddOn_a64f23691b6c7fc49b6584f8f761ce4d9}{AddOn}(value) \{\}
 \end{DoxyCode}
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classPiercing_aeb41b04515f5aad4d9f153b0de332849}\label{classPiercing_aeb41b04515f5aad4d9f153b0de332849}} 
+\index{Piercing@{Piercing}!clone@{clone}}
+\index{clone@{clone}!Piercing@{Piercing}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \hyperlink{classAddOn}{Add\+On} $\ast$ Piercing\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Instantiates and returns a clone of the current \hyperlink{classPiercing}{Piercing}. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current \hyperlink{classPiercing}{Piercing}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Piercing$\ast$ The \hyperlink{classPiercing}{Piercing} clone 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classAddOn_a5a090bf8b4e7260aa35d6f5b9d151955}{Add\+On}.
+
+
+
+Definition at line 14 of file Piercing.\+cpp.
+
+
+\begin{DoxyCode}
+14                        \{
+15     \hyperlink{classPiercing}{Piercing}* piercing = \textcolor{keyword}{new} \hyperlink{classPiercing_ad97c2ba97b49b1de3ac2d2c2253453fe}{Piercing}(value);
+16     piercing->\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}(entity->clone());
+17     \textcolor{keywordflow}{return} piercing;
+18 \}
+\end{DoxyCode}
 \mbox{\Hypertarget{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}\label{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}} 
 \index{Piercing@{Piercing}!deal\+Damage@{deal\+Damage}}
 \index{deal\+Damage@{deal\+Damage}!Piercing@{Piercing}}
 \subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}}
-{\footnotesize\ttfamily void Piercing\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Piercing\+::deal\+Damage (\begin{DoxyParamCaption}\item[{Entity $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Adds to the damage \hyperlink{classEntity}{Entity} objects inflict. 
+Adds to the damage Entity objects inflict. 
 
 Preconditions\+:
 \begin{DoxyItemize}
@@ -84,7 +116,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Inflicts damage to passed in \hyperlink{classEntity}{Entity} objects using the sum of it\textquotesingle{}s value and the entity onto which it has been added\textquotesingle{}s value
+\item Inflicts damage to passed in Entity objects using the sum of it\textquotesingle{}s value and the entity onto which it has been added\textquotesingle{}s value
 \end{DoxyItemize}
 
 
@@ -97,18 +129,18 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classAddOn}{Add\+On}.
+Implements \hyperlink{classAddOn_aff1f4fa0fb368bbc49838df9c9ddba9c}{Add\+On}.
 
 
 
-Definition at line 14 of file Piercing.\+cpp.
+Definition at line 9 of file Piercing.\+cpp.
 
 
 \begin{DoxyCode}
-14                                         \{
-15     \textcolor{comment}{// TODO - implement Piercing::dealDamage}
-16     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
-17 \}
+9                                         \{
+10     \textcolor{keywordtype}{int} sumValue = this->entity->getDamage() + value;
+11     entity->takeDamage(sumValue);
+12 \}
 \end{DoxyCode}
 \mbox{\Hypertarget{classPiercing_a103634469a43e1662bd5e07e66901667}\label{classPiercing_a103634469a43e1662bd5e07e66901667}} 
 \index{Piercing@{Piercing}!take\+Damage@{take\+Damage}}
@@ -140,18 +172,17 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classAddOn}{Add\+On}.
+Implements \hyperlink{classAddOn_ab3aefbc00969fe613ed6d42c4f55c5a2}{Add\+On}.
 
 
 
-Definition at line 9 of file Piercing.\+cpp.
+Definition at line 5 of file Piercing.\+cpp.
 
 
 \begin{DoxyCode}
-9                                     \{
-10     \textcolor{comment}{// TODO - implement Piercing::takeDamage}
-11     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
-12 \}
+5                                     \{
+6     entity->takeDamage(damage);
+7 \}
 \end{DoxyCode}
 
 

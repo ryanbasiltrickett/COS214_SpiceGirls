@@ -15,5 +15,5 @@ Entity* VehicleFactory::createEntity(Alliance* alliance) {
 }
 
 Factory* VehicleFactory::clone() {
-	return new VehicleFactory(getType(), getAddOn());
+	return new VehicleFactory(getType()->clone(), getAddOn()->clone());
 }

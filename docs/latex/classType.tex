@@ -21,17 +21,65 @@ Inheritance diagram for Type\+:\begin{figure}[H]
 \mbox{\Hypertarget{classType_a78339313d36891f18427c431ea84e306}\label{classType_a78339313d36891f18427c431ea84e306}} 
 \hyperlink{classType_a78339313d36891f18427c431ea84e306}{Type} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the type. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classType_a5c453300dc060252c30534110bd2f78c}\label{classType_a5c453300dc060252c30534110bd2f78c}} 
-virtual string {\bfseries get\+Type\+Desc} ()=0
-\end{DoxyCompactItemize}
+virtual string \hyperlink{classType_a5c453300dc060252c30534110bd2f78c}{get\+Type\+Desc} ()=0
+\begin{DoxyCompactList}\small\item\em Returns terrain type description. \end{DoxyCompactList}\item 
+virtual \hyperlink{classType}{Type} $\ast$ \hyperlink{classType_a7b79d264e2cbac9c091cdb41ffb112c9}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em returns the the cloned object of \hyperlink{classType}{Type} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{classType}{Type} class. 
 
-Used to define \hyperlink{classEntity}{Entity} objects type. 
+Used to define Entity objects type. 
 
 Definition at line 13 of file Type.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classType_a7b79d264e2cbac9c091cdb41ffb112c9}\label{classType_a7b79d264e2cbac9c091cdb41ffb112c9}} 
+\index{Type@{Type}!clone@{clone}}
+\index{clone@{clone}!Type@{Type}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classType}{Type}$\ast$ Type\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns the the cloned object of \hyperlink{classType}{Type} 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item returns Type$\ast$ type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Type$\ast$ The cloned \hyperlink{classType}{Type} object 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAerialType_a8e7184b0b9e184142144df65f3da7fb1}{Aerial\+Type}, \hyperlink{classAquaticType_afbcc6f679b6108c7ed286ab0aa91bdd5}{Aquatic\+Type}, and \hyperlink{classTerrainType_aa2c54fdc07981dab3941f28221e22655}{Terrain\+Type}.
+
+\mbox{\Hypertarget{classType_a5c453300dc060252c30534110bd2f78c}\label{classType_a5c453300dc060252c30534110bd2f78c}} 
+\index{Type@{Type}!get\+Type\+Desc@{get\+Type\+Desc}}
+\index{get\+Type\+Desc@{get\+Type\+Desc}!Type@{Type}}
+\subsubsection{\texorpdfstring{get\+Type\+Desc()}{getTypeDesc()}}
+{\footnotesize\ttfamily virtual string Type\+::get\+Type\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns terrain type description. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the terrain type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+string The terrain type string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}{Aerial\+Type}, \hyperlink{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}{Aquatic\+Type}, and \hyperlink{classTerrainType_af24f4291676b6862c90b0d29598fcb11}{Terrain\+Type}.
 
 
 

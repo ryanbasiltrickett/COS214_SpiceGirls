@@ -3,14 +3,18 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Support.h"{}}}
 \DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00003}\mbox{\hyperlink{classSupport_a19bf40018bf3004487c65f7e68c9f65e}{00003}} \mbox{\hyperlink{classSupport_a19bf40018bf3004487c65f7e68c9f65e}{Support::Support}}() \{}
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Support::Support}}
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00006}00006 \}}
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00008}\mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{00008}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{Support::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00009}00009     \textcolor{comment}{// TODO -\/ implement Support::dealDamage}}
-\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00010}00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00003}\mbox{\hyperlink{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}{00003}} \mbox{\hyperlink{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}{Support::Support}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health, \textcolor{keywordtype}{int} damage): \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00005}\mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{00005}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{Support::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00006}00006     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00007}00007 \}}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00009}\mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{00009}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{Support::takeDamage}}(\textcolor{keywordtype}{int} damage) \{}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00010}00010     this-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
 \DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00013}\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{00013}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{Support::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Support_8cpp_source_l00015}00015 \}}
 
 \end{DoxyCode}

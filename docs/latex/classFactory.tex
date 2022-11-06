@@ -23,7 +23,7 @@ Inheritance diagram for Factory\+:\begin{figure}[H]
 \hyperlink{classFactory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory} ()
 \begin{DoxyCompactList}\small\item\em Destroys the factory object. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classFactory_a80da95da98b407948dc815f2bca6a283}\label{classFactory_a80da95da98b407948dc815f2bca6a283}} 
-virtual \hyperlink{classEntity}{Entity} $\ast$ {\bfseries create\+Entity} (\hyperlink{classAlliance}{Alliance} $\ast$alliance)=0
+virtual Entity $\ast$ {\bfseries create\+Entity} (Alliance $\ast$alliance)=0
 \item 
 \hyperlink{classType}{Type} $\ast$ \hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{get\+Type} ()
 \begin{DoxyCompactList}\small\item\em Returns factories type state. \end{DoxyCompactList}\item 
@@ -33,15 +33,14 @@ void \hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{set\+Type} (\hyp
 \begin{DoxyCompactList}\small\item\em Returns factories add ons. \end{DoxyCompactList}\item 
 void \hyperlink{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}{set\+Add\+Ons} (\hyperlink{classAddOn}{Add\+On} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Sets the factories add ons. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classFactory_a00881ec5050751e4b747db5dfd266192}\label{classFactory_a00881ec5050751e4b747db5dfd266192}} 
-virtual \hyperlink{classFactory}{Factory} $\ast$ {\bfseries clone} ()=0
-\end{DoxyCompactItemize}
+virtual \hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classFactory_a00881ec5050751e4b747db5dfd266192}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em the factoru object will be cloned and returned \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
 \hyperlink{classFactory}{Factory} class. 
 
-Used to instantiate \hyperlink{classEntity}{Entity} objects. 
+Used to instantiate Entity objects. 
 
 Definition at line 12 of file Factory.\+h.
 
@@ -103,6 +102,28 @@ Definition at line 8 of file Factory.\+cpp.
 
 
 \subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFactory_a00881ec5050751e4b747db5dfd266192}\label{classFactory_a00881ec5050751e4b747db5dfd266192}} 
+\index{Factory@{Factory}!clone@{clone}}
+\index{clone@{clone}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classFactory}{Factory}$\ast$ Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the factoru object will be cloned and returned 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item returns the cloned object of type Factory$\ast$
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ the cloned object 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}{Personnel\+Factory}, \hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{Support\+Factory}, and \hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{Vehicle\+Factory}.
+
 \mbox{\Hypertarget{classFactory_a994153930f59cafb280e91d5b100b5aa}\label{classFactory_a994153930f59cafb280e91d5b100b5aa}} 
 \index{Factory@{Factory}!get\+Add\+On@{get\+Add\+On}}
 \index{get\+Add\+On@{get\+Add\+On}!Factory@{Factory}}

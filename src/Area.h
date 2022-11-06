@@ -3,6 +3,8 @@
 #include <string>
 #include "Alliance.h"
 
+class General;
+
 class Area {
 
 private:
@@ -30,7 +32,17 @@ public:
 	 */
 	std::string getAreaName() const;
 
+	/**
+	 * @brief Instantiates and returns a clone of the current war theatre
+	 *
+	 * Postconditions:
+	 *  - Returns the clone of the current war theatre
+	 *
+	 * @return WarTheatre* The war theatre clone
+	 */
 	virtual Area* clone() = 0;
+
+	virtual void addGeneral(General* general) = 0;
 };
 
 #endif

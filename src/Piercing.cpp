@@ -13,5 +13,6 @@ void Piercing::dealDamage(Entity* entity) {
 
 AddOn* Piercing::clone() {
 	Piercing* piercing = new Piercing(value);
+	piercing->setEntity(entity->clone());
 	return piercing;
 }

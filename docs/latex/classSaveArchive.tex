@@ -1,30 +1,255 @@
 \hypertarget{classSaveArchive}{}\section{Save\+Archive Class Reference}
 \label{classSaveArchive}\index{Save\+Archive@{Save\+Archive}}
+
+
+Stores a list of mementos containing simulation state.  
+
+
+
+
+{\ttfamily \#include $<$Save\+Archive.\+h$>$}
+
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classSaveArchive_a0bcf25bc0602efad6a69e8448bbd25f7}\label{classSaveArchive_a0bcf25bc0602efad6a69e8448bbd25f7}} 
-void {\bfseries add\+New\+Save} (\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$new\+Save)
-\item 
-\mbox{\Hypertarget{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}\label{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}} 
-\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ {\bfseries get\+Last\+Save} ()
-\item 
-\mbox{\Hypertarget{classSaveArchive_aaebd805eb43631e9899c7da14236a988}\label{classSaveArchive_aaebd805eb43631e9899c7da14236a988}} 
-void {\bfseries get\+Save} (string timestamp)
-\item 
-\mbox{\Hypertarget{classSaveArchive_a114391b16e0973a6816a139221319555}\label{classSaveArchive_a114391b16e0973a6816a139221319555}} 
-boolean {\bfseries clear\+Save\+List} ()
-\item 
-\mbox{\Hypertarget{classSaveArchive_ac84a00ea43945cdada9188c812e29290}\label{classSaveArchive_ac84a00ea43945cdada9188c812e29290}} 
-boolean {\bfseries delete\+Save} (string timestamp)
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{classSaveArchive_a676252cf830fbe7b2a2b37ce2371a859}\label{classSaveArchive_a676252cf830fbe7b2a2b37ce2371a859}} 
+\hyperlink{classSaveArchive_a676252cf830fbe7b2a2b37ce2371a859}{Save\+Archive} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classSaveArchive}{Save\+Archive} class. \end{DoxyCompactList}\item 
+void \hyperlink{classSaveArchive_ab6927785f5b7f07b079a424773796d49}{add\+New\+Save} (std\+::string new\+Save\+Name, \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$new\+Save)
+\begin{DoxyCompactList}\small\item\em Adds a new save to the list of stored mementos. \end{DoxyCompactList}\item 
+\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ \hyperlink{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}{get\+Last\+Save} ()
+\begin{DoxyCompactList}\small\item\em Returns the last saved memento. \end{DoxyCompactList}\item 
+\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ \hyperlink{classSaveArchive_ad65ce77b8a9027b4e4a5d67ca1f06877}{get\+Save} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Returns the last saved memento. Preconditions\+: \end{DoxyCompactList}\item 
+void \hyperlink{classSaveArchive_a70c8ccaf0ac543dd8d4474f2f6383b35}{clear\+Save\+List} ()
+\begin{DoxyCompactList}\small\item\em Erases all saved mementos from the list of saves. Postconditions\+: \end{DoxyCompactList}\item 
+void \hyperlink{classSaveArchive_a416beb211cd59fed04df7347ebe41f36}{delete\+Save} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Deletes a memento with the matching given name from the list of saved mementos. Preconditions\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
+Stores a list of mementos containing simulation state. 
+
+Definition at line 11 of file Save\+Archive.\+h.
 
 
-Definition at line 6 of file Save\+Archive.\+h.
 
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classSaveArchive_ab6927785f5b7f07b079a424773796d49}\label{classSaveArchive_ab6927785f5b7f07b079a424773796d49}} 
+\index{Save\+Archive@{Save\+Archive}!add\+New\+Save@{add\+New\+Save}}
+\index{add\+New\+Save@{add\+New\+Save}!Save\+Archive@{Save\+Archive}}
+\subsubsection{\texorpdfstring{add\+New\+Save()}{addNewSave()}}
+{\footnotesize\ttfamily void Save\+Archive\+::add\+New\+Save (\begin{DoxyParamCaption}\item[{std\+::string}]{new\+Save\+Name,  }\item[{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$}]{new\+Save }\end{DoxyParamCaption})}
+
+
+
+Adds a new save to the list of stored mementos. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item new\+Save must be a War\+Engine\+Memento$\ast$
+\item new\+Save\+Name must be a string
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Adds a new memento to list of saves 
+\begin{DoxyParams}{Parameters}
+{\em new\+Save} & must be a War\+Engine\+Memento$\ast$ \\
+\hline
+{\em new\+Save\+Name} & must be a string \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\end{DoxyItemize}
+
+Definition at line 5 of file Save\+Archive.\+cpp.
+
+
+\begin{DoxyCode}
+5                                                                              \{
+6     saveList.insert(\{newSaveName, newSave\});
+7 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSaveArchive_a70c8ccaf0ac543dd8d4474f2f6383b35}\label{classSaveArchive_a70c8ccaf0ac543dd8d4474f2f6383b35}} 
+\index{Save\+Archive@{Save\+Archive}!clear\+Save\+List@{clear\+Save\+List}}
+\index{clear\+Save\+List@{clear\+Save\+List}!Save\+Archive@{Save\+Archive}}
+\subsubsection{\texorpdfstring{clear\+Save\+List()}{clearSaveList()}}
+{\footnotesize\ttfamily void Save\+Archive\+::clear\+Save\+List (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Erases all saved mementos from the list of saves. Postconditions\+: 
+
+
+\begin{DoxyItemize}
+\item Clears all elements in the save\+List vector
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line 35 of file Save\+Archive.\+cpp.
+
+
+\begin{DoxyCode}
+35                                 \{
+36     saveList.clear();
+37 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSaveArchive_a416beb211cd59fed04df7347ebe41f36}\label{classSaveArchive_a416beb211cd59fed04df7347ebe41f36}} 
+\index{Save\+Archive@{Save\+Archive}!delete\+Save@{delete\+Save}}
+\index{delete\+Save@{delete\+Save}!Save\+Archive@{Save\+Archive}}
+\subsubsection{\texorpdfstring{delete\+Save()}{deleteSave()}}
+{\footnotesize\ttfamily void Save\+Archive\+::delete\+Save (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Deletes a memento with the matching given name from the list of saved mementos. Preconditions\+: 
+
+
+\begin{DoxyItemize}
+\item name must be a string in date/time format
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Removes the element in the save\+List vector with a name matching that of the parameter
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & save archive is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 39 of file Save\+Archive.\+cpp.
+
+
+\begin{DoxyCode}
+39                                            \{
+40     \textcolor{keywordflow}{if}(saveList.size() == 0)\{
+41         std::\_\_throw\_out\_of\_range(\textcolor{stringliteral}{"Save archive is empty"});
+42     \}
+43 
+44     \textcolor{keyword}{auto} iter = saveList.find(name) ;
+45 
+46     \textcolor{keywordflow}{if}(iter == saveList.end())
+47         \textcolor{keywordflow}{return};
+48 
+49     saveList.erase( iter );
+50 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}\label{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}} 
+\index{Save\+Archive@{Save\+Archive}!get\+Last\+Save@{get\+Last\+Save}}
+\index{get\+Last\+Save@{get\+Last\+Save}!Save\+Archive@{Save\+Archive}}
+\subsubsection{\texorpdfstring{get\+Last\+Save()}{getLastSave()}}
+{\footnotesize\ttfamily \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ Save\+Archive\+::get\+Last\+Save (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the last saved memento. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the last element in the save\+List vector
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+War\+Engine\+Memento$\ast$ 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & save archive is empty \\
+\hline
+{\em std\+::invalid\+\_\+argument} & memento with given name is not found in memento list. \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 9 of file Save\+Archive.\+cpp.
+
+
+\begin{DoxyCode}
+9                                            \{
+10     
+11     \textcolor{keywordflow}{if}(saveList.size() == 0)\{
+12         \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Save archive is empty."};
+13     \}
+14 
+15     \hyperlink{classWarEngineMemento}{WarEngineMemento}* lastSave = saveList.begin()->second;
+16 
+17     saveList.erase( saveList.begin() );
+18 
+19     \textcolor{keywordflow}{return} lastSave;
+20 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classSaveArchive_ad65ce77b8a9027b4e4a5d67ca1f06877}\label{classSaveArchive_ad65ce77b8a9027b4e4a5d67ca1f06877}} 
+\index{Save\+Archive@{Save\+Archive}!get\+Save@{get\+Save}}
+\index{get\+Save@{get\+Save}!Save\+Archive@{Save\+Archive}}
+\subsubsection{\texorpdfstring{get\+Save()}{getSave()}}
+{\footnotesize\ttfamily \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ Save\+Archive\+::get\+Save (\begin{DoxyParamCaption}\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Returns the last saved memento. Preconditions\+: 
+
+
+\begin{DoxyItemize}
+\item name must be a string
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the last element in the save\+List vector
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & a string\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+War\+Engine\+Memento$\ast$
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & save archive is empty \\
+\hline
+\end{DoxyExceptions}
+
+
+Definition at line 22 of file Save\+Archive.\+cpp.
+
+
+\begin{DoxyCode}
+22                                                      \{
+23     \textcolor{keywordflow}{if}(saveList.size() == 0)\{
+24         std::\_\_throw\_out\_of\_range(\textcolor{stringliteral}{"Save archive is empty"});
+25     \}
+26     
+27     \textcolor{keyword}{auto} iter = saveList.find(name);
+28 
+29     \textcolor{keywordflow}{if}(iter == saveList.end())
+30         std::\_\_throw\_invalid\_argument(\textcolor{stringliteral}{"No save with given name exists"});
+31 
+32     \textcolor{keywordflow}{return} iter->second;
+33 \}
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
