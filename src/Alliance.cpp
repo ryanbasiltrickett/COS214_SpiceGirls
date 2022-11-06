@@ -1,6 +1,7 @@
 #include "Alliance.h"
 #include "Negotiator.h"
 #include "Entity.h"
+#include "RoundStats.h"
 #include <time.h>
 #include <iostream>
 
@@ -75,6 +76,7 @@ void Alliance::addFactory(Factory* factory) {
 
 void Alliance::runFactories() {
 	for (int i = 0; i < production.size(); i++) {
+		RoundStats::numEntitiesCreated++;
 		reserveEntities.push_back(production[i]->createEntity(this));
 	}
 }

@@ -1,11 +1,16 @@
 #include "KeyPoint.h"
 #include "Weather.h"
+#include "RoundStats.h"
+#include "Sunny.h"
 #include <time.h>
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-KeyPoint::KeyPoint(string areaName): Area(areaName) {}
+KeyPoint::KeyPoint(string areaName): Area(areaName) {
+	weather = new Sunny();
+}
 
 KeyPoint::KeyPoint(KeyPoint& keyPoint): Area(keyPoint.getAreaName()) {
 	for (int i = 0; i < keyPoint.entities.size(); i++)
@@ -29,22 +34,36 @@ bool KeyPoint::isKeyPoint() {
 }
 
 void KeyPoint::simulateBattle(Alliance* alliance) {
+	int numUnits = 0;
 	for (int i = 0; i < entities.size(); i++) {
 		if (entities[i]->getAlliance() == alliance) {
-			int random;
-			do {
-				random = rand() % entities.size();
-			} while (entities[random]->getAlliance() == alliance);
-
-			if (rand() % (int)(weather->getMultiplier() * 100) <= (int)(weather->getMultiplier() * 100))
-				entities[i]->dealDamage(entities[random]);
+			numUnits++;
 		}
 	}
+
+	if (numUnits != entities.size()) {
+		for (int i = 0; i < entities.size(); i++) {
+			if (entities[i]->getAlliance() == alliance) {
+				int random;
+				do {
+					random = rand() % entities.size();
+				} while (entities[random]->getAlliance() == alliance);
+
+				if (rand() % (int)(weather->getMultiplier() * 100) <= (int)(weather->getMultiplier() * 100))
+					entities[i]->dealDamage(entities[random]);
+			}
+		}
+	}
+	
+	clearBattlefield(alliance);
 }
 
-void KeyPoint::clearBattlefield() {
+void KeyPoint::clearBattlefield(Alliance* alliance) {
+	int destroyed = 0;
+	double numUnits = 0;
 	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
 		if ((*it)->getHealth() <= 0) {
+			destroyed++;
 			for (int i = 0; i < generals.size(); i++) {
 				if (generals[i]->getAlliance() == (*it)->getAlliance()) {
 					generals[i]->initiateStrategy(this);
@@ -52,8 +71,25 @@ void KeyPoint::clearBattlefield() {
 					entities.erase(it);
 				}
 			}
+		} else if ((*it)->getAlliance() == alliance) {
+			numUnits++;
 		}
 	}
+
+	// saving stats
+	string stats = getAreaName() + ":\n";
+	stats += "Key Point Satus: ";
+	if (numUnits / entities.size() >= 0.6) {
+		stats += "Winning\n";
+	} else if (numUnits / entities.size() >= 0.35) {
+		stats += "Contested\n";
+	} else {
+		stats += "Losing\n";
+	}
+	stats += "Number of Entities Destroyed by Alliance: " + to_string(destroyed);
+
+	RoundStats::keyPointInformation.push_back(stats);
+	RoundStats::numEntitiesDestroyed += destroyed;
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {

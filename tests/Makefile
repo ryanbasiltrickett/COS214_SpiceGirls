@@ -691,6 +691,33 @@ Rainy.cpp.s:
 	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/Rainy.cpp.s
 .PHONY : Rainy.cpp.s
 
+RoundStats.o: RoundStats.cpp.o
+
+.PHONY : RoundStats.o
+
+# target to build an object file
+RoundStats.cpp.o:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/RoundStats.cpp.o
+.PHONY : RoundStats.cpp.o
+
+RoundStats.i: RoundStats.cpp.i
+
+.PHONY : RoundStats.i
+
+# target to preprocess a source file
+RoundStats.cpp.i:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/RoundStats.cpp.i
+.PHONY : RoundStats.cpp.i
+
+RoundStats.s: RoundStats.cpp.s
+
+.PHONY : RoundStats.s
+
+# target to generate assembly for a file
+RoundStats.cpp.s:
+	$(MAKE) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/RoundStats.cpp.s
+.PHONY : RoundStats.cpp.s
+
 SaveArchive.o: SaveArchive.cpp.o
 
 .PHONY : SaveArchive.o
@@ -1168,6 +1195,9 @@ help:
 	@echo "... Rainy.o"
 	@echo "... Rainy.i"
 	@echo "... Rainy.s"
+	@echo "... RoundStats.o"
+	@echo "... RoundStats.i"
+	@echo "... RoundStats.s"
 	@echo "... SaveArchive.o"
 	@echo "... SaveArchive.i"
 	@echo "... SaveArchive.s"

@@ -69,9 +69,10 @@ public:
 	 * Postconditions:
 	 *  - Notify command centers of each troop who is killed
 	 * 
+	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
-	void clearBattlefield();
+	void clearBattlefield(Alliance* alliance);
 
 	/**
 	 * @brief Moves a specific alliances troops into this keypoint

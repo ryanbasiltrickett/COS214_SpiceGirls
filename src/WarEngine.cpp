@@ -1,4 +1,5 @@
 #include "WarEngine.h"
+#include "RoundStats.h"
 #include <iostream>
 
 WarEngine::WarEngine(){
@@ -27,10 +28,24 @@ WarEngine::~WarEngine(){
 void WarEngine::simulate() {
 	vector<Alliance*> alliances = this->state->getAlliances();
 
-	for(int j = 0; j < alliances.size(); j++) {
-		state->getArea()->simulateBattle(alliances[j]);
+	for(int i = 0; i < alliances.size(); i++) {
+		if (alliances[i]->getActive() == 1) {
+			RoundStats::clearStats();
+			state->getArea()->simulateBattle(alliances[i]);
+			cout << "========================================================================" << endl;
+			cout << "Alliance " << alliances[i]->getID() << ":" << endl;
+			
+			if (alliances[i]->getID() == 2) {
+				cout << "Status: Surrendered" << endl; 
+			} else if (alliances[i]->getID() == 3) {
+				cout << "Status: Found Peace" << endl; 
+			} else {
+				cout << "Status: Active" << endl; 
+			}
 
-		cout << "PLACE STATS HERE" << endl;
+			cout << RoundStats::toString() << endl;
+			cout << "========================================================================" << endl;
+		}
 	}
 
 }

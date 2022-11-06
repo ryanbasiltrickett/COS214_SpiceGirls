@@ -20,6 +20,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/build.dir/PersonnelFactory.cpp.o"
   "CMakeFiles/build.dir/Piercing.cpp.o"
   "CMakeFiles/build.dir/Rainy.cpp.o"
+  "CMakeFiles/build.dir/RoundStats.cpp.o"
   "CMakeFiles/build.dir/SaveArchive.cpp.o"
   "CMakeFiles/build.dir/Strategy.cpp.o"
   "CMakeFiles/build.dir/Sunny.cpp.o"

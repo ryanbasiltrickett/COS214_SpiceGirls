@@ -6,6 +6,7 @@ PersonnelFactory::PersonnelFactory(Type* type, AddOn* addOn): Factory(type, addO
 
 Entity* PersonnelFactory::createEntity(Alliance* alliance) {
 	Personnel* p = new Personnel(getType()->clone());
+	p->setAlliance(alliance);
 	if (getAddOn() != NULL) {
 		AddOn* personnelAddOn = getAddOn()->clone();
 		personnelAddOn->setEntity(p);
