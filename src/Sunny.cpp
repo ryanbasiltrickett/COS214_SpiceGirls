@@ -13,3 +13,7 @@ void Sunny::handleChange(KeyPoint* k) {
 	Cloudy* newWeather = new Cloudy();
 	k->setWeather(newWeather);
 }
+
+Weather* Sunny::clone() {
+	return new Sunny();
+}

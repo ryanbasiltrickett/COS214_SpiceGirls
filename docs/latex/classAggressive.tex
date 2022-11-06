@@ -1,4 +1,4 @@
-\hypertarget{classAggressive}{}\section{Aggressive Class Reference}
+\hypertarget{classAggressive}{}\doxysection{Aggressive Class Reference}
 \label{classAggressive}\index{Aggressive@{Aggressive}}
 Inheritance diagram for Aggressive\+:\begin{figure}[H]
 \begin{center}
@@ -6,48 +6,93 @@ Inheritance diagram for Aggressive\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classAggressive}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void void \hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{perform\+Strat} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$key\+Point, \hyperlink{classAlliance}{Alliance} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em This function will perform an \hyperlink{classAggressive}{Aggressive} strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
+void \mbox{\hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
+\begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 
 
-Definition at line 12 of file Aggressive.\+h.
+Definition at line \mbox{\hyperlink{Aggressive_8h_source_l00005}{5}} of file \mbox{\hyperlink{Aggressive_8h_source}{Aggressive.\+h}}.
 
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAggressive_a0b46e6b9a78e6fc8634e0f2a331987a2}\label{classAggressive_a0b46e6b9a78e6fc8634e0f2a331987a2}} 
+\index{Aggressive@{Aggressive}!Aggressive@{Aggressive}}
+\index{Aggressive@{Aggressive}!Aggressive@{Aggressive}}
+\doxysubsubsection{\texorpdfstring{Aggressive()}{Aggressive()}}
+{\footnotesize\ttfamily Aggressive\+::\+Aggressive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}\label{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}} 
+\index{Aggressive@{Aggressive}!clone@{clone}}
+\index{clone@{clone}!Aggressive@{Aggressive}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ Aggressive\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ The clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+
+
+
+Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00011                             \{}
+\DoxyCodeLine{00012     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classAggressive}{Aggressive}}();}
+\DoxyCodeLine{00013 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classAggressive_a84122a24be95be256f9992c21127b0d1}\label{classAggressive_a84122a24be95be256f9992c21127b0d1}} 
-\index{Aggressive@{Aggressive}!perform\+Strat@{perform\+Strat}}
-\index{perform\+Strat@{perform\+Strat}!Aggressive@{Aggressive}}
-\subsubsection{\texorpdfstring{perform\+Strat()}{performStrat()}}
-{\footnotesize\ttfamily void Aggressive\+::perform\+Strat (\begin{DoxyParamCaption}\item[{\hyperlink{classKeyPoint}{Key\+Point} $\ast$}]{key\+Point,  }\item[{\hyperlink{classAlliance}{Alliance} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Aggressive@{Aggressive}!performStrat@{performStrat}}
+\index{performStrat@{performStrat}!Aggressive@{Aggressive}}
+\doxysubsubsection{\texorpdfstring{performStrat()}{performStrat()}}
+{\footnotesize\ttfamily void Aggressive\+::perform\+Strat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{key\+Point,  }\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-This function will perform an \hyperlink{classAggressive}{Aggressive} strategy. 
+This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. 
 
-\begin{DoxyAuthor}{Author}
-Antwi-\/\+Antwi
-\end{DoxyAuthor}
 Preconditions\+:
 \begin{DoxyItemize}
-\item Takes in object of type \hyperlink{classKeyPoint}{Key\+Point} as parameter
+\item Takes in object of type \mbox{\hyperlink{classKeyPoint}{Key\+Point}} as parameter
 \end{DoxyItemize}
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Returns the \hyperlink{classStrategy}{Strategy} type
+\item Returns the \mbox{\hyperlink{classStrategy}{Strategy}} type
 \end{DoxyItemize}
 
 
 \begin{DoxyParams}{Parameters}
-{\em key\+Point} & an \hyperlink{classAggressive}{Aggressive} strategy will then be performed at this specific keypoint\\
+{\em key\+Point} & an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy will then be performed at this specific keypoint\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -55,36 +100,19 @@ void The function will return a void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{Strategy}.
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
 
 
 
-Definition at line 7 of file Aggressive.\+cpp.
+Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
 
 
-\begin{DoxyCode}
-7                                                                     \{
-8 
-9     keyPoint->\hyperlink{classKeyPoint_a5b21817babe753b2b684d70479f3eaf2}{notify}();
-10     \hyperlink{classType}{Type}* type;
-11     \textcolor{keywordflow}{if}(keyPoint->\hyperlink{classKeyPoint_a2e7f0accc7c9be244da25bb1189c5a1d}{getAreaType}() == \textcolor{stringliteral}{"Terrain"})
-12         type = \textcolor{keyword}{new} \hyperlink{classTerrainType}{TerrainType}();
-13     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(keyPoint->\hyperlink{classKeyPoint_a2e7f0accc7c9be244da25bb1189c5a1d}{getAreaType}() == \textcolor{stringliteral}{"Aquatic"})
-14         type = \textcolor{keyword}{new} \hyperlink{classAquaticType}{AquaticType}();
-15     \textcolor{keywordflow}{else}
-16         type = \textcolor{keyword}{new} \hyperlink{classAerialType}{AerialType}();
-17         
-18     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0;i < 2; ++i)
-19         keyPoint->\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}(\textcolor{keyword}{new} \hyperlink{classVehicle}{Vehicle}(type));
-20 
-21     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 5; ++i)
-22         keyPoint->\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}(\textcolor{keyword}{new} \hyperlink{classPersonnel}{Personnel}(type));
-23 
-24     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < 3; ++i)
-25         keyPoint->\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}(\textcolor{keyword}{new} \hyperlink{classSupport}{Support}(type));
-26     
-27     keyPoint->\hyperlink{classKeyPoint_a3fc425554378989ba83ebd22f7305f14}{moveEntities}(keyPoint, alliance);
-28 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006                                                                     \{}
+\DoxyCodeLine{00007     \textcolor{keywordtype}{int} randomNumber = (rand() \% 10) + 5;}
+\DoxyCodeLine{00008     keyPoint-\/>\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{moveEntitiesInto}}(alliance, randomNumber);}
+\DoxyCodeLine{00009 \}}
+
 \end{DoxyCode}
 
 

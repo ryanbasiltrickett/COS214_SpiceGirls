@@ -1,4 +1,4 @@
-\hypertarget{classSunny}{}\section{Sunny Class Reference}
+\hypertarget{classSunny}{}\doxysection{Sunny Class Reference}
 \label{classSunny}\index{Sunny@{Sunny}}
 Inheritance diagram for Sunny\+:\begin{figure}[H]
 \begin{center}
@@ -6,35 +6,89 @@ Inheritance diagram for Sunny\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classSunny}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classSunny}{Sunny}} object of the state pattern. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classSunny_a46747aed1564621c150127532b0d84f5}{get\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em Returns string which tells us the weather. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSunny_a940d045e5bfef4e92233f0269a194815}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classSunny}{Sunny}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+
+
+Definition at line \mbox{\hyperlink{Sunny_8h_source_l00008}{8}} of file \mbox{\hyperlink{Sunny_8h_source}{Sunny.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classSunny_a7f849e14ad8e3da056638135729f293d}\label{classSunny_a7f849e14ad8e3da056638135729f293d}} 
-\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classSunny}{Sunny} object of the state pattern. \end{DoxyCompactList}\item 
-virtual std\+::string \hyperlink{classSunny_abcc09b207a37d95646b4267d9169693c}{get\+Weather} ()
-\begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classSunny_ad7e104164acc614157e6cec496a9db1a}{handle\+Change} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$k)
-\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
-
-
-\subsection{Detailed Description}
-
-
-Definition at line 4 of file Sunny.\+h.
+\index{Sunny@{Sunny}!Sunny@{Sunny}}
+\index{Sunny@{Sunny}!Sunny@{Sunny}}
+\doxysubsubsection{\texorpdfstring{Sunny()}{Sunny()}}
+{\footnotesize\ttfamily Sunny\+::\+Sunny (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSunny_abcc09b207a37d95646b4267d9169693c}\label{classSunny_abcc09b207a37d95646b4267d9169693c}} 
-\index{Sunny@{Sunny}!get\+Weather@{get\+Weather}}
-\index{get\+Weather@{get\+Weather}!Sunny@{Sunny}}
-\subsubsection{\texorpdfstring{get\+Weather()}{getWeather()}}
-{\footnotesize\ttfamily virtual std\+::string Sunny\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+Instantiates the \mbox{\hyperlink{classSunny}{Sunny}} object of the state pattern. 
 
 
 
-Returns string which tels us the weather. 
+Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Sunny_8cpp_source}{Sunny.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004              \{}
+\DoxyCodeLine{00005     this-\/>multiplier = 1.0;}
+\DoxyCodeLine{00006 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}\label{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}} 
+\index{Sunny@{Sunny}!clone@{clone}}
+\index{clone@{clone}!Sunny@{Sunny}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Sunny\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classSunny}{Sunny}} object. 
+
+\begin{DoxyReturn}{Returns}
+Weather$\ast$ Returns the clone of the sunny object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
+
+
+
+Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Sunny_8cpp_source}{Sunny.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                       \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny}}();}
+\DoxyCodeLine{00019 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSunny_a46747aed1564621c150127532b0d84f5}\label{classSunny_a46747aed1564621c150127532b0d84f5}} 
+\index{Sunny@{Sunny}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!Sunny@{Sunny}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
+{\footnotesize\ttfamily std\+::string Sunny\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns string which tells us the weather. 
 
 Postconditions\+:
 \begin{DoxyItemize}
@@ -46,13 +100,24 @@ std\+::string which is the current state
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classWeather}{Weather}.
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
 
-\mbox{\Hypertarget{classSunny_ad7e104164acc614157e6cec496a9db1a}\label{classSunny_ad7e104164acc614157e6cec496a9db1a}} 
-\index{Sunny@{Sunny}!handle\+Change@{handle\+Change}}
-\index{handle\+Change@{handle\+Change}!Sunny@{Sunny}}
-\subsubsection{\texorpdfstring{handle\+Change()}{handleChange()}}
-{\footnotesize\ttfamily virtual void Sunny\+::handle\+Change (\begin{DoxyParamCaption}\item[{\hyperlink{classKeyPoint}{Key\+Point} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Sunny_8cpp_source}{Sunny.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008                             \{}
+\DoxyCodeLine{00009     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Sunny"{}};}
+\DoxyCodeLine{00010 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSunny_a940d045e5bfef4e92233f0269a194815}\label{classSunny_a940d045e5bfef4e92233f0269a194815}} 
+\index{Sunny@{Sunny}!handleChange@{handleChange}}
+\index{handleChange@{handleChange}!Sunny@{Sunny}}
+\doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
+{\footnotesize\ttfamily void Sunny\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -65,7 +130,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Changes the current weather to the next one in the state pattern (\hyperlink{classCloudy}{Cloudy})
+\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classCloudy}{Cloudy}})
 \end{DoxyItemize}
 
 
@@ -78,8 +143,20 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classWeather}{Weather}.
+Implements \mbox{\hyperlink{classWeather}{Weather}}.
 
+
+
+Definition at line \mbox{\hyperlink{Sunny_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Sunny_8cpp_source}{Sunny.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00012                                     \{}
+\DoxyCodeLine{00013     \mbox{\hyperlink{classCloudy}{Cloudy}}* newWeather = \textcolor{keyword}{new} \mbox{\hyperlink{classCloudy}{Cloudy}}();}
+\DoxyCodeLine{00014     k-\/>\mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{setWeather}}(newWeather);}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

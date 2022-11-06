@@ -41,9 +41,3 @@ void Negotiator::addAlliance(Alliance* newAlliance) {
 int Negotiator::getNumAlliances() {
 	return this->alliances.size();
 }
-
-Negotiator* Negotiator::clone() {
-	
-	throw "Not yet implemented";
-}
-

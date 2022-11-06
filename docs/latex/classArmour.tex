@@ -1,8 +1,8 @@
-\hypertarget{classArmour}{}\section{Armour Class Reference}
+\hypertarget{classArmour}{}\doxysection{Armour Class Reference}
 \label{classArmour}\index{Armour@{Armour}}
 
 
-\hyperlink{classArmour}{Armour} class.  
+\mbox{\hyperlink{classArmour}{Armour}} class.  
 
 
 
@@ -12,70 +12,104 @@
 Inheritance diagram for Armour\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[height=2.000000cm]{classArmour}
+\includegraphics[height=3.000000cm]{classArmour}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classArmour_a795c5149e3e502530926aff4a6ade971}{Armour} (\hyperlink{classEntity}{Entity} $\ast$entity, int value)
-\begin{DoxyCompactList}\small\item\em Instantiates an \hyperlink{classArmour}{Armour}. \end{DoxyCompactList}\item 
-void \hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{take\+Damage} (int damage)
+\mbox{\hyperlink{classArmour_a5fe1e213870c5eab65baa54bb4a3ef02}{Armour}} (int value)
+\begin{DoxyCompactList}\small\item\em Instantiates an \mbox{\hyperlink{classArmour}{Armour}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Decreases the entities\textquotesingle{} armour value (or health when their armour has depleted) \end{DoxyCompactList}\item 
-void \hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{deal\+Damage} (\hyperlink{classEntity}{Entity} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Adds to the damage \hyperlink{classEntity}{Entity} objects inflict. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \mbox{\hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Adds to the damage \mbox{\hyperlink{classEntity}{Entity}} objects inflict. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classAddOn}{Add\+On}} $\ast$ \mbox{\hyperlink{classArmour_ab200b02561ecc30c20397913a2bc9511}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classArmour}{Armour}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
 
 
-\subsection{Detailed Description}
-\hyperlink{classArmour}{Armour} class. 
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classArmour}{Armour}} class. 
 
-Used to add protective armour to \hyperlink{classEntity}{Entity} objects. 
+Used to add protective armour to \mbox{\hyperlink{classEntity}{Entity}} objects. 
 
-Definition at line 11 of file Armour.\+h.
+Definition at line \mbox{\hyperlink{Armour_8h_source_l00011}{11}} of file \mbox{\hyperlink{Armour_8h_source}{Armour.\+h}}.
 
 
 
-\subsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classArmour_a795c5149e3e502530926aff4a6ade971}\label{classArmour_a795c5149e3e502530926aff4a6ade971}} 
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classArmour_a5fe1e213870c5eab65baa54bb4a3ef02}\label{classArmour_a5fe1e213870c5eab65baa54bb4a3ef02}} 
 \index{Armour@{Armour}!Armour@{Armour}}
 \index{Armour@{Armour}!Armour@{Armour}}
-\subsubsection{\texorpdfstring{Armour()}{Armour()}}
-{\footnotesize\ttfamily Armour\+::\+Armour (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity,  }\item[{int}]{value }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Armour()}{Armour()}}
+{\footnotesize\ttfamily Armour\+::\+Armour (\begin{DoxyParamCaption}\item[{int}]{value }\end{DoxyParamCaption})}
 
 
 
-Instantiates an \hyperlink{classArmour}{Armour}. 
+Instantiates an \mbox{\hyperlink{classArmour}{Armour}}. 
 
 
 \begin{DoxyParams}{Parameters}
-{\em entity} & must be a Entity$\ast$ \\
-\hline
-{\em value} & must be a int \\
+{\em value} & must be an int \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 3 of file Armour.\+cpp.
+Definition at line \mbox{\hyperlink{Armour_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Armour_8cpp_source}{Armour.\+cpp}}.
 
 
-\begin{DoxyCode}
-3                                         \{
-4     \textcolor{comment}{// TODO - implement Armour::Armour}
-5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
-6 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003 : \mbox{\hyperlink{classAddOn}{AddOn}}(value) \{\}}
+
 \end{DoxyCode}
 
 
-\subsection{Member Function Documentation}
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classArmour_ab200b02561ecc30c20397913a2bc9511}\label{classArmour_ab200b02561ecc30c20397913a2bc9511}} 
+\index{Armour@{Armour}!clone@{clone}}
+\index{clone@{clone}!Armour@{Armour}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAddOn}{Add\+On}} $\ast$ Armour\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Instantiates and returns a clone of the current \mbox{\hyperlink{classArmour}{Armour}}. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the clone of the current \mbox{\hyperlink{classArmour}{Armour}}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Armour$\ast$ The \mbox{\hyperlink{classArmour}{Armour}} clone 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classAddOn}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Armour_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Armour_8cpp_source}{Armour.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00017                      \{}
+\DoxyCodeLine{00018     \mbox{\hyperlink{classArmour}{Armour}}* armour = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(value);}
+\DoxyCodeLine{00019     armour-\/>\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{setEntity}}(entity-\/>clone());}
+\DoxyCodeLine{00020     \textcolor{keywordflow}{return} armour;}
+\DoxyCodeLine{00021 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classArmour_acce6c768aaebaa559ac063e9d67c53b5}\label{classArmour_acce6c768aaebaa559ac063e9d67c53b5}} 
-\index{Armour@{Armour}!deal\+Damage@{deal\+Damage}}
-\index{deal\+Damage@{deal\+Damage}!Armour@{Armour}}
-\subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}}
-{\footnotesize\ttfamily void Armour\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\index{Armour@{Armour}!dealDamage@{dealDamage}}
+\index{dealDamage@{dealDamage}!Armour@{Armour}}
+\doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
+{\footnotesize\ttfamily void Armour\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Adds to the damage \hyperlink{classEntity}{Entity} objects inflict. 
+Adds to the damage \mbox{\hyperlink{classEntity}{Entity}} objects inflict. 
 
 Preconditions\+:
 \begin{DoxyItemize}
@@ -97,23 +131,23 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classAddOn}{Add\+On}.
+Implements \mbox{\hyperlink{classAddOn}{Add\+On}}.
 
 
 
-Definition at line 16 of file Armour.\+cpp.
+Definition at line \mbox{\hyperlink{Armour_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Armour_8cpp_source}{Armour.\+cpp}}.
 
 
-\begin{DoxyCode}
-16                                       \{
-17     \textcolor{comment}{// TODO - implement Armour::dealDamage}
-18     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
-19 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                                       \{}
+\DoxyCodeLine{00014     this-\/>entity-\/>dealDamage(entity);}
+\DoxyCodeLine{00015 \}}
+
 \end{DoxyCode}
 \mbox{\Hypertarget{classArmour_a7a52bd8473173c81a4ba8a6373513581}\label{classArmour_a7a52bd8473173c81a4ba8a6373513581}} 
-\index{Armour@{Armour}!take\+Damage@{take\+Damage}}
-\index{take\+Damage@{take\+Damage}!Armour@{Armour}}
-\subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
+\index{Armour@{Armour}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Armour@{Armour}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void Armour\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
@@ -140,21 +174,22 @@ void
 \end{DoxyReturn}
 
 
-Implements \hyperlink{classAddOn}{Add\+On}.
+Implements \mbox{\hyperlink{classAddOn}{Add\+On}}.
 
 
 
-Definition at line 8 of file Armour.\+cpp.
+Definition at line \mbox{\hyperlink{Armour_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Armour_8cpp_source}{Armour.\+cpp}}.
 
 
-\begin{DoxyCode}
-8                                   \{
-9     \textcolor{keywordflow}{if} (value > 0) \{
-10         value -= damage;
-11     \} \textcolor{keywordflow}{else} \{
-12         entity->takeDamage(damage);
-13     \}
-14 \}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005                                   \{}
+\DoxyCodeLine{00006     \textcolor{keywordflow}{if} (value > 0) \{}
+\DoxyCodeLine{00007         value -\/= damage;}
+\DoxyCodeLine{00008     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00009         entity-\/>takeDamage(damage);}
+\DoxyCodeLine{00010     \}}
+\DoxyCodeLine{00011 \}}
+
 \end{DoxyCode}
 
 

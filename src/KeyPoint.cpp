@@ -7,6 +7,13 @@ using namespace std;
 
 KeyPoint::KeyPoint(string areaName): Area(areaName) {}
 
+KeyPoint::KeyPoint(KeyPoint& keyPoint): Area(keyPoint.getAreaName()) {
+	for (int i = 0; i < keyPoint.entities.size(); i++)
+		this->addEntity(keyPoint.entities[i]->clone());
+
+	weather = keyPoint.weather->clone();
+}
+
 KeyPoint::~KeyPoint() {
 	for (int i = 0; i < entities.size(); i++)
 		delete entities[i];
@@ -86,8 +93,7 @@ void KeyPoint::removeGeneral(General* general) {
 }
 
 Area* KeyPoint::clone() {
-	// TODO - implement KeyPoint::clone
-	throw "Not yet implemented";
+	return new KeyPoint(*this);
 }
 
 void KeyPoint::setWeather(Weather* weather) {

@@ -25,14 +25,9 @@ public:
 	 */
 	~Strategy();
 	
-	/**
-	 * @author Antwi-Antwi
-	 * @brief This function will perform an spifice strategy based on the specific derived class
-	 * @param keyPoint A strategy will then be performed at this specific keypoint
-	 * @return void The function will return a void
-	 */
 	virtual void performStrat(KeyPoint* keyPoint, Alliance* alliance) = 0;
 
+	virtual Strategy* clone() = 0;
 };
 
 #endif

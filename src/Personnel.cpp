@@ -9,3 +9,7 @@ void Personnel::takeDamage(int damage) {
 void Personnel::dealDamage(Entity* entity) {
 	entity->takeDamage(getDamage());
 }
+
+Entity* Personnel::clone() {
+	return new Personnel(this->getType()->clone(), this->getHealth(), this->getDamage());
+}

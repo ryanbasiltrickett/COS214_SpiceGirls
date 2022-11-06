@@ -47,6 +47,13 @@ public:
 	 * @return void
 	 */
 	void dealDamage(Entity* entity);
+
+	/**
+	 * @brief Returns the clone of the Personnel object
+	 * 
+	 * @return Entity* Clone of personnel object
+	 */
+	Entity* clone();
 };
 
 #endif

@@ -3,14 +3,18 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Passive.h"{}}}
 \DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00003}00003 Passive::Passive() \{}
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Passive::Passive}}
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00006}00006 \}}
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00008}00008 \textcolor{keywordtype}{void} Passive::performStrat(Keypoint* keyPoint) \{}
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00009}00009     \textcolor{comment}{// TODO -\/ implement Passive::performStrat}}
-\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00010}00010     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00003}00003 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00005}00005 Passive::Passive() \{\}}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00007}\mbox{\hyperlink{classPassive_ab296d4f8ba8ad68dacef1f80e3041aa7}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPassive_ab296d4f8ba8ad68dacef1f80e3041aa7}{Passive::performStrat}}(\mbox{\hyperlink{classKeyPoint}{KeyPoint}}* keyPoint, \mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00008}00008     }
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00009}00009     \textcolor{keywordtype}{int} randomNumber = (rand() \% 10) + 5;}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00010}00010     keyPoint-\/>\mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{moveEntitiesOutOf}}(alliance, randomNumber);}
 \DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00013}\mbox{\hyperlink{classPassive_a576243ca77e794959cfcb33e772856a4}{00013}} \mbox{\hyperlink{classStrategy}{Strategy}}* \mbox{\hyperlink{classPassive_a576243ca77e794959cfcb33e772856a4}{Passive::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classPassive}{Passive}}();}
+\DoxyCodeLine{\Hypertarget{Passive_8cpp_source_l00015}00015 \}}
 
 \end{DoxyCode}

@@ -60,17 +60,15 @@ public:
 	 */
 	void addAlliance(Alliance* newAlliance);
 
-	int getNumAlliances();
-
 	/**
-	 * @brief Instantiates and returns a clone of the current Negotiator
+	 * @brief gets the number of Alliances in the negotiator
 	 *
 	 * Postconditions:
-	 *  - Returns the clone of the current Negotiator
+	 *  - Returns the number of alliances
 	 *
-	 * @return Negotiator* The negotiator clone
+	 * @return int Number of alliances
 	 */
-	Negotiator* clone();
+	int getNumAlliances();
 };
 
 #endif

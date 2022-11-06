@@ -25,8 +25,17 @@ private:
 public:
 	/**
 	 * @brief Instantiates the key point
+	 * 
+	 * @param areaName must be an string
 	 */
 	KeyPoint(std::string areaName);
+
+	/**
+	 * @brief Instantiates a copy of a KeyPoint
+	 * 
+	 * @param keyPoint must be an KeyPoint instance
+	 */
+	KeyPoint(KeyPoint& keyPoint);
 
 	~KeyPoint();
 

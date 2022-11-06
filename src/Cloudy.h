@@ -34,6 +34,13 @@ public:
 	 * @return void
 	 */
 	void handleChange(KeyPoint* k);
+
+	/**
+	 * @brief Returns a clone of the Cloudy object
+	 * 
+	 * @return Weather* Clone of cloudy object
+	 */
+	Weather* clone();
 };
 
 #endif

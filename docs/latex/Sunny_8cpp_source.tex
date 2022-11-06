@@ -2,10 +2,23 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Sunny.h"{}}}
-\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00003}00003 Sunny::Sunny() \{}
-\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Sunny::Sunny}}
-\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Cloudy.h"{}}}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00004}\mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{00004}} \mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny::Sunny}}() \{}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00005}00005     this-\/>multiplier = 1.0;}
 \DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00008}\mbox{\hyperlink{classSunny_a46747aed1564621c150127532b0d84f5}{00008}} std::string \mbox{\hyperlink{classSunny_a46747aed1564621c150127532b0d84f5}{Sunny::getWeather}}() \{}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00009}00009     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Sunny"{}};}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00012}\mbox{\hyperlink{classSunny_a940d045e5bfef4e92233f0269a194815}{00012}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classSunny_a940d045e5bfef4e92233f0269a194815}{Sunny::handleChange}}(\mbox{\hyperlink{classKeyPoint}{KeyPoint}}* k) \{}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00013}00013     \mbox{\hyperlink{classCloudy}{Cloudy}}* newWeather = \textcolor{keyword}{new} \mbox{\hyperlink{classCloudy}{Cloudy}}();}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00014}00014     k-\/>\mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{setWeather}}(newWeather);}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00017}\mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{00017}} \mbox{\hyperlink{classWeather}{Weather}}* \mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{Sunny::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSunny_a7f849e14ad8e3da056638135729f293d}{Sunny}}();}
+\DoxyCodeLine{\Hypertarget{Sunny_8cpp_source_l00019}00019 \}}
 
 \end{DoxyCode}
