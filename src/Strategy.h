@@ -27,6 +27,7 @@ public:
 	
 	virtual void performStrat(KeyPoint* keyPoint, Alliance* alliance) = 0;
 
+<<<<<<< HEAD
 	/**
 	 * @brief Returns the cloned Strategy object
 	 * 
@@ -35,6 +36,8 @@ public:
 	 * 
 	 * @return Strategy* The cloned object
 	 */
+=======
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 	virtual Strategy* clone() = 0;
 };
 

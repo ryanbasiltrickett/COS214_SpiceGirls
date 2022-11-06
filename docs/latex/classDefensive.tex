@@ -1,4 +1,4 @@
-\hypertarget{classDefensive}{}\section{Defensive Class Reference}
+\hypertarget{classDefensive}{}\doxysection{Defensive Class Reference}
 \label{classDefensive}\index{Defensive@{Defensive}}
 Inheritance diagram for Defensive\+:\begin{figure}[H]
 \begin{center}
@@ -6,23 +6,32 @@ Inheritance diagram for Defensive\+:\begin{figure}[H]
 \includegraphics[height=2.000000cm]{classDefensive}
 \end{center}
 \end{figure}
-\subsection*{Public Member Functions}
+\doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+<<<<<<< HEAD
 void \hyperlink{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}{perform\+Strat} (Key\+Point $\ast$key\+Point, Alliance $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em This function will perform an \hyperlink{classDefensive}{Defensive} strategy. \end{DoxyCompactList}\item 
 \hyperlink{classStrategy}{Strategy} $\ast$ \hyperlink{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}{clone} ()
 \begin{DoxyCompactList}\small\item\em Returns the clone of the Deffensive \hyperlink{classStrategy}{Strategy} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
+=======
+void \mbox{\hyperlink{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
+\begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classDefensive}{Defensive}} strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the Deffensive \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
-\subsection{Detailed Description}
+\doxysubsection{Detailed Description}
 
 
-Definition at line 7 of file Defensive.\+h.
+Definition at line \mbox{\hyperlink{Defensive_8h_source_l00007}{7}} of file \mbox{\hyperlink{Defensive_8h_source}{Defensive.\+h}}.
 
 
 
+<<<<<<< HEAD
 \subsection{Member Function Documentation}
 \mbox{\Hypertarget{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}\label{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}} 
 \index{Defensive@{Defensive}!clone@{clone}}
@@ -56,17 +65,75 @@ Definition at line 13 of file Defensive.\+cpp.
 \index{perform\+Strat@{perform\+Strat}!Defensive@{Defensive}}
 \subsubsection{\texorpdfstring{perform\+Strat()}{performStrat()}}
 {\footnotesize\ttfamily void Defensive\+::perform\+Strat (\begin{DoxyParamCaption}\item[{Key\+Point $\ast$}]{key\+Point,  }\item[{Alliance $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+=======
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDefensive_acb76f058b60fe24e6e95a6a164eb20de}\label{classDefensive_acb76f058b60fe24e6e95a6a164eb20de}} 
+\index{Defensive@{Defensive}!Defensive@{Defensive}}
+\index{Defensive@{Defensive}!Defensive@{Defensive}}
+\doxysubsubsection{\texorpdfstring{Defensive()}{Defensive()}}
+{\footnotesize\ttfamily Defensive\+::\+Defensive (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-This function will perform an \hyperlink{classDefensive}{Defensive} strategy. 
+Definition at line \mbox{\hyperlink{Defensive_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Defensive_8cpp_source}{Defensive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003                      \{}
+\DoxyCodeLine{00004 }
+\DoxyCodeLine{00005 \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}\label{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}} 
+\index{Defensive@{Defensive}!clone@{clone}}
+\index{clone@{clone}!Defensive@{Defensive}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ Defensive\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the Deffensive \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+
+\begin{DoxyReturn}{Returns}
+Strategy$\ast$ The clone of the \mbox{\hyperlink{classDefensive}{Defensive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+
+
+
+Definition at line \mbox{\hyperlink{Defensive_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Defensive_8cpp_source}{Defensive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00013                            \{}
+\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classDefensive}{Defensive}}();}
+\DoxyCodeLine{00015 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}\label{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}} 
+\index{Defensive@{Defensive}!performStrat@{performStrat}}
+\index{performStrat@{performStrat}!Defensive@{Defensive}}
+\doxysubsubsection{\texorpdfstring{performStrat()}{performStrat()}}
+{\footnotesize\ttfamily void Defensive\+::perform\+Strat (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{key\+Point,  }\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+
+
+
+This function will perform an \mbox{\hyperlink{classDefensive}{Defensive}} strategy. 
 
 \begin{DoxyAuthor}{Author}
 Antwi-\/\+Antwi
 \end{DoxyAuthor}
 
+
+
 \begin{DoxyParams}{Parameters}
-{\em key\+Point} & an \hyperlink{classDefensive}{Defensive} strategy will then be performed at this specific keypoint\\
+{\em key\+Point} & an \mbox{\hyperlink{classDefensive}{Defensive}} strategy will then be performed at this specific keypoint\\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -74,6 +141,7 @@ void The function will return a void
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
 Implements \hyperlink{classStrategy}{Strategy}.
 
 
@@ -87,6 +155,22 @@ Definition at line 7 of file Defensive.\+cpp.
 9     \textcolor{keywordtype}{int} randomNumber = (rand() % 5) + 1;
 10     keyPoint->moveEntitiesInto(alliance, randomNumber);
 11 \}
+=======
+Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+
+
+
+Definition at line \mbox{\hyperlink{Defensive_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Defensive_8cpp_source}{Defensive.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007                                                                    \{}
+\DoxyCodeLine{00008 }
+\DoxyCodeLine{00009     \textcolor{keywordtype}{int} randomNumber = (rand() \% 5) + 1;}
+\DoxyCodeLine{00010     keyPoint-\/>\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{moveEntitiesInto}}(alliance, randomNumber);}
+\DoxyCodeLine{00011 \}}
+
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

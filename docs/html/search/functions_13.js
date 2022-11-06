@@ -2,6 +2,7 @@ var searchData=
 [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   ['_7ealliance',['~Alliance',['../classAlliance.html#a6a5357e96f284da2f00d72d14605b6fe',1,'Alliance']]],
   ['_7earea',['~Area',['../classArea.html#ace0975982b61a16746c564a0d43a4cc8',1,'Area']]],
   ['_7efactory',['~Factory',['../classFactory.html#a8f71456f48e4df402c778a44191ff40e',1,'Factory']]],
@@ -14,6 +15,8 @@ var searchData=
 =======
 =======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+=======
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
   ['_7ealliance_0',['~Alliance',['../classAlliance.html#a6a5357e96f284da2f00d72d14605b6fe',1,'Alliance']]],
   ['_7earea_1',['~Area',['../classArea.html#ace0975982b61a16746c564a0d43a4cc8',1,'Area']]],
   ['_7efactory_2',['~Factory',['../classFactory.html#a8f71456f48e4df402c778a44191ff40e',1,'Factory']]],
@@ -24,6 +27,9 @@ var searchData=
   ['_7ewartheatre_7',['~WarTheatre',['../classWarTheatre.html#a28324e2234a88933e1697c0f7f9ff222',1,'WarTheatre']]],
   ['_7eweather_8',['~Weather',['../classWeather.html#a6cc4f6ce440531f5c882547dcf40eb22',1,'Weather']]]
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+=======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 =======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e

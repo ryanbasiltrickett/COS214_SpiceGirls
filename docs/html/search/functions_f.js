@@ -2,6 +2,7 @@ var searchData=
 [
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   ['savearchive',['SaveArchive',['../classSaveArchive.html#a676252cf830fbe7b2a2b37ce2371a859',1,'SaveArchive']]],
   ['savestate',['saveState',['../classWarEngine.html#afe7e71964cca280d52f4298e97e1a8d7',1,'WarEngine']]],
   ['sendpeace',['sendPeace',['../classNegotiator.html#aa95e7f447a76c6d5ef84b92731ccb00d',1,'Negotiator']]],
@@ -32,6 +33,8 @@ var searchData=
 =======
 =======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+=======
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
   ['savearchive_0',['SaveArchive',['../classSaveArchive.html#a676252cf830fbe7b2a2b37ce2371a859',1,'SaveArchive']]],
   ['savestate_1',['saveState',['../classWarEngine.html#afe7e71964cca280d52f4298e97e1a8d7',1,'WarEngine']]],
   ['sendpeace_2',['sendPeace',['../classNegotiator.html#aa95e7f447a76c6d5ef84b92731ccb00d',1,'Negotiator']]],
@@ -59,6 +62,9 @@ var searchData=
   ['supportfactory_24',['SupportFactory',['../classSupportFactory.html#a8e0b10fb625f7d4a93cec9989bef45c4',1,'SupportFactory']]],
   ['surrender_25',['surrender',['../classAlliance.html#ad3b8272ccec63d3a32b7e241434948e9',1,'Alliance']]]
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+=======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 =======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e

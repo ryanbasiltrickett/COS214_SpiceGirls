@@ -1,5 +1,6 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['savearchive',['SaveArchive',['../classSaveArchive.html',1,'SaveArchive'],['../classSaveArchive.html#a676252cf830fbe7b2a2b37ce2371a859',1,'SaveArchive::SaveArchive()']]],
   ['savestate',['saveState',['../classWarEngine.html#afe7e71964cca280d52f4298e97e1a8d7',1,'WarEngine']]],
   ['setaddons',['setAddOns',['../classFactory.html#a58dbf2659ee06c61b2dae1a9a36fac53',1,'Factory']]],
@@ -13,4 +14,7 @@ var searchData=
   ['strategy',['Strategy',['../classStrategy.html',1,'Strategy'],['../classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235',1,'Strategy::Strategy()']]],
   ['support',['Support',['../classSupport.html',1,'Support'],['../classSupport.html#a8b4c631dcfd81be50ee86f3ed01d5c1e',1,'Support::Support()']]],
   ['supportfactory',['SupportFactory',['../classSupportFactory.html',1,'SupportFactory'],['../classSupportFactory.html#a8e0b10fb625f7d4a93cec9989bef45c4',1,'SupportFactory::SupportFactory()']]]
+=======
+  ['negotiator_0',['Negotiator',['../classNegotiator.html',1,'Negotiator'],['../classNegotiator.html#aa667cc5e0bca1109e2eae6d84e8ba3d9',1,'Negotiator::Negotiator()']]]
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 ];

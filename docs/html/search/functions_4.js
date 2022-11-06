@@ -1,5 +1,6 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['general',['General',['../classGeneral.html#a713f0749ceab81e918373adde7b18885',1,'General']]],
   ['getaddon',['getAddOn',['../classFactory.html#a994153930f59cafb280e91d5b100b5aa',1,'Factory']]],
   ['getalliance',['getAlliance',['../classGeneral.html#a4cff7ae050a44bbbd077f4257078291c',1,'General']]],
@@ -13,4 +14,7 @@ var searchData=
   ['gettypedesc',['getTypeDesc',['../classAerialType.html#a66dd43f2688de9a5eab9c6de0396e9cc',1,'AerialType::getTypeDesc()'],['../classAquaticType.html#abb1b9ebdb96a352e0287f7a7cb803eab',1,'AquaticType::getTypeDesc()'],['../classTerrainType.html#af24f4291676b6862c90b0d29598fcb11',1,'TerrainType::getTypeDesc()'],['../classType.html#a5c453300dc060252c30534110bd2f78c',1,'Type::getTypeDesc()']]],
   ['getvalue',['getValue',['../classAddOn.html#a776b1f929793e8387cb0b58fc7aba2c2',1,'AddOn']]],
   ['getweather',['getWeather',['../classWeather.html#ad0a29227308b87e98808cdff52232df3',1,'Weather']]]
+=======
+  ['factory_0',['Factory',['../classFactory.html#aca946f8877efb5b5bae700f74537d99d',1,'Factory']]]
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 ];

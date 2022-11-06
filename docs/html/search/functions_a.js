@@ -1,5 +1,6 @@
 var searchData=
 [
+<<<<<<< HEAD
   ['savearchive',['SaveArchive',['../classSaveArchive.html#a676252cf830fbe7b2a2b37ce2371a859',1,'SaveArchive']]],
   ['savestate',['saveState',['../classWarEngine.html#afe7e71964cca280d52f4298e97e1a8d7',1,'WarEngine']]],
   ['setaddons',['setAddOns',['../classFactory.html#a58dbf2659ee06c61b2dae1a9a36fac53',1,'Factory']]],
@@ -13,4 +14,8 @@ var searchData=
   ['strategy',['Strategy',['../classStrategy.html#a2021a15bbc4f0d13f7b92f8933db2235',1,'Strategy']]],
   ['support',['Support',['../classSupport.html#a8b4c631dcfd81be50ee86f3ed01d5c1e',1,'Support']]],
   ['supportfactory',['SupportFactory',['../classSupportFactory.html#a8e0b10fb625f7d4a93cec9989bef45c4',1,'SupportFactory']]]
+=======
+  ['moveentitiesinto_0',['moveEntitiesInto',['../classKeyPoint.html#a4d98646584dffb8e4d59c600e693cfe6',1,'KeyPoint']]],
+  ['moveentitiesoutof_1',['moveEntitiesOutOf',['../classKeyPoint.html#aa5bb6fa677e0b560adfb95e0ff30aa8a',1,'KeyPoint']]]
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 ];

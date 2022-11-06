@@ -21,3 +21,7 @@ Weather* Rainy::clone() {
 Weather* Rainy::clone() {
 	return new Rainy();
 }
+
+Weather* Rainy::clone() {
+	return new Rainy();
+}
