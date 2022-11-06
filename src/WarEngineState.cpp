@@ -57,6 +57,6 @@ WarEngineState::~WarEngineState(){
 		delete alliance;
 	}
 
-	delete this->area;
+	//delete this->area;
 		
 }

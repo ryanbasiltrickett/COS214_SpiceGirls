@@ -16,6 +16,7 @@
 #include "Aggressive.h"
 #include "Defensive.h"
 #include "WarEngine.h"
+#include "Negotiator.h"
 
 EasySetup::EasySetup() {
     saveArchive = new SaveArchive();
@@ -78,8 +79,12 @@ void EasySetup::setupSimulation() {
         AddOn* addOn;
         Factory* factory;
 
+        Negotiator* negotiator = new Negotiator();
+
         for (int i = 0; i < numAlliesAndGenerals; i++) {
             alliances[i] = new Alliance();
+            negotiator->addAlliance(alliances[i]);
+            alliances[i]->setNegotiator(negotiator);
             WarEngine::getInstance().addAlliance(alliances[i]);
 
             cout << "Enter number of countries for Alliance " << alliances[i]->getID() << ": ";
@@ -251,8 +256,6 @@ void EasySetup::setupSimulation() {
 
             mainBattleGround->addArea(battleGrounds[i]);
         }
-
-        cout << "HERE" << endl;
         
         for (int i = 0; i < numAlliesAndGenerals; i++) {
             mainBattleGround->addGeneral(generals[i]);

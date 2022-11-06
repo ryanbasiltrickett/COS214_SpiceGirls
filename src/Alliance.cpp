@@ -33,11 +33,16 @@ Alliance::Alliance(Alliance& alliance) {
 }
 
 Alliance::~Alliance() {
-	
-	this->negotiator->removeAlliance(this);
 
-	if (this->negotiator->getNumAlliances() == 1)
-		delete this->negotiator;
+	for (int i = 0; i < members.size(); i++)
+		//delete members[i];
+
+	if (this->negotiator != NULL) {
+		this->negotiator->removeAlliance(this);
+
+		if (this->negotiator->getNumAlliances() == 1)
+			delete this->negotiator;
+	}
 }
 
 void Alliance::setNegotiator(Negotiator* negotiator) {

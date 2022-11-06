@@ -99,6 +99,7 @@ CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS21
 CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Factory.h
 CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/General.h
 CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/KeyPoint.h
+CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Negotiator.h
 CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Passive.h
 CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/Personnel.h
 CMakeFiles/build.dir/EasySetup.cpp.o: /mnt/c/Users/Ryan/Desktop/University/COS214/Team\ Project/COS214SpiceGirls/src/PersonnelFactory.h
