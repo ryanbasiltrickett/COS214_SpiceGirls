@@ -41,6 +41,7 @@ WarEngineState* WarEngineState::clone(){
 		Alliance* clonedAlliance = alliance->clone();
 
 		clonedState->alliances.push_back(clonedAlliance);
+		clonedAlliance->setNegotiator(negotiator);
 		negotiator->addAlliance(clonedAlliance);
 		copiedArea->addGeneral(new General(clonedAlliance, new Defensive()));
 	}
