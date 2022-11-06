@@ -3,7 +3,7 @@
 
 A generic war simulator that allows users to setup the battle/war enviroment and automatically 
 simulate the outcome. The system is very generic, thus allowing integration into other systems,
-and the ability to simulate different war environments.
+and the ability to simulate different war enviroments.
 
 
 ## Authors
@@ -30,3 +30,17 @@ and the ability to simulate different war environments.
 - Ability to Save Simulation Setups
 - Customisable Simulation
 
+
+## How to Run Project
+
+To  this project run in the build folder
+
+```bash
+  ./build
+```
+
+If you have cmake installed you can also compile with
+
+```bash
+  make
+```
