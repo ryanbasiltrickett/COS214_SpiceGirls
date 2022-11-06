@@ -78,19 +78,6 @@ public:
 	void addGeneral(General* general);
 
 	/**
-	 * @brief Adds a general to all the points held by the WarTheatre
-	 * 
-	 * Precoditions:
-	 * 	- general must be a General*
-	 * 
-	 * Postconditions:
-	 * 	- Add general to all points
-	 * 
-	 * @param general must be a General*
-	 */
-	void addGeneral(General* general);
-
-	/**
 	 * @brief Instantiates and returns a clone of the current war theatre
 	 *
 	 * Postconditions:
