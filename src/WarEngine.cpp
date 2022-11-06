@@ -18,9 +18,9 @@ WarEngineMemento* WarEngine::saveState() {
 	return new WarEngineMemento(cloneState);
 }
 
-void WarEngine::loadState(WarEngineState* save) {
+void WarEngine::loadSave(WarEngineMemento* save) {
 	delete this->state;
-	this->state = save;
+	this->state = save->getState();
 }
 
 WarEngine& WarEngine::getInstance(){

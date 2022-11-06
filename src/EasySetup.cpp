@@ -1,4 +1,8 @@
 #include "EasySetup.h"
+#include <string.h>
+#include "Passive.h"
+#include "Aggressive.h"
+#include "Defensive.h"
 
 void EasySetup::setupSimulation() {
     while (true)
@@ -93,9 +97,15 @@ void EasySetup::setupSimulation() {
                 cout << "Select AddOn for factory " << k+1 << " Armour(A) or Piercing(P) : ";
                 getline(cin, selectedAddOn);
                 if (toupper(selectedAddOn[0]) == 'A') {
-                    addOn = new Armour;
+                    int value;
+                    cout << "Enter armour value: ";
+                    cin >> value;
+                    addOn = new Armour(value);
                 } else if (toupper(selectedAddOn[0]) == 'P') {
-                    addOn = new Piercing;
+                    int value;
+                    cout << "Enter piercing value: ";
+                    cin >> value;
+                    addOn = new Piercing(value);
                 } else {
                     cout << "Invalid AddOn input! Try again" << endl;
                     goto retryAddOn;
@@ -109,15 +119,33 @@ void EasySetup::setupSimulation() {
                 } else if (toupper(selectedFactory[0]) == 'P') {
                     factory = new PersonnelFactory(type, addOn);
                 } else if (toupper(selectedFactory[0]) == 'S') {
-                    factory = new SupportFactory((type, addOn));
+                    factory = new SupportFactory(type, addOn);
                 } else {
                     cout << "Invalid factory input! Try again" << endl;
                     goto retryFactory;
                 }
                 
                 alliances[i]->addFactory(factory);
-                generals[i] = new General(alliances);
             } 
+            
+            string selectedStrat;
+            Strategy* strat;
+            
+            retryStrat:
+            cout << "What is this Alliances generals strategy Passive(P), Defensive(D), or Aggressive(A) : ";
+            getline(cin, selectedStrat);
+            if (toupper(selectedStrat[0]) == 'P') {
+                strat = new Passive();
+            } else if (toupper(selectedStrat[0]) == 'D') {
+                strat = new Defensive();
+            } else if (toupper(selectedStrat[0]) == 'A') {
+                strat = new Aggressive();
+            } else {
+                cout << "Invalid strategy input! Try again" << endl;
+                goto retryStrat;
+            }
+            
+            generals[i] = new General(alliances[i], strat);
         }
         
         int factoryRun;
@@ -128,35 +156,31 @@ void EasySetup::setupSimulation() {
         }
 
         // Creating main WarTheatre
-        WarThreatre* mainBattleGround;
+        WarTheatre* mainBattleGround;
         cout << "Creating the main battle ground" << endl;
-        mainBattleGround = new WarTheatre;
-
         string battleGroundName;
         cout << "Set main battle ground's name: ";
         getline(cin, battleGroundName);
-        mainBattleGround->setName(battleGroundName);
+        mainBattleGround = new WarTheatre(battleGroundName);
 
         int sizeOfGrounds;
         cout << "Enter number of battle grounds in " << battleGroundName << " battle ground: ";
         cin >> sizeOfGrounds;
-        WarThreat** battleGrounds = new WarTheatre*[sizeOfGrounds];
+        WarTheatre** battleGrounds = new WarTheatre*[sizeOfGrounds];
         
         // Creating sub WarTheatres
         for (int i = 0; i < sizeOfGrounds; i++) {
-        battleGrounds[i] = new WarTheatre;
-
-        battleGroundName.clear();
-        cout << "Set battle ground " << i+1 << "'s name: ";
-        getline(cin, battleGroundName);
-        battleGrounds[i]->setName(battleGroundName);
+            battleGroundName.clear();
+            cout << "Set battle ground " << i+1 << "'s name: ";
+            getline(cin, battleGroundName);
+            battleGrounds[i] = new WarTheatre(battleGroundName);
         }
 
         vector<int> numKeyPoints;
         int numKeyPoint = 0;
 
         for (int i = 0; i < sizeOfGrounds; i++) {
-            cout << "Enter number of key points in " << battleGrounds[i]->getName() << " battle ground: ";
+            cout << "Enter number of key points in " << battleGrounds[i]->getAreaName() << " battle ground: ";
             cin >> numKeyPoint;
             numKeyPoints.push_back(numKeyPoint);
             numKeyPoint = 0;
@@ -169,7 +193,7 @@ void EasySetup::setupSimulation() {
         // Creating KeyPoints for the sub WarTheatres
         for (int i = 0; i < sizeOfGrounds; i++) {
             numKeyPoint = numKeyPoints[i];
-            cout << "For " << battleGrounds[i]->getName() << "'s key points" << endl;
+            cout << "For " << battleGrounds[i]->getAreaName() << "'s key points" << endl;
         
             for (int k = 0; k < numKeyPoint; k++) {
                 cout << "Set key point" << i+1 << "'s name: ";
@@ -222,12 +246,12 @@ void EasySetup::saveSimulationSetup() {
 
 }
 
-void EasySetup::loadPrevSave {
+void EasySetup::loadPrevSave() {
 
     try{
-        WarEngineMemento* saveFile = SaveArchive->getLastSave();
+        WarEngineMemento* saveFile = saveArchive->getLastSave();
 
-        WarEngine->loadSave(saveFile->getState());
+        warEngine->loadSave(saveFile);
     }
     catch(const std::exception& error){
 
@@ -240,9 +264,9 @@ void EasySetup::loadSpecificSave(string name) {
 
     try{
         
-        WarEngineMemento* saveFile = SaveArchive->getSave(name);
+        WarEngineMemento* saveFile = saveArchive->getSave(name);
 
-        WarEngine->loadSave(saveFile->getState());
+        warEngine->loadSave(saveFile);
     }
     catch(const std::out_of_range& range_error){
 

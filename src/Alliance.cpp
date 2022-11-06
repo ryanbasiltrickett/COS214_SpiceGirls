@@ -41,12 +41,22 @@ void Alliance::addReserveEntity(Entity* entity) {
 	reserveEntities.push_back(entity);
 }
 
+int Alliance::numRemainingEntities() {
+	return reserveEntities.size();
+}
+
 bool Alliance::considerPeace() {
 	return (rand() % 2 == 0);
 }
 
 void Alliance::addFactory(Factory* factory) {
 	production.push_back(factory);
+}
+
+void Alliance::runFactories() {
+	for (int i = 0; i < production.size(); i++) {
+		reserveEntities.push_back(production[i]->createEntity(this));
+	}
 }
 
 void Alliance::surrender() {

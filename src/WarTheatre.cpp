@@ -31,4 +31,7 @@ WarTheatre* WarTheatre::clone() {
 	return w;
 }
 
-
+void WarTheatre::addGeneral(General* general) {
+	for (int i = 0; i < areas.size(); i++)
+		areas[i]->addGeneral(general);
+}

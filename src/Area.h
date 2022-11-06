@@ -3,6 +3,8 @@
 #include <string>
 #include "Alliance.h"
 
+class General;
+
 class Area {
 
 private:
@@ -31,6 +33,8 @@ public:
 	std::string getAreaName() const;
 
 	virtual Area* clone() = 0;
+
+	virtual void addGeneral(General* general) = 0;
 };
 
 #endif

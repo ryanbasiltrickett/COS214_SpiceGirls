@@ -11,8 +11,10 @@ private:
 public:
 	/**
 	 * @brief Instantiates the Country
+	 * 
+	 * @param name must be a string
 	 */
-	Country();
+	Country(std::string name);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Country
@@ -23,31 +25,6 @@ public:
 	 * @return Country* The country clone
 	 */
 	Country* clone();
-
-	/**
-	 * @brief Set the name of the country
-	 * 
-	 * Precondition:
-	 * - The variale name is type of string 
-	 * 
-	 * Preconditions:
-	 * - The variable name is set the the passed in parameter
-	 * @param name 
-	 */
-	void setName(std::string name);
-
-	
-	/**
-	 * @brief Set the if of the country
-	 * 
-	 * Precondition:
-	 * - The variale if is type of int 
-	 * 
-	 * Preconditions:
-	 * - The variable id is set the the passed in parameter
-	 * @param id 
-	 */
-	void setID(int id);
 
 	/**
 	 * @brief Get the name of the country
