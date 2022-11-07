@@ -4,8 +4,6 @@
 #include "Area.h"
 #include <vector>
 
-class WarEngine;
-
 using namespace std;
 
 /**
@@ -16,12 +14,12 @@ using namespace std;
 */
 class WarEngineState {
 
-friend class WarEngine;
 
 private:
 	Area* area;
 	vector<Alliance*> alliances;
 
+public:
 	/**
 	 * @brief Initializes an instance of the WarEngineState class.
 	 *

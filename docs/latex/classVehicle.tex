@@ -22,16 +22,27 @@ Inheritance diagram for Vehicle\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Instantiates the vehicle. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the vehicle object. \end{DoxyCompactList}\item 
+<<<<<<< HEAD
+void \hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{deal\+Damage} (Entity $\ast$entity)
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+Entity $\ast$ \hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \hyperlink{classVehicle}{Vehicle} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+=======
 void \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
 \begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classVehicle}{Vehicle}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{classVehicle}{Vehicle}} class. 
 
+<<<<<<< HEAD
+Used to add addtional functionality to Entity objects. 
+=======
 Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 Definition at line \mbox{\hyperlink{Vehicle_8h_source_l00011}{11}} of file \mbox{\hyperlink{Vehicle_8h_source}{Vehicle.\+h}}.
 
@@ -62,6 +73,23 @@ Instantiates the vehicle.
 Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
 
 
+<<<<<<< HEAD
+\begin{DoxyCode}
+3 : Entity(type, health, damage) \{\}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicle_a705081c9b479d76cd6113a661d9c8770}\label{classVehicle_a705081c9b479d76cd6113a661d9c8770}} 
+\index{Vehicle@{Vehicle}!clone@{clone}}
+\index{clone@{clone}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily Entity $\ast$ Vehicle\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the clone of the \hyperlink{classVehicle}{Vehicle} object. 
+=======
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00004 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
 
@@ -78,12 +106,28 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00004}{4}} of file \mbo
 
 
 Returns the clone of the \mbox{\hyperlink{classVehicle}{Vehicle}} object. 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 \begin{DoxyReturn}{Returns}
 Entity$\ast$ The clone of the vehicle object 
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
+Definition at line 13 of file Vehicle.\+cpp.
+
+
+\begin{DoxyCode}
+13                        \{
+14     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}{Vehicle}(this->getType()->\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}(), this->getHealth(), this->getDamage());
+15 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}\label{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}} 
+\index{Vehicle@{Vehicle}!deal\+Damage@{deal\+Damage}}
+\index{deal\+Damage@{deal\+Damage}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}}
+{\footnotesize\ttfamily void Vehicle\+::deal\+Damage (\begin{DoxyParamCaption}\item[{Entity $\ast$}]{entity }\end{DoxyParamCaption})}
+=======
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
@@ -111,6 +155,7 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00015}{15}} of file \mb
 \index{dealDamage@{dealDamage}!Vehicle@{Vehicle}}
 \doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
 {\footnotesize\ttfamily void Vehicle\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -136,6 +181,21 @@ void
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
+Definition at line 9 of file Vehicle.\+cpp.
+
+
+\begin{DoxyCode}
+9                                        \{
+10     entity->takeDamage(getDamage());
+11 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}\label{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}} 
+\index{Vehicle@{Vehicle}!take\+Damage@{take\+Damage}}
+\index{take\+Damage@{take\+Damage}!Vehicle@{Vehicle}}
+\subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
+{\footnotesize\ttfamily void Vehicle\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
+=======
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
@@ -155,6 +215,7 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00010}{10}} of file \mb
 \index{takeDamage@{takeDamage}!Vehicle@{Vehicle}}
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void Vehicle\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -180,6 +241,15 @@ void
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
+Definition at line 5 of file Vehicle.\+cpp.
+
+
+\begin{DoxyCode}
+5                                    \{
+6     setHealth(getHealth() - damage);
+7 \}
+=======
 Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
@@ -192,6 +262,7 @@ Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00006}{6}} of file \mbo
 \DoxyCodeLine{00007     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
 \DoxyCodeLine{00008 \}}
 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

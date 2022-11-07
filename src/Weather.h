@@ -32,11 +32,36 @@ public:
 	 */
 	double getMultiplier();
 
-	virtual void handleChange(KeyPoint* k) = 0;
+	/**
+	 * @brief Will change the current state of the weather inside the specific keypoint
+	 *
+	 * Preconditions:
+	 *  - keypoint must be a KeyPoint*
+	 *
+	 * Postconditions:
+	 *  - Changes the current weather to the next one in the state pattern (Cloudy)
+	 *
+	 * @param keypoint must be a KeyPoint*
+	 * @return void
+	 */
+	virtual void handleChange(KeyPoint* keypoint) = 0;
 
+	/**
+	 * @brief Returns a string which tells us the weather
+	 *
+	 * Postconditions:
+	 *  - Returns the wether of the current state
+	 *
+	 * @return std::string which is the current state
+	 */
 	virtual std::string getWeather() = 0;
 
-	virtual Weather* clone() = 0;
+	/**
+	 * @brief Returns a clone of the Weather object
+	 * 
+	 * @return Weather* Clone of Weather object
+	 */
+	virtual Weather* clone() = 0;  
 };
 
 #endif

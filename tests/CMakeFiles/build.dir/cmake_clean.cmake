@@ -36,8 +36,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/build.dir/WarTheatre.cpp.o"
   "CMakeFiles/build.dir/Weather.cpp.o"
   "CMakeFiles/build.dir/testmain.cpp.o"
-  "build"
   "build.pdb"
+  "build"
 )
 
 # Per-language clean rules from dependency scanning.
