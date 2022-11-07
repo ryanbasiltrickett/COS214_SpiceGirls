@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.4)  7 NOV 2022 12:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.4)  7 NOV 2022 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -729,12 +729,13 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 
 Package backref Info: ** backref set up for natbib ** on input line 152.
 Package hyperref Info: Link coloring ON on input line 152.
+(refman.out) (refman.out)
 \@outlinefile=\write5
 \openout5 = `refman.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-No file refman.toc.
+\Etoc@tf=\read4
 Package hyperref Info: Option `pageanchor' set `false' on input line 160.
 Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 160.
 Package hyperref Info: Option `unicode' set `true' on input line 160.
@@ -745,7 +746,7 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 (Font)              scaled to size 6.29996pt on input line 166.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 166.
-(D:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
+ (D:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 166.
@@ -764,6 +765,19 @@ File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 \tf@toc=\write6
 \openout6 = `refman.toc'.
 
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 174.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 174.
+ [1]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 174.
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 174.
+ (D:\Program Files\MiKTeX\tex/latex/psnfss\t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+) [2] [3] [4] [5] [6] [7] [8] [9] [10] [11] [12
+
+]
 Package hyperref Info: Option `pageanchor' set `true' on input line 177.
 
 Chapter 1.
@@ -782,391 +796,13 @@ LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
 (hierarchy.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 12.9599pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 3.
-
-
-LaTeX Warning: Reference `classArea' on page 1 undefined on input line 3.
-
-
-LaTeX Warning: Reference `classWarTheatre' on page 1 undefined on input line 5.
-
-
-LaTeX Warning: Reference `classEasySetup' on page 1 undefined on input line 8.
-
-
-hierarchy.tex:11: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 \item \contentsline
-                        {section}{Country}{\pageref{classCountry}}{}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-hierarchy.tex:11: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 \item \contentsline
-                        {section}{Country}{\pageref{classCountry}}{}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-hierarchy.tex:11: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 \item \contentsline
-                        {section}{Country}{\pageref{classCountry}}{}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-hierarchy.tex:11: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.11 ...ection}{Country}{\pageref{classCountry}}{}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `classCountry' on page 1 undefined on input line 11.
-
-
-LaTeX Warning: Reference `classEasySetup' on page 1 undefined on input line 12.
-
-
-LaTeX Warning: Reference `classEntity' on page 1 undefined on input line 13.
-
-
-LaTeX Warning: Reference `classAddOn' on page 1 undefined on input line 16.
-
-
-LaTeX Warning: Reference `classArmour' on page 1 undefined on input line 18.
-
-
-LaTeX Warning: Reference `classPiercing' on page 1 undefined on input line 19.
-
-
-LaTeX Warning: Reference `classSupport' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Reference `classVehicle' on page 1 undefined on input line 22.
-
-
-LaTeX Warning: Reference `classFactory' on page 1 undefined on input line 24.
-
-
-LaTeX Warning: Reference `classPersonnelFactory' on page 1 undefined on input line 26.
-
-
-LaTeX Warning: Reference `classSupportFactory' on page 1 undefined on input line 27.
-
-
-LaTeX Warning: Reference `classVehicleFactory' on page 1 undefined on input line 28.
-
-
-LaTeX Warning: Reference `classGeneral' on page 1 undefined on input line 30.
-
-
-LaTeX Warning: Reference `classNegotiator' on page 1 undefined on input line 32.
-
-
-LaTeX Warning: Reference `classRoundStats' on page 1 undefined on input line 33.
-
-
-LaTeX Warning: Reference `classSaveArchive' on page 1 undefined on input line 36.
-
-
-LaTeX Warning: Reference `classStrategy' on page 1 undefined on input line 37.
-
-
-LaTeX Warning: Reference `classDefensive' on page 1 undefined on input line 39.
-
-
-LaTeX Warning: Reference `classPassive' on page 1 undefined on input line 40.
-
-
-LaTeX Warning: Reference `classType' on page 1 undefined on input line 42.
-
-
-LaTeX Warning: Reference `classAerialType' on page 1 undefined on input line 44.
-
-
-LaTeX Warning: Reference `classAquaticType' on page 1 undefined on input line 45.
-
-
-LaTeX Warning: Reference `classTerrainType' on page 1 undefined on input line 46.
-
-
-LaTeX Warning: Reference `classWarEngine' on page 1 undefined on input line 48.
-
-
-LaTeX Warning: Reference `classWarEngineMemento' on page 1 undefined on input line 49.
-
-
-LaTeX Warning: Reference `classWarEngineState' on page 1 undefined on input line 50.
-
-
-LaTeX Warning: Reference `classWeather' on page 1 undefined on input line 51.
-
-)
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 6.29996pt on input line 181.
- [1
-
+) [1
 
 ] [2
 
 ]
 Chapter 2.
-(annotated.tex
-
-annotated.tex:4: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \item\contentsline
-                      {section}{\hyperlink{classAddOn}{Add\+On} \\*\hyperlin...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-annotated.tex:4: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \item\contentsline
-                      {section}{\hyperlink{classAddOn}{Add\+On} \\*\hyperlin...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-annotated.tex:4: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 \item\contentsline
-                      {section}{\hyperlink{classAddOn}{Add\+On} \\*\hyperlin...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-annotated.tex:4: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4 ...n}{Add\+On} class }{\pageref{classAddOn}}{}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-LaTeX Warning: Reference `classAddOn' on page 3 undefined on input line 4.
-
-
-LaTeX Warning: Reference `classAerialType' on page 3 undefined on input line 5.
-
-
-LaTeX Warning: Reference `classAquaticType' on page 3 undefined on input line 6.
-
-
-LaTeX Warning: Reference `classArea' on page 3 undefined on input line 7.
-
-
-LaTeX Warning: Reference `classArmour' on page 3 undefined on input line 8.
-
-
-LaTeX Warning: Reference `classDefensive' on page 3 undefined on input line 9.
-
-
-LaTeX Warning: Reference `classEasySetup' on page 3 undefined on input line 10.
-
-
-LaTeX Warning: Reference `classFactory' on page 3 undefined on input line 11.
-
-
-LaTeX Warning: Reference `classGeneral' on page 3 undefined on input line 12.
-
-
-LaTeX Warning: Reference `classPassive' on page 3 undefined on input line 13.
-
-
-LaTeX Warning: Reference `classPersonnelFactory' on page 3 undefined on input line 14.
-
-
-LaTeX Warning: Reference `classPiercing' on page 3 undefined on input line 15.
-
-
-LaTeX Warning: Reference `classSaveArchive' on page 3 undefined on input line 16.
-
-
-LaTeX Warning: Reference `classStrategy' on page 3 undefined on input line 17.
-
-
-LaTeX Warning: Reference `classSupport' on page 3 undefined on input line 18.
-
-
-LaTeX Warning: Reference `classSupportFactory' on page 3 undefined on input line 19.
-
-
-LaTeX Warning: Reference `classTerrainType' on page 3 undefined on input line 20.
-
-
-LaTeX Warning: Reference `classType' on page 3 undefined on input line 21.
-
-
-LaTeX Warning: Reference `classVehicle' on page 3 undefined on input line 22.
-
-
-LaTeX Warning: Reference `classVehicleFactory' on page 3 undefined on input line 23.
-
-
-LaTeX Warning: Reference `classWarEngine' on page 3 undefined on input line 24.
-
-
-LaTeX Warning: Reference `classWarEngineMemento' on page 3 undefined on input line 25.
-
-
-LaTeX Warning: Reference `classWarEngineState' on page 3 undefined on input line 26.
-
-
-LaTeX Warning: Reference `classWarTheatre' on page 3 undefined on input line 27.
-
-
-LaTeX Warning: Reference `classWeather' on page 3 undefined on input line 28.
-
-[3]
-
-LaTeX Warning: Reference `classAddOn' on page 4 undefined on input line 30.
-
-
-LaTeX Warning: Reference `classAerialType' on page 4 undefined on input line 31.
-
-
-LaTeX Warning: Reference `classAggressive' on page 4 undefined on input line 32.
-
-
-LaTeX Warning: Reference `classAlliance' on page 4 undefined on input line 33.
-
-
-LaTeX Warning: Reference `classAquaticType' on page 4 undefined on input line 34.
-
-
-LaTeX Warning: Reference `classArea' on page 4 undefined on input line 35.
-
-
-LaTeX Warning: Reference `classArmour' on page 4 undefined on input line 36.
-
-
-LaTeX Warning: Reference `classCloudy' on page 4 undefined on input line 37.
-
-
-LaTeX Warning: Reference `classCountry' on page 4 undefined on input line 38.
-
-
-LaTeX Warning: Reference `classDefensive' on page 4 undefined on input line 39.
-
-
-LaTeX Warning: Reference `classEasySetup' on page 4 undefined on input line 40.
-
-
-LaTeX Warning: Reference `classEntity' on page 4 undefined on input line 41.
-
-
-LaTeX Warning: Reference `classFactory' on page 4 undefined on input line 42.
-
-
-LaTeX Warning: Reference `classGeneral' on page 4 undefined on input line 43.
-
-
-LaTeX Warning: Reference `classKeyPoint' on page 4 undefined on input line 44.
-
-
-LaTeX Warning: Reference `classNegotiator' on page 4 undefined on input line 45.
-
-
-LaTeX Warning: Reference `classPassive' on page 4 undefined on input line 46.
-
-
-LaTeX Warning: Reference `classPersonnel' on page 4 undefined on input line 47.
-
-
-LaTeX Warning: Reference `classPersonnelFactory' on page 4 undefined on input line 48.
-
-
-LaTeX Warning: Reference `classPiercing' on page 4 undefined on input line 49.
-
-
-LaTeX Warning: Reference `classRainy' on page 4 undefined on input line 50.
-
-
-LaTeX Warning: Reference `classRoundStats' on page 4 undefined on input line 51.
-
-
-LaTeX Warning: Reference `classSaveArchive' on page 4 undefined on input line 52.
-
-
-LaTeX Warning: Reference `classStrategy' on page 4 undefined on input line 53.
-
-
-LaTeX Warning: Reference `classSunny' on page 4 undefined on input line 54.
-
-
-LaTeX Warning: Reference `classSupport' on page 4 undefined on input line 55.
-
-
-LaTeX Warning: Reference `classSupportFactory' on page 4 undefined on input line 56.
-
-
-LaTeX Warning: Reference `classTerrainType' on page 4 undefined on input line 57.
-
-
-LaTeX Warning: Reference `classType' on page 4 undefined on input line 58.
-
-
-LaTeX Warning: Reference `classVehicle' on page 4 undefined on input line 59.
-
-
-LaTeX Warning: Reference `classVehicleFactory' on page 4 undefined on input line 60.
-
-
-LaTeX Warning: Reference `classWarEngine' on page 4 undefined on input line 61.
-
-
-LaTeX Warning: Reference `classWarEngineMemento' on page 4 undefined on input line 62.
-
-
-LaTeX Warning: Reference `classWarEngineState' on page 4 undefined on input line 63.
-
-
-LaTeX Warning: Reference `classWarTheatre' on page 4 undefined on input line 64.
-
-
-LaTeX Warning: Reference `classWeather' on page 4 undefined on input line 65.
-
-) [4]
+(annotated.tex [3]) [4]
 Chapter 3.
 (files.tex
 
@@ -1286,15 +922,15 @@ LaTeX Warning: Reference `Personnel_8h_source' on page 5 undefined on input line
 
 LaTeX Warning: Reference `PersonnelFactory_8cpp_source' on page 5 undefined on input line 41.
 
-
-LaTeX Warning: Reference `PersonnelFactory_8h_source' on page 5 undefined on input line 42.
-
-
-LaTeX Warning: Reference `Piercing_8cpp_source' on page 5 undefined on input line 43.
-
 [5
 
 ]
+
+LaTeX Warning: Reference `PersonnelFactory_8h_source' on page 6 undefined on input line 42.
+
+
+LaTeX Warning: Reference `Piercing_8cpp_source' on page 6 undefined on input line 43.
+
 
 LaTeX Warning: Reference `Piercing_8h_source' on page 6 undefined on input line 44.
 
@@ -1400,15 +1036,11 @@ LaTeX Warning: Reference `Weather_8h_source' on page 6 undefined on input line 7
 ) [6]
 Chapter 4.
 (classAddOn.tex
-LaTeX Font Info:    Trying to load font information for T1+pcr on input line 10.
- (D:\Program Files\MiKTeX\tex/latex/psnfss\t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
 Package epstopdf Info: Source file: <classAddOn.eps>
-(epstopdf)                    date: 2022-11-06 17:37:40
+(epstopdf)                    date: 2022-11-07 18:18:04
 (epstopdf)                    size: 3982 bytes
 (epstopdf)             Output file: <classAddOn-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-07 12:01:06
+(epstopdf)                    date: 2022-11-07 18:18:37
 (epstopdf)                    size: 5975 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAddOn-eps-converted-to.pdf classAddOn.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1417,7 +1049,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAddOn-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAddOn-eps-converted-to.pdf>
-<classAddOn-eps-converted-to.pdf, id=321, 501.875pt x 449.68pt>
+<classAddOn-eps-converted-to.pdf, id=2624, 501.875pt x 449.68pt>
 File: classAddOn-eps-converted-to.pdf Graphic file (type pdf)
 <use classAddOn-eps-converted-to.pdf>
 Package pdftex.def Info: classAddOn-eps-converted-to.pdf  used on input line 15.
@@ -1431,584 +1063,105 @@ File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
 (Font)              scaled to size 8.99994pt on input line 21.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 23.
+(Font)              scaled to size 8.09995pt on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 23.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 23.
+(Font)              scaled to size 8.09995pt on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <7> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 23.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 22.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 6.29996pt on input line 23.
+(Font)              scaled to size 6.29996pt on input line 22.
 LaTeX Font Info:    Font shape `TS1/phv/m/it' in size <9> not available
-(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 25.
+(Font)              Font shape `TS1/phv/m/sl' tried instead on input line 24.
 LaTeX Font Info:    Font shape `TS1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 25.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 10.79993pt on input line 38.
+(Font)              scaled to size 8.09995pt on input line 24.
  [7
 
 ]
-classAddOn.tex:55: Undefined control sequence.
-\enit@enditemize ->\enit@after 
-                               \endlist \ifx \enit@series \relax \else \ifnu...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@enditemize ...x \else \ifnum \enit@resuming 
-                                                  =\@ne \enit@setresumekeys ...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.55 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.55 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAddOn.tex:55: Undefined control sequence.
-<argument> enit@resume@series@\enit@series 
-                                           
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.55 \end{DoxyCompactItemize}
-                             
-I'm forgetting what you said and using zero instead.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@enditemize ...ist \fi \ifnum \enit@resuming 
-                                                  =\thr@@ \enit@setresumekey...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.55 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.55 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.55 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAddOn.tex:55: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.55 \end{DoxyCompactItemize}
-                             
-I'm forgetting what you said and using zero instead.
-
-
-classAddOn.tex:55: LaTeX Error: \begin{list} on input line 2 ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \end{DoxyCompactItemize}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-classAddOn.tex:55: LaTeX Error: \begin{DoxyCompactList} on input line 2 ended by \end{DoxyCompactItemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.55 \end{DoxyCompactItemize}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 8.99994pt on input line 89.
-LaTeX Font Info:    Font shape `T1/phv/bc/n' will be
-(Font)              scaled to size 6.29996pt on input line 89.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 97.
 LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <8> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 97.
-[8
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_a64f23691b6c7fc49b6584f8f761ce4d9}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.107 \end{DoxyParams}
-                      
-]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.1 on input line 107.
-
-classAddOn.tex:119: Missing } inserted.
-<inserted text> 
-                }
-l.119 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Underfull \hbox (badness 10000) detected at line 138
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 76.
+ [8]
+Underfull \hbox (badness 10000) detected at line 117
 [][][]
  []
 
 [9]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.2 on input line 169.
-
-
-Underfull \hbox (badness 10000) detected at line 170
+Underfull \hbox (badness 10000) detected at line 153
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) detected at line 192
-[][][]
- []
-
-classAddOn.tex:204: Missing } inserted.
-<inserted text> 
-                }
-l.204 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_aff1f4fa0fb368bbc49838df9c9ddba9c}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.234 ...AddOn_aff1f4fa0fb368bbc49838df9c9ddba9c}}
-                                                   [10]
-Underfull \hbox (badness 10000) detected at line 263
+Underfull \hbox (badness 10000) detected at line 179
 [][][]
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.277 ...AddOn_a776b1f929793e8387cb0b58fc7aba2c2}}
-                                                  
-Underfull \hbox (badness 10000) detected at line 294
-[][][]
- []
-
-classAddOn.tex:306: Missing } inserted.
-<inserted text> 
-                }
-l.306 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Underfull \hbox (badness 10000) detected at line 324
-[][][]
- []
-
-[11
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.341 \doxysubsubsection
-                        {\texorpdfstring{setEntity()}{setEntity()}}]
-
-classAddOn.tex:357: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 \item S
-             ets the entity attribute of the \hyperlink{classAddOn}{Add\+On}...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:357: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 \item S
-             ets the entity attribute of the \hyperlink{classAddOn}{Add\+On}...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:357: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.357 \item S
-             ets the entity attribute of the \hyperlink{classAddOn}{Add\+On}...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:359: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.359 \item S
-             ets the entity attribute of the \mbox{\hyperlink{classAddOn}{Ad...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:359: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.359 \item S
-             ets the entity attribute of the \mbox{\hyperlink{classAddOn}{Ad...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:359: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.359 \item S
-             ets the entity attribute of the \mbox{\hyperlink{classAddOn}{Ad...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:361: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.361 \end{DoxyItemize}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.3 on input line 367.
-
-
-Underfull \hbox (badness 10000) detected at line 368
-[][][]
- []
-
-classAddOn.tex:381: Missing } inserted.
-<inserted text> 
-                }
-l.381 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[12
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_ac9f4263e3558015fdad46adefceed197}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.392 ...eLine{00017     this-\/>entity = entity;}
-                                                  ]
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.396 ...AddOn_a19f4fe81bd1f0491764e52b48a0b3e63}}
-                                                  
-Underfull \hbox (badness 2828) in paragraph at lines 405--410
-[]\T1/phv/m/n/10 <<<<<<< HEAD Sets the [][]Add[]On[][]\TS1/phv/m/n/10 '\T1/phv/m/n/10 s value at-tribute. ======= Sets the []\TS1/phv/m/n/10 '\T1/phv/m/n/10 s value at-tribute. >>>>>>>
- []
-
-
-classAddOn.tex:419: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \item S
-             ets the value attribute of the \hyperlink{classAddOn}{Add\+On} ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:419: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \item S
-             ets the value attribute of the \hyperlink{classAddOn}{Add\+On} ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:419: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.419 \item S
-             ets the value attribute of the \hyperlink{classAddOn}{Add\+On} ...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:421: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.421 \item S
-             ets the value attribute of the \mbox{\hyperlink{classAddOn}{Add...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:421: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.421 \item S
-             ets the value attribute of the \mbox{\hyperlink{classAddOn}{Add...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:421: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.421 \item S
-             ets the value attribute of the \mbox{\hyperlink{classAddOn}{Add...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-classAddOn.tex:423: LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.423 \end{DoxyItemize}
-                       
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.4 on input line 429.
-
-
-Underfull \hbox (badness 10000) detected at line 430
-[][][]
- []
-
-classAddOn.tex:443: Missing } inserted.
-<inserted text> 
-                }
-l.443 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[13
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_ab3aefbc00969fe613ed6d42c4f55c5a2}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.478 \end{DoxyItemize}
-                       ]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.5 on input line 484.
-
-
-Underfull \hbox (badness 10000) detected at line 485
+Underfull \hbox (badness 10000) detected at line 212
 [][][]
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{classAddOn_aaa321002131799f305663626784e364e}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.501 ...AddOn_aaa321002131799f305663626784e364e}}
-                                                  ) (classAerialType.tex
+Underfull \hbox (badness 10000) detected at line 245
+[][][]
+ []
+
+[10]
+Underfull \hbox (badness 10000) detected at line 274
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 307
+[][][]
+ []
+
+[11]
+Underfull \hbox (badness 10000) detected at line 340
+[][][]
+ []
+
+[12]
+Underfull \hbox (badness 10000) detected at line 379
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 422
+[][][]
+ []
+
+[13]
+Underfull \hbox (badness 10000) detected at line 465
+[][][]
+ []
+
+[14]
+Underfull \hbox (badness 10000) detected at line 504
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 547
+[][][]
+ []
+
+[15]
+Underfull \hbox (badness 10000) detected at line 590
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 633
+[][][]
+ []
+
+[16]) (classAerialType.tex
 Package epstopdf Info: Source file: <classAerialType.eps>
-(epstopdf)                    date: 2022-11-06 17:37:40
+(epstopdf)                    date: 2022-11-07 18:18:04
 (epstopdf)                    size: 3770 bytes
 (epstopdf)             Output file: <classAerialType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-07 12:01:06
+(epstopdf)                    date: 2022-11-07 18:18:39
 (epstopdf)                    size: 4848 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAerialType-eps-converted-to.pdf classAerialType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -2017,304 +1170,131 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAerialType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAerialType-eps-converted-to.pdf>
-<classAerialType-eps-converted-to.pdf, id=514, 501.875pt x 489.83pt>
+<classAerialType-eps-converted-to.pdf, id=2855, 501.875pt x 489.83pt>
 File: classAerialType-eps-converted-to.pdf Graphic file (type pdf)
 <use classAerialType-eps-converted-to.pdf>
 Package pdftex.def Info: classAerialType-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 58.30023pt x 56.9055pt.
- [14]
-
-classAerialType.tex:31: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 \mbox
-          {\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classAerialT...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 31
-[][]
- []
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@enditemize ->\enit@after 
-                               \endlist \ifx \enit@series \relax \else \ifnu...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@enditemize ...x \else \ifnum \enit@resuming 
-                                                  =\@ne \enit@setresumekeys ...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAerialType.tex:32: Undefined control sequence.
-<argument> enit@resume@series@\enit@series 
-                                           
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.32 \end{DoxyCompactItemize}
-                             
-I'm forgetting what you said and using zero instead.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@enditemize ...ist \fi \ifnum \enit@resuming 
-                                                  =\thr@@ \enit@setresumekey...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAerialType.tex:32: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.32 \end{DoxyCompactItemize}
-                             
-I'm forgetting what you said and using zero instead.
-
-
-classAerialType.tex:32: LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 \end{DoxyCompactItemize}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-classAerialType.tex:32: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.32 \end{DoxyCompactItemize}
-                             
-Things are pretty mixed up, but I think the worst is over.
-
-
-classAerialType.tex:32: LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 \end{DoxyCompactItemize}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-classAerialType.tex:32: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.32 \end{DoxyCompactItemize}
-                             
-Things are pretty mixed up, but I think the worst is over.
-
-
-Underfull \hbox (badness 10000) detected at line 66
+ [17]
+Underfull \hbox (badness 10000) detected at line 76
 [][][]
  []
 
-[15]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 105.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 105.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classAerialType_a8e7184b0b9e184142144df65f3da7fb1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.106 ...lType_a8e7184b0b9e184142144df65f3da7fb1}}
-                                                  
-LaTeX Font Info:    Trying to load font information for TS1+pcr on input line 140.
- (D:\Program Files\MiKTeX\tex/latex/psnfss\ts1pcr.fd
-File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-)
-
-LaTeX Font Warning: Font shape `T1/pcr/bc/n' undefined
-(Font)              using `T1/pcr/m/n' instead on input line 143.
-
-
-Underfull \hbox (badness 10000) detected at line 143
+Underfull \hbox (badness 10000) detected at line 109
 [][][]
  []
 
-LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 169.
+[18]) (classAggressive.tex
+Package epstopdf Info: Source file: <classAggressive.eps>
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 3778 bytes
+(epstopdf)             Output file: <classAggressive-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:40
+(epstopdf)                    size: 5294 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classAggressive-eps-converted-to.pdf classAggressive.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classAggressive-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classAggressive-eps-converted-to.pdf>
+<classAggressive-eps-converted-to.pdf, id=2902, 501.875pt x 478.78876pt>
+File: classAggressive-eps-converted-to.pdf Graphic file (type pdf)
+<use classAggressive-eps-converted-to.pdf>
+Package pdftex.def Info: classAggressive-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 59.64804pt x 56.9055pt.
+ [19]
+Underfull \hbox (badness 10000) detected at line 55
+[][][]
+ []
+
+LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
+(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 77.
+
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+[20]
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+) (classAlliance.tex [21]
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 7.19995pt on input line 53.
+ [22]
+Underfull \hbox (badness 10000) detected at line 165
+[][][]
+ []
+
+[23]
+Underfull \hbox (badness 10000) detected at line 204
+[][][]
+ []
+
+[24]
+Underfull \hbox (badness 10000) detected at line 243
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 272
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 306
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 335
+[][][]
+ []
+
+[25]
+Underfull \hbox (badness 10000) detected at line 364
+[][][]
+ []
+
+[26]
+Underfull \hbox (badness 10000) detected at line 404
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 439
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 468
+[][][]
+ []
+
+[27]
+Underfull \hbox (badness 10000) detected at line 504
+[][][]
+ []
+
+[28]
+Underfull \hbox (badness 10000) detected at line 571
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 601
+[][][]
+ []
+
 ) (classAquaticType.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 1.
-
 Package epstopdf Info: Source file: <classAquaticType.eps>
-(epstopdf)                    date: 2022-11-06 17:37:40
+(epstopdf)                    date: 2022-11-07 18:18:04
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classAquaticType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-07 12:01:06
+(epstopdf)                    date: 2022-11-07 18:18:41
 (epstopdf)                    size: 5118 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAquaticType-eps-converted-to.pdf classAquaticType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -2323,301 +1303,28 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classAquaticType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classAquaticType-eps-converted-to.pdf>
-<classAquaticType-eps-converted-to.pdf, id=574, 501.875pt x 446.66875pt>
+<classAquaticType-eps-converted-to.pdf, id=3132, 501.875pt x 446.66875pt>
 File: classAquaticType-eps-converted-to.pdf Graphic file (type pdf)
 <use classAquaticType-eps-converted-to.pdf>
 Package pdftex.def Info: classAquaticType-eps-converted-to.pdf  used on input line 15.
 (pdftex.def)             Requested size: 63.93652pt x 56.9055pt.
- [16]
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <9> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 22.
-
-
-classAquaticType.tex:31: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.31 \mbox
-          {\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classAquatic...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 31
-[][]
- []
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@enditemize ->\enit@after 
-                               \endlist \ifx \enit@series \relax \else \ifnu...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@enditemize ...x \else \ifnum \enit@resuming 
-                                                  =\@ne \enit@setresumekeys ...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAquaticType.tex:32: Undefined control sequence.
-<argument> enit@resume@series@\enit@series 
-                                           
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.32 \end{DoxyCompactItemize}
-                             
-I'm forgetting what you said and using zero instead.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@enditemize ...ist \fi \ifnum \enit@resuming 
-                                                  =\thr@@ \enit@setresumekey...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.32 \end{DoxyCompactItemize}
-                             
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.32 \end{DoxyCompactItemize}
-                             
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classAquaticType.tex:32: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.32 \end{DoxyCompactItemize}
-                             
-I'm forgetting what you said and using zero instead.
-
-
-classAquaticType.tex:32: LaTeX Error: \begin{DoxyCode} on input line 78 ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 \end{DoxyCompactItemize}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-classAquaticType.tex:32: Missing } inserted.
-<inserted text> 
-                }
-l.32 \end{DoxyCompactItemize}
-                             
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-classAquaticType.tex:32: LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.32 \end{DoxyCompactItemize}
-                             
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-classAquaticType.tex:32: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.32 \end{DoxyCompactItemize}
-                             
-Things are pretty mixed up, but I think the worst is over.
-
-
-Underfull \hbox (badness 10000) detected at line 66
+ [29] [30]
+Underfull \hbox (badness 10000) detected at line 76
 [][][]
  []
 
-[17]
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 105.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 105.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classAquaticType_afbcc6f679b6108c7ed286ab0aa91bdd5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.106 ...cType_afbcc6f679b6108c7ed286ab0aa91bdd5}}
-                                                  
-Underfull \hbox (badness 10000) detected at line 143
+Underfull \hbox (badness 10000) detected at line 109
 [][][]
  []
 
 ) (classArea.tex
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 1.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 1.
-
 Package epstopdf Info: Source file: <classArea.eps>
-(epstopdf)                    date: 2022-11-07 12:01:33
-(epstopdf)                    size: 4275 bytes
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 3885 bytes
 (epstopdf)             Output file: <classArea-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-07 12:01:42
-(epstopdf)                    size: 2328 bytes
+(epstopdf)                    date: 2022-11-07 18:18:42
+(epstopdf)                    size: 5531 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classArea-eps-converted-to.pdf classArea.eps>
 (epstopdf)             \includegraphics on input line 6.
 Package epstopdf Info: Output file is already uptodate.
@@ -2625,115 +1332,28 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classArea-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classArea-eps-converted-to.pdf>
-<classArea-eps-converted-to.pdf, id=640, 614.295pt x 794.97pt>
+<classArea-eps-converted-to.pdf, id=3178, 501.875pt x 233.87375pt>
 File: classArea-eps-converted-to.pdf Graphic file (type pdf)
 <use classArea-eps-converted-to.pdf>
 Package pdftex.def Info: classArea-eps-converted-to.pdf  used on input line 6.
-(pdftex.def)             Requested size: 43.97049pt x 56.9055pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 44--48
-[]\T1/pcr/bc/n/7 virtualvoid[]([]$\OMS/cmsy/m/n/7 ^^C$\T1/pcr/bc/n/7 general)=0 ======= >>>>>>>7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 51.
-
-[18]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 65.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 65.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classArea_a765c2ee1798421e3079ab77f97abf367}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.66 ...ssArea_a765c2ee1798421e3079ab77f97abf367}}
-                                                  
-LaTeX Font Info:    Font shape `T1/pcr/m/it' in size <7> not available
-(Font)              Font shape `T1/pcr/m/sl' tried instead on input line 70.
-
-pdfTeX warning (ext4): destination with the same identifier (name{classArea_ace0975982b61a16746c564a0d43a4cc8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.87 ...ssArea_ace0975982b61a16746c564a0d43a4cc8}}
-                                                  
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 108.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 108.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.109 ...sArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}}
-                                                  
-Underfull \hbox (badness 10000) detected at line 139
+(pdftex.def)             Requested size: 122.11424pt x 56.9055pt.
+ [31] [32]
+Underfull \hbox (badness 10000) detected at line 104
 [][][]
  []
 
 
-pdfTeX warning (ext4): destination with the same identifier (name{classArea_a21450849c93621152b13bafcf6e248d5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.163 ...sArea_a21450849c93621152b13bafcf6e248d5}}
-                                                  
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 176.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                \kern 4.2pt
-(hyperref)                replaced by space on input line 176.
-
-
-Underfull \hbox (badness 10000) detected at line 192
+Underfull \hbox (badness 10000) detected at line 121
 [][][]
  []
 
-[19]
-Underfull \hbox (badness 10000) detected at line 209
-[][][]
- []
-
-classArea.tex:221: Missing } inserted.
-<inserted text> 
-                }
-l.221 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-) (classArmour.tex
+[33]) (classArmour.tex
 Package epstopdf Info: Source file: <classArmour.eps>
-(epstopdf)                    date: 2022-11-07 12:01:33
-(epstopdf)                    size: 4178 bytes
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 3867 bytes
 (epstopdf)             Output file: <classArmour-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-07 12:01:44
-(epstopdf)                    size: 2328 bytes
+(epstopdf)                    date: 2022-11-07 18:18:44
+(epstopdf)                    size: 5377 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classArmour-eps-converted-to.pdf classArmour.eps>
 (epstopdf)             \includegraphics on input line 15.
 Package epstopdf Info: Output file is already uptodate.
@@ -2741,1523 +1361,923 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: pdflatex (file ./classArmour-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
  <./classArmour-eps-converted-to.pdf>
-<classArmour-eps-converted-to.pdf, id=741, 614.295pt x 794.97pt>
+<classArmour-eps-converted-to.pdf, id=3247, 501.875pt x 971.63pt>
 File: classArmour-eps-converted-to.pdf Graphic file (type pdf)
 <use classArmour-eps-converted-to.pdf>
 Package pdftex.def Info: classArmour-eps-converted-to.pdf  used on input line 15.
-(pdftex.def)             Requested size: 65.95105pt x 85.35826pt.
-LaTeX Font Info:    Font shape `TS1/pcr/m/it' in size <9> not available
-(Font)              Font shape `TS1/pcr/m/sl' tried instead on input line 25.
+(pdftex.def)             Requested size: 44.08702pt x 85.35826pt.
+ [34]
+Underfull \hbox (badness 10000) detected at line 84
+[][][]
+ []
+
+[35]
+Underfull \hbox (badness 10000) detected at line 130
+[][][]
+ []
+
+[36]
+Underfull \hbox (badness 10000) detected at line 178
+[][][]
+ []
+
+) (classCloudy.tex
+Package epstopdf Info: Source file: <classCloudy.eps>
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 3768 bytes
+(epstopdf)             Output file: <classCloudy-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:45
+(epstopdf)                    size: 5254 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classCloudy-eps-converted-to.pdf classCloudy.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
 
 
-classArmour.tex:34: LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.34 v
-      oid \mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{ta...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 34
-[][]
+pdfTeX warning: pdflatex (file ./classCloudy-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classCloudy-eps-converted-to.pdf>
+<classCloudy-eps-converted-to.pdf, id=3319, 501.875pt x 600.2425pt>
+File: classCloudy-eps-converted-to.pdf Graphic file (type pdf)
+<use classCloudy-eps-converted-to.pdf>
+Package pdftex.def Info: classCloudy-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
+ [37]
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
  []
 
 
-classArmour.tex:36: LaTeX Error: Lonely \item--perhaps a missing list environment.
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.36 v
-      oid \mbox{\hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{de...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+[38]
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
 
-
-Underfull \hbox (badness 10000) detected at line 36
-[][]
+) (classCountry.tex [39]
+Underfull \hbox (badness 10000) detected at line 68
+[][][]
  []
 
 
-classArmour.tex:38: LaTeX Error: Lonely \item--perhaps a missing list environment.
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.38 \mbox
-          {\hyperlink{classAddOn}{Add\+On}} $\ast$ \mbox{\hyperlink{classArm...
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 38
-[][]
  []
 
-classArmour.tex:39: Undefined control sequence.
-\enit@enditemize ->\enit@after 
-                               \endlist \ifx \enit@series \relax \else \ifnu...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
 
-classArmour.tex:39: Undefined control sequence.
-\enit@enditemize ...x \else \ifnum \enit@resuming 
-                                                  =\@ne \enit@setresumekeys ...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
 
-classArmour.tex:39: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
+[40]
+Underfull \hbox (badness 10000) detected at line 127
+[][][]
+ []
 
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classArmour.tex:39: Undefined control sequence.
-<argument> enit@resume@series@\enit@series 
-                                           
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-I'm forgetting what you said and using zero instead.
-
-classArmour.tex:39: Undefined control sequence.
-\enit@enditemize ...ist \fi \ifnum \enit@resuming 
-                                                  =\thr@@ \enit@setresumekey...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...xpandafter {\enit@savekeys 
-                                                  }\xdef \enit@afterlist {#2...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...it@toks }\ifnum \enit@type 
-                                                  =\z@ #3\def \enit@noexcs {...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Missing number, treated as zero.
-<to be read again> 
-                   =
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...me@#1}{\csname c@\@listctr 
-                                                  \endcsname \the \csname c@...
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: Undefined control sequence.
-\enit@setresumekeys ...e \the \csname c@\@listctr 
-                                                  \endcsname }\fi }
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-classArmour.tex:39: You can't use `\relax' after \the.
-<recently read> \c@ 
-                    
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-I'm forgetting what you said and using zero instead.
+[41]) (classDefensive.tex
+Package epstopdf Info: Source file: <classDefensive.eps>
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 3776 bytes
+(epstopdf)             Output file: <classDefensive-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:46
+(epstopdf)                    size: 5534 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classDefensive-eps-converted-to.pdf classDefensive.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
 
 
-classArmour.tex:39: LaTeX Error: \begin{DoxyCode} on input line 78 ended by \end{itemize}.
+pdfTeX warning: pdflatex (file ./classDefensive-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classDefensive-eps-converted-to.pdf>
+<classDefensive-eps-converted-to.pdf, id=3433, 501.875pt x 521.95pt>
+File: classDefensive-eps-converted-to.pdf Graphic file (type pdf)
+<use classDefensive-eps-converted-to.pdf>
+Package pdftex.def Info: classDefensive-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 54.71631pt x 56.9055pt.
+ [42]
+Underfull \hbox (badness 10000) detected at line 57
+[][][]
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+
+Underfull \hbox (badness 10000) detected at line 85
+[][][]
+ []
+
+[43]
+Underfull \hbox (badness 10000) detected at line 95
+[][][]
+ []
+
+) (classEasySetup.tex [44] [45] [46] [47] [48]) (classEntity.tex
+Package epstopdf Info: Source file: <classEntity.eps>
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 4249 bytes
+(epstopdf)             Output file: <classEntity-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:47
+(epstopdf)                    size: 6833 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classEntity-eps-converted-to.pdf classEntity.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
 
 
-classArmour.tex:39: LaTeX Error: \begin{document} ended by \end{DoxyCompactItemize}.
+pdfTeX warning: pdflatex (file ./classEntity-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classEntity-eps-converted-to.pdf>
+<classEntity-eps-converted-to.pdf, id=3614, 501.875pt x 156.585pt>
+File: classEntity-eps-converted-to.pdf Graphic file (type pdf)
+<use classEntity-eps-converted-to.pdf>
+Package pdftex.def Info: classEntity-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 273.5892pt x 85.35826pt.
+ [49] [50]
+Underfull \hbox (badness 10000) detected at line 122
+[][][]
+ []
 
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
+[51]
+Underfull \hbox (badness 10000) detected at line 154
+[][][]
+ []
 
-classArmour.tex:39: Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.39 ...d{DoxyCompactList}\end{DoxyCompactItemize}
-                                                  
-Things are pretty mixed up, but I think the worst is over.
 
-[20
-pdfTeX warning (ext4): destination with the same identifier (name{classArea_ad67916df281b6b172c4423627b65062a}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.58 \subsection
-                {Constructor \& Destructor Documentation}]
+Underfull \hbox (badness 10000) detected at line 176
+[][][]
+ []
 
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.6 on input line 80.
 
-classArmour.tex:89: Missing } inserted.
-<inserted text> 
-                }
-l.89 \end{DoxyCode}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+Underfull \hbox (badness 10000) detected at line 209
+[][][]
+ []
 
-[21
-pdfTeX warning (ext4): destination with the same identifier (name{classArmour_a5fe1e213870c5eab65baa54bb4a3ef02}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.105 \item R
-             eturns the clone of the current \hyperlink{classArmour}{Armour}]
+
+Underfull \hbox (badness 10000) detected at line 242
+[][][]
+ []
+
+[52]
+Underfull \hbox (badness 10000) detected at line 275
+[][][]
+ []
+
+[53]
+Underfull \hbox (badness 10000) detected at line 318
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 361
+[][][]
+ []
+
+[54]
+Underfull \hbox (badness 10000) detected at line 404
+[][][]
+ []
+
+[55]
+Underfull \hbox (badness 10000) detected at line 447
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 490
+[][][]
+ []
+
+[56]
+Underfull \hbox (badness 10000) detected at line 510
+[][][]
+ []
+
+) (classFactory.tex
+Package epstopdf Info: Source file: <classFactory.eps>
+(epstopdf)                    date: 2022-11-07 18:18:04
+(epstopdf)                    size: 4004 bytes
+(epstopdf)             Output file: <classFactory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:48
+(epstopdf)                    size: 6012 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classFactory-eps-converted-to.pdf classFactory.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classFactory-eps-converted-to.pdf>
+<classFactory-eps-converted-to.pdf, id=3767, 501.875pt x 111.41624pt>
+File: classFactory-eps-converted-to.pdf Graphic file (type pdf)
+<use classFactory-eps-converted-to.pdf>
+Package pdftex.def Info: classFactory-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 256.3281pt x 56.9055pt.
+ [57] [58]
+Underfull \hbox (badness 10000) detected at line 121
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 182
+[][][]
+ []
+
+[59]
+Underfull \hbox (badness 10000) detected at line 221
+[][][]
+ []
+
+[60]
+Underfull \hbox (badness 10000) detected at line 260
+[][][]
+ []
+
+) (classGeneral.tex [61]
+Underfull \hbox (badness 10000) detected at line 72
+[][][]
+ []
+
+[62]
+Underfull \hbox (badness 10000) detected at line 106
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 150
+[][][]
+ []
+
+) (classKeyPoint.tex [63]
+Package epstopdf Info: Source file: <classKeyPoint.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3766 bytes
+(epstopdf)             Output file: <classKeyPoint-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:50
+(epstopdf)                    size: 5142 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classKeyPoint-eps-converted-to.pdf classKeyPoint.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classKeyPoint-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classKeyPoint-eps-converted-to.pdf>
+<classKeyPoint-eps-converted-to.pdf, id=3926, 501.875pt x 574.145pt>
+File: classKeyPoint-eps-converted-to.pdf Graphic file (type pdf)
+<use classKeyPoint-eps-converted-to.pdf>
+Package pdftex.def Info: classKeyPoint-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 49.73862pt x 56.9055pt.
+ [64] [65]
+Underfull \hbox (badness 10000) detected at line 156
+[][][]
+ []
+
+[66]
+Underfull \hbox (badness 10000) detected at line 245
+[][][]
+ []
+
+[67]
+Underfull \hbox (badness 10000) detected at line 309
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 337
+[][][]
+ []
+
+[68]
+Underfull \hbox (badness 10000) detected at line 366
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 412
+[][][]
+ []
+
+[69]
+Underfull \hbox (badness 10000) detected at line 459
+[][][]
+ []
+
+[70]
+Underfull \hbox (badness 10000) detected at line 531
+[][][]
+ []
+
+[71]
+Underfull \hbox (badness 10000) detected at line 571
+[][][]
+ []
+
+) (classNegotiator.tex [72]
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+[73]
+Underfull \hbox (badness 10000) detected at line 123
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 157
+[][][]
+ []
+
+[74]
+Underfull \hbox (badness 10000) detected at line 202
+[][][]
+ []
+
+) (classPassive.tex
+Package epstopdf Info: Source file: <classPassive.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3772 bytes
+(epstopdf)             Output file: <classPassive-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:51
+(epstopdf)                    size: 5313 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classPassive-eps-converted-to.pdf classPassive.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classPassive-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classPassive-eps-converted-to.pdf>
+<classPassive-eps-converted-to.pdf, id=4156, 501.875pt x 600.2425pt>
+File: classPassive-eps-converted-to.pdf Graphic file (type pdf)
+<use classPassive-eps-converted-to.pdf>
+Package pdftex.def Info: classPassive-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
+ [75]
+Underfull \hbox (badness 10000) detected at line 55
+[][][]
+ []
+
+[76]
+Underfull \hbox (badness 10000) detected at line 88
+[][][]
+ []
+
+) (classPersonnel.tex
+Package epstopdf Info: Source file: <classPersonnel.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3772 bytes
+(epstopdf)             Output file: <classPersonnel-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:52
+(epstopdf)                    size: 5076 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classPersonnel-eps-converted-to.pdf classPersonnel.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classPersonnel-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classPersonnel-eps-converted-to.pdf>
+<classPersonnel-eps-converted-to.pdf, id=4214, 501.875pt x 521.95pt>
+File: classPersonnel-eps-converted-to.pdf Graphic file (type pdf)
+<use classPersonnel-eps-converted-to.pdf>
+Package pdftex.def Info: classPersonnel-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 54.71631pt x 56.9055pt.
+ [77]
+Underfull \hbox (badness 10000) detected at line 87
+[][][]
+ []
+
+[78]
+Underfull \hbox (badness 10000) detected at line 139
+[][][]
+ []
+
+[79]
+Underfull \hbox (badness 10000) detected at line 188
+[][][]
+ []
+
+) (classPersonnelFactory.tex
+Package epstopdf Info: Source file: <classPersonnelFactory.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3788 bytes
+(epstopdf)             Output file: <classPersonnelFactory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:53
+(epstopdf)                    size: 5204 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classPersonnelFactory-eps-converted-to.pdf classPersonnelFactory.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classPersonnelFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classPersonnelFactory-eps-converted-to.pdf>
+<classPersonnelFactory-eps-converted-to.pdf, id=4295, 501.875pt x 332.24126pt>
+File: classPersonnelFactory-eps-converted-to.pdf Graphic file (type pdf)
+<use classPersonnelFactory-eps-converted-to.pdf>
+Package pdftex.def Info: classPersonnelFactory-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 85.95323pt x 56.9055pt.
+ [80]
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+[81]
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+) (classPiercing.tex
+Package epstopdf Info: Source file: <classPiercing.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3871 bytes
+(epstopdf)             Output file: <classPiercing-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:55
+(epstopdf)                    size: 5551 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classPiercing-eps-converted-to.pdf classPiercing.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classPiercing-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classPiercing-eps-converted-to.pdf>
+<classPiercing-eps-converted-to.pdf, id=4367, 501.875pt x 899.36pt>
+File: classPiercing-eps-converted-to.pdf Graphic file (type pdf)
+<use classPiercing-eps-converted-to.pdf>
+Package pdftex.def Info: classPiercing-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 47.63266pt x 85.35826pt.
+ [82] [83]
+Underfull \hbox (badness 10000) detected at line 84
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 130
+[][][]
+ []
+
+[84]
+Underfull \hbox (badness 10000) detected at line 180
+[][][]
+ []
+
+) (classRainy.tex
+Package epstopdf Info: Source file: <classRainy.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3766 bytes
+(epstopdf)             Output file: <classRainy-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:56
+(epstopdf)                    size: 5054 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classRainy-eps-converted-to.pdf classRainy.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classRainy-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classRainy-eps-converted-to.pdf>
+<classRainy-eps-converted-to.pdf, id=4439, 501.875pt x 600.2425pt>
+File: classRainy-eps-converted-to.pdf Graphic file (type pdf)
+<use classRainy-eps-converted-to.pdf>
+Package pdftex.def Info: classRainy-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
+ [85]
+Underfull \hbox (badness 10000) detected at line 65
+[][][]
+ []
+
+[86]
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+[87]) (classRoundStats.tex [88] [89]) (classSaveArchive.tex [90] [91]
+Underfull \hbox (badness 10000) detected at line 84
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 114
+[][][]
+ []
+
+[92]
+Underfull \hbox (badness 10000) detected at line 153
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 196
+[][][]
+ []
+
+[93]
+Underfull \hbox (badness 10000) detected at line 251
+[][][]
+ []
+
+) (classStrategy.tex
+Package epstopdf Info: Source file: <classStrategy.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3970 bytes
+(epstopdf)             Output file: <classStrategy-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:57
+(epstopdf)                    size: 5869 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classStrategy-eps-converted-to.pdf classStrategy.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classStrategy-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classStrategy-eps-converted-to.pdf>
+<classStrategy-eps-converted-to.pdf, id=4625, 501.875pt x 159.59625pt>
+File: classStrategy-eps-converted-to.pdf Graphic file (type pdf)
+<use classStrategy-eps-converted-to.pdf>
+Package pdftex.def Info: classStrategy-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 178.94415pt x 56.9055pt.
+ [94] [95]
+Underfull \hbox (badness 10000) detected at line 91
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 113
+[][][]
+ []
+
+[96]) (classSunny.tex
+Package epstopdf Info: Source file: <classSunny.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3766 bytes
+(epstopdf)             Output file: <classSunny-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:58
+(epstopdf)                    size: 5099 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classSunny-eps-converted-to.pdf classSunny.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classSunny-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classSunny-eps-converted-to.pdf>
+<classSunny-eps-converted-to.pdf, id=4689, 501.875pt x 600.2425pt>
+File: classSunny-eps-converted-to.pdf Graphic file (type pdf)
+<use classSunny-eps-converted-to.pdf>
+Package pdftex.def Info: classSunny-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 47.57906pt x 56.9055pt.
+ [97]
+Underfull \hbox (badness 10000) detected at line 70
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 103
+[][][]
+ []
+
+[98]
+Underfull \hbox (badness 10000) detected at line 146
+[][][]
+ []
+
+) (classSupport.tex
+Package epstopdf Info: Source file: <classSupport.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3768 bytes
+(epstopdf)             Output file: <classSupport-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:18:59
+(epstopdf)                    size: 5038 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classSupport-eps-converted-to.pdf classSupport.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classSupport-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classSupport-eps-converted-to.pdf>
+<classSupport-eps-converted-to.pdf, id=4746, 501.875pt x 627.34375pt>
+File: classSupport-eps-converted-to.pdf Graphic file (type pdf)
+<use classSupport-eps-converted-to.pdf>
+Package pdftex.def Info: classSupport-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 45.51906pt x 56.9055pt.
+ [99] [100]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 134
+[][][]
+ []
+
+[101]
+Underfull \hbox (badness 10000) detected at line 183
+[][][]
+ []
+
+) (classSupportFactory.tex
+Package epstopdf Info: Source file: <classSupportFactory.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3784 bytes
+(epstopdf)             Output file: <classSupportFactory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:00
+(epstopdf)                    size: 5066 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classSupportFactory-eps-converted-to.pdf classSupportFactory.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classSupportFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classSupportFactory-eps-converted-to.pdf>
+<classSupportFactory-eps-converted-to.pdf, id=4822, 501.875pt x 372.39125pt>
+File: classSupportFactory-eps-converted-to.pdf Graphic file (type pdf)
+<use classSupportFactory-eps-converted-to.pdf>
+Package pdftex.def Info: classSupportFactory-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 76.68706pt x 56.9055pt.
+ [102] [103]
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+[104]
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+) (classTerrainType.tex
+Package epstopdf Info: Source file: <classTerrainType.eps>
+(epstopdf)                    date: 2022-11-07 18:18:05
+(epstopdf)                    size: 3772 bytes
+(epstopdf)             Output file: <classTerrainType-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:02
+(epstopdf)                    size: 4760 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classTerrainType-eps-converted-to.pdf classTerrainType.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classTerrainType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classTerrainType-eps-converted-to.pdf>
+<classTerrainType-eps-converted-to.pdf, id=4892, 501.875pt x 451.6875pt>
+File: classTerrainType-eps-converted-to.pdf Graphic file (type pdf)
+<use classTerrainType-eps-converted-to.pdf>
+Package pdftex.def Info: classTerrainType-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 63.22432pt x 56.9055pt.
+ [105]
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 109
+[][][]
+ []
+
+) (classType.tex [106]
+Package epstopdf Info: Source file: <classType.eps>
+(epstopdf)                    date: 2022-11-07 18:18:06
+(epstopdf)                    size: 3974 bytes
+(epstopdf)             Output file: <classType-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:03
+(epstopdf)                    size: 5508 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classType-eps-converted-to.pdf classType.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classType-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classType-eps-converted-to.pdf>
+<classType-eps-converted-to.pdf, id=4937, 501.875pt x 149.55875pt>
+File: classType-eps-converted-to.pdf Graphic file (type pdf)
+<use classType-eps-converted-to.pdf>
+Package pdftex.def Info: classType-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 190.95953pt x 56.9055pt.
+ [107]
+Underfull \hbox (badness 10000) detected at line 76
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 98
+[][][]
+ []
+
+) (classVehicle.tex [108]
+Package epstopdf Info: Source file: <classVehicle.eps>
+(epstopdf)                    date: 2022-11-07 18:18:06
+(epstopdf)                    size: 3768 bytes
+(epstopdf)             Output file: <classVehicle-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:04
+(epstopdf)                    size: 4906 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classVehicle-eps-converted-to.pdf classVehicle.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classVehicle-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classVehicle-eps-converted-to.pdf>
+<classVehicle-eps-converted-to.pdf, id=4979, 501.875pt x 637.38126pt>
+File: classVehicle-eps-converted-to.pdf Graphic file (type pdf)
+<use classVehicle-eps-converted-to.pdf>
+Package pdftex.def Info: classVehicle-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 44.80687pt x 56.9055pt.
+ [109]
+Underfull \hbox (badness 10000) detected at line 82
+[][][]
+ []
+
+[110]
+Underfull \hbox (badness 10000) detected at line 134
+[][][]
+ []
+
+[111]
+Underfull \hbox (badness 10000) detected at line 183
+[][][]
+ []
+
+) (classVehicleFactory.tex
+Package epstopdf Info: Source file: <classVehicleFactory.eps>
+(epstopdf)                    date: 2022-11-07 18:18:06
+(epstopdf)                    size: 3784 bytes
+(epstopdf)             Output file: <classVehicleFactory-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:05
+(epstopdf)                    size: 5127 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classVehicleFactory-eps-converted-to.pdf classVehicleFactory.eps>
+(epstopdf)             \includegraphics on input line 15.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classVehicleFactory-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classVehicleFactory-eps-converted-to.pdf>
+<classVehicleFactory-eps-converted-to.pdf, id=5052, 501.875pt x 375.4025pt>
+File: classVehicleFactory-eps-converted-to.pdf Graphic file (type pdf)
+<use classVehicleFactory-eps-converted-to.pdf>
+Package pdftex.def Info: classVehicleFactory-eps-converted-to.pdf  used on input line 15.
+(pdftex.def)             Requested size: 76.07442pt x 56.9055pt.
+ [112] [113]
+Underfull \hbox (badness 10000) detected at line 83
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 126
+[][][]
+ []
+
+) (classWarEngine.tex [114] [115] [116]
+Underfull \hbox (badness 10000) detected at line 145
+[][][]
+ []
+
+[117]
+Underfull \hbox (badness 10000) detected at line 185
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 229
+[][][]
+ []
+
+[118]
+Underfull \hbox (badness 10000) detected at line 268
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 297
+[][][]
+ []
+
+[119]) (classWarEngineMemento.tex) (classWarEngineState.tex [120] [121]
+Underfull \hbox (badness 10000) detected at line 106
+[][][]
+ []
+
+[122]
+Underfull \hbox (badness 10000) detected at line 143
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 181
+[][][]
+ []
+
+[123]
+Underfull \hbox (badness 10000) detected at line 224
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 263
+[][][]
+ []
+
+[124]) (classWarTheatre.tex
+Package epstopdf Info: Source file: <classWarTheatre.eps>
+(epstopdf)                    date: 2022-11-07 18:18:06
+(epstopdf)                    size: 3770 bytes
+(epstopdf)             Output file: <classWarTheatre-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:07
+(epstopdf)                    size: 4774 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classWarTheatre-eps-converted-to.pdf classWarTheatre.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classWarTheatre-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classWarTheatre-eps-converted-to.pdf>
+<classWarTheatre-eps-converted-to.pdf, id=5340, 501.875pt x 467.7475pt>
+File: classWarTheatre-eps-converted-to.pdf Graphic file (type pdf)
+<use classWarTheatre-eps-converted-to.pdf>
+Package pdftex.def Info: classWarTheatre-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 61.05711pt x 56.9055pt.
+ [125] [126]
 Underfull \hbox (badness 10000) detected at line 108
 [][][]
  []
 
-classArmour.tex:126: Missing } inserted.
-<inserted text> 
-                }
-l.126 \end{DoxyCode}
-                    
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-pdfTeX warning (ext4): destination with the same identifier (name{classArmour_ab200b02561ecc30c20397913a2bc9511}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.144 ...rmour_ab200b02561ecc30c20397913a2bc9511}}
-                                                  
-Underfull \hbox (badness 10000) detected at line 159
-[][][]
- []
-
-[22
-pdfTeX warning (ext4): destination with the same identifier (name{classArmour_acce6c768aaebaa559ac063e9d67c53b5}) has been already used, duplicate ignored
-<argument> ...shipout:D \box_use:N \l_shipout_box 
-                                                  \__shipout_drop_firstpage_...
-l.198 \item D
-             oes nothing]
-
-Package longtable Warning: Column widths have changed
-(longtable)                in table 4.7 on input line 205.
-
-
-Underfull \hbox (badness 10000) detected at line 206
+[127]
+Underfull \hbox (badness 10000) detected at line 178
 [][][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 255--256
-[]\T1/pcr/bc/n/7 Decreasestheentities\TS1/pcr/m/n/7 '\T1/pcr/bc/n/7 armourvalue(orhealthwhentheirarmourhasdiminished)bythepassedin
+Underfull \hbox (badness 10000) detected at line 216
+[][][]
  []
 
-classArmour.tex:262: Misplaced \omit.
-\multispan ->\omit 
-                   \@multispan 
-l.262 \end{DoxyParams}
-                      
-I expect to see \omit only after tab marks or the \cr of
-an alignment. Proceed, and I'll ignore this case.
-
-classArmour.tex:262: Missing number, treated as zero.
-<to be read again> 
-                   \discretionary 
-l.262 \end{DoxyParams}
-                      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classArmour.tex:262: Missing number, treated as zero.
-<to be read again> 
-                   \discretionary 
-l.262 \end{DoxyParams}
-                      
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-classArmour.tex:262: Illegal unit of measure (pt inserted).
-<to be read again> 
-                   \discretionary 
-l.262 \end{DoxyParams}
-                      
-Dimensions can be in units of em, ex, in, pt, pc,
-cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
-I'll assume that you meant to say pt, for printer's points.
-To recover gracefully from this error, it's best to
-delete the erroneous units; e.g., type `2' to delete
-two letters. (See Chapter 27 of The TeXbook.)
-
-
-classArmour.tex:262: Package calc Error: `\discretionary ' invalid at this point.
-
-See the calc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.262 \end{DoxyParams}
-                      
-
-I expected to see one of: + - * / )
-
-classArmour.tex:262: Missing \endcsname inserted.
-<to be read again> 
-                   \discretionary 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Missing \endcsname inserted.
-<to be read again> 
-                   \series@b@ 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Missing \endcsname inserted.
-<to be read again> 
-                   \discretionary 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Missing \endcsname inserted.
-<to be read again> 
-                   \series@b@ 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Missing \endcsname inserted.
-<to be read again> 
-                   \discretionary 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Extra \endcsname.
-<argument> ...\kern \fontdimen 2\font }\endcsname 
-                                                  {\discretionary {}{\kern \...
-l.262 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-classArmour.tex:262: Argument of \series@drop@one@m has an extra }.
-<inserted text> 
-                \par 
-l.262 \end{DoxyParams}
-                      
-I've run across a `}' that doesn't seem to match anything.
-For example, `\def\a#1{...}' and `\a}' would produce
-this error. If you simply proceed now, the `\par' that
-I've just inserted will cause me to report a runaway
-argument that might be the root of the problem. But if
-your `}' was spurious, just type `2' and it will go away.
-
-Runaway argument?
-\series@drop@one@m 
-classArmour.tex:262: Paragraph ended before \series@drop@one@m was complete.
-<to be read again> 
-                   \par 
-l.262 \end{DoxyParams}
-                      
-I suspect you've forgotten a `}', causing me to apply this
-control sequence to too much text. How can we recover?
-My plan is to forget the whole thing and hope for the best.
-
-classArmour.tex:262: Missing \endcsname inserted.
-<to be read again> 
-                   \scan_stop: 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Extra \endcsname.
-\font@name ..._unskip:D \tex_par:D /n/7\endcsname 
-                                                  
-l.262 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-classArmour.tex:262: Missing endcsname inserted.
-<to be read again> 
-                   scan_stop: 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Extra endcsname.
-define@newfont ...csname curr@fontshape endcsname 
-                                                  relax wrong@fontshape else...
-l.262 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-classArmour.tex:262: Missing endcsname inserted.
-<to be read again> 
-                   scan_stop: 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Missing endcsname inserted.
-<to be read again> 
-                   scan_stop: 
-l.262 \end{DoxyParams}
-                      
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-classArmour.tex:262: Extra endcsname.
-wrong@fontshape ...sname curr@fontshape endcsname 
-                                                  relax let f@series default...
-l.262 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-classArmour.tex:262: Extra endcsname.
-reserved@a ... tex_unskip:D tex_par:D /nendcsname 
-                                                  
-l.262 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-classArmour.tex:262: Extra \endcsname.
-\font@name ->\T1/pcr/m/n/7 \endcsname 
-                                      
-l.262 \end{DoxyParams}
-                      
-I'm ignoring this, since I wasn't doing a \csname.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-l.1 ...c}\selectfont \color {darkgray} Parameters}
-                                                  \\[1ex]\hline \endfirsthea...
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-I've put in what seems to be necessary to fix
-the current column of the current alignment.
-Try to go on, since this might almost work.
-
-classArmour.tex:262: Extra }, or forgotten \endgroup.
-<inserted text> }
-                 
-l.262 \end{DoxyParams}
-                      
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-classArmour.tex:262: Missing } inserted.
-<inserted text> 
-                }
-l.262 \end{DoxyParams}
-                      
-(That makes 100 errors; please try again.) 
+[128]
+Underfull \hbox (badness 10000) detected at line 259
+[][][]
+ []
+
+) (classWeather.tex
+Package epstopdf Info: Source file: <classWeather.eps>
+(epstopdf)                    date: 2022-11-07 18:18:06
+(epstopdf)                    size: 3948 bytes
+(epstopdf)             Output file: <classWeather-eps-converted-to.pdf>
+(epstopdf)                    date: 2022-11-07 18:19:08
+(epstopdf)                    size: 5836 bytes
+(epstopdf)             Command: <miktex-epstopdf --outfile=classWeather-eps-converted-to.pdf classWeather.eps>
+(epstopdf)             \includegraphics on input line 6.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: pdflatex (file ./classWeather-eps-converted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
+ <./classWeather-eps-converted-to.pdf>
+<classWeather-eps-converted-to.pdf, id=5421, 501.875pt x 200.75pt>
+File: classWeather-eps-converted-to.pdf Graphic file (type pdf)
+<use classWeather-eps-converted-to.pdf>
+Package pdftex.def Info: classWeather-eps-converted-to.pdf  used on input line 6.
+(pdftex.def)             Requested size: 142.26239pt x 56.9055pt.
+ [129]
+Underfull \hbox (badness 10000) detected at line 90
+[][][]
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 112
+[][][]
+ []
+
+[130]
+Underfull \hbox (badness 10000) detected at line 141
+[][][]
+ []
+
+[131]
+Underfull \hbox (badness 10000) detected at line 173
+[][][]
+ []
+
+) [132]
+Chapter 5.
+(AddOn_8cpp_source.tex) (AddOn_8h_source.tex [133
+
+]) (AddOnTest_8h_source.tex [134] [135] [136]) (AerialType_8cpp_source.tex) (AerialType_8h_source.tex) (Aggressive_8cpp_source.tex) (Aggressive_8h_source.tex [137]) (Alliance_8cpp_source.tex [138]) (Alliance_8h_source.tex [139]) (AquaticType_8cpp_source.tex) (AquaticType_8h_source.tex) (Area_8cpp_source.tex [140]) (Area_8h_source.tex) (Armour_8cpp_source.tex) (Armour_8h_source.tex [141]) (Cloudy_8cpp_source.tex) (Cloudy_8h_source.tex) (Country_8cpp_source.tex [142]) (Country_8h_source.tex) (Defensive_8cpp_source.tex) (Defensive_8h_source.tex [143]) (EasySetup_8cpp_source.tex [144] [145] [146]) (EasySetup_8h_source.tex [147]) (Entity_8cpp_source.tex) (Entity_8h_source.tex [148]) (Factory_8cpp_source.tex) (Factory_8h_source.tex [149]) (General_8cpp_source.tex) (General_8h_source.tex) (KeyPoint_8cpp_source.tex [150] [151] [152]) (KeyPoint_8h_source.tex) (Negotiator_8cpp_source.tex [153]) (Negotiator_8h_source.tex) (NegotiatorTest_8h_source.tex [154]) (Passive_8cpp_source.tex) (Passive_8h_source.tex) (Personnel_8cpp_source.tex [155]) (Personnel_8h_source.tex) (PersonnelFactory_8cpp_source.tex) (PersonnelFactory_8h_source.tex [156]) (Piercing_8cpp_source.tex) (Piercing_8h_source.tex) (Rainy_8cpp_source.tex [157]) (Rainy_8h_source.tex) (RoundStats_8cpp_source.tex) (RoundStats_8h_source.tex [158]) (SaveArchive_8cpp_source.tex) (SaveArchive_8h_source.tex [159]) (Strategy_8cpp_source.tex) (Strategy_8h_source.tex) (Sunny_8cpp_source.tex [160]) (Sunny_8h_source.tex) (Support_8cpp_source.tex) (Support_8h_source.tex [161]) (SupportFactory_8cpp_source.tex) (SupportFactory_8h_source.tex) (TerrainType_8cpp_source.tex) (TerrainType_8h_source.tex [162]) (testmain_8cpp_source.tex) (Type_8cpp_source.tex [163]) (Type_8h_source.tex) (Vehicle_8cpp_source.tex) (Vehicle_8h_source.tex [164]) (VehicleFactory_8cpp_source.tex) (VehicleFactory_8h_source.tex) (WarEngine_8cpp_source.tex [165]) (WarEngine_8h_source.tex [166]) (WarEngineMemento_8cpp_source.tex) (WarEngineMemento_8h_source.tex) (WarEngineState_8cpp_source.tex [167]) (WarEngineState_8h_source.tex [168]) (WarTheatre_8cpp_source.tex) (WarTheatre_8h_source.tex) (Weather_8cpp_source.tex [169]) (Weather_8h_source.tex) [170] (refman.ind [171
+
+
+
+] [172] [173] [174] [175]) (refman.aux)
+
+LaTeX Warning: There were undefined references.
+
+Package rerunfilecheck Info: File `refman.out' has not changed.
+(rerunfilecheck)             Checksum: E59CF452CCB909CB29DBBCB7918B45CD;87709.
+ ) 
 Here is how much of TeX's memory you used:
- 18458 strings out of 475380
- 299887 string characters out of 2786590
- 661597 words of memory out of 3000000
- 39182 multiletter control sequences out of 15000+600000
- 535339 words of font info for 110 fonts, out of 8000000 for 9000
+ 23913 strings out of 475380
+ 450541 string characters out of 2786590
+ 767676 words of memory out of 3000000
+ 40877 multiletter control sequences out of 15000+600000
+ 529476 words of font info for 101 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,16n,117p,483b,833s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 99i,16n,117p,661b,850s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{D:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc}<D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb><D:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrro8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvb8ac.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><D:/Program Files/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb>
+Output written on refman.pdf (189 pages, 2046492 bytes).
+PDF statistics:
+ 10798 PDF objects out of 12825 (max. 8388607)
+ 3843 named destinations out of 4296 (max. 500000)
+ 3707 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-classArmour.tex:262:  ==> Fatal error occurred, no output PDF file produced!

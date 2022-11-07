@@ -3,29 +3,33 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Vehicle.h"{}}}
 \DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}RoundStats.h"{}}}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00003}00003 }
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00004}\mbox{\hyperlink{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}{00004}} \mbox{\hyperlink{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}{Vehicle::Vehicle}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health, \textcolor{keywordtype}{int} damage): \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00005}00005 }
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00006}\mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{00006}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{Vehicle::takeDamage}}(\textcolor{keywordtype}{int} damage) \{}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00007}00007     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00008}00008 \}}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00010}\mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{00010}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{Vehicle::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00011}00011     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00012}00012     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00013}00013 \}}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00014}00014 }
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00015}\mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{00015}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{Vehicle::clone}}() \{}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00016}00016     \mbox{\hyperlink{classVehicle}{Vehicle}}* v;}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00017}00017     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00018}00018         v = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00019}00019     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00020}00020         v = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00021}00021     \}}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00022}00022 }
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00023}00023     v-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00024}00024 }
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00025}00025     \textcolor{keywordflow}{return} v;}
-\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00026}00026 \}}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00004}00004 }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00005}\mbox{\hyperlink{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}{00005}} \mbox{\hyperlink{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}{Vehicle::Vehicle}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health, \textcolor{keywordtype}{int} damage): \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00006}00006 }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00007}\mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{Vehicle::takeDamage}}(\textcolor{keywordtype}{int} damage) \{}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00008}00008     \textcolor{keywordflow}{if} (damage <= 0)}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00009}00009         \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}damage must be greater than zero"{}});}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00010}00010         }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00011}00011     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00012}00012 \}}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00014}\mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{00014}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{Vehicle::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00015}00015     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00016}00016     entity-\/>\mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{takeDamage}}(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00017}00017 \}}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00019}\mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{00019}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{Vehicle::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00020}00020     \mbox{\hyperlink{classVehicle}{Vehicle}}* v;}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00021}00021     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00022}00022         v = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00023}00023     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00024}00024         v = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00025}00025     \}}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00027}00027     v-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00029}00029     \textcolor{keywordflow}{return} v;}
+\DoxyCodeLine{\Hypertarget{Vehicle_8cpp_source_l00030}00030 \}}
 
 \end{DoxyCode}

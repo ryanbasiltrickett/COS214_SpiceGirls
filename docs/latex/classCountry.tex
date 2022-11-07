@@ -7,6 +7,10 @@
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCountry}{Country}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classCountry}{Country}} $\ast$ \mbox{\hyperlink{classCountry_a82562b18230bbeceb22b13c0ab046a1c}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classCountry}{Country}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{set\+Name}} (std\+::string name)
+\begin{DoxyCompactList}\small\item\em Set the name of the country. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{set\+ID}} (int id)
+\begin{DoxyCompactList}\small\item\em Set the if of the country. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classCountry_af86e64cecec9c266dbf284329ab072f3}{get\+Name}} () const
 \begin{DoxyCompactList}\small\item\em Get the name of the country. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classCountry_abb770576662c91a71c01cf078b98c0af}{get\+ID}} () const
@@ -31,11 +35,6 @@ Definition at line \mbox{\hyperlink{Country_8h_source_l00005}{5}} of file \mbox{
 
 Instantiates the \mbox{\hyperlink{classCountry}{Country}}. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em name} & must be a string \\
-\hline
-\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{Country_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
@@ -71,51 +70,14 @@ Country$\ast$ The country clone
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Country_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 8 of file Country.\+cpp.
 
 
-\begin{DoxyCode}
-8                        \{
-9     
-10     \hyperlink{classCountry}{Country}* countryClone = \textcolor{keyword}{new} \hyperlink{classCountry_a4cba457856775a13a17dfcb11a77e224}{Country}();
-11     countryClone->\hyperlink{classCountry_a35ecd0419e6a6eaf358889527c280d82}{setID}(this->\textcolor{keywordtype}{id});
-12     countryClone->\hyperlink{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}{setName}(this->name);
-13 
-14     \textcolor{keywordflow}{return} countryClone;
-15 \}
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00011                        \{}
 \DoxyCodeLine{00012     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classCountry}{Country}}(this-\/>name);}
 \DoxyCodeLine{00013 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classCountry_abb770576662c91a71c01cf078b98c0af}\label{classCountry_abb770576662c91a71c01cf078b98c0af}} 
 \index{Country@{Country}!getID@{getID}}
@@ -138,46 +100,14 @@ int
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Country_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 29 of file Country.\+cpp.
 
 
-\begin{DoxyCode}
-29                         \{
-30     \textcolor{keywordflow}{return} this->id;
-31 \}
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00019                         \{}
 \DoxyCodeLine{00020     \textcolor{keywordflow}{return} this-\/>id;}
 \DoxyCodeLine{00021 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classCountry_af86e64cecec9c266dbf284329ab072f3}\label{classCountry_af86e64cecec9c266dbf284329ab072f3}} 
 \index{Country@{Country}!getName@{getName}}
@@ -199,45 +129,14 @@ string
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Country_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 25 of file Country.\+cpp.
 
 
-\begin{DoxyCode}
-25                              \{
-26     \textcolor{keywordflow}{return} this->name;
-27 \}
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00025                              \{}
-\DoxyCodeLine{00026     \textcolor{keywordflow}{return} this-\/>name;}
-\DoxyCodeLine{00027 \}}
+\DoxyCodeLine{00015                              \{}
+\DoxyCodeLine{00016     \textcolor{keywordflow}{return} this-\/>name;}
+\DoxyCodeLine{00017 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classCountry_a35ecd0419e6a6eaf358889527c280d82}\label{classCountry_a35ecd0419e6a6eaf358889527c280d82}} 
 \index{Country@{Country}!setID@{setID}}
@@ -262,46 +161,7 @@ Preconditions\+:
 \hline
 \end{DoxyParams}
 
-\end{DoxyItemize}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 17 of file Country.\+cpp.
-
-
-\begin{DoxyCode}
-17                          \{
-18     this->\textcolor{keywordtype}{id} = id;
-19 \}
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00017                          \{}
-\DoxyCodeLine{00018     this-\/>\textcolor{keywordtype}{id} = id;}
-\DoxyCodeLine{00019 \}}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-\end{DoxyCode}
-\mbox{\Hypertarget{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}\label{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}} 
+\end{DoxyItemize}\mbox{\Hypertarget{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}\label{classCountry_ae4773ebfffe4f9d2d2db1b54181b67ab}} 
 \index{Country@{Country}!setName@{setName}}
 \index{setName@{setName}!Country@{Country}}
 \doxysubsubsection{\texorpdfstring{setName()}{setName()}}
@@ -325,46 +185,6 @@ Preconditions\+:
 \end{DoxyParams}
 
 \end{DoxyItemize}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 21 of file Country.\+cpp.
-
-
-\begin{DoxyCode}
-21                                 \{
-22     this->name = name;
-23 \}
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Country_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Country_8cpp_source}{Country.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00015                              \{}
-\DoxyCodeLine{00016     \textcolor{keywordflow}{return} this-\/>name;}
-\DoxyCodeLine{00017 \}}
-
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-\end{DoxyCode}
-
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 

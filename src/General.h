@@ -17,9 +17,9 @@ public:
 	 * @brief Construct a new General object
 	 * 
 	 * @param alliance must be an Alliance*
-	 * @param stratety must be a Strategy*
+	 * @param strategy must be a Strategy*
 	 */
-	General(Alliance* alliance, Strategy* stratety);
+	General(Alliance* alliance, Strategy* strategy);
 
 	/**
 	 * @brief The function intiates the strategy

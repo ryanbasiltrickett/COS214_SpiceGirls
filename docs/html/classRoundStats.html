@@ -92,6 +92,12 @@ Static Public Attributes</h2></td></tr>
 <tr class="separator:a0c8c578deb83f5e7295f8fb0cb68e6ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7e6760d84236ee68353b411b90cf0c"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoundStats.html#adb7e6760d84236ee68353b411b90cf0c">damageDone</a> = 0</td></tr>
 <tr class="separator:adb7e6760d84236ee68353b411b90cf0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c4f56230fd80d55495090107db7876a"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoundStats.html#a6c4f56230fd80d55495090107db7876a">numLosingPoints</a> = 0</td></tr>
+<tr class="separator:a6c4f56230fd80d55495090107db7876a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c4a90e031ec8315acb8bbd70508f997"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoundStats.html#a7c4a90e031ec8315acb8bbd70508f997">numContestedPoints</a> = 0</td></tr>
+<tr class="separator:a7c4a90e031ec8315acb8bbd70508f997"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac80fab0c61c77d5007a15cc07463e488"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoundStats.html#ac80fab0c61c77d5007a15cc07463e488">numWinningPoints</a> = 0</td></tr>
+<tr class="separator:ac80fab0c61c77d5007a15cc07463e488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad41e424868e647b7d696ce179e2b5034"><td class="memItemLeft" align="right" valign="top">static vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoundStats.html#ad41e424868e647b7d696ce179e2b5034">keyPointInformation</a></td></tr>
 <tr class="separator:ad41e424868e647b7d696ce179e2b5034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af096630414552d42fd1977824e749d6d"><td class="memItemLeft" align="right" valign="top">static vector&lt; string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRoundStats.html#af096630414552d42fd1977824e749d6d">entityMovementInformation</a></td></tr>
@@ -124,13 +130,17 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RoundStats_8cpp_source.html#l00009">9</a> of file <a class="el" href="RoundStats_8cpp_source.html">RoundStats.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    9</span>                            {</div>
-<div class="line"><span class="lineno">   10</span>    numEntitiesCreated = 0;</div>
-<div class="line"><span class="lineno">   11</span>    numEntitiesDestroyed = 0;</div>
-<div class="line"><span class="lineno">   12</span>    keyPointInformation.clear();</div>
-<div class="line"><span class="lineno">   13</span>    entityMovementInformation.clear();</div>
-<div class="line"><span class="lineno">   14</span>}</div>
+<p class="definition">Definition at line <a class="el" href="RoundStats_8cpp_source.html#l00012">12</a> of file <a class="el" href="RoundStats_8cpp_source.html">RoundStats.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   12</span>                            {</div>
+<div class="line"><span class="lineno">   13</span>    numEntitiesCreated = 0;</div>
+<div class="line"><span class="lineno">   14</span>    numEntitiesDestroyed = 0;</div>
+<div class="line"><span class="lineno">   15</span>    damageDone = 0;</div>
+<div class="line"><span class="lineno">   16</span>    numLosingPoints = 0;</div>
+<div class="line"><span class="lineno">   17</span>    numContestedPoints = 0;</div>
+<div class="line"><span class="lineno">   18</span>    numWinningPoints = 0;</div>
+<div class="line"><span class="lineno">   19</span>    keyPointInformation.clear();</div>
+<div class="line"><span class="lineno">   20</span>    entityMovementInformation.clear();</div>
+<div class="line"><span class="lineno">   21</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -157,22 +167,23 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RoundStats_8cpp_source.html#l00016">16</a> of file <a class="el" href="RoundStats_8cpp_source.html">RoundStats.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                            {</div>
-<div class="line"><span class="lineno">   17</span>    <span class="keywordtype">string</span> out = <span class="stringliteral">&quot;Number of Entities Created: &quot;</span> + to_string(numEntitiesCreated) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   18</span>    out += <span class="stringliteral">&quot;Number of Entities Destroyed by Alliance: &quot;</span> + to_string(numEntitiesDestroyed) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   19</span>    out += <span class="stringliteral">&quot;Damage Given by Alliance: &quot;</span> + to_string(damageDone) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>    out += <span class="stringliteral">&quot;\nKey Point Round Information:\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; keyPointInformation.size(); i++)</div>
-<div class="line"><span class="lineno">   23</span>        out += keyPointInformation[i] + <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   24</span> </div>
-<div class="line"><span class="lineno">   25</span>    out += <span class="stringliteral">&quot;\nMovement Round Information:\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; entityMovementInformation.size(); i++)</div>
-<div class="line"><span class="lineno">   27</span>        out += entityMovementInformation[i] + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<p class="definition">Definition at line <a class="el" href="RoundStats_8cpp_source.html#l00023">23</a> of file <a class="el" href="RoundStats_8cpp_source.html">RoundStats.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>                            {</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordtype">string</span> out = <span class="stringliteral">&quot;Number of Key Points Winning/Contested/Losing: &quot;</span> + to_string(numWinningPoints) + <span class="stringliteral">&quot;/&quot;</span> + to_string(numContestedPoints) + <span class="stringliteral">&quot;/&quot;</span> + to_string(numLosingPoints) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   25</span>    out += <span class="stringliteral">&quot;Number of Entities Created: &quot;</span> + to_string(numEntitiesCreated) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   26</span>    out += <span class="stringliteral">&quot;Number of Entities Destroyed by Alliance: &quot;</span> + to_string(numEntitiesDestroyed) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   27</span>    out += <span class="stringliteral">&quot;Damage Given by Alliance: &quot;</span> + to_string(damageDone) + <span class="stringliteral">&quot;\n&quot;</span>;</div>
 <div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> out;</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<div class="line"><span class="lineno">   29</span>    out += <span class="stringliteral">&quot;\nKey Point Round Information:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; keyPointInformation.size(); i++)</div>
+<div class="line"><span class="lineno">   31</span>        out += keyPointInformation[i] + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   32</span> </div>
+<div class="line"><span class="lineno">   33</span>    out += <span class="stringliteral">&quot;\nMovement Round Information:\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; entityMovementInformation.size(); i++)</div>
+<div class="line"><span class="lineno">   35</span>        out += entityMovementInformation[i] + <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> out;</div>
+<div class="line"><span class="lineno">   38</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -221,7 +232,7 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00015">15</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00018">18</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
 
 </div>
 </div>
@@ -245,7 +256,31 @@ Static Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00014">14</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00017">17</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
+
+</div>
+</div>
+<a id="a7c4a90e031ec8315acb8bbd70508f997" name="a7c4a90e031ec8315acb8bbd70508f997"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c4a90e031ec8315acb8bbd70508f997">&#9670;&#160;</a></span>numContestedPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RoundStats::numContestedPoints = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00015">15</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
 
 </div>
 </div>
@@ -294,6 +329,54 @@ Static Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00012">12</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
+
+</div>
+</div>
+<a id="a6c4f56230fd80d55495090107db7876a" name="a6c4f56230fd80d55495090107db7876a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c4f56230fd80d55495090107db7876a">&#9670;&#160;</a></span>numLosingPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RoundStats::numLosingPoints = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00014">14</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
+
+</div>
+</div>
+<a id="ac80fab0c61c77d5007a15cc07463e488" name="ac80fab0c61c77d5007a15cc07463e488"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac80fab0c61c77d5007a15cc07463e488">&#9670;&#160;</a></span>numWinningPoints</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int RoundStats::numWinningPoints = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="RoundStats_8h_source.html#l00016">16</a> of file <a class="el" href="RoundStats_8h_source.html">RoundStats.h</a>.</p>
 
 </div>
 </div>
