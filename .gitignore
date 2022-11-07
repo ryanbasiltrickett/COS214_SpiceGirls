@@ -30,6 +30,12 @@
 *.exe
 *.out
 *.app
+
+#Directories
+tests/
+builds/
+
+#Other Files
 .GroupProjectUML.vpp.lck
 sh.exe.stackdump
 GroupProjectUML.vpp-journal
