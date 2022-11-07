@@ -22,27 +22,16 @@ Inheritance diagram for Support\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Instantiates the support. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the support object. \end{DoxyCompactList}\item 
-<<<<<<< HEAD
-void \hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage} (Entity $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
-Entity $\ast$ \hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone} ()
-\begin{DoxyCompactList}\small\item\em Returns the clone of the \hyperlink{classSupport}{Support} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
-=======
 void \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
 \begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classSupport}{Support}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{classSupport}{Support}} class. 
 
-<<<<<<< HEAD
-Used to add addtional functionality to Entity objects. 
-=======
 Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 Definition at line \mbox{\hyperlink{Support_8h_source_l00011}{11}} of file \mbox{\hyperlink{Support_8h_source}{Support.\+h}}.
 
@@ -70,28 +59,11 @@ Instantiates the support.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
-<<<<<<< HEAD
-\begin{DoxyCode}
-3 : Entity(type, health, damage) \{\}
-\end{DoxyCode}
-
-
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}\label{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}} 
-\index{Support@{Support}!clone@{clone}}
-\index{clone@{clone}!Support@{Support}}
-\subsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily Entity $\ast$ Support\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns the clone of the \hyperlink{classSupport}{Support} object. 
-=======
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00004 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{00005 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
 
 \end{DoxyCode}
 
@@ -106,48 +78,32 @@ Returns the clone of the \hyperlink{classSupport}{Support} object.
 
 
 Returns the clone of the \mbox{\hyperlink{classSupport}{Support}} object. 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 \begin{DoxyReturn}{Returns}
 Entity$\ast$ The clone of the support object 
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
-Definition at line 13 of file Support.\+cpp.
-
-
-\begin{DoxyCode}
-13                        \{
-14     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classSupport_a8b4c631dcfd81be50ee86f3ed01d5c1e}{Support}(this->getType()->\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}(), this->getHealth(), this->getDamage());
-15 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classSupport_a5f2cb243e746adea36b3c78548029ce3}\label{classSupport_a5f2cb243e746adea36b3c78548029ce3}} 
-\index{Support@{Support}!deal\+Damage@{deal\+Damage}}
-\index{deal\+Damage@{deal\+Damage}!Support@{Support}}
-\subsubsection{\texorpdfstring{deal\+Damage()}{dealDamage()}}
-{\footnotesize\ttfamily void Support\+::deal\+Damage (\begin{DoxyParamCaption}\item[{Entity $\ast$}]{entity }\end{DoxyParamCaption})}
-=======
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_af6107392c2c813bedbc7994618b395db}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00015                        \{}
-\DoxyCodeLine{00016     \mbox{\hyperlink{classSupport}{Support}}* s;}
-\DoxyCodeLine{00017     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
-\DoxyCodeLine{00018         s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00019     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{00020         s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00021     \}}
-\DoxyCodeLine{00022 }
-\DoxyCodeLine{00023     s-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
-\DoxyCodeLine{00024 }
-\DoxyCodeLine{00025     \textcolor{keywordflow}{return} s;}
-\DoxyCodeLine{00026 \}}
+\DoxyCodeLine{00019                        \{}
+\DoxyCodeLine{00020     \mbox{\hyperlink{classSupport}{Support}}* s;}
+\DoxyCodeLine{00021     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{00022         s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00023     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00024         s = \textcolor{keyword}{new} \mbox{\hyperlink{classSupport}{Support}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00025     \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     s-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{keywordflow}{return} s;}
+\DoxyCodeLine{00030 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupport_a5f2cb243e746adea36b3c78548029ce3}\label{classSupport_a5f2cb243e746adea36b3c78548029ce3}} 
@@ -155,7 +111,6 @@ Definition at line \mbox{\hyperlink{Support_8cpp_source_l00015}{15}} of file \mb
 \index{dealDamage@{dealDamage}!Support@{Support}}
 \doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
 {\footnotesize\ttfamily void Support\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -181,33 +136,18 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
-Definition at line 5 of file Support.\+cpp.
-
-
-\begin{DoxyCode}
-5                                        \{
-6     entity->takeDamage(getDamage());
-7 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classSupport_afb159bd8c474ec67ad5d03fa24c38564}\label{classSupport_afb159bd8c474ec67ad5d03fa24c38564}} 
-\index{Support@{Support}!take\+Damage@{take\+Damage}}
-\index{take\+Damage@{take\+Damage}!Support@{Support}}
-\subsubsection{\texorpdfstring{take\+Damage()}{takeDamage()}}
-{\footnotesize\ttfamily void Support\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})}
-=======
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_aff881f545fc88b2c328ff559a99c7fba}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00006                                        \{}
-\DoxyCodeLine{00007     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
-\DoxyCodeLine{00008     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00009 \}}
+\DoxyCodeLine{00007                                        \{}
+\DoxyCodeLine{00008     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{00009     entity-\/>\mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{takeDamage}}(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00010 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classSupport_afb159bd8c474ec67ad5d03fa24c38564}\label{classSupport_afb159bd8c474ec67ad5d03fa24c38564}} 
@@ -215,7 +155,6 @@ Definition at line \mbox{\hyperlink{Support_8cpp_source_l00006}{6}} of file \mbo
 \index{takeDamage@{takeDamage}!Support@{Support}}
 \doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
 {\footnotesize\ttfamily void Support\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -231,9 +170,14 @@ Postconditions\+:
 \item Reduces the health of the support object
 \end{DoxyItemize}
 
+Exceptions\+:
+\begin{DoxyItemize}
+\item damage less than 0
+\end{DoxyItemize}
+
 
 \begin{DoxyParams}{Parameters}
-{\em damage} & must be an int \\
+{\em damage} & must be an int and greater than 0 \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -241,28 +185,21 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
-Definition at line 9 of file Support.\+cpp.
-
-
-\begin{DoxyCode}
-9                                    \{
-10     this->setHealth(this->getHealth() - damage);
-11 \}
-=======
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Support_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
+Definition at line \mbox{\hyperlink{Support_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{Support_8cpp_source}{Support.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00011                                    \{}
-\DoxyCodeLine{00012     this-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
-\DoxyCodeLine{00013 \}}
+\DoxyCodeLine{00012                                    \{}
+\DoxyCodeLine{00013     \textcolor{keywordflow}{if} (damage <= 0)}
+\DoxyCodeLine{00014         \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}damage must be greater than zero"{}});}
+\DoxyCodeLine{00015 }
+\DoxyCodeLine{00016     this-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{00017 \}}
 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

@@ -3,73 +3,10 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-\mbox{\Hypertarget{classAlliance_a262a2819e969b465eb9548e419bad521}\label{classAlliance_a262a2819e969b465eb9548e419bad521}} 
-\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classAlliance}{Alliance}. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}\label{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}} 
-\hyperlink{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}{$\sim$\+Alliance} ()
-\begin{DoxyCompactList}\small\item\em Destructor for the \hyperlink{classAlliance}{Alliance} object. \end{DoxyCompactList}\item 
-void \hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{set\+Negotiator} (\hyperlink{classNegotiator}{Negotiator} $\ast$new\+Negotiator)
-\begin{DoxyCompactList}\small\item\em Sets the entity negotiator. \end{DoxyCompactList}\item 
-void \hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{add\+Country} (\hyperlink{classCountry}{Country} $\ast$nation)
-\begin{DoxyCompactList}\small\item\em Adds a country into the members vector which holds countries. \end{DoxyCompactList}\item 
-vector$<$ \hyperlink{classEntity}{Entity} $\ast$ $>$ \hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{get\+Reserve\+Entities} (int number)
-\begin{DoxyCompactList}\small\item\em Return a given number of reserve entites vector. \end{DoxyCompactList}\item 
-void \hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{add\+Reserve\+Entity} (\hyperlink{classEntity}{Entity} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Adds a entity to the reserve entities. \end{DoxyCompactList}\item 
-bool \hyperlink{classAlliance_aaa6e77e8bef285079525b65150c3ad85}{consider\+Peace} ()
-\begin{DoxyCompactList}\small\item\em Considers to stop war with the allaince passed into the function header. \end{DoxyCompactList}\item 
-void \hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{add\+Factory} (\hyperlink{classFactory}{Factory} $\ast$factory)
-=======
 \mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAlliance_acde91b73cf63cf19ed13448a8644d139}{Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} \&alliance)
-\begin{DoxyCompactList}\small\item\em Instantiates a copy of an \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}{$\sim$\+Alliance}} ()
-\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classAlliance}{Alliance}} object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{set\+Negotiator}} (\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$new\+Negotiator)
-\begin{DoxyCompactList}\small\item\em Sets the entity negotiator. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{add\+Country}} (\mbox{\hyperlink{classCountry}{Country}} $\ast$nation)
-\begin{DoxyCompactList}\small\item\em Adds a country into the members vector which holds countries. \end{DoxyCompactList}\item 
-vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{get\+Reserve\+Entities}} (int number)
-\begin{DoxyCompactList}\small\item\em Return a given number of reserve entites vector. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{add\+Reserve\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Adds a entity to the reserve entities. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classAlliance_aa7536e9920dba6e114d77dd18ab0326a}{num\+Remaining\+Entities}} ()
-\item 
-bool \mbox{\hyperlink{classAlliance_aaa6e77e8bef285079525b65150c3ad85}{consider\+Peace}} ()
-\begin{DoxyCompactList}\small\item\em Considers to stop war with the allaince passed into the function header. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{add\+Factory}} (\mbox{\hyperlink{classFactory}{Factory}} $\ast$factory)
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-\begin{DoxyCompactList}\small\item\em Adds a factory into the production vector which holds factories. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a0b0d133ea177694c86d7cc9dd6b05a40}{run\+Factories}} ()
-\item 
-void \mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}} ()
-\begin{DoxyCompactList}\small\item\em Makes the current alliance give up of the war by surrendering. \end{DoxyCompactList}\item 
-<<<<<<< HEAD
-int \hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{get\+ID} ()
-\begin{DoxyCompactList}\small\item\em Returns \hyperlink{classAlliance}{Alliance}\textquotesingle{}s a\+ID. \end{DoxyCompactList}\item 
-bool \hyperlink{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}{offer\+Peace} ()
-\begin{DoxyCompactList}\small\item\em Offers peace to stop war with the alliance fighting against using send\+Peace. \end{DoxyCompactList}\item 
-\hyperlink{classAlliance}{Alliance} $\ast$ \hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{clone} ()
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \hyperlink{classAlliance}{Alliance}. \end{DoxyCompactList}\item 
-void \hyperlink{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}{set\+Active\+Status} (bool active)
-\begin{DoxyCompactList}\small\item\em Sets variable active to the passed in parameter. \end{DoxyCompactList}\item 
-int \hyperlink{classAlliance_a832ce46bb4b7062240a0586788e3ff59}{get\+Active} ()
-\begin{DoxyCompactList}\small\item\em Get the active state of the \hyperlink{classAlliance}{Alliance}. \end{DoxyCompactList}\end{DoxyCompactItemize}
-=======
-int \mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{get\+ID}} ()
-\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{classAlliance}{Alliance}}\textquotesingle{}s a\+ID. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}{offer\+Peace}} ()
-\begin{DoxyCompactList}\small\item\em Offers peace to stop war with the alliance fighting against using send\+Peace. \end{DoxyCompactList}\item 
-=======
-\mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAlliance_acde91b73cf63cf19ed13448a8644d139}{Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} \&alliance)
-\begin{DoxyCompactList}\small\item\em Instantiates a copy of an \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}{$\sim$\+Alliance}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classAlliance}{Alliance}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{set\+Negotiator}} (\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$new\+Negotiator)
@@ -90,81 +27,25 @@ int \mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{get\+ID}} 
 \begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{classAlliance}{Alliance}}\textquotesingle{}s a\+ID. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}{offer\+Peace}} ()
 \begin{DoxyCompactList}\small\item\em Offers peace to stop war with the alliance fighting against using send\+Peace. \end{DoxyCompactList}\item 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-\mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAlliance_acde91b73cf63cf19ed13448a8644d139}{Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} \&alliance)
-\begin{DoxyCompactList}\small\item\em Instantiates a copy of an \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}{$\sim$\+Alliance}} ()
-\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classAlliance}{Alliance}} object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{set\+Negotiator}} (\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$new\+Negotiator)
-\begin{DoxyCompactList}\small\item\em Sets the entity negotiator. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{add\+Country}} (\mbox{\hyperlink{classCountry}{Country}} $\ast$nation)
-\begin{DoxyCompactList}\small\item\em Adds a country into the members vector which holds countries. \end{DoxyCompactList}\item 
-vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ \mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{get\+Reserve\+Entities}} (int number)
-\begin{DoxyCompactList}\small\item\em Return a given number of reserve entites vector. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{add\+Reserve\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Adds a entity to the reserve entities. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classAlliance_aaa6e77e8bef285079525b65150c3ad85}{consider\+Peace}} ()
-\begin{DoxyCompactList}\small\item\em Considers to stop war with the allaince passed into the function header. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{add\+Factory}} (\mbox{\hyperlink{classFactory}{Factory}} $\ast$factory)
-\begin{DoxyCompactList}\small\item\em Adds a factory into the production vector which holds factories. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{surrender}} ()
-\begin{DoxyCompactList}\small\item\em Makes the current alliance give up of the war by surrendering. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{get\+ID}} ()
-\begin{DoxyCompactList}\small\item\em Returns \mbox{\hyperlink{classAlliance}{Alliance}}\textquotesingle{}s a\+ID. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}{offer\+Peace}} ()
-\begin{DoxyCompactList}\small\item\em Offers peace to stop war with the alliance fighting against using send\+Peace. \end{DoxyCompactList}\item 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ \mbox{\hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}{set\+Active\+Status}} (bool active)
 \begin{DoxyCompactList}\small\item\em Sets variable active to the passed in parameter. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classAlliance_a832ce46bb4b7062240a0586788e3ff59}{get\+Active}} ()
-\end{DoxyCompactItemize}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+\begin{DoxyCompactList}\small\item\em Get the active state of the \mbox{\hyperlink{classAlliance}{Alliance}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classAlliance_aa7536e9920dba6e114d77dd18ab0326a}{num\+Remaining\+Entities}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of the remaining number of entities. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAlliance_a0b0d133ea177694c86d7cc9dd6b05a40}{run\+Factories}} ()
+\begin{DoxyCompactList}\small\item\em Will create reserve Entities. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 13 of file Alliance.\+h.
-
-
-
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classAlliance_a5aad3039bd784cb26755fce97c92708a}\label{classAlliance_a5aad3039bd784cb26755fce97c92708a}} 
-\index{Alliance@{Alliance}!add\+Country@{add\+Country}}
-\index{add\+Country@{add\+Country}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{add\+Country()}{addCountry()}}
-{\footnotesize\ttfamily void Alliance\+::add\+Country (\begin{DoxyParamCaption}\item[{\hyperlink{classCountry}{Country} $\ast$}]{nation }\end{DoxyParamCaption})}
-=======
 Definition at line \mbox{\hyperlink{Alliance_8h_source_l00013}{13}} of file \mbox{\hyperlink{Alliance_8h_source}{Alliance.\+h}}.
 
 
 
-=======
-Definition at line \mbox{\hyperlink{Alliance_8h_source_l00013}{13}} of file \mbox{\hyperlink{Alliance_8h_source}{Alliance.\+h}}.
-
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8h_source_l00013}{13}} of file \mbox{\hyperlink{Alliance_8h_source}{Alliance.\+h}}.
-
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classAlliance_a262a2819e969b465eb9548e419bad521}\label{classAlliance_a262a2819e969b465eb9548e419bad521}} 
 \index{Alliance@{Alliance}!Alliance@{Alliance}}
@@ -198,13 +79,8 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00012}{12}} of file \m
 
 
 
-Instantiates a copy of an \mbox{\hyperlink{classAlliance}{Alliance}}. 
+Instantiates the \mbox{\hyperlink{classAlliance}{Alliance}}. 
 
-
-\begin{DoxyParams}{Parameters}
-{\em alliance} & must be an alliance instance \\
-\hline
-\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
@@ -266,13 +142,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00035}{35}} of file \m
 \index{addCountry@{addCountry}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{addCountry()}{addCountry()}}
 {\footnotesize\ttfamily void Alliance\+::add\+Country (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCountry}{Country}} $\ast$}]{nation }\end{DoxyParamCaption})}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -298,51 +167,7 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00052}{52}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 26 of file Alliance.\+cpp.
-
-
-\begin{DoxyCode}
-26                                          \{
-27     members.push\_back(nation);
-28 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}\label{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}} 
-\index{Alliance@{Alliance}!add\+Factory@{add\+Factory}}
-\index{add\+Factory@{add\+Factory}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{add\+Factory()}{addFactory()}}
-{\footnotesize\ttfamily void Alliance\+::add\+Factory (\begin{DoxyParamCaption}\item[{\hyperlink{classFactory}{Factory} $\ast$}]{factory }\end{DoxyParamCaption})}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00043                                          \{}
-\DoxyCodeLine{00044     members.push\_back(nation);}
-\DoxyCodeLine{00045 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}\label{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}} 
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00043                                          \{}
-\DoxyCodeLine{00044     members.push\_back(nation);}
-\DoxyCodeLine{00045 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}\label{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}} 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00043}{43}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -352,18 +177,10 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00043}{43}} of file \m
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}\label{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}} 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \index{Alliance@{Alliance}!addFactory@{addFactory}}
 \index{addFactory@{addFactory}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{addFactory()}{addFactory()}}
 {\footnotesize\ttfamily void Alliance\+::add\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classFactory}{Factory}} $\ast$}]{factory }\end{DoxyParamCaption})}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -389,40 +206,9 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00078}{78}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 48 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}
-48                                           \{
-49     production.push\_back(factory);
-50 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}\label{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}} 
-\index{Alliance@{Alliance}!add\+Reserve\+Entity@{add\+Reserve\+Entity}}
-\index{add\+Reserve\+Entity@{add\+Reserve\+Entity}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{add\+Reserve\+Entity()}{addReserveEntity()}}
-{\footnotesize\ttfamily void Alliance\+::add\+Reserve\+Entity (\begin{DoxyParamCaption}\item[{\hyperlink{classEntity}{Entity} $\ast$}]{entity }\end{DoxyParamCaption})}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00065}{65}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00078                                           \{}
 \DoxyCodeLine{00079     production.push\_back(factory);}
@@ -434,13 +220,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00065}{65}} of file \m
 \index{addReserveEntity@{addReserveEntity}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{addReserveEntity()}{addReserveEntity()}}
 {\footnotesize\ttfamily void Alliance\+::add\+Reserve\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -453,19 +232,7 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-\item \hyperlink{classEntity}{Entity} is added to the reserve\+Entities vector
-=======
 \item \mbox{\hyperlink{classEntity}{Entity}} is added to the reserve\+Entities vector
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-\item \mbox{\hyperlink{classEntity}{Entity}} is added to the reserve\+Entities vector
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-\item \mbox{\hyperlink{classEntity}{Entity}} is added to the reserve\+Entities vector
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyItemize}
 
 
@@ -478,26 +245,7 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00066}{66}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 40 of file Alliance.\+cpp.
-
-
-\begin{DoxyCode}
-40                                               \{
-41     reserveEntities.push\_back(entity);
-42 \}
-=======
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00057}{57}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -505,13 +253,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00057}{57}} of file \m
 \DoxyCodeLine{00067     reserveEntities.push\_back(entity);}
 \DoxyCodeLine{00068 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_adc67a41223565105889493f9cfd350d0}\label{classAlliance_adc67a41223565105889493f9cfd350d0}} 
 \index{Alliance@{Alliance}!clone@{clone}}
@@ -533,28 +274,7 @@ Alliance$\ast$ The alliance clone
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00114}{114}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 77 of file Alliance.\+cpp.
-
-
-\begin{DoxyCode}
-77                           \{
-78     
-79     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};
-80 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_aaa6e77e8bef285079525b65150c3ad85}\label{classAlliance_aaa6e77e8bef285079525b65150c3ad85}} 
-\index{Alliance@{Alliance}!consider\+Peace@{consider\+Peace}}
-\index{consider\+Peace@{consider\+Peace}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{consider\+Peace()}{considerPeace()}}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -567,37 +287,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00094}{94}} of file \m
 \index{Alliance@{Alliance}!considerPeace@{considerPeace}}
 \index{considerPeace@{considerPeace}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{considerPeace()}{considerPeace()}}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00094                           \{}
-\DoxyCodeLine{00095     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}}(*\textcolor{keyword}{this});}
-\DoxyCodeLine{00096 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_aaa6e77e8bef285079525b65150c3ad85}\label{classAlliance_aaa6e77e8bef285079525b65150c3ad85}} 
-\index{Alliance@{Alliance}!considerPeace@{considerPeace}}
-\index{considerPeace@{considerPeace}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{considerPeace()}{considerPeace()}}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00094}{94}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00094                           \{}
-\DoxyCodeLine{00095     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}}(*\textcolor{keyword}{this});}
-\DoxyCodeLine{00096 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_aaa6e77e8bef285079525b65150c3ad85}\label{classAlliance_aaa6e77e8bef285079525b65150c3ad85}} 
-\index{Alliance@{Alliance}!considerPeace@{considerPeace}}
-\index{considerPeace@{considerPeace}!Alliance@{Alliance}}
-\doxysubsubsection{\texorpdfstring{considerPeace()}{considerPeace()}}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 {\footnotesize\ttfamily bool Alliance\+::consider\+Peace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -619,39 +308,9 @@ bool
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00074}{74}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 44 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}
-44                              \{
-45     \textcolor{keywordflow}{return} (rand() % 2 == 0);
-46 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a832ce46bb4b7062240a0586788e3ff59}\label{classAlliance_a832ce46bb4b7062240a0586788e3ff59}} 
-\index{Alliance@{Alliance}!get\+Active@{get\+Active}}
-\index{get\+Active@{get\+Active}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{get\+Active()}{getActive()}}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00074                              \{}
 \DoxyCodeLine{00075     \textcolor{keywordflow}{return} (rand() \% 2 == 0);}
@@ -662,24 +321,11 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00061}{61}} of file \m
 \index{Alliance@{Alliance}!getActive@{getActive}}
 \index{getActive@{getActive}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{getActive()}{getActive()}}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 {\footnotesize\ttfamily int Alliance\+::get\+Active (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-<<<<<<< HEAD
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Get the active state of the \hyperlink{classAlliance}{Alliance}. 
+Get the active state of the \mbox{\hyperlink{classAlliance}{Alliance}}. 
 
 Post\+Conditions\+:
 \begin{DoxyItemize}
@@ -691,20 +337,7 @@ int the active variable
 \end{DoxyReturn}
 
 
-Definition at line 73 of file Alliance.\+cpp.
-
-
-\begin{DoxyCode}
-73                         \{
-74     \textcolor{keywordflow}{return} active;
-75 \}
-=======
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00090}{90}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
+Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00110}{110}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
@@ -712,13 +345,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00090}{90}} of file \m
 \DoxyCodeLine{00111     \textcolor{keywordflow}{return} active;}
 \DoxyCodeLine{00112 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_a7f23330454f02b0056eb92bd2072359d}\label{classAlliance_a7f23330454f02b0056eb92bd2072359d}} 
 \index{Alliance@{Alliance}!getID@{getID}}
@@ -740,39 +366,7 @@ int The ID of the \mbox{\hyperlink{classAlliance}{Alliance}} object
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00095}{95}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 58 of file Alliance.\+cpp.
-
-
-\begin{DoxyCode}
-58                     \{
-59     \textcolor{keywordflow}{return} this->aID;
-60 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a8c93c88d5624a3445814b86496ad68d7}\label{classAlliance_a8c93c88d5624a3445814b86496ad68d7}} 
-\index{Alliance@{Alliance}!get\+Reserve\+Entities@{get\+Reserve\+Entities}}
-\index{get\+Reserve\+Entities@{get\+Reserve\+Entities}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{get\+Reserve\+Entities()}{getReserveEntities()}}
-{\footnotesize\ttfamily vector$<$ \hyperlink{classEntity}{Entity} $\ast$ $>$ Alliance\+::get\+Reserve\+Entities (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00075                     \{}
-\DoxyCodeLine{00076     \textcolor{keywordflow}{return} this-\/>aID;}
-\DoxyCodeLine{00077 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a8c93c88d5624a3445814b86496ad68d7}\label{classAlliance_a8c93c88d5624a3445814b86496ad68d7}} 
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -782,30 +376,10 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00075}{75}} of file \m
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_a8c93c88d5624a3445814b86496ad68d7}\label{classAlliance_a8c93c88d5624a3445814b86496ad68d7}} 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00075}{75}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{00075                     \{}
-\DoxyCodeLine{00076     \textcolor{keywordflow}{return} this-\/>aID;}
-\DoxyCodeLine{00077 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_a8c93c88d5624a3445814b86496ad68d7}\label{classAlliance_a8c93c88d5624a3445814b86496ad68d7}} 
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \index{Alliance@{Alliance}!getReserveEntities@{getReserveEntities}}
 \index{getReserveEntities@{getReserveEntities}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{getReserveEntities()}{getReserveEntities()}}
 {\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classEntity}{Entity}} $\ast$ $>$ Alliance\+::get\+Reserve\+Entities (\begin{DoxyParamCaption}\item[{int}]{number }\end{DoxyParamCaption})}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -832,7 +406,6 @@ vector$<$\+Entity$\ast$$>$$\ast$
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00056}{56}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
 
 
@@ -856,36 +429,19 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00056}{56}} of file \m
 
 
 
+Gets the number of the remaining number of entities. 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item Returns an int
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+int The number of entities remaining 
+\end{DoxyReturn}
+
+
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00070}{70}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 30 of file Alliance.\+cpp.
-
-
-\begin{DoxyCode}
-30                                                        \{
-31     vector<Entity*> out;
-32     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < number && i < reserveEntities.size(); i++) \{
-33         out.push\_back(reserveEntities[i]);
-34         reserveEntities.erase(reserveEntities.begin() + i);
-35     \}
-36 
-37     \textcolor{keywordflow}{return} out;
-38 \}   
-\end{DoxyCode}
-\mbox{\Hypertarget{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}\label{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}} 
-\index{Alliance@{Alliance}!offer\+Peace@{offer\+Peace}}
-\index{offer\+Peace@{offer\+Peace}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{offer\+Peace()}{offerPeace()}}
-=======
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00047}{47}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -898,13 +454,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00047}{47}} of file \m
 \index{Alliance@{Alliance}!offerPeace@{offerPeace}}
 \index{offerPeace@{offerPeace}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{offerPeace()}{offerPeace()}}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 {\footnotesize\ttfamily bool Alliance\+::offer\+Peace (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
@@ -921,7 +470,6 @@ bool
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00099}{99}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
 
 
@@ -946,41 +494,21 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00099}{99}} of file \m
 
 
 
+Will create reserve Entities. 
+
+Post\+Conditions
+\begin{DoxyItemize}
+\item will create reserve entities for later use
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00082}{82}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 62 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}
-62                           \{
-63 
-64     \textcolor{keywordflow}{if} (this->negotiator->\hyperlink{classNegotiator_aa95e7f447a76c6d5ef84b92731ccb00d}{sendPeace}(\textcolor{keyword}{this})) \textcolor{comment}{//Send the peace deal to all the alliances fighting
-       against}
-65     \{
-66         this->active = 3; \textcolor{comment}{//Number 3 means that Alliance chose to peacefully pull out of war}
-67         \textcolor{keywordflow}{return} \textcolor{keyword}{true};
-68     \}
-69     
-70     \textcolor{keywordflow}{return} \textcolor{keyword}{false}; 
-71 \}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00079}{79}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00082                             \{}
 \DoxyCodeLine{00083     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < production.size(); i++) \{}
@@ -989,13 +517,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00079}{79}} of file \m
 \DoxyCodeLine{00086     \}}
 \DoxyCodeLine{00087 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}\label{classAlliance_a21492fd899af1441c9d8ddf11a558e7d}} 
 \index{Alliance@{Alliance}!setActiveStatus@{setActiveStatus}}
@@ -1023,29 +544,10 @@ Post\+Conditions\+:
 \hline
 \end{DoxyParams}
 \mbox{\Hypertarget{classAlliance_ae900967c4bc7a6ee970fbefade816457}\label{classAlliance_ae900967c4bc7a6ee970fbefade816457}} 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-\index{Alliance@{Alliance}!set\+Negotiator@{set\+Negotiator}}
-\index{set\+Negotiator@{set\+Negotiator}!Alliance@{Alliance}}
-\subsubsection{\texorpdfstring{set\+Negotiator()}{setNegotiator()}}
-{\footnotesize\ttfamily void Alliance\+::set\+Negotiator (\begin{DoxyParamCaption}\item[{\hyperlink{classNegotiator}{Negotiator} $\ast$}]{new\+Negotiator }\end{DoxyParamCaption})}
-=======
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \index{Alliance@{Alliance}!setNegotiator@{setNegotiator}}
 \index{setNegotiator@{setNegotiator}!Alliance@{Alliance}}
 \doxysubsubsection{\texorpdfstring{setNegotiator()}{setNegotiator()}}
 {\footnotesize\ttfamily void Alliance\+::set\+Negotiator (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$}]{new\+Negotiator }\end{DoxyParamCaption})}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -1071,46 +573,14 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00048}{48}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 22 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}
-22                                                    \{
-23     this->negotiator = negotiator;
-24 \}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00039}{39}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00048                                                    \{}
 \DoxyCodeLine{00049     this-\/>negotiator = negotiator;}
 \DoxyCodeLine{00050 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}\label{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}} 
 \index{Alliance@{Alliance}!surrender@{surrender}}
@@ -1125,19 +595,7 @@ Makes the current alliance give up of the war by surrendering.
 Postconditions\+:
 \begin{DoxyItemize}
 \item Sets the active variable to false
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-\item Removes this alliance from the \hyperlink{classNegotiator}{Negotiator} vector
-=======
 \item Removes this alliance from the \mbox{\hyperlink{classNegotiator}{Negotiator}} vector
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-\item Removes this alliance from the \mbox{\hyperlink{classNegotiator}{Negotiator}} vector
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-\item Removes this alliance from the \mbox{\hyperlink{classNegotiator}{Negotiator}} vector
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
@@ -1145,36 +603,9 @@ void
 \end{DoxyReturn}
 
 
-<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00089}{89}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 52 of file Alliance.\+cpp.
 
 
-\begin{DoxyCode}
-52                          \{
-53     this->active = 2; \textcolor{comment}{//Number 2 means that Alliance has surrendered}
-54 
-55     this->negotiator->\hyperlink{classNegotiator_ac6ec48dbce55bf196c299342695054ef}{removeAlliance}(\textcolor{keyword}{this});
-56 \}
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00069}{69}} of file \mbox{\hyperlink{Alliance_8cpp_source}{Alliance.\+cpp}}.
->>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00089                          \{}
 \DoxyCodeLine{00090     this-\/>active = 2; \textcolor{comment}{//Number 2 means that Alliance has surrendered}}
@@ -1182,13 +613,6 @@ Definition at line \mbox{\hyperlink{Alliance_8cpp_source_l00069}{69}} of file \m
 \DoxyCodeLine{00092     this-\/>negotiator-\/>\mbox{\hyperlink{classNegotiator_ac6ec48dbce55bf196c299342695054ef}{removeAlliance}}(\textcolor{keyword}{this});}
 \DoxyCodeLine{00093 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

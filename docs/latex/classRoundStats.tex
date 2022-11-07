@@ -16,6 +16,12 @@ static int \mbox{\hyperlink{classRoundStats_a0c8c578deb83f5e7295f8fb0cb68e6ab}{n
 \item 
 static int \mbox{\hyperlink{classRoundStats_adb7e6760d84236ee68353b411b90cf0c}{damage\+Done}} = 0
 \item 
+static int \mbox{\hyperlink{classRoundStats_a6c4f56230fd80d55495090107db7876a}{num\+Losing\+Points}} = 0
+\item 
+static int \mbox{\hyperlink{classRoundStats_a7c4a90e031ec8315acb8bbd70508f997}{num\+Contested\+Points}} = 0
+\item 
+static int \mbox{\hyperlink{classRoundStats_ac80fab0c61c77d5007a15cc07463e488}{num\+Winning\+Points}} = 0
+\item 
 static vector$<$ string $>$ \mbox{\hyperlink{classRoundStats_ad41e424868e647b7d696ce179e2b5034}{key\+Point\+Information}}
 \item 
 static vector$<$ string $>$ \mbox{\hyperlink{classRoundStats_af096630414552d42fd1977824e749d6d}{entity\+Movement\+Information}}
@@ -38,16 +44,20 @@ Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00009}{9}} of file \mb
 
 
 
-Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{RoundStats_8cpp_source}{Round\+Stats.\+cpp}}.
+Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00012}{12}} of file \mbox{\hyperlink{RoundStats_8cpp_source}{Round\+Stats.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00009                             \{}
-\DoxyCodeLine{00010     numEntitiesCreated = 0;}
-\DoxyCodeLine{00011     numEntitiesDestroyed = 0;}
-\DoxyCodeLine{00012     keyPointInformation.clear();}
-\DoxyCodeLine{00013     entityMovementInformation.clear();}
-\DoxyCodeLine{00014 \}}
+\DoxyCodeLine{00012                             \{}
+\DoxyCodeLine{00013     numEntitiesCreated = 0;}
+\DoxyCodeLine{00014     numEntitiesDestroyed = 0;}
+\DoxyCodeLine{00015     damageDone = 0;}
+\DoxyCodeLine{00016     numLosingPoints = 0;}
+\DoxyCodeLine{00017     numContestedPoints = 0;}
+\DoxyCodeLine{00018     numWinningPoints = 0;}
+\DoxyCodeLine{00019     keyPointInformation.clear();}
+\DoxyCodeLine{00020     entityMovementInformation.clear();}
+\DoxyCodeLine{00021 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classRoundStats_a135ade21af867029ba795fc8cc177964}\label{classRoundStats_a135ade21af867029ba795fc8cc177964}} 
@@ -58,25 +68,26 @@ Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00009}{9}} of file \
 
 
 
-Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{RoundStats_8cpp_source}{Round\+Stats.\+cpp}}.
+Definition at line \mbox{\hyperlink{RoundStats_8cpp_source_l00023}{23}} of file \mbox{\hyperlink{RoundStats_8cpp_source}{Round\+Stats.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00016                             \{}
-\DoxyCodeLine{00017     \textcolor{keywordtype}{string} out = \textcolor{stringliteral}{"{}Number of Entities Created: "{}} + to\_string(numEntitiesCreated) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00018     out += \textcolor{stringliteral}{"{}Number of Entities Destroyed by Alliance: "{}} + to\_string(numEntitiesDestroyed) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00019     out += \textcolor{stringliteral}{"{}Damage Given by Alliance: "{}} + to\_string(damageDone) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00020 }
-\DoxyCodeLine{00021     out += \textcolor{stringliteral}{"{}\(\backslash\)nKey Point Round Information:\(\backslash\)n"{}};}
-\DoxyCodeLine{00022     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPointInformation.size(); i++)}
-\DoxyCodeLine{00023         out += keyPointInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
-\DoxyCodeLine{00024 }
-\DoxyCodeLine{00025     out += \textcolor{stringliteral}{"{}\(\backslash\)nMovement Round Information:\(\backslash\)n"{}};}
-\DoxyCodeLine{00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entityMovementInformation.size(); i++)}
-\DoxyCodeLine{00027         out += entityMovementInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00023                             \{}
+\DoxyCodeLine{00024     \textcolor{keywordtype}{string} out = \textcolor{stringliteral}{"{}Number of Key Points Winning/Contested/Losing: "{}} + to\_string(numWinningPoints) + \textcolor{stringliteral}{"{}/"{}} + to\_string(numContestedPoints) + \textcolor{stringliteral}{"{}/"{}} + to\_string(numLosingPoints) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00025     out += \textcolor{stringliteral}{"{}Number of Entities Created: "{}} + to\_string(numEntitiesCreated) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00026     out += \textcolor{stringliteral}{"{}Number of Entities Destroyed by Alliance: "{}} + to\_string(numEntitiesDestroyed) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00027     out += \textcolor{stringliteral}{"{}Damage Given by Alliance: "{}} + to\_string(damageDone) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
 \DoxyCodeLine{00028 }
-\DoxyCodeLine{00029     \textcolor{keywordflow}{return} out;}
-\DoxyCodeLine{00030 \}}
+\DoxyCodeLine{00029     out += \textcolor{stringliteral}{"{}\(\backslash\)nKey Point Round Information:\(\backslash\)n"{}};}
+\DoxyCodeLine{00030     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPointInformation.size(); i++)}
+\DoxyCodeLine{00031         out += keyPointInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00032 }
+\DoxyCodeLine{00033     out += \textcolor{stringliteral}{"{}\(\backslash\)nMovement Round Information:\(\backslash\)n"{}};}
+\DoxyCodeLine{00034     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entityMovementInformation.size(); i++)}
+\DoxyCodeLine{00035         out += entityMovementInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00036 }
+\DoxyCodeLine{00037     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{00038 \}}
 
 \end{DoxyCode}
 
@@ -100,7 +111,7 @@ Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00013}{13}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00015}{15}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00018}{18}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
 
 \mbox{\Hypertarget{classRoundStats_ad41e424868e647b7d696ce179e2b5034}\label{classRoundStats_ad41e424868e647b7d696ce179e2b5034}} 
 \index{RoundStats@{RoundStats}!keyPointInformation@{keyPointInformation}}
@@ -110,7 +121,17 @@ Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00015}{15}} of file \m
 
 
 
-Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00014}{14}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00017}{17}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_a7c4a90e031ec8315acb8bbd70508f997}\label{classRoundStats_a7c4a90e031ec8315acb8bbd70508f997}} 
+\index{RoundStats@{RoundStats}!numContestedPoints@{numContestedPoints}}
+\index{numContestedPoints@{numContestedPoints}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{numContestedPoints}{numContestedPoints}}
+{\footnotesize\ttfamily int Round\+Stats\+::num\+Contested\+Points = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00015}{15}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
 
 \mbox{\Hypertarget{classRoundStats_a557ad67ae309863625d2cd1b658a142b}\label{classRoundStats_a557ad67ae309863625d2cd1b658a142b}} 
 \index{RoundStats@{RoundStats}!numEntitiesCreated@{numEntitiesCreated}}
@@ -131,6 +152,26 @@ Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00011}{11}} of file \m
 
 
 Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00012}{12}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_a6c4f56230fd80d55495090107db7876a}\label{classRoundStats_a6c4f56230fd80d55495090107db7876a}} 
+\index{RoundStats@{RoundStats}!numLosingPoints@{numLosingPoints}}
+\index{numLosingPoints@{numLosingPoints}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{numLosingPoints}{numLosingPoints}}
+{\footnotesize\ttfamily int Round\+Stats\+::num\+Losing\+Points = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00014}{14}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
+
+\mbox{\Hypertarget{classRoundStats_ac80fab0c61c77d5007a15cc07463e488}\label{classRoundStats_ac80fab0c61c77d5007a15cc07463e488}} 
+\index{RoundStats@{RoundStats}!numWinningPoints@{numWinningPoints}}
+\index{numWinningPoints@{numWinningPoints}!RoundStats@{RoundStats}}
+\doxysubsubsection{\texorpdfstring{numWinningPoints}{numWinningPoints}}
+{\footnotesize\ttfamily int Round\+Stats\+::num\+Winning\+Points = 0\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Definition at line \mbox{\hyperlink{RoundStats_8h_source_l00016}{16}} of file \mbox{\hyperlink{RoundStats_8h_source}{Round\+Stats.\+h}}.
 
 
 

@@ -1060,8 +1060,21 @@ INPUT D:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT D:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT D:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT D:\Program Files\MiKTeX\tex\latex\graphics\color.sty
-OUTPUT refman.out
+INPUT .\refman.out
+INPUT refman.out
+INPUT .\refman.out
+INPUT refman.out
+INPUT .\refman.out
+INPUT refman.out
+INPUT .\refman.out
+INPUT refman.out
 OUTPUT refman.pdf
+INPUT .\refman.out
+INPUT .\refman.out
+OUTPUT refman.out
+INPUT .\refman.toc
+INPUT refman.toc
+INPUT refman.toc
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
@@ -1091,35 +1104,43 @@ INPUT C:\Users\Ryan\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 OUTPUT refman.toc
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
-INPUT .\hierarchy.tex
-INPUT .\hierarchy.tex
-INPUT .\hierarchy.tex
-INPUT hierarchy.tex
-INPUT .\hierarchy.tex
-INPUT .\hierarchy.tex
-INPUT hierarchy.tex
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\wasy\wasy10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
+INPUT .\hierarchy.tex
+INPUT .\hierarchy.tex
+INPUT .\hierarchy.tex
+INPUT hierarchy.tex
+INPUT .\hierarchy.tex
+INPUT .\hierarchy.tex
+INPUT hierarchy.tex
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8r.tfm
 INPUT .\annotated.tex
@@ -1143,10 +1164,6 @@ INPUT classAddOn.tex
 INPUT .\classAddOn.tex
 INPUT .\classAddOn.tex
 INPUT classAddOn.tex
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT .\classAddOn.tex
@@ -1173,7 +1190,6 @@ INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8c.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8t.vf
@@ -1182,20 +1198,17 @@ INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8c.vf
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvro8c.vf
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8t.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8tn.tfm
 INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrro8t.vf
 INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvb8tn.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8rn.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
@@ -1210,10 +1223,6 @@ INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm10.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\wasy\wasy8.tfm
 INPUT D:\Program Files\MiKTeX\fonts\tfm\public\wasy\wasy6.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvro8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvro8r.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT .\classAerialType.tex
 INPUT .\classAerialType.tex
 INPUT .\classAerialType.tex
@@ -1235,12 +1244,39 @@ INPUT .\classAerialType-eps-converted-to.pdf
 INPUT .\classAerialType-eps-converted-to.pdf
 INPUT .\classAerialType-eps-converted-to.pdf
 INPUT .\classAerialType-eps-converted-to.pdf
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\ts1pcr.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\ts1pcr.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\ts1pcr.fd
-INPUT D:\Program Files\MiKTeX\tex\latex\psnfss\ts1pcr.fd
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8c.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8c.tfm
+INPUT .\classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT .\classAggressive.tex
+INPUT .\classAggressive.eps
+INPUT classAggressive.eps
+INPUT .\classAggressive.eps
+INPUT .\classAggressive.eps
+INPUT .\classAggressive-eps-converted-to.pdf
+INPUT .\classAggressive-eps-converted-to.pdf
+INPUT .\classAggressive.eps
+INPUT .\classAggressive-eps-converted-to.pdf
+INPUT .\classAggressive-eps-converted-to.pdf
+INPUT .\classAggressive-eps-converted-to.pdf
+INPUT .\classAggressive-eps-converted-to.pdf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8t.tfm
+INPUT .\classAlliance.tex
+INPUT .\classAlliance.tex
+INPUT .\classAlliance.tex
+INPUT classAlliance.tex
+INPUT .\classAlliance.tex
+INPUT .\classAlliance.tex
+INPUT classAlliance.tex
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8t.tfm
+INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrb8t.vf
+INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8r.tfm
 INPUT .\classAquaticType.tex
 INPUT .\classAquaticType.tex
 INPUT .\classAquaticType.tex
@@ -1262,13 +1298,6 @@ INPUT .\classAquaticType-eps-converted-to.pdf
 INPUT .\classAquaticType-eps-converted-to.pdf
 INPUT .\classAquaticType-eps-converted-to.pdf
 INPUT .\classAquaticType-eps-converted-to.pdf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8c.vf
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\helvetic\phvr8c.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\helvetic\phvr8r.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrro8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8r.tfm
 INPUT .\classArea.tex
 INPUT .\classArea.tex
 INPUT .\classArea.tex
@@ -1290,10 +1319,6 @@ INPUT .\classArea-eps-converted-to.pdf
 INPUT .\classArea-eps-converted-to.pdf
 INPUT .\classArea-eps-converted-to.pdf
 INPUT .\classArea-eps-converted-to.pdf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8t.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrb8t.vf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrb8r.tfm
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8t.tfm
 INPUT .\classArmour.tex
 INPUT .\classArmour.tex
 INPUT .\classArmour.tex
@@ -1315,5 +1340,1043 @@ INPUT .\classArmour-eps-converted-to.pdf
 INPUT .\classArmour-eps-converted-to.pdf
 INPUT .\classArmour-eps-converted-to.pdf
 INPUT .\classArmour-eps-converted-to.pdf
-INPUT D:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrro8c.tfm
-INPUT D:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrro8c.vf
+INPUT .\classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT .\classCloudy.tex
+INPUT .\classCloudy.eps
+INPUT classCloudy.eps
+INPUT .\classCloudy.eps
+INPUT .\classCloudy.eps
+INPUT .\classCloudy-eps-converted-to.pdf
+INPUT .\classCloudy-eps-converted-to.pdf
+INPUT .\classCloudy.eps
+INPUT .\classCloudy-eps-converted-to.pdf
+INPUT .\classCloudy-eps-converted-to.pdf
+INPUT .\classCloudy-eps-converted-to.pdf
+INPUT .\classCloudy-eps-converted-to.pdf
+INPUT .\classCountry.tex
+INPUT .\classCountry.tex
+INPUT .\classCountry.tex
+INPUT classCountry.tex
+INPUT .\classCountry.tex
+INPUT .\classCountry.tex
+INPUT classCountry.tex
+INPUT .\classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT .\classDefensive.tex
+INPUT .\classDefensive.eps
+INPUT classDefensive.eps
+INPUT .\classDefensive.eps
+INPUT .\classDefensive.eps
+INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classDefensive.eps
+INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classDefensive-eps-converted-to.pdf
+INPUT .\classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT .\classEasySetup.tex
+INPUT classEasySetup.tex
+INPUT .\classEntity.tex
+INPUT .\classEntity.tex
+INPUT .\classEntity.tex
+INPUT classEntity.tex
+INPUT .\classEntity.tex
+INPUT .\classEntity.tex
+INPUT classEntity.tex
+INPUT .\classEntity.tex
+INPUT .\classEntity.tex
+INPUT .\classEntity.tex
+INPUT .\classEntity.eps
+INPUT classEntity.eps
+INPUT .\classEntity.eps
+INPUT .\classEntity.eps
+INPUT .\classEntity-eps-converted-to.pdf
+INPUT .\classEntity-eps-converted-to.pdf
+INPUT .\classEntity.eps
+INPUT .\classEntity-eps-converted-to.pdf
+INPUT .\classEntity-eps-converted-to.pdf
+INPUT .\classEntity-eps-converted-to.pdf
+INPUT .\classEntity-eps-converted-to.pdf
+INPUT .\classFactory.tex
+INPUT .\classFactory.tex
+INPUT .\classFactory.tex
+INPUT classFactory.tex
+INPUT .\classFactory.tex
+INPUT .\classFactory.tex
+INPUT classFactory.tex
+INPUT .\classFactory.tex
+INPUT .\classFactory.tex
+INPUT .\classFactory.tex
+INPUT .\classFactory.eps
+INPUT classFactory.eps
+INPUT .\classFactory.eps
+INPUT .\classFactory.eps
+INPUT .\classFactory-eps-converted-to.pdf
+INPUT .\classFactory-eps-converted-to.pdf
+INPUT .\classFactory.eps
+INPUT .\classFactory-eps-converted-to.pdf
+INPUT .\classFactory-eps-converted-to.pdf
+INPUT .\classFactory-eps-converted-to.pdf
+INPUT .\classFactory-eps-converted-to.pdf
+INPUT .\classGeneral.tex
+INPUT .\classGeneral.tex
+INPUT .\classGeneral.tex
+INPUT classGeneral.tex
+INPUT .\classGeneral.tex
+INPUT .\classGeneral.tex
+INPUT classGeneral.tex
+INPUT .\classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT .\classKeyPoint.tex
+INPUT .\classKeyPoint.eps
+INPUT classKeyPoint.eps
+INPUT .\classKeyPoint.eps
+INPUT .\classKeyPoint.eps
+INPUT .\classKeyPoint-eps-converted-to.pdf
+INPUT .\classKeyPoint-eps-converted-to.pdf
+INPUT .\classKeyPoint.eps
+INPUT .\classKeyPoint-eps-converted-to.pdf
+INPUT .\classKeyPoint-eps-converted-to.pdf
+INPUT .\classKeyPoint-eps-converted-to.pdf
+INPUT .\classKeyPoint-eps-converted-to.pdf
+INPUT .\classNegotiator.tex
+INPUT .\classNegotiator.tex
+INPUT .\classNegotiator.tex
+INPUT classNegotiator.tex
+INPUT .\classNegotiator.tex
+INPUT .\classNegotiator.tex
+INPUT classNegotiator.tex
+INPUT .\classPassive.tex
+INPUT .\classPassive.tex
+INPUT .\classPassive.tex
+INPUT classPassive.tex
+INPUT .\classPassive.tex
+INPUT .\classPassive.tex
+INPUT classPassive.tex
+INPUT .\classPassive.tex
+INPUT .\classPassive.tex
+INPUT .\classPassive.tex
+INPUT .\classPassive.eps
+INPUT classPassive.eps
+INPUT .\classPassive.eps
+INPUT .\classPassive.eps
+INPUT .\classPassive-eps-converted-to.pdf
+INPUT .\classPassive-eps-converted-to.pdf
+INPUT .\classPassive.eps
+INPUT .\classPassive-eps-converted-to.pdf
+INPUT .\classPassive-eps-converted-to.pdf
+INPUT .\classPassive-eps-converted-to.pdf
+INPUT .\classPassive-eps-converted-to.pdf
+INPUT .\classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT .\classPersonnel.tex
+INPUT .\classPersonnel.eps
+INPUT classPersonnel.eps
+INPUT .\classPersonnel.eps
+INPUT .\classPersonnel.eps
+INPUT .\classPersonnel-eps-converted-to.pdf
+INPUT .\classPersonnel-eps-converted-to.pdf
+INPUT .\classPersonnel.eps
+INPUT .\classPersonnel-eps-converted-to.pdf
+INPUT .\classPersonnel-eps-converted-to.pdf
+INPUT .\classPersonnel-eps-converted-to.pdf
+INPUT .\classPersonnel-eps-converted-to.pdf
+INPUT .\classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.tex
+INPUT .\classPersonnelFactory.eps
+INPUT classPersonnelFactory.eps
+INPUT .\classPersonnelFactory.eps
+INPUT .\classPersonnelFactory.eps
+INPUT .\classPersonnelFactory-eps-converted-to.pdf
+INPUT .\classPersonnelFactory-eps-converted-to.pdf
+INPUT .\classPersonnelFactory.eps
+INPUT .\classPersonnelFactory-eps-converted-to.pdf
+INPUT .\classPersonnelFactory-eps-converted-to.pdf
+INPUT .\classPersonnelFactory-eps-converted-to.pdf
+INPUT .\classPersonnelFactory-eps-converted-to.pdf
+INPUT .\classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT .\classPiercing.tex
+INPUT .\classPiercing.eps
+INPUT classPiercing.eps
+INPUT .\classPiercing.eps
+INPUT .\classPiercing.eps
+INPUT .\classPiercing-eps-converted-to.pdf
+INPUT .\classPiercing-eps-converted-to.pdf
+INPUT .\classPiercing.eps
+INPUT .\classPiercing-eps-converted-to.pdf
+INPUT .\classPiercing-eps-converted-to.pdf
+INPUT .\classPiercing-eps-converted-to.pdf
+INPUT .\classPiercing-eps-converted-to.pdf
+INPUT .\classRainy.tex
+INPUT .\classRainy.tex
+INPUT .\classRainy.tex
+INPUT classRainy.tex
+INPUT .\classRainy.tex
+INPUT .\classRainy.tex
+INPUT classRainy.tex
+INPUT .\classRainy.tex
+INPUT .\classRainy.tex
+INPUT .\classRainy.tex
+INPUT .\classRainy.eps
+INPUT classRainy.eps
+INPUT .\classRainy.eps
+INPUT .\classRainy.eps
+INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRainy.eps
+INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRainy-eps-converted-to.pdf
+INPUT .\classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT .\classRoundStats.tex
+INPUT classRoundStats.tex
+INPUT .\classSaveArchive.tex
+INPUT .\classSaveArchive.tex
+INPUT .\classSaveArchive.tex
+INPUT classSaveArchive.tex
+INPUT .\classSaveArchive.tex
+INPUT .\classSaveArchive.tex
+INPUT classSaveArchive.tex
+INPUT .\classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT .\classStrategy.tex
+INPUT .\classStrategy.eps
+INPUT classStrategy.eps
+INPUT .\classStrategy.eps
+INPUT .\classStrategy.eps
+INPUT .\classStrategy-eps-converted-to.pdf
+INPUT .\classStrategy-eps-converted-to.pdf
+INPUT .\classStrategy.eps
+INPUT .\classStrategy-eps-converted-to.pdf
+INPUT .\classStrategy-eps-converted-to.pdf
+INPUT .\classStrategy-eps-converted-to.pdf
+INPUT .\classStrategy-eps-converted-to.pdf
+INPUT .\classSunny.tex
+INPUT .\classSunny.tex
+INPUT .\classSunny.tex
+INPUT classSunny.tex
+INPUT .\classSunny.tex
+INPUT .\classSunny.tex
+INPUT classSunny.tex
+INPUT .\classSunny.tex
+INPUT .\classSunny.tex
+INPUT .\classSunny.tex
+INPUT .\classSunny.eps
+INPUT classSunny.eps
+INPUT .\classSunny.eps
+INPUT .\classSunny.eps
+INPUT .\classSunny-eps-converted-to.pdf
+INPUT .\classSunny-eps-converted-to.pdf
+INPUT .\classSunny.eps
+INPUT .\classSunny-eps-converted-to.pdf
+INPUT .\classSunny-eps-converted-to.pdf
+INPUT .\classSunny-eps-converted-to.pdf
+INPUT .\classSunny-eps-converted-to.pdf
+INPUT .\classSupport.tex
+INPUT .\classSupport.tex
+INPUT .\classSupport.tex
+INPUT classSupport.tex
+INPUT .\classSupport.tex
+INPUT .\classSupport.tex
+INPUT classSupport.tex
+INPUT .\classSupport.tex
+INPUT .\classSupport.tex
+INPUT .\classSupport.tex
+INPUT .\classSupport.eps
+INPUT classSupport.eps
+INPUT .\classSupport.eps
+INPUT .\classSupport.eps
+INPUT .\classSupport-eps-converted-to.pdf
+INPUT .\classSupport-eps-converted-to.pdf
+INPUT .\classSupport.eps
+INPUT .\classSupport-eps-converted-to.pdf
+INPUT .\classSupport-eps-converted-to.pdf
+INPUT .\classSupport-eps-converted-to.pdf
+INPUT .\classSupport-eps-converted-to.pdf
+INPUT .\classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT .\classSupportFactory.tex
+INPUT .\classSupportFactory.eps
+INPUT classSupportFactory.eps
+INPUT .\classSupportFactory.eps
+INPUT .\classSupportFactory.eps
+INPUT .\classSupportFactory-eps-converted-to.pdf
+INPUT .\classSupportFactory-eps-converted-to.pdf
+INPUT .\classSupportFactory.eps
+INPUT .\classSupportFactory-eps-converted-to.pdf
+INPUT .\classSupportFactory-eps-converted-to.pdf
+INPUT .\classSupportFactory-eps-converted-to.pdf
+INPUT .\classSupportFactory-eps-converted-to.pdf
+INPUT .\classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT .\classTerrainType.tex
+INPUT .\classTerrainType.eps
+INPUT classTerrainType.eps
+INPUT .\classTerrainType.eps
+INPUT .\classTerrainType.eps
+INPUT .\classTerrainType-eps-converted-to.pdf
+INPUT .\classTerrainType-eps-converted-to.pdf
+INPUT .\classTerrainType.eps
+INPUT .\classTerrainType-eps-converted-to.pdf
+INPUT .\classTerrainType-eps-converted-to.pdf
+INPUT .\classTerrainType-eps-converted-to.pdf
+INPUT .\classTerrainType-eps-converted-to.pdf
+INPUT .\classType.tex
+INPUT .\classType.tex
+INPUT .\classType.tex
+INPUT classType.tex
+INPUT .\classType.tex
+INPUT .\classType.tex
+INPUT classType.tex
+INPUT .\classType.tex
+INPUT .\classType.tex
+INPUT .\classType.tex
+INPUT .\classType.eps
+INPUT classType.eps
+INPUT .\classType.eps
+INPUT .\classType.eps
+INPUT .\classType-eps-converted-to.pdf
+INPUT .\classType-eps-converted-to.pdf
+INPUT .\classType.eps
+INPUT .\classType-eps-converted-to.pdf
+INPUT .\classType-eps-converted-to.pdf
+INPUT .\classType-eps-converted-to.pdf
+INPUT .\classType-eps-converted-to.pdf
+INPUT .\classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT .\classVehicle.tex
+INPUT .\classVehicle.eps
+INPUT classVehicle.eps
+INPUT .\classVehicle.eps
+INPUT .\classVehicle.eps
+INPUT .\classVehicle-eps-converted-to.pdf
+INPUT .\classVehicle-eps-converted-to.pdf
+INPUT .\classVehicle.eps
+INPUT .\classVehicle-eps-converted-to.pdf
+INPUT .\classVehicle-eps-converted-to.pdf
+INPUT .\classVehicle-eps-converted-to.pdf
+INPUT .\classVehicle-eps-converted-to.pdf
+INPUT .\classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT .\classVehicleFactory.tex
+INPUT .\classVehicleFactory.eps
+INPUT classVehicleFactory.eps
+INPUT .\classVehicleFactory.eps
+INPUT .\classVehicleFactory.eps
+INPUT .\classVehicleFactory-eps-converted-to.pdf
+INPUT .\classVehicleFactory-eps-converted-to.pdf
+INPUT .\classVehicleFactory.eps
+INPUT .\classVehicleFactory-eps-converted-to.pdf
+INPUT .\classVehicleFactory-eps-converted-to.pdf
+INPUT .\classVehicleFactory-eps-converted-to.pdf
+INPUT .\classVehicleFactory-eps-converted-to.pdf
+INPUT .\classWarEngine.tex
+INPUT .\classWarEngine.tex
+INPUT .\classWarEngine.tex
+INPUT classWarEngine.tex
+INPUT .\classWarEngine.tex
+INPUT .\classWarEngine.tex
+INPUT classWarEngine.tex
+INPUT .\classWarEngineMemento.tex
+INPUT .\classWarEngineMemento.tex
+INPUT .\classWarEngineMemento.tex
+INPUT classWarEngineMemento.tex
+INPUT .\classWarEngineMemento.tex
+INPUT .\classWarEngineMemento.tex
+INPUT classWarEngineMemento.tex
+INPUT .\classWarEngineState.tex
+INPUT .\classWarEngineState.tex
+INPUT .\classWarEngineState.tex
+INPUT classWarEngineState.tex
+INPUT .\classWarEngineState.tex
+INPUT .\classWarEngineState.tex
+INPUT classWarEngineState.tex
+INPUT .\classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT .\classWarTheatre.tex
+INPUT .\classWarTheatre.eps
+INPUT classWarTheatre.eps
+INPUT .\classWarTheatre.eps
+INPUT .\classWarTheatre.eps
+INPUT .\classWarTheatre-eps-converted-to.pdf
+INPUT .\classWarTheatre-eps-converted-to.pdf
+INPUT .\classWarTheatre.eps
+INPUT .\classWarTheatre-eps-converted-to.pdf
+INPUT .\classWarTheatre-eps-converted-to.pdf
+INPUT .\classWarTheatre-eps-converted-to.pdf
+INPUT .\classWarTheatre-eps-converted-to.pdf
+INPUT .\classWeather.tex
+INPUT .\classWeather.tex
+INPUT .\classWeather.tex
+INPUT classWeather.tex
+INPUT .\classWeather.tex
+INPUT .\classWeather.tex
+INPUT classWeather.tex
+INPUT .\classWeather.tex
+INPUT .\classWeather.tex
+INPUT .\classWeather.tex
+INPUT .\classWeather.eps
+INPUT classWeather.eps
+INPUT .\classWeather.eps
+INPUT .\classWeather.eps
+INPUT .\classWeather-eps-converted-to.pdf
+INPUT .\classWeather-eps-converted-to.pdf
+INPUT .\classWeather.eps
+INPUT .\classWeather-eps-converted-to.pdf
+INPUT .\classWeather-eps-converted-to.pdf
+INPUT .\classWeather-eps-converted-to.pdf
+INPUT .\classWeather-eps-converted-to.pdf
+INPUT .\AddOn_8cpp_source.tex
+INPUT .\AddOn_8cpp_source.tex
+INPUT .\AddOn_8cpp_source.tex
+INPUT AddOn_8cpp_source.tex
+INPUT .\AddOn_8cpp_source.tex
+INPUT .\AddOn_8cpp_source.tex
+INPUT AddOn_8cpp_source.tex
+INPUT .\AddOn_8h_source.tex
+INPUT .\AddOn_8h_source.tex
+INPUT .\AddOn_8h_source.tex
+INPUT AddOn_8h_source.tex
+INPUT .\AddOn_8h_source.tex
+INPUT .\AddOn_8h_source.tex
+INPUT AddOn_8h_source.tex
+INPUT .\AddOnTest_8h_source.tex
+INPUT .\AddOnTest_8h_source.tex
+INPUT .\AddOnTest_8h_source.tex
+INPUT AddOnTest_8h_source.tex
+INPUT .\AddOnTest_8h_source.tex
+INPUT .\AddOnTest_8h_source.tex
+INPUT AddOnTest_8h_source.tex
+INPUT .\AerialType_8cpp_source.tex
+INPUT .\AerialType_8cpp_source.tex
+INPUT .\AerialType_8cpp_source.tex
+INPUT AerialType_8cpp_source.tex
+INPUT .\AerialType_8cpp_source.tex
+INPUT .\AerialType_8cpp_source.tex
+INPUT AerialType_8cpp_source.tex
+INPUT .\AerialType_8h_source.tex
+INPUT .\AerialType_8h_source.tex
+INPUT .\AerialType_8h_source.tex
+INPUT AerialType_8h_source.tex
+INPUT .\AerialType_8h_source.tex
+INPUT .\AerialType_8h_source.tex
+INPUT AerialType_8h_source.tex
+INPUT .\Aggressive_8cpp_source.tex
+INPUT .\Aggressive_8cpp_source.tex
+INPUT .\Aggressive_8cpp_source.tex
+INPUT Aggressive_8cpp_source.tex
+INPUT .\Aggressive_8cpp_source.tex
+INPUT .\Aggressive_8cpp_source.tex
+INPUT Aggressive_8cpp_source.tex
+INPUT .\Aggressive_8h_source.tex
+INPUT .\Aggressive_8h_source.tex
+INPUT .\Aggressive_8h_source.tex
+INPUT Aggressive_8h_source.tex
+INPUT .\Aggressive_8h_source.tex
+INPUT .\Aggressive_8h_source.tex
+INPUT Aggressive_8h_source.tex
+INPUT .\Alliance_8cpp_source.tex
+INPUT .\Alliance_8cpp_source.tex
+INPUT .\Alliance_8cpp_source.tex
+INPUT Alliance_8cpp_source.tex
+INPUT .\Alliance_8cpp_source.tex
+INPUT .\Alliance_8cpp_source.tex
+INPUT Alliance_8cpp_source.tex
+INPUT .\Alliance_8h_source.tex
+INPUT .\Alliance_8h_source.tex
+INPUT .\Alliance_8h_source.tex
+INPUT Alliance_8h_source.tex
+INPUT .\Alliance_8h_source.tex
+INPUT .\Alliance_8h_source.tex
+INPUT Alliance_8h_source.tex
+INPUT .\AquaticType_8cpp_source.tex
+INPUT .\AquaticType_8cpp_source.tex
+INPUT .\AquaticType_8cpp_source.tex
+INPUT AquaticType_8cpp_source.tex
+INPUT .\AquaticType_8cpp_source.tex
+INPUT .\AquaticType_8cpp_source.tex
+INPUT AquaticType_8cpp_source.tex
+INPUT .\AquaticType_8h_source.tex
+INPUT .\AquaticType_8h_source.tex
+INPUT .\AquaticType_8h_source.tex
+INPUT AquaticType_8h_source.tex
+INPUT .\AquaticType_8h_source.tex
+INPUT .\AquaticType_8h_source.tex
+INPUT AquaticType_8h_source.tex
+INPUT .\Area_8cpp_source.tex
+INPUT .\Area_8cpp_source.tex
+INPUT .\Area_8cpp_source.tex
+INPUT Area_8cpp_source.tex
+INPUT .\Area_8cpp_source.tex
+INPUT .\Area_8cpp_source.tex
+INPUT Area_8cpp_source.tex
+INPUT .\Area_8h_source.tex
+INPUT .\Area_8h_source.tex
+INPUT .\Area_8h_source.tex
+INPUT Area_8h_source.tex
+INPUT .\Area_8h_source.tex
+INPUT .\Area_8h_source.tex
+INPUT Area_8h_source.tex
+INPUT .\Armour_8cpp_source.tex
+INPUT .\Armour_8cpp_source.tex
+INPUT .\Armour_8cpp_source.tex
+INPUT Armour_8cpp_source.tex
+INPUT .\Armour_8cpp_source.tex
+INPUT .\Armour_8cpp_source.tex
+INPUT Armour_8cpp_source.tex
+INPUT .\Armour_8h_source.tex
+INPUT .\Armour_8h_source.tex
+INPUT .\Armour_8h_source.tex
+INPUT Armour_8h_source.tex
+INPUT .\Armour_8h_source.tex
+INPUT .\Armour_8h_source.tex
+INPUT Armour_8h_source.tex
+INPUT .\Cloudy_8cpp_source.tex
+INPUT .\Cloudy_8cpp_source.tex
+INPUT .\Cloudy_8cpp_source.tex
+INPUT Cloudy_8cpp_source.tex
+INPUT .\Cloudy_8cpp_source.tex
+INPUT .\Cloudy_8cpp_source.tex
+INPUT Cloudy_8cpp_source.tex
+INPUT .\Cloudy_8h_source.tex
+INPUT .\Cloudy_8h_source.tex
+INPUT .\Cloudy_8h_source.tex
+INPUT Cloudy_8h_source.tex
+INPUT .\Cloudy_8h_source.tex
+INPUT .\Cloudy_8h_source.tex
+INPUT Cloudy_8h_source.tex
+INPUT .\Country_8cpp_source.tex
+INPUT .\Country_8cpp_source.tex
+INPUT .\Country_8cpp_source.tex
+INPUT Country_8cpp_source.tex
+INPUT .\Country_8cpp_source.tex
+INPUT .\Country_8cpp_source.tex
+INPUT Country_8cpp_source.tex
+INPUT .\Country_8h_source.tex
+INPUT .\Country_8h_source.tex
+INPUT .\Country_8h_source.tex
+INPUT Country_8h_source.tex
+INPUT .\Country_8h_source.tex
+INPUT .\Country_8h_source.tex
+INPUT Country_8h_source.tex
+INPUT .\Defensive_8cpp_source.tex
+INPUT .\Defensive_8cpp_source.tex
+INPUT .\Defensive_8cpp_source.tex
+INPUT Defensive_8cpp_source.tex
+INPUT .\Defensive_8cpp_source.tex
+INPUT .\Defensive_8cpp_source.tex
+INPUT Defensive_8cpp_source.tex
+INPUT .\Defensive_8h_source.tex
+INPUT .\Defensive_8h_source.tex
+INPUT .\Defensive_8h_source.tex
+INPUT Defensive_8h_source.tex
+INPUT .\Defensive_8h_source.tex
+INPUT .\Defensive_8h_source.tex
+INPUT Defensive_8h_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8cpp_source.tex
+INPUT EasySetup_8cpp_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT .\EasySetup_8h_source.tex
+INPUT EasySetup_8h_source.tex
+INPUT .\Entity_8cpp_source.tex
+INPUT .\Entity_8cpp_source.tex
+INPUT .\Entity_8cpp_source.tex
+INPUT Entity_8cpp_source.tex
+INPUT .\Entity_8cpp_source.tex
+INPUT .\Entity_8cpp_source.tex
+INPUT Entity_8cpp_source.tex
+INPUT .\Entity_8h_source.tex
+INPUT .\Entity_8h_source.tex
+INPUT .\Entity_8h_source.tex
+INPUT Entity_8h_source.tex
+INPUT .\Entity_8h_source.tex
+INPUT .\Entity_8h_source.tex
+INPUT Entity_8h_source.tex
+INPUT .\Factory_8cpp_source.tex
+INPUT .\Factory_8cpp_source.tex
+INPUT .\Factory_8cpp_source.tex
+INPUT Factory_8cpp_source.tex
+INPUT .\Factory_8cpp_source.tex
+INPUT .\Factory_8cpp_source.tex
+INPUT Factory_8cpp_source.tex
+INPUT .\Factory_8h_source.tex
+INPUT .\Factory_8h_source.tex
+INPUT .\Factory_8h_source.tex
+INPUT Factory_8h_source.tex
+INPUT .\Factory_8h_source.tex
+INPUT .\Factory_8h_source.tex
+INPUT Factory_8h_source.tex
+INPUT .\General_8cpp_source.tex
+INPUT .\General_8cpp_source.tex
+INPUT .\General_8cpp_source.tex
+INPUT General_8cpp_source.tex
+INPUT .\General_8cpp_source.tex
+INPUT .\General_8cpp_source.tex
+INPUT General_8cpp_source.tex
+INPUT .\General_8h_source.tex
+INPUT .\General_8h_source.tex
+INPUT .\General_8h_source.tex
+INPUT General_8h_source.tex
+INPUT .\General_8h_source.tex
+INPUT .\General_8h_source.tex
+INPUT General_8h_source.tex
+INPUT .\KeyPoint_8cpp_source.tex
+INPUT .\KeyPoint_8cpp_source.tex
+INPUT .\KeyPoint_8cpp_source.tex
+INPUT KeyPoint_8cpp_source.tex
+INPUT .\KeyPoint_8cpp_source.tex
+INPUT .\KeyPoint_8cpp_source.tex
+INPUT KeyPoint_8cpp_source.tex
+INPUT .\KeyPoint_8h_source.tex
+INPUT .\KeyPoint_8h_source.tex
+INPUT .\KeyPoint_8h_source.tex
+INPUT KeyPoint_8h_source.tex
+INPUT .\KeyPoint_8h_source.tex
+INPUT .\KeyPoint_8h_source.tex
+INPUT KeyPoint_8h_source.tex
+INPUT .\Negotiator_8cpp_source.tex
+INPUT .\Negotiator_8cpp_source.tex
+INPUT .\Negotiator_8cpp_source.tex
+INPUT Negotiator_8cpp_source.tex
+INPUT .\Negotiator_8cpp_source.tex
+INPUT .\Negotiator_8cpp_source.tex
+INPUT Negotiator_8cpp_source.tex
+INPUT .\Negotiator_8h_source.tex
+INPUT .\Negotiator_8h_source.tex
+INPUT .\Negotiator_8h_source.tex
+INPUT Negotiator_8h_source.tex
+INPUT .\Negotiator_8h_source.tex
+INPUT .\Negotiator_8h_source.tex
+INPUT Negotiator_8h_source.tex
+INPUT .\NegotiatorTest_8h_source.tex
+INPUT .\NegotiatorTest_8h_source.tex
+INPUT .\NegotiatorTest_8h_source.tex
+INPUT NegotiatorTest_8h_source.tex
+INPUT .\NegotiatorTest_8h_source.tex
+INPUT .\NegotiatorTest_8h_source.tex
+INPUT NegotiatorTest_8h_source.tex
+INPUT .\Passive_8cpp_source.tex
+INPUT .\Passive_8cpp_source.tex
+INPUT .\Passive_8cpp_source.tex
+INPUT Passive_8cpp_source.tex
+INPUT .\Passive_8cpp_source.tex
+INPUT .\Passive_8cpp_source.tex
+INPUT Passive_8cpp_source.tex
+INPUT .\Passive_8h_source.tex
+INPUT .\Passive_8h_source.tex
+INPUT .\Passive_8h_source.tex
+INPUT Passive_8h_source.tex
+INPUT .\Passive_8h_source.tex
+INPUT .\Passive_8h_source.tex
+INPUT Passive_8h_source.tex
+INPUT .\Personnel_8cpp_source.tex
+INPUT .\Personnel_8cpp_source.tex
+INPUT .\Personnel_8cpp_source.tex
+INPUT Personnel_8cpp_source.tex
+INPUT .\Personnel_8cpp_source.tex
+INPUT .\Personnel_8cpp_source.tex
+INPUT Personnel_8cpp_source.tex
+INPUT .\Personnel_8h_source.tex
+INPUT .\Personnel_8h_source.tex
+INPUT .\Personnel_8h_source.tex
+INPUT Personnel_8h_source.tex
+INPUT .\Personnel_8h_source.tex
+INPUT .\Personnel_8h_source.tex
+INPUT Personnel_8h_source.tex
+INPUT .\PersonnelFactory_8cpp_source.tex
+INPUT .\PersonnelFactory_8cpp_source.tex
+INPUT .\PersonnelFactory_8cpp_source.tex
+INPUT PersonnelFactory_8cpp_source.tex
+INPUT .\PersonnelFactory_8cpp_source.tex
+INPUT .\PersonnelFactory_8cpp_source.tex
+INPUT PersonnelFactory_8cpp_source.tex
+INPUT .\PersonnelFactory_8h_source.tex
+INPUT .\PersonnelFactory_8h_source.tex
+INPUT .\PersonnelFactory_8h_source.tex
+INPUT PersonnelFactory_8h_source.tex
+INPUT .\PersonnelFactory_8h_source.tex
+INPUT .\PersonnelFactory_8h_source.tex
+INPUT PersonnelFactory_8h_source.tex
+INPUT .\Piercing_8cpp_source.tex
+INPUT .\Piercing_8cpp_source.tex
+INPUT .\Piercing_8cpp_source.tex
+INPUT Piercing_8cpp_source.tex
+INPUT .\Piercing_8cpp_source.tex
+INPUT .\Piercing_8cpp_source.tex
+INPUT Piercing_8cpp_source.tex
+INPUT .\Piercing_8h_source.tex
+INPUT .\Piercing_8h_source.tex
+INPUT .\Piercing_8h_source.tex
+INPUT Piercing_8h_source.tex
+INPUT .\Piercing_8h_source.tex
+INPUT .\Piercing_8h_source.tex
+INPUT Piercing_8h_source.tex
+INPUT .\Rainy_8cpp_source.tex
+INPUT .\Rainy_8cpp_source.tex
+INPUT .\Rainy_8cpp_source.tex
+INPUT Rainy_8cpp_source.tex
+INPUT .\Rainy_8cpp_source.tex
+INPUT .\Rainy_8cpp_source.tex
+INPUT Rainy_8cpp_source.tex
+INPUT .\Rainy_8h_source.tex
+INPUT .\Rainy_8h_source.tex
+INPUT .\Rainy_8h_source.tex
+INPUT Rainy_8h_source.tex
+INPUT .\Rainy_8h_source.tex
+INPUT .\Rainy_8h_source.tex
+INPUT Rainy_8h_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8cpp_source.tex
+INPUT RoundStats_8cpp_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT .\RoundStats_8h_source.tex
+INPUT RoundStats_8h_source.tex
+INPUT .\SaveArchive_8cpp_source.tex
+INPUT .\SaveArchive_8cpp_source.tex
+INPUT .\SaveArchive_8cpp_source.tex
+INPUT SaveArchive_8cpp_source.tex
+INPUT .\SaveArchive_8cpp_source.tex
+INPUT .\SaveArchive_8cpp_source.tex
+INPUT SaveArchive_8cpp_source.tex
+INPUT .\SaveArchive_8h_source.tex
+INPUT .\SaveArchive_8h_source.tex
+INPUT .\SaveArchive_8h_source.tex
+INPUT SaveArchive_8h_source.tex
+INPUT .\SaveArchive_8h_source.tex
+INPUT .\SaveArchive_8h_source.tex
+INPUT SaveArchive_8h_source.tex
+INPUT .\Strategy_8cpp_source.tex
+INPUT .\Strategy_8cpp_source.tex
+INPUT .\Strategy_8cpp_source.tex
+INPUT Strategy_8cpp_source.tex
+INPUT .\Strategy_8cpp_source.tex
+INPUT .\Strategy_8cpp_source.tex
+INPUT Strategy_8cpp_source.tex
+INPUT .\Strategy_8h_source.tex
+INPUT .\Strategy_8h_source.tex
+INPUT .\Strategy_8h_source.tex
+INPUT Strategy_8h_source.tex
+INPUT .\Strategy_8h_source.tex
+INPUT .\Strategy_8h_source.tex
+INPUT Strategy_8h_source.tex
+INPUT .\Sunny_8cpp_source.tex
+INPUT .\Sunny_8cpp_source.tex
+INPUT .\Sunny_8cpp_source.tex
+INPUT Sunny_8cpp_source.tex
+INPUT .\Sunny_8cpp_source.tex
+INPUT .\Sunny_8cpp_source.tex
+INPUT Sunny_8cpp_source.tex
+INPUT .\Sunny_8h_source.tex
+INPUT .\Sunny_8h_source.tex
+INPUT .\Sunny_8h_source.tex
+INPUT Sunny_8h_source.tex
+INPUT .\Sunny_8h_source.tex
+INPUT .\Sunny_8h_source.tex
+INPUT Sunny_8h_source.tex
+INPUT .\Support_8cpp_source.tex
+INPUT .\Support_8cpp_source.tex
+INPUT .\Support_8cpp_source.tex
+INPUT Support_8cpp_source.tex
+INPUT .\Support_8cpp_source.tex
+INPUT .\Support_8cpp_source.tex
+INPUT Support_8cpp_source.tex
+INPUT .\Support_8h_source.tex
+INPUT .\Support_8h_source.tex
+INPUT .\Support_8h_source.tex
+INPUT Support_8h_source.tex
+INPUT .\Support_8h_source.tex
+INPUT .\Support_8h_source.tex
+INPUT Support_8h_source.tex
+INPUT .\SupportFactory_8cpp_source.tex
+INPUT .\SupportFactory_8cpp_source.tex
+INPUT .\SupportFactory_8cpp_source.tex
+INPUT SupportFactory_8cpp_source.tex
+INPUT .\SupportFactory_8cpp_source.tex
+INPUT .\SupportFactory_8cpp_source.tex
+INPUT SupportFactory_8cpp_source.tex
+INPUT .\SupportFactory_8h_source.tex
+INPUT .\SupportFactory_8h_source.tex
+INPUT .\SupportFactory_8h_source.tex
+INPUT SupportFactory_8h_source.tex
+INPUT .\SupportFactory_8h_source.tex
+INPUT .\SupportFactory_8h_source.tex
+INPUT SupportFactory_8h_source.tex
+INPUT .\TerrainType_8cpp_source.tex
+INPUT .\TerrainType_8cpp_source.tex
+INPUT .\TerrainType_8cpp_source.tex
+INPUT TerrainType_8cpp_source.tex
+INPUT .\TerrainType_8cpp_source.tex
+INPUT .\TerrainType_8cpp_source.tex
+INPUT TerrainType_8cpp_source.tex
+INPUT .\TerrainType_8h_source.tex
+INPUT .\TerrainType_8h_source.tex
+INPUT .\TerrainType_8h_source.tex
+INPUT TerrainType_8h_source.tex
+INPUT .\TerrainType_8h_source.tex
+INPUT .\TerrainType_8h_source.tex
+INPUT TerrainType_8h_source.tex
+INPUT .\testmain_8cpp_source.tex
+INPUT .\testmain_8cpp_source.tex
+INPUT .\testmain_8cpp_source.tex
+INPUT testmain_8cpp_source.tex
+INPUT .\testmain_8cpp_source.tex
+INPUT .\testmain_8cpp_source.tex
+INPUT testmain_8cpp_source.tex
+INPUT .\Type_8cpp_source.tex
+INPUT .\Type_8cpp_source.tex
+INPUT .\Type_8cpp_source.tex
+INPUT Type_8cpp_source.tex
+INPUT .\Type_8cpp_source.tex
+INPUT .\Type_8cpp_source.tex
+INPUT Type_8cpp_source.tex
+INPUT .\Type_8h_source.tex
+INPUT .\Type_8h_source.tex
+INPUT .\Type_8h_source.tex
+INPUT Type_8h_source.tex
+INPUT .\Type_8h_source.tex
+INPUT .\Type_8h_source.tex
+INPUT Type_8h_source.tex
+INPUT .\Vehicle_8cpp_source.tex
+INPUT .\Vehicle_8cpp_source.tex
+INPUT .\Vehicle_8cpp_source.tex
+INPUT Vehicle_8cpp_source.tex
+INPUT .\Vehicle_8cpp_source.tex
+INPUT .\Vehicle_8cpp_source.tex
+INPUT Vehicle_8cpp_source.tex
+INPUT .\Vehicle_8h_source.tex
+INPUT .\Vehicle_8h_source.tex
+INPUT .\Vehicle_8h_source.tex
+INPUT Vehicle_8h_source.tex
+INPUT .\Vehicle_8h_source.tex
+INPUT .\Vehicle_8h_source.tex
+INPUT Vehicle_8h_source.tex
+INPUT .\VehicleFactory_8cpp_source.tex
+INPUT .\VehicleFactory_8cpp_source.tex
+INPUT .\VehicleFactory_8cpp_source.tex
+INPUT VehicleFactory_8cpp_source.tex
+INPUT .\VehicleFactory_8cpp_source.tex
+INPUT .\VehicleFactory_8cpp_source.tex
+INPUT VehicleFactory_8cpp_source.tex
+INPUT .\VehicleFactory_8h_source.tex
+INPUT .\VehicleFactory_8h_source.tex
+INPUT .\VehicleFactory_8h_source.tex
+INPUT VehicleFactory_8h_source.tex
+INPUT .\VehicleFactory_8h_source.tex
+INPUT .\VehicleFactory_8h_source.tex
+INPUT VehicleFactory_8h_source.tex
+INPUT .\WarEngine_8cpp_source.tex
+INPUT .\WarEngine_8cpp_source.tex
+INPUT .\WarEngine_8cpp_source.tex
+INPUT WarEngine_8cpp_source.tex
+INPUT .\WarEngine_8cpp_source.tex
+INPUT .\WarEngine_8cpp_source.tex
+INPUT WarEngine_8cpp_source.tex
+INPUT .\WarEngine_8h_source.tex
+INPUT .\WarEngine_8h_source.tex
+INPUT .\WarEngine_8h_source.tex
+INPUT WarEngine_8h_source.tex
+INPUT .\WarEngine_8h_source.tex
+INPUT .\WarEngine_8h_source.tex
+INPUT WarEngine_8h_source.tex
+INPUT .\WarEngineMemento_8cpp_source.tex
+INPUT .\WarEngineMemento_8cpp_source.tex
+INPUT .\WarEngineMemento_8cpp_source.tex
+INPUT WarEngineMemento_8cpp_source.tex
+INPUT .\WarEngineMemento_8cpp_source.tex
+INPUT .\WarEngineMemento_8cpp_source.tex
+INPUT WarEngineMemento_8cpp_source.tex
+INPUT .\WarEngineMemento_8h_source.tex
+INPUT .\WarEngineMemento_8h_source.tex
+INPUT .\WarEngineMemento_8h_source.tex
+INPUT WarEngineMemento_8h_source.tex
+INPUT .\WarEngineMemento_8h_source.tex
+INPUT .\WarEngineMemento_8h_source.tex
+INPUT WarEngineMemento_8h_source.tex
+INPUT .\WarEngineState_8cpp_source.tex
+INPUT .\WarEngineState_8cpp_source.tex
+INPUT .\WarEngineState_8cpp_source.tex
+INPUT WarEngineState_8cpp_source.tex
+INPUT .\WarEngineState_8cpp_source.tex
+INPUT .\WarEngineState_8cpp_source.tex
+INPUT WarEngineState_8cpp_source.tex
+INPUT .\WarEngineState_8h_source.tex
+INPUT .\WarEngineState_8h_source.tex
+INPUT .\WarEngineState_8h_source.tex
+INPUT WarEngineState_8h_source.tex
+INPUT .\WarEngineState_8h_source.tex
+INPUT .\WarEngineState_8h_source.tex
+INPUT WarEngineState_8h_source.tex
+INPUT .\WarTheatre_8cpp_source.tex
+INPUT .\WarTheatre_8cpp_source.tex
+INPUT .\WarTheatre_8cpp_source.tex
+INPUT WarTheatre_8cpp_source.tex
+INPUT .\WarTheatre_8cpp_source.tex
+INPUT .\WarTheatre_8cpp_source.tex
+INPUT WarTheatre_8cpp_source.tex
+INPUT .\WarTheatre_8h_source.tex
+INPUT .\WarTheatre_8h_source.tex
+INPUT .\WarTheatre_8h_source.tex
+INPUT WarTheatre_8h_source.tex
+INPUT .\WarTheatre_8h_source.tex
+INPUT .\WarTheatre_8h_source.tex
+INPUT WarTheatre_8h_source.tex
+INPUT .\Weather_8cpp_source.tex
+INPUT .\Weather_8cpp_source.tex
+INPUT .\Weather_8cpp_source.tex
+INPUT Weather_8cpp_source.tex
+INPUT .\Weather_8cpp_source.tex
+INPUT .\Weather_8cpp_source.tex
+INPUT Weather_8cpp_source.tex
+INPUT .\Weather_8h_source.tex
+INPUT .\Weather_8h_source.tex
+INPUT .\Weather_8h_source.tex
+INPUT Weather_8h_source.tex
+INPUT .\Weather_8h_source.tex
+INPUT .\Weather_8h_source.tex
+INPUT Weather_8h_source.tex
+INPUT .\refman.ind
+INPUT refman.ind
+INPUT .\refman.ind
+INPUT refman.ind
+INPUT refman.aux
+INPUT .\refman.out
+INPUT .\refman.out
+INPUT D:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy10.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy7.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\public\amsfonts\cm\cmsy8.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrb8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrro8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrro8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvb8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvb8ac.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvb8ac.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvr8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvro8a.pfb
+INPUT D:\Program Files\MiKTeX\fonts\type1\urw\helvetic\uhvro8a.pfb
