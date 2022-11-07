@@ -48,14 +48,56 @@ void setupWarEngine() {
     WarEngine::getInstance().setWarTheatre(w);
 }
 
+void showTests(int &argc, char** argv){}
+
+int startWarEngine(int &argc, char** argv){
+
+    bool continueLoop = true;
+
+    while(continueLoop){
+        
+        cout << "Welcome to the War Simulator!\n" << "Please select an option:" << endl;
+        
+        cout << "1) Run Google Tests\n" << "2) Setup Simulation\n" << "3)Quit\n" << endl;
+
+        std::string userStringInput;
+
+        cin >> userStringInput;
+
+        int userOption = stoi(userStringInput);
+        
+        switch(userOption){
+            case 1:
+                testing::InitGoogleTest(&argc, argv);
+                RUN_ALL_TESTS();
+                cout << "\n" << endl;
+                break;
+            case 2:
+                setupWarEngine();
+                WarEngine::getInstance().simulate();
+                cout << "\n" << endl;
+                break;
+            case 3:
+                continueLoop = false;
+                cout << "\n" << endl;
+                break;
+            default:
+                cout << "Please try again. Enter a valid option.\n\n" << endl;
+        }
+    }
+
+        return 0;
+
+}
+
 int main(int argc, char **argv) {
-    // EasySetup* easySetup = new EasySetup();
-    // easySetup->setupSimulation();
-
-    setupWarEngine();
+    //setupWarEngine();
     
-    WarEngine::getInstance().simulate();
+    //WarEngine::getInstance().simulate();
 
-    testing::InitGoogleTest(&argc, argv);
-    return RUN_ALL_TESTS();
+    //testing::InitGoogleTest(&argc, argv);
+    //return RUN_ALL_TESTS();
+    startWarEngine(argc, argv);
+
+    return 0;
 }
