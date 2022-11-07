@@ -18,6 +18,7 @@ and the ability to simulate different war enviroments.
 ## Documentation
 
 - [Development Documentation](https://linktodocumentation)
+- [Coding Documentation](docs/Code%20Documentation.pdf)
 - [Class Diagram](docs/diagrams/System%20Class%20Diagram.png)
 - [Design Diagrams](docs/diagrams)
 
