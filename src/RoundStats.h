@@ -11,6 +11,9 @@ class RoundStats {
         static int numEntitiesCreated;
         static int numEntitiesDestroyed;
         static int damageDone;
+        static int numLosingPoints;
+        static int numContestedPoints;
+        static int numWinningPoints;
         static vector<string> keyPointInformation;
         static vector<string> entityMovementInformation;
 

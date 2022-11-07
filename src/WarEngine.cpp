@@ -26,27 +26,57 @@ WarEngine::~WarEngine(){
 
 
 void WarEngine::simulate() {
+	
 	vector<Alliance*> alliances = this->state->getAlliances();
+	int numAlliances = alliances.size();
+	while (numAlliances > 1) {
+		numAlliances = 0;
+		for(int i = 0; i < alliances.size(); i++) {
+			if (alliances[i]->getActive() == 1) {
+				numAlliances++;
+				RoundStats::clearStats();
+				state->getArea()->simulateBattle(alliances[i]);
 
-	for(int i = 0; i < alliances.size(); i++) {
-		if (alliances[i]->getActive() == 1) {
-			RoundStats::clearStats();
-			state->getArea()->simulateBattle(alliances[i]);
-			cout << "========================================================================" << endl;
-			cout << "Alliance " << alliances[i]->getID() << ":" << endl;
-			
-			if (alliances[i]->getID() == 2) {
-				cout << "Status: Surrendered" << endl; 
-			} else if (alliances[i]->getID() == 3) {
-				cout << "Status: Found Peace" << endl; 
-			} else {
-				cout << "Status: Active" << endl; 
+				double percLoss = (RoundStats::numLosingPoints * 1.0) / (RoundStats::numLosingPoints + RoundStats::numContestedPoints + RoundStats::numWinningPoints);
+				if (percLoss >= 0.7) {
+					alliances[i]->surrender();
+				} else if (percLoss >= 0.6) {
+					alliances[i]->offerPeace();
+				}
+
+				cout << "========================================================================" << endl << endl;
+				cout << "Alliance " << alliances[i]->getID() << ":" << endl;
+				
+				if (alliances[i]->getActive() == 2) {
+					cout << "Status: Surrendered" << endl; 
+				} else if (alliances[i]->getActive() == 3) {
+					cout << "Status: Found Peace" << endl; 
+				} else {
+					cout << "Status: Active" << endl; 
+				}
+
+				cout << RoundStats::toString() << endl;
+				cout << "========================================================================" << endl;
 			}
-
-			cout << RoundStats::toString() << endl;
-			cout << "========================================================================" << endl;
 		}
 	}
+
+	for(int i = 0; i < alliances.size(); i++) {
+		cout << "========================================================================" << endl << endl;
+		cout << "Alliance " << alliances[i]->getID() << ":" << endl;
+		
+		if (alliances[i]->getActive() == 2) {
+			cout << "Status: Surrendered" << endl; 
+		} else if (alliances[i]->getActive() == 3) {
+			cout << "Status: Found Peace" << endl; 
+		} else {
+			cout << "Status: Winner" << endl; 
+		}
+
+		cout << endl << "========================================================================" << endl;
+	}
+
+	cout << "SIMULATION COMPLETE!" << endl;
 
 }
 
