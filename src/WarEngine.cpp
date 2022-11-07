@@ -1,6 +1,7 @@
 #include "WarEngine.h"
 #include "RoundStats.h"
 #include <iostream>
+#include <string>
 
 WarEngine::WarEngine(){
 	this->state = new WarEngineState();
@@ -27,9 +28,20 @@ WarEngine::~WarEngine(){
 
 void WarEngine::simulate() {
 	
+	cout << "\n========================================================================" << endl;
+
+	int roundCount = 0;
 	vector<Alliance*> alliances = this->state->getAlliances();
 	int numAlliances = alliances.size();
 	while (numAlliances > 1) {
+
+		if (roundCount % 4 == 0)
+		{
+			cout << "Press Enter Key to Continue...." << endl;
+			cin.clear();
+			cin.ignore();
+		}
+			
 		numAlliances = 0;
 		for(int i = 0; i < alliances.size(); i++) {
 			if (alliances[i]->getActive() == 1) {
@@ -43,6 +55,8 @@ void WarEngine::simulate() {
 				} else if (percLoss >= 0.6) {
 					alliances[i]->offerPeace();
 				}
+
+				cout << "Round No. " << to_string(roundCount++) << endl;
 
 				cout << "========================================================================" << endl << endl;
 				cout << "Alliance " << alliances[i]->getID() << ":" << endl;
@@ -58,7 +72,9 @@ void WarEngine::simulate() {
 				cout << RoundStats::toString() << endl;
 				cout << "========================================================================" << endl;
 			}
+
 		}
+		
 	}
 
 	for(int i = 0; i < alliances.size(); i++) {

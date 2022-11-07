@@ -35,7 +35,7 @@ void setupWarEngine() {
     KeyPoint* k2 = new KeyPoint("North");
     KeyPoint* k3 = new KeyPoint("East");
 
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < 200; i++) {
         Personnel* p1 = new Personnel(NULL);
         p1->setAlliance(a1);
         k1->addEntity(p1->clone());

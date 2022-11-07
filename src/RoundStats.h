@@ -15,7 +15,6 @@ class RoundStats {
         static int numContestedPoints;
         static int numWinningPoints;
         static vector<string> keyPointInformation;
-        static vector<string> entityMovementInformation;
 
         static void clearStats();
         static string toString();

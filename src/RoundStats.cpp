@@ -7,7 +7,6 @@ int RoundStats::numLosingPoints = 0;
 int RoundStats::numContestedPoints = 0;
 int RoundStats::numWinningPoints = 0;
 vector<string> RoundStats::keyPointInformation;
-vector<string> RoundStats::entityMovementInformation;
 
 void RoundStats::clearStats() {
     numEntitiesCreated = 0;
@@ -17,7 +16,6 @@ void RoundStats::clearStats() {
     numContestedPoints = 0;
     numWinningPoints = 0;
     keyPointInformation.clear();
-    entityMovementInformation.clear();
 }
 
 string RoundStats::toString() {
@@ -29,10 +27,6 @@ string RoundStats::toString() {
     out += "\nKey Point Round Information:\n";
     for (int i = 0; i < keyPointInformation.size(); i++)
         out += keyPointInformation[i] + "\n";
-
-    out += "\nMovement Round Information:\n";
-    for (int i = 0; i < entityMovementInformation.size(); i++)
-        out += entityMovementInformation[i] + "\n";
 
     return out;
 }
