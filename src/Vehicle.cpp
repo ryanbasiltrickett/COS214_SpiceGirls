@@ -1,9 +1,13 @@
 #include "Vehicle.h"
 #include "RoundStats.h"
+#include <stdexcept>
 
 Vehicle::Vehicle(Type* type, int health, int damage): Entity(type, health, damage) {}
 
 void Vehicle::takeDamage(int damage) {
+	if (damage <= 0)
+		throw std::invalid_argument("damage must be greater than zero");
+		
 	setHealth(getHealth() - damage);
 }
 

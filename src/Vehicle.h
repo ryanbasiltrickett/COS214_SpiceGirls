@@ -27,9 +27,12 @@ public:
 	 *  - damage must be an int
 	 *
 	 * Postconditions:
-	 *  - Reduces the health of the vehicle object
+	 *  - does nothing
 	 * 
-	 * @param damage must be an int
+	 * Exceptions:
+	 * - damage less than 0
+	 * 
+	 * @param damage must be an int and greater than 0
 	 * @return void
 	 */
 	void takeDamage(int damage);

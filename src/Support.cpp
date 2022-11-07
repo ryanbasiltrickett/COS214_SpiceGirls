@@ -1,5 +1,6 @@
 #include "Support.h"
 #include "RoundStats.h"
+#include <stdexcept>
 
 Support::Support(Type* type, int health, int damage): Entity(type, health, damage) {}
 
@@ -9,6 +10,9 @@ void Support::dealDamage(Entity* entity) {
 }
 
 void Support::takeDamage(int damage) {
+	if (damage <= 0)
+		throw std::invalid_argument("damage must be greater than zero");
+
 	this->setHealth(this->getHealth() - damage);
 }
 

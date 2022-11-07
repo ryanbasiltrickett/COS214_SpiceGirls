@@ -18,8 +18,8 @@ and the ability to simulate different war enviroments.
 ## Documentation
 
 - [Development Documentation](https://linktodocumentation)
-- [Class Diagram](https://linktodocumentation)
-- [Design Diagrams](https://linktodocumentation)
+- [Class Diagram](docs/diagrams/System%20Class%20Diagram.png)
+- [Design Diagrams](docs/diagrams)
 
 
 ## Features
@@ -42,5 +42,6 @@ To  this project run in the build folder
 If you have cmake installed you can also compile with
 
 ```bash
+  cmake ../src
   make
 ```

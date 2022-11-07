@@ -27,8 +27,11 @@ public:
 	 *
 	 * Postconditions:
 	 *  - Does nothing
+	 * 
+	 * Exceptions: 
+	 * - damage less than 0
 	 *
-	 * @param damage must be an int
+	 * @param damage must be an int and greater than 0
 	 * @return void
 	 */
 	void takeDamage(int damage);

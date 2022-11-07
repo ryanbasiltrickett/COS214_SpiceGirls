@@ -28,7 +28,10 @@ public:
 	 * Postconditions:
 	 *  - Decreases the entities' armour value (or health when their armour has diminished) by the passed in value
 	 *
-	 * @param damage must be an int
+	 * Exceptions:
+	 *  - damage less 0
+	 * 
+	 * @param damage must be an int and is greater than 0
 	 * @return void
 	 */
 	void takeDamage(int damage);
