@@ -1,4 +1,5 @@
 #include "AddOn.h"
+#include <stdexcept>  
 
 AddOn::AddOn(int value): Entity() {
 	this->value = value;
@@ -6,6 +7,10 @@ AddOn::AddOn(int value): Entity() {
 }
 
 void AddOn::setValue(int value) {
+
+	if (value <= 0)
+		throw std::invalid_argument("value must be greater than zero");
+	
 	this->value = value;
 }
 

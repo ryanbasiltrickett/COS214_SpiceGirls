@@ -1,8 +1,13 @@
 #include "Armour.h"
+#include <stdexcept>  
 
 Armour::Armour(int value) : AddOn(value) {}
 
 void Armour::takeDamage(int damage) {
+
+	if (damage <= 0)
+		throw std::invalid_argument("damage must be greater than zero");
+	
 	if (value > 0) {
 		value -= damage;
 	} else {
