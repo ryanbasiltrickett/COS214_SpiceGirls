@@ -1,3 +1,0 @@
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/edit_cache.dir
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/tests/CMakeFiles/build.dir

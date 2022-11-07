@@ -22,7 +22,12 @@ Inheritance diagram for Factory\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Instantiates the factory. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classFactory_a8f71456f48e4df402c778a44191ff40e}{$\sim$\+Factory}} ()
 \begin{DoxyCompactList}\small\item\em Destroys the factory object. \end{DoxyCompactList}\item 
+<<<<<<< HEAD
+\mbox{\Hypertarget{classFactory_a80da95da98b407948dc815f2bca6a283}\label{classFactory_a80da95da98b407948dc815f2bca6a283}} 
+virtual Entity $\ast$ {\bfseries create\+Entity} (Alliance $\ast$alliance)=0
+=======
 virtual \mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classFactory_a56dd52e03a7f7e077c586e64936476a6}{create\+Entity}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)=0
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \item 
 \mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{get\+Type}} ()
 \begin{DoxyCompactList}\small\item\em Returns factories type state. \end{DoxyCompactList}\item 
@@ -32,14 +37,23 @@ void \mbox{\hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{set\+Type}
 \begin{DoxyCompactList}\small\item\em Returns factories add ons. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}{set\+Add\+Ons}} (\mbox{\hyperlink{classAddOn}{Add\+On}} $\ast$add\+On)
 \begin{DoxyCompactList}\small\item\em Sets the factories add ons. \end{DoxyCompactList}\item 
+<<<<<<< HEAD
+virtual \hyperlink{classFactory}{Factory} $\ast$ \hyperlink{classFactory_a00881ec5050751e4b747db5dfd266192}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em the factoru object will be cloned and returned \end{DoxyCompactList}\end{DoxyCompactItemize}
+=======
 virtual \mbox{\hyperlink{classFactory}{Factory}} $\ast$ \mbox{\hyperlink{classFactory_a6f110a5558739780af3551356d783f35}{clone}} ()=0
 \end{DoxyCompactItemize}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{classFactory}{Factory}} class. 
 
+<<<<<<< HEAD
+Used to instantiate Entity objects. 
+=======
 Used to instantiate \mbox{\hyperlink{classEntity}{Entity}} objects. 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 Definition at line \mbox{\hyperlink{Factory_8h_source_l00012}{12}} of file \mbox{\hyperlink{Factory_8h_source}{Factory.\+h}}.
 
@@ -102,6 +116,30 @@ Definition at line \mbox{\hyperlink{Factory_8cpp_source_l00008}{8}} of file \mbo
 \end{DoxyCode}
 
 
+<<<<<<< HEAD
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classFactory_a00881ec5050751e4b747db5dfd266192}\label{classFactory_a00881ec5050751e4b747db5dfd266192}} 
+\index{Factory@{Factory}!clone@{clone}}
+\index{clone@{clone}!Factory@{Factory}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classFactory}{Factory}$\ast$ Factory\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+the factoru object will be cloned and returned 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item returns the cloned object of type Factory$\ast$
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Factory$\ast$ the cloned object 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classPersonnelFactory_ad60e8371e52153294112b16a7a97cc2d}{Personnel\+Factory}, \hyperlink{classSupportFactory_a802c25e901b479656ea95a5678a1ad26}{Support\+Factory}, and \hyperlink{classVehicleFactory_a6d874e37b573b491a49e303209ac42cd}{Vehicle\+Factory}.
+=======
 \doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classFactory_a6f110a5558739780af3551356d783f35}\label{classFactory_a6f110a5558739780af3551356d783f35}} 
 \index{Factory@{Factory}!clone@{clone}}
@@ -122,6 +160,7 @@ Implemented in \mbox{\hyperlink{classPersonnelFactory_ad60e8371e52153294112b16a7
 
 
 Implemented in \mbox{\hyperlink{classPersonnelFactory_ae8684c246d5dfb1f469f368525867394}{Personnel\+Factory}}, \mbox{\hyperlink{classSupportFactory_ad2ebc8fdf1335e423a766fa0c5573cf8}{Support\+Factory}}, and \mbox{\hyperlink{classVehicleFactory_a3f34221921fd58cf83fd9bc8e3d8798f}{Vehicle\+Factory}}.
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 \mbox{\Hypertarget{classFactory_a994153930f59cafb280e91d5b100b5aa}\label{classFactory_a994153930f59cafb280e91d5b100b5aa}} 
 \index{Factory@{Factory}!getAddOn@{getAddOn}}

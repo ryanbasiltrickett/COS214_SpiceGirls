@@ -7,7 +7,7 @@ namespace {
 
     // Tests Negotiator Functionality
 
-    // Tests Negotiator offerPeace()
+    // Tests AddOn setEntity()
     // ============ Positive Testing ============
     // Test Preconditions Bounds
     TEST(NegotiatorOfferPeace, PositiveTesting) {
@@ -26,9 +26,6 @@ namespace {
         }
     }
 
-    // Tests Negotiator surrender()
-    // ============ Positive Testing ============
-    // Test Preconditions Bounds
     TEST(NegotiatorSurrender, PositiveTesting) {
         Alliance* a = new Alliance();  
         Alliance* b = new Alliance();  
@@ -59,5 +56,4 @@ namespace {
         d->surrender();
         EXPECT_EQ(2, a->getActive());
     }
-
 }

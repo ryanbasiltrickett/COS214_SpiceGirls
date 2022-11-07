@@ -7,6 +7,22 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+<<<<<<< HEAD
+\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ \hyperlink{classWarEngine_afe7e71964cca280d52f4298e97e1a8d7}{save\+State} ()
+\begin{DoxyCompactList}\small\item\em Captures current state of simulation via member variables and creates \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} instance storing all relevant members in \hyperlink{classWarEngineState}{War\+Engine\+State}. \end{DoxyCompactList}\item 
+void \hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{load\+Save} (\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$save)
+\begin{DoxyCompactList}\small\item\em Takes in an instance of saved \hyperlink{classWarEngine}{War\+Engine} states and sets current instance\textquotesingle{}s member variables to memento state. \end{DoxyCompactList}\item 
+void \hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{set\+War\+Theatre} (\hyperlink{classWarTheatre}{War\+Theatre} $\ast$battle\+Ground)
+\begin{DoxyCompactList}\small\item\em Sets the state\textquotesingle{}s area to passed in battle\+Ground parameter. \end{DoxyCompactList}\item 
+void \hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate} ()
+\begin{DoxyCompactList}\small\item\em Simulates the war. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classWarEngine}{War\+Engine} \& \hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{get\+Instance} ()
+\begin{DoxyCompactList}\small\item\em Function that returns a reference to the current (and only) instance of the class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+=======
 \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} $\ast$ \mbox{\hyperlink{classWarEngine_afe7e71964cca280d52f4298e97e1a8d7}{save\+State}} ()
 \begin{DoxyCompactList}\small\item\em Captures current state of simulation via member variables and creates \mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} instance storing all relevant members in \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{load\+Save}} (\mbox{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento}} $\ast$save)
@@ -18,6 +34,7 @@ void \mbox{\hyperlink{classWarEngine_aea477ae54ae3b5fac8fe02be1153eb9a}{add\+All
 void \mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate}} ()
 \begin{DoxyCompactList}\small\item\em Simulates the war. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Static Public Member Functions}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCompactItemize}
 \item 
 static \mbox{\hyperlink{classWarEngine}{War\+Engine}} \& \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{get\+Instance}} ()
@@ -27,17 +44,92 @@ static \mbox{\hyperlink{classWarEngine}{War\+Engine}} \& \mbox{\hyperlink{classW
 \item 
 \mbox{\hyperlink{classWarEngine_a3c95a6990a6eabd99f1ea0ade30f85f2}{War\+Engine}} ()
 \begin{DoxyCompactList}\small\item\em Constructor for class. Is responsible for ensuring only a single instance of class exists. \end{DoxyCompactList}\item 
+<<<<<<< HEAD
+\hyperlink{classWarEngine_a76af9e002be42642841c863b9d0ab710}{War\+Engine} (const \hyperlink{classWarEngine}{War\+Engine} \&)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWarEngine_af57a2339eba0706693be0021719528ea}\label{classWarEngine_af57a2339eba0706693be0021719528ea}} 
+\hyperlink{classWarEngine}{War\+Engine} \& \hyperlink{classWarEngine_af57a2339eba0706693be0021719528ea}{operator=} (const \hyperlink{classWarEngine}{War\+Engine} \&)
+\begin{DoxyCompactList}\small\item\em Overloaded operator = for class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWarEngine_a23425e290b562445897d4c54a80c5485}\label{classWarEngine_a23425e290b562445897d4c54a80c5485}} 
+\hyperlink{classWarEngine_a23425e290b562445897d4c54a80c5485}{$\sim$\+War\+Engine} ()
+=======
 \mbox{\hyperlink{classWarEngine_a76af9e002be42642841c863b9d0ab710}{War\+Engine}} (const \mbox{\hyperlink{classWarEngine}{War\+Engine}} \&)
 \begin{DoxyCompactList}\small\item\em Parameterized constructor for class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classWarEngine}{War\+Engine}} \& \mbox{\hyperlink{classWarEngine_a56aed2dc646f6734e0c2e9ff41776d2e}{operator=}} (const \mbox{\hyperlink{classWarEngine}{War\+Engine}} \&)
 \begin{DoxyCompactList}\small\item\em Overloaded operator = for class. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classWarEngine_a23425e290b562445897d4c54a80c5485}{$\sim$\+War\+Engine}} ()
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCompactList}\small\item\em Destrcutor for class responsible for freeing all allocated memory. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Class that contains all information regarding current simulation. Only one instance of class is allowed. 
 
+<<<<<<< HEAD
+Definition at line 12 of file War\+Engine.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWarEngine_a76af9e002be42642841c863b9d0ab710}\label{classWarEngine_a76af9e002be42642841c863b9d0ab710}} 
+\index{War\+Engine@{War\+Engine}!War\+Engine@{War\+Engine}}
+\index{War\+Engine@{War\+Engine}!War\+Engine@{War\+Engine}}
+\subsubsection{\texorpdfstring{War\+Engine()}{WarEngine()}}
+{\footnotesize\ttfamily War\+Engine\+::\+War\+Engine (\begin{DoxyParamCaption}\item[{const \hyperlink{classWarEngine}{War\+Engine} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+Parameterized constructor for class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em war\+Engine\&} & An anonymous war\+Engine reference.\\
+\hline
+\end{DoxyParams}
+Postconditions\+:
+\begin{DoxyItemize}
+\item parameter must be of type \hyperlink{classWarEngine}{War\+Engine}\& 
+\end{DoxyItemize}
+
+Definition at line 33 of file War\+Engine.\+h.
+
+
+\begin{DoxyCode}
+33 \{\};
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classWarEngine_aa8219fbd385bb54ad0363257915fe986}\label{classWarEngine_aa8219fbd385bb54ad0363257915fe986}} 
+\index{War\+Engine@{War\+Engine}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!War\+Engine@{War\+Engine}}
+\subsubsection{\texorpdfstring{get\+Instance()}{getInstance()}}
+{\footnotesize\ttfamily \hyperlink{classWarEngine}{War\+Engine} \& War\+Engine\+::get\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Function that returns a reference to the current (and only) instance of the class. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classWarEngine}{War\+Engine}\& 
+\end{DoxyReturn}
+
+
+Definition at line 16 of file War\+Engine.\+cpp.
+
+
+\begin{DoxyCode}
+16                                  \{
+17     \textcolor{keyword}{static} \hyperlink{classWarEngine}{WarEngine} uniqueInstance\_;
+18     \textcolor{keywordflow}{return} uniqueInstance\_;
+19 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classWarEngine_a715995a703811197d16102ca80bf6fca}\label{classWarEngine_a715995a703811197d16102ca80bf6fca}} 
+\index{War\+Engine@{War\+Engine}!load\+Save@{load\+Save}}
+\index{load\+Save@{load\+Save}!War\+Engine@{War\+Engine}}
+\subsubsection{\texorpdfstring{load\+Save()}{loadSave()}}
+{\footnotesize\ttfamily void War\+Engine\+::load\+Save (\begin{DoxyParamCaption}\item[{\hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$}]{save }\end{DoxyParamCaption})}
+=======
 Definition at line \mbox{\hyperlink{WarEngine_8h_source_l00012}{12}} of file \mbox{\hyperlink{WarEngine_8h_source}{War\+Engine.\+h}}.
 
 
@@ -48,6 +140,7 @@ Definition at line \mbox{\hyperlink{WarEngine_8h_source_l00012}{12}} of file \mb
 \index{WarEngine@{WarEngine}!WarEngine@{WarEngine}}
 \doxysubsubsection{\texorpdfstring{WarEngine()}{WarEngine()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily War\+Engine\+::\+War\+Engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -167,6 +260,24 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00018}{18}} of file \
 
 Takes in an instance of saved \mbox{\hyperlink{classWarEngine}{War\+Engine}} states and sets current instance\textquotesingle{}s member variables to memento state. 
 
+<<<<<<< HEAD
+=======
+Preconditions\+:
+\begin{DoxyItemize}
+\item Save must be of type War\+Engine\+Memento$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Sets the instance of the class\textquotesingle{}state member variable to the passed in save parameter.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em save} & must be a War\+Engine\+Memento$\ast$ \\
+\hline
+\end{DoxyParams}
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 Preconditions\+:
 \begin{DoxyItemize}
 \item Save must be of type War\+Engine\+Memento$\ast$
@@ -187,7 +298,27 @@ void
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+=======
+<<<<<<< HEAD
+Definition at line 11 of file War\+Engine.\+cpp.
+
+
+\begin{DoxyCode}
+11                                                \{
+12     \textcolor{keyword}{delete} this->state;
+13     this->state = save->getState();
+14 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classWarEngine_afe7e71964cca280d52f4298e97e1a8d7}\label{classWarEngine_afe7e71964cca280d52f4298e97e1a8d7}} 
+\index{War\+Engine@{War\+Engine}!save\+State@{save\+State}}
+\index{save\+State@{save\+State}!War\+Engine@{War\+Engine}}
+\subsubsection{\texorpdfstring{save\+State()}{saveState()}}
+{\footnotesize\ttfamily \hyperlink{classWarEngineMemento}{War\+Engine\+Memento} $\ast$ War\+Engine\+::save\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+=======
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -202,6 +333,7 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00013}{13}} of file \
 \index{operator=@{operator=}!WarEngine@{WarEngine}}
 \doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
 {\footnotesize\ttfamily \mbox{\hyperlink{classWarEngine}{War\+Engine}} \& War\+Engine\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classWarEngine}{War\+Engine}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -231,7 +363,26 @@ War\+Engine\+Memento$\ast$
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+=======
+<<<<<<< HEAD
+Definition at line 7 of file War\+Engine.\+cpp.
+
+
+\begin{DoxyCode}
+7                                        \{
+8     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \hyperlink{classWarEngineMemento}{WarEngineMemento}(state->clone());
+9 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classWarEngine_ad3204f345ee8d36a37e8d47700420825}\label{classWarEngine_ad3204f345ee8d36a37e8d47700420825}} 
+\index{War\+Engine@{War\+Engine}!set\+War\+Theatre@{set\+War\+Theatre}}
+\index{set\+War\+Theatre@{set\+War\+Theatre}!War\+Engine@{War\+Engine}}
+\subsubsection{\texorpdfstring{set\+War\+Theatre()}{setWarTheatre()}}
+{\footnotesize\ttfamily void War\+Engine\+::set\+War\+Theatre (\begin{DoxyParamCaption}\item[{\hyperlink{classWarTheatre}{War\+Theatre} $\ast$}]{battle\+Ground }\end{DoxyParamCaption})}
+=======
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -245,6 +396,7 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00009}{9}} of file \m
 \index{setWarTheatre@{setWarTheatre}!WarEngine@{WarEngine}}
 \doxysubsubsection{\texorpdfstring{setWarTheatre()}{setWarTheatre()}}
 {\footnotesize\ttfamily void War\+Engine\+::set\+War\+Theatre (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWarTheatre}{War\+Theatre}} $\ast$}]{battle\+Ground }\end{DoxyParamCaption})}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -262,7 +414,11 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
+<<<<<<< HEAD
+\item sets area in \hyperlink{classWarEngineState}{War\+Engine\+State} to passed in \hyperlink{classWarTheatre}{War\+Theatre}.
+=======
 \item sets area in \mbox{\hyperlink{classWarEngineState}{War\+Engine\+State}} to passed in \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}.
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
@@ -270,7 +426,25 @@ void
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00053}{53}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+=======
+<<<<<<< HEAD
+Definition at line 36 of file War\+Engine.\+cpp.
+
+
+\begin{DoxyCode}
+36                                                      \{
+37     state->setArea(battleGround);
+38 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}\label{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}} 
+\index{War\+Engine@{War\+Engine}!simulate@{simulate}}
+\index{simulate@{simulate}!War\+Engine@{War\+Engine}}
+\subsubsection{\texorpdfstring{simulate()}{simulate()}}
+=======
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00035}{35}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -283,23 +457,53 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00053}{53}} of file \
 \index{WarEngine@{WarEngine}!simulate@{simulate}}
 \index{simulate@{simulate}!WarEngine@{WarEngine}}
 \doxysubsubsection{\texorpdfstring{simulate()}{simulate()}}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 {\footnotesize\ttfamily void War\+Engine\+::simulate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 Simulates the war. 
 
 Post\+Conditions\+:
 \begin{DoxyItemize}
 \item Will simulate the war by running the engine
 \end{DoxyItemize}
+<<<<<<< HEAD
+=======
+=======
+Simulates battle on War\+Theatres. 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 \begin{DoxyReturn}{Returns}
 void 
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
 Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00028}{28}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+=======
+<<<<<<< HEAD
+Definition at line 26 of file War\+Engine.\+cpp.
+
+
+\begin{DoxyCode}
+26                          \{
+27 
+28     vector<Alliance*> alliances = this->state->getAlliances();
+29 
+30     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j = 0; j < alliances.size(); j++) \{
+31         state->getArea()->simulateBattle(alliances[j]);
+32     \}
+33 
+34 \}
+=======
+Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{WarEngine_8cpp_source}{War\+Engine.\+cpp}}.
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 
 
 \begin{DoxyCode}{0}
@@ -328,6 +532,7 @@ Definition at line \mbox{\hyperlink{WarEngine_8cpp_source_l00028}{28}} of file \
 \DoxyCodeLine{00050 }
 \DoxyCodeLine{00051 \}}
 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

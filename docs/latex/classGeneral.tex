@@ -3,6 +3,16 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+<<<<<<< HEAD
+\hyperlink{classGeneral_a713f0749ceab81e918373adde7b18885}{General} (Alliance $\ast$alliance, \hyperlink{classStrategy}{Strategy} $\ast$stratety)
+\begin{DoxyCompactList}\small\item\em Construct a new \hyperlink{classGeneral}{General} object. \end{DoxyCompactList}\item 
+void \hyperlink{classGeneral_a7a2239276a120f53446cb60b24d61496}{initiate\+Strategy} (Key\+Point $\ast$key\+Point)
+\begin{DoxyCompactList}\small\item\em The function intiates the strategy. \end{DoxyCompactList}\item 
+bool \hyperlink{classGeneral_abe8dcb93ddb9b79bd8e75e8c642758ba}{set\+Strategy} (\hyperlink{classStrategy}{Strategy} $\ast$strategy)
+\begin{DoxyCompactList}\small\item\em Set the \hyperlink{classStrategy}{Strategy} object. \end{DoxyCompactList}\item 
+Alliance $\ast$ \hyperlink{classGeneral_a4cff7ae050a44bbbd077f4257078291c}{get\+Alliance} ()
+\begin{DoxyCompactList}\small\item\em Returns the Alliance object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+=======
 \mbox{\hyperlink{classGeneral_a713f0749ceab81e918373adde7b18885}{General}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance, \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$stratety)
 \begin{DoxyCompactList}\small\item\em Construct a new \mbox{\hyperlink{classGeneral}{General}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classGeneral_a7a2239276a120f53446cb60b24d61496}{initiate\+Strategy}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point)
@@ -11,11 +21,60 @@ bool \mbox{\hyperlink{classGeneral_abe8dcb93ddb9b79bd8e75e8c642758ba}{set\+Strat
 \begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ \mbox{\hyperlink{classGeneral_a4cff7ae050a44bbbd077f4257078291c}{get\+Alliance}} ()
 \begin{DoxyCompactList}\small\item\em Returns the \mbox{\hyperlink{classAlliance}{Alliance}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 \doxysubsection{Detailed Description}
 
 
+<<<<<<< HEAD
+Definition at line 8 of file General.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGeneral_a713f0749ceab81e918373adde7b18885}\label{classGeneral_a713f0749ceab81e918373adde7b18885}} 
+\index{General@{General}!General@{General}}
+\index{General@{General}!General@{General}}
+\subsubsection{\texorpdfstring{General()}{General()}}
+{\footnotesize\ttfamily General\+::\+General (\begin{DoxyParamCaption}\item[{Alliance $\ast$}]{alliance,  }\item[{\hyperlink{classStrategy}{Strategy} $\ast$}]{stratety }\end{DoxyParamCaption})}
+
+
+
+Construct a new \hyperlink{classGeneral}{General} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be an Alliance$\ast$ \\
+\hline
+{\em stratety} & must be a Strategy$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 3 of file General.\+cpp.
+
+
+\begin{DoxyCode}
+3                                                        \{
+4     this->alliance = alliance;
+5     this->strategy = strategy;
+6     numDeaths = 0;
+7 \}
+\end{DoxyCode}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classGeneral_a4cff7ae050a44bbbd077f4257078291c}\label{classGeneral_a4cff7ae050a44bbbd077f4257078291c}} 
+\index{General@{General}!get\+Alliance@{get\+Alliance}}
+\index{get\+Alliance@{get\+Alliance}!General@{General}}
+\subsubsection{\texorpdfstring{get\+Alliance()}{getAlliance()}}
+{\footnotesize\ttfamily Alliance $\ast$ General\+::get\+Alliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns the Alliance object. 
+=======
 Definition at line \mbox{\hyperlink{General_8h_source_l00008}{8}} of file \mbox{\hyperlink{General_8h_source}{General.\+h}}.
 
 
@@ -63,6 +122,7 @@ Definition at line \mbox{\hyperlink{General_8cpp_source_l00003}{3}} of file \mbo
 
 
 Returns the \mbox{\hyperlink{classAlliance}{Alliance}} object. 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 Post\+Conditions\+:
 \begin{DoxyItemize}
@@ -74,6 +134,21 @@ Alliance$\ast$ The alliance that the general is associated
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
+Definition at line 22 of file General.\+cpp.
+
+
+\begin{DoxyCode}
+22                               \{
+23     \textcolor{keywordflow}{return} this->alliance;
+24 \}
+\end{DoxyCode}
+\mbox{\Hypertarget{classGeneral_a7a2239276a120f53446cb60b24d61496}\label{classGeneral_a7a2239276a120f53446cb60b24d61496}} 
+\index{General@{General}!initiate\+Strategy@{initiate\+Strategy}}
+\index{initiate\+Strategy@{initiate\+Strategy}!General@{General}}
+\subsubsection{\texorpdfstring{initiate\+Strategy()}{initiateStrategy()}}
+{\footnotesize\ttfamily void General\+::initiate\+Strategy (\begin{DoxyParamCaption}\item[{Key\+Point $\ast$}]{key\+Point }\end{DoxyParamCaption})}
+=======
 Definition at line \mbox{\hyperlink{General_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{General_8cpp_source}{General.\+cpp}}.
 
 
@@ -88,6 +163,7 @@ Definition at line \mbox{\hyperlink{General_8cpp_source_l00022}{22}} of file \mb
 \index{initiateStrategy@{initiateStrategy}!General@{General}}
 \doxysubsubsection{\texorpdfstring{initiateStrategy()}{initiateStrategy()}}
 {\footnotesize\ttfamily void General\+::initiate\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{key\+Point }\end{DoxyParamCaption})}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -108,6 +184,19 @@ void
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
+Definition at line 9 of file General.\+cpp.
+
+
+\begin{DoxyCode}
+9                                                  \{
+10     numDeaths++;
+11     \textcolor{keywordflow}{if} (numDeaths >= 5) \{
+12         strategy->performStrat(keyPoint, this->alliance);
+13         numDeaths = 0;
+14     \}
+15 \}
+=======
 Definition at line \mbox{\hyperlink{General_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{General_8cpp_source}{General.\+cpp}}.
 
 
@@ -120,6 +209,7 @@ Definition at line \mbox{\hyperlink{General_8cpp_source_l00009}{9}} of file \mbo
 \DoxyCodeLine{00014     \}}
 \DoxyCodeLine{00015 \}}
 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 \mbox{\Hypertarget{classGeneral_abe8dcb93ddb9b79bd8e75e8c642758ba}\label{classGeneral_abe8dcb93ddb9b79bd8e75e8c642758ba}} 
 \index{General@{General}!setStrategy@{setStrategy}}
@@ -154,6 +244,16 @@ false if the setting the \mbox{\hyperlink{classStrategy}{Strategy}} object was u
 \end{DoxyReturn}
 
 
+<<<<<<< HEAD
+Definition at line 17 of file General.\+cpp.
+
+
+\begin{DoxyCode}
+17                                            \{
+18     this->strategy = strategy;
+19     \textcolor{keywordflow}{return} \textcolor{keyword}{true};
+20 \}
+=======
 Definition at line \mbox{\hyperlink{General_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{General_8cpp_source}{General.\+cpp}}.
 
 
@@ -163,6 +263,7 @@ Definition at line \mbox{\hyperlink{General_8cpp_source_l00017}{17}} of file \mb
 \DoxyCodeLine{00019     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
 \DoxyCodeLine{00020 \}}
 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

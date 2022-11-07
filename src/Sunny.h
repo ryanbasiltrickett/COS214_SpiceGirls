@@ -32,15 +32,17 @@ public:
 	 * Postconditions:
 	 *  - Changes the current weather to the next one in the state pattern (Cloudy)
 	 *
-	 * @param k must be a KeyPoint*
+	 * @param keypoint must be a KeyPoint*
 	 * @return void
 	 */
-	virtual void handleChange(KeyPoint* k);
+	virtual void handleChange(KeyPoint* keypoint);
 
 	/**
-	 * @brief Returns the clone of the Sunny object
+	 * @brief Returns the cloned object of Sunny
+	 * PostConditions:
+	 * - Returns cloned object of Sunny
 	 * 
-	 * @return Weather* Returns the clone of the sunny object
+	 * @return Weather* The cloned object
 	 */
 	Weather* clone();
 };

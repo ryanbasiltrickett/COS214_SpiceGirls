@@ -20,17 +20,28 @@ Inheritance diagram for Type\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{classType_a78339313d36891f18427c431ea84e306}{Type}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the type. \end{DoxyCompactList}\item 
+<<<<<<< HEAD
+virtual string \hyperlink{classType_a5c453300dc060252c30534110bd2f78c}{get\+Type\+Desc} ()=0
+\begin{DoxyCompactList}\small\item\em Returns terrain type description. \end{DoxyCompactList}\item 
+virtual \hyperlink{classType}{Type} $\ast$ \hyperlink{classType_a7b79d264e2cbac9c091cdb41ffb112c9}{clone} ()=0
+\begin{DoxyCompactList}\small\item\em returns the the cloned object of \hyperlink{classType}{Type} \end{DoxyCompactList}\end{DoxyCompactItemize}
+=======
 virtual string \mbox{\hyperlink{classType_a5c453300dc060252c30534110bd2f78c}{get\+Type\+Desc}} ()=0
 \item 
 \mbox{\Hypertarget{classType_a8cd572bbf09dbd0fe2f592e6accea68f}\label{classType_a8cd572bbf09dbd0fe2f592e6accea68f}} 
 virtual \mbox{\hyperlink{classType}{Type}} $\ast$ {\bfseries clone} ()=0
 \end{DoxyCompactItemize}
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{classType}{Type}} class. 
 
+<<<<<<< HEAD
+Used to define Entity objects type. 
+=======
 Used to define \mbox{\hyperlink{classEntity}{Entity}} objects type. 
+>>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 Definition at line \mbox{\hyperlink{Type_8h_source_l00013}{13}} of file \mbox{\hyperlink{Type_8h_source}{Type.\+h}}.
 
@@ -68,6 +79,53 @@ Definition at line \mbox{\hyperlink{Type_8cpp_source_l00003}{3}} of file \mbox{\
 
 
 Implemented in \mbox{\hyperlink{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}{Aerial\+Type}}, \mbox{\hyperlink{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}{Aquatic\+Type}}, and \mbox{\hyperlink{classTerrainType_af24f4291676b6862c90b0d29598fcb11}{Terrain\+Type}}.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classType_a7b79d264e2cbac9c091cdb41ffb112c9}\label{classType_a7b79d264e2cbac9c091cdb41ffb112c9}} 
+\index{Type@{Type}!clone@{clone}}
+\index{clone@{clone}!Type@{Type}}
+\subsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \hyperlink{classType}{Type}$\ast$ Type\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns the the cloned object of \hyperlink{classType}{Type} 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item returns Type$\ast$ type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Type$\ast$ The cloned \hyperlink{classType}{Type} object 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAerialType_a8e7184b0b9e184142144df65f3da7fb1}{Aerial\+Type}, \hyperlink{classAquaticType_afbcc6f679b6108c7ed286ab0aa91bdd5}{Aquatic\+Type}, and \hyperlink{classTerrainType_aa2c54fdc07981dab3941f28221e22655}{Terrain\+Type}.
+
+\mbox{\Hypertarget{classType_a5c453300dc060252c30534110bd2f78c}\label{classType_a5c453300dc060252c30534110bd2f78c}} 
+\index{Type@{Type}!get\+Type\+Desc@{get\+Type\+Desc}}
+\index{get\+Type\+Desc@{get\+Type\+Desc}!Type@{Type}}
+\subsubsection{\texorpdfstring{get\+Type\+Desc()}{getTypeDesc()}}
+{\footnotesize\ttfamily virtual string Type\+::get\+Type\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns terrain type description. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the terrain type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+string The terrain type string 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}{Aerial\+Type}, \hyperlink{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}{Aquatic\+Type}, and \hyperlink{classTerrainType_af24f4291676b6862c90b0d29598fcb11}{Terrain\+Type}.
 
 
 
