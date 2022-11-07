@@ -26,15 +26,6 @@ public:
 	 */
 	string getTypeDesc();
 
-
-	/**
-	 * @brief returns the the cloned object of Type
-	 * 
-	 * PostConditions:
-	 * - returns Type* type
-	 * 
-	 * @return Type* The cloned Type object
-	 */
 	Type* clone();
 };
 

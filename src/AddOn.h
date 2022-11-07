@@ -167,28 +167,8 @@ public:
 	
 	virtual void takeDamage(int damage) = 0;
 
-	/**
-	 * @brief Inflicts damage onto another entity
-	 * 
-	 * Preconditions:
-	 *  - entity must be an Entity*
-	 *
-	 * Postconditions:
-	 *  - Reduces the health of the entity
-	 * 
-	 * @param entity must be an Entity*
-	 * @return void
-	 */
 	virtual void dealDamage(Entity* entity) = 0;
   
-  /**
-   * @brief Clones the AddOn's object and returns the the cloned object
-   * 
-   * PostConditions:
-   * - The returns the cloned object of AddOn object
-   * 
-   * @return AddOn*  the return object
-   */
 	virtual AddOn* clone() = 0;
 };
 

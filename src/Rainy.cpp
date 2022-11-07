@@ -9,9 +9,9 @@ std::string Rainy::getWeather() {
 	return "Rainy";
 }
 
-void Rainy::handleChange(KeyPoint* keypoint) {
+void Rainy::handleChange(KeyPoint* k) {
 	Sunny* newWeather = new Sunny();
-	keypoint->setWeather(newWeather);
+	k->setWeather(newWeather);
 }
 
 Weather* Rainy::clone() {

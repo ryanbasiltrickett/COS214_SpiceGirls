@@ -8,8 +8,6 @@ public:
 	Aggressive();
 
 	/**
-	 * @author Antwi-Antwi
-	 * 
 	 * @brief This function will perform an Aggressive strategy
      * 
      * Preconditions:
@@ -25,11 +23,11 @@ public:
 	void performStrat(KeyPoint* keyPoint, Alliance* alliance);
 
 	/**
-	 * @brief Returns the clone of the Deffensive Strategy object
+	 * @brief Returns the clone of the Aggressive Strategy object
 	 * 
-	 * @return Strategy* The clone of the Defensive Strategy object
+	 * @return Strategy* The clone of the Aggressive Strategy object
 	 */
-	Strategy* clone(); 
+	Strategy* clone();
 };
 
 #endif

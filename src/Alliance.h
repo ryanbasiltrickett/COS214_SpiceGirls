@@ -28,7 +28,9 @@ public:
 	Alliance();
 
 	/**
-	 * @brief Instantiates the Alliance
+	 * @brief Instantiates a copy of an Alliance
+	 * 
+	 * @param alliance must be an alliance instance
 	 */
 	Alliance(Alliance& alliance);
 
@@ -94,6 +96,8 @@ public:
 	 */
 	void addReserveEntity(Entity* entity);
 
+	int numRemainingEntities();
+
 	/**
 	 * @brief Considers to stop war with the allaince passed into the function header
 	 *
@@ -120,6 +124,8 @@ public:
 	 * @return void
 	 */
 	void addFactory(Factory* factory);
+
+	void runFactories();
 
 	/**
 	 * @brief Makes the current alliance give up of the war by surrendering
@@ -175,36 +181,7 @@ public:
 	 */
 	void setActiveStatus(bool active);
 
-	/**
-	 * @brief Get the active state of the Alliance
-	 * 
-	 * PostConditions:
-	 * - returns an active variable
-	 * 
-	 * @return int the active variable
-	 */
 	int getActive();
-
-	/**
-	 * @brief Gets the number of the remaining number of entities
-	 * 
-	 * PostConditions:
-	 * - Returns an int
-	 * 
-	 * @return int The number of entities remaining
-	 * 
-	 */
-	int numRemainingEntities();
-
-	/**
-	 * @brief Will create reserve Entities
-	 * 
-	 * PostConditions
-	 * - will create reserve entities for later use
-	 * 
-	 * @return void
-	 */
-	void runFactories();
 };
 
 #endif

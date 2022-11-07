@@ -18,24 +18,8 @@ public:
 	 */
 	Type();
 
-	/**
-	 * @brief Returns terrain type description
-	 *
-	 * Postconditions:
-	 *  - Returns the terrain type
-	 *
-	 * @return string The terrain type string
-	 */
 	virtual string getTypeDesc() = 0;
 
-	/**
-	 * @brief returns the the cloned object of Type
-	 * 
-	 * PostConditions:
-	 * - returns Type* type
-	 * 
-	 * @return Type* The cloned Type object
-	 */
 	virtual Type* clone() = 0;
 	
 };

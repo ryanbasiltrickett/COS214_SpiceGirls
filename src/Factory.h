@@ -84,14 +84,6 @@ public:
 	 */
 	void setAddOns(AddOn* addOn);
 
-	/**
-	 * @brief the factoru object will be cloned and returned
-	 * 
-	 * PostConditions:
-	 * - returns the cloned object of type Factory*
-	 * 
-	 * @return Factory* the cloned object
-	 */
 	virtual Factory* clone() = 0;
 };
 

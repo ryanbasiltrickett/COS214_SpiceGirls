@@ -120,9 +120,6 @@ public:
 	 */
 	void addEntity(Entity* entity);
 
-	/**
-	 * 
-	*/
 	void addGeneral(General* general);
 
 	void removeGeneral(General* general);

@@ -49,12 +49,9 @@ public:
 	void dealDamage(Entity* entity);
 
 	/**
-	 * @brief Clones the current Entity object and returns the cloned object
+	 * @brief Returns the clone of the Personnel object
 	 * 
-	 * PostConditions:
-	 * - Returns the cloned object of Entity
-	 * 
-	 * @return Entity* The cloned object
+	 * @return Entity* Clone of personnel object
 	 */
 	Entity* clone();
 };

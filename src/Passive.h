@@ -9,6 +9,7 @@ public:
 	Passive();
 
 	/**
+	 * @author Antwi-Antwi
 	 * 
 	 * @brief This function will perform a Passive strategy
 	 * 

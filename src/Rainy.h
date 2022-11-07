@@ -26,20 +26,20 @@ public:
 	 * @brief Will change the current state of the weather inside the specific keypoint
 	 *
 	 * Preconditions:
-	 *  - keypoint must be a KeyPoint*
+	 *  - k must be a KeyPoint*
 	 *
 	 * Postconditions:
 	 *  - Changes the current weather to the next one in the state pattern (Sunny)
 	 *
-	 * @param keypoint must be a KeyPoint*
+	 * @param k must be a KeyPoint*
 	 * @return void
 	 */
-	void handleChange(KeyPoint* keypoint);
+	void handleChange(KeyPoint* k);
 
 	/**
 	 * @brief Returns a clone of the Rainy object
 	 * 
-	 * @return Weather* Clone of Rainy object
+	 * @return Weather* The clone of the rainy object
 	 */
 	Weather* clone();
 };
