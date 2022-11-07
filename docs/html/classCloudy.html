@@ -93,9 +93,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a859714ec61c789dc12ed5447fd3692ac"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCloudy.html#a859714ec61c789dc12ed5447fd3692ac">getWeather</a> ()</td></tr>
 <tr class="memdesc:a859714ec61c789dc12ed5447fd3692ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns string which tels us the weather.  <a href="classCloudy.html#a859714ec61c789dc12ed5447fd3692ac">More...</a><br /></td></tr>
 <tr class="separator:a859714ec61c789dc12ed5447fd3692ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa01a409307657c9a7cad11a6f93456fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCloudy.html#aa01a409307657c9a7cad11a6f93456fd">handleChange</a> (<a class="el" href="classKeyPoint.html">KeyPoint</a> *k)</td></tr>
-<tr class="memdesc:aa01a409307657c9a7cad11a6f93456fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will change the current state of the weather inside the specific keypoint.  <a href="classCloudy.html#aa01a409307657c9a7cad11a6f93456fd">More...</a><br /></td></tr>
-<tr class="separator:aa01a409307657c9a7cad11a6f93456fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f7fb24e81ddfd3560dadd329fd218c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCloudy.html#aa3f7fb24e81ddfd3560dadd329fd218c">handleChange</a> (<a class="el" href="classKeyPoint.html">KeyPoint</a> *keypoint)</td></tr>
+<tr class="memdesc:aa3f7fb24e81ddfd3560dadd329fd218c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Will change the current state of the weather inside the specific keypoint.  <a href="classCloudy.html#aa3f7fb24e81ddfd3560dadd329fd218c">More...</a><br /></td></tr>
+<tr class="separator:aa3f7fb24e81ddfd3560dadd329fd218c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab55ddd71864e27bb1f02f0af8d44a206"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classWeather.html">Weather</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCloudy.html#ab55ddd71864e27bb1f02f0af8d44a206">clone</a> ()</td></tr>
 <tr class="memdesc:ab55ddd71864e27bb1f02f0af8d44a206"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a clone of the <a class="el" href="classCloudy.html">Cloudy</a> object.  <a href="classCloudy.html#ab55ddd71864e27bb1f02f0af8d44a206">More...</a><br /></td></tr>
 <tr class="separator:ab55ddd71864e27bb1f02f0af8d44a206"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -229,8 +229,8 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
-<a id="aa01a409307657c9a7cad11a6f93456fd" name="aa01a409307657c9a7cad11a6f93456fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa01a409307657c9a7cad11a6f93456fd">&#9670;&#160;</a></span>handleChange()</h2>
+<a id="aa3f7fb24e81ddfd3560dadd329fd218c" name="aa3f7fb24e81ddfd3560dadd329fd218c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f7fb24e81ddfd3560dadd329fd218c">&#9670;&#160;</a></span>handleChange()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,7 +242,7 @@ Additional Inherited Members</h2></td></tr>
           <td class="memname">void Cloudy::handleChange </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classKeyPoint.html">KeyPoint</a> *&#160;</td>
-          <td class="paramname"><em>k</em></td><td>)</td>
+          <td class="paramname"><em>keypoint</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -273,9 +273,8 @@ Additional Inherited Members</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="Cloudy_8cpp_source.html#l00012">12</a> of file <a class="el" href="Cloudy_8cpp_source.html">Cloudy.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   12</span>                                     {</div>
 <div class="line"><span class="lineno">   13</span>    <a class="code hl_class" href="classRainy.html">Rainy</a>* newWeather = <span class="keyword">new</span> <a class="code hl_class" href="classRainy.html">Rainy</a>();</div>
-<div class="line"><span class="lineno">   14</span>    k-&gt;<a class="code hl_function" href="classKeyPoint.html#a5c4b9314440a00fca7ab4d82ea4693a5">setWeather</a>(newWeather);</div>
+<div class="line"><span class="lineno">   14</span>    k-&gt;setWeather(newWeather);</div>
 <div class="line"><span class="lineno">   15</span>}</div>
-<div class="ttc" id="aclassKeyPoint_html_a5c4b9314440a00fca7ab4d82ea4693a5"><div class="ttname"><a href="classKeyPoint.html#a5c4b9314440a00fca7ab4d82ea4693a5">KeyPoint::setWeather</a></div><div class="ttdeci">void setWeather(Weather *weather)</div><div class="ttdoc">Set the Weather object.</div><div class="ttdef"><b>Definition:</b> <a href="KeyPoint_8cpp_source.html#l00145">KeyPoint.cpp:145</a></div></div>
 <div class="ttc" id="aclassRainy_html"><div class="ttname"><a href="classRainy.html">Rainy</a></div><div class="ttdef"><b>Definition:</b> <a href="Rainy_8h_source.html#l00006">Rainy.h:6</a></div></div>
 </div><!-- fragment -->
 </div>

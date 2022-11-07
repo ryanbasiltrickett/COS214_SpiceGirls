@@ -51,16 +51,58 @@
 \DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00048}00048     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{setWarTheatre}}(w);}
 \DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00049}00049 \}}
 \DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00050}00050 }
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00051}00051 \textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv) \{}
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00052}00052     \textcolor{comment}{// EasySetup* easySetup = new EasySetup();}}
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00053}00053     \textcolor{comment}{// easySetup-\/>setupSimulation();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00051}00051 \textcolor{keywordtype}{void} showTests(\textcolor{keywordtype}{int} \&argc, \textcolor{keywordtype}{char}** argv)\{\}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00053}00053 \textcolor{keywordtype}{int} startWarEngine(\textcolor{keywordtype}{int} \&argc, \textcolor{keywordtype}{char}** argv)\{}
 \DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00054}00054 }
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00055}00055     setupWarEngine();}
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00056}00056     }
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00057}00057     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate}}();}
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00058}00058 }
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00059}00059     testing::InitGoogleTest(\&argc, argv);}
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00060}00060     \textcolor{keywordflow}{return} RUN\_ALL\_TESTS();}
-\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00061}00061 \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00055}00055     \textcolor{keywordtype}{bool} continueLoop = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00057}00057     \textcolor{keywordflow}{while}(continueLoop)\{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00058}00058         }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00059}00059         cout << \textcolor{stringliteral}{"{}Welcome to the War Simulator!\(\backslash\)n"{}} << \textcolor{stringliteral}{"{}Please select an option:"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00060}00060         }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00061}00061         cout << \textcolor{stringliteral}{"{}1) Run Google Tests\(\backslash\)n"{}} << \textcolor{stringliteral}{"{}2) Setup Simulation\(\backslash\)n"{}} << \textcolor{stringliteral}{"{}3)Quit\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00063}00063         std::string userStringInput;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00065}00065         cin >> userStringInput;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00067}00067         \textcolor{keywordtype}{int} userOption = stoi(userStringInput);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00068}00068         }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00069}00069         \textcolor{keywordflow}{switch}(userOption)\{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00070}00070             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00071}00071                 testing::InitGoogleTest(\&argc, argv);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00072}00072                 RUN\_ALL\_TESTS();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00073}00073                 cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00074}00074                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00075}00075             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00076}00076                 setupWarEngine();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00077}00077                 \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate}}();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00078}00078                 cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00079}00079                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00080}00080             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00081}00081                 continueLoop = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00082}00082                 cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00083}00083                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00084}00084             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00085}00085                 cout << \textcolor{stringliteral}{"{}Please try again. Enter a valid option.\(\backslash\)n\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00086}00086         \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00089}00089         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00091}00091 \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00093}00093 \textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv) \{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00094}00094     \textcolor{comment}{//setupWarEngine();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00095}00095     }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00096}00096     \textcolor{comment}{//WarEngine::getInstance().simulate();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00098}00098     \textcolor{comment}{//testing::InitGoogleTest(\&argc, argv);}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00099}00099     \textcolor{comment}{//return RUN\_ALL\_TESTS();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00100}00100     startWarEngine(argc, argv);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00102}00102     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00103}00103 \}}
 
 \end{DoxyCode}

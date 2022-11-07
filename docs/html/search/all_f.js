@@ -3,7 +3,7 @@ var searchData=
   ['savearchive_0',['SaveArchive',['../classSaveArchive.html',1,'SaveArchive'],['../classSaveArchive.html#a676252cf830fbe7b2a2b37ce2371a859',1,'SaveArchive::SaveArchive()']]],
   ['savestate_1',['saveState',['../classWarEngine.html#afe7e71964cca280d52f4298e97e1a8d7',1,'WarEngine']]],
   ['sendpeace_2',['sendPeace',['../classNegotiator.html#aa95e7f447a76c6d5ef84b92731ccb00d',1,'Negotiator']]],
-  ['setactivestatus_3',['setActiveStatus',['../classAlliance.html#a21492fd899af1441c9d8ddf11a558e7d',1,'Alliance']]],
+  ['setactivestatus_3',['setActiveStatus',['../classAlliance.html#a620fe936385867f2448965d3977e8584',1,'Alliance']]],
   ['setaddons_4',['setAddOns',['../classFactory.html#a58dbf2659ee06c61b2dae1a9a36fac53',1,'Factory']]],
   ['setalliance_5',['setAlliance',['../classAddOn.html#a8ae6d54cdc26e057777f75ff5a45455b',1,'AddOn::setAlliance()'],['../classEntity.html#af804dcaa600e770cf0e2b4537f6fba23',1,'Entity::setAlliance()']]],
   ['setalliances_6',['setAlliances',['../classWarEngineState.html#a262f8e5974144a644a24ca4edc949562',1,'WarEngineState']]],

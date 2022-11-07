@@ -35,9 +35,9 @@ void \mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{move\+Ent
 void \mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{add\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
 \begin{DoxyCompactList}\small\item\em Adds an enitity to the key point object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}{add\+General}} (\mbox{\hyperlink{classGeneral}{General}} $\ast$general)
-\item 
+\begin{DoxyCompactList}\small\item\em Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_abe2ba3c8d36eb45711f396ff295fa32e}{remove\+General}} (\mbox{\hyperlink{classGeneral}{General}} $\ast$general)
-\item 
+\begin{DoxyCompactList}\small\item\em removes a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classArea}{Area}} $\ast$ \mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Keypoint. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}{change\+Weather}} ()
@@ -175,7 +175,26 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00123}{123}} of file \
 
 
 
-Implements \mbox{\hyperlink{classArea}{Area}}.
+Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. 
+
+Precoditions\+:
+\begin{DoxyItemize}
+\item general must be a General$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add general to all points
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em general} & must be a General$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}{Area}}.
 
 
 
@@ -486,6 +505,25 @@ Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00109}{109}} of file \
 \doxysubsubsection{\texorpdfstring{removeGeneral()}{removeGeneral()}}
 {\footnotesize\ttfamily void Key\+Point\+::remove\+General (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGeneral}{General}} $\ast$}]{general }\end{DoxyParamCaption})}
 
+
+
+removes a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}} 
+
+Precoditions\+:
+\begin{DoxyItemize}
+\item general must be a General$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add general to all points
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em general} & must be a General$\ast$ \\
+\hline
+\end{DoxyParams}
 
 
 Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00131}{131}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
