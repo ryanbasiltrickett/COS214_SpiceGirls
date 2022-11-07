@@ -19,16 +19,18 @@ void setupWarEngine() {
     KeyPoint* k2 = new KeyPoint("North");
     KeyPoint* k3 = new KeyPoint("East");
 
-    Personnel* p1 = new Personnel(NULL);
-    p1->setAlliance(a1);
-    k1->addEntity(p1->clone());
-    k2->addEntity(p1->clone());
-    k3->addEntity(p1->clone());
+    for (int i = 0; i < 100; i++) {
+        Personnel* p1 = new Personnel(NULL);
+        p1->setAlliance(a1);
+        k1->addEntity(p1->clone());
+        k2->addEntity(p1->clone());
+        k3->addEntity(p1->clone());
 
-    Personnel* p2 = new Personnel(NULL);
-    p2->setAlliance(a2);
-    k1->addEntity(p2->clone());
-    k2->addEntity(p2->clone());
+        Personnel* p2 = new Personnel(NULL);
+        p2->setAlliance(a2);
+        k1->addEntity(p2->clone());
+        k2->addEntity(p2->clone());
+    }
 
     WarTheatre* w = new WarTheatre("Europe");
     w->addArea(k1);
@@ -42,9 +44,9 @@ int main(int argc, char **argv) {
     // EasySetup* easySetup = new EasySetup();
     // easySetup->setupSimulation();
 
-    setupWarEngine();
-    WarEngine::getInstance().simulate();
+    // setupWarEngine();
+    // WarEngine::getInstance().simulate();
 
-    // testing::InitGoogleTest(&argc, argv);
-    // return RUN_ALL_TESTS();
+    testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }

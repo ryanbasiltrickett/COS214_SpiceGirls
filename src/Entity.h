@@ -39,7 +39,7 @@ public:
 	 *
 	 * @return Type* The type state of the entity object
 	 */
-	Type* getType();
+	virtual Type* getType();
 
 	/**
 	 * @brief Sets the entities type state
@@ -53,7 +53,7 @@ public:
 	 * @param type must be a Type*
 	 * @return void
 	 */
-	void setType(Type* type);
+	virtual void setType(Type* type);
 
 	/**
 	 * @brief Returns entities alliance
@@ -63,7 +63,7 @@ public:
 	 *
 	 * @return Type* The alliance of the entity object
 	 */
-	Alliance* getAlliance();
+	virtual Alliance* getAlliance();
 
 	/**
 	 * @brief Sets the entities alliance
@@ -77,7 +77,7 @@ public:
 	 * @param alliance must be a Alliance*
 	 * @return void
 	 */
-	void setAlliance(Alliance* alliance);
+	virtual void setAlliance(Alliance* alliance);
 
 	/**
 	 * @brief Returns entities health
@@ -87,7 +87,7 @@ public:
 	 *
 	 * @return int The health of the entity object
 	 */
-	int getHealth();
+	virtual int getHealth();
 
 	/**
 	 * @brief Sets the entities health
@@ -101,7 +101,7 @@ public:
 	 * @param health must be an int
 	 * @return void
 	 */
-	void setHealth(int health);
+	virtual void setHealth(int health);
 
 	/**
 	 * @brief Returns entities damage
@@ -111,7 +111,7 @@ public:
 	 *
 	 * @return int The damage of the entity object
 	 */
-	int getDamage();
+	virtual int getDamage();
 
 	/**
 	 * @brief Sets the entities damage
@@ -125,7 +125,7 @@ public:
 	 * @param damage must be an int
 	 * @return void
 	 */
-	void setDamage(int damage);
+	virtual void setDamage(int damage);
 
 	virtual void takeDamage(int damage) = 0;
 
