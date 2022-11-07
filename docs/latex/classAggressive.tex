@@ -9,47 +9,17 @@ Inheritance diagram for Aggressive\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-void \hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{perform\+Strat} (\hyperlink{classKeyPoint}{Key\+Point} $\ast$key\+Point, \hyperlink{classAlliance}{Alliance} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em This function will perform an \hyperlink{classAggressive}{Aggressive} strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Additional Inherited Members}
-=======
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 void \mbox{\hyperlink{classAggressive_a84122a24be95be256f9992c21127b0d1}{perform\+Strat}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$key\+Point, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classStrategy}{Strategy}} $\ast$ \mbox{\hyperlink{classAggressive_a43a336fbcafb3a36545dad09de1c2eea}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns the clone of the Deffensive \mbox{\hyperlink{classStrategy}{Strategy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Additional Inherited Members}
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 \doxysubsection{Detailed Description}
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 5 of file Aggressive.\+h.
-=======
 Definition at line \mbox{\hyperlink{Aggressive_8h_source_l00005}{5}} of file \mbox{\hyperlink{Aggressive_8h_source}{Aggressive.\+h}}.
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Aggressive_8h_source_l00005}{5}} of file \mbox{\hyperlink{Aggressive_8h_source}{Aggressive.\+h}}.
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Aggressive_8h_source_l00005}{5}} of file \mbox{\hyperlink{Aggressive_8h_source}{Aggressive.\+h}}.
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
 
 
@@ -80,14 +50,14 @@ Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00004}{4}} of file \
 
 
 
-Returns the clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object. 
+Returns the clone of the Deffensive \mbox{\hyperlink{classStrategy}{Strategy}} object. 
 
 \begin{DoxyReturn}{Returns}
-Strategy$\ast$ The clone of the \mbox{\hyperlink{classAggressive}{Aggressive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
+Strategy$\ast$ The clone of the \mbox{\hyperlink{classDefensive}{Defensive}} \mbox{\hyperlink{classStrategy}{Strategy}} object 
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+Implements \mbox{\hyperlink{classStrategy_a552c2eba68a51d04aab5795508dcb075}{Strategy}}.
 
 
 
@@ -110,6 +80,11 @@ Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00011}{11}} of file 
 
 This function will perform an \mbox{\hyperlink{classAggressive}{Aggressive}} strategy. 
 
+\begin{DoxyAuthor}{Author}
+Antwi-\/\+Antwi
+\end{DoxyAuthor}
+
+
 Preconditions\+:
 \begin{DoxyItemize}
 \item Takes in object of type \mbox{\hyperlink{classKeyPoint}{Key\+Point}} as parameter
@@ -130,48 +105,19 @@ void The function will return a void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classStrategy}{Strategy}}.
+Implements \mbox{\hyperlink{classStrategy_aa0692005cb67d0ee2441046f6b302e7d}{Strategy}}.
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-Definition at line 6 of file Aggressive.\+cpp.
-
-
-\begin{DoxyCode}
-6                                                                     \{
-7     \textcolor{keywordtype}{int} randomNumber = (rand() % 10) + 5;
-8     keyPoint->\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{moveEntitiesInto}(alliance, randomNumber);
-9 \}
-=======
 Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
 
 
-=======
-Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
-Definition at line \mbox{\hyperlink{Aggressive_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Aggressive_8cpp_source}{Aggressive.\+cpp}}.
-
-
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00006                                                                     \{}
 \DoxyCodeLine{00007     \textcolor{keywordtype}{int} randomNumber = (rand() \% 10) + 5;}
 \DoxyCodeLine{00008     keyPoint-\/>\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{moveEntitiesInto}}(alliance, randomNumber);}
 \DoxyCodeLine{00009 \}}
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
-=======
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCode}
 
 

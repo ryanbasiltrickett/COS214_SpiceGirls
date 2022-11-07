@@ -10,7 +10,7 @@
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00007}00007 \}}
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00008}00008 }
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00009}\mbox{\hyperlink{classWarEngine_afe7e71964cca280d52f4298e97e1a8d7}{00009}} \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* \mbox{\hyperlink{classWarEngine_afe7e71964cca280d52f4298e97e1a8d7}{WarEngine::saveState}}() \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00010}00010     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}(state-\/>clone());}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00010}00010     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}(state-\/>\mbox{\hyperlink{classWarEngineState_a89508b034ce4006ed830f671b525f745}{clone}}());}
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00011}00011 \}}
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00012}00012 }
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00013}\mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{00013}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{WarEngine::loadSave}}(\mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* save) \{}
@@ -29,36 +29,66 @@
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00026}00026 }
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00027}00027 }
 \DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00028}\mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{00028}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{WarEngine::simulate}}() \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00029}00029     vector<Alliance*> alliances = this-\/>state-\/>getAlliances();}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00030}00030 }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00031}00031     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < alliances.size(); i++) \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00032}00032         \textcolor{keywordflow}{if} (alliances[i]-\/>getActive() == 1) \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00033}00033             RoundStats::clearStats();}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00034}00034             state-\/>getArea()-\/>simulateBattle(alliances[i]);}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00035}00035             cout << \textcolor{stringliteral}{"{}========================================================================"{}} << endl;}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00036}00036             cout << \textcolor{stringliteral}{"{}Alliance "{}} << alliances[i]-\/>getID() << \textcolor{stringliteral}{"{}:"{}} << endl;}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00037}00037             }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00038}00038             \textcolor{keywordflow}{if} (alliances[i]-\/>getID() == 2) \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00039}00039                 cout << \textcolor{stringliteral}{"{}Status: Surrendered"{}} << endl; }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00040}00040             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alliances[i]-\/>getID() == 3) \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00041}00041                 cout << \textcolor{stringliteral}{"{}Status: Found Peace"{}} << endl; }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00042}00042             \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00043}00043                 cout << \textcolor{stringliteral}{"{}Status: Active"{}} << endl; }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00044}00044             \}}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00045}00045 }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00046}00046             cout << RoundStats::toString() << endl;}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00047}00047             cout << \textcolor{stringliteral}{"{}========================================================================"{}} << endl;}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00048}00048         \}}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00049}00049     \}}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00050}00050 }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00051}00051 \}}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00052}00052 }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00053}\mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{00053}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{WarEngine::setWarTheatre}}(\mbox{\hyperlink{classWarTheatre}{WarTheatre}}* battleGround)\{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00054}00054     state-\/>setArea(battleGround);}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00055}00055 \}}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00056}00056 }
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00057}00057 \textcolor{keywordtype}{void} WarEngine::addAlliance(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00058}00058     state-\/>alliances.push\_back(alliance);}
-\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00059}00059 \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00029}00029     }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00030}00030     vector<Alliance*> alliances = this-\/>state-\/>\mbox{\hyperlink{classWarEngineState_aa88851d165886c80521e93c2d74338d5}{getAlliances}}();}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00031}00031     \textcolor{keywordtype}{int} numAlliances = alliances.size();}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00032}00032     \textcolor{keywordflow}{while} (numAlliances > 1) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00033}00033         numAlliances = 0;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00034}00034         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < alliances.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00035}00035             \textcolor{keywordflow}{if} (alliances[i]-\/>getActive() == 1) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00036}00036                 numAlliances++;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00037}00037                 RoundStats::clearStats();}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00038}00038                 state-\/>\mbox{\hyperlink{classWarEngineState_a9c1fe3cc21780d0a8e1d82ce76fe7430}{getArea}}()-\/>simulateBattle(alliances[i]);}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00040}00040                 \textcolor{keywordtype}{double} percLoss = (RoundStats::numLosingPoints * 1.0) / (RoundStats::numLosingPoints + RoundStats::numContestedPoints + RoundStats::numWinningPoints);}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00041}00041                 \textcolor{keywordflow}{if} (percLoss >= 0.7) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00042}00042                     alliances[i]-\/>surrender();}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00043}00043                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (percLoss >= 0.6) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00044}00044                     alliances[i]-\/>offerPeace();}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00045}00045                 \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00046}00046 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00047}00047                 cout << \textcolor{stringliteral}{"{}========================================================================"{}} << endl << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00048}00048                 cout << \textcolor{stringliteral}{"{}Alliance "{}} << alliances[i]-\/>getID() << \textcolor{stringliteral}{"{}:"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00049}00049                 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00050}00050                 \textcolor{keywordflow}{if} (alliances[i]-\/>getActive() == 2) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00051}00051                     cout << \textcolor{stringliteral}{"{}Status: Surrendered"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00052}00052                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alliances[i]-\/>getActive() == 3) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00053}00053                     cout << \textcolor{stringliteral}{"{}Status: Found Peace"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00054}00054                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00055}00055                     cout << \textcolor{stringliteral}{"{}Status: Active"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00056}00056                 \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00058}00058                 cout << RoundStats::toString() << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00059}00059                 cout << \textcolor{stringliteral}{"{}========================================================================"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00060}00060             \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00061}00061         \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00062}00062     \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00063}00063 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00064}00064     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < alliances.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00065}00065         cout << \textcolor{stringliteral}{"{}========================================================================"{}} << endl << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00066}00066         cout << \textcolor{stringliteral}{"{}Alliance "{}} << alliances[i]-\/>getID() << \textcolor{stringliteral}{"{}:"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00067}00067         }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00068}00068         \textcolor{keywordflow}{if} (alliances[i]-\/>getActive() == 2) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00069}00069             cout << \textcolor{stringliteral}{"{}Status: Surrendered"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00070}00070         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alliances[i]-\/>getActive() == 3) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00071}00071             cout << \textcolor{stringliteral}{"{}Status: Found Peace"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00072}00072         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00073}00073             cout << \textcolor{stringliteral}{"{}Status: Winner"{}} << endl; }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00074}00074         \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00075}00075 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00076}00076         cout << endl << \textcolor{stringliteral}{"{}========================================================================"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00077}00077     \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00078}00078 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00079}00079     cout << \textcolor{stringliteral}{"{}SIMULATION COMPLETE!"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00080}00080 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00081}00081 \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00082}00082 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00083}\mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{00083}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{WarEngine::setWarTheatre}}(\mbox{\hyperlink{classWarTheatre}{WarTheatre}}* battleGround)\{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00084}00084     state-\/>\mbox{\hyperlink{classWarEngineState_af79cacdce276b52be3bedfe1a22c5f48}{setArea}}(battleGround);}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00085}00085 \}}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00086}00086 }
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00087}00087 \textcolor{keywordtype}{void} WarEngine::addAlliance(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00088}00088     state-\/>alliances.push\_back(alliance);}
+\DoxyCodeLine{\Hypertarget{WarEngine_8cpp_source_l00089}00089 \}}
 
 \end{DoxyCode}

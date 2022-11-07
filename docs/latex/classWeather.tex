@@ -1,29 +1,5 @@
 \hypertarget{classWeather}{}\doxysection{Weather Class Reference}
 \label{classWeather}\index{Weather@{Weather}}
-<<<<<<< HEAD
-\subsection*{Public Member Functions}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classWeather_aa404c94fec05b825454a7309827767c6}\label{classWeather_aa404c94fec05b825454a7309827767c6}} 
-\hyperlink{classWeather_aa404c94fec05b825454a7309827767c6}{Weather} ()
-\begin{DoxyCompactList}\small\item\em Instantiates the \hyperlink{classWeather}{Weather} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}\label{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}} 
-\hyperlink{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}{$\sim$\+Weather} ()
-\begin{DoxyCompactList}\small\item\em Destructor for the \hyperlink{classWeather}{Weather} object. \end{DoxyCompactList}\item 
-double \hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{get\+Multiplier} ()
-\begin{DoxyCompactList}\small\item\em Returns double which shows the weather multiplier. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classWeather_afc84c48c326fc967915833e689bfa40c}{handle\+Change} (Key\+Point $\ast$keypoint)=0
-\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
-virtual std\+::string \hyperlink{classWeather_ad0a29227308b87e98808cdff52232df3}{get\+Weather} ()=0
-\begin{DoxyCompactList}\small\item\em Returns a string which tells us the weather. \end{DoxyCompactList}\item 
-virtual \hyperlink{classWeather}{Weather} $\ast$ \hyperlink{classWeather_a7d902c27129b9191f72be837dd66fa83}{clone} ()=0
-\begin{DoxyCompactList}\small\item\em Returns the cloned object of \hyperlink{classWeather}{Weather} Post\+Conditions\+: \end{DoxyCompactList}\end{DoxyCompactItemize}
-\subsection*{Protected Attributes}
-\begin{DoxyCompactItemize}
-\item 
-\mbox{\Hypertarget{classWeather_aabbe8f1b3e93e9b4e9f28060dec9113b}\label{classWeather_aabbe8f1b3e93e9b4e9f28060dec9113b}} 
-double {\bfseries multiplier}
-=======
 Inheritance diagram for Weather\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -39,26 +15,22 @@ Inheritance diagram for Weather\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\item 
 double \mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{get\+Multiplier}} ()
 \begin{DoxyCompactList}\small\item\em Returns double which shows the weather multiplier. \end{DoxyCompactList}\item 
-virtual void \mbox{\hyperlink{classWeather_af697ebc3ce0db3c7c6bc9b45854114e7}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)=0
-\item 
+virtual void \mbox{\hyperlink{classWeather_afc84c48c326fc967915833e689bfa40c}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$keypoint)=0
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
 virtual std\+::string \mbox{\hyperlink{classWeather_ad0a29227308b87e98808cdff52232df3}{get\+Weather}} ()=0
-\item 
+\begin{DoxyCompactList}\small\item\em Returns a string which tells us the weather. \end{DoxyCompactList}\item 
 virtual \mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}{clone}} ()=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns a clone of the \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
 double \mbox{\hyperlink{classWeather_aabbe8f1b3e93e9b4e9f28060dec9113b}{multiplier}}
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-<<<<<<< HEAD
-Definition at line 9 of file Weather.\+h.
-=======
 Definition at line \mbox{\hyperlink{Weather_8h_source_l00009}{9}} of file \mbox{\hyperlink{Weather_8h_source}{Weather.\+h}}.
 
 
@@ -113,6 +85,13 @@ Definition at line \mbox{\hyperlink{Weather_8cpp_source_l00005}{5}} of file \mbo
 
 
 
+Returns a clone of the \mbox{\hyperlink{classWeather}{Weather}} object. 
+
+\begin{DoxyReturn}{Returns}
+Weather$\ast$ Clone of \mbox{\hyperlink{classWeather}{Weather}} object 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{Cloudy}}, \mbox{\hyperlink{classRainy_a30adf6c86ad1dab6089e90a16b5d0753}{Rainy}}, and \mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{Sunny}}.
 
 \mbox{\Hypertarget{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}\label{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}} 
@@ -152,17 +131,51 @@ Definition at line \mbox{\hyperlink{Weather_8cpp_source_l00007}{7}} of file \mbo
 
 
 
+Returns a string which tells us the weather. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the wether of the current state
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+std\+::string which is the current state 
+\end{DoxyReturn}
+
+
 Implemented in \mbox{\hyperlink{classCloudy_a859714ec61c789dc12ed5447fd3692ac}{Cloudy}}, \mbox{\hyperlink{classRainy_adc4d5851d1e9efd45b153ae0d5ead832}{Rainy}}, and \mbox{\hyperlink{classSunny_a46747aed1564621c150127532b0d84f5}{Sunny}}.
 
-\mbox{\Hypertarget{classWeather_af697ebc3ce0db3c7c6bc9b45854114e7}\label{classWeather_af697ebc3ce0db3c7c6bc9b45854114e7}} 
+\mbox{\Hypertarget{classWeather_afc84c48c326fc967915833e689bfa40c}\label{classWeather_afc84c48c326fc967915833e689bfa40c}} 
 \index{Weather@{Weather}!handleChange@{handleChange}}
 \index{handleChange@{handleChange}!Weather@{Weather}}
 \doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
-{\footnotesize\ttfamily virtual void Weather\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+{\footnotesize\ttfamily virtual void Weather\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{keypoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
 
 
 
-Implemented in \mbox{\hyperlink{classCloudy_aa01a409307657c9a7cad11a6f93456fd}{Cloudy}}, \mbox{\hyperlink{classRainy_a723a0dce680b6de43aaf6569a2e2a4d8}{Rainy}}, and \mbox{\hyperlink{classSunny_a940d045e5bfef4e92233f0269a194815}{Sunny}}.
+Will change the current state of the weather inside the specific keypoint. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item keypoint must be a Key\+Point$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classCloudy}{Cloudy}})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keypoint} & must be a Key\+Point$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCloudy_aa01a409307657c9a7cad11a6f93456fd}{Cloudy}}, \mbox{\hyperlink{classRainy_ac0ed80bde42f58ff16a9ee4941b85ef9}{Rainy}}, and \mbox{\hyperlink{classSunny_ae7f1e8a0cc3b7dbd3636019dd737ee28}{Sunny}}.
 
 
 
@@ -176,103 +189,7 @@ Implemented in \mbox{\hyperlink{classCloudy_aa01a409307657c9a7cad11a6f93456fd}{C
 
 
 Definition at line \mbox{\hyperlink{Weather_8h_source_l00012}{12}} of file \mbox{\hyperlink{Weather_8h_source}{Weather.\+h}}.
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 
-
-
-\subsection{Member Function Documentation}
-\mbox{\Hypertarget{classWeather_a7d902c27129b9191f72be837dd66fa83}\label{classWeather_a7d902c27129b9191f72be837dd66fa83}} 
-\index{Weather@{Weather}!clone@{clone}}
-\index{clone@{clone}!Weather@{Weather}}
-\subsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily virtual \hyperlink{classWeather}{Weather}$\ast$ Weather\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Returns the cloned object of \hyperlink{classWeather}{Weather} Post\+Conditions\+: 
-
-
-\begin{DoxyItemize}
-\item Returns cloned object of \hyperlink{classWeather}{Weather}
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-Weather$\ast$ The cloned object 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}\label{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}} 
-\index{Weather@{Weather}!get\+Multiplier@{get\+Multiplier}}
-\index{get\+Multiplier@{get\+Multiplier}!Weather@{Weather}}
-\subsubsection{\texorpdfstring{get\+Multiplier()}{getMultiplier()}}
-{\footnotesize\ttfamily double Weather\+::get\+Multiplier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Returns double which shows the weather multiplier. 
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Returns the double multiplier
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-double which is the multiplier 
-\end{DoxyReturn}
-
-
-Definition at line 7 of file Weather.\+cpp.
-
-
-\begin{DoxyCode}
-7                               \{
-8     \textcolor{keywordflow}{return} this->multiplier;
-9 \}
-\end{DoxyCode}
-\mbox{\Hypertarget{classWeather_ad0a29227308b87e98808cdff52232df3}\label{classWeather_ad0a29227308b87e98808cdff52232df3}} 
-\index{Weather@{Weather}!get\+Weather@{get\+Weather}}
-\index{get\+Weather@{get\+Weather}!Weather@{Weather}}
-\subsubsection{\texorpdfstring{get\+Weather()}{getWeather()}}
-{\footnotesize\ttfamily virtual std\+::string Weather\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Returns a string which tells us the weather. 
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Returns the wether of the current state
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-std\+::string which is the current state 
-\end{DoxyReturn}
-\mbox{\Hypertarget{classWeather_afc84c48c326fc967915833e689bfa40c}\label{classWeather_afc84c48c326fc967915833e689bfa40c}} 
-\index{Weather@{Weather}!handle\+Change@{handle\+Change}}
-\index{handle\+Change@{handle\+Change}!Weather@{Weather}}
-\subsubsection{\texorpdfstring{handle\+Change()}{handleChange()}}
-{\footnotesize\ttfamily virtual void Weather\+::handle\+Change (\begin{DoxyParamCaption}\item[{Key\+Point $\ast$}]{keypoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
-
-
-
-Will change the current state of the weather inside the specific keypoint. 
-
-Preconditions\+:
-\begin{DoxyItemize}
-\item keypoint must be a Key\+Point$\ast$
-\end{DoxyItemize}
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Changes the current weather to the next one in the state pattern (Cloudy)
-\end{DoxyItemize}
-
-
-\begin{DoxyParams}{Parameters}
-{\em keypoint} & must be a Key\+Point$\ast$ \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void 
-\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

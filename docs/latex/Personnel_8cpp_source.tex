@@ -4,29 +4,33 @@
 \DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Personnel.h"{}}}
 \DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}RoundStats.h"{}}}
 \DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <iostream>}}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00004}00004 }
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00005}\mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{00005}} \mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{Personnel::Personnel}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health, \textcolor{keywordtype}{int} damage): \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00006}00006 }
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00007}\mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{00007}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{Personnel::takeDamage}}(\textcolor{keywordtype}{int} damage) \{}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00008}00008     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00009}00009 \}}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00010}00010 }
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00011}\mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{00011}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{Personnel::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00012}00012     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00013}00013     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00014}00014 \}}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00015}00015 }
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00016}\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{00016}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{Personnel::clone}}() \{}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00017}00017     \mbox{\hyperlink{classPersonnel}{Personnel}}* p;}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00018}00018     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00019}00019         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00020}00020     \} \textcolor{keywordflow}{else} \{}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00021}00021         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00022}00022     \}}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00023}00023 }
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00024}00024     p-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00025}00025 }
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00026}00026     \textcolor{keywordflow}{return} p;}
-\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include <stdexcept>}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00005}00005 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00006}\mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{00006}} \mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{Personnel::Personnel}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health, \textcolor{keywordtype}{int} damage): \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00008}\mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{00008}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{Personnel::takeDamage}}(\textcolor{keywordtype}{int} damage) \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00009}00009     \textcolor{keywordflow}{if} (damage <= 0)}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00010}00010         \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}damage must be greater than zero"{}});}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00012}00012     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00013}00013 \}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00015}\mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{00015}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{Personnel::dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00016}00016     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00017}00017     entity-\/>\mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{takeDamage}}(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00018}00018 \}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00019}00019 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00020}\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{00020}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{Personnel::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00021}00021     \mbox{\hyperlink{classPersonnel}{Personnel}}* p;}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00022}00022     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00023}00023         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00024}00024     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00025}00025         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00026}00026     \}}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00027}00027 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00028}00028     p-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} p;}
+\DoxyCodeLine{\Hypertarget{Personnel_8cpp_source_l00031}00031 \}}
 
 \end{DoxyCode}
