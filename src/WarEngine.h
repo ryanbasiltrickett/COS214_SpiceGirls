@@ -86,6 +86,8 @@ public:
 	*/
 	void setWarTheatre(WarTheatre* battleGround);
 
+	void addAlliance(Alliance* alliance);
+
 	/**
 	 * @brief Simulates the war
 	 * 

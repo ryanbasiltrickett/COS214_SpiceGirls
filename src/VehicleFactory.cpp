@@ -5,6 +5,7 @@ VehicleFactory::VehicleFactory(Type* type, AddOn* addOn): Factory(type, addOn) {
 
 Entity* VehicleFactory::createEntity(Alliance* alliance) {
 	Vehicle* v = new Vehicle(getType()->clone());
+	v->setAlliance(alliance);
 	if (getAddOn() != NULL) {
 		AddOn* personnelAddOn = getAddOn()->clone();
 		personnelAddOn->setEntity(v);

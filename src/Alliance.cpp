@@ -1,7 +1,11 @@
 #include "Alliance.h"
 #include "Negotiator.h"
 #include "Entity.h"
+#include "RoundStats.h"
 #include <time.h>
+#include <iostream>
+
+using namespace std;
 
 int Alliance::totalNum = 0;
 
@@ -29,11 +33,16 @@ Alliance::Alliance(Alliance& alliance) {
 }
 
 Alliance::~Alliance() {
-	
-	this->negotiator->removeAlliance(this);
 
-	if (this->negotiator->getNumAlliances() == 1)
-		delete this->negotiator;
+	for (int i = 0; i < members.size(); i++)
+		//delete members[i];
+
+	if (this->negotiator != NULL) {
+		this->negotiator->removeAlliance(this);
+
+		if (this->negotiator->getNumAlliances() == 1)
+			delete this->negotiator;
+	}
 }
 
 void Alliance::setNegotiator(Negotiator* negotiator) {
@@ -72,6 +81,7 @@ void Alliance::addFactory(Factory* factory) {
 
 void Alliance::runFactories() {
 	for (int i = 0; i < production.size(); i++) {
+		RoundStats::numEntitiesCreated++;
 		reserveEntities.push_back(production[i]->createEntity(this));
 	}
 }

@@ -1,11 +1,16 @@
 #include "KeyPoint.h"
 #include "Weather.h"
+#include "RoundStats.h"
+#include "Sunny.h"
 #include <time.h>
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
 
-KeyPoint::KeyPoint(string areaName): Area(areaName) {}
+KeyPoint::KeyPoint(string areaName): Area(areaName) {
+	weather = new Sunny();
+}
 
 KeyPoint::KeyPoint(KeyPoint& keyPoint): Area(keyPoint.getAreaName()) {
 	for (int i = 0; i < keyPoint.entities.size(); i++)
@@ -29,22 +34,36 @@ bool KeyPoint::isKeyPoint() {
 }
 
 void KeyPoint::simulateBattle(Alliance* alliance) {
+	int numUnits = 0;
 	for (int i = 0; i < entities.size(); i++) {
 		if (entities[i]->getAlliance() == alliance) {
-			int random;
-			do {
-				random = rand() % entities.size();
-			} while (entities[random]->getAlliance() == alliance);
-
-			if (rand() % (int)(weather->getMultiplier() * 100) <= (int)(weather->getMultiplier() * 100))
-				entities[i]->dealDamage(entities[random]);
+			numUnits++;
 		}
 	}
+
+	if (numUnits != entities.size()) {
+		for (int i = 0; i < entities.size(); i++) {
+			if (entities[i]->getAlliance() == alliance) {
+				int random;
+				do {
+					random = rand() % entities.size();
+				} while (entities[random]->getAlliance() == alliance);
+
+				if (rand() % (int)(weather->getMultiplier() * 100) <= (int)(weather->getMultiplier() * 100))
+					entities[i]->dealDamage(entities[random]);
+			}
+		}
+	}
+	
+	clearBattlefield(alliance);
 }
 
-void KeyPoint::clearBattlefield() {
+void KeyPoint::clearBattlefield(Alliance* alliance) {
+	int destroyed = 0;
+	double numUnits = 0;
 	for (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) {
 		if ((*it)->getHealth() <= 0) {
+			destroyed++;
 			for (int i = 0; i < generals.size(); i++) {
 				if (generals[i]->getAlliance() == (*it)->getAlliance()) {
 					generals[i]->initiateStrategy(this);
@@ -52,26 +71,53 @@ void KeyPoint::clearBattlefield() {
 					entities.erase(it);
 				}
 			}
+		} else if ((*it)->getAlliance() == alliance) {
+			numUnits++;
 		}
 	}
+
+	// saving stats
+	string stats = getAreaName() + ":\n";
+	stats += "Key Point Satus: ";
+	if (numUnits / entities.size() >= 0.6) {
+		stats += "Winning\n";
+		RoundStats::numWinningPoints++;
+	} else if (numUnits / entities.size() >= 0.35) {
+		stats += "Contested\n";
+		RoundStats::numContestedPoints++;
+	} else {
+		stats += "Losing\n";
+		RoundStats::numLosingPoints++;
+	}
+	
+	stats += "Number of Entities Destroyed by Alliance: " + to_string(destroyed) + "\n";
+	stats += "Number of Entities/Total Amount of Entities: " + to_string((int)numUnits) + "/" + to_string(entities.size());
+
+	RoundStats::keyPointInformation.push_back(stats);
+	RoundStats::numEntitiesDestroyed += destroyed;
 }
 
 void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
 	vector<Entity*> troops = alliance->getReserveEntities(numTroops);
 	for (int i = 0; i < troops.size(); i++)
 		entities.push_back(troops[i]);
+
+	string stats = "Alliance " + to_string(alliance->getID()) + " moved " + to_string(troops.size()) + " entities into " + getAreaName();
+	RoundStats::entityMovementInformation.push_back(stats);
 }
 
 void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
-	vector<Entity*>::iterator it = entities.begin();
-	for (int i = 0; i < numTroops && it != entities.end(); i++) {
-		for (; it != entities.end(); ++it) {
-			if ((*it)->getAlliance() == alliance) {
-				alliance->addReserveEntity(*it);
-				entities.erase(it);
-			}
+	int numMoved = 0;
+	for (vector<Entity*>::iterator it = entities.begin(); it != entities.end() && numMoved != numTroops; ++it) {
+		if ((*it)->getAlliance() == alliance) {
+			numMoved++;
+			alliance->addReserveEntity(*it);
+			entities.erase(it);
 		}
 	}
+
+	string stats = "Alliance " + to_string(alliance->getID()) + " moved " + to_string(numMoved) + " entities out of " + getAreaName();
+	RoundStats::entityMovementInformation.push_back(stats);
 }
 
 void KeyPoint::addEntity(Entity* entity) {

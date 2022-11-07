@@ -59,7 +59,7 @@ Instantiates the \mbox{\hyperlink{classPersonnel}{Personnel}}.
 \end{DoxyParams}
 
 
-Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
 
 
 <<<<<<< HEAD
@@ -69,7 +69,7 @@ Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00003}{3}} of file \m
 3 : \hyperlink{classEntity}{Entity}(type, health, damage) \{\}
 =======
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00003 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
+\DoxyCodeLine{00005 : \mbox{\hyperlink{classEntity_a980f368aa07ce358583982821533a54a}{Entity}}(type, health, damage) \{\}}
 
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 =======
@@ -105,13 +105,22 @@ Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00013}{13}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00016}{16}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00013                          \{}
-\DoxyCodeLine{00014     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00015 \}}
+\DoxyCodeLine{00016                          \{}
+\DoxyCodeLine{00017     \mbox{\hyperlink{classPersonnel}{Personnel}}* p;}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{00019         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00020     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00021         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00022     \}}
+\DoxyCodeLine{00023 }
+\DoxyCodeLine{00024     p-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \textcolor{keywordflow}{return} p;}
+\DoxyCodeLine{00027 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}\label{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}} 
@@ -160,7 +169,7 @@ Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00009}{9}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
 
 
 <<<<<<< HEAD
@@ -176,9 +185,10 @@ Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00009}{9}} of file \m
 =======
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00009                                          \{}
-\DoxyCodeLine{00010     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
-\DoxyCodeLine{00011 \}}
+\DoxyCodeLine{00011                                          \{}
+\DoxyCodeLine{00012     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{00013     entity-\/>takeDamage(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00014 \}}
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -234,13 +244,13 @@ Implements \mbox{\hyperlink{classEntity}{Entity}}.
 
 
 
-Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{00005                                      \{}
-\DoxyCodeLine{00006     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
-\DoxyCodeLine{00007 \}}
+\DoxyCodeLine{00007                                      \{}
+\DoxyCodeLine{00008     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{00009 \}}
 
 \end{DoxyCode}
 

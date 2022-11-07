@@ -1,0 +1,316 @@
+\hypertarget{EasySetup_8cpp_source}{}\doxysection{Easy\+Setup.\+cpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}EasySetup.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}Alliance.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}Country.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include "{}AquaticType.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}AerialType.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00007}00007 \textcolor{preprocessor}{\#include "{}TerrainType.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00008}00008 \textcolor{preprocessor}{\#include "{}Piercing.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00009}00009 \textcolor{preprocessor}{\#include "{}Armour.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00010}00010 \textcolor{preprocessor}{\#include "{}PersonnelFactory.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00011}00011 \textcolor{preprocessor}{\#include "{}VehicleFactory.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00012}00012 \textcolor{preprocessor}{\#include "{}SupportFactory.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00013}00013 \textcolor{preprocessor}{\#include "{}KeyPoint.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00014}00014 \textcolor{preprocessor}{\#include "{}WarTheatre.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00015}00015 \textcolor{preprocessor}{\#include "{}Passive.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00016}00016 \textcolor{preprocessor}{\#include "{}Aggressive.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00017}00017 \textcolor{preprocessor}{\#include "{}Defensive.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00018}00018 \textcolor{preprocessor}{\#include "{}WarEngine.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00019}00019 \textcolor{preprocessor}{\#include "{}Negotiator.h"{}}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00021}00021 EasySetup::EasySetup() \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00022}00022     saveArchive = \textcolor{keyword}{new} \mbox{\hyperlink{classSaveArchive}{SaveArchive}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00025}00025 \textcolor{keywordtype}{void} EasySetup::setupSimulation() \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00026}00026     \textcolor{keywordflow}{while} (\textcolor{keyword}{true})}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00027}00027     \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00028}00028         cout << \textcolor{stringliteral}{"{}Load simulation (L) or New Simulation (N): "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00029}00029         \textcolor{keywordtype}{string} selectedOption;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00030}00030         cin >> selectedOption;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00031}00031         cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00033}00033         \textcolor{keywordflow}{if}(toupper(selectedOption[0]) == \textcolor{charliteral}{'L'})}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00034}00034         \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00035}00035             \textcolor{keywordtype}{string} saveName;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00036}00036             cout << \textcolor{stringliteral}{"{}Please enter the name of the save to be re-\/simulated"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00037}00037             getline(cin, saveName); \textcolor{comment}{// getting the name of the save-\/archive}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00038}00038             \textcolor{keywordflow}{try} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00039}00039                 this-\/>loadSpecificSave(saveName); \textcolor{comment}{// loading the save-\/archive}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00040}00040                 \textcolor{keywordflow}{return}; \textcolor{comment}{// will return if the above the function does not throw an exception  }}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00041}00041             \} \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} std::exception\& exception) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00042}00042                 cout << \textcolor{stringliteral}{"{}Error: "{}} << exception.what() << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00044}00044                 \textcolor{keywordflow}{if} (strcmp(exception.what(), \textcolor{stringliteral}{"{}Save archive is empty"{}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00045}00045                     cout << \textcolor{stringliteral}{"{}Please create new simulation"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00046}00046                     \textcolor{keywordflow}{goto} setup;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00047}00047     }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00048}00048                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (strcmp(exception.what(), \textcolor{stringliteral}{"{}No save with given name exists"{}}) == 0) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00049}00049 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00050}00050                     cout << \textcolor{stringliteral}{"{}Please enter the correct name of save-\/archive and try again or create new simulation"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00051}00051                 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00052}00052             \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00053}00053         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00054}00054         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(toupper(selectedOption[0]) == \textcolor{charliteral}{'N'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00055}00055             \textcolor{comment}{// setting up a new simulation}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00056}00056             \textcolor{keywordflow}{goto} setup;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00057}00057         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00058}00058             cout << \textcolor{stringliteral}{"{}Incorrect input: Please enter (L) or (N)"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00059}00059         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00060}00060     \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00061}00061     }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00062}00062     setup:}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00063}00063         \textcolor{comment}{// Creating alliances and generals}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00064}00064         \textcolor{keywordtype}{int} numAlliesAndGenerals;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00065}00065         cout << \textcolor{stringliteral}{"{}Enter number of alliances: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00066}00066         cin >> numAlliesAndGenerals;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00067}00067 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00068}00068         \mbox{\hyperlink{classAlliance}{Alliance}}** alliances = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}*[numAlliesAndGenerals];}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00069}00069         \mbox{\hyperlink{classGeneral}{General}}** generals = \textcolor{keyword}{new} \mbox{\hyperlink{classGeneral}{General}}*[numAlliesAndGenerals];}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00070}00070         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00071}00071         \textcolor{keywordtype}{int} numCountries,}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00072}00072             numFactories;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00073}00073         \textcolor{keywordtype}{string}  countryName,}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00074}00074                 factoryType,}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00075}00075                 selectedFactory,}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00076}00076                 selectedAddOn;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00077}00077         \mbox{\hyperlink{classCountry}{Country}}* country;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00078}00078         \mbox{\hyperlink{classType}{Type}}* type;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00079}00079         \mbox{\hyperlink{classAddOn}{AddOn}}* addOn;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00080}00080         \mbox{\hyperlink{classFactory}{Factory}}* factory;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00082}00082         \mbox{\hyperlink{classNegotiator}{Negotiator}}* negotiator = \textcolor{keyword}{new} \mbox{\hyperlink{classNegotiator}{Negotiator}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00083}00083 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00084}00084         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numAlliesAndGenerals; i++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00085}00085             alliances[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00086}00086             negotiator-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(alliances[i]);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00087}00087             alliances[i]-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(negotiator);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00088}00088             \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().addAlliance(alliances[i]);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00089}00089 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00090}00090             cout << \textcolor{stringliteral}{"{}Enter number of countries for Alliance "{}} << alliances[i]-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}() << \textcolor{stringliteral}{"{}: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00091}00091             cin >> numCountries;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00092}00092             cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00093}00093 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00094}00094             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < numCountries; k++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00095}00095                 cout << \textcolor{stringliteral}{"{}Enter name of county "{}} << k+1 << \textcolor{stringliteral}{"{}: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00096}00096                 getline(cin, countryName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00097}00097                 country = \textcolor{keyword}{new} \mbox{\hyperlink{classCountry}{Country}}(countryName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00098}00098                 alliances[i]-\/>\mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{addCountry}}(country);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00099}00099             \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00101}00101             cout << \textcolor{stringliteral}{"{}Enter number of factories for Alliance "{}} << alliances[i]-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}() << \textcolor{stringliteral}{"{}: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00102}00102             cin >> numFactories;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00103}00103 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00104}00104             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < numFactories; k++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00105}00105                 retryType:}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00106}00106                 cout << \textcolor{stringliteral}{"{}Factory "{}} << k+1 << \textcolor{stringliteral}{"{} is of type Aquatic(Q), Aerial(E), or Terrain(T) : "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00107}00107                 cin >> factoryType;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00108}00108                 cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00110}00110                 \textcolor{keywordflow}{if} (toupper(factoryType[0]) == \textcolor{charliteral}{'Q'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00111}00111                     type = \textcolor{keyword}{new} \mbox{\hyperlink{classAerialType}{AerialType}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00112}00112                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(factoryType[0]) == \textcolor{charliteral}{'E'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00113}00113                     type = \textcolor{keyword}{new} \mbox{\hyperlink{classAerialType}{AerialType}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00114}00114                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(factoryType[0]) == \textcolor{charliteral}{'T'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00115}00115                     type = \textcolor{keyword}{new} \mbox{\hyperlink{classTerrainType}{TerrainType}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00116}00116                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00117}00117                     cout << \textcolor{stringliteral}{"{}Invalid type input! Try again"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00118}00118                     \textcolor{keywordflow}{goto} retryType;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00119}00119                 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00120}00120 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00121}00121                 retryAddOn:}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00122}00122                 cout << \textcolor{stringliteral}{"{}Select AddOn for factory "{}} << k+1 << \textcolor{stringliteral}{"{} Armour(A), Piercing(P) or None(N) : "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00123}00123                 getline(cin, selectedAddOn);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00124}00124                 \textcolor{keywordflow}{if} (toupper(selectedAddOn[0]) == \textcolor{charliteral}{'A'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00125}00125                     \textcolor{keywordtype}{int} value;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00126}00126                     cout << \textcolor{stringliteral}{"{}Enter armour value: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00127}00127                     cin >> value;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00128}00128                     cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00129}00129                     addOn = \textcolor{keyword}{new} \mbox{\hyperlink{classArmour}{Armour}}(value);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00130}00130                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedAddOn[0]) == \textcolor{charliteral}{'P'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00131}00131                     \textcolor{keywordtype}{int} value;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00132}00132                     cout << \textcolor{stringliteral}{"{}Enter piercing value: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00133}00133                     cin >> value;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00134}00134                     cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00135}00135                     addOn = \textcolor{keyword}{new} \mbox{\hyperlink{classPiercing}{Piercing}}(value);                }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00136}00136                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedAddOn[0] == \textcolor{charliteral}{'N'})) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00137}00137                     addOn = NULL;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00138}00138                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00139}00139                     cout << \textcolor{stringliteral}{"{}Invalid AddOn input! Try again"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00140}00140                     \textcolor{keywordflow}{goto} retryAddOn;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00141}00141                 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00142}00142                 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00143}00143                 retryFactory:}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00144}00144                 cout << \textcolor{stringliteral}{"{}Which factory is factory "{}} << k+1 << \textcolor{stringliteral}{"{} Vehicle(V), Personnel(P), or Support(S) : "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00145}00145                 getline(cin, selectedFactory);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00146}00146                 \textcolor{keywordflow}{if} (toupper(selectedFactory[0]) == \textcolor{charliteral}{'V'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00147}00147                     factory = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicleFactory}{VehicleFactory}}(type, addOn);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00148}00148                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedFactory[0]) == \textcolor{charliteral}{'P'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00149}00149                     factory = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnelFactory}{PersonnelFactory}}(type, addOn);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00150}00150                 \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedFactory[0]) == \textcolor{charliteral}{'S'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00151}00151                     factory = \textcolor{keyword}{new} \mbox{\hyperlink{classSupportFactory}{SupportFactory}}(type, addOn);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00152}00152                 \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00153}00153                     cout << \textcolor{stringliteral}{"{}Invalid factory input! Try again"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00154}00154                     \textcolor{keywordflow}{goto} retryFactory;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00155}00155                 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00156}00156                 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00157}00157                 alliances[i]-\/>\mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{addFactory}}(factory);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00158}00158             \} }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00159}00159             }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00160}00160             \textcolor{keywordtype}{string} selectedStrat;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00161}00161             \mbox{\hyperlink{classStrategy}{Strategy}}* strat;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00162}00162             }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00163}00163             retryStrat:}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00164}00164             cout << \textcolor{stringliteral}{"{}What is this Alliances generals strategy Passive(P), Defensive(D), or Aggressive(A) : "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00165}00165             getline(cin, selectedStrat);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00166}00166             \textcolor{keywordflow}{if} (toupper(selectedStrat[0]) == \textcolor{charliteral}{'P'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00167}00167                 strat = \textcolor{keyword}{new} \mbox{\hyperlink{classPassive}{Passive}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00168}00168             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedStrat[0]) == \textcolor{charliteral}{'D'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00169}00169                 strat = \textcolor{keyword}{new} \mbox{\hyperlink{classDefensive}{Defensive}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00170}00170             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (toupper(selectedStrat[0]) == \textcolor{charliteral}{'A'}) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00171}00171                 strat = \textcolor{keyword}{new} \mbox{\hyperlink{classAggressive}{Aggressive}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00172}00172             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00173}00173                 cout << \textcolor{stringliteral}{"{}Invalid strategy input! Try again"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00174}00174                 \textcolor{keywordflow}{goto} retryStrat;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00175}00175             \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00176}00176             }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00177}00177             generals[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classGeneral}{General}}(alliances[i], strat);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00178}00178         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00179}00179         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00180}00180         \textcolor{keywordtype}{int} factoryRun;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00181}00181         cout << \textcolor{stringliteral}{"{}How many production runs do you wish to perform: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00182}00182         cin >> factoryRun;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00183}00183         cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00184}00184         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numAlliesAndGenerals; i++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00185}00185             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} j = 0; j < factoryRun; j++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00186}00186                 alliances[i]-\/>runFactories();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00187}00187             \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00188}00188         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00189}00189 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00190}00190         \textcolor{comment}{// Creating main WarTheatre}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00191}00191         \mbox{\hyperlink{classWarTheatre}{WarTheatre}}* mainBattleGround;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00192}00192         cout << \textcolor{stringliteral}{"{}Creating the main battle ground"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00193}00193         \textcolor{keywordtype}{string} battleGroundName;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00194}00194         cout << \textcolor{stringliteral}{"{}Set main battle ground's name: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00195}00195         getline(cin, battleGroundName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00196}00196         mainBattleGround = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}(battleGroundName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00197}00197 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00198}00198         \textcolor{keywordtype}{int} sizeOfGrounds;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00199}00199         cout << \textcolor{stringliteral}{"{}Enter number of battle grounds in "{}} << battleGroundName << \textcolor{stringliteral}{"{} battle ground: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00200}00200         cin >> sizeOfGrounds;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00201}00201         cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00202}00202         \mbox{\hyperlink{classWarTheatre}{WarTheatre}}** battleGrounds = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}*[sizeOfGrounds];}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00203}00203         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00204}00204         \textcolor{comment}{// Creating sub WarTheatres}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00205}00205         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sizeOfGrounds; i++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00206}00206             battleGroundName.clear();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00207}00207             cout << \textcolor{stringliteral}{"{}Set battle ground "{}} << i+1 << \textcolor{stringliteral}{"{}'s name: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00208}00208             getline(cin, battleGroundName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00209}00209             battleGrounds[i] = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}(battleGroundName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00210}00210         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00211}00211 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00212}00212         vector<int> numKeyPoints;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00213}00213         \textcolor{keywordtype}{int} numKeyPoint = 0;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00214}00214 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00215}00215         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sizeOfGrounds; i++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00216}00216             cout << \textcolor{stringliteral}{"{}Enter number of key points in "{}} << battleGrounds[i]-\/>\mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}() << \textcolor{stringliteral}{"{} battle ground: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00217}00217             cin >> numKeyPoint;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00218}00218             cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00219}00219             numKeyPoints.push\_back(numKeyPoint);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00220}00220             numKeyPoint = 0;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00221}00221         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00222}00222 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00223}00223         \mbox{\hyperlink{classKeyPoint}{KeyPoint}}* keyPoint;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00224}00224         \textcolor{keywordtype}{string} keyPointName;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00225}00225         \textcolor{keywordtype}{int} numEntitiesInKeyPt;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00226}00226 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00227}00227         \textcolor{comment}{// Creating KeyPoints for the sub WarTheatres}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00228}00228         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < sizeOfGrounds; i++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00229}00229             numKeyPoint = numKeyPoints[i];}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00230}00230             cout << \textcolor{stringliteral}{"{}For "{}} << battleGrounds[i]-\/>\mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}() << \textcolor{stringliteral}{"{}'s key points"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00231}00231         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00232}00232             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} k = 0; k < numKeyPoint; k++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00233}00233                 cout << \textcolor{stringliteral}{"{}Set key point "{}} << i+1 << \textcolor{stringliteral}{"{}'s name: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00234}00234                 getline(cin, keyPointName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00235}00235                 keyPoint = \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(keyPointName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00236}00236            }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00237}00237                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} a = 0; a < numAlliesAndGenerals; a++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00238}00238                     tryAgain:}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00239}00239                     cout << \textcolor{stringliteral}{"{}There are "{}} << alliances[a]-\/>numRemainingEntities() << \textcolor{stringliteral}{"{} for Alliance "{}} << a+1 << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00240}00240                     cout << \textcolor{stringliteral}{"{}How many would you like to place in "{}} << keyPointName << \textcolor{stringliteral}{"{} keypoint? "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00241}00241                     cin >> numEntitiesInKeyPt;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00242}00242                     cin.ignore();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00243}00243 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00244}00244                     \textcolor{keywordflow}{if} (alliances[a]-\/>numRemainingEntities() > 0 \&\& alliances[a]-\/>numRemainingEntities() < numEntitiesInKeyPt) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00245}00245                         cout << \textcolor{stringliteral}{"{}You selected more than the available amount. Try again "{}} << endl;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00246}00246                         \textcolor{keywordflow}{goto} tryAgain;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00247}00247                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (alliances[a]-\/>numRemainingEntities() <= 0) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00248}00248                         \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00249}00249                     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00250}00250                         keyPoint-\/>\mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{moveEntitiesInto}}(alliances[a], numEntitiesInKeyPt);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00251}00251                     \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00252}00252                 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00253}00253                 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00254}00254                 battleGrounds[i]-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(keyPoint);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00255}00255             \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00256}00256 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00257}00257             mainBattleGround-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(battleGrounds[i]);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00258}00258         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00259}00259         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00260}00260         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < numAlliesAndGenerals; i++) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00261}00261             mainBattleGround-\/>\mbox{\hyperlink{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}{addGeneral}}(generals[i]);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00262}00262         \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00263}00263 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00264}00264         \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{setWarTheatre}}(mainBattleGround); }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00265}00265 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00266}00266 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00267}00267 \textcolor{keywordtype}{void} EasySetup::runSimulation() \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00268}00268 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00269}00269     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00270}00270 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00271}00271 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00272}00272 \textcolor{keywordtype}{void} EasySetup::saveSimulationSetup() \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00273}00273 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00274}00274     \textcolor{comment}{// Getting the name of the save}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00275}00275     cout << \textcolor{stringliteral}{"{}Please enter name of save: "{}};}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00276}00276     \textcolor{keywordtype}{string} saveName;}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00277}00277     getline(cin, saveName);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00278}00278 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00279}00279     \textcolor{comment}{// saving the current state of the simulation}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00280}00280     saveArchive-\/>\mbox{\hyperlink{classSaveArchive_ab6927785f5b7f07b079a424773796d49}{addNewSave}}(saveName, \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().saveState());}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00281}00281 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00282}00282 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00283}00283 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00284}00284 \textcolor{keywordtype}{void} EasySetup::loadPrevSave() \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00285}00285 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00286}00286     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00287}00287         \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* saveFile = saveArchive-\/>\mbox{\hyperlink{classSaveArchive_a144c8a27272d190164ad1f0e9dbdcc01}{getLastSave}}();}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00288}00288 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00289}00289         \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{loadSave}}(saveFile);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00290}00290     \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00291}00291     \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} std::exception\& error)\{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00292}00292 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00293}00293         std::cerr << error.what() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}; }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00294}00294     }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00295}00295     \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00296}00296 \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00297}00297 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00298}00298 \textcolor{keywordtype}{void} EasySetup::loadSpecificSave(\textcolor{keywordtype}{string} name) \{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00299}00299 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00300}00300     \textcolor{keywordflow}{try}\{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00301}00301         }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00302}00302         \mbox{\hyperlink{classWarEngineMemento}{WarEngineMemento}}* saveFile = saveArchive-\/>\mbox{\hyperlink{classSaveArchive_ad65ce77b8a9027b4e4a5d67ca1f06877}{getSave}}(name);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00303}00303 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00304}00304         \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a715995a703811197d16102ca80bf6fca}{loadSave}}(saveFile);}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00305}00305     \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00306}00306     \textcolor{keywordflow}{catch}(\textcolor{keyword}{const} std::out\_of\_range\& range\_error)\{}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00307}00307 }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00308}00308         std::cerr << range\_error.what() << \textcolor{stringliteral}{"{}\(\backslash\)n"{}}; }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00309}00309     }
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00310}00310     \}}
+\DoxyCodeLine{\Hypertarget{EasySetup_8cpp_source_l00311}00311 \}}
+
+\end{DoxyCode}

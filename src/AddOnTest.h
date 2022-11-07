@@ -113,6 +113,7 @@ namespace {
         a->setEntity(p);
         a->takeDamage(10);
         EXPECT_EQ(0, a->getValue());
+        EXPECT_EQ(100, a->getHealth());
         EXPECT_EQ(100, p->getHealth());
     }
 
@@ -138,14 +139,17 @@ namespace {
         
         a->takeDamage(10);
         EXPECT_EQ(10, a->getValue());
+        EXPECT_EQ(100, a->getHealth());
         EXPECT_EQ(100, p->getHealth());
         
         a->takeDamage(10);
         EXPECT_EQ(0, a->getValue());
+        EXPECT_EQ(100, a->getHealth());
         EXPECT_EQ(100, p->getHealth());
         
         a->takeDamage(10);
         EXPECT_EQ(0, a->getValue());
+        EXPECT_EQ(90, a->getHealth());
         EXPECT_EQ(90, p->getHealth());
     }
     
@@ -183,14 +187,17 @@ namespace {
 
         pi->takeDamage(10);
         EXPECT_EQ(10, pi->getValue());
+        EXPECT_EQ(90, pi->getHealth());
         EXPECT_EQ(90, p->getHealth());
         
         pi->takeDamage(10);
         EXPECT_EQ(10, pi->getValue());
+        EXPECT_EQ(80, pi->getHealth());
         EXPECT_EQ(80, p->getHealth());
 
         pi->takeDamage(10);
         EXPECT_EQ(10, pi->getValue());
+        EXPECT_EQ(70, pi->getHealth());
         EXPECT_EQ(70, p->getHealth());
     }
     

@@ -1,4 +1,5 @@
 #include "Piercing.h"
+#include "RoundStats.h"
 
 Piercing::Piercing(int value) : AddOn(value) {}
 
@@ -9,10 +10,12 @@ void Piercing::takeDamage(int damage) {
 void Piercing::dealDamage(Entity* entity) {
 	int sumValue = this->entity->getDamage() + value;
 	entity->takeDamage(sumValue);
+	RoundStats::damageDone += sumValue;
 }
 
 AddOn* Piercing::clone() {
 	Piercing* piercing = new Piercing(value);
-	piercing->setEntity(entity->clone());
+	if (getEntity() != NULL)
+		piercing->setEntity(entity->clone());
 	return piercing;
 }

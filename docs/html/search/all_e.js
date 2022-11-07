@@ -8,6 +8,11 @@ var searchData=
   ['weather',['Weather',['../classWeather.html',1,'Weather'],['../classWeather.html#aa404c94fec05b825454a7309827767c6',1,'Weather::Weather()']]]
 =======
   ['rainy_0',['Rainy',['../classRainy.html',1,'Rainy'],['../classRainy.html#aae3bc68f19aacf2a863e9524b0b3e302',1,'Rainy::Rainy()']]],
+<<<<<<< HEAD
+  ['removealliance_1',['removeAlliance',['../classNegotiator.html#ac6ec48dbce55bf196c299342695054ef',1,'Negotiator']]],
+  ['roundstats_2',['RoundStats',['../classRoundStats.html',1,'']]]
+=======
   ['removealliance_1',['removeAlliance',['../classNegotiator.html#ac6ec48dbce55bf196c299342695054ef',1,'Negotiator']]]
 >>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e
+>>>>>>> f706f74687dae703f6389f590b040bcb1c40ebb8
 ];

@@ -1,16 +1,34 @@
 #include "EasySetup.h"
 #include <string.h>
+#include "Alliance.h"
+#include "Country.h"
+#include "AquaticType.h"
+#include "AerialType.h"
+#include "TerrainType.h"
+#include "Piercing.h"
+#include "Armour.h"
+#include "PersonnelFactory.h"
+#include "VehicleFactory.h"
+#include "SupportFactory.h"
+#include "KeyPoint.h"
+#include "WarTheatre.h"
 #include "Passive.h"
 #include "Aggressive.h"
 #include "Defensive.h"
+#include "WarEngine.h"
+#include "Negotiator.h"
+
+EasySetup::EasySetup() {
+    saveArchive = new SaveArchive();
+}
 
 void EasySetup::setupSimulation() {
     while (true)
     {
-        cout << "Load simulation (L): " << endl;
-        cout << "New Simulation (N): " << endl;
+        cout << "Load simulation (L) or New Simulation (N): ";
         string selectedOption;
         cin >> selectedOption;
+        cin.ignore();
 
         if(toupper(selectedOption[0]) == 'L')
         {
@@ -61,11 +79,17 @@ void EasySetup::setupSimulation() {
         AddOn* addOn;
         Factory* factory;
 
+        Negotiator* negotiator = new Negotiator();
+
         for (int i = 0; i < numAlliesAndGenerals; i++) {
-            alliances[i] = new Alliance;
+            alliances[i] = new Alliance();
+            negotiator->addAlliance(alliances[i]);
+            alliances[i]->setNegotiator(negotiator);
+            WarEngine::getInstance().addAlliance(alliances[i]);
 
             cout << "Enter number of countries for Alliance " << alliances[i]->getID() << ": ";
             cin >> numCountries;
+            cin.ignore();
 
             for (int k = 0; k < numCountries; k++) {
                 cout << "Enter name of county " << k+1 << ": ";
@@ -81,6 +105,7 @@ void EasySetup::setupSimulation() {
                 retryType:
                 cout << "Factory " << k+1 << " is of type Aquatic(Q), Aerial(E), or Terrain(T) : ";
                 cin >> factoryType;
+                cin.ignore();
 
                 if (toupper(factoryType[0]) == 'Q') {
                     type = new AerialType;
@@ -94,18 +119,22 @@ void EasySetup::setupSimulation() {
                 }
 
                 retryAddOn:
-                cout << "Select AddOn for factory " << k+1 << " Armour(A) or Piercing(P) : ";
+                cout << "Select AddOn for factory " << k+1 << " Armour(A), Piercing(P) or None(N) : ";
                 getline(cin, selectedAddOn);
                 if (toupper(selectedAddOn[0]) == 'A') {
                     int value;
                     cout << "Enter armour value: ";
                     cin >> value;
+                    cin.ignore();
                     addOn = new Armour(value);
                 } else if (toupper(selectedAddOn[0]) == 'P') {
                     int value;
                     cout << "Enter piercing value: ";
                     cin >> value;
-                    addOn = new Piercing(value);
+                    cin.ignore();
+                    addOn = new Piercing(value);                
+                } else if (toupper(selectedAddOn[0] == 'N')) {
+                    addOn = NULL;
                 } else {
                     cout << "Invalid AddOn input! Try again" << endl;
                     goto retryAddOn;
@@ -149,10 +178,13 @@ void EasySetup::setupSimulation() {
         }
         
         int factoryRun;
-        cout << "How many entities would you like to create? ";
+        cout << "How many production runs do you wish to perform: ";
         cin >> factoryRun;
-        for (int i = 0; i < factoryRun; i++) {
-            alliances[i]->runFactories();
+        cin.ignore();
+        for (int i = 0; i < numAlliesAndGenerals; i++) {
+            for (int j = 0; j < factoryRun; j++) {
+                alliances[i]->runFactories();
+            }
         }
 
         // Creating main WarTheatre
@@ -166,6 +198,7 @@ void EasySetup::setupSimulation() {
         int sizeOfGrounds;
         cout << "Enter number of battle grounds in " << battleGroundName << " battle ground: ";
         cin >> sizeOfGrounds;
+        cin.ignore();
         WarTheatre** battleGrounds = new WarTheatre*[sizeOfGrounds];
         
         // Creating sub WarTheatres
@@ -182,6 +215,7 @@ void EasySetup::setupSimulation() {
         for (int i = 0; i < sizeOfGrounds; i++) {
             cout << "Enter number of key points in " << battleGrounds[i]->getAreaName() << " battle ground: ";
             cin >> numKeyPoint;
+            cin.ignore();
             numKeyPoints.push_back(numKeyPoint);
             numKeyPoint = 0;
         }
@@ -196,7 +230,7 @@ void EasySetup::setupSimulation() {
             cout << "For " << battleGrounds[i]->getAreaName() << "'s key points" << endl;
         
             for (int k = 0; k < numKeyPoint; k++) {
-                cout << "Set key point" << i+1 << "'s name: ";
+                cout << "Set key point " << i+1 << "'s name: ";
                 getline(cin, keyPointName);
                 keyPoint = new KeyPoint(keyPointName);
            
@@ -205,13 +239,14 @@ void EasySetup::setupSimulation() {
                     cout << "There are " << alliances[a]->numRemainingEntities() << " for Alliance " << a+1 << endl;
                     cout << "How many would you like to place in " << keyPointName << " keypoint? ";
                     cin >> numEntitiesInKeyPt;
+                    cin.ignore();
 
                     if (alliances[a]->numRemainingEntities() > 0 && alliances[a]->numRemainingEntities() < numEntitiesInKeyPt) {
                         cout << "You selected more than the available amount. Try again " << endl;
                         goto tryAgain;
-                    }else if (alliances[a]->numRemainingEntities() <= 0) {
-                        break;;
-                    }else {
+                    } else if (alliances[a]->numRemainingEntities() <= 0) {
+                        continue;
+                    } else {
                         keyPoint->moveEntitiesInto(alliances[a], numEntitiesInKeyPt);
                     }
                 }
@@ -226,12 +261,12 @@ void EasySetup::setupSimulation() {
             mainBattleGround->addGeneral(generals[i]);
         }
 
-        warEngine->setWarTheatre(mainBattleGround); 
+        WarEngine::getInstance().setWarTheatre(mainBattleGround); 
 }
 
 void EasySetup::runSimulation() {
 
-    warEngine->simulate();
+    WarEngine::getInstance().simulate();
 }
 
 void EasySetup::saveSimulationSetup() {
@@ -242,7 +277,7 @@ void EasySetup::saveSimulationSetup() {
     getline(cin, saveName);
 
     // saving the current state of the simulation
-    saveArchive->addNewSave(saveName, warEngine->saveState());
+    saveArchive->addNewSave(saveName, WarEngine::getInstance().saveState());
 
 }
 
@@ -251,7 +286,7 @@ void EasySetup::loadPrevSave() {
     try{
         WarEngineMemento* saveFile = saveArchive->getLastSave();
 
-        warEngine->loadSave(saveFile);
+        WarEngine::getInstance().loadSave(saveFile);
     }
     catch(const std::exception& error){
 
@@ -266,7 +301,7 @@ void EasySetup::loadSpecificSave(string name) {
         
         WarEngineMemento* saveFile = saveArchive->getSave(name);
 
-        warEngine->loadSave(saveFile);
+        WarEngine::getInstance().loadSave(saveFile);
     }
     catch(const std::out_of_range& range_error){
 
