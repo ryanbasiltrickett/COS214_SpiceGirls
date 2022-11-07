@@ -56,3 +56,4 @@ namespace {
         d->surrender();
         EXPECT_EQ(2, a->getActive());
     }
+}
