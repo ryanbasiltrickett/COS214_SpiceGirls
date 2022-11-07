@@ -21,7 +21,7 @@ private:
 	Area* area;
 	vector<Alliance*> alliances;
 
-public:
+protected:
 	/**
 	 * @brief Initializes an instance of the WarEngineState class.
 	 *
@@ -83,6 +83,7 @@ public:
 	*/
 	WarEngineState* clone();
 
+public:
 	/**
 	 * @brief Destructor for class.
 	*/

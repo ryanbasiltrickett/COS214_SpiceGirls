@@ -173,7 +173,7 @@ public:
 	 * 
 	 * @param ID a bool parameter
 	 */
-	void setActiveStatus(bool active);
+	void setActiveStatus(int active);
 
 	/**
 	 * @brief Get the active state of the Alliance
