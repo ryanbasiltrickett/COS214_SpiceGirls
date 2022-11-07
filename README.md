@@ -42,5 +42,6 @@ To  this project run in the build folder
 If you have cmake installed you can also compile with
 
 ```bash
+  cmake ../src
   make
 ```
