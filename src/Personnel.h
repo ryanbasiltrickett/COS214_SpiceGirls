@@ -29,7 +29,10 @@ public:
 	 * Postconditions:
 	 *  - Reduces the health of the Personnel object
 	 * 
-	 * @param damage must be an int
+	 * Exception:
+	 * - damage less than 0
+	 * 
+	 * @param damage must be an int and greater than 0
 	 * @return void
 	 */
 	void takeDamage(int damage);

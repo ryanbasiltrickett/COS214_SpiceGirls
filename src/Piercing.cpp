@@ -1,9 +1,13 @@
 #include "Piercing.h"
 #include "RoundStats.h"
+#include <stdexcept>
 
 Piercing::Piercing(int value) : AddOn(value) {}
 
 void Piercing::takeDamage(int damage) {
+	if (damage <= 0)
+		throw std::invalid_argument("damage must be greater than zero");
+
 	entity->takeDamage(damage);
 }
 
