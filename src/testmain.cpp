@@ -61,7 +61,7 @@ void setupWarEngine() {
     w->addArea(k2);
     w->addArea(k3);
 
-    //w->addGeneral(g1);
+    w->addGeneral(g1);
     //w->addGeneral(g2);
 
     WarEngine::getInstance().setWarTheatre(w);
