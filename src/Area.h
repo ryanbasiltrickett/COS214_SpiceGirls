@@ -42,6 +42,17 @@ public:
 	 */
 	virtual Area* clone() = 0;
 
+	/**
+	 * @brief Adds a general to all the points held by the WarTheatre
+	 * 
+	 * Precoditions:
+	 * 	- general must be a General*
+	 * 
+	 * Postconditions:
+	 * 	- Add general to all points
+	 * 
+	 * @param general must be a General*
+	 */
 	virtual void addGeneral(General* general) = 0;
 };
 

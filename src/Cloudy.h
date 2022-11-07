@@ -33,7 +33,7 @@ public:
 	 * @param k must be a KeyPoint*
 	 * @return void
 	 */
-	void handleChange(KeyPoint* k);
+	void handleChange(KeyPoint* keypoint);
 
 	/**
 	 * @brief Returns a clone of the Cloudy object

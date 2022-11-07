@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['general_0',['General',['../classGeneral.html#a713f0749ceab81e918373adde7b18885',1,'General::General()'],['../classGeneral.html',1,'General']]],
+  ['general_0',['General',['../classGeneral.html#a51bbb2c572fb377e078628affd3425ac',1,'General::General()'],['../classGeneral.html',1,'General']]],
   ['getactive_1',['getActive',['../classAlliance.html#a832ce46bb4b7062240a0586788e3ff59',1,'Alliance']]],
   ['getaddon_2',['getAddOn',['../classFactory.html#a994153930f59cafb280e91d5b100b5aa',1,'Factory']]],
   ['getalliance_3',['getAlliance',['../classAddOn.html#a226cff3c3072cdda884d6d6d8eb74773',1,'AddOn::getAlliance()'],['../classEntity.html#aa101047a4bc312b697b65b4c3a39ffc5',1,'Entity::getAlliance()'],['../classGeneral.html#a4cff7ae050a44bbbd077f4257078291c',1,'General::getAlliance()']]],

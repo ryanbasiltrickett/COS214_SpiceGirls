@@ -20,7 +20,6 @@ private:
 	vector<Entity*> entities;
 	vector<General*> generals;
 	Weather* weather;
-	std::string AreaType;
 
 public:
 	/**
@@ -121,10 +120,29 @@ public:
 	void addEntity(Entity* entity);
 
 	/**
+	 * @brief Adds a general to all the points held by the WarTheatre
 	 * 
-	*/
+	 * Precoditions:
+	 * 	- general must be a General*
+	 * 
+	 * Postconditions:
+	 * 	- Add general to all points
+	 * 
+	 * @param general must be a General*
+	 */
 	void addGeneral(General* general);
 
+	/**
+	 * @brief removes a general to all the points held by the WarTheatre
+	 * 
+	 * Precoditions:
+	 * 	- general must be a General*
+	 * 
+	 * Postconditions:
+	 * 	- Add general to all points
+	 * 
+	 * @param general must be a General*
+	 */
 	void removeGeneral(General* general);
 
 	/**

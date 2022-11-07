@@ -22,7 +22,7 @@ std\+::string \mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{get\
 virtual \mbox{\hyperlink{classArea}{Area}} $\ast$ \mbox{\hyperlink{classArea_a8f95bd4832e9534e645403975435b11d}{clone}} ()=0
 \begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current war theatre. \end{DoxyCompactList}\item 
 virtual void \mbox{\hyperlink{classArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}{add\+General}} (\mbox{\hyperlink{classGeneral}{General}} $\ast$general)=0
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -84,7 +84,26 @@ Definition at line \mbox{\hyperlink{Area_8cpp_source_l00009}{9}} of file \mbox{\
 
 
 
-Implemented in \mbox{\hyperlink{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}{War\+Theatre}}.
+Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. 
+
+Precoditions\+:
+\begin{DoxyItemize}
+\item general must be a General$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add general to all points
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em general} & must be a General$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}{Key\+Point}}, and \mbox{\hyperlink{classWarTheatre_a1a8640cb110c90f2f2619344fc16a15e}{War\+Theatre}}.
 
 \mbox{\Hypertarget{classArea_a8f95bd4832e9534e645403975435b11d}\label{classArea_a8f95bd4832e9534e645403975435b11d}} 
 \index{Area@{Area}!clone@{clone}}
