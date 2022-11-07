@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <stdexcept>
 #include "Negotiator.h"
 #include "Alliance.h"

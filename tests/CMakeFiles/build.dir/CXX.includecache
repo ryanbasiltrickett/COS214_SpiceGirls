@@ -6,71 +6,143 @@
 
 #IncludeRegexTransform: 
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.cpp
+AddOn.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.h
 Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AerialType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOnTest.h
+stdexcept
+-
+AddOn.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.h
+Piercing.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Piercing.h
+Armour.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Armour.h
+Personnel.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Personnel.h
+TerrainType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/TerrainType.h
+gtest/gtest.h
+/mnt/c/Ubuntu/COS214/Group Project/src/gtest/gtest.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/AerialType.cpp
+AerialType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AerialType.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/AerialType.h
 Type.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Aggressive.cpp
+Aggressive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Aggressive.h
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Aggressive.h
 Strategy.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.cpp
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+Negotiator.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Negotiator.h
+Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
+time.h
+-
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
 Country.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Country.h
 Factory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.h
 Country.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Country.h
 vector
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AquaticType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AquaticType.cpp
+AquaticType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AquaticType.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/AquaticType.h
 Type.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Area.cpp
+Area.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Area.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Area.h
 string
 -
 Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Armour.cpp
+Armour.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Armour.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Armour.h
 AddOn.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.h
 Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Cloudy.cpp
+Cloudy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Cloudy.h
+Rainy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Rainy.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Cloudy.h
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
 string
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
-Strategy.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
-KeyPoint.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
-Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
-Personnel.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Country.cpp
+Country.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Country.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.cpp
+/mnt/c/Ubuntu/COS214/Group Project/src/Country.h
+string
+-
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Defensive.cpp
+Defensive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Defensive.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Defensive.h
+Strategy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.h
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+Personnel.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Personnel.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/EasySetup.cpp
 EasySetup.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.h
+/mnt/c/Ubuntu/COS214/Group Project/src/EasySetup.h
 string.h
 -
 Passive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Passive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Passive.h
 Aggressive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Aggressive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Aggressive.h
 Defensive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Defensive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Defensive.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/EasySetup.h
+/mnt/c/Ubuntu/COS214/Group Project/src/EasySetup.h
 iostream
 -
 cctype
@@ -80,91 +152,179 @@ string
 vector
 -
 Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
 Country.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Country.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Country.h
 AquaticType.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AquaticType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AquaticType.h
 AerialType.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AerialType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AerialType.h
 TerrainType.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/TerrainType.h
 Piercing.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Piercing.h
 Armour.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Armour.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Armour.h
 PersonnelFactory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/PersonnelFactory.h
 VehicleFactory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/VehicleFactory.h
 SupportFactory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/SupportFactory.h
 KeyPoint.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
 WarTheatre.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarTheatre.h
 WarEngine.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngine.h
 SaveArchive.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SaveArchive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/SaveArchive.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
-Type.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
-Type.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
-AddOn.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
-Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
-Strategy.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
-
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
-Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
-Area.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.cpp
 Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
+Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.cpp
+Factory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.h
+Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
+AddOn.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/General.cpp
 General.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/General.h
+/mnt/c/Ubuntu/COS214/Group Project/src/General.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/General.h
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+Strategy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.cpp
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+time.h
+-
+cstdlib
+-
+
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+Area.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Area.h
+Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
+General.h
+/mnt/c/Ubuntu/COS214/Group Project/src/General.h
 vector
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Passive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Negotiator.cpp
+Negotiator.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Negotiator.h
+bits/stdc++.h
+-
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Negotiator.h
+vector
+-
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/NegotiatorTest.h
+stdexcept
+-
+Negotiator.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Negotiator.h
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+gtest/gtest.h
+/mnt/c/Ubuntu/COS214/Group Project/src/gtest/gtest.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Passive.cpp
+Passive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Passive.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Passive.h
 Strategy.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.h
 KeyPoint.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Personnel.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Personnel.cpp
+Personnel.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Personnel.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Personnel.h
 Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/PersonnelFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/PersonnelFactory.cpp
+PersonnelFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/PersonnelFactory.h
+Personnel.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Personnel.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/PersonnelFactory.h
 Factory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Piercing.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Piercing.cpp
+Piercing.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Piercing.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Piercing.h
 AddOn.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/AddOn.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOn.h
 Entity.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SaveArchive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Rainy.cpp
+Rainy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Rainy.h
+Sunny.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Sunny.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Rainy.h
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/SaveArchive.cpp
+SaveArchive.h
+/mnt/c/Ubuntu/COS214/Group Project/src/SaveArchive.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/SaveArchive.h
 unordered_map
 -
 string
 -
 WarEngineMemento.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineMemento.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineMemento.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Strategy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.cpp
+Strategy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.h
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Strategy.h
 string
 -
 ctime
@@ -172,59 +332,137 @@ ctime
 cstdlib
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/SupportFactory.h
-Factory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Sunny.cpp
+Sunny.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Sunny.h
+Cloudy.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Cloudy.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/TerrainType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Sunny.h
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Support.cpp
+Support.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Support.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Support.h
+Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/SupportFactory.cpp
+SupportFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/SupportFactory.h
+Support.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Support.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/SupportFactory.h
+Factory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/TerrainType.cpp
+TerrainType.h
+/mnt/c/Ubuntu/COS214/Group Project/src/TerrainType.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/TerrainType.h
 Type.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.cpp
+Type.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Type.h
 string
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/VehicleFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Vehicle.cpp
+Vehicle.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Vehicle.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Vehicle.h
+Entity.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Entity.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/VehicleFactory.cpp
+VehicleFactory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/VehicleFactory.h
+Vehicle.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Vehicle.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/VehicleFactory.h
 Factory.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Factory.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Factory.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.cpp
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngine.cpp
 WarEngine.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngine.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngine.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngine.h
 WarEngineState.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineState.h
 WarEngineMemento.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineMemento.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineMemento.h
 WarTheatre.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarTheatre.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineMemento.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineMemento.cpp
+WarEngineMemento.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineMemento.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineMemento.h
 WarEngineState.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineState.h
 string
 -
 vector
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarEngineState.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineState.cpp
+WarEngineState.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineState.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/WarEngineState.h
 Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
 Area.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Area.h
 vector
 -
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.cpp
+/mnt/c/Ubuntu/COS214/Group Project/src/WarTheatre.cpp
 WarTheatre.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarTheatre.h
 
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/WarTheatre.h
+/mnt/c/Ubuntu/COS214/Group Project/src/WarTheatre.h
 Area.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Area.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Area.h
 Alliance.h
-/mnt/c/Users/Ryan/Desktop/University/COS214/Team Project/COS214SpiceGirls/src/Alliance.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Alliance.h
 vector
+-
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.cpp
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+string
+-
+Weather.h
+/mnt/c/Ubuntu/COS214/Group Project/src/Weather.h
+KeyPoint.h
+/mnt/c/Ubuntu/COS214/Group Project/src/KeyPoint.h
+
+/mnt/c/Ubuntu/COS214/Group Project/src/testmain.cpp
+NegotiatorTest.h
+/mnt/c/Ubuntu/COS214/Group Project/src/NegotiatorTest.h
+AddOnTest.h
+/mnt/c/Ubuntu/COS214/Group Project/src/AddOnTest.h
+gtest/gtest.h
 -
 

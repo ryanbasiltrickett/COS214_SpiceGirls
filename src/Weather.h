@@ -57,13 +57,11 @@ public:
 	virtual std::string getWeather() = 0;
 
 	/**
-	 * @brief Returns the cloned object of Weather
-	 * PostConditions:
-	 * - Returns cloned object of Weather
+	 * @brief Returns a clone of the Weather object
 	 * 
-	 * @return Weather* The cloned object
+	 * @return Weather* Clone of Weather object
 	 */
-	virtual Weather* clone() = 0;
+	virtual Weather* clone() = 0;  
 };
 
 #endif

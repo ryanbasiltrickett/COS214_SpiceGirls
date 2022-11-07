@@ -104,4 +104,3 @@ int Alliance::getActive() {
 Alliance* Alliance::clone() {
 	return new Alliance(*this);
 }
->>>>>>> 7be49738cebc0ced3357f2ce74f6fda2ea0b3d5e

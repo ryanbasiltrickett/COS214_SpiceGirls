@@ -152,6 +152,16 @@ public:
 	 * @return void
 	 */
 	virtual void dealDamage(Entity* entity) = 0;
+	
+	/**
+	 * @brief Clones the current Entity object and returns the cloned object
+	 * 
+	 * PostConditions:
+	 * - Returns the cloned object of Entity
+	 * 
+	 * @return Entity* The cloned object
+	 */
+	virtual Entity* clone() = 0;
 };
 
 #endif

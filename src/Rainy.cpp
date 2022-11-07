@@ -17,11 +17,3 @@ void Rainy::handleChange(KeyPoint* keypoint) {
 Weather* Rainy::clone() {
 	return new Rainy();
 }
-
-Weather* Rainy::clone() {
-	return new Rainy();
-}
-
-Weather* Rainy::clone() {
-	return new Rainy();
-}

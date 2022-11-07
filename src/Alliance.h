@@ -28,6 +28,11 @@ public:
 	Alliance();
 
 	/**
+	 * @brief Instantiates the Alliance
+	 */
+	Alliance(Alliance& alliance);
+
+	/**
 	 * @brief Destructor for the Alliance object
 	 */
 	~Alliance();
@@ -179,6 +184,27 @@ public:
 	 * @return int the active variable
 	 */
 	int getActive();
+
+	/**
+	 * @brief Gets the number of the remaining number of entities
+	 * 
+	 * PostConditions:
+	 * - Returns an int
+	 * 
+	 * @return int The number of entities remaining
+	 * 
+	 */
+	int numRemainingEntities();
+
+	/**
+	 * @brief Will create reserve Entities
+	 * 
+	 * PostConditions
+	 * - will create reserve entities for later use
+	 * 
+	 * @return void
+	 */
+	void runFactories();
 };
 
 #endif

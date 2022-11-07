@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #ifndef COUNTRY_H
 #define COUNTRY_H
 #include <string>
@@ -13,7 +12,7 @@ public:
 	/**
 	 * @brief Instantiates the Country
 	 */
-	Country();
+	Country(std::string name);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Country
