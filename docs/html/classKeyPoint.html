@@ -117,8 +117,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:aad6d7102c8e3d11fe5f29b163f50dbc3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds an enitity to the key point object.  <a href="classKeyPoint.html#aad6d7102c8e3d11fe5f29b163f50dbc3">More...</a><br /></td></tr>
 <tr class="separator:aad6d7102c8e3d11fe5f29b163f50dbc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adef7a6b2e761e720e9b08890106ae257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPoint.html#adef7a6b2e761e720e9b08890106ae257">addGeneral</a> (<a class="el" href="classGeneral.html">General</a> *general)</td></tr>
+<tr class="memdesc:adef7a6b2e761e720e9b08890106ae257"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a general to all the points held by the <a class="el" href="classWarTheatre.html">WarTheatre</a>.  <a href="classKeyPoint.html#adef7a6b2e761e720e9b08890106ae257">More...</a><br /></td></tr>
 <tr class="separator:adef7a6b2e761e720e9b08890106ae257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe2ba3c8d36eb45711f396ff295fa32e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPoint.html#abe2ba3c8d36eb45711f396ff295fa32e">removeGeneral</a> (<a class="el" href="classGeneral.html">General</a> *general)</td></tr>
+<tr class="memdesc:abe2ba3c8d36eb45711f396ff295fa32e"><td class="mdescLeft">&#160;</td><td class="mdescRight">removes a general to all the points held by the <a class="el" href="classWarTheatre.html">WarTheatre</a>  <a href="classKeyPoint.html#abe2ba3c8d36eb45711f396ff295fa32e">More...</a><br /></td></tr>
 <tr class="separator:abe2ba3c8d36eb45711f396ff295fa32e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc4679ca31d34b0ae3fedded47e27938"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classArea.html">Area</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKeyPoint.html#adc4679ca31d34b0ae3fedded47e27938">clone</a> ()</td></tr>
 <tr class="memdesc:adc4679ca31d34b0ae3fedded47e27938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current Keypoint.  <a href="classKeyPoint.html#adc4679ca31d34b0ae3fedded47e27938">More...</a><br /></td></tr>
@@ -150,6 +152,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a8f95bd4832e9534e645403975435b11d inherit pub_methods_classArea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Instantiates and returns a clone of the current war theatre.  <a href="classArea.html#a8f95bd4832e9534e645403975435b11d">More...</a><br /></td></tr>
 <tr class="separator:a8f95bd4832e9534e645403975435b11d inherit pub_methods_classArea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3e229ab4fb2e5b19fc8cfedf078bc95 inherit pub_methods_classArea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classArea.html#ae3e229ab4fb2e5b19fc8cfedf078bc95">addGeneral</a> (<a class="el" href="classGeneral.html">General</a> *general)=0</td></tr>
+<tr class="memdesc:ae3e229ab4fb2e5b19fc8cfedf078bc95 inherit pub_methods_classArea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a general to all the points held by the <a class="el" href="classWarTheatre.html">WarTheatre</a>.  <a href="classArea.html#ae3e229ab4fb2e5b19fc8cfedf078bc95">More...</a><br /></td></tr>
 <tr class="separator:ae3e229ab4fb2e5b19fc8cfedf078bc95 inherit pub_methods_classArea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -313,7 +316,21 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="classArea.html">Area</a>.</p>
+<p>Adds a general to all the points held by the <a class="el" href="classWarTheatre.html">WarTheatre</a>. </p>
+<p >Precoditions:</p><ul>
+<li>general must be a General*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Add general to all points</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">general</td><td>must be a General* </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classArea.html#ae3e229ab4fb2e5b19fc8cfedf078bc95">Area</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="KeyPoint_8cpp_source.html#l00127">127</a> of file <a class="el" href="KeyPoint_8cpp_source.html">KeyPoint.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  127</span>                                          {</div>
@@ -666,6 +683,20 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>removes a general to all the points held by the <a class="el" href="classWarTheatre.html">WarTheatre</a> </p>
+<p >Precoditions:</p><ul>
+<li>general must be a General*</li>
+</ul>
+<p >Postconditions:</p><ul>
+<li>Add general to all points</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">general</td><td>must be a General* </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p class="definition">Definition at line <a class="el" href="KeyPoint_8cpp_source.html#l00131">131</a> of file <a class="el" href="KeyPoint_8cpp_source.html">KeyPoint.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  131</span>                                             {</div>

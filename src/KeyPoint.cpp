@@ -24,7 +24,8 @@ KeyPoint::~KeyPoint() {
 		delete entities[i];
 
 	for (int i = 0; i < generals.size(); i++)
-		delete generals[i];
+		//delete generals[i];
+		
 
 	delete weather;
 }
@@ -101,9 +102,6 @@ void KeyPoint::moveEntitiesInto(Alliance* alliance, int numTroops) {
 	vector<Entity*> troops = alliance->getReserveEntities(numTroops);
 	for (int i = 0; i < troops.size(); i++)
 		entities.push_back(troops[i]);
-
-	string stats = "Alliance " + to_string(alliance->getID()) + " moved " + to_string(troops.size()) + " entities into " + getAreaName();
-	RoundStats::entityMovementInformation.push_back(stats);
 }
 
 void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
@@ -115,9 +113,6 @@ void KeyPoint::moveEntitiesOutOf(Alliance* alliance, int numTroops) {
 			entities.erase(it);
 		}
 	}
-
-	string stats = "Alliance " + to_string(alliance->getID()) + " moved " + to_string(numMoved) + " entities out of " + getAreaName();
-	RoundStats::entityMovementInformation.push_back(stats);
 }
 
 void KeyPoint::addEntity(Entity* entity) {

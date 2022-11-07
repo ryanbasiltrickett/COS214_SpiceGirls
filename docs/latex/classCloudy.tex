@@ -13,7 +13,7 @@ Inheritance diagram for Cloudy\+:\begin{figure}[H]
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classCloudy}{Cloudy}} object of the state pattern. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classCloudy_a859714ec61c789dc12ed5447fd3692ac}{get\+Weather}} ()
 \begin{DoxyCompactList}\small\item\em Returns string which tels us the weather. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classCloudy_aa01a409307657c9a7cad11a6f93456fd}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)
+void \mbox{\hyperlink{classCloudy_aa3f7fb24e81ddfd3560dadd329fd218c}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$keypoint)
 \begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{clone}} ()
 \begin{DoxyCompactList}\small\item\em Returns a clone of the \mbox{\hyperlink{classCloudy}{Cloudy}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
@@ -113,11 +113,11 @@ Definition at line \mbox{\hyperlink{Cloudy_8cpp_source_l00008}{8}} of file \mbox
 \DoxyCodeLine{00010 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classCloudy_aa01a409307657c9a7cad11a6f93456fd}\label{classCloudy_aa01a409307657c9a7cad11a6f93456fd}} 
+\mbox{\Hypertarget{classCloudy_aa3f7fb24e81ddfd3560dadd329fd218c}\label{classCloudy_aa3f7fb24e81ddfd3560dadd329fd218c}} 
 \index{Cloudy@{Cloudy}!handleChange@{handleChange}}
 \index{handleChange@{handleChange}!Cloudy@{Cloudy}}
 \doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
-{\footnotesize\ttfamily void Cloudy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{k }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Cloudy\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{keypoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -153,7 +153,7 @@ Definition at line \mbox{\hyperlink{Cloudy_8cpp_source_l00012}{12}} of file \mbo
 \begin{DoxyCode}{0}
 \DoxyCodeLine{00012                                      \{}
 \DoxyCodeLine{00013     \mbox{\hyperlink{classRainy}{Rainy}}* newWeather = \textcolor{keyword}{new} \mbox{\hyperlink{classRainy}{Rainy}}();}
-\DoxyCodeLine{00014     k-\/>\mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{setWeather}}(newWeather);}
+\DoxyCodeLine{00014     k-\/>setWeather(newWeather);}
 \DoxyCodeLine{00015 \}}
 
 \end{DoxyCode}

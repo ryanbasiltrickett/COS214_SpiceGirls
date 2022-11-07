@@ -5,7 +5,7 @@ var searchData=
   ['addcountry_2',['addCountry',['../classAlliance.html#a5aad3039bd784cb26755fce97c92708a',1,'Alliance']]],
   ['addentity_3',['addEntity',['../classKeyPoint.html#aad6d7102c8e3d11fe5f29b163f50dbc3',1,'KeyPoint']]],
   ['addfactory_4',['addFactory',['../classAlliance.html#a0558b1f3532044e9b5648c0bd1c151bf',1,'Alliance']]],
-  ['addgeneral_5',['addGeneral',['../classWarTheatre.html#a1a8640cb110c90f2f2619344fc16a15e',1,'WarTheatre']]],
+  ['addgeneral_5',['addGeneral',['../classArea.html#ae3e229ab4fb2e5b19fc8cfedf078bc95',1,'Area::addGeneral()'],['../classKeyPoint.html#adef7a6b2e761e720e9b08890106ae257',1,'KeyPoint::addGeneral()'],['../classWarTheatre.html#a1a8640cb110c90f2f2619344fc16a15e',1,'WarTheatre::addGeneral()']]],
   ['addnewsave_6',['addNewSave',['../classSaveArchive.html#ab6927785f5b7f07b079a424773796d49',1,'SaveArchive']]],
   ['addon_7',['AddOn',['../classAddOn.html#a64f23691b6c7fc49b6584f8f761ce4d9',1,'AddOn']]],
   ['addreserveentity_8',['addReserveEntity',['../classAlliance.html#a37c4045fb37caf729d1f8f266f5f1bf0',1,'Alliance']]],

@@ -122,17 +122,59 @@ $(function() {
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="classWarEngine.html#aa8219fbd385bb54ad0363257915fe986">WarEngine::getInstance</a>().<a class="code hl_function" href="classWarEngine.html#ad3204f345ee8d36a37e8d47700420825">setWarTheatre</a>(w);</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>}</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// EasySetup* easySetup = new EasySetup();</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// easySetup-&gt;setupSimulation();</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keywordtype">void</span> showTests(<span class="keywordtype">int</span> &amp;argc, <span class="keywordtype">char</span>** argv){}</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keywordtype">int</span> startWarEngine(<span class="keywordtype">int</span> &amp;argc, <span class="keywordtype">char</span>** argv){</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    setupWarEngine();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="classWarEngine.html#aa8219fbd385bb54ad0363257915fe986">WarEngine::getInstance</a>().<a class="code hl_function" href="classWarEngine.html#a8990aec96d7e77f10b39f4ac05dca43b">simulate</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    testing::InitGoogleTest(&amp;argc, argv);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordflow">return</span> RUN_ALL_TESTS();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">bool</span> continueLoop = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordflow">while</span>(continueLoop){</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        cout &lt;&lt; <span class="stringliteral">&quot;Welcome to the War Simulator!\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;Please select an option:&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        cout &lt;&lt; <span class="stringliteral">&quot;1) Run Google Tests\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;2) Setup Simulation\n&quot;</span> &lt;&lt; <span class="stringliteral">&quot;3)Quit\n&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        std::string userStringInput;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        cin &gt;&gt; userStringInput;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordtype">int</span> userOption = stoi(userStringInput);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">switch</span>(userOption){</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>                testing::InitGoogleTest(&amp;argc, argv);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>                RUN_ALL_TESTS();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                setupWarEngine();</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>                <a class="code hl_function" href="classWarEngine.html#aa8219fbd385bb54ad0363257915fe986">WarEngine::getInstance</a>().<a class="code hl_function" href="classWarEngine.html#a8990aec96d7e77f10b39f4ac05dca43b">simulate</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>                cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                continueLoop = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>                cout &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>                <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                cout &lt;&lt; <span class="stringliteral">&quot;Please try again. Enter a valid option.\n\n&quot;</span> &lt;&lt; endl;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>}</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span><span class="keywordtype">int</span> main(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span> **argv) {</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">//setupWarEngine();</span></div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="comment">//WarEngine::getInstance().simulate();</span></div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">//testing::InitGoogleTest(&amp;argc, argv);</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="comment">//return RUN_ALL_TESTS();</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    startWarEngine(argc, argv);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>}</div>
 <div class="ttc" id="aclassAlliance_html"><div class="ttname"><a href="classAlliance.html">Alliance</a></div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8h_source.html#l00013">Alliance.h:13</a></div></div>
 <div class="ttc" id="aclassAlliance_html_a5aad3039bd784cb26755fce97c92708a"><div class="ttname"><a href="classAlliance.html#a5aad3039bd784cb26755fce97c92708a">Alliance::addCountry</a></div><div class="ttdeci">void addCountry(Country *nation)</div><div class="ttdoc">Adds a country into the members vector which holds countries.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00052">Alliance.cpp:52</a></div></div>
 <div class="ttc" id="aclassAlliance_html_ae900967c4bc7a6ee970fbefade816457"><div class="ttname"><a href="classAlliance.html#ae900967c4bc7a6ee970fbefade816457">Alliance::setNegotiator</a></div><div class="ttdeci">void setNegotiator(Negotiator *newNegotiator)</div><div class="ttdoc">Sets the entity negotiator.</div><div class="ttdef"><b>Definition:</b> <a href="Alliance_8cpp_source.html#l00048">Alliance.cpp:48</a></div></div>
