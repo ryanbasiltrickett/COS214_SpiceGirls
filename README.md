@@ -19,7 +19,7 @@ and the ability to simulate different war enviroments.
 
 - [Development Documentation](https://linktodocumentation)
 - [Class Diagram](docs/diagrams/System%20Class%20Diagram.png)
-- [Design Diagrams](https://linktodocumentation)
+- [Design Diagrams](docs/diagrams)
 
 
 ## Features
