@@ -19,7 +19,7 @@ and the ability to simulate different war enviroments.
 
 - [Development Documentation](docs/Spice%20GIrls%20Project%20Report.pdf)
 - [Coding Documentation](docs/Code%20Documentation.pdf)
-- [Class Diagram](docs/diagrams/SystemClassDiagram.png)
+- [Class Diagram](docs/diagrams/SystemClassDiagram.jpg)
 - [Design Diagrams](docs/diagrams)
 
 
