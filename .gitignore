@@ -26,6 +26,10 @@
 *.a
 *.lib
 
+#Directories
+tests/
+builds/
+
 # Executables
 *.exe
 *.out

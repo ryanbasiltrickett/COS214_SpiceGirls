@@ -1,3 +1,0 @@
-/mnt/c/Ubuntu/COS214/Group Project/tests/CMakeFiles/rebuild_cache.dir
-/mnt/c/Ubuntu/COS214/Group Project/tests/CMakeFiles/build.dir
-/mnt/c/Ubuntu/COS214/Group Project/tests/CMakeFiles/edit_cache.dir
