@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.4)  6 NOV 2022 17:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.4)  7 NOV 2022 11:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1040,7 +1040,7 @@ Package epstopdf Info: Source file: <classAddOn.eps>
 (epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3982 bytes
 (epstopdf)             Output file: <classAddOn-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:24
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5975 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAddOn-eps-converted-to.pdf classAddOn.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1106,7 +1106,7 @@ Package epstopdf Info: Source file: <classAerialType.eps>
 (epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3770 bytes
 (epstopdf)             Output file: <classAerialType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:25
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 4848 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAerialType-eps-converted-to.pdf classAerialType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1130,7 +1130,7 @@ Package epstopdf Info: Source file: <classAggressive.eps>
 (epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3778 bytes
 (epstopdf)             Output file: <classAggressive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:27
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5294 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAggressive-eps-converted-to.pdf classAggressive.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1214,7 +1214,7 @@ Package epstopdf Info: Source file: <classAquaticType.eps>
 (epstopdf)                    date: 2022-11-06 17:37:40
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classAquaticType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:28
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5118 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classAquaticType-eps-converted-to.pdf classAquaticType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1235,10 +1235,10 @@ Underfull \hbox (badness 10000) detected at line 97
 
 ) (classArea.tex
 Package epstopdf Info: Source file: <classArea.eps>
-(epstopdf)                    date: 2022-11-06 17:37:41
-(epstopdf)                    size: 3885 bytes
+(epstopdf)                    date: 2022-11-07 11:55:15
+(epstopdf)                    size: 4088 bytes
 (epstopdf)             Output file: <classArea-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:29
+(epstopdf)                    date: 2022-11-07 11:55:26
 (epstopdf)                    size: 5531 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classArea-eps-converted-to.pdf classArea.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1259,10 +1259,10 @@ Underfull \hbox (badness 10000) detected at line 109
 
 ) (classArmour.tex [26]
 Package epstopdf Info: Source file: <classArmour.eps>
-(epstopdf)                    date: 2022-11-06 17:37:41
-(epstopdf)                    size: 3867 bytes
+(epstopdf)                    date: 2022-11-07 11:55:15
+(epstopdf)                    size: 4070 bytes
 (epstopdf)             Output file: <classArmour-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:30
+(epstopdf)                    date: 2022-11-07 11:55:27
 (epstopdf)                    size: 5377 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classArmour-eps-converted-to.pdf classArmour.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1296,7 +1296,7 @@ Package epstopdf Info: Source file: <classCloudy.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3768 bytes
 (epstopdf)             Output file: <classCloudy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:32
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5254 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classCloudy-eps-converted-to.pdf classCloudy.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1350,7 +1350,7 @@ Package epstopdf Info: Source file: <classDefensive.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3776 bytes
 (epstopdf)             Output file: <classDefensive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:33
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5534 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classDefensive-eps-converted-to.pdf classDefensive.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1384,7 +1384,7 @@ Package epstopdf Info: Source file: <classEntity.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 4249 bytes
 (epstopdf)             Output file: <classEntity-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:34
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 6833 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classEntity-eps-converted-to.pdf classEntity.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1443,7 +1443,7 @@ Package epstopdf Info: Source file: <classFactory.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 4004 bytes
 (epstopdf)             Output file: <classFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:35
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 6012 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classFactory-eps-converted-to.pdf classFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1497,7 +1497,7 @@ Package epstopdf Info: Source file: <classKeyPoint.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3766 bytes
 (epstopdf)             Output file: <classKeyPoint-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:37
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5142 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classKeyPoint-eps-converted-to.pdf classKeyPoint.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1581,7 +1581,7 @@ Package epstopdf Info: Source file: <classPassive.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classPassive-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:38
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5313 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPassive-eps-converted-to.pdf classPassive.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1618,7 +1618,7 @@ Package epstopdf Info: Source file: <classPersonnel.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classPersonnel-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:39
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5076 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPersonnel-eps-converted-to.pdf classPersonnel.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1652,7 +1652,7 @@ Package epstopdf Info: Source file: <classPersonnelFactory.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3788 bytes
 (epstopdf)             Output file: <classPersonnelFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:40
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5204 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPersonnelFactory-eps-converted-to.pdf classPersonnelFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1678,10 +1678,10 @@ Underfull \hbox (badness 10000) detected at line 126
 
 ) (classPiercing.tex
 Package epstopdf Info: Source file: <classPiercing.eps>
-(epstopdf)                    date: 2022-11-06 17:37:41
-(epstopdf)                    size: 3871 bytes
+(epstopdf)                    date: 2022-11-07 11:55:15
+(epstopdf)                    size: 4074 bytes
 (epstopdf)             Output file: <classPiercing-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:42
+(epstopdf)                    date: 2022-11-07 11:55:30
 (epstopdf)                    size: 5551 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classPiercing-eps-converted-to.pdf classPiercing.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1715,7 +1715,7 @@ Package epstopdf Info: Source file: <classRainy.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3766 bytes
 (epstopdf)             Output file: <classRainy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:43
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5054 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classRainy-eps-converted-to.pdf classRainy.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1771,10 +1771,10 @@ Underfull \hbox (badness 10000) detected at line 251
 
 ) (classStrategy.tex
 Package epstopdf Info: Source file: <classStrategy.eps>
-(epstopdf)                    date: 2022-11-06 17:37:41
-(epstopdf)                    size: 3970 bytes
+(epstopdf)                    date: 2022-11-07 11:55:15
+(epstopdf)                    size: 4177 bytes
 (epstopdf)             Output file: <classStrategy-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:45
+(epstopdf)                    date: 2022-11-07 11:55:32
 (epstopdf)                    size: 5869 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classStrategy-eps-converted-to.pdf classStrategy.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1793,7 +1793,7 @@ Package epstopdf Info: Source file: <classSunny.eps>
 (epstopdf)                    date: 2022-11-06 17:37:41
 (epstopdf)                    size: 3766 bytes
 (epstopdf)             Output file: <classSunny-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:46
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5099 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classSunny-eps-converted-to.pdf classSunny.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -1827,7 +1827,7 @@ Package epstopdf Info: Source file: <classSupport.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3768 bytes
 (epstopdf)             Output file: <classSupport-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:47
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5038 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classSupport-eps-converted-to.pdf classSupport.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1861,7 +1861,7 @@ Package epstopdf Info: Source file: <classSupportFactory.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <classSupportFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:49
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5066 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classSupportFactory-eps-converted-to.pdf classSupportFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1890,7 +1890,7 @@ Package epstopdf Info: Source file: <classTerrainType.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3772 bytes
 (epstopdf)             Output file: <classTerrainType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:50
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 4760 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classTerrainType-eps-converted-to.pdf classTerrainType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1914,7 +1914,7 @@ Package epstopdf Info: Source file: <classType.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3974 bytes
 (epstopdf)             Output file: <classType-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:51
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5508 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classType-eps-converted-to.pdf classType.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1933,7 +1933,7 @@ Package epstopdf Info: Source file: <classVehicle.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3768 bytes
 (epstopdf)             Output file: <classVehicle-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:53
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 4906 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classVehicle-eps-converted-to.pdf classVehicle.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -1967,7 +1967,7 @@ Package epstopdf Info: Source file: <classVehicleFactory.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3784 bytes
 (epstopdf)             Output file: <classVehicleFactory-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:54
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5127 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classVehicleFactory-eps-converted-to.pdf classVehicleFactory.eps>
 (epstopdf)             \includegraphics on input line 15.
@@ -2021,7 +2021,7 @@ Package epstopdf Info: Source file: <classWarTheatre.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3770 bytes
 (epstopdf)             Output file: <classWarTheatre-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:55
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 4774 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classWarTheatre-eps-converted-to.pdf classWarTheatre.eps>
 (epstopdf)             \includegraphics on input line 6.
@@ -2060,7 +2060,7 @@ Package epstopdf Info: Source file: <classWeather.eps>
 (epstopdf)                    date: 2022-11-06 17:37:42
 (epstopdf)                    size: 3948 bytes
 (epstopdf)             Output file: <classWeather-eps-converted-to.pdf>
-(epstopdf)                    date: 2022-11-06 17:38:56
+(epstopdf)                    date: 2022-11-07 11:45:22
 (epstopdf)                    size: 5836 bytes
 (epstopdf)             Command: <miktex-epstopdf --outfile=classWeather-eps-converted-to.pdf classWeather.eps>
 (epstopdf)             \includegraphics on input line 6.
