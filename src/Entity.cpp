@@ -1,8 +1,17 @@
 #include "Entity.h"
+#include "Alliance.h"
 
-Entity::Entity(Type* type) {
-	// TODO - implement Entity::Entity
-	throw "Not yet implemented";
+
+Entity::Entity() {
+	health = 0;
+	damage = 0;
+	type = NULL;
+}
+
+Entity::Entity(Type* type, int health, int damage) {
+	this->health = health;
+	this->damage = damage;
+	this->type = type;
 }
 
 Type* Entity::getType() {
@@ -27,4 +36,12 @@ int Entity::getHealth() {
 
 void Entity::setHealth(int health) {
 	this->health = health;
+}
+
+int Entity::getDamage() {
+	return this->damage;
+}
+
+void Entity::setDamage(int damage) {
+	this->damage = damage;
 }

@@ -9,24 +9,186 @@ Inheritance diagram for Weather\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWeather_aa404c94fec05b825454a7309827767c6}\label{classWeather_aa404c94fec05b825454a7309827767c6}} 
 \mbox{\hyperlink{classWeather_aa404c94fec05b825454a7309827767c6}{Weather}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}\label{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}} 
 \mbox{\hyperlink{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}{$\sim$\+Weather}} ()
 \begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classWeather_af697ebc3ce0db3c7c6bc9b45854114e7}\label{classWeather_af697ebc3ce0db3c7c6bc9b45854114e7}} 
-virtual void {\bfseries handle\+Change} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$k)=0
+double \mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{get\+Multiplier}} ()
+\begin{DoxyCompactList}\small\item\em Returns double which shows the weather multiplier. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classWeather_afc84c48c326fc967915833e689bfa40c}{handle\+Change}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$keypoint)=0
+\begin{DoxyCompactList}\small\item\em Will change the current state of the weather inside the specific keypoint. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classWeather_ad0a29227308b87e98808cdff52232df3}{get\+Weather}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns a string which tells us the weather. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classWeather}{Weather}} $\ast$ \mbox{\hyperlink{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns a clone of the \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classWeather_ad7209dc331c4acdcdf7f17a94212eccb}\label{classWeather_ad7209dc331c4acdcdf7f17a94212eccb}} 
-virtual string {\bfseries get\+Weather} ()=0
+double \mbox{\hyperlink{classWeather_aabbe8f1b3e93e9b4e9f28060dec9113b}{multiplier}}
 \end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line 4 of file Weather.\+h.
+Definition at line \mbox{\hyperlink{Weather_8h_source_l00009}{9}} of file \mbox{\hyperlink{Weather_8h_source}{Weather.\+h}}.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWeather_aa404c94fec05b825454a7309827767c6}\label{classWeather_aa404c94fec05b825454a7309827767c6}} 
+\index{Weather@{Weather}!Weather@{Weather}}
+\index{Weather@{Weather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{Weather()}{Weather()}}
+{\footnotesize\ttfamily Weather\+::\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the \mbox{\hyperlink{classWeather}{Weather}} object. 
+
+
+
+Definition at line \mbox{\hyperlink{Weather_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Weather_8cpp_source}{Weather.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}\label{classWeather_a6cc4f6ce440531f5c882547dcf40eb22}} 
+\index{Weather@{Weather}!````~Weather@{$\sim$Weather}}
+\index{````~Weather@{$\sim$Weather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{$\sim$Weather()}{~Weather()}}
+{\footnotesize\ttfamily Weather\+::$\sim$\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classWeather}{Weather}} object. 
+
+
+
+Definition at line \mbox{\hyperlink{Weather_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Weather_8cpp_source}{Weather.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005 \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}\label{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}} 
+\index{Weather@{Weather}!clone@{clone}}
+\index{clone@{clone}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classWeather}{Weather}} $\ast$ Weather\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a clone of the \mbox{\hyperlink{classWeather}{Weather}} object. 
+
+\begin{DoxyReturn}{Returns}
+Weather$\ast$ Clone of \mbox{\hyperlink{classWeather}{Weather}} object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{Cloudy}}, \mbox{\hyperlink{classRainy_a30adf6c86ad1dab6089e90a16b5d0753}{Rainy}}, and \mbox{\hyperlink{classSunny_ae5c2fd00a54ea1601bae04c3c63772c7}{Sunny}}.
+
+\mbox{\Hypertarget{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}\label{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}} 
+\index{Weather@{Weather}!getMultiplier@{getMultiplier}}
+\index{getMultiplier@{getMultiplier}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{getMultiplier()}{getMultiplier()}}
+{\footnotesize\ttfamily double Weather\+::get\+Multiplier (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Returns double which shows the weather multiplier. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the double multiplier
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+double which is the multiplier 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{Weather_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Weather_8cpp_source}{Weather.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00007                               \{}
+\DoxyCodeLine{00008     \textcolor{keywordflow}{return} this-\/>multiplier;}
+\DoxyCodeLine{00009 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classWeather_ad0a29227308b87e98808cdff52232df3}\label{classWeather_ad0a29227308b87e98808cdff52232df3}} 
+\index{Weather@{Weather}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
+{\footnotesize\ttfamily virtual std\+::string Weather\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns a string which tells us the weather. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the wether of the current state
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+std\+::string which is the current state 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCloudy_a859714ec61c789dc12ed5447fd3692ac}{Cloudy}}, \mbox{\hyperlink{classRainy_adc4d5851d1e9efd45b153ae0d5ead832}{Rainy}}, and \mbox{\hyperlink{classSunny_a46747aed1564621c150127532b0d84f5}{Sunny}}.
+
+\mbox{\Hypertarget{classWeather_afc84c48c326fc967915833e689bfa40c}\label{classWeather_afc84c48c326fc967915833e689bfa40c}} 
+\index{Weather@{Weather}!handleChange@{handleChange}}
+\index{handleChange@{handleChange}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{handleChange()}{handleChange()}}
+{\footnotesize\ttfamily virtual void Weather\+::handle\+Change (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} $\ast$}]{keypoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Will change the current state of the weather inside the specific keypoint. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item keypoint must be a Key\+Point$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Changes the current weather to the next one in the state pattern (\mbox{\hyperlink{classCloudy}{Cloudy}})
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em keypoint} & must be a Key\+Point$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCloudy_aa3f7fb24e81ddfd3560dadd329fd218c}{Cloudy}}, \mbox{\hyperlink{classRainy_ac0ed80bde42f58ff16a9ee4941b85ef9}{Rainy}}, and \mbox{\hyperlink{classSunny_ae7f1e8a0cc3b7dbd3636019dd737ee28}{Sunny}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classWeather_aabbe8f1b3e93e9b4e9f28060dec9113b}\label{classWeather_aabbe8f1b3e93e9b4e9f28060dec9113b}} 
+\index{Weather@{Weather}!multiplier@{multiplier}}
+\index{multiplier@{multiplier}!Weather@{Weather}}
+\doxysubsubsection{\texorpdfstring{multiplier}{multiplier}}
+{\footnotesize\ttfamily double Weather\+::multiplier\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Definition at line \mbox{\hyperlink{Weather_8h_source_l00012}{12}} of file \mbox{\hyperlink{Weather_8h_source}{Weather.\+h}}.
 
 
 

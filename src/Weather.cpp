@@ -1,6 +1,9 @@
 #include "Weather.h"
 
-Weather::Weather() {
-	// TODO - implement Weather::Weather
-	throw "Not yet implemented";
+Weather::Weather() {}
+
+Weather::~Weather() {}
+
+double Weather::getMultiplier() {
+	return this->multiplier;
 }

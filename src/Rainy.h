@@ -20,21 +20,28 @@ public:
 	 *
 	 * @return std::string which is the current state
 	 */
-	virtual std::string getWeather();
+	std::string getWeather();
 
 	/**
 	 * @brief Will change the current state of the weather inside the specific keypoint
 	 *
 	 * Preconditions:
-	 *  - k must be a KeyPoint*
+	 *  - keypoint must be a KeyPoint*
 	 *
 	 * Postconditions:
 	 *  - Changes the current weather to the next one in the state pattern (Sunny)
 	 *
-	 * @param k must be a KeyPoint*
+	 * @param keypoint must be a KeyPoint*
 	 * @return void
 	 */
-	virtual void handleChange(KeyPoint* k);
+	void handleChange(KeyPoint* keypoint);
+
+	/**
+	 * @brief Returns a clone of the Rainy object
+	 * 
+	 * @return Weather* Clone of Rainy object
+	 */
+	Weather* clone();
 };
 
 #endif

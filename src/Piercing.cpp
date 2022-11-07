@@ -1,17 +1,25 @@
 #include "Piercing.h"
-#include "Entity.h"
+#include "RoundStats.h"
+#include <stdexcept>
 
-Piercing::Piercing(Entity* entity, int value) {
-	// TODO - implement Piercing::Piercing
-	throw "Not yet implemented";
-}
+Piercing::Piercing(int value) : AddOn(value) {}
 
 void Piercing::takeDamage(int damage) {
-	// TODO - implement Piercing::takeDamage
-	throw "Not yet implemented";
+	if (damage <= 0)
+		throw std::invalid_argument("damage must be greater than zero");
+
+	entity->takeDamage(damage);
 }
 
 void Piercing::dealDamage(Entity* entity) {
-	// TODO - implement Piercing::dealDamage
-	throw "Not yet implemented";
+	int sumValue = this->entity->getDamage() + value;
+	entity->takeDamage(sumValue);
+	RoundStats::damageDone += sumValue;
+}
+
+AddOn* Piercing::clone() {
+	Piercing* piercing = new Piercing(value);
+	if (getEntity() != NULL)
+		piercing->setEntity(entity->clone());
+	return piercing;
 }

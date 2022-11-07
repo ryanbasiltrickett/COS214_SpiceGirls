@@ -1,16 +1,20 @@
 #include "VehicleFactory.h"
+#include "Vehicle.h"
 
-VehicleFactory::VehicleFactory() {
-	// TODO - implement VehicleFactory::VehicleFactory
-	throw "Not yet implemented";
-}
+VehicleFactory::VehicleFactory(Type* type, AddOn* addOn): Factory(type, addOn) {}
 
-Vehicle* VehicleFactory::createEntity(Alliance* alliance) {
-	// TODO - implement VehicleFactory::createEntity
-	throw "Not yet implemented";
+Entity* VehicleFactory::createEntity(Alliance* alliance) {
+	Vehicle* v = new Vehicle(getType()->clone());
+	v->setAlliance(alliance);
+	if (getAddOn() != NULL) {
+		AddOn* personnelAddOn = getAddOn()->clone();
+		personnelAddOn->setEntity(v);
+		return personnelAddOn;
+	} else {
+		return v;
+	}
 }
 
 Factory* VehicleFactory::clone() {
-	// TODO - implement VehicleFactory::clone
-	throw "Not yet implemented";
+	return new VehicleFactory(getType()->clone(), getAddOn()->clone());
 }

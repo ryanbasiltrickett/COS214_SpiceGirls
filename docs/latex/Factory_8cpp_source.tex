@@ -3,25 +3,30 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Factory.h"{}}}
 \DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00003}\mbox{\hyperlink{classFactory_ac792bf88cfb7b6804b479529da5308cc}{00003}} \mbox{\hyperlink{classFactory_ac792bf88cfb7b6804b479529da5308cc}{Factory::Factory}}() \{}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Factory::Factory}}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00003}\mbox{\hyperlink{classFactory_aca946f8877efb5b5bae700f74537d99d}{00003}} \mbox{\hyperlink{classFactory_aca946f8877efb5b5bae700f74537d99d}{Factory::Factory}}(\mbox{\hyperlink{classType}{Type}}* type, \mbox{\hyperlink{classAddOn}{AddOn}}* addOn) \{}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00004}00004     this-\/>type = type;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00005}00005     this-\/>addOn = addOn;}
 \DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00006}00006 \}}
 \DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00008}\mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{00008}} \mbox{\hyperlink{classType}{Type}}* \mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{Factory::getType}}() \{}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00009}00009     \textcolor{keywordflow}{return} this-\/>type;}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00010}00010 \}}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00011}00011 }
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00012}\mbox{\hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{00012}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{Factory::setType}}(\mbox{\hyperlink{classType}{Type}}* type) \{}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00013}00013     this-\/>type = type;}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00014}00014 \}}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00015}00015 }
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00016}\mbox{\hyperlink{classFactory_a46f89194541b0246a017f1eaf51ab654}{00016}} addOn* \mbox{\hyperlink{classFactory_a46f89194541b0246a017f1eaf51ab654}{Factory::getAddOns}}() \{}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00017}00017     \textcolor{keywordflow}{return} this-\/>addOns;}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00018}00018 \}}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00019}00019 }
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00020}\mbox{\hyperlink{classFactory_a958217b0bc29ce69ace69ade5e701984}{00020}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFactory_a958217b0bc29ce69ace69ade5e701984}{Factory::setAddOns}}(addOn* addOns) \{}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00021}00021     this-\/>addOns = addOns;}
-\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00022}00022 \}}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00008}\mbox{\hyperlink{classFactory_a8f71456f48e4df402c778a44191ff40e}{00008}} \mbox{\hyperlink{classFactory_a8f71456f48e4df402c778a44191ff40e}{Factory::\string~Factory}}() \{}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00009}00009     \textcolor{keyword}{delete} type;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00010}00010     \textcolor{keyword}{delete} addOn;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00011}00011 \}}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00013}\mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{00013}} \mbox{\hyperlink{classType}{Type}}* \mbox{\hyperlink{classFactory_ac91051006ace7ec5bb6ecf0fe6d02d58}{Factory::getType}}() \{}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00014}00014     \textcolor{keywordflow}{return} this-\/>type;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00017}\mbox{\hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{00017}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFactory_a7484d514b094114231dbeb3df70e9d0b}{Factory::setType}}(\mbox{\hyperlink{classType}{Type}}* type) \{}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00018}00018     this-\/>type = type;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00021}\mbox{\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{00021}} \mbox{\hyperlink{classAddOn}{AddOn}}* \mbox{\hyperlink{classFactory_a994153930f59cafb280e91d5b100b5aa}{Factory::getAddOn}}() \{}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00022}00022     \textcolor{keywordflow}{return} this-\/>addOn;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00025}\mbox{\hyperlink{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}{00025}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classFactory_a58dbf2659ee06c61b2dae1a9a36fac53}{Factory::setAddOns}}(\mbox{\hyperlink{classAddOn}{AddOn}}* addOn) \{}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00026}00026     this-\/>addOn = addOn;}
+\DoxyCodeLine{\Hypertarget{Factory_8cpp_source_l00027}00027 \}}
 
 \end{DoxyCode}

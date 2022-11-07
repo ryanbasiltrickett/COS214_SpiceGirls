@@ -1,8 +1,14 @@
 #ifndef AERIALTYPE_H
 #define AERIALTYPE_H
 
-class AerialType : Type {
+#include "Type.h"
 
+/**
+ * @brief AerialType class
+ * 
+ * Used to define Entity objects as ariel type.
+ */
+class AerialType : public Type {
 
 public:
 	/**
@@ -19,6 +25,17 @@ public:
 	 * @return string The ariel type string
 	 */
 	string getTypeDesc();
+
+
+	/**
+	 * @brief returns the the cloned object of Type
+	 * 
+	 * PostConditions:
+	 * - returns Type* type
+	 * 
+	 * @return Type* The cloned Type object
+	 */
+	Type* clone();
 };
 
 #endif

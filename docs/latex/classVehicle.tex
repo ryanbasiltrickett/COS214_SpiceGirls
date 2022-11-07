@@ -1,5 +1,14 @@
 \hypertarget{classVehicle}{}\doxysection{Vehicle Class Reference}
 \label{classVehicle}\index{Vehicle@{Vehicle}}
+
+
+\mbox{\hyperlink{classVehicle}{Vehicle}} class.  
+
+
+
+
+{\ttfamily \#include $<$Vehicle.\+h$>$}
+
 Inheritance diagram for Vehicle\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,27 +18,31 @@ Inheritance diagram for Vehicle\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classVehicle_abaad8187d9f2ede4fb8ea18de0a6764c}{Vehicle}} ()
+\mbox{\hyperlink{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}{Vehicle}} (\mbox{\hyperlink{classType}{Type}} $\ast$type, int health=500, int damage=10)
 \begin{DoxyCompactList}\small\item\em Instantiates the vehicle. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the vehicle object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Returns the clone of the \mbox{\hyperlink{classVehicle}{Vehicle}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classVehicle}{Vehicle}} class. 
 
+Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
 
-Definition at line 4 of file Vehicle.\+h.
+Definition at line \mbox{\hyperlink{Vehicle_8h_source_l00011}{11}} of file \mbox{\hyperlink{Vehicle_8h_source}{Vehicle.\+h}}.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classVehicle_abaad8187d9f2ede4fb8ea18de0a6764c}\label{classVehicle_abaad8187d9f2ede4fb8ea18de0a6764c}} 
+\mbox{\Hypertarget{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}\label{classVehicle_a6fb25af1c4f5a69022a64d25308d60e0}} 
 \index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
 \index{Vehicle@{Vehicle}!Vehicle@{Vehicle}}
 \doxysubsubsection{\texorpdfstring{Vehicle()}{Vehicle()}}
-{\footnotesize\ttfamily Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Vehicle\+::\+Vehicle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type,  }\item[{int}]{health = {\ttfamily 500},  }\item[{int}]{damage = {\ttfamily 10} }\end{DoxyParamCaption})}
 
 
 
@@ -37,24 +50,62 @@ Instantiates the vehicle.
 
 
 \begin{DoxyParams}{Parameters}
+{\em health} & must be an int \\
+\hline
+{\em damage} & must be an int \\
+\hline
 {\em type} & must be a Type$\ast$ \\
 \hline
 \end{DoxyParams}
 
 
-Definition at line 3 of file Vehicle.\+cpp.
+Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{3                  \{}
-\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement Vehicle::Vehicle}}
-\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{6 \}}
+\DoxyCodeLine{00005 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classVehicle_a705081c9b479d76cd6113a661d9c8770}\label{classVehicle_a705081c9b479d76cd6113a661d9c8770}} 
+\index{Vehicle@{Vehicle}!clone@{clone}}
+\index{clone@{clone}!Vehicle@{Vehicle}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Vehicle\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns the clone of the \mbox{\hyperlink{classVehicle}{Vehicle}} object. 
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ The clone of the vehicle object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_af6107392c2c813bedbc7994618b395db}{Entity}}.
+
+
+
+Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00019}{19}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00019                        \{}
+\DoxyCodeLine{00020     \mbox{\hyperlink{classVehicle}{Vehicle}}* v;}
+\DoxyCodeLine{00021     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{00022         v = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00023     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00024         v = \textcolor{keyword}{new} \mbox{\hyperlink{classVehicle}{Vehicle}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00025     \}}
+\DoxyCodeLine{00026 }
+\DoxyCodeLine{00027     v-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{keywordflow}{return} v;}
+\DoxyCodeLine{00030 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}\label{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}} 
 \index{Vehicle@{Vehicle}!dealDamage@{dealDamage}}
 \index{dealDamage@{dealDamage}!Vehicle@{Vehicle}}
@@ -85,18 +136,18 @@ void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_aff881f545fc88b2c328ff559a99c7fba}{Entity}}.
 
 
 
-Definition at line 13 of file Vehicle.\+cpp.
+Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00014}{14}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13                                        \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement Vehicle::dealDamage}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
+\DoxyCodeLine{00014                                        \{}
+\DoxyCodeLine{00015     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{00016     entity-\/>\mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{takeDamage}}(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00017 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}\label{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}} 
@@ -116,12 +167,17 @@ Preconditions\+:
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Reduces the health of the vehicle object
+\item does nothing
+\end{DoxyItemize}
+
+Exceptions\+:
+\begin{DoxyItemize}
+\item damage less than 0
 \end{DoxyItemize}
 
 
 \begin{DoxyParams}{Parameters}
-{\em damage} & must be an int \\
+{\em damage} & must be an int and greater than 0 \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -129,18 +185,20 @@ void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{Entity}}.
 
 
 
-Definition at line 8 of file Vehicle.\+cpp.
+Definition at line \mbox{\hyperlink{Vehicle_8cpp_source_l00007}{7}} of file \mbox{\hyperlink{Vehicle_8cpp_source}{Vehicle.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8                                    \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement Vehicle::takeDamage}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
+\DoxyCodeLine{00007                                    \{}
+\DoxyCodeLine{00008     \textcolor{keywordflow}{if} (damage <= 0)}
+\DoxyCodeLine{00009         \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}damage must be greater than zero"{}});}
+\DoxyCodeLine{00010         }
+\DoxyCodeLine{00011     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{00012 \}}
 
 \end{DoxyCode}
 

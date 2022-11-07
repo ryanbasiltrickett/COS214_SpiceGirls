@@ -3,36 +3,85 @@
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classNegotiator_aa667cc5e0bca1109e2eae6d84e8ba3d9}\label{classNegotiator_aa667cc5e0bca1109e2eae6d84e8ba3d9}} 
 \mbox{\hyperlink{classNegotiator_aa667cc5e0bca1109e2eae6d84e8ba3d9}{Negotiator}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classNegotiator}{Negotiator}}. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{classNegotiator_a30efddcdba1469a147a7429a540033b1}{send\+Peace}} (int id)
-\begin{DoxyCompactList}\small\item\em Sets the entities type state. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classNegotiator_a6f738ecfc7adc21b0f553d21c61d2918}{remove\+Alliance}} ()
+\mbox{\hyperlink{classNegotiator_add27a41f80fee92e8471b8ee9d9905f6}{$\sim$\+Negotiator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classNegotiator}{Negotiator}} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classNegotiator_aa95e7f447a76c6d5ef84b92731ccb00d}{send\+Peace}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$offer\+Alliance)
+\begin{DoxyCompactList}\small\item\em Tries to offer peace to all the alliances in vector. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classNegotiator_ac6ec48dbce55bf196c299342695054ef}{remove\+Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$old\+Alliance)
 \begin{DoxyCompactList}\small\item\em Removes an alliance from the alliance vector. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classNegotiator_a21f5db9200fece88e3d7e63ed58b0499}{add\+Alliance}} ()
+void \mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{add\+Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$new\+Alliance)
 \begin{DoxyCompactList}\small\item\em Adds an alliance to the alliance vector. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$ \mbox{\hyperlink{classNegotiator_adafefed500d3f36649696b3d2fc92be7}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current \mbox{\hyperlink{classNegotiator}{Negotiator}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+int \mbox{\hyperlink{classNegotiator_a20af02012820a0296ac14f75e0b87282}{get\+Num\+Alliances}} ()
+\begin{DoxyCompactList}\small\item\em gets the number of Alliances in the negotiator \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 
 
-Definition at line 6 of file Negotiator.\+h.
+Definition at line \mbox{\hyperlink{Negotiator_8h_source_l00006}{6}} of file \mbox{\hyperlink{Negotiator_8h_source}{Negotiator.\+h}}.
 
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classNegotiator_aa667cc5e0bca1109e2eae6d84e8ba3d9}\label{classNegotiator_aa667cc5e0bca1109e2eae6d84e8ba3d9}} 
+\index{Negotiator@{Negotiator}!Negotiator@{Negotiator}}
+\index{Negotiator@{Negotiator}!Negotiator@{Negotiator}}
+\doxysubsubsection{\texorpdfstring{Negotiator()}{Negotiator()}}
+{\footnotesize\ttfamily Negotiator\+::\+Negotiator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the \mbox{\hyperlink{classNegotiator}{Negotiator}}. 
+
+
+
+Definition at line \mbox{\hyperlink{Negotiator_8cpp_source_l00004}{4}} of file \mbox{\hyperlink{Negotiator_8cpp_source}{Negotiator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004 \{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classNegotiator_add27a41f80fee92e8471b8ee9d9905f6}\label{classNegotiator_add27a41f80fee92e8471b8ee9d9905f6}} 
+\index{Negotiator@{Negotiator}!````~Negotiator@{$\sim$Negotiator}}
+\index{````~Negotiator@{$\sim$Negotiator}!Negotiator@{Negotiator}}
+\doxysubsubsection{\texorpdfstring{$\sim$Negotiator()}{~Negotiator()}}
+{\footnotesize\ttfamily Negotiator\+::$\sim$\+Negotiator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \mbox{\hyperlink{classNegotiator}{Negotiator}} object. 
+
+
+
+Definition at line \mbox{\hyperlink{Negotiator_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Negotiator_8cpp_source}{Negotiator.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006                         \{}
+\DoxyCodeLine{00007     alliances.clear();}
+\DoxyCodeLine{00008 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classNegotiator_a21f5db9200fece88e3d7e63ed58b0499}\label{classNegotiator_a21f5db9200fece88e3d7e63ed58b0499}} 
+\mbox{\Hypertarget{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}\label{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}} 
 \index{Negotiator@{Negotiator}!addAlliance@{addAlliance}}
 \index{addAlliance@{addAlliance}!Negotiator@{Negotiator}}
 \doxysubsubsection{\texorpdfstring{addAlliance()}{addAlliance()}}
-{\footnotesize\ttfamily void Negotiator\+::add\+Alliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Negotiator\+::add\+Alliance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{new\+Alliance }\end{DoxyParamCaption})}
 
 
 
 Adds an alliance to the alliance vector. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item new\+Alliance must be an \mbox{\hyperlink{classAlliance}{Alliance}} pointer
+\end{DoxyItemize}
 
 Postconditions\+:
 \begin{DoxyItemize}
@@ -44,55 +93,61 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 18 of file Negotiator.\+cpp.
+Definition at line \mbox{\hyperlink{Negotiator_8cpp_source_l00034}{34}} of file \mbox{\hyperlink{Negotiator_8cpp_source}{Negotiator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{18                              \{}
-\DoxyCodeLine{19     \textcolor{comment}{// TODO -\/ implement Negotiator::addAlliance}}
-\DoxyCodeLine{20     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{21 \}}
+\DoxyCodeLine{00034                                                   \{}
+\DoxyCodeLine{00035     }
+\DoxyCodeLine{00036     \textcolor{keywordflow}{if} (std::find(alliances.begin(), alliances.end(), newAlliance) != alliances.end()) }
+\DoxyCodeLine{00037         alliances.push\_back(newAlliance);}
+\DoxyCodeLine{00038     }
+\DoxyCodeLine{00039 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classNegotiator_adafefed500d3f36649696b3d2fc92be7}\label{classNegotiator_adafefed500d3f36649696b3d2fc92be7}} 
-\index{Negotiator@{Negotiator}!clone@{clone}}
-\index{clone@{clone}!Negotiator@{Negotiator}}
-\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classNegotiator}{Negotiator}} $\ast$ Negotiator\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classNegotiator_a20af02012820a0296ac14f75e0b87282}\label{classNegotiator_a20af02012820a0296ac14f75e0b87282}} 
+\index{Negotiator@{Negotiator}!getNumAlliances@{getNumAlliances}}
+\index{getNumAlliances@{getNumAlliances}!Negotiator@{Negotiator}}
+\doxysubsubsection{\texorpdfstring{getNumAlliances()}{getNumAlliances()}}
+{\footnotesize\ttfamily int Negotiator\+::get\+Num\+Alliances (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Instantiates and returns a clone of the current \mbox{\hyperlink{classNegotiator}{Negotiator}}. 
+gets the number of Alliances in the negotiator 
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Returns the clone of the current \mbox{\hyperlink{classNegotiator}{Negotiator}}
+\item Returns the number of alliances
 \end{DoxyItemize}
 
 \begin{DoxyReturn}{Returns}
-Negotiator$\ast$ The negotiator clone 
+int Number of alliances 
 \end{DoxyReturn}
 
 
-Definition at line 23 of file Negotiator.\+cpp.
+Definition at line \mbox{\hyperlink{Negotiator_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{Negotiator_8cpp_source}{Negotiator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{23                               \{}
-\DoxyCodeLine{24     \textcolor{comment}{// TODO -\/ implement Negotiator::clone}}
-\DoxyCodeLine{25     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{26 \}}
+\DoxyCodeLine{00041                                 \{}
+\DoxyCodeLine{00042     \textcolor{keywordflow}{return} this-\/>alliances.size();}
+\DoxyCodeLine{00043 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classNegotiator_a6f738ecfc7adc21b0f553d21c61d2918}\label{classNegotiator_a6f738ecfc7adc21b0f553d21c61d2918}} 
+\mbox{\Hypertarget{classNegotiator_ac6ec48dbce55bf196c299342695054ef}\label{classNegotiator_ac6ec48dbce55bf196c299342695054ef}} 
 \index{Negotiator@{Negotiator}!removeAlliance@{removeAlliance}}
 \index{removeAlliance@{removeAlliance}!Negotiator@{Negotiator}}
 \doxysubsubsection{\texorpdfstring{removeAlliance()}{removeAlliance()}}
-{\footnotesize\ttfamily void Negotiator\+::remove\+Alliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Negotiator\+::remove\+Alliance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{old\+Alliance }\end{DoxyParamCaption})}
 
 
 
 Removes an alliance from the alliance vector. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item old\+Alliance must be an \mbox{\hyperlink{classAlliance}{Alliance}} pointer
+\end{DoxyItemize}
 
 Postconditions\+:
 \begin{DoxyItemize}
@@ -104,29 +159,34 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 13 of file Negotiator.\+cpp.
+Definition at line \mbox{\hyperlink{Negotiator_8cpp_source_l00024}{24}} of file \mbox{\hyperlink{Negotiator_8cpp_source}{Negotiator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13                                 \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement Negotiator::removeAlliance}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
+\DoxyCodeLine{00024                                                      \{}
+\DoxyCodeLine{00025     }
+\DoxyCodeLine{00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} xx = 0; xx < alliances.size(); xx++)}
+\DoxyCodeLine{00027     \{}
+\DoxyCodeLine{00028         \textcolor{keywordflow}{if} (alliances[xx]-\/>getID() == oldAlliance-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}())}
+\DoxyCodeLine{00029             alliances.erase( alliances.begin() + xx ); \textcolor{comment}{// Removes the specific alliances from this negotiator}}
+\DoxyCodeLine{00030     \}}
+\DoxyCodeLine{00031     }
+\DoxyCodeLine{00032 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classNegotiator_a30efddcdba1469a147a7429a540033b1}\label{classNegotiator_a30efddcdba1469a147a7429a540033b1}} 
+\mbox{\Hypertarget{classNegotiator_aa95e7f447a76c6d5ef84b92731ccb00d}\label{classNegotiator_aa95e7f447a76c6d5ef84b92731ccb00d}} 
 \index{Negotiator@{Negotiator}!sendPeace@{sendPeace}}
 \index{sendPeace@{sendPeace}!Negotiator@{Negotiator}}
 \doxysubsubsection{\texorpdfstring{sendPeace()}{sendPeace()}}
-{\footnotesize\ttfamily bool Negotiator\+::send\+Peace (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily bool Negotiator\+::send\+Peace (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{offer\+Alliance }\end{DoxyParamCaption})}
 
 
 
-Sets the entities type state. 
+Tries to offer peace to all the alliances in vector. 
 
 Preconditions\+:
 \begin{DoxyItemize}
-\item id must be an integer
+\item offer\+Alliance must be an \mbox{\hyperlink{classAlliance}{Alliance}} pointer
 \end{DoxyItemize}
 
 Postconditions\+:
@@ -144,14 +204,23 @@ bool
 \end{DoxyReturn}
 
 
-Definition at line 8 of file Negotiator.\+cpp.
+Definition at line \mbox{\hyperlink{Negotiator_8cpp_source_l00010}{10}} of file \mbox{\hyperlink{Negotiator_8cpp_source}{Negotiator.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8                                  \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement Negotiator::sendPeace}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
+\DoxyCodeLine{00010                                                   \{}
+\DoxyCodeLine{00011     }
+\DoxyCodeLine{00012     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} yy = 0; yy < alliances.size(); yy++)}
+\DoxyCodeLine{00013     \{}
+\DoxyCodeLine{00014         \textcolor{keywordflow}{if} (alliances[yy] != offerAlliance) \{}
+\DoxyCodeLine{00015             \textcolor{keywordflow}{if} (alliances[yy]-\/>considerPeace() == \textcolor{keyword}{false})}
+\DoxyCodeLine{00016                 \textcolor{keywordflow}{return} \textcolor{keyword}{false}; \textcolor{comment}{// There is at least one enemy alliances that does not want the peace deal}}
+\DoxyCodeLine{00017         \}}
+\DoxyCodeLine{00018     }
+\DoxyCodeLine{00019     \}}
+\DoxyCodeLine{00020 }
+\DoxyCodeLine{00021     \textcolor{keywordflow}{return} \textcolor{keyword}{true}; \textcolor{comment}{// All the alliances being fought against agreed to the peace deal}}
+\DoxyCodeLine{00022 \}}
 
 \end{DoxyCode}
 

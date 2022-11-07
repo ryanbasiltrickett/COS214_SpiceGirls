@@ -2,10 +2,63 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}AddOn.h"{}}}
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00003}00003 AddOn::AddOn(\mbox{\hyperlink{classEntity}{Entity}}* entity, \textcolor{keywordtype}{int} value) \{}
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement AddOn::AddOn}}
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include <stdexcept>}  }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00004}\mbox{\hyperlink{classAddOn_a64f23691b6c7fc49b6584f8f761ce4d9}{00004}} \mbox{\hyperlink{classAddOn_a64f23691b6c7fc49b6584f8f761ce4d9}{AddOn::AddOn}}(\textcolor{keywordtype}{int} value): \mbox{\hyperlink{classEntity}{Entity}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00005}00005     this-\/>value = value;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00006}00006     entity = NULL;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00007}00007 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00008}00008 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00009}\mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{00009}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_a19f4fe81bd1f0491764e52b48a0b3e63}{AddOn::setValue}}(\textcolor{keywordtype}{int} value) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00011}00011     \textcolor{keywordflow}{if} (value <= 0)}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00012}00012         \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}value must be greater than zero"{}});}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00013}00013     }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00014}00014     this-\/>value = value;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00017}\mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{00017}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAddOn_a776b1f929793e8387cb0b58fc7aba2c2}{AddOn::getValue}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} value;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00019}00019 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00020}00020 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00021}\mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{00021}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_ac9f4263e3558015fdad46adefceed197}{AddOn::setEntity}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00022}00022     this-\/>entity = entity;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00023}00023 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00025}\mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{00025}} \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classAddOn_aaf2f3af4104c7cb69ac67766790ce393}{AddOn::getEntity}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00026}00026     \textcolor{keywordflow}{return} this-\/>entity;}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00027}00027 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00029}\mbox{\hyperlink{classAddOn_a0c194386be045169d3bd923e22c75705}{00029}} \mbox{\hyperlink{classType}{Type}}* \mbox{\hyperlink{classAddOn_a0c194386be045169d3bd923e22c75705}{AddOn::getType}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00030}00030     \textcolor{keywordflow}{return} entity-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}();}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00031}00031 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00033}\mbox{\hyperlink{classAddOn_a3bb07ac367f2fe96e782f84fa48bfc68}{00033}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_a3bb07ac367f2fe96e782f84fa48bfc68}{AddOn::setType}}(\mbox{\hyperlink{classType}{Type}}* type) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00034}00034     entity-\/>\mbox{\hyperlink{classEntity_a5d04ce64c9ca214900422865e298e36c}{setType}}(type);}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00037}\mbox{\hyperlink{classAddOn_a226cff3c3072cdda884d6d6d8eb74773}{00037}} \mbox{\hyperlink{classAlliance}{Alliance}}* \mbox{\hyperlink{classAddOn_a226cff3c3072cdda884d6d6d8eb74773}{AddOn::getAlliance}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00038}00038     \textcolor{keywordflow}{return} entity-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}();}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00039}00039 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00040}00040 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00041}\mbox{\hyperlink{classAddOn_a8ae6d54cdc26e057777f75ff5a45455b}{00041}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_a8ae6d54cdc26e057777f75ff5a45455b}{AddOn::setAlliance}}(\mbox{\hyperlink{classAlliance}{Alliance}}* alliance) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00042}00042     entity-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(alliance);}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00043}00043 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00044}00044 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00045}\mbox{\hyperlink{classAddOn_a754a8bf01cdd118173ebc0818943dfe7}{00045}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAddOn_a754a8bf01cdd118173ebc0818943dfe7}{AddOn::getHealth}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00046}00046     \textcolor{keywordflow}{return} entity-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}();}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00047}00047 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00048}00048 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00049}\mbox{\hyperlink{classAddOn_a24d16b33c873be77c9370ae08a3d617d}{00049}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_a24d16b33c873be77c9370ae08a3d617d}{AddOn::setHealth}}(\textcolor{keywordtype}{int} health) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00050}00050     entity-\/>\mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(health);}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00051}00051 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00053}\mbox{\hyperlink{classAddOn_a7931cff84029baa9532f6a7c971a5198}{00053}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAddOn_a7931cff84029baa9532f6a7c971a5198}{AddOn::getDamage}}() \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00054}00054     \textcolor{keywordflow}{return} entity-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00055}00055 \}}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00057}\mbox{\hyperlink{classAddOn_a37de5bfa51cbf1d65b0bdf612f12065f}{00057}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAddOn_a37de5bfa51cbf1d65b0bdf612f12065f}{AddOn::setDamage}}(\textcolor{keywordtype}{int} damage) \{}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00058}00058     entity-\/>\mbox{\hyperlink{classEntity_aae05f62767eb7438c846300704f9579b}{setDamage}}(damage);}
+\DoxyCodeLine{\Hypertarget{AddOn_8cpp_source_l00059}00059 \}}
 
 \end{DoxyCode}

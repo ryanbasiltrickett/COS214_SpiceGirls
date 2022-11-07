@@ -1,8 +1,14 @@
 #ifndef AQUATICTYPE_H
 #define AQUATICTYPE_H
 
-class AquaticType : Type {
+#include "Type.h"
 
+/**
+ * @brief AquaticType class
+ * 
+ * Used to define Entity objects as aquatic type.
+ */
+class AquaticType : public Type {
 
 public:
 	/**
@@ -19,6 +25,16 @@ public:
 	 * @return string The aquatic type string
 	 */
 	string getTypeDesc();
+
+	/**
+	 * @brief returns the the cloned object of Type
+	 * 
+	 * PostConditions:
+	 * - returns Type* type
+	 * 
+	 * @return Type* The cloned Type object
+	 */
+	Type* clone();
 };
 
 #endif

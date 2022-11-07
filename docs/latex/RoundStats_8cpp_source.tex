@@ -1,0 +1,43 @@
+\hypertarget{RoundStats_8cpp_source}{}\doxysection{Round\+Stats.\+cpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}RoundStats.h"{}}}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00002}00002 }
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00003}00003 \textcolor{keywordtype}{int} RoundStats::numEntitiesCreated = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00004}00004 \textcolor{keywordtype}{int} RoundStats::numEntitiesDestroyed = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00005}00005 \textcolor{keywordtype}{int} RoundStats::damageDone = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00006}00006 \textcolor{keywordtype}{int} RoundStats::numLosingPoints = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00007}00007 \textcolor{keywordtype}{int} RoundStats::numContestedPoints = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00008}00008 \textcolor{keywordtype}{int} RoundStats::numWinningPoints = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00009}00009 vector<string> RoundStats::keyPointInformation;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00010}00010 vector<string> RoundStats::entityMovementInformation;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00012}00012 \textcolor{keywordtype}{void} RoundStats::clearStats() \{}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00013}00013     numEntitiesCreated = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00014}00014     numEntitiesDestroyed = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00015}00015     damageDone = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00016}00016     numLosingPoints = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00017}00017     numContestedPoints = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00018}00018     numWinningPoints = 0;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00019}00019     keyPointInformation.clear();}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00020}00020     entityMovementInformation.clear();}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00021}00021 \}}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00023}00023 \textcolor{keywordtype}{string} RoundStats::toString() \{}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00024}00024     \textcolor{keywordtype}{string} out = \textcolor{stringliteral}{"{}Number of Key Points Winning/Contested/Losing: "{}} + to\_string(numWinningPoints) + \textcolor{stringliteral}{"{}/"{}} + to\_string(numContestedPoints) + \textcolor{stringliteral}{"{}/"{}} + to\_string(numLosingPoints) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00025}00025     out += \textcolor{stringliteral}{"{}Number of Entities Created: "{}} + to\_string(numEntitiesCreated) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00026}00026     out += \textcolor{stringliteral}{"{}Number of Entities Destroyed by Alliance: "{}} + to\_string(numEntitiesDestroyed) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00027}00027     out += \textcolor{stringliteral}{"{}Damage Given by Alliance: "{}} + to\_string(damageDone) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00029}00029     out += \textcolor{stringliteral}{"{}\(\backslash\)nKey Point Round Information:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00030}00030     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPointInformation.size(); i++)}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00031}00031         out += keyPointInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00032}00032 }
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00033}00033     out += \textcolor{stringliteral}{"{}\(\backslash\)nMovement Round Information:\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00034}00034     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entityMovementInformation.size(); i++)}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00035}00035         out += entityMovementInformation[i] + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00037}00037     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{\Hypertarget{RoundStats_8cpp_source_l00038}00038 \}}
+
+\end{DoxyCode}

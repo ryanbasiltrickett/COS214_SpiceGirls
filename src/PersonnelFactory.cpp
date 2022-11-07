@@ -1,16 +1,21 @@
 #include "PersonnelFactory.h"
+#include "Personnel.h"
+#include <iostream>
 
-PersonnelFactory::PersonnelFactory() {
-	// TODO - implement PersonalFactory::PersonalFactory
-	throw "Not yet implemented";
-}
+PersonnelFactory::PersonnelFactory(Type* type, AddOn* addOn): Factory(type, addOn) {}
 
 Entity* PersonnelFactory::createEntity(Alliance* alliance) {
-	// TODO - implement PersonalFactory::createEntity
-	throw "Not yet implemented";
+	Personnel* p = new Personnel(getType()->clone());
+	p->setAlliance(alliance);
+	if (getAddOn() != NULL) {
+		AddOn* personnelAddOn = getAddOn()->clone();
+		personnelAddOn->setEntity(p);
+		return personnelAddOn;
+	} else {
+		return p;
+	}
 }
 
 Factory* PersonnelFactory::clone() {
-	// TODO - implement PersonalFactory::clone
-	throw "Not yet implemented";
+	return new PersonnelFactory(getType(), getAddOn());
 }

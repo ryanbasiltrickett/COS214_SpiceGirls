@@ -1,5 +1,14 @@
 \hypertarget{classPersonnel}{}\doxysection{Personnel Class Reference}
 \label{classPersonnel}\index{Personnel@{Personnel}}
+
+
+\mbox{\hyperlink{classPersonnel}{Personnel}} class.  
+
+
+
+
+{\ttfamily \#include $<$Personnel.\+h$>$}
+
 Inheritance diagram for Personnel\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,27 +18,31 @@ Inheritance diagram for Personnel\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classPersonnel_a96840b35bd30d6010480a32cd296068b}{Personnel}} ()
+\mbox{\hyperlink{classPersonnel_a8aa913af779660d0be7559164f92902d}{Personnel}} (\mbox{\hyperlink{classType}{Type}} $\ast$type, int health=100, int damage=10)
 \begin{DoxyCompactList}\small\item\em Instantiates the \mbox{\hyperlink{classPersonnel}{Personnel}}. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{take\+Damage}} (int damage)
 \begin{DoxyCompactList}\small\item\em Removes health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
-\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clones the current \mbox{\hyperlink{classEntity}{Entity}} object and returns the cloned object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classPersonnel}{Personnel}} class. 
 
+Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
 
-Definition at line 4 of file Personnel.\+h.
+Definition at line \mbox{\hyperlink{Personnel_8h_source_l00011}{11}} of file \mbox{\hyperlink{Personnel_8h_source}{Personnel.\+h}}.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classPersonnel_a96840b35bd30d6010480a32cd296068b}\label{classPersonnel_a96840b35bd30d6010480a32cd296068b}} 
+\mbox{\Hypertarget{classPersonnel_a8aa913af779660d0be7559164f92902d}\label{classPersonnel_a8aa913af779660d0be7559164f92902d}} 
 \index{Personnel@{Personnel}!Personnel@{Personnel}}
 \index{Personnel@{Personnel}!Personnel@{Personnel}}
 \doxysubsubsection{\texorpdfstring{Personnel()}{Personnel()}}
-{\footnotesize\ttfamily Personnel\+::\+Personnel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Personnel\+::\+Personnel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type,  }\item[{int}]{health = {\ttfamily 100},  }\item[{int}]{damage = {\ttfamily 10} }\end{DoxyParamCaption})}
 
 
 
@@ -37,12 +50,67 @@ Instantiates the \mbox{\hyperlink{classPersonnel}{Personnel}}.
 
 
 \begin{DoxyParams}{Parameters}
+{\em health} & must be an int \\
+\hline
+{\em damage} & must be an int \\
+\hline
 {\em type} & must be a Type$\ast$ \\
 \hline
 \end{DoxyParams}
 
 
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00006}{6}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00006 : \mbox{\hyperlink{classEntity}{Entity}}(type, health, damage) \{\}}
+
+\end{DoxyCode}
+
+
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}\label{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}} 
+\index{Personnel@{Personnel}!clone@{clone}}
+\index{clone@{clone}!Personnel@{Personnel}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Personnel\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clones the current \mbox{\hyperlink{classEntity}{Entity}} object and returns the cloned object. 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item Returns the cloned object of \mbox{\hyperlink{classEntity}{Entity}}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ The cloned object 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classEntity_af6107392c2c813bedbc7994618b395db}{Entity}}.
+
+
+
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00020}{20}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00020                          \{}
+\DoxyCodeLine{00021     \mbox{\hyperlink{classPersonnel}{Personnel}}* p;}
+\DoxyCodeLine{00022     \textcolor{keywordflow}{if} (this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}() == NULL) \{}
+\DoxyCodeLine{00023         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(NULL, this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00024     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00025         p = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(this-\/>\mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{getType}}()-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}(), this-\/>\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}(), this-\/>\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00026     \}}
+\DoxyCodeLine{00027 }
+\DoxyCodeLine{00028     p-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(this-\/>\mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{getAlliance}}());}
+\DoxyCodeLine{00029 }
+\DoxyCodeLine{00030     \textcolor{keywordflow}{return} p;}
+\DoxyCodeLine{00031 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}\label{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}} 
 \index{Personnel@{Personnel}!dealDamage@{dealDamage}}
 \index{dealDamage@{dealDamage}!Personnel@{Personnel}}
@@ -73,8 +141,20 @@ void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_aff881f545fc88b2c328ff559a99c7fba}{Entity}}.
 
+
+
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015                                          \{}
+\DoxyCodeLine{00016     RoundStats::damageDone += \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}();}
+\DoxyCodeLine{00017     entity-\/>\mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{takeDamage}}(\mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{getDamage}}());}
+\DoxyCodeLine{00018 \}}
+
+\end{DoxyCode}
 \mbox{\Hypertarget{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}\label{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}} 
 \index{Personnel@{Personnel}!takeDamage@{takeDamage}}
 \index{takeDamage@{takeDamage}!Personnel@{Personnel}}
@@ -95,9 +175,14 @@ Postconditions\+:
 \item Reduces the health of the \mbox{\hyperlink{classPersonnel}{Personnel}} object
 \end{DoxyItemize}
 
+Exception\+:
+\begin{DoxyItemize}
+\item damage less than 0
+\end{DoxyItemize}
+
 
 \begin{DoxyParams}{Parameters}
-{\em damage} & must be an int \\
+{\em damage} & must be an int and greater than 0 \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -105,10 +190,25 @@ void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classEntity}{Entity}}.
+Implements \mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{Entity}}.
 
 
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Definition at line \mbox{\hyperlink{Personnel_8cpp_source_l00008}{8}} of file \mbox{\hyperlink{Personnel_8cpp_source}{Personnel.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00008                                      \{}
+\DoxyCodeLine{00009     \textcolor{keywordflow}{if} (damage <= 0)}
+\DoxyCodeLine{00010         \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"{}damage must be greater than zero"{}});}
+\DoxyCodeLine{00011 }
+\DoxyCodeLine{00012     \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{setHealth}}(\mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{getHealth}}() -\/ damage);}
+\DoxyCodeLine{00013 \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Personnel.\+h\end{DoxyCompactItemize}
+Personnel.\+h\item 
+Personnel.\+cpp\end{DoxyCompactItemize}

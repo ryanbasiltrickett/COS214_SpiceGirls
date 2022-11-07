@@ -1,6 +1,13 @@
 #include "WarEngineMemento.h"
 
-WarEngineMemento(vector<Alliance* players>, vector<Area*> warTheatre) {
-	// TODO - implement WarEngineMemento::WarEngineMemento
-	throw "Not yet implemented";
+WarEngineMemento::WarEngineMemento(WarEngineState * state){
+	this->state = state;
+}
+
+void WarEngineMemento::setState(WarEngineState* state){
+	this->state = state;
+}
+
+WarEngineState* WarEngineMemento::getState(){
+	return state;
 }

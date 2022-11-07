@@ -2,49 +2,120 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Alliance.h"{}}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00003}00003 Alliance::Alliance() \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Alliance::Alliance}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Negotiator.h"{}}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include "{}Entity.h"{}}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}RoundStats.h"{}}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include <time.h>}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include <iostream>}}
 \DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00007}00007 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00008}00008 \textcolor{keywordtype}{void} Alliance::setNegotiator(\mbox{\hyperlink{classNegotiator}{Negotiator}}* n) \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00009}00009     this-\/>negotiator = n;}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00008}00008 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00010}00010 \textcolor{keywordtype}{int} Alliance::totalNum = 0;}
 \DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00011}00011 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00012}00012 \textcolor{keywordtype}{boolean} Alliance::addCountry(\mbox{\hyperlink{classCountry}{Country}}* nation) \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00013}00013     \textcolor{comment}{// TODO -\/ implement Alliance::addCountry}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00014}00014     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00015}00015 \}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00016}00016 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00017}00017 \textcolor{keywordtype}{void} Alliance::considerPeace(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id}) \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00018}00018     \textcolor{comment}{// TODO -\/ implement Alliance::considerPeace}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00019}00019     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00020}00020 \}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00021}00021 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00022}00022 \textcolor{keywordtype}{void} Alliance::addFactory(\mbox{\hyperlink{classFactory}{Factory}}* f) \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00023}00023     \textcolor{comment}{// TODO -\/ implement Alliance::addFactory}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00024}00024     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00025}00025 \}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00026}00026 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00027}00027 \textcolor{keywordtype}{void} Alliance::surrender() \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00028}00028     \textcolor{comment}{// TODO -\/ implement Alliance::surrender}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00029}00029     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00030}00030 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00012}\mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{00012}} \mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance::Alliance}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00013}00013     this-\/>active = 1;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00014}00014     this-\/>aID = totalNum++;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00015}00015     this-\/>negotiator = NULL;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00016}00016     srand(time(0));}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00017}00017 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00018}00018 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00019}\mbox{\hyperlink{classAlliance_acde91b73cf63cf19ed13448a8644d139}{00019}} \mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance::Alliance}}(\mbox{\hyperlink{classAlliance}{Alliance}}\& alliance) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00020}00020     this-\/>active = alliance.active;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00021}00021     this-\/>aID = alliance.aID;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00023}00023     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < alliance.members.size(); i++)}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00024}00024         this-\/>\mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{addCountry}}(alliance.members[i]-\/>clone());}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00026}00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < alliance.production.size(); i++)}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00027}00027         this-\/>\mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{addFactory}}(alliance.production[i]-\/>clone());}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00029}00029     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < alliance.reserveEntities.size(); i++)}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00030}00030         this-\/>\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{addReserveEntity}}(alliance.reserveEntities[i]-\/>clone());}
 \DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00031}00031 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00032}00032 \textcolor{keywordtype}{int} Alliance::getID() \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00033}00033     \textcolor{comment}{// TODO -\/ implement Alliance::getID}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00034}00034     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00035}00035 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00032}00032     this-\/>negotiator = NULL;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00033}00033 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00035}\mbox{\hyperlink{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}{00035}} \mbox{\hyperlink{classAlliance_a6a5357e96f284da2f00d72d14605b6fe}{Alliance::\string~Alliance}}() \{}
 \DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00036}00036 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00037}00037 \textcolor{keywordtype}{bool} Alliance::offPeace() \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00038}00038     \textcolor{comment}{// TODO -\/ implement Alliance::offPeace}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00039}00039     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00040}00040 \}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00041}00041 }
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00042}00042 \mbox{\hyperlink{classAlliance}{Alliance}}* Alliance::clone() \{}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00043}00043     \textcolor{comment}{// TODO -\/ implement Alliance::clone}}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00044}00044     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
-\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00045}00045 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00037}00037     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < members.size(); i++)}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00038}00038         \textcolor{comment}{//delete members[i];}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00040}00040     \textcolor{keywordflow}{if} (this-\/>negotiator != NULL) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00041}00041         this-\/>negotiator-\/>\mbox{\hyperlink{classNegotiator_ac6ec48dbce55bf196c299342695054ef}{removeAlliance}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00043}00043         \textcolor{keywordflow}{if} (this-\/>negotiator-\/>\mbox{\hyperlink{classNegotiator_a20af02012820a0296ac14f75e0b87282}{getNumAlliances}}() == 1)}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00044}00044             \textcolor{keyword}{delete} this-\/>negotiator;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00045}00045     \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00046}00046 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00048}\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{00048}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{Alliance::setNegotiator}}(\mbox{\hyperlink{classNegotiator}{Negotiator}}* negotiator) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00049}00049     this-\/>negotiator = negotiator;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00050}00050 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00051}00051 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00052}\mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{00052}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{Alliance::addCountry}}(\mbox{\hyperlink{classCountry}{Country}}* nation) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00053}00053     members.push\_back(nation);}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00054}00054 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00055}00055 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00056}\mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{00056}} vector<Entity*> \mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{Alliance::getReserveEntities}}(\textcolor{keywordtype}{int} number) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00057}00057     vector<Entity*> out;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00058}00058     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < number \&\& i < reserveEntities.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00059}00059         out.push\_back(reserveEntities[i]);}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00060}00060         reserveEntities.erase(reserveEntities.begin() + i);}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00061}00061     \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00063}00063     \textcolor{keywordflow}{return} out;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00064}00064 \}   }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00066}\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{00066}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{Alliance::addReserveEntity}}(\mbox{\hyperlink{classEntity}{Entity}}* entity) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00067}00067     reserveEntities.push\_back(entity);}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00068}00068 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00069}00069 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00070}\mbox{\hyperlink{classAlliance_aa7536e9920dba6e114d77dd18ab0326a}{00070}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAlliance_aa7536e9920dba6e114d77dd18ab0326a}{Alliance::numRemainingEntities}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00071}00071     \textcolor{keywordflow}{return} reserveEntities.size();}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00072}00072 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00073}00073 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00074}\mbox{\hyperlink{classAlliance_aaa6e77e8bef285079525b65150c3ad85}{00074}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classAlliance_aaa6e77e8bef285079525b65150c3ad85}{Alliance::considerPeace}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00075}00075     \textcolor{keywordflow}{return} (rand() \% 2 == 0);}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00076}00076 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00077}00077 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00078}\mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{00078}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlliance_a0558b1f3532044e9b5648c0bd1c151bf}{Alliance::addFactory}}(\mbox{\hyperlink{classFactory}{Factory}}* factory) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00079}00079     production.push\_back(factory);}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00080}00080 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00081}00081 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00082}\mbox{\hyperlink{classAlliance_a0b0d133ea177694c86d7cc9dd6b05a40}{00082}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlliance_a0b0d133ea177694c86d7cc9dd6b05a40}{Alliance::runFactories}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00083}00083     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < production.size(); i++) \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00084}00084         RoundStats::numEntitiesCreated++;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00085}00085         reserveEntities.push\_back(production[i]-\/>createEntity(\textcolor{keyword}{this}));}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00086}00086     \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00087}00087 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00089}\mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{00089}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classAlliance_ad3b8272ccec63d3a32b7e241434948e9}{Alliance::surrender}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00090}00090     this-\/>active = 2; \textcolor{comment}{//Number 2 means that Alliance has surrendered}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00091}00091 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00092}00092     this-\/>negotiator-\/>\mbox{\hyperlink{classNegotiator_ac6ec48dbce55bf196c299342695054ef}{removeAlliance}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00093}00093 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00094}00094 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00095}\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{00095}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{Alliance::getID}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00096}00096     \textcolor{keywordflow}{return} this-\/>aID;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00097}00097 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00098}00098 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00099}\mbox{\hyperlink{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}{00099}} \textcolor{keywordtype}{bool} \mbox{\hyperlink{classAlliance_ad13d2c031669cebc82021e4c2efc2c12}{Alliance::offerPeace}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00100}00100 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00101}00101     \textcolor{keywordflow}{if} (this-\/>negotiator-\/>\mbox{\hyperlink{classNegotiator_aa95e7f447a76c6d5ef84b92731ccb00d}{sendPeace}}(\textcolor{keyword}{this})) \textcolor{comment}{//Send the peace deal to all the alliances fighting against}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00102}00102     \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00103}00103         this-\/>active = 3; \textcolor{comment}{//Number 3 means that Alliance chose to peacefully pull out of war}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00104}00104         \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00105}00105     \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00106}00106     }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00107}00107     \textcolor{keywordflow}{return} \textcolor{keyword}{false}; }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00108}00108 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00109}00109 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00110}\mbox{\hyperlink{classAlliance_a832ce46bb4b7062240a0586788e3ff59}{00110}} \textcolor{keywordtype}{int} \mbox{\hyperlink{classAlliance_a832ce46bb4b7062240a0586788e3ff59}{Alliance::getActive}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00111}00111     \textcolor{keywordflow}{return} active;}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00112}00112 \}}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00113}00113 }
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00114}\mbox{\hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{00114}} \mbox{\hyperlink{classAlliance}{Alliance}}* \mbox{\hyperlink{classAlliance_adc67a41223565105889493f9cfd350d0}{Alliance::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00115}00115     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance_a262a2819e969b465eb9548e419bad521}{Alliance}}(*\textcolor{keyword}{this});}
+\DoxyCodeLine{\Hypertarget{Alliance_8cpp_source_l00116}00116 \}}
 
 \end{DoxyCode}

@@ -18,43 +18,66 @@ Inheritance diagram for Entity\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\hyperlink{classEntity_aec265b299e5f6ba10ed4e38f2d206ad7}{Entity}} (\mbox{\hyperlink{classType}{Type}} $\ast$type)
+\mbox{\hyperlink{classEntity_a68e832f69650ee80b83228a038eb66f0}{Entity}} (\mbox{\hyperlink{classType}{Type}} $\ast$type, int health, int damage)
 \begin{DoxyCompactList}\small\item\em Instantiates the entity. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{get\+Type}} ()
+virtual \mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}{get\+Type}} ()
 \begin{DoxyCompactList}\small\item\em Returns entities type state. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classEntity_a5d04ce64c9ca214900422865e298e36c}{set\+Type}} (\mbox{\hyperlink{classType}{Type}} $\ast$type)
+virtual void \mbox{\hyperlink{classEntity_a5d04ce64c9ca214900422865e298e36c}{set\+Type}} (\mbox{\hyperlink{classType}{Type}} $\ast$type)
 \begin{DoxyCompactList}\small\item\em Sets the entities type state. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ \mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{get\+Alliance}} ()
+virtual \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ \mbox{\hyperlink{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}{get\+Alliance}} ()
 \begin{DoxyCompactList}\small\item\em Returns entities alliance. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{set\+Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
+virtual void \mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{set\+Alliance}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
 \begin{DoxyCompactList}\small\item\em Sets the entities alliance. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{get\+Health}} ()
+virtual int \mbox{\hyperlink{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}{get\+Health}} ()
 \begin{DoxyCompactList}\small\item\em Returns entities health. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{set\+Health}} (int health)
+virtual void \mbox{\hyperlink{classEntity_a7dae281ff92be9bc98672cafe05c77ab}{set\+Health}} (int health)
 \begin{DoxyCompactList}\small\item\em Sets the entities health. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classEntity_a9cc5a2246a5580ceed0f081c18211e53}\label{classEntity_a9cc5a2246a5580ceed0f081c18211e53}} 
-virtual void {\bfseries take\+Damage} (int damage)=0
-\item 
-\mbox{\Hypertarget{classEntity_aff881f545fc88b2c328ff559a99c7fba}\label{classEntity_aff881f545fc88b2c328ff559a99c7fba}} 
-virtual void {\bfseries deal\+Damage} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)=0
-\end{DoxyCompactItemize}
+virtual int \mbox{\hyperlink{classEntity_ad38d4384aa0adef43443666a33f06508}{get\+Damage}} ()
+\begin{DoxyCompactList}\small\item\em Returns entities damage. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_aae05f62767eb7438c846300704f9579b}{set\+Damage}} (int damage)
+\begin{DoxyCompactList}\small\item\em Sets the entities damage. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_a9cc5a2246a5580ceed0f081c18211e53}{take\+Damage}} (int damage)=0
+\begin{DoxyCompactList}\small\item\em Reduces health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEntity_aff881f545fc88b2c328ff559a99c7fba}{deal\+Damage}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)=0
+\begin{DoxyCompactList}\small\item\em Inflicts damage onto another entity. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classEntity}{Entity}} $\ast$ \mbox{\hyperlink{classEntity_af6107392c2c813bedbc7994618b395db}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em Clones the current \mbox{\hyperlink{classEntity}{Entity}} object and returns the cloned object. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 \mbox{\hyperlink{classEntity}{Entity}} class. 
 
-Used to add addtional functionality to \mbox{\hyperlink{classEntity}{Entity}} objects. 
+Used to simulate war entity objects. 
 
-Definition at line 9 of file Entity.\+h.
+Definition at line \mbox{\hyperlink{Entity_8h_source_l00013}{13}} of file \mbox{\hyperlink{Entity_8h_source}{Entity.\+h}}.
 
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classEntity_aec265b299e5f6ba10ed4e38f2d206ad7}\label{classEntity_aec265b299e5f6ba10ed4e38f2d206ad7}} 
+\mbox{\Hypertarget{classEntity_a980f368aa07ce358583982821533a54a}\label{classEntity_a980f368aa07ce358583982821533a54a}} 
 \index{Entity@{Entity}!Entity@{Entity}}
 \index{Entity@{Entity}!Entity@{Entity}}
-\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}}
-{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type }\end{DoxyParamCaption})}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00005}{5}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00005                \{}
+\DoxyCodeLine{00006     health = 0;}
+\DoxyCodeLine{00007     damage = 0;}
+\DoxyCodeLine{00008     type = NULL;}
+\DoxyCodeLine{00009 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_a68e832f69650ee80b83228a038eb66f0}\label{classEntity_a68e832f69650ee80b83228a038eb66f0}} 
+\index{Entity@{Entity}!Entity@{Entity}}
+\index{Entity@{Entity}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{Entity()}{Entity()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Entity\+::\+Entity (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type,  }\item[{int}]{health,  }\item[{int}]{damage }\end{DoxyParamCaption})}
 
 
 
@@ -67,24 +90,79 @@ Instantiates the entity.
 \end{DoxyParams}
 
 
-Definition at line 3 of file Entity.\+cpp.
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00011}{11}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{3                          \{}
-\DoxyCodeLine{4     \textcolor{comment}{// TODO -\/ implement Entity::Entity}}
-\DoxyCodeLine{5     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{6 \}}
+\DoxyCodeLine{00011                                                  \{}
+\DoxyCodeLine{00012     this-\/>health = health;}
+\DoxyCodeLine{00013     this-\/>damage = damage;}
+\DoxyCodeLine{00014     this-\/>type = type;}
+\DoxyCodeLine{00015 \}}
 
 \end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEntity_af6107392c2c813bedbc7994618b395db}\label{classEntity_af6107392c2c813bedbc7994618b395db}} 
+\index{Entity@{Entity}!clone@{clone}}
+\index{clone@{clone}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classEntity}{Entity}} $\ast$ Entity\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clones the current \mbox{\hyperlink{classEntity}{Entity}} object and returns the cloned object. 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item Returns the cloned object of \mbox{\hyperlink{classEntity}{Entity}}
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Entity$\ast$ The cloned object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classArmour_ab200b02561ecc30c20397913a2bc9511}{Armour}}, \mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{Personnel}}, \mbox{\hyperlink{classPiercing_aeb41b04515f5aad4d9f153b0de332849}{Piercing}}, \mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{Support}}, \mbox{\hyperlink{classVehicle_a705081c9b479d76cd6113a661d9c8770}{Vehicle}}, and \mbox{\hyperlink{classAddOn_a51874d0b945e57cd2917ef6f25147277}{Add\+On}}.
+
+\mbox{\Hypertarget{classEntity_aff881f545fc88b2c328ff559a99c7fba}\label{classEntity_aff881f545fc88b2c328ff559a99c7fba}} 
+\index{Entity@{Entity}!dealDamage@{dealDamage}}
+\index{dealDamage@{dealDamage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{dealDamage()}{dealDamage()}}
+{\footnotesize\ttfamily virtual void Entity\+::deal\+Damage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classEntity}{Entity}} $\ast$}]{entity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Inflicts damage onto another entity. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item entity must be an Entity$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the entity
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em entity} & must be an Entity$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classArmour_acce6c768aaebaa559ac063e9d67c53b5}{Armour}}, \mbox{\hyperlink{classPersonnel_af688c3cc32f413b1d17fe423f25aa50b}{Personnel}}, \mbox{\hyperlink{classPiercing_a2dbd4a497f9abbebbbd2ceb2909f6163}{Piercing}}, \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{Support}}, \mbox{\hyperlink{classVehicle_a8a89569fb092d60bbb172ecd0d4ef4d1}{Vehicle}}, and \mbox{\hyperlink{classAddOn_aff1f4fa0fb368bbc49838df9c9ddba9c}{Add\+On}}.
+
 \mbox{\Hypertarget{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}\label{classEntity_aa101047a4bc312b697b65b4c3a39ffc5}} 
 \index{Entity@{Entity}!getAlliance@{getAlliance}}
 \index{getAlliance@{getAlliance}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{getAlliance()}{getAlliance()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ Entity\+::get\+Alliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$ Entity\+::get\+Alliance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -100,20 +178,57 @@ Type$\ast$ The alliance of the entity object
 \end{DoxyReturn}
 
 
-Definition at line 16 of file Entity.\+cpp.
+Reimplemented in \mbox{\hyperlink{classAddOn_a226cff3c3072cdda884d6d6d8eb74773}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00025}{25}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{16                               \{}
-\DoxyCodeLine{17     \textcolor{keywordflow}{return} this-\/>alliance;}
-\DoxyCodeLine{18 \}}
+\DoxyCodeLine{00025                               \{}
+\DoxyCodeLine{00026     \textcolor{keywordflow}{return} this-\/>alliance;}
+\DoxyCodeLine{00027 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_ad38d4384aa0adef43443666a33f06508}\label{classEntity_ad38d4384aa0adef43443666a33f06508}} 
+\index{Entity@{Entity}!getDamage@{getDamage}}
+\index{getDamage@{getDamage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{getDamage()}{getDamage()}}
+{\footnotesize\ttfamily int Entity\+::get\+Damage (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Returns entities damage. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the damage
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+int The damage of the entity object 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classAddOn_a7931cff84029baa9532f6a7c971a5198}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00041}{41}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00041                       \{}
+\DoxyCodeLine{00042     \textcolor{keywordflow}{return} this-\/>damage;}
+\DoxyCodeLine{00043 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}\label{classEntity_a2b0140ae8c77c0e3654b070ee3c7fe57}} 
 \index{Entity@{Entity}!getHealth@{getHealth}}
 \index{getHealth@{getHealth}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{getHealth()}{getHealth()}}
-{\footnotesize\ttfamily int Entity\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily int Entity\+::get\+Health (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -129,20 +244,24 @@ int The health of the entity object
 \end{DoxyReturn}
 
 
-Definition at line 24 of file Entity.\+cpp.
+Reimplemented in \mbox{\hyperlink{classAddOn_a754a8bf01cdd118173ebc0818943dfe7}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00033}{33}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{24                       \{}
-\DoxyCodeLine{25     \textcolor{keywordflow}{return} this-\/>health;}
-\DoxyCodeLine{26 \}}
+\DoxyCodeLine{00033                       \{}
+\DoxyCodeLine{00034     \textcolor{keywordflow}{return} this-\/>health;}
+\DoxyCodeLine{00035 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}\label{classEntity_a3a9c9e298bfc47b726a2d9ce44dd7464}} 
 \index{Entity@{Entity}!getType@{getType}}
 \index{getType@{getType}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{getType()}{getType()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classType}{Type}} $\ast$ Entity\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classType}{Type}} $\ast$ Entity\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -158,20 +277,24 @@ Type$\ast$ The type state of the entity object
 \end{DoxyReturn}
 
 
-Definition at line 8 of file Entity.\+cpp.
+Reimplemented in \mbox{\hyperlink{classAddOn_a0c194386be045169d3bd923e22c75705}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00017}{17}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8                       \{}
-\DoxyCodeLine{9     \textcolor{keywordflow}{return} this-\/>type;}
-\DoxyCodeLine{10 \}}
+\DoxyCodeLine{00017                       \{}
+\DoxyCodeLine{00018     \textcolor{keywordflow}{return} this-\/>type;}
+\DoxyCodeLine{00019 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_af804dcaa600e770cf0e2b4537f6fba23}\label{classEntity_af804dcaa600e770cf0e2b4537f6fba23}} 
 \index{Entity@{Entity}!setAlliance@{setAlliance}}
 \index{setAlliance@{setAlliance}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{setAlliance()}{setAlliance()}}
-{\footnotesize\ttfamily void Entity\+::set\+Alliance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Entity\+::set\+Alliance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -197,20 +320,67 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 20 of file Entity.\+cpp.
+Reimplemented in \mbox{\hyperlink{classAddOn_a8ae6d54cdc26e057777f75ff5a45455b}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00029}{29}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{20                                            \{}
-\DoxyCodeLine{21     this-\/>alliance = alliance;}
-\DoxyCodeLine{22 \}}
+\DoxyCodeLine{00029                                            \{}
+\DoxyCodeLine{00030     this-\/>alliance = alliance;}
+\DoxyCodeLine{00031 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classEntity_aae05f62767eb7438c846300704f9579b}\label{classEntity_aae05f62767eb7438c846300704f9579b}} 
+\index{Entity@{Entity}!setDamage@{setDamage}}
+\index{setDamage@{setDamage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{setDamage()}{setDamage()}}
+{\footnotesize\ttfamily void Entity\+::set\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the entities damage. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Sets the damage of the entity object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classAddOn_a37de5bfa51cbf1d65b0bdf612f12065f}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00045}{45}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00045                                  \{}
+\DoxyCodeLine{00046     this-\/>damage = damage;}
+\DoxyCodeLine{00047 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a7dae281ff92be9bc98672cafe05c77ab}\label{classEntity_a7dae281ff92be9bc98672cafe05c77ab}} 
 \index{Entity@{Entity}!setHealth@{setHealth}}
 \index{setHealth@{setHealth}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{setHealth()}{setHealth()}}
-{\footnotesize\ttfamily void Entity\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{health }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Entity\+::set\+Health (\begin{DoxyParamCaption}\item[{int}]{health }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -218,7 +388,7 @@ Sets the entities health.
 
 Preconditions\+:
 \begin{DoxyItemize}
-\item alliance must be an int
+\item health must be an int
 \end{DoxyItemize}
 
 Postconditions\+:
@@ -236,20 +406,24 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 28 of file Entity.\+cpp.
+Reimplemented in \mbox{\hyperlink{classAddOn_a24d16b33c873be77c9370ae08a3d617d}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00037}{37}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{28                                  \{}
-\DoxyCodeLine{29     this-\/>health = health;}
-\DoxyCodeLine{30 \}}
+\DoxyCodeLine{00037                                  \{}
+\DoxyCodeLine{00038     this-\/>health = health;}
+\DoxyCodeLine{00039 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classEntity_a5d04ce64c9ca214900422865e298e36c}\label{classEntity_a5d04ce64c9ca214900422865e298e36c}} 
 \index{Entity@{Entity}!setType@{setType}}
 \index{setType@{setType}!Entity@{Entity}}
 \doxysubsubsection{\texorpdfstring{setType()}{setType()}}
-{\footnotesize\ttfamily void Entity\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Entity\+::set\+Type (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classType}{Type}} $\ast$}]{type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -275,15 +449,71 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 12 of file Entity.\+cpp.
+Reimplemented in \mbox{\hyperlink{classAddOn_a3bb07ac367f2fe96e782f84fa48bfc68}{Add\+On}}.
+
+
+
+Definition at line \mbox{\hyperlink{Entity_8cpp_source_l00021}{21}} of file \mbox{\hyperlink{Entity_8cpp_source}{Entity.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{12                                \{}
-\DoxyCodeLine{13     this-\/>type = type;}
-\DoxyCodeLine{14 \}}
+\DoxyCodeLine{00021                                \{}
+\DoxyCodeLine{00022     this-\/>type = type;}
+\DoxyCodeLine{00023 \}}
 
 \end{DoxyCode}
+\mbox{\Hypertarget{classEntity_a9cc5a2246a5580ceed0f081c18211e53}\label{classEntity_a9cc5a2246a5580ceed0f081c18211e53}} 
+\index{Entity@{Entity}!takeDamage@{takeDamage}}
+\index{takeDamage@{takeDamage}!Entity@{Entity}}
+\doxysubsubsection{\texorpdfstring{takeDamage()}{takeDamage()}}
+{\footnotesize\ttfamily virtual void Entity\+::take\+Damage (\begin{DoxyParamCaption}\item[{int}]{damage }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Reduces health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the \mbox{\hyperlink{classEntity}{Entity}} object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void
+\end{DoxyReturn}
+Reduces health from the \mbox{\hyperlink{classPersonnel}{Personnel}} object
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item damage must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Reduces the health of the \mbox{\hyperlink{classEntity}{Entity}} object
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em damage} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classArmour_a7a52bd8473173c81a4ba8a6373513581}{Armour}}, \mbox{\hyperlink{classPersonnel_aeb670c84c0168f872346c55f7fc8383f}{Personnel}}, \mbox{\hyperlink{classPiercing_a103634469a43e1662bd5e07e66901667}{Piercing}}, \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{Support}}, \mbox{\hyperlink{classVehicle_ae30a3d13e4d254993acf808a94fdff8d}{Vehicle}}, and \mbox{\hyperlink{classAddOn_ab3aefbc00969fe613ed6d42c4f55c5a2}{Add\+On}}.
+
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}

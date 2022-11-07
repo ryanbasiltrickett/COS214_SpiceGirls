@@ -1,7 +1,11 @@
 #ifndef STRATEGY_H
 #define STRATEGY_H
-#include "KeyPoint.h"
 #include <string>
+#include <ctime>
+#include <cstdlib>
+
+class KeyPoint;
+class Alliance;
 
 class Strategy {
 
@@ -20,30 +24,29 @@ public:
 	 * 
 	 */
 	~Strategy();
+
+	/**
+	 * 
+	 * @brief This function will perform a strategy
+	 * 
+	 * @param keyPoint a strategy will then be performed at this specific keypoint
+	 * 
+	 * @return void The function will return void
+	 */
 	
-	/**
-	 * @author Antwi-Antwi
-	 * @brief This function will perform an spifice strategy based on the specific derived class
-	 * @param keyPoint A strategy will then be performed at this specific keypoint
-	 * @return void The function will return a void
-	 */
-	virtual void performStrat(KeyPoint* keyPoint) = 0;
+	virtual void performStrat(KeyPoint* keyPoint, Alliance* alliance) = 0;
+
 
 	/**
-	 * @brief Set the Strategy object
+	 * @brief Returns the cloned Strategy object
 	 * 
-	 * @param strategy This will b the new Strategy
-	 * @return true If settibng the strategy was successful
-	 * @return false If if setting the strategy was unsuccessful
+	 * PostConditions:
+	 *  - Returns the clone of the current Strategy
+	 * 
+	 * @return Strategy* The cloned object
 	 */
-	bool setStrategy(std::string strategy);
 
-	/**
-	 * @brief Get the Strategy object
-	 * 
-	 * @return Strategy* The current Strategy
-	 */
-	Strategy* getStrategy() const;
+	virtual Strategy* clone() = 0;
 };
 
 #endif

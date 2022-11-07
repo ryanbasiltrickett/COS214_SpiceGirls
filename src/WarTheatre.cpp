@@ -1,31 +1,37 @@
 #include "WarTheatre.h"
 
-WarTheatre::WarTheatre() {
-	// TODO - implement WarTheatre::WarTheatre
-	throw "Not yet implemented";
+using namespace std;
+
+WarTheatre::WarTheatre(string areaName): Area(areaName) {}
+
+WarTheatre::~WarTheatre() {
+	for (int i = 0; i < areas.size(); i++)
+		delete areas[i];
 }
 
 bool WarTheatre::isKeyPoint() {
-	// TODO - implement WarTheatre::isKeyPoint
-	throw "Not yet implemented";
+	return false;
 }
 
-void WarTheatre::attack(Alliance* alliance) {
-	// TODO - implement WarTheatre::attack
-	throw "Not yet implemented";
-}
-
-void WarTheatre::moveEntities(Area* area, Alliance* alliance) {
-	// TODO - implement WarTheatre::moveEntities
-	throw "Not yet implemented";
+void WarTheatre::simulateBattle(Alliance* alliance) {
+	for (int i = 0; i < areas.size(); i++)
+		areas[i]->simulateBattle(alliance);
 }
 
 void WarTheatre::addArea(Area* area) {
-	// TODO - implement WarTheatre::addArea
-	throw "Not yet implemented";
+	areas.push_back(area);
 }
 
-Area* WarTheatre::clone() {
-	// TODO - implement WarTheatre::clone
-	throw "Not yet implemented";
+WarTheatre* WarTheatre::clone() {
+	WarTheatre* w = new WarTheatre(getAreaName());
+
+	for (int i = 0; i < areas.size(); i++)
+		w->addArea(areas[i]->clone());
+
+	return w;
+}
+
+void WarTheatre::addGeneral(General* general) {
+	for (int i = 0; i < areas.size(); i++)
+		areas[i]->addGeneral(general);
 }

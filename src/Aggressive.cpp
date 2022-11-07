@@ -1,12 +1,13 @@
 #include "Aggressive.h"
+#include "KeyPoint.h"
 
-Aggressive::Aggressive() {
-	// TODO - implement Aggressive::Aggressive
-	throw "Not yet implemented";
+Aggressive::Aggressive() {}
+
+void Aggressive::performStrat(KeyPoint* keyPoint, Alliance* alliance) {
+	int randomNumber = (rand() % 10) + 5;
+	keyPoint->moveEntitiesInto(alliance, randomNumber);
 }
 
-void Aggressive::performStrat(Keypoint* keyPoint) {
-	// TODO - implement Aggressive::performStrat
-	throw "Not yet implemented";
+Strategy* Aggressive::clone() {
+	return new Aggressive();
 }
-

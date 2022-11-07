@@ -1,23 +1,42 @@
 #ifndef KEYPOINT_H
 #define KEYPOINT_H
 
+#include "Alliance.h"
+#include "Area.h"
+#include "Entity.h"
+#include "General.h"
+#include <vector>
+
+class Weather;
+
 /**
  * @brief Keypoint class
  * 
  * Used to emulate strategic positions.
  */
-class KeyPoint : Area {
+class KeyPoint : public Area {
 
 private:
 	vector<Entity*> entities;
-	vector<CommandCenter*> comCenters;
+	vector<General*> generals;
 	Weather* weather;
 
 public:
 	/**
 	 * @brief Instantiates the key point
+	 * 
+	 * @param areaName must be an string
 	 */
-	KeyPoint();
+	KeyPoint(std::string areaName);
+
+	/**
+	 * @brief Instantiates a copy of a KeyPoint
+	 * 
+	 * @param keyPoint must be an KeyPoint instance
+	 */
+	KeyPoint(KeyPoint& keyPoint);
+
+	~KeyPoint();
 
 	/**
 	 * @brief Returns area type
@@ -30,7 +49,7 @@ public:
 	bool isKeyPoint();
 
 	/**
-	 * @brief Attack with troops from the alliance passed in
+	 * @brief Simulate Battle with troops from the alliance passed in
 	 *
 	 * Preconditions:
 	 *  - alliance must be an Alliance*
@@ -41,23 +60,50 @@ public:
 	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
-	void attack(Alliance* alliance);
+	void simulateBattle(Alliance* alliance);
 
 	/**
-	 * @brief Moves a specific alliances troops from one area to another
-	 *
-	 * Preconditions:
-	 * 	- area must be an Area*
-	 *  - alliance must be an Alliance*
+	 * @brief Clears the battlefield of all deceased troops
 	 *
 	 * Postconditions:
-	 *  - Move troops to other area
-	 *
-	 * @param area musy be an Area*
+	 *  - Notify command centers of each troop who is killed
+	 * 
 	 * @param alliance must be an Alliance*
 	 * @return void
 	 */
-	void moveEntities(Area* area, Alliance* alliance);
+	void clearBattlefield(Alliance* alliance);
+
+	/**
+	 * @brief Moves a specific alliances troops into this keypoint
+	 *
+	 * Preconditions:
+	 *  - alliance must be an Alliance*
+	 *  - numTroops must be an int
+	 *
+	 * Postconditions:
+	 *  - Move troops to into this keypoint
+	 *
+	 * @param alliance must be an Alliance*
+	 * @param numTroops must be an int
+	 * @return void
+	 */
+	void moveEntitiesInto(Alliance* alliance, int numTroops);
+
+	/**
+	 * @brief Moves a specific alliances troops out of the keypoint
+	 *
+	 * Preconditions:
+	 *  - alliance must be an Alliance*
+	 *  - numTroops must be an int
+	 *
+	 * Postconditions:
+	 *  - Move troops to reserve
+	 *
+	 * @param alliance must be an Alliance*
+	 * @param numTroops must be an int
+	 * @return void
+	 */
+	void moveEntitiesOutOf(Alliance* alliance, int numTroops);
 
 	/**
 	 * @brief Adds an enitity to the key point object
@@ -72,44 +118,32 @@ public:
 	 * @return void
 	 */
 	void addEntity(Entity* entity);
-	
-	/**
-	 * @brief Adds command centers to the comCenters vector
-	 *
-	 * Preconditions:
-	 *  - comCenter must be a CommandCenter*
-	 *
-	 * Postconditions:
-	 *  - Adds the passed in comCenter to the comCenters vector 
-	 *
-	 * @param comCenter must be a CommandCenter*
-	 * @return void
-	 */
-	void attach(CommandCenter* comCenter);
 
 	/**
-	 * @brief Removes command centers from the comCenters vector
-	 *
-	 * Preconditions:
-	 *  - comCenter must be a CommandCenter*
-	 *
+	 * @brief Adds a general to all the points held by the WarTheatre
+	 * 
+	 * Precoditions:
+	 * 	- general must be a General*
+	 * 
 	 * Postconditions:
-	 *  - Removes the passed in comCenter from the comCenters vector 
-	 *
-	 * @param comCenter must be a CommandCenter*
-	 * @return void
+	 * 	- Add general to all points
+	 * 
+	 * @param general must be a General*
 	 */
-	void detach(CommandCenter* comCenter);
+	void addGeneral(General* general);
 
 	/**
-	 * @brief Notifies the attached command centers when a change in the Keypoint's state (entities or weather) occurs
-	 *
+	 * @brief removes a general to all the points held by the WarTheatre
+	 * 
+	 * Precoditions:
+	 * 	- general must be a General*
+	 * 
 	 * Postconditions:
-	 *  - Notifies the command centers in the comCenters vector when a change in the Keypoint's state (entities or weather) occurs
-	 *
-	 * @return void
+	 * 	- Add general to all points
+	 * 
+	 * @param general must be a General*
 	 */
-	void notify();
+	void removeGeneral(General* general);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current Keypoint
@@ -120,6 +154,34 @@ public:
 	 * @return Area* The Keypoint clone
 	 */
 	Area* clone();
+  
+	/**
+	 * @brief Switches the Weather object to the next state
+	 * 
+	 */
+	void changeWeather();
+  
+  /**
+	 * @brief Set the Weather object
+	 * 
+	 * Preconditions:
+	 *  - weather must be a Weather*
+	 * 
+	 * Postconditions:
+	 * 	- must set the keyPoints weather state
+	 * 
+	 * @param weather must be a Weather*
+	 * @return void
+	 */
+  void setWeather(Weather* weather);
+   
+	/**
+	 * @brief The weather at the current state is returned
+	 * 
+	 * @return string The weather state
+	 */
+	std::string getWeather() const;
+	
 };
 
 #endif

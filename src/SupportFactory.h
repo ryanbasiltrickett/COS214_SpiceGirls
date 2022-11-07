@@ -1,14 +1,23 @@
 #ifndef SUPPORTFACTORY_H
 #define SUPPORTFACTORY_H
 
-class SupportFactory : Factory {
+#include "Factory.h"
 
+/**
+ * @brief SupportFactory class
+ * 
+ * Used to instantiate Support objects.
+ */
+class SupportFactory : public Factory {
 
 public:
 	/**
 	 * @brief Instantiates the support factory
+	 * 
+	 * @param type must be a Type*
+	 * @param addOn must be a AddOn*
 	 */
-	SupportFactory();
+	SupportFactory(Type* type, AddOn* addOn);
 
 	/**
 	 * @brief Instantiates and returns a support for the given alliance
@@ -20,9 +29,9 @@ public:
 	 *  - Returns the instantiated support object with specific state
 	 *
 	 * @param alliance must be a Alliance*
-	 * @return Support* The instatiated support
+	 * @return Entity* The instatiated support
 	 */
-	Support* createEntity(Alliance* alliance);
+	Entity* createEntity(Alliance* alliance);
 
 	/**
 	 * @brief Instantiates and returns a clone of the current support factory

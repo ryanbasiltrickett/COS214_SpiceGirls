@@ -1,8 +1,13 @@
 #include "Factory.h"
 
-Factory::Factory() {
-	// TODO - implement Factory::Factory
-	throw "Not yet implemented";
+Factory::Factory(Type* type, AddOn* addOn) {
+	this->type = type;
+	this->addOn = addOn;
+}
+
+Factory::~Factory() {
+	delete type;
+	delete addOn;
 }
 
 Type* Factory::getType() {
@@ -13,10 +18,10 @@ void Factory::setType(Type* type) {
 	this->type = type;
 }
 
-addOn* Factory::getAddOns() {
-	return this->addOns;
+AddOn* Factory::getAddOn() {
+	return this->addOn;
 }
 
-void Factory::setAddOns(addOn* addOns) {
-	this->addOns = addOns;
+void Factory::setAddOns(AddOn* addOn) {
+	this->addOn = addOn;
 }

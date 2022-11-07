@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['moveentities_154',['moveEntities',['../classKeyPoint.html#a3fc425554378989ba83ebd22f7305f14',1,'KeyPoint::moveEntities()'],['../classWarTheatre.html#ab26cd475022390aefc1e4c6475e194ac',1,'WarTheatre::moveEntities()']]]
+  ['moveentitiesinto_0',['moveEntitiesInto',['../classKeyPoint.html#a4d98646584dffb8e4d59c600e693cfe6',1,'KeyPoint']]],
+  ['moveentitiesoutof_1',['moveEntitiesOutOf',['../classKeyPoint.html#aa5bb6fa677e0b560adfb95e0ff30aa8a',1,'KeyPoint']]]
 ];

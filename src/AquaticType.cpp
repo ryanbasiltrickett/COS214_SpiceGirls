@@ -2,12 +2,12 @@
 
 using namespace std;
 
-AquaticType::AquaticType() {
-	// TODO - implement AquaticType::AquaticType
-	throw "Not yet implemented";
-}
+AquaticType::AquaticType() {}
 
 string AquaticType::getTypeDesc() {
-	// TODO - implement AquaticType::getTypeDesc
-	throw "Not yet implemented";
+	return "Aquatic";
+}
+
+Type* AquaticType::clone() {
+	return new AquaticType();
 }

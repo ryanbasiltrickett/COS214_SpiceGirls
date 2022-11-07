@@ -18,25 +18,34 @@ Inheritance diagram for Key\+Point\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classKeyPoint_a8b4ce35fc2c7101f1135b9c7530f053d}\label{classKeyPoint_a8b4ce35fc2c7101f1135b9c7530f053d}} 
-\mbox{\hyperlink{classKeyPoint_a8b4ce35fc2c7101f1135b9c7530f053d}{Key\+Point}} ()
+\mbox{\hyperlink{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}{Key\+Point}} (std\+::string area\+Name)
 \begin{DoxyCompactList}\small\item\em Instantiates the key point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classKeyPoint_abea6fbaf9140408e16462ad05282febf}{Key\+Point}} (\mbox{\hyperlink{classKeyPoint}{Key\+Point}} \&key\+Point)
+\begin{DoxyCompactList}\small\item\em Instantiates a copy of a \mbox{\hyperlink{classKeyPoint}{Key\+Point}}. \end{DoxyCompactList}\item 
 bool \mbox{\hyperlink{classKeyPoint_a1beb436d8efa973f3dc290a722727961}{is\+Key\+Point}} ()
 \begin{DoxyCompactList}\small\item\em Returns area type. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKeyPoint_a137026380d2907f880bb4c48b30c2d5e}{attack}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em Attack with troops from the alliance passed in. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKeyPoint_a3fc425554378989ba83ebd22f7305f14}{move\+Entities}} (\mbox{\hyperlink{classArea}{Area}} $\ast$area, \mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
-\begin{DoxyCompactList}\small\item\em Moves a specific alliances troops from one area to another. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}{simulate\+Battle}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
+\begin{DoxyCompactList}\small\item\em Simulate Battle with troops from the alliance passed in. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_a57fd5b474091af695dcc46003443d60a}{clear\+Battlefield}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance)
+\begin{DoxyCompactList}\small\item\em Clears the battlefield of all deceased troops. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}{move\+Entities\+Into}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance, int num\+Troops)
+\begin{DoxyCompactList}\small\item\em Moves a specific alliances troops into this keypoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}{move\+Entities\+Out\+Of}} (\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$alliance, int num\+Troops)
+\begin{DoxyCompactList}\small\item\em Moves a specific alliances troops out of the keypoint. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{add\+Entity}} (\mbox{\hyperlink{classEntity}{Entity}} $\ast$entity)
 \begin{DoxyCompactList}\small\item\em Adds an enitity to the key point object. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKeyPoint_a42df3ce6652f1817fc04324ad15a868d}{attach}} (\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$com\+Center)
-\begin{DoxyCompactList}\small\item\em Adds command centers to the com\+Centers vector. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}{detach}} (\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$com\+Center)
-\begin{DoxyCompactList}\small\item\em Removes command centers from the com\+Centers vector. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{classKeyPoint_a5b21817babe753b2b684d70479f3eaf2}{notify}} ()
-\begin{DoxyCompactList}\small\item\em Notifies the attached command centers when a change in the Keypoint\textquotesingle{}s state (entities or weather) occurs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}{add\+General}} (\mbox{\hyperlink{classGeneral}{General}} $\ast$general)
+\begin{DoxyCompactList}\small\item\em Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_abe2ba3c8d36eb45711f396ff295fa32e}{remove\+General}} (\mbox{\hyperlink{classGeneral}{General}} $\ast$general)
+\begin{DoxyCompactList}\small\item\em removes a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}} \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classArea}{Area}} $\ast$ \mbox{\hyperlink{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}{clone}} ()
-\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Keypoint. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Instantiates and returns a clone of the current Keypoint. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}{change\+Weather}} ()
+\begin{DoxyCompactList}\small\item\em Switches the \mbox{\hyperlink{classWeather}{Weather}} object to the next state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{set\+Weather}} (\mbox{\hyperlink{classWeather}{Weather}} $\ast$weather)
+\begin{DoxyCompactList}\small\item\em Set the \mbox{\hyperlink{classWeather}{Weather}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}{get\+Weather}} () const
+\begin{DoxyCompactList}\small\item\em The weather at the current state is returned. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -44,8 +53,78 @@ Keypoint class.
 
 Used to emulate strategic positions. 
 
-Definition at line 9 of file Key\+Point.\+h.
+Definition at line \mbox{\hyperlink{KeyPoint_8h_source_l00017}{17}} of file \mbox{\hyperlink{KeyPoint_8h_source}{Key\+Point.\+h}}.
 
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}\label{classKeyPoint_a1e99a22c40a570c89b2d04cf67e98dd4}} 
+\index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
+\index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{KeyPoint()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Key\+Point\+::\+Key\+Point (\begin{DoxyParamCaption}\item[{std\+::string}]{area\+Name }\end{DoxyParamCaption})}
+
+
+
+Instantiates the key point. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em area\+Name} & must be an string \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classKeyPoint_abea6fbaf9140408e16462ad05282febf}\label{classKeyPoint_abea6fbaf9140408e16462ad05282febf}} 
+\index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
+\index{KeyPoint@{KeyPoint}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{KeyPoint()}{KeyPoint()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Key\+Point\+::\+Key\+Point (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classKeyPoint}{Key\+Point}} \&}]{key\+Point }\end{DoxyParamCaption})}
+
+
+
+Instantiates a copy of a \mbox{\hyperlink{classKeyPoint}{Key\+Point}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em key\+Point} & must be an \mbox{\hyperlink{classKeyPoint}{Key\+Point}} instance \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00015}{15}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00015                                     : \mbox{\hyperlink{classArea}{Area}}(keyPoint.\mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}()) \{}
+\DoxyCodeLine{00016     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < keyPoint.entities.size(); i++)}
+\DoxyCodeLine{00017         this-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(keyPoint.entities[i]-\/>clone());}
+\DoxyCodeLine{00018 }
+\DoxyCodeLine{00019     weather = keyPoint.weather-\/>\mbox{\hyperlink{classWeather_a479a3bffb1688f3fa7714c0fce3bf84f}{clone}}();}
+\DoxyCodeLine{00020 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_a6bf5e6613c329a8f2afeb8c66aa116bd}\label{classKeyPoint_a6bf5e6613c329a8f2afeb8c66aa116bd}} 
+\index{KeyPoint@{KeyPoint}!````~KeyPoint@{$\sim$KeyPoint}}
+\index{````~KeyPoint@{$\sim$KeyPoint}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{$\sim$KeyPoint()}{~KeyPoint()}}
+{\footnotesize\ttfamily Key\+Point\+::$\sim$\+Key\+Point (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00022}{22}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00022                     \{}
+\DoxyCodeLine{00023     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++)}
+\DoxyCodeLine{00024         \textcolor{keyword}{delete} entities[i];}
+\DoxyCodeLine{00025 }
+\DoxyCodeLine{00026     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++)}
+\DoxyCodeLine{00027         \textcolor{keyword}{delete} generals[i];}
+\DoxyCodeLine{00028 }
+\DoxyCodeLine{00029     \textcolor{keyword}{delete} weather;}
+\DoxyCodeLine{00030 \}}
+
+\end{DoxyCode}
 
 
 \doxysubsection{Member Function Documentation}
@@ -79,74 +158,102 @@ void
 \end{DoxyReturn}
 
 
-Definition at line 23 of file Key\+Point.\+cpp.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00123}{123}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{23                                        \{}
-\DoxyCodeLine{24     \textcolor{comment}{// TODO -\/ implement KeyPoint::addEntity}}
-\DoxyCodeLine{25     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{26 \}}
+\DoxyCodeLine{00123                                        \{}
+\DoxyCodeLine{00124     entities.push\_back(entity);}
+\DoxyCodeLine{00125 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classKeyPoint_a42df3ce6652f1817fc04324ad15a868d}\label{classKeyPoint_a42df3ce6652f1817fc04324ad15a868d}} 
-\index{KeyPoint@{KeyPoint}!attach@{attach}}
-\index{attach@{attach}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{attach()}{attach()}}
-{\footnotesize\ttfamily void Key\+Point\+::attach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$}]{com\+Center }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}\label{classKeyPoint_adef7a6b2e761e720e9b08890106ae257}} 
+\index{KeyPoint@{KeyPoint}!addGeneral@{addGeneral}}
+\index{addGeneral@{addGeneral}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{addGeneral()}{addGeneral()}}
+{\footnotesize\ttfamily void Key\+Point\+::add\+General (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGeneral}{General}} $\ast$}]{general }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
-Adds command centers to the com\+Centers vector. 
+Adds a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}}. 
 
-Preconditions\+:
+Precoditions\+:
 \begin{DoxyItemize}
-\item com\+Center must be a Command\+Center$\ast$
+\item general must be a General$\ast$
 \end{DoxyItemize}
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Adds the passed in com\+Center to the com\+Centers vector
+\item Add general to all points
 \end{DoxyItemize}
 
 
 \begin{DoxyParams}{Parameters}
-{\em com\+Center} & must be a Command\+Center$\ast$ \\
+{\em general} & must be a General$\ast$ \\
 \hline
 \end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-void 
-\end{DoxyReturn}
 
 
-Definition at line 28 of file Key\+Point.\+cpp.
+Implements \mbox{\hyperlink{classArea_ae3e229ab4fb2e5b19fc8cfedf078bc95}{Area}}.
+
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00127}{127}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{28                                               \{}
-\DoxyCodeLine{29     \textcolor{comment}{// TODO -\/ implement KeyPoint::attach}}
-\DoxyCodeLine{30     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{31 \}}
+\DoxyCodeLine{00127                                           \{}
+\DoxyCodeLine{00128     generals.push\_back(general);}
+\DoxyCodeLine{00129 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classKeyPoint_a137026380d2907f880bb4c48b30c2d5e}\label{classKeyPoint_a137026380d2907f880bb4c48b30c2d5e}} 
-\index{KeyPoint@{KeyPoint}!attack@{attack}}
-\index{attack@{attack}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{attack()}{attack()}}
-{\footnotesize\ttfamily void Key\+Point\+::attack (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}\label{classKeyPoint_a1906ddf2b2b5d1bf81e82605b3eb63a0}} 
+\index{KeyPoint@{KeyPoint}!changeWeather@{changeWeather}}
+\index{changeWeather@{changeWeather}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{changeWeather()}{changeWeather()}}
+{\footnotesize\ttfamily void Key\+Point\+::change\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-Attack with troops from the alliance passed in. 
+Switches the \mbox{\hyperlink{classWeather}{Weather}} object to the next state. 
 
-Preconditions\+:
-\begin{DoxyItemize}
-\item alliance must be an Alliance$\ast$
-\end{DoxyItemize}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00150}{150}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00150                              \{}
+\DoxyCodeLine{00151 }
+\DoxyCodeLine{00152     srand(time(0));}
+\DoxyCodeLine{00153 }
+\DoxyCodeLine{00154     \textcolor{keywordtype}{int} randomNum = 1 + (rand() \% 10);}
+\DoxyCodeLine{00155     std::string currWeather = this-\/>weather-\/>\mbox{\hyperlink{classWeather_ad0a29227308b87e98808cdff52232df3}{getWeather}}();}
+\DoxyCodeLine{00156 }
+\DoxyCodeLine{00157     \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Sunny"{}} \&\& randomNum > 6) \textcolor{comment}{// 60\% chance of not changing weather from Sunny and staying}}
+\DoxyCodeLine{00158         this-\/>weather-\/>\mbox{\hyperlink{classWeather_afc84c48c326fc967915833e689bfa40c}{handleChange}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00159     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Cloudy"{}} \&\& randomNum > 3) \textcolor{comment}{// 30\% chance of not changing weather from Cloudy and staying}}
+\DoxyCodeLine{00160         this-\/>weather-\/>\mbox{\hyperlink{classWeather_afc84c48c326fc967915833e689bfa40c}{handleChange}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00161     \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (currWeather == \textcolor{stringliteral}{"{}Rainy"{}} \&\& randomNum > 1) \textcolor{comment}{// 10\% chance of not changing weather from Rainy and staying}}
+\DoxyCodeLine{00162         this-\/>weather-\/>\mbox{\hyperlink{classWeather_afc84c48c326fc967915833e689bfa40c}{handleChange}}(\textcolor{keyword}{this});}
+\DoxyCodeLine{00163     }
+\DoxyCodeLine{00164 }
+\DoxyCodeLine{00165 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_a57fd5b474091af695dcc46003443d60a}\label{classKeyPoint_a57fd5b474091af695dcc46003443d60a}} 
+\index{KeyPoint@{KeyPoint}!clearBattlefield@{clearBattlefield}}
+\index{clearBattlefield@{clearBattlefield}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{clearBattlefield()}{clearBattlefield()}}
+{\footnotesize\ttfamily void Key\+Point\+::clear\+Battlefield (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})}
+
+
+
+Clears the battlefield of all deceased troops. 
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Perform attacks on other alliance troops
+\item Notify command centers of each troop who is killed
 \end{DoxyItemize}
 
 
@@ -159,18 +266,48 @@ void
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classArea}{Area}}.
-
-
-
-Definition at line 13 of file Key\+Point.\+cpp.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00061}{61}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{13                                         \{}
-\DoxyCodeLine{14     \textcolor{comment}{// TODO -\/ implement KeyPoint::attack}}
-\DoxyCodeLine{15     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{16 \}}
+\DoxyCodeLine{00061                                                   \{}
+\DoxyCodeLine{00062     \textcolor{keywordtype}{int} destroyed = 0;}
+\DoxyCodeLine{00063     \textcolor{keywordtype}{double} numUnits = 0;}
+\DoxyCodeLine{00064     \textcolor{keywordflow}{for} (vector<Entity*>::iterator it = entities.begin();  it != entities.end(); ++it) \{}
+\DoxyCodeLine{00065         \textcolor{keywordflow}{if} ((*it)-\/>getHealth() <= 0) \{}
+\DoxyCodeLine{00066             destroyed++;}
+\DoxyCodeLine{00067             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < generals.size(); i++) \{}
+\DoxyCodeLine{00068                 \textcolor{keywordflow}{if} (generals[i]-\/>getAlliance() == (*it)-\/>getAlliance()) \{}
+\DoxyCodeLine{00069                     generals[i]-\/>initiateStrategy(\textcolor{keyword}{this});}
+\DoxyCodeLine{00070                     \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{00071                     entities.erase(it);}
+\DoxyCodeLine{00072                 \}}
+\DoxyCodeLine{00073             \}}
+\DoxyCodeLine{00074         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} ((*it)-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{00075             numUnits++;}
+\DoxyCodeLine{00076         \}}
+\DoxyCodeLine{00077     \}}
+\DoxyCodeLine{00078 }
+\DoxyCodeLine{00079     \textcolor{comment}{// saving stats}}
+\DoxyCodeLine{00080     \textcolor{keywordtype}{string} stats = \mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}() + \textcolor{stringliteral}{"{}:\(\backslash\)n"{}};}
+\DoxyCodeLine{00081     stats += \textcolor{stringliteral}{"{}Key Point Satus: "{}};}
+\DoxyCodeLine{00082     \textcolor{keywordflow}{if} (numUnits / entities.size() >= 0.6) \{}
+\DoxyCodeLine{00083         stats += \textcolor{stringliteral}{"{}Winning\(\backslash\)n"{}};}
+\DoxyCodeLine{00084         RoundStats::numWinningPoints++;}
+\DoxyCodeLine{00085     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (numUnits / entities.size() >= 0.35) \{}
+\DoxyCodeLine{00086         stats += \textcolor{stringliteral}{"{}Contested\(\backslash\)n"{}};}
+\DoxyCodeLine{00087         RoundStats::numContestedPoints++;}
+\DoxyCodeLine{00088     \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{00089         stats += \textcolor{stringliteral}{"{}Losing\(\backslash\)n"{}};}
+\DoxyCodeLine{00090         RoundStats::numLosingPoints++;}
+\DoxyCodeLine{00091     \}}
+\DoxyCodeLine{00092     }
+\DoxyCodeLine{00093     stats += \textcolor{stringliteral}{"{}Number of Entities Destroyed by Alliance: "{}} + to\_string(destroyed) + \textcolor{stringliteral}{"{}\(\backslash\)n"{}};}
+\DoxyCodeLine{00094     stats += \textcolor{stringliteral}{"{}Number of Entities/Total Amount of Entities: "{}} + to\_string((\textcolor{keywordtype}{int})numUnits) + \textcolor{stringliteral}{"{}/"{}} + to\_string(entities.size());}
+\DoxyCodeLine{00095 }
+\DoxyCodeLine{00096     RoundStats::keyPointInformation.push\_back(stats);}
+\DoxyCodeLine{00097     RoundStats::numEntitiesDestroyed += destroyed;}
+\DoxyCodeLine{00098 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}\label{classKeyPoint_adc4679ca31d34b0ae3fedded47e27938}} 
@@ -193,58 +330,41 @@ Area$\ast$ The Keypoint clone
 \end{DoxyReturn}
 
 
-Implements \mbox{\hyperlink{classArea}{Area}}.
+Implements \mbox{\hyperlink{classArea_a8f95bd4832e9534e645403975435b11d}{Area}}.
 
 
 
-Definition at line 43 of file Key\+Point.\+cpp.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00141}{141}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{43                       \{}
-\DoxyCodeLine{44     \textcolor{comment}{// TODO -\/ implement KeyPoint::clone}}
-\DoxyCodeLine{45     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{46 \}}
+\DoxyCodeLine{00141                       \{}
+\DoxyCodeLine{00142     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(*\textcolor{keyword}{this});}
+\DoxyCodeLine{00143 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}\label{classKeyPoint_aea6e2eca9de4d986c1350270d0e88401}} 
-\index{KeyPoint@{KeyPoint}!detach@{detach}}
-\index{detach@{detach}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{detach()}{detach()}}
-{\footnotesize\ttfamily void Key\+Point\+::detach (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommandCenter}{Command\+Center}} $\ast$}]{com\+Center }\end{DoxyParamCaption})}
+\mbox{\Hypertarget{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}\label{classKeyPoint_a8e5315f1f4dd2427206e13709eed48e2}} 
+\index{KeyPoint@{KeyPoint}!getWeather@{getWeather}}
+\index{getWeather@{getWeather}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{getWeather()}{getWeather()}}
+{\footnotesize\ttfamily std\+::string Key\+Point\+::get\+Weather (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
 
 
 
-Removes command centers from the com\+Centers vector. 
+The weather at the current state is returned. 
 
-Preconditions\+:
-\begin{DoxyItemize}
-\item com\+Center must be a Command\+Center$\ast$
-\end{DoxyItemize}
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Removes the passed in com\+Center from the com\+Centers vector
-\end{DoxyItemize}
-
-
-\begin{DoxyParams}{Parameters}
-{\em com\+Center} & must be a Command\+Center$\ast$ \\
-\hline
-\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-void 
+string The weather state 
 \end{DoxyReturn}
 
 
-Definition at line 33 of file Key\+Point.\+cpp.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00167}{167}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{33                                               \{}
-\DoxyCodeLine{34     \textcolor{comment}{// TODO -\/ implement KeyPoint::detach}}
-\DoxyCodeLine{35     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{36 \}}
+\DoxyCodeLine{00167                                      \{}
+\DoxyCodeLine{00168     \textcolor{keywordflow}{return} this-\/>weather-\/>\mbox{\hyperlink{classWeather_ad0a29227308b87e98808cdff52232df3}{getWeather}}();}
+\DoxyCodeLine{00169 \}}
 
 \end{DoxyCode}
 \mbox{\Hypertarget{classKeyPoint_a1beb436d8efa973f3dc290a722727961}\label{classKeyPoint_a1beb436d8efa973f3dc290a722727961}} 
@@ -271,42 +391,218 @@ Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
 
-Definition at line 8 of file Key\+Point.\+cpp.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00032}{32}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{8                           \{}
-\DoxyCodeLine{9     \textcolor{comment}{// TODO -\/ implement KeyPoint::isKeyPoint}}
-\DoxyCodeLine{10     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{11 \}}
+\DoxyCodeLine{00032                           \{}
+\DoxyCodeLine{00033     \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{00034 \}}
 
 \end{DoxyCode}
-\mbox{\Hypertarget{classKeyPoint_a3fc425554378989ba83ebd22f7305f14}\label{classKeyPoint_a3fc425554378989ba83ebd22f7305f14}} 
-\index{KeyPoint@{KeyPoint}!moveEntities@{moveEntities}}
-\index{moveEntities@{moveEntities}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{moveEntities()}{moveEntities()}}
-{\footnotesize\ttfamily void Key\+Point\+::move\+Entities (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classArea}{Area}} $\ast$}]{area,  }\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}\label{classKeyPoint_a4d98646584dffb8e4d59c600e693cfe6}} 
+\index{KeyPoint@{KeyPoint}!moveEntitiesInto@{moveEntitiesInto}}
+\index{moveEntitiesInto@{moveEntitiesInto}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{moveEntitiesInto()}{moveEntitiesInto()}}
+{\footnotesize\ttfamily void Key\+Point\+::move\+Entities\+Into (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance,  }\item[{int}]{num\+Troops }\end{DoxyParamCaption})}
 
 
 
-Moves a specific alliances troops from one area to another. 
+Moves a specific alliances troops into this keypoint. 
 
 Preconditions\+:
 \begin{DoxyItemize}
-\item area must be an Area$\ast$
+\item alliance must be an Alliance$\ast$
+\item num\+Troops must be an int
 \end{DoxyItemize}
-
-alliance must be an Alliance$\ast$
 
 Postconditions\+:
 \begin{DoxyItemize}
-\item Move troops to other area
+\item Move troops to into this keypoint
 \end{DoxyItemize}
 
 
 \begin{DoxyParams}{Parameters}
-{\em area} & musy be an Area$\ast$ \\
+{\em alliance} & must be an Alliance$\ast$ \\
 \hline
+{\em num\+Troops} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00100}{100}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00100                                                                  \{}
+\DoxyCodeLine{00101     vector<Entity*> troops = alliance-\/>\mbox{\hyperlink{classAlliance_a8c93c88d5624a3445814b86496ad68d7}{getReserveEntities}}(numTroops);}
+\DoxyCodeLine{00102     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < troops.size(); i++)}
+\DoxyCodeLine{00103         entities.push\_back(troops[i]);}
+\DoxyCodeLine{00104 }
+\DoxyCodeLine{00105     \textcolor{keywordtype}{string} stats = \textcolor{stringliteral}{"{}Alliance "{}} + to\_string(alliance-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}()) + \textcolor{stringliteral}{"{} moved "{}} + to\_string(troops.size()) + \textcolor{stringliteral}{"{} entities into "{}} + \mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}();}
+\DoxyCodeLine{00106     RoundStats::entityMovementInformation.push\_back(stats);}
+\DoxyCodeLine{00107 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}\label{classKeyPoint_aa5bb6fa677e0b560adfb95e0ff30aa8a}} 
+\index{KeyPoint@{KeyPoint}!moveEntitiesOutOf@{moveEntitiesOutOf}}
+\index{moveEntitiesOutOf@{moveEntitiesOutOf}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{moveEntitiesOutOf()}{moveEntitiesOutOf()}}
+{\footnotesize\ttfamily void Key\+Point\+::move\+Entities\+Out\+Of (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance,  }\item[{int}]{num\+Troops }\end{DoxyParamCaption})}
+
+
+
+Moves a specific alliances troops out of the keypoint. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\item num\+Troops must be an int
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Move troops to reserve
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em alliance} & must be an Alliance$\ast$ \\
+\hline
+{\em num\+Troops} & must be an int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00109}{109}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00109                                                                   \{}
+\DoxyCodeLine{00110     \textcolor{keywordtype}{int} numMoved = 0;}
+\DoxyCodeLine{00111     \textcolor{keywordflow}{for} (vector<Entity*>::iterator it = entities.begin(); it != entities.end() \&\& numMoved != numTroops; ++it) \{}
+\DoxyCodeLine{00112         \textcolor{keywordflow}{if} ((*it)-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{00113             numMoved++;}
+\DoxyCodeLine{00114             alliance-\/>\mbox{\hyperlink{classAlliance_a37c4045fb37caf729d1f8f266f5f1bf0}{addReserveEntity}}(*it);}
+\DoxyCodeLine{00115             entities.erase(it);}
+\DoxyCodeLine{00116         \}}
+\DoxyCodeLine{00117     \}}
+\DoxyCodeLine{00118 }
+\DoxyCodeLine{00119     \textcolor{keywordtype}{string} stats = \textcolor{stringliteral}{"{}Alliance "{}} + to\_string(alliance-\/>\mbox{\hyperlink{classAlliance_a7f23330454f02b0056eb92bd2072359d}{getID}}()) + \textcolor{stringliteral}{"{} moved "{}} + to\_string(numMoved) + \textcolor{stringliteral}{"{} entities out of "{}} + \mbox{\hyperlink{classArea_ad67916df281b6b172c4423627b65062a}{getAreaName}}();}
+\DoxyCodeLine{00120     RoundStats::entityMovementInformation.push\_back(stats);}
+\DoxyCodeLine{00121 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_abe2ba3c8d36eb45711f396ff295fa32e}\label{classKeyPoint_abe2ba3c8d36eb45711f396ff295fa32e}} 
+\index{KeyPoint@{KeyPoint}!removeGeneral@{removeGeneral}}
+\index{removeGeneral@{removeGeneral}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{removeGeneral()}{removeGeneral()}}
+{\footnotesize\ttfamily void Key\+Point\+::remove\+General (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGeneral}{General}} $\ast$}]{general }\end{DoxyParamCaption})}
+
+
+
+removes a general to all the points held by the \mbox{\hyperlink{classWarTheatre}{War\+Theatre}} 
+
+Precoditions\+:
+\begin{DoxyItemize}
+\item general must be a General$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Add general to all points
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em general} & must be a General$\ast$ \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00131}{131}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00131                                              \{}
+\DoxyCodeLine{00132     \textcolor{keywordflow}{for} (vector<General*>::iterator it = generals.begin();  it != generals.end(); ++it) \{}
+\DoxyCodeLine{00133         \textcolor{keywordflow}{if} (*it == general) \{}
+\DoxyCodeLine{00134             \textcolor{keyword}{delete} *it;}
+\DoxyCodeLine{00135             generals.erase(it);}
+\DoxyCodeLine{00136             \textcolor{keywordflow}{return};}
+\DoxyCodeLine{00137         \}}
+\DoxyCodeLine{00138     \}}
+\DoxyCodeLine{00139 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}\label{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}} 
+\index{KeyPoint@{KeyPoint}!setWeather@{setWeather}}
+\index{setWeather@{setWeather}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{setWeather()}{setWeather()}}
+{\footnotesize\ttfamily void Key\+Point\+::set\+Weather (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classWeather}{Weather}} $\ast$}]{weather }\end{DoxyParamCaption})}
+
+
+
+Set the \mbox{\hyperlink{classWeather}{Weather}} object. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item weather must be a Weather$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item must set the key\+Points weather state
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em weather} & must be a Weather$\ast$ \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00145}{145}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00145                                           \{}
+\DoxyCodeLine{00146     \textcolor{keyword}{delete} this-\/>weather;}
+\DoxyCodeLine{00147     this-\/>weather = weather;}
+\DoxyCodeLine{00148 \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}\label{classKeyPoint_a665afb6bb5b840d8101fb9d4d9e96cd7}} 
+\index{KeyPoint@{KeyPoint}!simulateBattle@{simulateBattle}}
+\index{simulateBattle@{simulateBattle}!KeyPoint@{KeyPoint}}
+\doxysubsubsection{\texorpdfstring{simulateBattle()}{simulateBattle()}}
+{\footnotesize\ttfamily void Key\+Point\+::simulate\+Battle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classAlliance}{Alliance}} $\ast$}]{alliance }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Simulate Battle with troops from the alliance passed in. 
+
+Preconditions\+:
+\begin{DoxyItemize}
+\item alliance must be an Alliance$\ast$
+\end{DoxyItemize}
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Perform attacks on other alliance troops
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
 {\em alliance} & must be an Alliance$\ast$ \\
 \hline
 \end{DoxyParams}
@@ -319,44 +615,34 @@ Implements \mbox{\hyperlink{classArea}{Area}}.
 
 
 
-Definition at line 18 of file Key\+Point.\+cpp.
+Definition at line \mbox{\hyperlink{KeyPoint_8cpp_source_l00036}{36}} of file \mbox{\hyperlink{KeyPoint_8cpp_source}{Key\+Point.\+cpp}}.
 
 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{18                                                           \{}
-\DoxyCodeLine{19     \textcolor{comment}{// TODO -\/ implement KeyPoint::moveEntities}}
-\DoxyCodeLine{20     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{21 \}}
-
-\end{DoxyCode}
-\mbox{\Hypertarget{classKeyPoint_a5b21817babe753b2b684d70479f3eaf2}\label{classKeyPoint_a5b21817babe753b2b684d70479f3eaf2}} 
-\index{KeyPoint@{KeyPoint}!notify@{notify}}
-\index{notify@{notify}!KeyPoint@{KeyPoint}}
-\doxysubsubsection{\texorpdfstring{notify()}{notify()}}
-{\footnotesize\ttfamily void Key\+Point\+::notify (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
-
-
-
-Notifies the attached command centers when a change in the Keypoint\textquotesingle{}s state (entities or weather) occurs. 
-
-Postconditions\+:
-\begin{DoxyItemize}
-\item Notifies the command centers in the com\+Centers vector when a change in the Keypoint\textquotesingle{}s state (entities or weather) occurs
-\end{DoxyItemize}
-
-\begin{DoxyReturn}{Returns}
-void 
-\end{DoxyReturn}
-
-
-Definition at line 38 of file Key\+Point.\+cpp.
-
-
-\begin{DoxyCode}{0}
-\DoxyCodeLine{38                       \{}
-\DoxyCodeLine{39     \textcolor{comment}{// TODO -\/ implement KeyPoint::notify}}
-\DoxyCodeLine{40     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"Not yet implemented"};}
-\DoxyCodeLine{41 \}}
+\DoxyCodeLine{00036                                                 \{}
+\DoxyCodeLine{00037     \textcolor{keywordtype}{int} numUnits = 0;}
+\DoxyCodeLine{00038     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++) \{}
+\DoxyCodeLine{00039         \textcolor{keywordflow}{if} (entities[i]-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{00040             numUnits++;}
+\DoxyCodeLine{00041         \}}
+\DoxyCodeLine{00042     \}}
+\DoxyCodeLine{00043 }
+\DoxyCodeLine{00044     \textcolor{keywordflow}{if} (numUnits != entities.size()) \{}
+\DoxyCodeLine{00045         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < entities.size(); i++) \{}
+\DoxyCodeLine{00046             \textcolor{keywordflow}{if} (entities[i]-\/>getAlliance() == alliance) \{}
+\DoxyCodeLine{00047                 \textcolor{keywordtype}{int} random;}
+\DoxyCodeLine{00048                 \textcolor{keywordflow}{do} \{}
+\DoxyCodeLine{00049                     random = rand() \% entities.size();}
+\DoxyCodeLine{00050                 \} \textcolor{keywordflow}{while} (entities[random]-\/>getAlliance() == alliance);}
+\DoxyCodeLine{00051 }
+\DoxyCodeLine{00052                 \textcolor{keywordflow}{if} (rand() \% (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100) <= (\textcolor{keywordtype}{int})(weather-\/>\mbox{\hyperlink{classWeather_a608d4dbf5437b576d131fe92bf8b81d7}{getMultiplier}}() * 100))}
+\DoxyCodeLine{00053                     entities[i]-\/>dealDamage(entities[random]);}
+\DoxyCodeLine{00054             \}}
+\DoxyCodeLine{00055         \}}
+\DoxyCodeLine{00056     \}}
+\DoxyCodeLine{00057     }
+\DoxyCodeLine{00058     \mbox{\hyperlink{classKeyPoint_a57fd5b474091af695dcc46003443d60a}{clearBattlefield}}(alliance);}
+\DoxyCodeLine{00059 \}}
 
 \end{DoxyCode}
 

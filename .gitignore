@@ -26,11 +26,23 @@
 *.a
 *.lib
 
+#Directories
+tests/
+builds/
+
 # Executables
 *.exe
 *.out
 *.app
+
+#Directories
+tests/
+builds/
+
+#Other Files
 .GroupProjectUML.vpp.lck
-*GroupProjectUML.vpp.bak_*
+sh.exe.stackdump
+GroupProjectUML.vpp-journal
+*GroupProjectUML.vpp.bak*
 .gitignore
 sh.exe.stackdump

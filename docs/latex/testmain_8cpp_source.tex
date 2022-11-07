@@ -1,0 +1,108 @@
+\hypertarget{testmain_8cpp_source}{}\doxysection{testmain.\+cpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}NegotiatorTest.h"{}}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}AddOnTest.h"{}}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00003}00003 \textcolor{preprocessor}{\#include <gtest/gtest.h>}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00004}00004 \textcolor{preprocessor}{\#include "{}EasySetup.h"{}}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00005}00005 \textcolor{preprocessor}{\#include "{}WarEngine.h"{}}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00006}00006 \textcolor{preprocessor}{\#include "{}KeyPoint.h"{}}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00007}00007 \textcolor{preprocessor}{\#include "{}Negotiator.h"{}}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00008}00008 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00009}00009 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00010}00010 \textcolor{keywordtype}{void} setupWarEngine() \{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00011}00011     \mbox{\hyperlink{classAlliance}{Alliance}}* a1 = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00012}00012     a1-\/>\mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{addCountry}}(\textcolor{keyword}{new} \mbox{\hyperlink{classCountry}{Country}}(\textcolor{stringliteral}{"{}Germany"{}}));}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00013}00013 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00014}00014     \mbox{\hyperlink{classAlliance}{Alliance}}* a2 = \textcolor{keyword}{new} \mbox{\hyperlink{classAlliance}{Alliance}}();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00015}00015     a2-\/>\mbox{\hyperlink{classAlliance_a5aad3039bd784cb26755fce97c92708a}{addCountry}}(\textcolor{keyword}{new} \mbox{\hyperlink{classCountry}{Country}}(\textcolor{stringliteral}{"{}Finland"{}}));}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00017}00017     \mbox{\hyperlink{classNegotiator}{Negotiator}}* n = \textcolor{keyword}{new} \mbox{\hyperlink{classNegotiator}{Negotiator}}();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00018}00018     n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(a1);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00019}00019     n-\/>\mbox{\hyperlink{classNegotiator_acff1b9b66c8c7761d687b47a1a75883a}{addAlliance}}(a2);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00020}00020     a1-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00021}00021     a2-\/>\mbox{\hyperlink{classAlliance_ae900967c4bc7a6ee970fbefade816457}{setNegotiator}}(n);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00023}00023     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().addAlliance(a1);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00024}00024     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().addAlliance(a2);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00025}00025 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00026}00026     \mbox{\hyperlink{classKeyPoint}{KeyPoint}}* k1 = \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(\textcolor{stringliteral}{"{}West"{}});}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00027}00027     \mbox{\hyperlink{classKeyPoint}{KeyPoint}}* k2 = \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(\textcolor{stringliteral}{"{}North"{}});}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00028}00028     \mbox{\hyperlink{classKeyPoint}{KeyPoint}}* k3 = \textcolor{keyword}{new} \mbox{\hyperlink{classKeyPoint}{KeyPoint}}(\textcolor{stringliteral}{"{}East"{}});}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00029}00029 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00030}00030     \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < 100; i++) \{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00031}00031         \mbox{\hyperlink{classPersonnel}{Personnel}}* p1 = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(NULL);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00032}00032         p1-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(a1);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00033}00033         k1-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(p1-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}());}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00034}00034         k2-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(p1-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}());}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00035}00035         k3-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(p1-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}());}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00036}00036 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00037}00037         \mbox{\hyperlink{classPersonnel}{Personnel}}* p2 = \textcolor{keyword}{new} \mbox{\hyperlink{classPersonnel}{Personnel}}(NULL);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00038}00038         p2-\/>\mbox{\hyperlink{classEntity_af804dcaa600e770cf0e2b4537f6fba23}{setAlliance}}(a2);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00039}00039         k1-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(p2-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}());}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00040}00040         k2-\/>\mbox{\hyperlink{classKeyPoint_aad6d7102c8e3d11fe5f29b163f50dbc3}{addEntity}}(p2-\/>\mbox{\hyperlink{classPersonnel_a5eea18b5b6bbe0794956e53db316bd34}{clone}}());}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00041}00041     \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00042}00042 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00043}00043     \mbox{\hyperlink{classWarTheatre}{WarTheatre}}* w = \textcolor{keyword}{new} \mbox{\hyperlink{classWarTheatre}{WarTheatre}}(\textcolor{stringliteral}{"{}Europe"{}});}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00044}00044     w-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(k1);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00045}00045     w-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(k2);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00046}00046     w-\/>\mbox{\hyperlink{classWarTheatre_adc871336a6bf1263216b0f87da04cc57}{addArea}}(k3);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00047}00047 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00048}00048     \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_ad3204f345ee8d36a37e8d47700420825}{setWarTheatre}}(w);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00049}00049 \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00051}00051 \textcolor{keywordtype}{void} showTests(\textcolor{keywordtype}{int} \&argc, \textcolor{keywordtype}{char}** argv)\{\}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00052}00052 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00053}00053 \textcolor{keywordtype}{int} startWarEngine(\textcolor{keywordtype}{int} \&argc, \textcolor{keywordtype}{char}** argv)\{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00054}00054 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00055}00055     \textcolor{keywordtype}{bool} continueLoop = \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00056}00056 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00057}00057     \textcolor{keywordflow}{while}(continueLoop)\{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00058}00058         }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00059}00059         cout << \textcolor{stringliteral}{"{}Welcome to the War Simulator!\(\backslash\)n"{}} << \textcolor{stringliteral}{"{}Please select an option:"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00060}00060         }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00061}00061         cout << \textcolor{stringliteral}{"{}1) Run Google Tests\(\backslash\)n"{}} << \textcolor{stringliteral}{"{}2) Setup Simulation\(\backslash\)n"{}} << \textcolor{stringliteral}{"{}3)Quit\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00062}00062 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00063}00063         std::string userStringInput;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00064}00064 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00065}00065         cin >> userStringInput;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00066}00066 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00067}00067         \textcolor{keywordtype}{int} userOption = stoi(userStringInput);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00068}00068         }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00069}00069         \textcolor{keywordflow}{switch}(userOption)\{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00070}00070             \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00071}00071                 testing::InitGoogleTest(\&argc, argv);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00072}00072                 RUN\_ALL\_TESTS();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00073}00073                 cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00074}00074                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00075}00075             \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00076}00076                 setupWarEngine();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00077}00077                 \mbox{\hyperlink{classWarEngine_aa8219fbd385bb54ad0363257915fe986}{WarEngine::getInstance}}().\mbox{\hyperlink{classWarEngine_a8990aec96d7e77f10b39f4ac05dca43b}{simulate}}();}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00078}00078                 cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00079}00079                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00080}00080             \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00081}00081                 continueLoop = \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00082}00082                 cout << \textcolor{stringliteral}{"{}\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00083}00083                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00084}00084             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00085}00085                 cout << \textcolor{stringliteral}{"{}Please try again. Enter a valid option.\(\backslash\)n\(\backslash\)n"{}} << endl;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00086}00086         \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00087}00087     \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00088}00088 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00089}00089         \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00091}00091 \}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00092}00092 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00093}00093 \textcolor{keywordtype}{int} main(\textcolor{keywordtype}{int} argc, \textcolor{keywordtype}{char} **argv) \{}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00094}00094     \textcolor{comment}{//setupWarEngine();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00095}00095     }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00096}00096     \textcolor{comment}{//WarEngine::getInstance().simulate();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00097}00097 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00098}00098     \textcolor{comment}{//testing::InitGoogleTest(\&argc, argv);}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00099}00099     \textcolor{comment}{//return RUN\_ALL\_TESTS();}}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00100}00100     startWarEngine(argc, argv);}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00101}00101 }
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00102}00102     \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{\Hypertarget{testmain_8cpp_source_l00103}00103 \}}
+
+\end{DoxyCode}

@@ -2,10 +2,23 @@
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00001}00001 \textcolor{preprocessor}{\#include "{}Cloudy.h"{}}}
-\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00002}00002 }
-\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00003}00003 Cloudy::Cloudy() \{}
-\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00004}00004     \textcolor{comment}{// TODO -\/ implement Cloudy::Cloudy}}
-\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00005}00005     \textcolor{keywordflow}{throw} \textcolor{stringliteral}{"{}Not yet implemented"{}};}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00002}00002 \textcolor{preprocessor}{\#include "{}Rainy.h"{}}}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00003}00003 }
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00004}\mbox{\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{00004}} \mbox{\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{Cloudy::Cloudy}}(): \mbox{\hyperlink{classWeather}{Weather}}() \{}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00005}00005     this-\/>multiplier = 0.75;}
 \DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00006}00006 \}}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00007}00007 }
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00008}\mbox{\hyperlink{classCloudy_a859714ec61c789dc12ed5447fd3692ac}{00008}} std::string \mbox{\hyperlink{classCloudy_a859714ec61c789dc12ed5447fd3692ac}{Cloudy::getWeather}}() \{}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00009}00009     \textcolor{keywordflow}{return} \textcolor{stringliteral}{"{}Cloudy"{}};}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00010}00010 \}}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00012}\mbox{\hyperlink{classCloudy_aa3f7fb24e81ddfd3560dadd329fd218c}{00012}} \textcolor{keywordtype}{void} \mbox{\hyperlink{classCloudy_aa3f7fb24e81ddfd3560dadd329fd218c}{Cloudy::handleChange}}(\mbox{\hyperlink{classKeyPoint}{KeyPoint}}* k) \{}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00013}00013     \mbox{\hyperlink{classRainy}{Rainy}}* newWeather = \textcolor{keyword}{new} \mbox{\hyperlink{classRainy}{Rainy}}();}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00014}00014     k-\/>\mbox{\hyperlink{classKeyPoint_a5c4b9314440a00fca7ab4d82ea4693a5}{setWeather}}(newWeather);}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00015}00015 \}}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00016}00016 }
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00017}\mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{00017}} \mbox{\hyperlink{classWeather}{Weather}}* \mbox{\hyperlink{classCloudy_ab55ddd71864e27bb1f02f0af8d44a206}{Cloudy::clone}}() \{}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00018}00018     \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classCloudy_a343d3f7df85d665400b9c945e1d70e9f}{Cloudy}}();}
+\DoxyCodeLine{\Hypertarget{Cloudy_8cpp_source_l00019}00019 \}}
 
 \end{DoxyCode}

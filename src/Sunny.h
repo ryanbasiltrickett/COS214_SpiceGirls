@@ -1,8 +1,11 @@
 #ifndef SUNNY_H
 #define SUNNY_H
+#include "Weather.h"
+#include "KeyPoint.h"
 
-class Sunny : Weather {
+#include "Weather.h"
 
+class Sunny : public Weather {
 
 public:
 	/**
@@ -11,7 +14,7 @@ public:
 	Sunny();
 
 	/**
-	 * @brief Returns string which tels us the weather
+	 * @brief Returns string which tells us the weather
 	 *
 	 * Postconditions:
 	 *  - Returns the wether of ths current state
@@ -29,10 +32,19 @@ public:
 	 * Postconditions:
 	 *  - Changes the current weather to the next one in the state pattern (Cloudy)
 	 *
-	 * @param k must be a KeyPoint*
+	 * @param keypoint must be a KeyPoint*
 	 * @return void
 	 */
-	virtual void handleChange(KeyPoint* k);
+	virtual void handleChange(KeyPoint* keypoint);
+
+	/**
+	 * @brief Returns the cloned object of Sunny
+	 * PostConditions:
+	 * - Returns cloned object of Sunny
+	 * 
+	 * @return Weather* The cloned object
+	 */
+	Weather* clone();
 };
 
 #endif

@@ -3,16 +3,21 @@
 \begin{DoxyCode}{0}
 \DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef DEFENSIVE\_H}}
 \DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00002}00002 \textcolor{preprocessor}{\#define DEFENSIVE\_H}}
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00003}00003 }
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00004}\mbox{\hyperlink{classDefensive}{00004}} \textcolor{keyword}{class }\mbox{\hyperlink{classDefensive}{Defensive}} : \mbox{\hyperlink{classStrategy}{Strategy}} \{}
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00005}00005 }
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00006}00006 }
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00007}00007 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00008}00008     \mbox{\hyperlink{classDefensive}{Defensive}}();}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00003}00003 \textcolor{preprocessor}{\#include "{}Strategy.h"{}}}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}KeyPoint.h"{}}}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00005}00005 \textcolor{preprocessor}{\#include "{}Alliance.h"{}}}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00006}00006 \textcolor{preprocessor}{\#include "{}Personnel.h"{}}}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00007}\mbox{\hyperlink{classDefensive}{00007}} \textcolor{keyword}{class }\mbox{\hyperlink{classDefensive}{Defensive}} : \textcolor{keyword}{public} \mbox{\hyperlink{classStrategy}{Strategy}} \{}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00008}00008 }
 \DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00009}00009 }
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00010}00010     \textcolor{keywordtype}{void} performStrat(Keypoint* keyPoint);}
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00011}00011 \};}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00010}00010 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00011}00011     \mbox{\hyperlink{classDefensive}{Defensive}}();}
 \DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00012}00012 }
-\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00013}00013 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00022}00022     \textcolor{keywordtype}{void} \mbox{\hyperlink{classDefensive_a4cc4f2f71160bcade2cf2be8ade39903}{performStrat}}(\mbox{\hyperlink{classKeyPoint}{KeyPoint}}* keyPoint, \mbox{\hyperlink{classAlliance}{Alliance}}* alliance);}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00023}00023 }
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00029}00029     \mbox{\hyperlink{classStrategy}{Strategy}}* \mbox{\hyperlink{classDefensive_afad21efc8bf51879f85f9d02e695cfa6}{clone}}();}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00030}00030 \};}
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{Defensive_8h_source_l00032}00032 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

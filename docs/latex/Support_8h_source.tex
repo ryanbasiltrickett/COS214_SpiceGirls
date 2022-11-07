@@ -4,17 +4,20 @@
 \DoxyCodeLine{\Hypertarget{Support_8h_source_l00001}00001 \textcolor{preprocessor}{\#ifndef SUPPORT\_H}}
 \DoxyCodeLine{\Hypertarget{Support_8h_source_l00002}00002 \textcolor{preprocessor}{\#define SUPPORT\_H}}
 \DoxyCodeLine{\Hypertarget{Support_8h_source_l00003}00003 }
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00004}\mbox{\hyperlink{classSupport}{00004}} \textcolor{keyword}{class }\mbox{\hyperlink{classSupport}{Support}} : \mbox{\hyperlink{classEntity}{Entity}} \{}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00004}00004 \textcolor{preprocessor}{\#include "{}Entity.h"{}}}
 \DoxyCodeLine{\Hypertarget{Support_8h_source_l00005}00005 }
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00006}00006 }
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00007}00007 \textcolor{keyword}{public}:}
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00013}00013     \mbox{\hyperlink{classSupport_a19bf40018bf3004487c65f7e68c9f65e}{Support}}();}
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00014}00014 }
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00027}\mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{00027}}     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{takeDamage}}(\textcolor{keywordtype}{int} damage);}
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00028}00028 }
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00041}00041     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity);}
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00042}00042 \};}
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00043}00043 }
-\DoxyCodeLine{\Hypertarget{Support_8h_source_l00044}00044 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00011}\mbox{\hyperlink{classSupport}{00011}} \textcolor{keyword}{class }\mbox{\hyperlink{classSupport}{Support}} : \textcolor{keyword}{public} \mbox{\hyperlink{classEntity}{Entity}} \{}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00013}00013 \textcolor{keyword}{public}:}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00021}00021     \mbox{\hyperlink{classSupport}{Support}}(\mbox{\hyperlink{classType}{Type}}* type, \textcolor{keywordtype}{int} health = 1000, \textcolor{keywordtype}{int} damage = 30);}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00022}00022 }
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00038}00038     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_afb159bd8c474ec67ad5d03fa24c38564}{takeDamage}}(\textcolor{keywordtype}{int} damage);}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00052}00052     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSupport_a5f2cb243e746adea36b3c78548029ce3}{dealDamage}}(\mbox{\hyperlink{classEntity}{Entity}}* entity);}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00053}00053 }
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00059}00059     \mbox{\hyperlink{classEntity}{Entity}}* \mbox{\hyperlink{classSupport_aa54197d3679118ba6c2dfaf7f15ac5de}{clone}}();}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00060}00060 \};}
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00061}00061 }
+\DoxyCodeLine{\Hypertarget{Support_8h_source_l00062}00062 \textcolor{preprocessor}{\#endif}}
 
 \end{DoxyCode}

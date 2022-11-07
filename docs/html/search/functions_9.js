@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loadstate_153',['loadState',['../classWarEngine.html#a76994dd9d009fff3dd272a87710bfae5',1,'WarEngine']]]
+  ['loadsave_0',['loadSave',['../classWarEngine.html#a715995a703811197d16102ca80bf6fca',1,'WarEngine']]]
 ];

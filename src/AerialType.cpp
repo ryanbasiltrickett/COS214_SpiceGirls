@@ -1,11 +1,11 @@
 #include "AerialType.h"
 
-AerialType::AerialType() {
-	// TODO - implement AerialType::AerialType
-	throw "Not yet implemented";
-}
+AerialType::AerialType() {}
 
 string AerialType::getTypeDesc() {
-	// TODO - implement AerialType::getTypeDesc
-	throw "Not yet implemented";
+	return "Aerial";
+}
+
+Type* AerialType::clone() {
+	return new AerialType();
 }

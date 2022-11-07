@@ -1,0 +1,588 @@
+\begin{theindex}
+
+  \item {$\sim$Alliance}
+    \subitem {Alliance}, \hyperpage{22}
+  \item {$\sim$Area}
+    \subitem {Area}, \hyperpage{32}
+  \item {$\sim$Factory}
+    \subitem {Factory}, \hyperpage{59}
+  \item {$\sim$KeyPoint}
+    \subitem {KeyPoint}, \hyperpage{66}
+  \item {$\sim$Negotiator}
+    \subitem {Negotiator}, \hyperpage{74}
+  \item {$\sim$Strategy}
+    \subitem {Strategy}, \hyperpage{97}
+  \item {$\sim$WarEngine}
+    \subitem {WarEngine}, \hyperpage{117}
+  \item {$\sim$WarEngineState}
+    \subitem {WarEngineState}, \hyperpage{123}
+  \item {$\sim$WarTheatre}
+    \subitem {WarTheatre}, \hyperpage{127}
+  \item {$\sim$Weather}
+    \subitem {Weather}, \hyperpage{131}
+
+  \indexspace
+
+  \item {addAlliance}
+    \subitem {Negotiator}, \hyperpage{75}
+    \subitem {WarEngine}, \hyperpage{117}
+  \item {addArea}
+    \subitem {WarTheatre}, \hyperpage{127}
+  \item {addCountry}
+    \subitem {Alliance}, \hyperpage{23}
+  \item {addEntity}
+    \subitem {KeyPoint}, \hyperpage{66}
+  \item {addFactory}
+    \subitem {Alliance}, \hyperpage{23}
+  \item {addGeneral}
+    \subitem {Area}, \hyperpage{33}
+    \subitem {KeyPoint}, \hyperpage{67}
+    \subitem {WarTheatre}, \hyperpage{128}
+  \item {addNewSave}
+    \subitem {SaveArchive}, \hyperpage{93}
+  \item {AddOn}, \hyperpage{7}
+    \subitem {AddOn}, \hyperpage{8}
+    \subitem {clone}, \hyperpage{9}
+    \subitem {dealDamage}, \hyperpage{9}
+    \subitem {entity}, \hyperpage{17}
+    \subitem {getAlliance}, \hyperpage{10}
+    \subitem {getDamage}, \hyperpage{10}
+    \subitem {getEntity}, \hyperpage{10}
+    \subitem {getHealth}, \hyperpage{11}
+    \subitem {getType}, \hyperpage{11}
+    \subitem {getValue}, \hyperpage{12}
+    \subitem {setAlliance}, \hyperpage{12}
+    \subitem {setDamage}, \hyperpage{13}
+    \subitem {setEntity}, \hyperpage{13}
+    \subitem {setHealth}, \hyperpage{14}
+    \subitem {setType}, \hyperpage{15}
+    \subitem {setValue}, \hyperpage{15}
+    \subitem {takeDamage}, \hyperpage{16}
+    \subitem {value}, \hyperpage{17}
+  \item {addReserveEntity}
+    \subitem {Alliance}, \hyperpage{24}
+  \item {AerialType}, \hyperpage{17}
+    \subitem {AerialType}, \hyperpage{18}
+    \subitem {clone}, \hyperpage{18}
+    \subitem {getTypeDesc}, \hyperpage{18}
+  \item {Aggressive}, \hyperpage{19}
+    \subitem {Aggressive}, \hyperpage{20}
+    \subitem {clone}, \hyperpage{20}
+    \subitem {performStrat}, \hyperpage{20}
+  \item {Alliance}, \hyperpage{21}
+    \subitem {$\sim$Alliance}, \hyperpage{22}
+    \subitem {addCountry}, \hyperpage{23}
+    \subitem {addFactory}, \hyperpage{23}
+    \subitem {addReserveEntity}, \hyperpage{24}
+    \subitem {Alliance}, \hyperpage{22}
+    \subitem {clone}, \hyperpage{25}
+    \subitem {considerPeace}, \hyperpage{25}
+    \subitem {getActive}, \hyperpage{25}
+    \subitem {getID}, \hyperpage{26}
+    \subitem {getReserveEntities}, \hyperpage{26}
+    \subitem {numRemainingEntities}, \hyperpage{27}
+    \subitem {offerPeace}, \hyperpage{27}
+    \subitem {runFactories}, \hyperpage{27}
+    \subitem {setActiveStatus}, \hyperpage{28}
+    \subitem {setNegotiator}, \hyperpage{28}
+    \subitem {surrender}, \hyperpage{29}
+  \item {AquaticType}, \hyperpage{30}
+    \subitem {AquaticType}, \hyperpage{30}
+    \subitem {clone}, \hyperpage{30}
+    \subitem {getTypeDesc}, \hyperpage{31}
+  \item {Area}, \hyperpage{32}
+    \subitem {$\sim$Area}, \hyperpage{32}
+    \subitem {addGeneral}, \hyperpage{33}
+    \subitem {Area}, \hyperpage{32}
+    \subitem {clone}, \hyperpage{33}
+    \subitem {getAreaName}, \hyperpage{33}
+    \subitem {isKeyPoint}, \hyperpage{34}
+    \subitem {simulateBattle}, \hyperpage{34}
+  \item {Armour}, \hyperpage{34}
+    \subitem {Armour}, \hyperpage{35}
+    \subitem {clone}, \hyperpage{35}
+    \subitem {dealDamage}, \hyperpage{36}
+    \subitem {takeDamage}, \hyperpage{36}
+
+  \indexspace
+
+  \item {changeWeather}
+    \subitem {KeyPoint}, \hyperpage{67}
+  \item {clearBattlefield}
+    \subitem {KeyPoint}, \hyperpage{68}
+  \item {clearSaveList}
+    \subitem {SaveArchive}, \hyperpage{93}
+  \item {clearStats}
+    \subitem {RoundStats}, \hyperpage{90}
+  \item {clone}
+    \subitem {AddOn}, \hyperpage{9}
+    \subitem {AerialType}, \hyperpage{18}
+    \subitem {Aggressive}, \hyperpage{20}
+    \subitem {Alliance}, \hyperpage{25}
+    \subitem {AquaticType}, \hyperpage{30}
+    \subitem {Area}, \hyperpage{33}
+    \subitem {Armour}, \hyperpage{35}
+    \subitem {Cloudy}, \hyperpage{38}
+    \subitem {Country}, \hyperpage{41}
+    \subitem {Defensive}, \hyperpage{44}
+    \subitem {Entity}, \hyperpage{51}
+    \subitem {Factory}, \hyperpage{59}
+    \subitem {KeyPoint}, \hyperpage{69}
+    \subitem {Passive}, \hyperpage{78}
+    \subitem {Personnel}, \hyperpage{80}
+    \subitem {PersonnelFactory}, \hyperpage{83}
+    \subitem {Piercing}, \hyperpage{85}
+    \subitem {Rainy}, \hyperpage{88}
+    \subitem {Strategy}, \hyperpage{97}
+    \subitem {Sunny}, \hyperpage{99}
+    \subitem {Support}, \hyperpage{102}
+    \subitem {SupportFactory}, \hyperpage{105}
+    \subitem {TerrainType}, \hyperpage{107}
+    \subitem {Type}, \hyperpage{109}
+    \subitem {Vehicle}, \hyperpage{111}
+    \subitem {VehicleFactory}, \hyperpage{114}
+    \subitem {WarEngineState}, \hyperpage{123}
+    \subitem {WarTheatre}, \hyperpage{128}
+    \subitem {Weather}, \hyperpage{131}
+  \item {Cloudy}, \hyperpage{37}
+    \subitem {clone}, \hyperpage{38}
+    \subitem {Cloudy}, \hyperpage{38}
+    \subitem {getWeather}, \hyperpage{38}
+    \subitem {handleChange}, \hyperpage{39}
+  \item {considerPeace}
+    \subitem {Alliance}, \hyperpage{25}
+  \item {Country}, \hyperpage{40}
+    \subitem {clone}, \hyperpage{41}
+    \subitem {Country}, \hyperpage{40}
+    \subitem {getID}, \hyperpage{41}
+    \subitem {getName}, \hyperpage{41}
+    \subitem {setID}, \hyperpage{42}
+    \subitem {setName}, \hyperpage{42}
+  \item {createEntity}
+    \subitem {Factory}, \hyperpage{59}
+    \subitem {PersonnelFactory}, \hyperpage{83}
+    \subitem {SupportFactory}, \hyperpage{105}
+    \subitem {VehicleFactory}, \hyperpage{115}
+
+  \indexspace
+
+  \item {damageDone}
+    \subitem {RoundStats}, \hyperpage{90}
+  \item {dealDamage}
+    \subitem {AddOn}, \hyperpage{9}
+    \subitem {Armour}, \hyperpage{36}
+    \subitem {Entity}, \hyperpage{51}
+    \subitem {Personnel}, \hyperpage{80}
+    \subitem {Piercing}, \hyperpage{85}
+    \subitem {Support}, \hyperpage{102}
+    \subitem {Vehicle}, \hyperpage{112}
+  \item {Defensive}, \hyperpage{43}
+    \subitem {clone}, \hyperpage{44}
+    \subitem {Defensive}, \hyperpage{43}
+    \subitem {performStrat}, \hyperpage{44}
+  \item {deleteSave}
+    \subitem {SaveArchive}, \hyperpage{94}
+
+  \indexspace
+
+  \item {EasySetup}, \hyperpage{45}
+    \subitem {EasySetup}, \hyperpage{45}
+    \subitem {loadPrevSave}, \hyperpage{45}
+    \subitem {loadSpecificSave}, \hyperpage{46}
+    \subitem {runSimulation}, \hyperpage{46}
+    \subitem {saveSimulationSetup}, \hyperpage{46}
+    \subitem {setupSimulation}, \hyperpage{46}
+  \item {Entity}, \hyperpage{50}
+    \subitem {clone}, \hyperpage{51}
+    \subitem {dealDamage}, \hyperpage{51}
+    \subitem {Entity}, \hyperpage{51}
+    \subitem {getAlliance}, \hyperpage{52}
+    \subitem {getDamage}, \hyperpage{52}
+    \subitem {getHealth}, \hyperpage{53}
+    \subitem {getType}, \hyperpage{53}
+    \subitem {setAlliance}, \hyperpage{54}
+    \subitem {setDamage}, \hyperpage{55}
+    \subitem {setHealth}, \hyperpage{55}
+    \subitem {setType}, \hyperpage{56}
+    \subitem {takeDamage}, \hyperpage{56}
+  \item {entity}
+    \subitem {AddOn}, \hyperpage{17}
+  \item {entityMovementInformation}
+    \subitem {RoundStats}, \hyperpage{90}
+
+  \indexspace
+
+  \item {Factory}, \hyperpage{58}
+    \subitem {$\sim$Factory}, \hyperpage{59}
+    \subitem {clone}, \hyperpage{59}
+    \subitem {createEntity}, \hyperpage{59}
+    \subitem {Factory}, \hyperpage{58}
+    \subitem {getAddOn}, \hyperpage{60}
+    \subitem {getType}, \hyperpage{60}
+    \subitem {setAddOns}, \hyperpage{60}
+    \subitem {setType}, \hyperpage{61}
+
+  \indexspace
+
+  \item {General}, \hyperpage{62}
+    \subitem {General}, \hyperpage{62}
+    \subitem {getAlliance}, \hyperpage{62}
+    \subitem {initiateStrategy}, \hyperpage{63}
+    \subitem {setStrategy}, \hyperpage{63}
+  \item {getActive}
+    \subitem {Alliance}, \hyperpage{25}
+  \item {getAddOn}
+    \subitem {Factory}, \hyperpage{60}
+  \item {getAlliance}
+    \subitem {AddOn}, \hyperpage{10}
+    \subitem {Entity}, \hyperpage{52}
+    \subitem {General}, \hyperpage{62}
+  \item {getAlliances}
+    \subitem {WarEngineState}, \hyperpage{123}
+  \item {getArea}
+    \subitem {WarEngineState}, \hyperpage{124}
+  \item {getAreaName}
+    \subitem {Area}, \hyperpage{33}
+  \item {getDamage}
+    \subitem {AddOn}, \hyperpage{10}
+    \subitem {Entity}, \hyperpage{52}
+  \item {getEntity}
+    \subitem {AddOn}, \hyperpage{10}
+  \item {getHealth}
+    \subitem {AddOn}, \hyperpage{11}
+    \subitem {Entity}, \hyperpage{53}
+  \item {getID}
+    \subitem {Alliance}, \hyperpage{26}
+    \subitem {Country}, \hyperpage{41}
+  \item {getInstance}
+    \subitem {WarEngine}, \hyperpage{118}
+  \item {getLastSave}
+    \subitem {SaveArchive}, \hyperpage{94}
+  \item {getMultiplier}
+    \subitem {Weather}, \hyperpage{131}
+  \item {getName}
+    \subitem {Country}, \hyperpage{41}
+  \item {getNumAlliances}
+    \subitem {Negotiator}, \hyperpage{75}
+  \item {getReserveEntities}
+    \subitem {Alliance}, \hyperpage{26}
+  \item {getSave}
+    \subitem {SaveArchive}, \hyperpage{95}
+  \item {getType}
+    \subitem {AddOn}, \hyperpage{11}
+    \subitem {Entity}, \hyperpage{53}
+    \subitem {Factory}, \hyperpage{60}
+  \item {getTypeDesc}
+    \subitem {AerialType}, \hyperpage{18}
+    \subitem {AquaticType}, \hyperpage{31}
+    \subitem {TerrainType}, \hyperpage{107}
+    \subitem {Type}, \hyperpage{109}
+  \item {getValue}
+    \subitem {AddOn}, \hyperpage{12}
+  \item {getWeather}
+    \subitem {Cloudy}, \hyperpage{38}
+    \subitem {KeyPoint}, \hyperpage{69}
+    \subitem {Rainy}, \hyperpage{88}
+    \subitem {Sunny}, \hyperpage{99}
+    \subitem {Weather}, \hyperpage{132}
+
+  \indexspace
+
+  \item {handleChange}
+    \subitem {Cloudy}, \hyperpage{39}
+    \subitem {Rainy}, \hyperpage{88}
+    \subitem {Sunny}, \hyperpage{100}
+    \subitem {Weather}, \hyperpage{132}
+
+  \indexspace
+
+  \item {initiateStrategy}
+    \subitem {General}, \hyperpage{63}
+  \item {isKeyPoint}
+    \subitem {Area}, \hyperpage{34}
+    \subitem {KeyPoint}, \hyperpage{69}
+    \subitem {WarTheatre}, \hyperpage{129}
+
+  \indexspace
+
+  \item {KeyPoint}, \hyperpage{64}
+    \subitem {$\sim$KeyPoint}, \hyperpage{66}
+    \subitem {addEntity}, \hyperpage{66}
+    \subitem {addGeneral}, \hyperpage{67}
+    \subitem {changeWeather}, \hyperpage{67}
+    \subitem {clearBattlefield}, \hyperpage{68}
+    \subitem {clone}, \hyperpage{69}
+    \subitem {getWeather}, \hyperpage{69}
+    \subitem {isKeyPoint}, \hyperpage{69}
+    \subitem {KeyPoint}, \hyperpage{65, 66}
+    \subitem {moveEntitiesInto}, \hyperpage{70}
+    \subitem {moveEntitiesOutOf}, \hyperpage{71}
+    \subitem {removeGeneral}, \hyperpage{71}
+    \subitem {setWeather}, \hyperpage{72}
+    \subitem {simulateBattle}, \hyperpage{73}
+  \item {keyPointInformation}
+    \subitem {RoundStats}, \hyperpage{91}
+
+  \indexspace
+
+  \item {loadPrevSave}
+    \subitem {EasySetup}, \hyperpage{45}
+  \item {loadSave}
+    \subitem {WarEngine}, \hyperpage{118}
+  \item {loadSpecificSave}
+    \subitem {EasySetup}, \hyperpage{46}
+
+  \indexspace
+
+  \item {moveEntitiesInto}
+    \subitem {KeyPoint}, \hyperpage{70}
+  \item {moveEntitiesOutOf}
+    \subitem {KeyPoint}, \hyperpage{71}
+  \item {multiplier}
+    \subitem {Weather}, \hyperpage{133}
+
+  \indexspace
+
+  \item {Negotiator}, \hyperpage{74}
+    \subitem {$\sim$Negotiator}, \hyperpage{74}
+    \subitem {addAlliance}, \hyperpage{75}
+    \subitem {getNumAlliances}, \hyperpage{75}
+    \subitem {Negotiator}, \hyperpage{74}
+    \subitem {removeAlliance}, \hyperpage{75}
+    \subitem {sendPeace}, \hyperpage{76}
+  \item {numContestedPoints}
+    \subitem {RoundStats}, \hyperpage{91}
+  \item {numEntitiesCreated}
+    \subitem {RoundStats}, \hyperpage{91}
+  \item {numEntitiesDestroyed}
+    \subitem {RoundStats}, \hyperpage{91}
+  \item {numLosingPoints}
+    \subitem {RoundStats}, \hyperpage{91}
+  \item {numRemainingEntities}
+    \subitem {Alliance}, \hyperpage{27}
+  \item {numWinningPoints}
+    \subitem {RoundStats}, \hyperpage{91}
+
+  \indexspace
+
+  \item {offerPeace}
+    \subitem {Alliance}, \hyperpage{27}
+  \item {operator=}
+    \subitem {WarEngine}, \hyperpage{119}
+
+  \indexspace
+
+  \item {Passive}, \hyperpage{77}
+    \subitem {clone}, \hyperpage{78}
+    \subitem {Passive}, \hyperpage{77}
+    \subitem {performStrat}, \hyperpage{78}
+  \item {performStrat}
+    \subitem {Aggressive}, \hyperpage{20}
+    \subitem {Defensive}, \hyperpage{44}
+    \subitem {Passive}, \hyperpage{78}
+    \subitem {Strategy}, \hyperpage{97}
+  \item {Personnel}, \hyperpage{79}
+    \subitem {clone}, \hyperpage{80}
+    \subitem {dealDamage}, \hyperpage{80}
+    \subitem {Personnel}, \hyperpage{79}
+    \subitem {takeDamage}, \hyperpage{81}
+  \item {PersonnelFactory}, \hyperpage{82}
+    \subitem {clone}, \hyperpage{83}
+    \subitem {createEntity}, \hyperpage{83}
+    \subitem {PersonnelFactory}, \hyperpage{82}
+  \item {Piercing}, \hyperpage{84}
+    \subitem {clone}, \hyperpage{85}
+    \subitem {dealDamage}, \hyperpage{85}
+    \subitem {Piercing}, \hyperpage{85}
+    \subitem {takeDamage}, \hyperpage{86}
+
+  \indexspace
+
+  \item {Rainy}, \hyperpage{87}
+    \subitem {clone}, \hyperpage{88}
+    \subitem {getWeather}, \hyperpage{88}
+    \subitem {handleChange}, \hyperpage{88}
+    \subitem {Rainy}, \hyperpage{88}
+  \item {removeAlliance}
+    \subitem {Negotiator}, \hyperpage{75}
+  \item {removeGeneral}
+    \subitem {KeyPoint}, \hyperpage{71}
+  \item {RoundStats}, \hyperpage{89}
+    \subitem {clearStats}, \hyperpage{90}
+    \subitem {damageDone}, \hyperpage{90}
+    \subitem {entityMovementInformation}, \hyperpage{90}
+    \subitem {keyPointInformation}, \hyperpage{91}
+    \subitem {numContestedPoints}, \hyperpage{91}
+    \subitem {numEntitiesCreated}, \hyperpage{91}
+    \subitem {numEntitiesDestroyed}, \hyperpage{91}
+    \subitem {numLosingPoints}, \hyperpage{91}
+    \subitem {numWinningPoints}, \hyperpage{91}
+    \subitem {toString}, \hyperpage{90}
+  \item {runFactories}
+    \subitem {Alliance}, \hyperpage{27}
+  \item {runSimulation}
+    \subitem {EasySetup}, \hyperpage{46}
+
+  \indexspace
+
+  \item {SaveArchive}, \hyperpage{92}
+    \subitem {addNewSave}, \hyperpage{93}
+    \subitem {clearSaveList}, \hyperpage{93}
+    \subitem {deleteSave}, \hyperpage{94}
+    \subitem {getLastSave}, \hyperpage{94}
+    \subitem {getSave}, \hyperpage{95}
+    \subitem {SaveArchive}, \hyperpage{92}
+  \item {saveSimulationSetup}
+    \subitem {EasySetup}, \hyperpage{46}
+  \item {saveState}
+    \subitem {WarEngine}, \hyperpage{119}
+  \item {sendPeace}
+    \subitem {Negotiator}, \hyperpage{76}
+  \item {setActiveStatus}
+    \subitem {Alliance}, \hyperpage{28}
+  \item {setAddOns}
+    \subitem {Factory}, \hyperpage{60}
+  \item {setAlliance}
+    \subitem {AddOn}, \hyperpage{12}
+    \subitem {Entity}, \hyperpage{54}
+  \item {setAlliances}
+    \subitem {WarEngineState}, \hyperpage{124}
+  \item {setArea}
+    \subitem {WarEngineState}, \hyperpage{125}
+  \item {setDamage}
+    \subitem {AddOn}, \hyperpage{13}
+    \subitem {Entity}, \hyperpage{55}
+  \item {setEntity}
+    \subitem {AddOn}, \hyperpage{13}
+  \item {setHealth}
+    \subitem {AddOn}, \hyperpage{14}
+    \subitem {Entity}, \hyperpage{55}
+  \item {setID}
+    \subitem {Country}, \hyperpage{42}
+  \item {setName}
+    \subitem {Country}, \hyperpage{42}
+  \item {setNegotiator}
+    \subitem {Alliance}, \hyperpage{28}
+  \item {setStrategy}
+    \subitem {General}, \hyperpage{63}
+  \item {setType}
+    \subitem {AddOn}, \hyperpage{15}
+    \subitem {Entity}, \hyperpage{56}
+    \subitem {Factory}, \hyperpage{61}
+  \item {setupSimulation}
+    \subitem {EasySetup}, \hyperpage{46}
+  \item {setValue}
+    \subitem {AddOn}, \hyperpage{15}
+  \item {setWarTheatre}
+    \subitem {WarEngine}, \hyperpage{119}
+  \item {setWeather}
+    \subitem {KeyPoint}, \hyperpage{72}
+  \item {simulate}
+    \subitem {WarEngine}, \hyperpage{120}
+  \item {simulateBattle}
+    \subitem {Area}, \hyperpage{34}
+    \subitem {KeyPoint}, \hyperpage{73}
+    \subitem {WarTheatre}, \hyperpage{129}
+  \item {Strategy}, \hyperpage{96}
+    \subitem {$\sim$Strategy}, \hyperpage{97}
+    \subitem {clone}, \hyperpage{97}
+    \subitem {performStrat}, \hyperpage{97}
+    \subitem {Strategy}, \hyperpage{97}
+    \subitem {strategy}, \hyperpage{98}
+  \item {strategy}
+    \subitem {Strategy}, \hyperpage{98}
+  \item {Sunny}, \hyperpage{98}
+    \subitem {clone}, \hyperpage{99}
+    \subitem {getWeather}, \hyperpage{99}
+    \subitem {handleChange}, \hyperpage{100}
+    \subitem {Sunny}, \hyperpage{99}
+  \item {Support}, \hyperpage{101}
+    \subitem {clone}, \hyperpage{102}
+    \subitem {dealDamage}, \hyperpage{102}
+    \subitem {Support}, \hyperpage{101}
+    \subitem {takeDamage}, \hyperpage{103}
+  \item {SupportFactory}, \hyperpage{104}
+    \subitem {clone}, \hyperpage{105}
+    \subitem {createEntity}, \hyperpage{105}
+    \subitem {SupportFactory}, \hyperpage{104}
+  \item {surrender}
+    \subitem {Alliance}, \hyperpage{29}
+
+  \indexspace
+
+  \item {takeDamage}
+    \subitem {AddOn}, \hyperpage{16}
+    \subitem {Armour}, \hyperpage{36}
+    \subitem {Entity}, \hyperpage{56}
+    \subitem {Personnel}, \hyperpage{81}
+    \subitem {Piercing}, \hyperpage{86}
+    \subitem {Support}, \hyperpage{103}
+    \subitem {Vehicle}, \hyperpage{112}
+  \item {TerrainType}, \hyperpage{106}
+    \subitem {clone}, \hyperpage{107}
+    \subitem {getTypeDesc}, \hyperpage{107}
+    \subitem {TerrainType}, \hyperpage{107}
+  \item {toString}
+    \subitem {RoundStats}, \hyperpage{90}
+  \item {Type}, \hyperpage{108}
+    \subitem {clone}, \hyperpage{109}
+    \subitem {getTypeDesc}, \hyperpage{109}
+    \subitem {Type}, \hyperpage{109}
+
+  \indexspace
+
+  \item {value}
+    \subitem {AddOn}, \hyperpage{17}
+  \item {Vehicle}, \hyperpage{110}
+    \subitem {clone}, \hyperpage{111}
+    \subitem {dealDamage}, \hyperpage{112}
+    \subitem {takeDamage}, \hyperpage{112}
+    \subitem {Vehicle}, \hyperpage{111}
+  \item {VehicleFactory}, \hyperpage{113}
+    \subitem {clone}, \hyperpage{114}
+    \subitem {createEntity}, \hyperpage{115}
+    \subitem {VehicleFactory}, \hyperpage{114}
+
+  \indexspace
+
+  \item {WarEngine}, \hyperpage{116}
+    \subitem {$\sim$WarEngine}, \hyperpage{117}
+    \subitem {addAlliance}, \hyperpage{117}
+    \subitem {getInstance}, \hyperpage{118}
+    \subitem {loadSave}, \hyperpage{118}
+    \subitem {operator=}, \hyperpage{119}
+    \subitem {saveState}, \hyperpage{119}
+    \subitem {setWarTheatre}, \hyperpage{119}
+    \subitem {simulate}, \hyperpage{120}
+    \subitem {WarEngine}, \hyperpage{116, 117}
+    \subitem {WarEngineMemento}, \hyperpage{121}
+    \subitem {WarEngineState}, \hyperpage{126}
+  \item {WarEngineMemento}, \hyperpage{121}
+    \subitem {WarEngine}, \hyperpage{121}
+  \item {WarEngineState}, \hyperpage{122}
+    \subitem {$\sim$WarEngineState}, \hyperpage{123}
+    \subitem {clone}, \hyperpage{123}
+    \subitem {getAlliances}, \hyperpage{123}
+    \subitem {getArea}, \hyperpage{124}
+    \subitem {setAlliances}, \hyperpage{124}
+    \subitem {setArea}, \hyperpage{125}
+    \subitem {WarEngine}, \hyperpage{126}
+    \subitem {WarEngineState}, \hyperpage{123}
+  \item {WarTheatre}, \hyperpage{126}
+    \subitem {$\sim$WarTheatre}, \hyperpage{127}
+    \subitem {addArea}, \hyperpage{127}
+    \subitem {addGeneral}, \hyperpage{128}
+    \subitem {clone}, \hyperpage{128}
+    \subitem {isKeyPoint}, \hyperpage{129}
+    \subitem {simulateBattle}, \hyperpage{129}
+    \subitem {WarTheatre}, \hyperpage{127}
+  \item {Weather}, \hyperpage{130}
+    \subitem {$\sim$Weather}, \hyperpage{131}
+    \subitem {clone}, \hyperpage{131}
+    \subitem {getMultiplier}, \hyperpage{131}
+    \subitem {getWeather}, \hyperpage{132}
+    \subitem {handleChange}, \hyperpage{132}
+    \subitem {multiplier}, \hyperpage{133}
+    \subitem {Weather}, \hyperpage{131}
+
+\end{theindex}

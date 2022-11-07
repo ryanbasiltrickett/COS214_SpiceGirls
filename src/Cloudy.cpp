@@ -1,6 +1,19 @@
 #include "Cloudy.h"
+#include "Rainy.h"
 
-Cloudy::Cloudy() {
-	// TODO - implement Cloudy::Cloudy
-	throw "Not yet implemented";
+Cloudy::Cloudy(): Weather() {
+	this->multiplier = 0.75;
+}
+
+std::string Cloudy::getWeather() {
+	return "Cloudy";
+}
+
+void Cloudy::handleChange(KeyPoint* k) {
+	Rainy* newWeather = new Rainy();
+	k->setWeather(newWeather);
+}
+
+Weather* Cloudy::clone() {
+	return new Cloudy();
 }

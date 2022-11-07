@@ -1,5 +1,14 @@
 \hypertarget{classType}{}\doxysection{Type Class Reference}
 \label{classType}\index{Type@{Type}}
+
+
+\mbox{\hyperlink{classType}{Type}} class.  
+
+
+
+
+{\ttfamily \#include $<$Type.\+h$>$}
+
 Inheritance diagram for Type\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -9,18 +18,89 @@ Inheritance diagram for Type\+:\begin{figure}[H]
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classType_a78339313d36891f18427c431ea84e306}\label{classType_a78339313d36891f18427c431ea84e306}} 
 \mbox{\hyperlink{classType_a78339313d36891f18427c431ea84e306}{Type}} ()
 \begin{DoxyCompactList}\small\item\em Instantiates the type. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classType_a5c453300dc060252c30534110bd2f78c}\label{classType_a5c453300dc060252c30534110bd2f78c}} 
-virtual string {\bfseries get\+Type\+Desc} ()=0
-\end{DoxyCompactItemize}
+virtual string \mbox{\hyperlink{classType_a5c453300dc060252c30534110bd2f78c}{get\+Type\+Desc}} ()=0
+\begin{DoxyCompactList}\small\item\em Returns terrain type description. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classType}{Type}} $\ast$ \mbox{\hyperlink{classType_a8cd572bbf09dbd0fe2f592e6accea68f}{clone}} ()=0
+\begin{DoxyCompactList}\small\item\em returns the the cloned object of \mbox{\hyperlink{classType}{Type}} \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
+\mbox{\hyperlink{classType}{Type}} class. 
+
+Used to define \mbox{\hyperlink{classEntity}{Entity}} objects type. 
+
+Definition at line \mbox{\hyperlink{Type_8h_source_l00013}{13}} of file \mbox{\hyperlink{Type_8h_source}{Type.\+h}}.
 
 
-Definition at line 4 of file Type.\+h.
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classType_a78339313d36891f18427c431ea84e306}\label{classType_a78339313d36891f18427c431ea84e306}} 
+\index{Type@{Type}!Type@{Type}}
+\index{Type@{Type}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{Type()}{Type()}}
+{\footnotesize\ttfamily Type\+::\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiates the type. 
+
+
+
+Definition at line \mbox{\hyperlink{Type_8cpp_source_l00003}{3}} of file \mbox{\hyperlink{Type_8cpp_source}{Type.\+cpp}}.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003 \{\}  }
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classType_a8cd572bbf09dbd0fe2f592e6accea68f}\label{classType_a8cd572bbf09dbd0fe2f592e6accea68f}} 
+\index{Type@{Type}!clone@{clone}}
+\index{clone@{clone}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classType}{Type}} $\ast$ Type\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+returns the the cloned object of \mbox{\hyperlink{classType}{Type}} 
+
+Post\+Conditions\+:
+\begin{DoxyItemize}
+\item returns Type$\ast$ type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+Type$\ast$ The cloned \mbox{\hyperlink{classType}{Type}} object 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAerialType_a8e7184b0b9e184142144df65f3da7fb1}{Aerial\+Type}}, \mbox{\hyperlink{classAquaticType_afbcc6f679b6108c7ed286ab0aa91bdd5}{Aquatic\+Type}}, and \mbox{\hyperlink{classTerrainType_aa2c54fdc07981dab3941f28221e22655}{Terrain\+Type}}.
+
+\mbox{\Hypertarget{classType_a5c453300dc060252c30534110bd2f78c}\label{classType_a5c453300dc060252c30534110bd2f78c}} 
+\index{Type@{Type}!getTypeDesc@{getTypeDesc}}
+\index{getTypeDesc@{getTypeDesc}!Type@{Type}}
+\doxysubsubsection{\texorpdfstring{getTypeDesc()}{getTypeDesc()}}
+{\footnotesize\ttfamily virtual string Type\+::get\+Type\+Desc (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Returns terrain type description. 
+
+Postconditions\+:
+\begin{DoxyItemize}
+\item Returns the terrain type
+\end{DoxyItemize}
+
+\begin{DoxyReturn}{Returns}
+string The terrain type string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classAerialType_a66dd43f2688de9a5eab9c6de0396e9cc}{Aerial\+Type}}, \mbox{\hyperlink{classAquaticType_abb1b9ebdb96a352e0287f7a7cb803eab}{Aquatic\+Type}}, and \mbox{\hyperlink{classTerrainType_af24f4291676b6862c90b0d29598fcb11}{Terrain\+Type}}.
 
 
 

@@ -1,11 +1,11 @@
 #include "TerrainType.h"
 
-TerrainType::TerrainType() {
-	// TODO - implement TerrainType::TerrainType
-	throw "Not yet implemented";
-}
+TerrainType::TerrainType() {}
 
 string TerrainType::getTypeDesc() {
-	// TODO - implement TerrainType::getTypeDesc
-	throw "Not yet implemented";
+	return "Terrain";
+}
+
+Type* TerrainType::clone() {
+	return new TerrainType();
 }
