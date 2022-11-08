@@ -62,14 +62,11 @@ void setupWarEngine() {
     w->addArea(k3);
 
     w->addGeneral(g1);
-    //w->addGeneral(g2);
 
     WarEngine::getInstance().setWarTheatre(w);
 }
 
-void showTests(int &argc, char** argv){}
-
-int startWarEngine(int &argc, char** argv){
+void startWarEngine(int &argc, char** argv){
 
     bool continueLoop = true;
     bool correctInput;
@@ -123,18 +120,10 @@ int startWarEngine(int &argc, char** argv){
                 cout << "Please try again. Enter a valid option.\n" << endl;
         }
     }
-
-        return 0;
-
 }
 
 int main(int argc, char **argv) {
-    //setupWarEngine();
     
-    //WarEngine::getInstance().simulate();
-
-    //testing::InitGoogleTest(&argc, argv);
-    //return RUN_ALL_TESTS();
     startWarEngine(argc, argv);
 
     return 0;
