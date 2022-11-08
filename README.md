@@ -17,6 +17,7 @@ and the ability to simulate different war enviroments.
 
 ## Documentation
 
+- [Project Video](docs/COS%20214%20Spice%20Girls%20Demo%20Video%20.mp4)
 - [Development Documentation](docs/Spice%20GIrls%20Project%20Report.pdf)
 - [Coding Documentation](docs/Code%20Documentation.pdf)
 - [Class Diagram](docs/diagrams/SystemClassDiagram.jpg)
